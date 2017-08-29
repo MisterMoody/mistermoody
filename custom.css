@@ -1,0 +1,191 @@
+/************ GLOBAL STYLES ************/
+/* ======== Z-INDEX ======== */
+$zindex-dropdown-backdrop:  990 !default;
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-fixed:             1030 !default;
+$zindex-sticky:            1030 !default;
+$zindex-modal-backdrop:    1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+/***************************************/
+
+
+
+/* NAVBAR */
+.navbar {
+  background: #fff;
+}
+div.slide-left {
+  width: 100%;
+  overflow: hidden;
+}
+div.slide-left h1 {
+  animation: slide-left 10s;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+/*Home Page = Buttons for 'Services' Cards*/
+.btn-outline-dark:hover {
+  color: #fff;    /*Black Text on 'Hover'*/
+  box-shadow: inset 0 0 0 3px #000;  /*Border Inset*/
+} 
+
+/*Home Page = Button Transitions on 'Services Cards*/
+.special {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.special span {
+  cursor: crosshair;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.special span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+.special:hover span {
+  padding-right: 25px;
+}
+.special:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*Code Offered @ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1*/
+/*More examples at https://freebiesupply.com/blog/css-button-hoever-effects/*/
+
+
+/*ABOUT PAGE*/
+
+/*Text Wrap around Image*/
+.img-wrap {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: green;
+  margin: 0 25px 5px 0;
+  float: left;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+
+
+
+/* ==================================================== */
+/* *********          ********* */
+
+/* ==================================================== */
+/* ==================================================== */
+
+
+/* Progress Bars =  to Add Gradient >> https://bootply.com/nlSCNbyinY */
+/* BROKEN
+.progress {
+  height: 7px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(230,230,230,0.3)),to(rgba(230,230,230,0.8)), color-stop(.2,#fff) );
+}
+.progress-bar {
+  height: 7px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(230,230,230,0.5)),to(rgba(230,230,230,0.2)), color-stop(0,rgba(255,255,255,0.7)) );
+}
+*/
+
+
+
+.marquee {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+..marquee p {
+ font-size: 3em;
+ color: limegreen;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: .marquee 15s linear infinite;
+ -webkit-animation: .marquee 15s linear infinite;
+ animation: .marquee 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes .marquee {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes .marquee {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes .marquee {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+
+
+
+/* Footer */
+
+
+
+
+
+
+/* ======== MEDIA QUERIES ======== */
+/*No media query since this is the default in Bootstrap*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) { ... }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { ... }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { ... }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+
+/**/
