@@ -14,7 +14,7 @@
     <!-- BOOTSTRAP *CDN* Compiled & Minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="custom.css">          
+    <link rel="stylesheet" type="text/css" href="custom.css">         
     <!-- Font Awesome Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -61,44 +61,115 @@
     <!-- ** MAIN CONTAINER ** -->
     <div class="container">
       
-        
-      
-      <div class="card">
-        <div class="card-header text-center text-uppercase font-weight-bold">Mister Moody</div>
-        <div class="card-body">
-          <h4 class="card-title text-center">Who I Is?</h4>
-          <p class="text-justify">My name is Ray and I am an Entrepreneur offering specialized services to individuals and private institutions of education.</p>
-          <p>Having enjoyed a distinctive career as a TEFL Strategist working for private and public institutions of education in China, Japan, and South Korea, where I facilitated more than 6,500 hours of TEFL instruction to more than 1,000 learners, I have spent the better part of the past year learning how to build web applications using HTML5, CSS3, and JavaScript. My end-goal in this endeavor is to advance my skill-set so that I can build and manage language learning applications that focus on improving learner communication.</p>
-          
-          
-          <div class="row">
-          <!-- Web Development -->
-            <div class="col-md-6">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title text-center"><i class="fa fa-code pull-left" aria-hidden="true">&nbsp;</i> Web Implementations <i class="fa fa-code-fork pull-right" aria-hidden="true">&nbsp;</i></h4>
-                  <p class="card-text">In need of a website or app to promote your newest venture? I can help you with that!</p>
-                  <a href="#" class="btn btn-primary justify-content-">Learn More</a>
-                 </div>
-               </div>
+      <!-- SECTION 1:   Parallax Imagery -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1">     </li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2">     </li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- 1st Slide -->
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="http://via.placeholder.com/200x75" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>In My Zone</h3>
+              <p>xxxxxxxxxxxxxxxxxx20xxxxx</p>
             </div>
-            <!-- Admin Work -->
-            <div class="col-md-6">
-               <div class="card">
-                 <div class="card-body">
-                    <h4 class="card-title text-center"><i class="fa fa-clipboard pull-left" aria-hidden="true">&nbsp;</i> Proofs &amp; Presentations 
-                    <i class="fa fa-pie-chart pull-right" aria-hidden="true">&nbsp;</i></h4>
-                    <p class="card-text">Online or in a theater. In-depth observation or satirical comedy. I will deliver an awesome and informative presentation.</p>
-                   <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-               </div>
-              </div>
           </div>
-          
+          <!-- 2nd Slide -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://via.placeholder.com/200x75" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>In My Zone</h3>
+              <p>xxxxxxxxxxxxxxxxxx20xxxxx</p>
+            </div>
+          </div>
+          <!-- 3rd Slide -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="http://via.placeholder.com/200x75" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>In My Zone</h3>
+              <p>xxxxxxxxxxxxxxxxxx20xxxxx</p>
+            </div>
+          </div>
         </div>
-        <div class="card-footer text-muted">2 days ago</div>
-      </div> 
+      </div>
       <br>
+      <!-- END of SECTION 1 -->
+
+      
+      <!-- SECTION 2: Personal Introduction -->      
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center text-uppercase font-weight-bold">Mister Moody</h1>
+          <h3 class="text-center">Freelance Extraordinaire / Virtual Assistant</h3>        
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere consectetur purus, a cursus elit molestie et. Etiam quam turpis, hendrerit at mi a, efficitur pretium tellus. Nulla elit dolor, posuere a mollis at, placerat at est. Praesent feugiat pharetra risus, in varius augue rutrum in. Sed elementum ipsum eu risus tempus, sit amet auctor augue sollicitudin.</p>
+        </div>
+      </div>
+      <br>
+      <!-- END of SECTION 2 -->
+
+      
+      
+      <!-- Section 3: Services Offered-->  
+      <div class="card-deck">
+        <div class="row">
+          <!-- Web Dev Implementations -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <h4 class="card-title">Web Implementations</h4>
+                  </div>
+                  <div class="col-2">
+                    <i class="fa fa-usb fa-2x pull-left" aria-hidden="true">&nbsp;</i>
+                  </div>
+                </div>
+                <p class="card-text">Self-taught Web Developer specializing in building and maintaining front-end web applications for entrepreneurs and microenterprises.</p>
+                <a href="#" class="btn btn-outline-dark btn-block special"><span>Learn More</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- Curriculum Development -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <h4 class="card-title">Curriculum Development</h4>
+                  </div>
+                  <div class="col-2">
+                    <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true">&nbsp;</i>
+                  </div>
+                </div>
+                <p class="card-text">Professional  researcher and developer capable of producing individual lesson plans for special purposes and  robust EFL course syllabi.</p>
+                <a href="#" class="btn btn-outline-dark btn-block special"><span>Learn More</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- Oral English Communication -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <h4 class="card-title">Oral English Communication</h4>
+                  </div>
+                  <div class="col-2">
+                    <i class="fa fa-language fa-2x pull-left" aria-hidden="true">&nbsp;</i>
+                  </div>
+                </div>
+                <p class="card-text">Certified TEFL instructor with ten years experience delievering EFL classes to more than 1,000 clients of various ages and cultural backgrounds. </p>
+                <a href="#" class="btn btn-outline-dark btn-block special"><span>Learn More</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <br>
+      <!-- END of SECTION 3 -->  
       
       
     </div>
@@ -106,13 +177,11 @@
     <!-- END of MAIN CONTAINER -->
       
     
-       
-  
-    
     
     <!-- ** FOOTER ** -->
     <div class="container">
-      <div class="row no-gutters clearfix">
+      <div class="row justify-content no-gutters clearfix">
+        <!-- Copyright Mister Moody -->
         <div class="col-auto mr-auto">
           <ul class="nav">
             <li class="nav-item">
@@ -120,11 +189,12 @@
             </li>
           </ul>
         </div>
+        <!-- Github & LinkedIn Links-->
         <div class="col-auto">
-          <a class="btn btn-outline-secondary btn-sm" href="#" alt="Github" target="_blank">
+          <a class="btn btn-outline-dark btn-sm" href="#" alt="Github" target="_blank">
             <i class="fa fa-github-alt fa-1x" aria-hidden="true"></i>
           </a>
-          <a class="btn btn-outline-secondary btn-sm" href="#" alt="QQ" target="_blank">
+          <a class="btn btn-outline-dark btn-sm" href="#" alt="QQ" target="_blank">
             <i class="fa fa-slideshare fa-1x" aria-hidden="true"></i>
           </a>
         </div>
@@ -137,6 +207,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript **type="text/javascript" = Used for HTML4 -->
+    <script type="text/javascript" src="styles.js"></script>
 
     
   </body>
