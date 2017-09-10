@@ -7,7 +7,7 @@
     <title>Mister Moody</title>
     <meta name="author" content="Ray Moody">
     <meta name="twitter:title" content="MisterMoody">         <!-- Link to Twitter -->
-    <meta name="description" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Public Speaker">
+    <meta name="description" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Proofreading, Research, Public Speaker">
     <link rel="shortcut icon" href="img/me.jpg" type="img/m"> <!-- Browser Tab Icon -->
     
     <!-- *********** CSS Implementations ************ -->
@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="custom.css">          
     <!-- Font Awesome Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
   </head>
  
   <body>
           
     <!-- ** NAVBAR ** -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-toggleable-sm navbar-light bg-faded">  
+    <nav class="navbar sticky-top navbar-expand-md navbar-toggleable-sm navbar-light bg-light">  
       <a class="navbar-brand" href="#"><img src="..." width="30" height="30" class="d-inline-block align-top" alt=""><!--Mister Moody--></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -58,224 +59,490 @@
 
  
     
-    <!-- ** MAIN CONTAINER ** -->
+    <!-- ********** MAIN CONTAINER ********** -->
     <div class="container">
-    <!-- END of MAIN CONTAINER -->
+      
       
       <div class="row">
-        <!-- Introductory TITLE -->
-        <div class="col-12">
+        <!-- Page Title -->
+        <div class="col-12 mb-5">
           <h1 class="text-center text-uppercase font-weight-bold display-2">Mister Moody</h1>
         </div>
-      </div>
-      <br>
-      <div class="row">
-        <!-- Introductory PARAGRAPH & IMAGE -->
-        <div class="col-md-6">
-          <p class="text-justify"><img class="img-wrap" src="img/stars.png" >I am a Freelance Extraordinaire offering specialized services to entrepreneurs, microenterprises and institutions of education. Having enjoyed a distinctive career as a TEFL Strategist working for private and public institutions of education in China, Japan, and South Korea, where I facilitated more than 6,500 hours of TEFL instruction to more than 1,000 learners, I have spent the better part of the past year learning how to build web applications using HTML5, CSS3, and JavaScript. My end-goal in this endeavor is to advance my skill-set so that I can build and manage language learning applications that focus on improving learner communication.</p>
+        <br>
+        <!-- Introduction -->
+        <div class="col-md-6 mb-5">
+          <p class="text-justify"><img class="img-wrap img-fluid" src="img/stars.png" >I am a certified TEFL instructor and autodidact web developer with a unique skillset that has enabled me to offer specialized services to entrepreneurs, microenterprises and institutions of education. </p>
         </div>
-        <!-- Personal STATS TABLE -->
-        <div class="col-md-6">
+        
+        <!-- Personal Tidbits Table -->
+        <div class="col-md-6 mb-5">
           <table class="table table-sm">
-            <thead class=" thead-inverse">
+            <thead class="">
               <tr>
-                <th class="text-center" colspan="3">Personal Stats</th>
+                <th class="h3 text-center font-weight-bold" colspan="3">Personal Tidbits</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row"><i class="fa fa-calendar"></i> Age</th>
+                <th scope="row"><i class="fa fa-calendar d-none d-lg-inline-block"></i> Age</th>
                 <td colspan="2">38</td>
               </tr>
               <tr>
-                <th scope="row"><i class="fa fa-globe"></i>&nbsp; Nationality</th>
+                <th scope="row"><i class="fa fa-globe d-none d-lg-inline-block"></i> Nationality</th>
                 <td colspan="2">American</td>
               </tr>
               <tr>
-                <th scope="row"><i class="fa fa-map-signs"></i> Hometown</th>
+                <th scope="row"><i class="fa fa-map-signs d-none d-lg-inline-block"></i> Hometown</th>
                 <td colspan="2">Louisville, Kentucky</td>
               </tr>
               <tr>
-                <th scope="row"><i class="fa fa-phone-square"></i> Phone</th>
+                <th scope="row"><i class="fa fa-phone-square d-none d-lg-inline-block"></i> Phone</th>
                 <td colspan="2">(+1) 502 558 9240</td>
               </tr>
               <tr>
-                <th scope="row"><i class="fa fa-envelope"></i> Email</th>
+                <th scope="row"><i class="fa fa-envelope d-none d-lg-inline-block"></i> Email</th>
                 <td colspan="2">principal @ mistermoody.com</td>
-              </tr>
-              <tr>
-                <th scope="row"><i class="fa fa-cutlery"></i> Diet</th>
-                <td colspan="2">Aspargus, Arugula &amp; Salmon</td>
-              </tr>
-              <tr>
-                <th scope="row"><i class="fa fa-magic"></i> Secret Talent</th>
-                <td colspan="2">Telepathy</td>
               </tr>
               <tr>
                 <!-- Display 'Availability'   >> use 'fa-toggle-on' Icon & Add class="text-success" (green) -->
                 <!-- Display 'Not Available'  >> use 'fa-toggle-off' Icon & Add class="text-danger" (red) -->
-                <th scope="row"><i class="fa fa-toggle-on text-success"></i> Availability</th>
+                <th scope="row"><i class="fa fa-toggle-on text-success d-none d-lg-inline-block"></i> Availability</th>
                 <td colspan="2">Accepting Work</td>
               </tr>
             </tbody>
           </table>
+          <div class="row justify-content-between">
+            <div class="col-2">
+              <a class="btn btn-outline-dark btn-sm" href="#" alt="Github" target="_blank">
+              <i class="fa fa-github-alt fa-1x" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-2">
+              <a class="btn btn-outline-dark btn-sm" href="#" alt="LinkedIn" target="_blank">
+              <i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="col-2">
+              <a class="btn btn-outline-dark btn-sm" href="#" alt="Skype" target="_blank">
+              <i class="fa fa-skype"></i></a>
+            </div>
+            <div class="col-2">
+              <a class="btn btn-outline-dark btn-sm" href="#" alt="Twitter" target="_blank">
+              <i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col-2">
+              <a class="btn btn-outline-dark btn-sm" href="#" alt="Weixin" target="_blank">
+              <i class="fa fa-weixin"></i></a>
+            </div>
+            <div class="col-2">
+              <a class="btn btn-outline-dark btn-sm" href="#" alt="Weixin" target="_blank">
+              <i class="fa fa-qq"></i></a>
+            </div>
+          </div><br>
         </div>
         
-      </div>
-      
-      <!-- SKILLS SECTION-->
-      <div class="row">
-        <div class="col-md-6">
-          <!-- Accordion-->
-          <div id="accordion" role="tablist">
-            <!-- SME Web Consultation -->
-            <div class="card">
-              <div class="card-header" role="tab" id="headingOne">
-                <h5 class="mb-0">
-                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">SME Web Consultation</a>
-                </h5>
+        <!-- Pro SKILLSET - "Progress Bar" -->
+        <div class="col-md-6 mb-5">
+          <dl class="h3 text-center font-weight-bold">Professionl Skillset</dl>
+          <dl>
+            <dt>
+              <div class="progress">
+                <div class="progress-bar bg-dark text-left" role="progressbar" style="width: 50%; height: 20px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> 
+                  UI Design &lsqb;HTML5 &amp; CSS3&rsqb;</div>
               </div>
-              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere consectetur purus, a cursus elit molestie et. Etiam quam turpis, hendrerit at mi a, efficitur pretium tellus. Nulla elit dolor, posuere a mollis at, placerat at est. Praesent feugiat pharetra risus, in varius augue rutrum in. Sed elementum ipsum eu risus tempus, sit amet auctor augue sollicitudin.</p>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">2015</span>
+              <span class="badge badge-light font-weight-bold"> 50% </span>
+              <small class="float-right text-muted">List of Particulars</small> 
+            </dd>
+          </dl>
+          
+          <dl>
+            <dt>
+              <div class="progress">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 78%; height: 20px;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">Bootstrap 78%</div>
+              </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">2014</span>
+              <span class="badge badge-light font-weight-bold"> 40% </span>
+              <small class="float-right text-muted">List of Particulars</small> 
+            </dd>
+          </dl>
+          
+          <dl>
+            <dt>
+              <div class="progress">
+                <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%; height: 20px;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">JavaScript 65%</div>
+              </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">2013</span>
+              <span class="badge badge-light font-weight-bold"> 30% </span>
+              <small class="float-right text-muted">List of Particulars</small> 
+            </dd>
+          </dl>
+          
+          <dl>
+            <dt>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 50%; height: 20px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">MEAN Stack 50%</div>
+              </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">2012</span>
+              <span class="badge badge-light font-weight-bold"> 20% </span>
+              <small class="float-right text-muted">List of Particulars</small> 
+            </dd>
+          </dl>
+          
+          <dl>
+            <dt>
+              <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 80%; height: 20px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Github 80%</div>
                 </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">2011</span>
+              <span class="badge badge-light font-weight-bold"> 10% </span>
+              <small class="float-right text-muted">List of Particulars</small> 
+            </dd>
+          </dl>
+          
+          <!-- Key -->
+          <dl>
+            <dt>
+              <div class="progress">
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 33%; height: 20px;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Admin Skill</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="width: 33%; height: 20px;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Transferable Skills</div>
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 33%; height: 20px;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Web Dev Skill</div>
+                </div>
+            </dt>
+            <dd>
+              <small class="text-muted text-center">Explanation for HOW Certain Skills are Transferable</small> 
+            </dd>
+          </dl>
+          <!--<dl>
+            <dt>
+              <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 80%; height: 20px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">xxxxx</div>
+                </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">xxxxx</span>
+              <span class="badge badge-light font-weight-bold"> 10% </span>
+              <small class="float-right text-muted">xxxxx</small> 
+            </dd>
+          </dl>-->
+        </div> 
+        
+        <!-- Education -->
+        <div class="col-md-6 mb-5">
+          <dl class="h3 text-center font-weight-bold">Education</dl>
+          <dl>
+            <dt><span class="badge badge-dark">2015</span> Web Development Training</dt>
+            <dd>&lt;Code&gt; Louisville<small class="float-right text-muted">Kentucky, America</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2011</span> Mandarin Language Training</dt>
+            <dd>Shanghai Ocean University<small class="float-right text-muted">Shanghai, China</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2010</span> Office Specialist Training</dt>
+            <dd>Microsoft<small class="float-right text-muted">Online</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2007</span> TEFL Teacher Training</dt>
+            <dd>International TEFL Teacher Training<small class="float-right text-muted">Phuket, Thailand</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2006</span> Hangul Language Studies</dt>
+            <dd>Yonsei University<small class="float-right text-muted">Seoul, South Korea</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2003</span> B.A. Political Science</dt>
+            <dd>the University of Louisville<small class="float-right text-muted">Kentucky, America</small> </dd>
+          </dl>
+        </div>   
+        
+        <!-- Work Experience -->
+        <div class="col-12 mb-5">
+          <nav class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-expanded="true">Home</a>
+            
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile">Profile</a>
+            
+          <a class="nav-item nav-link" id="nav-SomeTime-tab" data-toggle="tab" href="#nav-SomeTime" role="tab" aria-controls="nav-SomeTime">SomeTime</a>
+          
+          <a class="nav-item nav-link" id="nav-Later-tab" data-toggle="tab" href="#nav-Later" role="tab" aria-controls="nav-Later">Later</a>
+          <!-- Code for Dropdown Below <div class="dropdown">
+          <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              Dropdown</a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" id="nav-dropdown1-tab" href="#nav-dropdown1" role="tab" data-toggle="tab" aria-controls="nav-dropdown1">@fat</a>
+              <a class="dropdown-item" id="nav-dropdown2-tab" href="#nav-dropdown2" role="tab" data-toggle="tab" aria-controls="nav-dropdown2">@mdo</a>
+            </div>
+          </div>-->
+        </nav>
+          
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <dl>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2015</span>
+                      @dba Mister Moody</dt>
+                    <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2014</span>
+                      @Code Louisville</dt>
+                    <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2013</span>
+                      @Treehouse</dt>
+              </dl>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem non nibh faucibus imperdiet. Etiam vitae condimentum neque. Aliquam et diam ligula. Quisque lorem ipsum, fermentum sit amet condimentum sed, luctus ac libero. Cras sit amet vehicula lorem, at tristique turpis. Nulla facilisi. Etiam ultricies egestas blandit. Pellentesque luctus posuere elit. Donec ac blandit erat. Duis tristique mollis pharetra. Phasellus vitae est leo. 
+            </div>
+            
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <dl>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2010</span>
+                      @FiberTech Co., Ltd.</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2007</span>
+                      @Oxford Seminars</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2004</span>
+                      @US-JPN Education Exchange Prg.</dt>
+              </dl>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem non nibh faucibus imperdiet. Etiam vitae condimentum neque. Aliquam et diam ligula. Quisque lorem ipsum, fermentum sit amet condimentum sed, luctus ac libero. Cras sit amet vehicula lorem, at tristique turpis. Nulla facilisi. Etiam ultricies egestas blandit. Pellentesque luctus posuere elit. Donec ac blandit erat. Duis tristique mollis pharetra. Phasellus vitae est leo. Aenean molestie tortor id ligula laoreet, nec sagittis felis eleifend. Integer id pharetra mi. Nulla nisl risus, accumsan vitae lorem in, rhoncus pharetra quam. 
+            </div>
+            
+            <div class="tab-pane fade" id="nav-SomeTime" role="tabpanel" aria-labelledby="nav-SomeTime-tab">
+              <dl>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">20016</span>
+                      @Jiaxing College</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2012</span>
+                      @Tongxiang Middle School</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2007</span>
+                      @Chien-Shiung Institute of Tech</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2005</span>
+                      @Joongdong High School</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2003</span>
+                      @Sogang University</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2001</span>
+                      @Jefferson Country Public Schools</dt>
+              </dl>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem non nibh faucibus imperdiet. Etiam vitae condimentum neque. Aliquam et diam ligula. Quisque lorem ipsum, fermentum sit amet condimentum sed, luctus ac libero. Cras sit amet vehicula lorem, at tristique turpis. Nulla facilisi. Etiam ultricies egestas blandit. Pellentesque luctus posuere elit. Donec ac blandit erat. Duis tristique mollis pharetra. Phasellus vitae est leo. Aenean molestie tortor id ligula laoreet, nec sagittis felis eleifend. Integer id pharetra mi. Nulla nisl risus, accumsan vitae lorem in, rhoncus pharetra quam.   
+            </div>
+            
+            <div class="tab-pane fade" id="nav-Later" role="tabpanel" aria-labelledby="nav-Later-tab">
+              <dl>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">20016</span>
+                      @Jiaxing College</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2012</span>
+                      @Tongxiang Middle School</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2007</span>
+                      @Chien-Shiung Institute of Tech</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2005</span>
+                      @Joongdong High School</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2003</span>
+                      @Sogang University</dt>
+                <dt class="text-muted text-nowrap">
+                  <span class="badge badge-dark">2001</span>
+                      @Jefferson Country Public Schools</dt>
+              </dl>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem non nibh faucibus imperdiet. Etiam vitae condimentum neque. Aliquam et diam ligula. Quisque lorem ipsum, fermentum sit amet condimentum sed, luctus ac libero. Cras sit amet vehicula lorem, at tristique turpis. Nulla facilisi. Etiam ultricies egestas blandit. Pellentesque luctus posuere elit. Donec ac blandit erat. Duis tristique mollis pharetra. Phasellus vitae est leo. Aenean molestie tortor id ligula laoreet, nec sagittis felis eleifend. Integer id pharetra mi. Nulla nisl risus, accumsan vitae lorem in, rhoncus pharetra quam.   
+            </div>
+            
+            <!-- Code for Dropdown Nav Tab = Dont want, Throw Away
+            <div class="tab-pane fade" id="nav-dropdown1" role="tabpanel" aria-labelledby="nav-dropdown1-tab"></div>
+            <div class="tab-pane fade" id="nav-dropdown2" role="tabpanel" aria-labelledby="nav-dropdown2-tab">...</div>-->
+          </div>
+        </div>
+        <!-- -->
+        
+        <div class="col-12 mb-5">
+          <div class="row">
+            <div class="col-12 h3 text-center font-weight-bold">Work Experience</div>
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <!-- WEB DEV #1/2 -->
+                <a class="list-group-item list-group-item-action active" id="list-webdev-list" data-toggle="list" href="#list-webdev" role="tab" aria-controls="webdev">
+                  Web Dev
+                </a>
+                <!-- TEFL PRO #1/2 -->
+                <a class="list-group-item list-group-item-action" id="list-tefl-list" data-toggle="list" href="#list-tefl" role="tab" aria-controls="tefl">
+                  TEFL Pro
+                </a>
+                <!-- TEACHING #1/2 -->
+                <a class="list-group-item list-group-item-action" id="list-teaching-list" data-toggle="list" href="#list-teaching" role="tab" aria-controls="teaching">
+                  Teaching 
+                </a>
+                <!-- INTERNSHIPS #1/2 -->
+                <a class="list-group-item list-group-item-action" id="list-intern-list" data-toggle="list" href="#list-intern" role="tab" aria-controls="intern">
+                  Internships
+                </a>
               </div>
             </div>
-            <!-- American English Communication -->
-            <div class="card">
-              <div class="card-header" role="tab" id="headingTwo">
-               <h5 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">American English Communication</a>
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere consectetur purus, a cursus elit molestie et. Etiam quam turpis, hendrerit at mi a, efficitur pretium tellus. Nulla elit dolor, posuere a mollis at, placerat at est. Praesent feugiat pharetra risus, in varius augue rutrum in. Sed elementum ipsum eu risus tempus, sit amet auctor augue sollicitudin.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Terms & Conditions / Privacy Policy -->
-            <div class="card">
-              <div class="card-header" role="tab" id="headingThree">
-                <h5 class="mb-0">
-                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Terms &amp; Conditions</a>
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere consectetur purus, a cursus elit molestie et. Etiam quam turpis, hendrerit at mi a, efficitur pretium tellus. Nulla elit dolor, posuere a mollis at, placerat at est. Praesent feugiat pharetra risus, in varius augue rutrum in. Sed elementum ipsum eu risus tempus, sit amet auctor augue sollicitudin.</p>
-                </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <!-- WEB DEV #2/2-->
+                <div class="tab-pane fade show active" id="list-webdev" role="tabpanel" aria-labelledby="list-webdev-list">
+                  <dl>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2015</span>
+                      @dba Mister Moody</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2014</span>
+                      @Code Louisville</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2013</span>
+                      @Treehouse</dt>
+                  </dl>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem non nibh faucibus imperdiet. Etiam vitae condimentum neque. Aliquam et diam ligula. Quisque lorem ipsum, fermentum sit amet condimentum sed, luctus ac libero. Cras sit amet vehicula lorem, at tristique turpis. Nulla facilisi. Etiam ultricies egestas blandit. Pellentesque luctus posuere elit. Donec ac blandit erat. Duis tristique mollis pharetra. Phasellus vitae est leo. </div>
+                <!-- TEFL PRO #2/2:: 2004-2005 -->
+                <div class="tab-pane fade" id="list-tefl" role="tabpanel" aria-labelledby="list-tefl-list">
+                  <dl>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2010</span>
+                      @FiberTech Co., Ltd.</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2007</span>
+                      @Oxford Seminars</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2004</span>
+                      @US-JPN Education Exchange Prg.</dt>
+                  </dl>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem non nibh faucibus imperdiet. Etiam vitae condimentum neque. Aliquam et diam ligula. Quisque lorem ipsum, fermentum sit amet condimentum sed, luctus ac libero. Cras sit amet vehicula lorem, at tristique turpis. Nulla facilisi. Etiam ultricies egestas blandit. Pellentesque luctus posuere elit. Donec ac blandit erat. Duis tristique mollis pharetra. Phasellus vitae est leo. Aenean molestie tortor id ligula laoreet, nec sagittis felis eleifend. Integer id pharetra mi. Nulla nisl risus, accumsan vitae lorem in, rhoncus pharetra quam. </div>
+                <!-- TEACHING #2/2 :: 2003-2004 -->
+                <div class="tab-pane fade" id="list-teaching" role="tabpanel" aria-labelledby="list-teaching-list">
+                  <dl>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">20016</span>
+                      @Jiaxing College</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2012</span>
+                      @Tongxiang Middle School</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2007</span>
+                      @Chien-Shiung Institute of Tech</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2005</span>
+                      @Joongdong High School</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2003</span>
+                      @Sogang University</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2001</span>
+                      @Jefferson Country Public Schools</dt>
+                  </dl>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem non nibh faucibus imperdiet. Etiam vitae condimentum neque. Aliquam et diam ligula. Quisque lorem ipsum, fermentum sit amet condimentum sed, luctus ac libero. Cras sit amet vehicula lorem, at tristique turpis. Nulla facilisi. Etiam ultricies egestas blandit. Pellentesque luctus posuere elit. Donec ac blandit erat. Duis tristique mollis pharetra. Phasellus vitae est leo. Aenean molestie tortor id ligula laoreet, nec sagittis felis eleifend. Integer id pharetra mi. Nulla nisl risus, accumsan vitae lorem in, rhoncus pharetra quam. </div>
+                <!-- INTERNSHIPS #2/2 -->
+                <div class="tab-pane fade" id="list-intern" role="tabpanel" aria-labelledby="list-intern-list">
+                  <dl>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2003</span>
+                      @UofL Co-Op Program</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2002</span>
+                      @DCWASA</dt>
+                    <dt class="text-muted text-nowrap">
+                      <span class="badge badge-dark">2002</span>
+                      @Legislative Research Commission</dt>
+                  </dl>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin sem non nibh faucibus imperdiet. Etiam vitae condimentum neque. Aliquam et diam ligula. Quisque lorem ipsum, fermentum sit amet condimentum sed, luctus ac libero. Cras sit amet vehicula lorem, at tristique turpis. Nulla facilisi. Etiam ultricies egestas blandit. Pellentesque luctus posuere elit. Donec ac blandit erat. Duis tristique mollis pharetra. Phasellus vitae est leo. Aenean molestie tortor id ligula laoreet, nec sagittis felis eleifend. Integer id pharetra mi. Nulla nisl risus, accumsan vitae lorem in, rhoncus pharetra quam. </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Professional SKILLS - "Progress Bar" -->        
-        <div class="col-md-6">
-          <table class="table table-responsive">
-        <!-- table content here -->
-        <table class="table table-sm">
-          <thead>
-            <tr>
-              <th class="text-uppercase lead">Developer Skills</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="progress">
-                  <div class="progress-bar bg-dark  class="text-left"" role="progressbar" style="width: 82%; height: 20px;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">HTML5 &amp; CSS3 82%</div>
+        <!-- Download Resume *Visable on MOBILE DEVICES*-->
+        <div class="col-12 text-center mb-5">
+          <button type="button" class="btn btn-outline-dark btn-lg text-uppercase">Download Resume</button>
+        </div>
+        <br>
+      </div>
+      <br>
+      <!-- END of INTRODUCTION -->
+     
+
+      
+      
+      <!-- SERVICES-->
+      <div class="row mb-5">
+        <div class="col-12">
+          <h1 class="text-center text-uppercase">What I Can Do For You</h1>
+        </div>
+      </div> 
+      <br>
+      <div class="card-deck">
+        <div class="row">
+          <!-- Web Dev Implementations -->
+          <div class="col-md-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <h4 class="card-title">Web Implementations</h4>
+                  </div>
+                  <div class="col-2">
+                    <i class="fa fa-upload fa-2x pull-left" aria-hidden="true"></i>
+                  </div>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="progress">
-                  <div class="progress-bar bg-dark" role="progressbar" style="width: 78%; height: 20px;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">Bootstrap 78%</div>
+                <p class="card-text">Self-taught Web Developer specializing in building and maintaining front-end web applications for entrepreneurs and microenterprises.</p>
+                <a href="#" class="btn btn-outline-dark btn-block special"><span>Learn More</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- Curriculum Development -->
+          <div class="col-md-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <h4 class="card-title">Curriculum Development</h4>
+                  </div>
+                  <div class="col-2">
+                    <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true">&nbsp;</i>
+                  </div>
                 </div>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>
-                <div class="progress">
-                  <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%; height: 20px;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">JavaScript 65%</div>
+                <p class="card-text">Professional  researcher and developer capable of producing individual lesson plans for special purposes and  robust EFL course syllabi.</p>
+                <a href="#" class="btn btn-outline-dark btn-block special"><span>Learn More</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- Oral English Communication -->
+          <div class="col-md-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <h1 class="card-title font-weight-bold">汉语口语</h1>
+                  </div>
+                  <div class="col-2">
+                    <i class="fa fa-language fa-2x pull-left" aria-hidden="true">&nbsp;</i>
+                  </div>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 50%; height: 20px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">MEAN Stack 50%</div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>
-                <div class="progress">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 80%; height: 20px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Github 80%</div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </table>
+                <p class="card-text h5">我中文名字是羊瑞。我是英语老师, 四年过了教得中国学生. 现在我要用电脑和帮你学习英语口语! 好不好?<!--Certified TEFL instructor with ten years experience delievering EFL classes to more than 1,000 clients of various ages and cultural backgrounds.--> </p>
+                <br>
+                <a href="#" class="btn btn-outline-dark btn-block special"><span>Learn More</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>      
-      <br><br>
-      <!-- END of SKILLS-->
-
-      
-      
-      <!-- PERSONAL INTERESTS & HOBBIES -->
-      <div class="col">
-        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-          <li class="nav-item">
-           <a class="nav-link active text-uppercase lead" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase lead" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-uppercase lead" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-             <div class="dropdown-menu">
-               <a class="dropdown-item" id="dropdown1-tab" href="#dropdown1" role="tab" data-toggle="tab" aria-controls="dropdown1">@fat</a>
-               <a class="dropdown-item" id="dropdown2-tab" href="#dropdown2" role="tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a>
-             </div>
-           </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <p>Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.</p>
-            </div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <p>Nulla est ullamco ut irure incididunt nulla Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exercitation velit laboris fugiat cupidatat. Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore labore veniam irure irure ipsum pariatur mollit magna in cupidatat dolore magna irure esse tempor ad mollit. Dolore commodo nulla minim amet ipsum officia consectetur amet ullamco voluptate nisi commodo ea sit eu.</p>
-            </div>
-          <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">...</div>
-          <div class="tab-pane fade" id="dropdown2" role="tabpanel" aria-labelledby="dropdown2-tab">...</div>
-        </div>
-      </div>
-      <br><br>
-      
-
+      <br>
+      <!-- END of SERVICES -->
     </div>
-    <br><br>
-     <!-- END of MAIN CONTAINER -->
-      
-      
-
-
-      
-      
-      
-      <br>
-      <div class="row justify-content-center">
-          <button type="button" class="btn btn-outline-secondary btn-lg">Download Resume</button>
-      </div>
-      <br>
-    <br>
+     <!-- ****** END of MAIN CONTAINER ****** -->
     
     
     
@@ -309,7 +576,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
+    <!-- Custom Script -->
+    <script src="styles.js"></script>
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    
     
   </body>
 </html>
