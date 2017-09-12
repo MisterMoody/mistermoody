@@ -203,6 +203,11 @@ h1.outline {
 }
 
 
+
+/****************************************/
+/* ********** ABOUT PAGE ************** */
+/****************************************/
+
 /*Parallax Styles for 中国人 HOME zh.html*/
 .wrapper {
   width: 100%;
@@ -211,34 +216,47 @@ h1.outline {
 }
 .parallaxBG {
   width: 100%;
-  height: 400px;
-  background: url(img/shilla.jpg);
+  height: 500px;
+  background: url(img/wuzhen.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
+  background-position: 100% top;
   background-attachment: fixed;
 }
 .parallaxBG2 {
   width: 100%;
-  height: 400px;
-  background: url(img/waterfall.jpg);
+  height: 500px;
+  background: url(img/knowledge.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
+  background-position: 100% top;
   background-attachment: fixed;
 }
 .parallaxBG3 {
   width: 100%;
-  height: 400px;
-  background: url(img/KinkakuJiKyotoJapan.jpg);
+  height: 100vh;
+  background: url(img/tailor.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
+  background-position: 100% top;
   background-attachment: fixed;
 }
 .parallaxBG4 {
   width: 100%;
-  height: 400px;
-  background: url(img/oLife2.jpg);
+  height: 100vh;
+  background: url(img/unbeatenpath.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
+  background-position: 100% top;
+  background-attachment: fixed;
+}
+.parallaxBG5 {
+  width: 100%;
+  height: 100vh;
+  background: url(img/farewell.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% top; 
   background-attachment: fixed;
 }
 .content {
@@ -250,10 +268,6 @@ h1.outline {
   text-align: center;
 }
 
-
-/****************************************/
-/* ********** ABOUT PAGE ************** */
-/****************************************/
 
 /*Text Wrap around Image*/
 .img-wrap {
@@ -267,12 +281,19 @@ h1.outline {
   shape-outside: circle();
 }
 
+/*Table*/
 
 /*Nav Tabs*/
 a.nav-item {
   color: #000;
 }
 a.nav-item:hover {}
+
+
+/*中国人 About Page Styles*/
+
+/*Style 中文 Charaters*/
+
 
 /****************************************/
 /****************************************/
