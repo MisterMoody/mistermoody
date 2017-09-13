@@ -30,7 +30,10 @@ div.slide-left h1 {
 }
 
 
-/********************/
+/* Footer *
+
+
+/****************************************/
 /*Glowwy BTNs for Index.html 'Select Language'*/
 .glowwy {
   background: #000;
@@ -104,8 +107,6 @@ div.slide-left h1 {
 /*More examples at https://freebiesupply.com/blog/css-button-hoever-effects/*/
 /***************************************/
 
-/********************/
-/* Footer */
 
 
 
@@ -293,8 +294,10 @@ a.nav-item:hover {}
 /*中国人 About Page Styles*/
 
 /*Style 中文 Charaters*/
-
-
+.title {font-stretch: ultra-expanded;} 
+.nav-link.zhnav>a:focus, 
+.nav-link.zhnav>a:hover {
+  background-color: red;}
 /****************************************/
 /****************************************/
 /****************************************/
