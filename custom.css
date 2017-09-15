@@ -34,43 +34,6 @@ div.slide-left h1 {
 
 
 /****************************************/
-/*Glowwy BTNs for Index.html 'Select Language'*/
-.glowwy {
-  background: #000;
-  color: #fff;
-  font-size: 1.6em;
-  font-weight: 600;
-  text-transform: uppercase;
-  box-shadow: 0 0 0 0 #000;
-  animation: glow 1.4s linear infinite;
-  animation-direction: alternate-reverse;
-}
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 0 0 #dc143c;
-  }
-  50% {
-    box-shadow: 0 0 30px 0 #dc143c;
-  }
-}
-.glowwy2 {
-  background: #000;
-  color: #fff;
-  font-size: 1.6em;
-  font-weight: 900;
-  text-transform: uppercase;
-  box-shadow: 0 0 0 0 #000;
-  animation: glow 1.4s linear infinite;
-  animation-direction: alternate;
-}
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 0 0 #dc143c;
-  }
-  50% {
-    box-shadow: 0 30px 0 0 #dc143c;
-  }
-}
 /*BTNs for About.html 'Services'*/
 .btn-outline-dark:hover {
   color: #fff;    /*Black Text on 'Hover'*/
@@ -129,79 +92,12 @@ div.slide-left h1 {
   background-attachment: fixed;*/
 }
 .languageSelection {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .languageSelection h4 {
   color: #fff;
 }
 
-/*Title Border Highlight*/
-h1.outline {
-  -webkit-text-stroke: 1px #fff;
-}
-/*Title Glow*/
-.glow {
-  animation: glow 2s ease-in-out both infinite;
-}
-.glow:nth-child(1) {
-  animation-delay: -0.28571429s;
-}
-.glow:nth-child(2) {
-  animation-delay: -0.57142857s;
-}
-.glow:nth-child(3) {
-  animation-delay: -0.85714286s;
-}
-.glow:nth-child(4) {
-  animation-delay: -1.14285714s;
-}
-.glow:nth-child(5) {
-  animation-delay: -1.42857143s;
-}
-.glow:nth-child(6) {
-  animation-delay: -1.71428571s;
-}
-.glow:nth-child(7) {
-  animation-delay: -2s; 
-}
-.glow:nth-child(8) {
-  animation-delay: -2.25s; 
-}
-.glow:nth-child(9) {
-  animation-delay: -2.60s; 
-}
-.glow:nth-child(10) {
-  animation-delay: -2.90s; 
-}
-.glow:nth-child(11) {
-  animation-delay: -3.2s; 
-}
-.glow:nth-child(12) {
-  animation-delay: -3.5s; 
-}
-.glow:nth-child(13) {
-  animation-delay: -2s; 
-}
-.glow:nth-child(14) {
-  animation-delay: -3.8s; 
-}
-.glow:nth-child(15) {
-  animation-delay: -4.1s; 
-}
-.glow:nth-child(16) {
-  animation-delay: -4s; 
-}
-@keyframes glow {
-  0%, 100% {
-    text-shadow: 0 0 8.33333333px snow, 0 -25px 50px grey, -25px 25px 50px white, 25px 25px 50px grey;
-  }
-  33% {
-    text-shadow: 0 0 8.33333333px snow, 0 -25px 50px white, -25px 25px 50px black, 25px 25px 50px white;
-  }
-  66% {
-    text-shadow: 0 0 8.33333333px snow, 0 -25px 50px black, -25px 25px 50px black, 25px 25px 50px black;
-  }
-}
 
 
 
