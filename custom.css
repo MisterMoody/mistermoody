@@ -2,12 +2,10 @@
 /************ GLOBAL STYLES ************/
 /***************************************/
 
-/************   ************/
-/***************************************/
 
-
-/********************/
-/* Main Navigation */
+/************************/
+/* [1]  MAIN NAVIGATION */
+/************************/
 .navbar {
   background: #fff;
 }
@@ -28,62 +26,24 @@ div.slide-left h1 {
     width: 100%;
   }
 }
+/************************/
 
 
-/* Footer *
 
-
-/****************************************/
-/*BTNs for About.html 'Services'*/
-.btn-outline-dark:hover {
-  color: #fff;    /*Black Text on 'Hover'*/
-  box-shadow: inset 0 0 0 5px #000;  /*Border Inset*/
-} 
 /***************************************/
-/*BTN 'Transitions' on 'Services Cards*/
-.special {
-  transition: all 0.3s;
-  cursor: pointer;
-}
-.special span {
-  cursor: crosshair;
-  display: inline-block;
-  position: relative;
-  transition: 0.3s;
-}
-.special span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.3s;
-}
-.special:hover span {
-  padding-right: 25px;
-}
-.special:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-/*Code Offered @ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1*/
-/*More examples at https://freebiesupply.com/blog/css-button-hoever-effects/*/
 /***************************************/
-
-
-
+/***************************************/
 
 
 /***************************************/
 /* ********** HOME PAGE ************** */
 /***************************************/
 
-
-/*Jumbotron Background Image for index.html*/
+/*JUMBOTRON BACKGROUND IMAGE = index.html*/
 .jumbotron {
   width: 100%;
   height: 550px; /* Use % or ###px Value*/
-  background-image: url(img/seoul.png);
+  background-image: url(img/tailor.jpg);
   background-repeat: no-repeat;
   /*background-position: 200% 100%;
   padding: 200px 0 140px 0;*/
@@ -91,16 +51,19 @@ div.slide-left h1 {
   background-size: cover; 
   background-attachment: fixed;*/
 }
-.languageSelection {
-  margin-top: 100px;
+/*Title*/
+.title {color: #fff;}
+/*Nav Phone Number > Reposition to the Left to Align with Content*/
+.navPhone {
+  position: absolute;
+  left: 15px;
 }
-.languageSelection h4 {
-  color: #fff;
+/*Jumbotron BUTTON to 'Learn More' with Scroll-Transition to next Section*/
+.jtBtn {
+  position: absolute;
+  left: auto;
+  bottom: 50px;
 }
-
-
-
-
 /****************************************/
 /* ********** ABOUT PAGE ************** */
 /****************************************/
@@ -135,16 +98,7 @@ div.slide-left h1 {
   background: url(img/tailor.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
-  background-position: 100% top;
-  background-attachment: fixed;
-}
-.parallaxBG4 {
-  width: 100%;
-  height: 100vh;
-  background: url(img/unbeatenpath.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: 100% top;
+  background-position: center;
   background-attachment: fixed;
 }
 .parallaxBG5 {
@@ -178,17 +132,15 @@ div.slide-left h1 {
   shape-outside: circle();
 }
 
-/*Table*/
+
 
 /*Nav Tabs*/
 a.nav-item {
   color: #000;
 }
-a.nav-item:hover {}
 
 
 /*中国人 About Page Styles*/
-
 /*Style 中文 Charaters*/
 .title {font-stretch: ultra-expanded;} 
 .nav-link.zhnav>a:focus, 
