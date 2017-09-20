@@ -47,7 +47,7 @@
     <!-- ** NAVBAR *** -->
     <nav class="navbar sticky-top navbar-expand-md navbar-toggleable-sm navbar-light"> 
       <a class="navbar-brand" href="#"><img src="..." width="30" height="30" class="d-inline-block align-top" alt="">
-        <span class="font-weight-bold navPhone"><i class="fa fa-phone-square d-lg-inline-block"></i> +1) 502 558 9240 </span>
+        <span class="font-weight-bold navPhone pl-1"><i class="fa fa-phone-square d-lg-inline-block"></i> +1) 502 558 9240 </span>
       </a>
       <button class="navbar-toggler navbar-toggler-right b" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -55,15 +55,11 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto"> <!-- Use "ml-auto" for Right Side Alignment-->
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="zh.html">中文</a>
           </li>
           <!--<li class="nav-item">
             <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
-          </li>-->
-          <li class="nav-item">
-            <a class="nav-link" href="zh.html">中文</a>
           </li>
-          <!--
           <li class="nav-item">
             <a class="nav-link" href="#">Portfolio</a>
           </li>
@@ -74,7 +70,7 @@
               <a class="dropdown-item" href="#">CLIL</a>
             </div>
           </li>
-          -->
+          --> <!-- HIDDEN Nav Items -->
         </ul>
       </div>
      </nav>
@@ -87,7 +83,7 @@
     <div class="container" id="introduction">
       
       <!-- INTRODUCTION Row -->
-      <div class="row mb-5">
+      <div class="row mt-5 mb-5">
         <!-- Page Title // Introduction -->
         <div class="col-md-8 mt-5 mb-5">
           <h1 class="text-center text-uppercase font-weight-bold mb-2"></h1>
@@ -96,8 +92,8 @@
           </p>
           <!-- BTN ROW = SRCOLL >> What I Do / DOWNLOAD CV -->
           <div class="row">
-            <div class="col pt-3 text-center justify-space-between cursor">
-              <a class="btn btn-outline-dark btn-lg text-uppercase" href="#services">What I Do</a >
+            <div class="col pt-3 text-center justify-space-between">
+              <a class="btn btn-outline-dark btn-lg text-uppercase cursor" href="#services">What I Do</a >
               <a class="btn btn-outline-dark btn-lg text-uppercase cursor" src="moodyCV.docx" href="moodyCV.docx" alt="Download My Resume">Download CV</a>
             </div>
           </div>
@@ -122,7 +118,7 @@
           </dl>
           <dl>
             <dt>
-            <span class="h5"><i class="fa fa-envelope d-none d-lg-inline-block"></i> Email</span><span class="pull-right">info @ mistermoody.com</span>
+              <span class="h5"><i class="fa fa-envelope d-none d-lg-inline-block"></i> Email</span><a href="mailto:principal@mistermoody.com"><span class="pull-right">Copy Email Address</span></a>
             </dt>
           </dl>
           <dl>
@@ -148,9 +144,105 @@
         <!-- -->       
       </div>
       <!-- -->
+      <!-- TRAINING & SKILLS Row -->
+      <div class="row mb-5">
+        <!-- Education (Training) -->
+        <div class="col-md-6 mb-3">
+          <h3 class="text-center text-uppercase font-weight-bold">Training</h3>
+          <dl class="mt-4">
+            <dt><span class="badge badge-dark">2015</span> Web Development Training</dt>
+            <dd>&lt;Code&gt; Louisville / Treehouse<small class="float-right text-muted">America</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2011</span> Mandarin Language Training</dt>
+            <dd>Shanghai Ocean University<small class="float-right text-muted">China</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2010</span> Office Specialist Training</dt>
+            <dd>Microsoft<small class="float-right text-muted">Online</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2007</span> TEFL Teacher Training</dt>
+            <dd>International TEFL Teacher Training, Inc.<small class="float-right text-muted">Thailand</small> </dd>
+          </dl>
+          <dl>
+            <dt><span class="badge badge-dark">2003</span> B.A. Political Science</dt>
+            <dd>the University of Louisville<small class="float-right text-muted">America</small> </dd>
+          </dl>
+        </div> 
+        <!-- -->
+        <!-- Skillset - "Progress Bars" -->
+        <div class="col-md-6 mb-3">
+          <h3 class="text-center text-uppercase font-weight-bold">Skills</h3>
+          <!-- User Interface -->
+          <dl class="mt-4">
+            <dt class="border-0">
+              <div class="progress">
+                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 73%; height: 26px;" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"> 
+                  User Interface Design </div>
+              </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">73%</span>
+              <small class="text-muted"> HTML5, CSS3, Bootstrap, Foundation</small> 
+            </dd>
+          </dl>
+          <!-- User Experience -->
+          <dl>
+            <dt class="border-0">
+              <div class="progress">
+                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 62%; height: 26px;" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100">User Experience Design</div>
+              </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">62%</span>
+              <small class="text-muted">JavaScript, jQuery, Node, npm, Express, Jade </small> 
+            </dd>
+          </dl>
+          <!-- Project Management -->
+          <dl>
+            <dt class="border-0">
+              <div class="progress">
+                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 81%; height: 26px;" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">Project Management</div>
+              </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">81%</span>
+              <small class="text-muted">Brackets, Git, SEO, Code Validation, WAI-Aria</small> 
+            </dd>
+          </dl>
+          <!-- Writing & Editing -->
+          <dl>
+            <dt class="border-0">
+              <div class="progress">
+                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 95%; height: 26px;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Writing &amp; Editing </div>
+              </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark font-weight-bold">95%</span>
+              <small class="text-muted">Communication, Copy, Creative, Research</small> 
+            </dd>
+          </dl>
+          <!-- Interpersonal -->
+          <dl>
+            <dt class="border-0">
+              <div class="progress">
+                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 90%; height: 26px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Interpersonal</div>
+                </div>
+            </dt>
+            <dd>
+              <span class="badge badge-dark">90%</span>
+              <small class="text-muted">Consistent, Energetic, Flexible, Organized</small> 
+            </dd>
+          </dl>
+        </div> 
+        <!-- -->
+      </div>
+      <!-- -->
+      
       <!-- SERVICES Row -->
-      <div class="row mb-3" id="services">
-      <div class="col-12">
+      <div class="row mt-5 mb-3" id="services">
+        <div class="col-12">
           <h3 class="text-center text-uppercase font-weight-bold">What I Do</h3>
         </div>
         <div class="card-deck">
@@ -200,6 +292,7 @@
     </div>
     <!-- ***************************************** -->
 
+     
     
     <!-- ************ -->
     <!-- ** FOOTER ** -->
