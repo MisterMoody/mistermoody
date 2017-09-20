@@ -6,6 +6,9 @@
 body {
   overflow-x: hidden;
 }
+.container {
+  padding: 1em;
+}
 /*  */
 
 /*  */
@@ -169,8 +172,9 @@ animation-duration:2s;
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
 }
-.arrow {background-color: transparent;}         /*Remove Arrow-BTN Background Color*/
-.arrow:hover {background-color: transparent;}   /*      ""      ""      on :Hover*/
+/*Remove Arrow-BTN BG-Color*/
+.arrow {background-color: transparent;}         
+.arrow:hover {background-color: transparent;}
 /*  */
 /***************************************/
 /***************************************/
