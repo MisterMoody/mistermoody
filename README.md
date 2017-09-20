@@ -1,5 +1,5 @@
 # Homepage for Mister Moody
-Site currently being Developed (July 28 2017)
+Final Draft, Ready for Production (20 Sept 2017)
 
 ## Keys to Success
 1. Outline HTML
