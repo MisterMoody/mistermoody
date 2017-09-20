@@ -6,7 +6,7 @@
 body {overflow-x: hidden;}
 
 /*Custom SCROLLBAR*/
-/* Let's get this party started */
+/*  */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -25,6 +25,10 @@ body {overflow-x: hidden;}
 	background: rgba(0,0,0,0.8); 
 }
 
+/*CURSOR on Hover for Button-Objects*/
+.cursor {
+  cursor: crosshair;
+}
 
 /************************/
 /* [1]  MAIN NAVIGATION */
@@ -55,7 +59,7 @@ body {overflow-x: hidden;}
   padding: 200px 0 140px 0;*/
   margin-bottom: -1px;
   background-size: cover; 
-  background-attachment: fixed;*/
+  background-attachment: fixed;
 }
 /**/
 /*JUMBOTRON-TITLE*/
@@ -103,7 +107,7 @@ h1.title {
 .bounce {
   position: absolute;
   left: auto;
-  bottom: 50px;
+  bottom: 88px;
   -webkit-animation-name: bounce;
   -moz-animation-name: bounce;
   animation-name: bounce;
@@ -144,6 +148,7 @@ animation-duration:2s;
 .arrow {background-color: transparent;}         /*Remove Arrow-BTN Background Color*/
 .arrow:hover {background-color: transparent;}   /*      ""      ""      on :Hover*/
 /**/
+/**/
 /*NAVIGATION-PHONE NUMBER > Reposition to the Left to Align with Content*/
 .navPhone {
   position: absolute;
@@ -155,14 +160,8 @@ animation-duration:2s;
 
 
 
-
-
-
-
-
-
 /****************************************/
-/* ********** ABOUT PAGE ************** */
+/* ***** 中文.index Page Styles ******** */
 /****************************************/
 
 /*Parallax Styles for 中国人 HOME zh.html*/
@@ -220,12 +219,15 @@ animation-duration:2s;
   shape-outside: circle();
 }
 
-
-
 /*Nav Tabs*/
 a.nav-item {
   color: #000;
 }
+
+
+
+
+
 
 
 /*中国人 About Page Styles*/
