@@ -3,18 +3,21 @@
 /***************************************/
 
 /*PAGE OVERFLOW - Hides Horizontal-Overflow & SCROLLBAR*/
-body {overflow-x: hidden;}
-
-/*Custom SCROLLBAR*/
+body {
+  overflow-x: hidden;
+}
 /*  */
+
+/*  */
+/*CUSTOM SCROLLBAR*/
 ::-webkit-scrollbar {
     width: 12px;
 }
-/* Track */
+/* SB TRACK */
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
 }
-/* Handle */
+/* SB HANDLE */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 8px;
     border-radius: 8px;
@@ -24,32 +27,53 @@ body {overflow-x: hidden;}
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(0,0,0,0.8); 
 }
+/*  */
 
-/*CURSOR on Hover for Button-Objects*/
-.cursor {
-  cursor: crosshair;
-}
-
-/************************/
-/* [1]  MAIN NAVIGATION */
-/************************/
+/*  */
+/*NAVIGATION-BACKGROUND COLOR*/
 .navbar {
   background: #fff;
+  margin-top: -3px;;
 }
-/************************/
+/*  */
+/*NAVIGATION-PHONE NUMBER > Reposition Align Left of Content*/
+.navPhone {
+  position: absolute;
+  left: 15px;
+}
+/*  */
+/*NAV & BUTTON ANCHOR-LINK STYLES*/
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #ad0000;
+  text-decoration: none;
+}
+.btn-outline-dark:hover {
+  background-color: #ad0000;
+  border-color: #fff;
+}
+/*  */
 
+/*  */
+/*IMAGE TEXT-WRAPPER*/
+.img-wrap {
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%;
+  background-color: green;
+  margin: 0 25px 5px 0;
+  float: left;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+/*  */
 
-/***************************************/
-/***************************************/
-/***************************************/
-
-
-/***************************************/
-/* ********** HOME PAGE ************** */
-/***************************************/
-
-/***************************************/
-/*JUMBOTRON-BACKGROUND IMAGE = index.html*/
+/*  */
+/*JUMBOTRON-BACKGROUND IMAGE */
 .jumbotron {
   width: 100%;
   height: 550px; /* Use % or ###px Value*/
@@ -61,7 +85,7 @@ body {overflow-x: hidden;}
   background-size: cover; 
   background-attachment: fixed;
 }
-/**/
+/*  */
 /*JUMBOTRON-TITLE*/
 h1.title {
   /*font-family: 'Metamorphous', cursive;   Nedd to add a Google Font to <html>*/
@@ -102,12 +126,12 @@ h1.title {
   75%{transform: scale(1.1,1.1);}
   100%{transform: scale();}
 }
-/**/
+/*  */
 /*JUMBOTRO-BUTTON to 'Learn More'*/
 .bounce {
   position: absolute;
   left: auto;
-  bottom: 88px;
+  bottom: 62px;
   -webkit-animation-name: bounce;
   -moz-animation-name: bounce;
   animation-name: bounce;
@@ -147,117 +171,9 @@ animation-duration:2s;
 }
 .arrow {background-color: transparent;}         /*Remove Arrow-BTN Background Color*/
 .arrow:hover {background-color: transparent;}   /*      ""      ""      on :Hover*/
-/**/
-/**/
-/*NAVIGATION-PHONE NUMBER > Reposition to the Left to Align with Content*/
-.navPhone {
-  position: absolute;
-  left: 15px;
-}
+/*  */
+/***************************************/
 /***************************************/
 
-
-
-
-
-/****************************************/
-/* ***** 中文.index Page Styles ******** */
-/****************************************/
-
-/*Parallax Styles for 中国人 HOME zh.html*/
-.wrapper {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-.parallaxBG {
-  width: 100%;
-  height: 500px;
-  background: url(img/wuzhen.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: 100% top;
-  background-attachment: fixed;
-}
-.parallaxBG3 {
-  width: 100%;
-  height: 100vh;
-  background: url(img/tailor.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position: center;
-  background-attachment: fixed;
-}
-.parallaxBG5 {
-  width: 100%;
-  height: 100vh;
-  background: url(img/farewell.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% top; 
-  background-attachment: fixed;
-}
-.content {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-}
-.content h1 {
-  text-align: center;
-}
-
-
-/*Text Wrap around Image*/
-.img-wrap {
-  height: 20vw;
-  width: 20vw;
-  border-radius: 50%;
-  background-color: green;
-  margin: 0 25px 5px 0;
-  float: left;
-  -webkit-shape-outside: circle();
-  shape-outside: circle();
-}
-
-/*Nav Tabs*/
-a.nav-item {
-  color: #000;
-}
-
-
-
-
-
-
-
-/*中国人 About Page Styles*/
-/*Style 中文 Charaters*/
-.title {font-stretch: ultra-expanded;} 
-.nav-link.zhnav>a:focus, 
-.nav-link.zhnav>a:hover {
-  background-color: red;}
-/****************************************/
-/****************************************/
-/****************************************/
-/* ======== MEDIA QUERIES ======== */
-/*No media query since this is the default in Bootstrap*/
-
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575px) { ... }
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767px) { ... }
-/*Nav Phone Number > Reposition to the Left to Align with Content*/
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px) { ... }
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) { ... }
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
-/****************************************/
-/****************************************/
 
 
