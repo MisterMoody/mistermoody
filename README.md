@@ -1,8 +1,18 @@
-# Homepage for Mister Moody
-Site currently being Developed (July 28 2017)
+# CSS3 Grid Layout for QUIZ
+
 
 ## Keys to Success
-1. Outline HTML
-2. Dress It Up With CSS
-3. Lights, Camera, Action for JavaScript
+1. Create Solid Markup using 
+[link](http://en.wikipedia.org/wiki/Markdown)
+
+# Heading         for <h1> tags  
+##                for <h2> tags  
+###               for <h3> tags  
+
+*Bullet List  
+
+1. Unordered List
+
+A [link](http://example.com)  
+
 
