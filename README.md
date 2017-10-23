@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # CSS3 Grid Layout for QUIZ
 
+=======
+# Homepage for Mister Moody
+Final Draft, Ready for Production (20 Sept 2017)
+>>>>>>> fec3fa2a086efdab90b04bad2c1ce429fe90ded1
 
 ## Keys to Success
 1. Create Solid Markup using 
