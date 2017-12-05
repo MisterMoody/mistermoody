@@ -37,8 +37,7 @@
   <!-- ************* -->     
   <!-- ** NAVBAR *** -->
   <nav class="navbar sticky-top navbar-expand-md navbar-toggleable-sm navbar-light bg-white"> 
-    <a class="navbar-brand"><img src="..." width="30" height="30" class="d-inline-block align-top" alt="">
-    <span class="font-weight-bold navPhone pl-1">Mister Moody</span>
+    <a class="navbar-brand"><span class="font-weight-bold navPhone pl-1">Mister Moody</span><img src="..." width="30" height="30" class="d-inline-block align-top" alt="">
     <!--<span class="font-weight-bold navPhone pl-1"><i class="fa fa-phone d-lg-inline-block"></i> +1.502.644.1805 </span>-->
     </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,14 +81,15 @@
   <!-- ==================== -->
   <!-- JUMBOTRON -->
   <div class="jumbotron jumbotron-fluid bg-danger text-white">
-    <div class="container text-center p-t-3">
-      <h1 class="display-3 mt-5">Mister Moody</h1>
-      <h4 class="mb-5">Web Implementation Strategist</h4>
+    <div class="container text-center">
+      <h1 class="display-3 ">Mister Moody</h1>
+      <h4 class="">Web Developer</h4>
+      <h4 class="mb-4">TEFL Strategist</h4>
       <!-- CONTACT ME / Download CV -->
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-dark btn-lg" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><span class="h3">Get In Touch</span></button>
+            <button type="button" class="btn btn-dark btn-lg" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><span class="h3">Hire Me</span></button>
             <button><a class="btn btn-dark" src="moodyCV.docx" title="Download My Resume" href="moodyCV.docx" alt="Download My Resume">
             <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i>
             <span class="h3"> CV</span>   
@@ -167,7 +167,7 @@
           <h1 class="text-center text-uppercase">Who I Is</h1>
         </div>
         <div class="col-lg-7">
-          <p class="attention"><img src="img/study.png" class="img-wrap" alt="JXS"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></p>
+          <p class="attention"><img src="img/study.jpg" class="img-wrap" alt="Mister Moody"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></p>
 
         </div>
         <!-- -->
@@ -232,7 +232,7 @@
                 </div>
               </div>
           <div class="skillSpecs">
-            <p>HTML | CSS | WAI-Aria Accessibility</p>
+            <p>HTML | CSS | WAI-Aria</p>
           </div>
           
           <div class="SkillBar">
@@ -252,7 +252,7 @@
               </div>
             </div>
           <div class="skillSpecs">
-            <p>Version Control | SFTP Management</p>
+            <p>Version Control | Host | SFTP </p>
           </div>
           
           <div class="SkillBar">
@@ -262,7 +262,7 @@
             </div>
             </div>
           <div class="skillSpecs">
-            <p>Creative | AP &amp; MLA Style | Research</p>
+            <p>Creative | AP &amp; MLA Style</p>
           </div>
           
           <div class="SkillBar">
@@ -335,10 +335,10 @@
     <div class="container">
       <div class="row justify-content no-gutters clearfix">
         <!-- Copyright Mister Moody -->
-        <div class="col-auto mr-auto">
+        <div class="col-auto">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link disabled"><small>&#169;2017</small> <span class="d-none d-small-block"> Made with <i class="fa fa-heart"></i> by </span>Mister Moody.</a>
+              <a class="nav-link disabled"><small>&#169;<span class="d-none d-sm-inline-block">2017</span></small> <span class="d-none d-sm-inline-block"> Made with <i class="fa fa-heart"></i> by </span>Mister Moody.</a>
             </li>
           </ul>
         </div>
@@ -389,7 +389,7 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header bg-outline-danger text-danger">
-						<h5 class="modal-title" id="exampleModalLabel">Have an idea? Lets talk about it!</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Have an idea or job offer? Lets talk about it!</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -411,7 +411,7 @@
 							<hr class="mb-2">
 						  <div class="form-group">
                 <label class="sr-only" for="textarea">Write a Note</label>
-                <textarea name="message" type="text" value="" required aria-required="true"  class="form-control" rows="4" maxlength="5000" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have." class="form-control" placeholder="Share Your Thoughts" id="textarea" rows="3"></textarea>
+                <textarea name="message" type="text" value="" required aria-required="true"  class="form-control" rows="4" maxlength="5000" aria-describedby="prospectiveMSG" title="Please write a detailed message describing employment opportunities or a project (including scope, timetable, etc.) that you would like to collaborate on." class="form-control" placeholder="Share Your Thoughts" id="textarea" rows="3"></textarea>
               </div>
               <!-- -->
 							<button type="submit" type="submit" name="submit" value="Submit" class="btn btn-outline-danger btn-lg">Send</button>
