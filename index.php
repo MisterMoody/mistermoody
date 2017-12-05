@@ -90,10 +90,10 @@
         <div class="col-md-12 text-center">
           <div class="btn-group">
             <button type="button" class="btn btn-dark btn-lg" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><span class="h3">Get In Touch</span></button>
-            <button class="btn btn-dark" src="moodyCV.docx" title="Download My Resume" href="moodyCV.docx" alt="Download My Resume">
+            <button><a class="btn btn-dark" src="moodyCV.docx" title="Download My Resume" href="moodyCV.docx" alt="Download My Resume">
             <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i>
             <span class="h3"> CV</span>   
-            </button>
+            </a></button>
           </div>
         </div>
       </div>
@@ -344,7 +344,7 @@
         </div>
         <!-- Github & Twitter Links-->
         <div class="col-auto">
-          <a class="btn btn-outline-dark btn-sm" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i></a>
+          <a class="btn btn-outline-dark btn-sm" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i></a>
           <a class="btn btn-outline-dark btn-sm" href="https://github.com/MisterMoody" alt="Github" target="_blank" title="Check Out My Work on Github">
           <i class="fa fa-github-alt fa-1x" aria-hidden="true"></i></a>
           <a class="btn btn-outline-dark btn-sm" href="https://twitter.com/Mister_Moody" alt="Twitter" target="_blank" title="Follow Me on Twitter">
