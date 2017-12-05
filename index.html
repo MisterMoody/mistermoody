@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <title>Mister Moody | Web Developer</title>
     <meta name="author" content="Ray Moody" />
-    <meta name='description' content='Mister Moody: Web Developer and Copy Writer Based in Louisville Kentucky' />
+    <meta name='description' content='Mister Moody: Web Developer Based in Louisville Kentucky' />
     <meta name="keywords" content="Mister Moody, Web Developer, TEFL Consultant, ESL, Teacher, Copy Writer, Louisville, Kentucky" />
     <meta name="twitter:title" content="@Mister_Moody" />        
     <meta name="twitter:site" content="http://mistermoody.com" />
     <!-- Browser Tab Icon -->
-    <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded"> 
-    
+    <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">
+
     <!-- *********** CSS Implementations ************ -->
-    <!-- BOOTSTRAP *CDN* Compiled & Minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" type="text/css" href="custom.css">         
-    <!-- Font Awesome Icons-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     
+    <!-- FontAwesome CSS Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Custom Fonts -->   
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+	  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
+  
+    <!-- Custom CSS -->
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  
     <!-- Treehouse ReportCard by Riley Hilliard -->
     <link href="js/reportcard/css/badges.css" rel="stylesheet">
-  </head>
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="100"><!-- Apply 'p-x-0' to Body Tag to Hack Inconsistencies with Padding, especially for Modals-->
   
-  <body>    
-    
-    <!-- ************* -->     
-    <!-- ** NAVBAR *** -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-toggleable-sm navbar-light"> 
-      <a class="navbar-brand"><img src="..." width="30" height="30" class="d-inline-block align-top" alt="">
-        <span class="font-weight-bold navPhone pl-1">Mister Moody</span>
-        <!--<span class="font-weight-bold navPhone pl-1"><i class="fa fa-phone d-lg-inline-block"></i> +1.502.558.9240 </span>-->
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto"> <!-- Use "ml-auto" for Right Side Alignment-->
-          <li class="nav-item active text-right">
-            <a class="nav-link" href="index.html"><i class="fa fa-home d-none d-lg-inline-block"></i></a>
-          </li>
-          <li class="nav-item text-right">
-            <a class="nav-link" href="#whatido">What I Do</a>
-          </li>
-          <li class="nav-item text-right">
-            <a class="nav-link" src="moodyCV.docx" href="moodyCV.docx" alt="Download My Resume">Download CV</a>
-          </li>
-          <li class="nav-item text-right">
-            <a class="nav-link" href="zh.html">中文</a>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+  <!-- ************* -->     
+  <!-- ** NAVBAR *** -->
+  <nav class="navbar sticky-top navbar-expand-md navbar-toggleable-sm navbar-light bg-white"> 
+    <a class="navbar-brand"><img src="..." width="30" height="30" class="d-inline-block align-top" alt="">
+    <span class="font-weight-bold navPhone pl-1">Mister Moody</span>
+    <!--<span class="font-weight-bold navPhone pl-1"><i class="fa fa-phone d-lg-inline-block"></i> +1.502.644.1805 </span>-->
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto"> <!-- Use "ml-auto" for Right Side Alignment-->
+        <li class="nav-item active text-right">
+          <a class="nav-link" href="#home"><i class="fa fa-home d-none d-lg-inline-block"></i></a>
+        </li>
+        <li class="nav-item text-right">
+          <a class="nav-link" href="#whatido">What I Do</a>
+        </li>
+        <li class="nav-item text-right">
+          <a class="nav-link" href="#whoiis">Who I Is</a>
+        </li>
+        <li class="nav-item text-right">
+          <a class="nav-link" href="zh.html">中文</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Portfolio</a>
@@ -65,50 +73,130 @@
             </div>
           </li>
           --> <!-- HIDDEN Nav Items -->
-        </ul>
+      </ul>
+    </div>
+  </nav>
+  <!-- END of NAVBAR -->
+  <!-- ************* -->
+  
+
+  <!-- ==================== -->
+  <!-- JUMBOTRON -->
+  <div class="jumbotron jumbotron-fluid bg-danger text-white">
+    <div class="container text-center p-t-3">
+      <h1 class="display-3 mt-5">Mister Moody</h1>
+      <h4 class="mb-5">Web Implementation Strategist</h4>
+      <!-- CONTACT ME / Download CV -->
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-dark btn-lg" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><span class="h3">Get In Touch</span></button>
+            <button class="btn btn-dark" src="moodyCV.docx" title="Download My Resume" href="moodyCV.docx" alt="Download My Resume">
+            <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i>
+            <span class="h3"> CV</span>   
+            </button>
+          </div>
+        </div>
       </div>
-     </nav>
-    <!-- END of NAVBAR -->
-    <!-- ************* -->
-    
-    
-    <!-- ***************************************** -->
-    <!-- ** CONTENT CONTAINER ******************** -->
+      <!-- -->
+    </div>
+  </div>
+  <!-- End of Jumbotron-->
+  <!-- ==================== -->
+  
+  
+  
+  <!-- ******************** --> 
+  <!-- #WHAT I DO  -->
+  <div id="whatido" class="jumbotron jumbotron-fluid bg-white">
     <div class="container">
-      
-      <!-- **************** -->
-      <!-- INTRODUCTION Row -->
-      <div class="row mt-5">
-        <!-- Page Title // Introduction -->
-        <div class="col-lg-8 mb-5">
-          <h1 class="text-center text-uppercase font-weight-bold mb-2"></h1>
-          <p class="mb-5">
-            <img class="img-wrap img-fluid" src="img/me.jpg" alt="Image of Principal Mister Moody">Full-Stack Web Developer. Certified TEFL Instructor. Articulate Communicator. Prolific Writer. Critical Thinker. Problem Solver. Entrepreneur offering personalized assistance to entrepreneurs, microenterprises and institutions of education.
-          </p>
+    <!-- Services ROW-->
+    <div class="row my-3">
+      <div class="col-md-12">
+        <h1 class="text-center text-uppercase">What I Do</h1>
+        <h3 class="">I am a Certified TEFL Instructor and aspiring Web Developer exploring opportunities to work with microenterprises or institutions of education on initiatives that involve building education-centric applications.</h3>
+      </div>
+      <!-- Design -->
+      <div class="col-md-4 mb-2">
+        <div class="card text-white bg-danger">
+          <div class="card-header text-center"><h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Design</h2></div>
+          <div class="card-body">
+            <p class=""><i class="fa fa-check fa-1x" aria-hidden="true"></i> Mobile 1st Approach
+            <br><i class="fa fa-check fa-1x" aria-hidden="true"></i> Asthetically Pleasing
+            <br><i class="fa fa-star fa-1x" aria-hidden="true"></i> Brackets &amp; Bootstrap</p>
+          </div>
+        </div>
+      </div>
+      <!-- Develop -->
+      <div class="col-md-4 mb-2">
+        <div class="card text-white bg-danger">
+          <div class="card-header text-center"><h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Develop</h2></div>
+          <div class="card-body">
+            <p class=""><i class="fa fa-check fa-1x" aria-hidden="true"></i> User-centered
+            <br><i class="fa fa-check fa-1x" aria-hidden="true"></i> Structured IA &#47; DB
+            <br><i class="fa fa-star fa-1x" aria-hidden="true"></i> Xampp-Apache</p>
+          </div>
+        </div>
+      </div>
+      <!-- Deploy -->
+      <div class="col-md-4 mb-2">
+        <div class="card text-white bg-danger">
+          <div class="card-header text-center"><h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Deploy</h2></div>
+          <div class="card-body">
+            <p class=""><i class="fa fa-check fa-1x" aria-hidden="true"></i> Test &amp; Debug
+            <br><i class="fa fa-check fa-1x" aria-hidden="true"></i> Server Configuration
+            <br><i class="fa fa-star fa-1x" aria-hidden="true"></i> Github &amp; Filezilla</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    </div>
+  </div>
+  <!-- ******************** -->
+  <!-- ******************** -->
+
+  
+  
+  <!-- ******************** --> 
+  <!-- #WHO I IS -->
+  <div id="whoiis" class="jumbotron jumbotron-fluid bg-dark text-white">
+    <div class="container">
+      <!-- Personal Intro -->
+      <div class="row my-5">
+        <div class="col-md-12">
+          <h1 class="text-center text-uppercase">Who I Is</h1>
+        </div>
+        <div class="col-lg-7">
+          <p class="attention"><img src="img/study.png" class="img-wrap" alt="JXS"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></p>
+
         </div>
         <!-- -->
-        <!-- Personal Tidbits -->
-        <div class="col-lg-4 mb-4">
-          <h3 class="text-center text-uppercase font-weight-bold">About Me</h3>
+        <div class="col-lg-5">
           <div class="list-group">
             <dl>
-              <dt class="tidbits">
+              <dt>
                 <span class="h5">Age </span><span class="pull-right">38</span>
               </dt>
             </dl>
             <dl>
-              <dt class="tidbits">
+              <dt>
                 <span class="h5">Nationality </span><span class="pull-right">American</span>
               </dt>
             </dl>
             <dl>
-              <dt class="tidbits">
-                <span class="h5">Hometown </span><span class="pull-right">Louisville, Kentucky</span>
+              <dt>
+                <span class="h5">Location </span><span class="pull-right">Louisville, Kentucky</span>
               </dt>
             </dl>
             <dl>
-              <dt class="tidbits">
-                <span class="h5">Languages: </span><span class="pull-right">English, 中文, Espa&ntilde;ol</span>
+              <dt>
+                <span class="h5">Languages: </span><span class="pull-right">English, 中文</span>
+              </dt>
+            </dl>
+            <dl>
+              <dt>
+                <span class="h5">Contact: </span><span class="pull-right">502.644.1805</span>
               </dt>
             </dl>
             <!-- Social Media Links-->
@@ -128,197 +216,136 @@
             </div><br>
           </div>
         </div>
-        <!-- -->       
+        <!-- -->
+        <!-- -->
       </div>
-      <!-- -->
-      <!-- **************** -->
-  
-      <!-- **************** -->
-      <!-- TRAINING & SKILLS Row -->
-      <div class="row mt-5">
-        <!-- Education (Training) -->
-        <div class="col-md-6 mb-5">
-          <h3 class="text-center text-uppercase font-weight-bold">Training</h3>
-          <dl class="mt-3">
-            <dt>
-              <span class="font-weight-bold">2015</span>
-              <span class="float-right">Web Development Training</span></dt>
-            <dd><span class="text-muted">U.S.A.</span><span class="float-right">&lt;Code&gt; Louisville / Treehouse</span></dd>
-          </dl>
-          <dl>
-            <dt>
-              <span class="font-weight-bold">2011</span>
-              <span class="float-right">Mandarin Language Training</span></dt>
-            <dd><span class="text-muted">China</span><span class="float-right">Shanghai Ocean University</span></dd>
-          </dl>
-          <dl>
-            <dt>
-              <span class="font-weight-bold">2010</span>
-              <span class="float-right">MOS Training</span></dt>
-            <dd><span class="text-muted">Microsoft Online</span><span class="float-right">Microsoft</span></dd>
-          </dl>
-          <dl>
-            <dt><span class="font-weight-bold">2007</span><span class="float-right">TEFL Teacher Training</span></dt>
-            <dd><span class="text-muted">Thailand</span><span class="float-right">ITTT, Inc.</span></dd>
-          </dl>
-          <dl>
-            <dt><span class="font-weight-bold">2003</span><span class="float-right">B.A. Political Science</span></dt>
-            <dd><span class="text-muted">U.S.A.</span><span class="float-right">the University of Louisville</span></dd>
-          </dl>
-        </div> 
-        <!-- -->
-        <!-- Skillset - "Progress Bars" -->
-        <div class="col-md-6 mb-5">
-          <h3 class="text-center text-uppercase font-weight-bold">Skills</h3>
-          <!-- User Interface -->
-          <dl class="mt-3">
-            <dt class="border-0">
-              <div class="progress">
-                <div class="progress-bar bg-dark rounded-0 text-left text-uppercase" role="progressbar" style="width: 73%; height: 26px;" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"> 
-                  User Interface</div>
+      <!-- Skills & Training -->
+      <div class="row my-5">
+        <div class="col-md-12">
+          <h2 class="text-center">Skills and Training</h2>
+        </div>
+        <!-- Skills -->
+        <div class="col-md-6 mb-3">
+          <div class="SkillBar">
+                <div id="Skill-Design">
+                  <span class="Skill-Area">Design</span>
+                  <span class="PercentText">75%</span>
+                </div>
               </div>
-            </dt>
-            <dd>
-              <span class="font-weight-bold">73%</span>
-              <small class="text-muted"> HTML5, CSS3, Bootstrap, Foundation</small> 
-            </dd>
-          </dl>
-          <!-- User Experience -->
-          <dl>
-            <dt class="border-0">
-              <div class="progress">
-                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 62%; height: 28px;" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100">User Experience</div>
+          <div class="skillSpecs">
+            <p>HTML | CSS | WAI-Aria Accessibility</p>
+          </div>
+          
+          <div class="SkillBar">
+              <div id="Skill-Develop">
+                <span class="Skill-Area ">Develop </span>
+                <span class="PercentText ">64%</span>
               </div>
-            </dt>
-            <dd>
-              <span class="font-weight-bold">62%</span>
-              <small class="text-muted">JavaScript, jQuery, Node, npm, Express, PHP </small> 
-            </dd>
-          </dl>
-          <!-- Project Management -->
-          <dl>
-            <dt class="border-0">
-              <div class="progress">
-                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 81%; height: 28px;" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">Project Management</div>
+            </div>
+          <div class="skillSpecs">
+            <p>JavaScript | PHP</p>
+          </div>
+          
+          <div class="SkillBar">
+              <div id="Skill-Deploy">
+                <span class="Skill-Area ">Deploy</span>
+                <span class="PercentText ">81%</span>
               </div>
-            </dt>
-            <dd>
-              <span class="font-weight-bold">81%</span>
-              <small class="text-muted">Brackets, Git, SEO, WAI-Aria Accessibility</small> 
-            </dd>
-          </dl>
-          <!-- Writing & Editing -->
-          <dl>
-            <dt class="border-0">
-              <div class="progress">
-                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 95%; height: 28px;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Writing &amp; Editing </div>
-              </div>
-            </dt>
-            <dd>
-              <span class="font-weight-bold">95%</span>
-              <small class="text-muted">Communication, Copy, Creative, Research</small> 
-            </dd>
-          </dl>
-          <!-- Interpersonal -->
-          <dl>
-            <dt class="border-0">
-              <div class="progress">
-                <div class="progress-bar bg-dark text-left text-uppercase" role="progressbar" style="width: 90%; height: 28px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Interpersonal</div>
-              </div>
-            </dt>
-            <dd>
-              <span class="font-weight-bold">90%</span>
-              <small class="text-muted">Consistent, Energetic, Flexible, Organized</small> 
-            </dd>
-          </dl>
-        </div> 
-        <!-- -->
-        <!-- Treehouse ReportCard -->
+            </div>
+          <div class="skillSpecs">
+            <p>Version Control | SFTP Management</p>
+          </div>
+          
+          <div class="SkillBar">
+            <div id="Skill-Copy">
+              <span class="Skill-Area ">Writing &amp; Editing</span>
+              <span class="PercentText ">95%</span>
+            </div>
+            </div>
+          <div class="skillSpecs">
+            <p>Creative | AP &amp; MLA Style | Research</p>
+          </div>
+          
+          <div class="SkillBar">
+            <div id="Skill-Interpersonal">
+              <span class="Skill-Area ">Interpersonal</span>
+              <span class="PercentText ">88%</span>
+            </div>
+          </div>
+          <div class="skillSpecs">
+            <p>Ethical | Flexible | Organized</p>
+          </div>
+        </div>
+        <!-- Training -->
+        <div class="col-md-6">
+          <table>
+            <tr class="d-flex justify-content-between">
+              <td class="date">2015</td>
+              <td class="train">Web Dev Training</td>
+            </tr>
+            <tr class="d-flex justify-content-between">
+              <td class="place">USA</td>
+              <td class="institution">Treehouse</td>
+            </tr>
+            <tr class="d-flex justify-content-between">
+              <td class="date">2010</td>
+              <td class="train">MOS Training</td>
+            </tr>
+            <tr class="d-flex justify-content-between">
+              <td class="place">Online</td>
+              <td class="institution">Microsoft</td>
+            </tr>
+            <tr class="d-flex justify-content-between">
+              <td class="date">2007</td>
+              <td class="train">TEFL Training</td>
+            </tr>
+            <tr class="d-flex justify-content-between">
+              <td class="place">Thailand</td>
+              <td class="institution">USA</td>
+            </tr>
+            <tr class="d-flex justify-content-between">
+              <td class="date">2003</td>
+              <td class="train">B.A. Political Science</td>
+            </tr>
+            <tr class="d-flex justify-content-between">
+              <td class="place">USA</td>
+              <td class="institution">University of Louisville</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- Treehouse ReportCard -->
+      <section class="row">
         <div class="col-md-12">
           <div class="report-card treehouse"></div>
         </div>
-      </div>
-      <!-- **************** -->
-      
-      <!-- ************ -->
-      <!-- SERVICES Row -->
-      <!-- Insert for 'What I Do' onPage <link> -->
-      <div class="row text-center" id="whatido"></div><br>
-      <!-- What I Do Row -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <h2 class="text-center text-uppercase font-weight-bold">What I Do</h2>
-        </div>
-        <div class="card-deck mb-5">
-          <!-- Web Dev Implementations -->
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-10">
-                    <h5 class="card-title text-uppercase font-weight-bold">Web Implementations</h5>
-                  </div>
-                  <div class="col-2">
-                    <i class="fa fa-code fa-2x" aria-hidden="true"></i>
-                  </div>
-                </div>
-                <p class="card-text text-justify">Self-taught Developer specializing in building dynamic front-end web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. Whether you need a simple portfolio or an elaborate language learning application, I have the knowledge that can guide you in the right direction.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Copy & Proof -->
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-10">
-                    <h5 class="text-uppercase font-weight-bold">Copy &amp; Proof</h5>
-                  </div>
-                  <div class="col-2">
-                    <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true">&nbsp;</i>
-                  </div>
-                </div>
-                <p class="card-text text-justify">Professional researcher with extensive experience proofing essays, fine-tuning TEFL curriculum materials, examining government legislation and consulting educational administrators. I produce clear, concise copy with a creative flare to capture the reader's attention.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ************ -->
-
-
-      <!-- CONTACT ME / Download CV -->
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="btn-group">
-          <a class="btn btn-outline-dark" title="Send Me a Note!" href="contact.php"><span class="h3">Get In Touch</span></a>
-            <a class="btn btn-dark" src="moodyCV.docx" title="Download My Resume" href="moodyCV.docx" alt="Download My Resume">
-            <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i>
-            <span class="h3"> CV</span>   
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- -->
-  
+      </section>
     </div>
-    <!-- ***************************************** -->
-
-    
-    <!-- ************ -->
-    <!-- ** FOOTER ** -->
+  </div>
+  <!-- ******************** -->
+  <!-- ******************** -->
+  
+  <!-- ******************** -->
+  <!-- CALL-to-ACTION  **** -->
+  <!-- ******************** -->
+  <!-- ******************** -->
+  
+  
+  <!-- ******************** -->
+  <!-- FOOTER -->  
     <div class="container">
       <div class="row justify-content no-gutters clearfix">
         <!-- Copyright Mister Moody -->
         <div class="col-auto mr-auto">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link disabled"><small>&#169;2017</small> Mister Moody.</a>
+              <a class="nav-link disabled"><small>&#169;2017</small> <span class="d-none d-small-block"> Made with <i class="fa fa-heart"></i> by </span>Mister Moody.</a>
             </li>
           </ul>
         </div>
         <!-- Github & Twitter Links-->
         <div class="col-auto">
+          <a class="btn btn-outline-dark btn-sm" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i></a>
           <a class="btn btn-outline-dark btn-sm" href="https://github.com/MisterMoody" alt="Github" target="_blank" title="Check Out My Work on Github">
           <i class="fa fa-github-alt fa-1x" aria-hidden="true"></i></a>
           <a class="btn btn-outline-dark btn-sm" href="https://twitter.com/Mister_Moody" alt="Twitter" target="_blank" title="Follow Me on Twitter">
@@ -327,52 +354,100 @@
      </div>
    </div>
     <!-- END of FOOTER --> 
-    <!-- ************ -->
-    
-    
-    <!-- ** jQuery, Popper & BOOTSTRAP *CDN* Compiled and Minified JavaScript ************ -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <!-- ********************************************************************************* -->
-    
-    
-    <!-- Google Map -->
-    <script>
-      function myMap() {
-        var mapCanvas = document.getElementById("map");
-        var myCenter = new google.maps.LatLng(38.2527,-85.785); 
-        var mapOptions = {
-          center: myCenter, 
-          zoom: 5
-        };
-        var map = new google.maps.Map(mapCanvas,mapOptions);
-        var marker = new google.maps.Marker({
-          position: myCenter,
-          animation: google.maps.Animation.BOUNCE
-        });
-        marker.setMap(map);
-      }
-      </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm3j_zGfqLR_5OzOsdQBGcRfciLKboWxo&callback=myMap"></script>
-    <!-- Google Maps API AIzaSyBm3j_zGfqLR_5OzOsdQBGcRfciLKboWxo -->
-    <!-- ********************************************************************************* -->
+    <!-- ************ --> 
+    <!-- /END of CONTAINER-->
+  <!-- ******************** -->
+  <!-- ******************** -->
+  <!-- ============================================================ -->
 
-    
+  
+
+		<!-- ********************************************* -->
+		<!-- ********************************************* -->
+    <!-- -->
+    <!-- PHP Contact Form -->
+    <?php
+    if(isset($_POST["submit"])) {
+        $sender=$_POST["sender"];
+        $senderEmail=$_POST["senderEmail"];
+        $message=$_POST["message"];
+
+        $recipient="raymoody10@gmail.com";
+        $subject="Mister Moody Alert: EMAILS from Prospective Clients";
+        $masilBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+     if ( mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>")) {
+       header('Location: thankyou.html');/*Redirect to 'Thank You' Page*/
+     }        
+    }
+
+    ?>
+    <!-- END of PHP -->
+    <!-- -->
+		<!-- FORM MODAL -->
+		<!-- Modal -->
+		<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header bg-outline-danger text-danger">
+						<h5 class="modal-title" id="exampleModalLabel">Have an idea? Lets talk about it!</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>          
+						<!-- Registration Form -->
+					<div class="modal-body">
+						<form method="post" action="thankyou.html" name="contactForm"  id="need-validation">
+							<!-- (1) User Info-->
+							<div class="form-group">
+								<label class="col-form-label sr-only" for="name">Name:</label>
+								<input type="text" value="" name="sender" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" class="form-control" id="name" placeholder="What is your name?">
+							</div>
+							<div class="form-group">
+								<label class="col-form-label sr-only" for="email">Email</label>
+								<input type="text" value="" name="senderEmail" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required aria-required="true" class="form-control" id="email" placeholder="What is your email?">
+							</div>
+							<!-- -->
+							<!-- (2) Note -->
+							<hr class="mb-2">
+						  <div class="form-group">
+                <label class="sr-only" for="textarea">Write a Note</label>
+                <textarea name="message" type="text" value="" required aria-required="true"  class="form-control" rows="4" maxlength="5000" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have." class="form-control" placeholder="Share Your Thoughts" id="textarea" rows="3"></textarea>
+              </div>
+              <!-- -->
+							<button type="submit" type="submit" name="submit" value="Submit" class="btn btn-outline-danger btn-lg">Send</button>
+							<!-- -->
+						</form>
+						<!-- -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ********************************************* -->
+		<!-- ********************************************* -->			
+ 
+  
+  
     <!-- ********************************************************************************* -->
-    <!-- Contact Form JS -->
-    <script src="contact.js"></script>
+    <!-- ********************************************************************************* --> 
+    <!-- JAVASCRIPT -->
+    <!-- *jQuery before BootstrapJS ALWAYS* -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- BS Popper CDN JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <!-- ********************************************************************************* -->
-    
-    
     <!-- ********************************************************************************* -->
-    <!-- Treehouse Report Card-->
+    <!-- Treehouse Reportcard JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="js/reportcard/js/reportcard.js"></script>
+    <!-- Report Card -->
     <script>$('.report-card.treehouse').reportCard({
             userName: 'mistermoody',
             site: 'treehouse',
             badgesAmount: 7});</script>
+    <!-- ********************************************************************************* -->
     <!-- ********************************************************************************* -->
   </body>
 </html>
