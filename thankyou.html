@@ -12,23 +12,75 @@
     
     <!-- *********** CSS Implementations ************ -->
     <!-- BOOTSTRAP *CDN* Compiled & Minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" type="text/css" href="custom.css">         
+    <link rel="stylesheet" type="text/css" href="zh.css">         
     <!-- Font Awesome Icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   
-  <body>
+  <body class="text-dark">
+      <!-- ************* -->     
+    <!-- ** NAVBAR *** -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-toggleable-sm navbar-light bg-white"> 
+      <a class="navbar-brand"><img src="..." width="30" height="30" class="d-inline-block align-top" alt="">
+      <span class="font-weight-bold navPhone pl-1">Mister Moody</span>
+      <!--<span class="font-weight-bold navPhone pl-1"><i class="fa fa-phone d-lg-inline-block"></i> +1.502.644.1805 </span>-->
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto"> <!-- Use "ml-auto" for Right Side Alignment-->
+          <li class="nav-item active text-right">
+            <a class="nav-link" href="#home"><i class="fa fa-home d-none d-lg-inline-block"></i></a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#whatido">What I Do</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#whoiis">Who I Is</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="zh.html">中文</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">502WEST</a>
+                <a class="dropdown-item" href="#">CLIL</a>
+              </div>
+            </li>
+            --> <!-- HIDDEN Nav Items -->
+        </ul>
+      </div>
+    </nav>
+    <!-- END of NAVBAR -->
+    <!-- ************* -->
+
     
     <!-- **************** -->
     <!-- ** JUMBOTRON **  -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="col-12 text-light thanks">
-        <h1 class="text-uppercase font-weight-bold">Thank You!</h1>
-        <h4 class="font-weight-bold">Your information was submitted. I will respond as soon as possible.</h4>
-        <h4 class="font-weight-bold">You will be redirected to my homepage shortly.</h4>
-      </div> 
+    <div class="jumbotron jumbotron-fluid bg-dark">
+      <div class="container container-fluid">
+        <div class="row">
+          <div class="col-12 text-dark thanks">
+            <div class="card">
+              <div class="card-body">
+                <h1 class="text-uppercase text-center font-weight-bold">Thank You!</h1>
+                <h4 class="font-weight-bold text-justify">Your information was submitted. I will respond as soon as possible. You will be redirected to the homepage now.</h4>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
     </div>
     <!-- **************** -->
     
