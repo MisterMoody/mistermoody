@@ -88,9 +88,6 @@ p {
 dt, dd, .progress-bar, small {
   font-size: 18px;
 }
-/*dt.tidbits {
-  font-size: 1.5vw;
-}*/
 div.progress-bar {
   padding: 2px;
 }
@@ -98,7 +95,7 @@ div.progress-bar {
 
 /*  */
 /*JUMBOTRON-BACKGROUND IMAGE */
-.jumbotron {
+/*.jumbotron {
   background-image: url(img/tailor.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,7 +103,7 @@ div.progress-bar {
   height: 100%;
   width: 100%;
   padding: 10px 20px 20px 10px;
-}
+}*/
 /*FORM*/
 /*input[aria-invalid="true"], textarea[aria-invalid="true"] {
   border: 1px solid #f00;
