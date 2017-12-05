@@ -1,0 +1,190 @@
+/***************************************/
+/************ GLOBAL STYLES ************/
+/***************************************/
+
+/*FONT*/
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  src: url('raleway_thin-webfont.eot'); /*IE9 Compat Modes*/
+  src: url('raleway_thin-webfont.woff');  
+  src: url('raleway_thin-webfont.otf');
+  src: url('raleway_thin-webfont.svg');
+}
+
+/*  */
+/*PAGE OVERFLOW - Hides Horizontal-Overflow & SCROLLBAR*/
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  padding: 1em;
+}
+/*  */
+
+/*  */
+/*CUSTOM SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+/* SB TRACK */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+}
+/* SB HANDLE */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 22px rgba(0,0,0,0.8); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.8); 
+}
+/*  */
+
+/*  */
+/*NAVIGATION-BACKGROUND COLOR*/
+.navbar {
+  background: #fff;
+  margin-top: -3px;;
+}
+/*NAVIGATION-PHONE NUMBER > Reposition Align Left of Content*/
+.navPhone {
+  position: absolute;
+  left: 15px;
+}
+/*NAV & BUTTON ANCHOR-LINK STYLES*/
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #ad0000;
+  text-decoration: none;
+}
+.btn-outline-dark:hover {
+  background-color: #ad0000;
+  border-color: #fff;
+}
+/*  */
+p {
+  font-size: 22px;
+}
+/*  */
+/*IMAGE TEXT-WRAPPER*/
+.img-wrap {
+  height: 35vh;
+  width: 26vh;
+  border-radius: 4%;
+  margin: 0 8px 4px 0;
+  float: left;
+}
+/*  */
+
+/*Skill Progress-Bar*/
+dt, dd, .progress-bar, small {
+  font-size: 18px;
+}
+/*dt.tidbits {
+  font-size: 1.5vw;
+}*/
+div.progress-bar {
+  padding: 2px;
+}
+
+
+/*  */
+/*JUMBOTRON-BACKGROUND IMAGE */
+.jumbotron {
+  background-image: url(img/tailor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px 20px 10px;
+}
+/*FORM*/
+/*input[aria-invalid="true"], textarea[aria-invalid="true"] {
+  border: 1px solid #f00;
+  box-shadow: 0 0 4px 0 #f00;
+}*/ /*?Confusing Validation?*/
+/*THANK YOU = MSG Positioning*/
+.thanks {
+  left: 8px;
+  top: 224px;
+}
+/*
+*/
+
+/*  */
+/***************************************/
+/***************************************/
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .navbar {
+    margin-left: 26px;
+    margin-right: 26px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+  /*THANK YOU = MSG Positioning*/
+  .thanks {
+    left: 35px;
+    top: 24px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  nav.navbar {
+    margin-right: 60px;
+  }
+  .navPhone {
+    position: absolute;
+    left: 44px;
+  }
+  p {
+    font-size: 23px;
+  }
+  /*IMAGE TEXT-WRAPPER*/
+  .img-wrap {
+    height: 34%;
+    width: 32%;
+    border-radius: 4%;
+    margin: 0 8px 4px 0;
+    float: left;
+  }
+  /*Skill Progress-Bar*/
+  dt, dd, .progress-bar, small {
+    font-size: 1.8vw;
+  }
+  dt.tidbits {
+    font-size: 1.5vw;
+  }
+  div.progress-bar {
+    padding: 5px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  nav.navbar {
+  margin-right: 112px;
+  }
+  .navPhone {
+  position: absolute;
+  left: 88px;
+  }
+  p {font-size: 24px;}
+
+}
+
