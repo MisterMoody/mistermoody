@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <title>Mister Moody | Web Developer</title>
+    <title>Mister Moody | Sole-Proprietor</title>
     <meta name="author" content="Ray Moody" />
     <meta name='description' content='Mister Moody: Web Developer Based in Louisville Kentucky' />
     <meta name="keywords" content="Mister Moody, Web Developer, TEFL Consultant, ESL, Teacher, Copy Writer, Louisville, Kentucky" />
@@ -113,7 +113,7 @@
     <div class="row my-3">
       <div class="col-md-12">
         <h1 class="text-center text-uppercase">What I Do</h1>
-        <h3 class="">I am a Certified TEFL Instructor and aspiring Web Developer exploring opportunities to work with entrepreneurs, microenterprises or institutions of education on initiatives that involve building education-centric applications.</h3>
+        <h3 class="">I am a Certified TEFL Instructor and aspiring Web Developer exploring opportunities to work with microenterprises or institutions of education on initiatives that involve building education-centric applications.</h3>
       </div>
       <!-- Design -->
       <div class="col-md-4 mb-2">
@@ -167,7 +167,7 @@
           <h1 class="text-center text-uppercase">Who I Is</h1>
         </div>
         <div class="col-lg-7">
-          <p class="attention"><img src="../img/study.jpg" class="img-wrap" alt="Mister Moody"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></p>
+          <p class="attention"><img src="img/tailor.jpg" class="img-wrap" alt="Mister Moody"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></p>
 
         </div>
         <!-- -->
@@ -338,7 +338,7 @@
         <div class="col-auto">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link disabled"><small>&#169;<span class="d-none d-sm-inline-block">2017</span></small> <span class="d-none d-sm-inline-block"> Made with <i class="fa fa-heart"></i> by </span>Mister Moody.</a>
+              <a class="nav-link disabled"><small>&#169;<span class="d-none d-sm-inline-block">2017</span></small> <span class="d-none d-sm-inline-block"> Made with <i class="fa fa-heart"></i> by </span> Mister Moody.</a>
             </li>
           </ul>
         </div>
