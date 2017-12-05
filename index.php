@@ -113,15 +113,15 @@
     <div class="row my-3">
       <div class="col-md-12">
         <h1 class="text-center text-uppercase">What I Do</h1>
-        <h3 class="">I am a Certified TEFL Instructor and aspiring Web Developer exploring opportunities to work with microenterprises or institutions of education on initiatives that involve building education-centric applications.</h3>
+        <h3 class="">I am a Certified TEFL Instructor and aspiring Web Developer exploring opportunities to work with entrepreneurs, microenterprises or institutions of education on initiatives that involve building education-centric applications.</h3>
       </div>
       <!-- Design -->
       <div class="col-md-4 mb-2">
         <div class="card text-white bg-danger">
           <div class="card-header text-center"><h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Design</h2></div>
           <div class="card-body">
-            <p class=""><i class="fa fa-check fa-1x" aria-hidden="true"></i> Mobile 1st Approach
-            <br><i class="fa fa-check fa-1x" aria-hidden="true"></i> Asthetically Pleasing
+            <p class=""><i class="fa fa-check fa-1x" aria-hidden="true"></i> Mobile Responsive
+            <br><i class="fa fa-check fa-1x" aria-hidden="true"></i> Methodical Research
             <br><i class="fa fa-star fa-1x" aria-hidden="true"></i> Brackets &amp; Bootstrap</p>
           </div>
         </div>
@@ -167,7 +167,7 @@
           <h1 class="text-center text-uppercase">Who I Is</h1>
         </div>
         <div class="col-lg-7">
-          <p class="attention"><img src="img/study.jpg" class="img-wrap" alt="Mister Moody"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></p>
+          <p class="attention"><img src="../img/study.jpg" class="img-wrap" alt="Mister Moody"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></p>
 
         </div>
         <!-- -->
@@ -343,7 +343,7 @@
           </ul>
         </div>
         <!-- Github & Twitter Links-->
-        <div class="col-auto">
+        <div class="col-auto ml-auto">
           <a class="btn btn-outline-dark btn-sm" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i></a>
           <a class="btn btn-outline-dark btn-sm" href="https://github.com/MisterMoody" alt="Github" target="_blank" title="Check Out My Work on Github">
           <i class="fa fa-github-alt fa-1x" aria-hidden="true"></i></a>
