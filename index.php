@@ -300,7 +300,7 @@
             </tr>
             <tr class="d-flex justify-content-between">
               <td class="place">Thailand</td>
-              <td class="institution">USA</td>
+              <td class="institution">ITTT, Inc.</td>
             </tr>
             <tr class="d-flex justify-content-between">
               <td class="date">2003</td>
@@ -338,7 +338,7 @@
         <div class="col-auto">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link disabled"><small>&#169;<span class="d-none d-sm-inline-block">2017</span></small> <span class="d-none d-sm-inline-block"> Made with <i class="fa fa-heart"></i> by </span> Mister Moody.</a>
+              <a class="nav-link disabled"><small>&#169;<span class="d-none d-sm-inline-block"><?php echo date('Y'); ?></span></small> <span class="d-none d-sm-inline-block"> Made with <i class="fa fa-heart"></i> by </span> Mister Moody.</a>
             </li>
           </ul>
         </div>
@@ -447,6 +447,27 @@
             site: 'treehouse',
             badgesAmount: 7});</script>
     <!-- ********************************************************************************* -->
+    <!-- Bootstrap4 Form Validation JS *************************************************** -->
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+
+      window.addEventListener('load', function() {
+        var form = document.getElementById('needs-validation');
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      }, false);
+    })();
+    </script>
     <!-- ********************************************************************************* -->
+    <!-- ********************************************************************************* -->
+  
+  
 </body>
 </html>
