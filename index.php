@@ -78,9 +78,9 @@
   <!-- ************* -->
   
 
-  <!-- ==================== -->
-  <!-- JUMBOTRON -->
-  <div class="jumbotron jumbotron-fluid bg-danger text-white">
+  <!-- ====================================== -->
+  <!-- JUMBOTRON: Intro, Contact, Download CV -->
+  <div class="jumbotron jumbotron-fluid bg-danger">
     <div class="container text-center">
       <h1 class="display-3 ">Mister Moody</h1>
       <h4 class="">Web Developer</h4>
@@ -89,7 +89,7 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="btn-group">
-            <button type="button" class="btn btn-dark btn-lg" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><span class="h3">Hire Me</span></button>
+            <button class="btn btn-dark btn-lg text-white" title="I am available for work!" alt="I am available for work!" ><a href="contact.php"><span class="h3">Hire Me</span></a></button>
             <button><a class="btn btn-dark" src="moodyCV.docx" title="Download My Resume" href="moodyCV.docx" alt="Download My Resume">
             <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i>
             <span class="h3"> CV</span>   
@@ -344,7 +344,7 @@
         </div>
         <!-- Github & Twitter Links-->
         <div class="col-auto ml-auto">
-          <a class="btn btn-outline-dark btn-sm" title="Send Me a Note" alt="Send Me a Note" data-toggle="modal" data-target="#register"><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i></a>
+          <a class="btn btn-outline-dark btn-sm" href="contact.php" title="Hire Me!" alt="Hire Me!" ><i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i></a>
           <a class="btn btn-outline-dark btn-sm" href="https://github.com/MisterMoody" alt="Github" target="_blank" title="Check Out My Work on Github">
           <i class="fa fa-github-alt fa-1x" aria-hidden="true"></i></a>
           <a class="btn btn-outline-dark btn-sm" href="https://twitter.com/Mister_Moody" alt="Twitter" target="_blank" title="Follow Me on Twitter">
@@ -358,72 +358,7 @@
   <!-- ******************** -->
   <!-- ******************** -->
   <!-- ============================================================ -->
-
-  
-
-		<!-- ********************************************* -->
-		<!-- ********************************************* -->
-    <!-- -->
-    <!-- PHP Contact Form -->
-    <?php
-    if(isset($_POST["submit"])) {
-        $sender=$_POST["sender"];
-        $senderEmail=$_POST["senderEmail"];
-        $message=$_POST["message"];
-
-        $recipient="raymoody10@gmail.com";
-        $subject="Mister Moody Alert: EMAILS from Prospective Clients";
-        $masilBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-     if ( mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>")) {
-       header('Location: thankyou.html');/*Redirect to 'Thank You' Page*/
-     }        
-    }
-
-    ?>
-    <!-- END of PHP -->
-    <!-- -->
-		<!-- FORM MODAL -->
-		<!-- Modal -->
-		<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header bg-outline-danger text-danger">
-						<h5 class="modal-title" id="exampleModalLabel">Have an idea or job offer? Lets talk about it!</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>          
-						<!-- Registration Form -->
-					<div class="modal-body">
-						<form method="post" action="thankyou.html" name="contactForm"  id="need-validation">
-							<!-- (1) User Info-->
-							<div class="form-group">
-								<label class="col-form-label sr-only" for="name">Name:</label>
-								<input type="text" value="" name="sender" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" class="form-control" id="name" placeholder="What is your name?">
-							</div>
-							<div class="form-group">
-								<label class="col-form-label sr-only" for="email">Email</label>
-								<input type="text" value="" name="senderEmail" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required aria-required="true" class="form-control" id="email" placeholder="What is your email?">
-							</div>
-							<!-- -->
-							<!-- (2) Note -->
-							<hr class="mb-2">
-						  <div class="form-group">
-                <label class="sr-only" for="textarea">Write a Note</label>
-                <textarea name="message" type="text" value="" required aria-required="true"  class="form-control" rows="4" maxlength="5000" aria-describedby="prospectiveMSG" title="Please write a detailed message describing employment opportunities or a project (including scope, timetable, etc.) that you would like to collaborate on." class="form-control" placeholder="Share Your Thoughts" id="textarea" rows="3"></textarea>
-              </div>
-              <!-- -->
-							<button type="submit" type="submit" name="submit" value="Submit" class="btn btn-outline-danger btn-lg">Send</button>
-							<!-- -->
-						</form>
-						<!-- -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- ********************************************* -->
-		<!-- ********************************************* -->			
+	
  
   
   
