@@ -80,16 +80,20 @@
 
   <!-- ====================================== -->
   <!-- JUMBOTRON: Intro, Contact, Download CV -->
-  <div class="jumbotron jumbotron-fluid bg-danger">
+  <div class="jumbotron jumbotron-fluid bg-danger text-white">
     <div class="container text-center">
       <h1 class="display-3 ">Mister Moody</h1>
-      <h4 class="">Web Developer</h4>
-      <h4 class="mb-4">TEFL Strategist</h4>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <h4 class="col-md-4 glow">Web Developer</h4>
+        <h4 class="mb-4 col-md-4 glow">TEFL Strategist</h4>
+        <div class="col-md-2"></div>
+      </div>
       <!-- CONTACT ME / Download CV -->
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="btn-group">
-            <button class="btn btn-dark btn-lg text-white" title="I am available for work!" alt="I am available for work!" ><a href="contact.php"><span class="h3">Hire Me</span></a></button>
+            <button class="btn btn-dark btn-lg" title="I am available for work!" alt="I am available for work!" ><a href="contact.php"><span class="h3 text-white">Hire Me</span></a></button>
             <button><a class="btn btn-dark" src="moodyCV.docx" title="Download My Resume" href="moodyCV.docx" alt="Download My Resume">
             <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i>
             <span class="h3"> CV</span>   
@@ -118,7 +122,7 @@
       <!-- Design -->
       <div class="col-md-4 mb-2">
         <div class="card text-white bg-danger">
-          <div class="card-header text-center"><h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Design</h2></div>
+          <div class="card-header text-center"><h2><i class="fa fa-code" aria-hidden="true"></i> Design</h2></div>
           <div class="card-body">
             <p class=""><i class="fa fa-check fa-1x" aria-hidden="true"></i> Mobile Responsive
             <br><i class="fa fa-check fa-1x" aria-hidden="true"></i> Methodical Research
@@ -129,7 +133,7 @@
       <!-- Develop -->
       <div class="col-md-4 mb-2">
         <div class="card text-white bg-danger">
-          <div class="card-header text-center"><h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Develop</h2></div>
+          <div class="card-header text-center"><h2><i class="fa fa-cogs" aria-hidden="true"></i> Develop</h2></div>
           <div class="card-body">
             <p class=""><i class="fa fa-check fa-1x" aria-hidden="true"></i> User-centered
             <br><i class="fa fa-check fa-1x" aria-hidden="true"></i> Structured IA &#47; DB
@@ -140,7 +144,7 @@
       <!-- Deploy -->
       <div class="col-md-4 mb-2">
         <div class="card text-white bg-danger">
-          <div class="card-header text-center"><h2><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Deploy</h2></div>
+          <div class="card-header text-center"><h2><i class="fa fa-exchange" aria-hidden="true"></i> Deploy</h2></div>
           <div class="card-body">
             <p class=""><i class="fa fa-check fa-1x" aria-hidden="true"></i> Test &amp; Debug
             <br><i class="fa fa-check fa-1x" aria-hidden="true"></i> Server Configuration
@@ -167,7 +171,7 @@
           <h1 class="text-center text-uppercase">Who I Is</h1>
         </div>
         <div class="col-lg-7">
-          <p class="attention"><img src="img/tailor.jpg" class="img-wrap" alt="Mister Moody"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></p>
+          <h4><img src="img/tailor.jpg" class="img-wrap" alt="Mister Moody"/>Self-taught Developer focused on building dynamic web applications utilizing HTML5, CSS3, JavaScript and PHP best practices. I have extensive experience fine-tuning TEFL curricula materials and facilitating ESL courses abroad. Creating magic from these skillsets is my goal!<!--<a class="learnMore" href="about.html"> <span>Learn More</span></a>--></h4>
 
         </div>
         <!-- -->

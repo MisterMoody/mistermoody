@@ -53,6 +53,9 @@ ul {list-style-type: none;}
 
 
 /***************************************/
+
+/*Job Titles*/
+h4 > .glow {text-shadow: 0 0 8px #000;}
 /***************************************/
 /** BUTTONS & <a> LINKS ****************/
 /* */
@@ -365,7 +368,7 @@ to {
   text-shadow: none;
   color: #000;
   //font-family: Lato-Regular, sans-serif;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 800;
 }
 .train {
@@ -375,7 +378,7 @@ to {
   float: right;
   text-shadow: none;
   color: #000;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 800;
 }
 .place {
@@ -391,7 +394,7 @@ to {
   text-shadow: none;
   color: #ccc;
   font-size: 18px;
-  margin-bottom: 33px;    /*Required for Row-Alignment*/  
+  margin-bottom: 16px;    /*Required for Row-Alignment*/  
   margin-top: 2px;        /*Required for Row-Alignment*/
 }
 table {width: 100%;}
@@ -445,6 +448,7 @@ table {width: 100%;}
   height: auto; 
   /*border: 2px solid #c41e3a;*/
   border-radius: 8px;
+  font-size: 22px;
 }
 /*Image Wrap for Desktop*/
 @media all and (min-width: 1100px) {  
@@ -467,7 +471,14 @@ table {width: 100%;}
 /* @MIN-Width: 950 *****************************************/
 @media screen and (min-width: 950px) {
   body {font-size: 2vmax;}
+  /**/
   .footer {z-index: 3;}
+  /**/
+  /*Skills & Training*/
+  .date, .train {font-size: 1.5rem;}
+  .place, .institution {font-size: 1.3rem;}
+  .institution {margin-bottom: 20px;    /*Required for Row-Alignment*/ }
+  /**/
 }
 /***********************************************************/
 /*Feature Query = Browser Support*/
