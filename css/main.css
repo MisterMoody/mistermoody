@@ -1,0 +1,376 @@
+/* =========================================================== */
+/* ================= UNIVERSAL BASE STYLES =================== */
+@media only screen and (min-width: 800px) {
+  .hide {display: none;}
+}
+*, *:before, *:after {box-sizing: border-box;} 
+/*Feature Query = Browser Support*/
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
+/* Removes Browser Scroll + Gives Site an 'APP' */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;               
+  background: transparent;  
+}
+/**/
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: calc(1.15em + 1.05vw); 
+	font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.6px;
+}
+h1, h2, h3 {
+  margin: 4px 0;
+  padding: 0 auto;
+  text-align: center;
+} /*for TOP Alignment */
+p {
+  line-height: 1.5; 
+  font-size: 0.74em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {opacity: 0.7;}
+ul {
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0;
+}
+li > a {font-size: 0.79em;}
+.listGroup {
+  font-size: 0.84em;
+}
+@media only screen and (min-width: 800px) {
+  p {text-align: justify; line-height: 1.339;}
+  .listGroup {margin-top: -28px;}
+}
+
+.arrow {opacity: 1; transition: all .5s ease-in 3s;}
+.arrow {
+  position: relative;
+  bottom: 44px;
+  left: 50%;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  background-size: 14px auto;
+  border-radius: 50%;
+  animation: bounce 2s infinite 2s;
+}
+.arrow:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+@media only screen and (min-width: 800px) {
+  .arrow {bottom: 84px;}
+}
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 
+  80% {transform: translateY(0);}
+  40% {transform: translateY(-10px);}
+  60% {transform: translateY(-5px);}
+}
+.clear {opacity: 0.1;}
+/* <a> Links 'Arrow' Transform */
+span.read {font-weight: 900;}
+span.read {
+	position: relative;
+	transition: all 500ms ease; 
+	overflow:hidden;
+}
+span.read:before {
+	font-family: FontAwesome;
+	content:"\f101";
+	position: absolute;
+	left: 105px; /*Icon Position*/
+	transition: all 200ms ease;
+} 
+span.read:hover:before {left: 112px;}
+@media only screen and (min-width: 800px) {
+  p.span {text-align: center;}
+  span.read:before {left: 151px;}
+  span.read:hover:before {left: 160px;}
+}
+hr {border:none; border-top: 4px dotted grey;}
+/* =========================================================== */
+
+
+/* HEADER */
+header {margin: 0px;}
+
+/* NAVIGATION */
+
+/* FOOTER */
+footer {text-align: center; margin-top: 4px;}
+footer.credit {font-size: 14px;}
+.fa-heart {
+  color: red;
+  animation: pulse 1.3s ease infinite;
+  padding-top: -50px;  /*Required for Heart Animation*/
+}
+@keyframes pulse {
+  0% {transform: scale(0.5);}
+  50% {transform: scale(0.7);}
+  100% {transform: scale(0.5);}
+}
+/* =========================================================== */
+
+
+
+/* IMAGES ================================ */
+/**/
+.imgL {
+  float: left;
+  margin: 8px 8px 0 0;
+  width: 33%;
+  height: auto; 
+  border-radius: 8px;
+}  
+.imgR {
+  float: right;
+  margin: 8px 0 0 4px;
+  width: 34%;
+  height: auto; 
+  border-radius: 8px;
+} 
+@media all and (min-width: 800px) {  
+  .imgL {
+    float: left;
+    margin: 5px 20px 0 0;
+    width: 35%;
+    height: auto; 
+    /*border: 2px solid #c41e3a;*/
+    border-radius: 2px;
+  }
+  .imgR {
+    float: right;
+    margin: 8px 0 0 20px; /*0 0 10px 25px*/
+    width: 32%;
+    height: auto; 
+    /*border: 2px solid #c41e3a;*/
+    border-radius: 2px;
+  }
+  /**/
+}
+/**//*******************************//**/
+
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+}
+aside {
+  height: 100%;
+  text-align: center;
+  border: 2px solid blue;
+}
+
+.treehouse > h5 {
+  margin: 14px 0 0 0;
+  padding: 0 auto;
+}
+@media only screen and (min-width: 800px) {
+  .miniGallery {margin: 50px 0;}
+  .treehouse {margin-top: 5px;}  
+}
+/**/
+/* [#] SKILLS & TRAINING */
+/*Skill Bars*/
+.SkillBar {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 6px auto;
+}
+.Skill-Area {
+  float: left;
+  position: absolute;
+  text-shadow: none;
+  color: #fff;
+  font-size: 0.88em;
+}
+.PercentText {
+    position: relative;
+    padding-right: 15px;
+    margin-top: 2px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-size: 0.88em;
+}
+.skillSpecs {
+  margin-top: -8px;
+  margin-bottom: 0;
+  font-size: 0.74em;
+}
+#Skill-Design {
+    width: 75%;
+    height: 30px;
+    position: absolute;
+    background-color: #000;
+}
+#Skill-Develop {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 64%;
+    height: 30px;
+    position: absolute;
+    background-color: #000;
+
+}
+#Skill-Deploy {
+    width: 81%;
+    height: 30px;
+    position: absolute;
+    background-color: #000;
+}
+#Skill-Copy {
+    width: 95%;
+    height: 30px;
+    position: absolute;
+    background-color: #000;
+}
+#Skill-Interpersonal {
+  width: 88%;
+  height: 30px;
+  position: absolute;
+  background-color: #000;
+}
+/*Training*/
+.date {
+  float: left;
+  position: absolute;
+}
+.train {
+  position: relative;
+  padding-right: 0;
+  float: right;
+  margin-bottom: 0px;
+}
+.date, .train {
+  text-shadow: none;
+  color: #000;
+  font-size: 0.88em;
+  font-weight: 700;  
+}
+.place {
+  float: left;
+  position: absolute;
+  font-size: 0.74em;
+}
+.institution {
+  position: relative;
+  padding-right: 0;
+  float: right;
+  text-shadow: none;
+  font-size: 0.74em;
+  margin-bottom: 0.95px;    /*Required for Row-Alignment*/ 
+}
+table {width: 100%;}
+@media only screen and (min-width: 800px) {
+  .PercentText {margin: 0 auto;}
+  .skillSpecs {margin-bottom: 8px;}
+}
+/**//***********************************//**/
+
+/* PORTFOLIO.php ========================= */
+.downloadCV {
+  margin: 26px 0 20px 0; 
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .downloadCV {margin: 35px 0;}
+}
+.dCV {
+	border-radius: 4px;
+  background-color: #3a3a3a;
+  color: #fff;
+	font-weight: bold;
+  font-size: 1.5em;
+  transition-duration: .5s;
+  cursor: pointer;
+  padding: 1.5vmax;
+  margin: 46px 0;
+}
+.dCV:hover {
+  background-color: #1a1a1a;
+  border: 1px solid #fff;
+  transition-duration: .5s;  
+}
+p > .dCV {margin-bottom: 20px;}
+/**//***********************************//**/
+
+/* CONTACT.php =========================== */
+main > div.contactForm {
+  margin: 20px 0;
+  color: #000;
+  font-weight: bold; 
+  height: 275px;
+}
+input, textarea{
+  width: 99%;
+  margin: 1px 0;
+  font-size: 1em;
+	border-radius: 4px;
+	background-color: rgba(255,255,255,.6);
+	border: solid 1px #000;
+  padding: 1vmax 0;
+}
+#submit_button {
+	border-radius: 4px;
+  background-color: #3a3a3a;
+  color: #fff;
+	font-weight: bold;
+  font-size: 1em;
+  transition-duration: .5s;
+  cursor: pointer;
+  padding: 2vmax;
+  width: 40%; 
+  margin: 0 30% 0;
+}
+#submit_button:hover {
+  background-color: #1a1a1a;
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 20px #000;
+  transition-duration: .5s;  
+}
+label.required:after {
+  content:'*';
+  color:red;
+}
+@media only screen and (min-width: 800px) {
+  main > div.contactForm {
+    margin: 0 auto; 
+    height: 100%;
+  }
+  textarea {width: 99.5%;}
+  #submit_button {
+    padding: 1vmax;
+    width: 35%;
+    margin: 0 32% 0;
+  }
+}
+/**//***********************************//**/
