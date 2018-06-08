@@ -216,9 +216,9 @@ ul.social {
 
 /* ********************************** */
 /* CONTACT */
-div.formName {grid-area: name;}
-div.formEmail {grid-area: email;}
-div.formMSG {grid-area: msg;}
+div.formName {grid-area: name; height: 44px;}
+div.formEmail {grid-area: email; height: 44px;}
+div.formMSG {grid-area: msg; height: 120px;}
 div.formSubmit {grid-area: submit;}
 div.form {
   margin: 0 auto;

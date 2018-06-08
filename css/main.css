@@ -338,8 +338,10 @@ input, textarea{
 	border-radius: 4px;
 	background-color: rgba(255,255,255,.6);
 	border: solid 1px #000;
-  padding: 1vmax 0;
+  padding: 1vmax 0; 
+  height: 44px;
 }
+textarea {height: 100px;}
 #submit_button {
 	border-radius: 4px;
   background-color: #3a3a3a;
@@ -367,7 +369,7 @@ label.required:after {
     margin: 0 auto; 
     height: 100%;
   }
-  textarea {width: 99.5%;}
+  textarea {width: 99.5%; height: 6em;}
   #submit_button {
     padding: 1vmax;
     width: 35%;
