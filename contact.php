@@ -43,7 +43,7 @@ include ("inc/header.php");
               <!-- Message -->
               <div class="formMSG">
                 <label for="message" id="prospectiveMSG"></label>
-                <textarea type="text" id="message" name="message" placeholder=" Write your Message Here" size="44px" rows="4" maxlength="5000" required aria-required="true" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have."></textarea>
+                <textarea type="text" id="message" name="message" placeholder="Share your thoughts..." size="44px" rows="7" maxlength="5000" required aria-required="true" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have."></textarea>
               </div>
               <!-- Submit >> Modal Trigger -->
               <div class="formSubmit">

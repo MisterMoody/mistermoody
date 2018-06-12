@@ -5,16 +5,15 @@ $pageTitle = "Official Homepage of Mister Moody";
 include ("inc/header.php");
 ?>
 
-<section>
-  <div class="subGrid">
+<section class="subGrid">
     <div>
-      <p class="introduction">Hello. <b>My name is Ray.</b> <br>I am a certified TEFL instructor and self-taught web developer focused on building learner-centric web apps.</p> 
+      <p class="introduction">Hello. <b>My name is Ray.</b> <br>I am a certified TEFL instructor and self-taught web developer.</p> 
     </div>
     <div>
       <img src="img/tailorVanilla.jpg" class="intro" alt="I am Mister Moody"/>
-      <div class="arrow"><a href="#services" class="clear">.&#8675;.</a></div>
+      
+    <a href="#services" class="arrow"></a>
     </div>
-  </div>
 </section>
 
 <section id="services">
