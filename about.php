@@ -9,8 +9,9 @@ include ("inc/header.php");
 
 <section id="about">
   <p><img src="img/yungn.JPG" class="imgR" alt="Mister Moody"/>For nearly 20 years, I have worked with public and private institutions of education in America, China, Japan and South Korea. My contributions as a non-traditional educator consist of providing TEFL teacher training services, developing curricula, analyzing learner assessments, and facilitating courses for learners of varying fluency levels.</p>
-  <!--<hr>-->
   <p><img src="img/workVanilla.jpg" class="imgL" alt="Mister Moody"/>Still in the infancy of my web dev career, I have become rather adept at designing, developing and deploying  applications to spec using HTML, CSS, JavaScript and PHP. As a  developer, the creative process of application design can be loads of fun, but it’s the peculiar challenges that arise when coding an interactive application that fuels my drive.</p>
+  <br>
+  <hr>
   <div class="subGrid">
     <div class="card">
       <div class="training">
@@ -96,7 +97,9 @@ include ("inc/header.php");
         <p class="skillSpecs">Ethical | Organized | Problem Solver</p>
       </div>
     </div>
-  </div> 
+  </div>
+  <hr style="margin: 0 auto;">
+  <br>
   <div class="report-card treehouse"></div>
   <p class="downloadCV"><a class="dCV" src="moodyCV.docx" href="moodyCV.docx" title="View My Work History"  alt="View My Work History">Download CV <i class="fa fa-cloud-download" aria-hidden="true"></i></a></p> 
 </section>

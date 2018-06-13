@@ -62,9 +62,9 @@ ul.nav {
 @media only screen and (min-width: 800px) {
   .subGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 50%);  /*repeat(auto-fit, minmax(200px, 1fr))*/
     grid-template-rows: 88vh;
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
   }
 }
 /* ********************************** */

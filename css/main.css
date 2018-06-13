@@ -135,7 +135,27 @@ footer.credit {font-size: 14px;}
 }
 /* =========================================================== */
 
-
+hr {
+  background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
+  border: 0;
+  height: 1px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  overflow: visible;
+  text-align: center;
+}
+hr:after { /*rgba(255, 0, 0, 0.8)*/
+  background: rgba(192, 192, 192, 0.6);
+  content: ' \00A7';
+  border: 1px dotted rgba(10, 9, 9, 0.7);
+  border-radius: 50%;
+  display: inline-block;
+  font: "BodoniXT" !important;
+  font-size: 0.9em;
+  padding: 0 0.6em;
+  position: relative;
+  top: -0.7em;
+}
 
 /* IMAGES ================================ */
 /**/
