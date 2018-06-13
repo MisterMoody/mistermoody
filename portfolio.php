@@ -9,7 +9,7 @@ include ("inc/header.php");
 
 <section>
   <h3>It ain't ready...</h3>
-  <p>...until it is, look at some snaps from my travels abroad in the gallery below or read my resources catalog that I put together on <a href="https://mistermoody.github.io/" alt="Link to Portfolio" target="_blank" title="Check Out My Work on Github"><u>Designing for the Web using CSS &amp; JS</u></a>.</p>
+  <p>...until it is, look at some snaps from my travels abroad in the gallery below or read over a resources catalog that I put together regarding <a href="https://mistermoody.github.io/" alt="Link to Portfolio" target="_blank" title="Check Out My Work on Github"><u>Web Design</u></a>.</p>
 </section>
 <section class="gallery">
   <div class="item"><img src="img/cnpass.jpg"/></div>
