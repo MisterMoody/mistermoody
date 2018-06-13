@@ -48,7 +48,7 @@ include ("inc/header.php");
             </tr>
             <tr>
               <td class="place">Thai</td>
-              <td class="institution">Int'l TEFL Teacher Training, Inc.</td>
+              <td class="institution">ITTT, Inc.</td>
             </tr>
             <tr>
               <td class="date">2003</td>
