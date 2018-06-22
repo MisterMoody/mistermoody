@@ -1,0 +1,128 @@
+/* ========================================================== */
+/* ================ UNIVERSAL BASE STYLES =================== */
+*, *:before, *:after {box-sizing: border-box;} 
+/*Feature Query for Browser Support*/
+@supports (display: grid) {
+  .grid > * {
+    width: auto;
+    margin: 0;
+  }
+}
+/* Removes Browser Scroll + Gives Site an 'APP' */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;               
+  background: transparent;  
+}
+/**/
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: calc(1.15em + 1.05vw); 
+	font-family: 'Raleway', sans-serif;
+  color: #fff;
+  background-color: #000;
+  letter-spacing: 0.6px;
+}
+h1, p, a {
+  margin: 0;          /*for TOP Alignment */
+  padding: 0 auto;
+  text-align: center; /*for CENTER Alignment */
+} 
+p {
+  line-height: 5; 
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {opacity: 0.7;}
+li > a {font-size: 0.79em;}
+/* <a> Links 'Arrow' Transform */
+span.read {
+	position: relative;
+	transition: all 500ms ease; 
+	overflow:hidden;
+  font-weight: 900;
+  color: #ccc;
+}
+span.read:before {
+	font-family: FontAwesome;
+	content:"\f101";
+	position: absolute;
+	left: 7.5em; /*Icon Position*/
+	transition: all 200ms ease;
+} 
+span.read:hover:before {left: 8.1em;}
+/**/
+@media only screen and (min-width: 800px) {
+  p {line-height: 1.339;}
+  .entersite > p {text-align: center;}
+  span.read:before {left: 222px;}
+  span.read:hover:before {left: 242px;}
+}
+/* ========================================================== */
+/* ========================================================== */
+
+
+/* ********************************** */
+/* vCARD GRID-TEMPLATE-AREAS */
+.vcard {
+	margin: 8px auto;/*0 4w*/
+  padding: 0;
+	display: grid;
+	grid-template-rows: 12vh 60vh 4vh 2vh; 
+  justify-content: space-around;
+	grid-gap: 4px;
+}
+/* SOCIAL-MEDIA Areas*/
+.phone {grid-area: phone;}
+.download {grid-area: download;}
+.github {grid-area: github;}
+.twitter {grid-area: twitter;}
+ul.social {
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0;
+  margin: 16px 8px;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-around;
+  grid-template-areas: 
+    "phone twitter github download";
+}
+/**/
+.vcardIntroduction {font-size: 1em;}
+span.title {
+  font-size: 0.62em;
+  color: #ccc;
+}
+img.intro {
+  max-width: 400px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/**/
+@media only screen and (min-width: 800px) {
+  .vcard {
+    margin: 0 auto;/*0 4w*/
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1.7em 100% 2em 2em; 
+  }
+  img.intro {max-width: 500px;}
+  .vcard {
+    max-width: 1000px;
+    margin: 0 28vw;
+    padding: 0 auto;
+	 display: grid;
+  }
+}
+
+/* ********************************** */
+
