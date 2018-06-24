@@ -11,8 +11,8 @@
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- Custom CSS Styles -->   
     <link rel="stylesheet" href="css/grid.css">
-    
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
     <!-- Custom Fonts -->       
 	  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
     <!-- FontAwesome CSS Fonts -->

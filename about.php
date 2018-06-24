@@ -4,14 +4,14 @@ $pageTitle = "About Mister Moody";
 
 include ("inc/header.php");
 ?>
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <section id="about">
-  <p><img src="img/yungn.JPG" class="imgR" alt="Mister Moody"/>For nearly 20 years, I have worked with public and private institutions of education in America, China, Japan and South Korea. My contributions as a non-traditional educator consist of providing TEFL teacher training services, developing curricula, analyzing learner assessments, and facilitating courses for learners of varying fluency levels.</p>
-  <p><img src="img/workVanilla.jpg" class="imgL" alt="Mister Moody"/>Still in the infancy of my web dev career, I have become rather adept at designing, developing and deploying  applications to spec using HTML, CSS, JavaScript and PHP. As a  developer, the creative process of application design can be loads of fun, but it’s the peculiar challenges that arise when coding an interactive application that fuels my drive.</p>
+  <p class="slideL"><img src="img/yungn.JPG" class="imgR" alt="Mister Moody"/>For nearly 20 years, I have worked with public and private institutions of education in America, China, Japan and South Korea. My contributions as a non-traditional educator consist of providing TEFL teacher training services, developing curricula, analyzing learner assessments, and facilitating courses for learners of varying fluency levels.</p>
+  <p class="slideR"><img src="img/workVanilla.jpg" class="imgL" alt="Mister Moody"/>Still in the infancy of my web dev career, I have become rather adept at designing, developing and deploying  applications to spec using HTML, CSS, JavaScript and PHP. As a  developer, the creative process of application design can be loads of fun, but it’s the peculiar challenges that arise when coding an interactive application that fuels my drive.</p>
   <br>
-  <hr>
+  <hr style="margin: 0 auto;">
+  <br>
   <div class="subGrid">
     <div class="card">
       <div class="training">
@@ -47,7 +47,7 @@ include ("inc/header.php");
               <td class="train">TEFL Teacher Training</td>
             </tr>
             <tr>
-              <td class="place">Thai</td>
+              <td class="place">Thailand</td>
               <td class="institution">ITTT, Inc.</td>
             </tr>
             <tr>
@@ -98,14 +98,35 @@ include ("inc/header.php");
       </div>
     </div>
   </div>
+  <div class="report-card treehouse"></div>
+  <p class="downloadCV btn"><a class="dCV" src="moodyCV.docx" href="moodyCV.docx" title="View My Work History"  alt="View My Work History">Download CV <i class="fa fa-cloud-download" aria-hidden="true"></i></a></p> 
+</section>
+
+  <br>
   <hr style="margin: 0 auto;">
   <br>
-  <div class="report-card treehouse"></div>
-  <p class="downloadCV"><a class="dCV" src="moodyCV.docx" href="moodyCV.docx" title="View My Work History"  alt="View My Work History">Download CV <i class="fa fa-cloud-download" aria-hidden="true"></i></a></p> 
+
+<section id="services">
+  <h2>Services</h2>
+  <p>Affordable virtual assistance for entrepreneurs and students.</p>
+  <div class="servicesGrid">
+    <div class="develop servicesCard slideR">
+      <i class="fa fa-laptop fa-2x" aria-hidden="true"></i> <span class="scTitle">Web Design</span>
+      <p class="serviceIntro">Retrofit your legacy website or re-brand your online presence from scratch.</p>
+    </div>
+    <div class="edit servicesCard slideL">
+      <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i> <span class="scTitle">Writing</span>
+      <p class="serviceIntro">Creative writing style and logical investigative tactics suitable for any composition.</p>
+    </div>
+    <div class="esl servicesCard slideR">
+      <i class="fa fa-language fa-2x" aria-hidden="true"></i> <span class="scTitle">ESL/TEFL</span>
+      <p class="serviceIntro">Motivational facilitator with an uncanny ability to inspire the most stubborn learner.</p>
+    </div>
+  </div>
+
 </section>
-        <!--<p style="text-align: center;">Blah, blah, blah, blah...<a href="portfolio.php"><br><span class="read">Learn More</span></a></p>-->
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->       
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->       
 <?php
 include ("inc/footer.php"); 
 ?>
