@@ -1,7 +1,14 @@
 .report-card {
-  text-align:center;
+  text-align: center;
 }
-
+.treehouse > p {
+  text-align: center;
+  margin: 14px 0 0 0;
+  padding: 0 auto;
+}
+@media only screen and (min-width: 800px) {
+  .treehouse {margin-top: 5px;}  
+}
 .badges {
   margin:10px 10px 25px;
   padding:0;
