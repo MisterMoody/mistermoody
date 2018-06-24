@@ -8,7 +8,7 @@ include ("inc/vcardHead.php");
 <section class="vcard">
   <!-- -->
   <div class="vcardIntroduction">
-    <h1>Mister Moody <span class="title">EDUpreneur</span></h1>
+    <h2>Mister Moody <span class="title">EDUpreneur</span></h2>
   </div>
   <!-- -->
   <div class="vcardImage">
