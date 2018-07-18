@@ -102,7 +102,7 @@ include ("inc/header.php");
   <p class="downloadCV btn"><a class="dCV" src="moodyCV.docx" href="moodyCV.docx" title="View My Work History"  alt="View My Work History">Download CV <i class="fa fa-cloud-download" aria-hidden="true"></i></a></p> 
 </section>
 
-  <br>
+<!--  <br>
   <hr style="margin: 0 auto;">
   <br>
 
@@ -124,7 +124,7 @@ include ("inc/header.php");
     </div>
   </div>
 
-</section>
+</section>-->
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->       
 <?php
