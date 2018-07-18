@@ -8,15 +8,15 @@ include ("inc/vcardHead.php");
 <section class="vcard">
   <!-- -->
   <div class="vcardIntroduction">
-    <h2>Mister Moody <span class="title">EDUpreneur</span></h2>
+    <h3 class="upright">Mister Moody <span class="title">EDUpreneur</span></h3>
   </div>
   <!-- -->
   <div class="vcardImage">
-    <img class="intro" src="img/tailorVanilla.jpg" alt="I am Mister Moody"/>
+    <figure><img class="intro" src="img/tailorVanilla.jpg" alt="I am Mister Moody"/></figure>
   </div>
   <!-- -->
   <nav>
-    <ul class="social">
+    <ul class="social upright">
       <li>
         <a class="github" href="https://github.com/MisterMoody" alt="Github" target="_blank" title="Check Out My Work on Github">
         <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
@@ -37,7 +37,7 @@ include ("inc/vcardHead.php");
   </nav>
   <!-- -->
   <div class="entersite">
-    <p><a href="about.php"><span class="read">Enter Website</span></a></p>
+    <p><a href="about.php">Enter Website</a></p>
   </div>
   <!-- -->
 </section>
