@@ -97,25 +97,21 @@ img.intro {
     margin: 0 auto;/*0 4w*/
     padding: 0;
     display: grid;
-    grid-template-columns: 150px 500px 100px; 
-    grid-template-rows: 84vh 4vh; 
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: repeat(3, 125px); 
     grid-template-areas: 
-      "name image goto"
-      "name enter goto"
+      "image name"
+      "image goto"
+      "image enter";
   }
-  div.vcardIntroduction {grid-area: name ;}
+  div.vcardIntroduction {grid-area: name; margin-top: 1px;}
   div.vcardImage {grid-area: image;}
-  nav {grid-area: goto; margin-top: 16vh;}
-  div.entersite {grid-area: enter;}
+  nav {grid-area: goto; margin-top: 62px;}
+  div.entersite {grid-area: enter; margin-top: 88px;}
   /*Transform <h2> Heading to a Vertical Positions*/
-  .upright {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    text-transform: uppercase;
-    /*transform: rotate(310deg);*/
-}
+
   
-  img.intro {max-width: 100%;}
+  img.intro {max-width: 500px;}
   .vcard {
     max-width: 1000px;
     margin: 0 4vw;
