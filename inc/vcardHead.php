@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mister Moody</title>
+    <title>&Mopf;ister &Mopf;oody</title>
     <meta name='description' content='Mister Moody: Virtual TEFL Strategist' />
     <meta name="keywords" content="Edupreneur, Teacher, Tutor, TEFL, ESL" />
     <!-- Browser Tab Icon -->
