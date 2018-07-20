@@ -31,17 +31,17 @@ include ("inc/header.php");
         <!-- Name -->
         <div class="formName">
           <label for="name"></label>
-          <input type="text" id="name" name="sender" placeholder=" Name" title="Please provide your name." size="50vw" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" aria-describedby="prospective" class="form-control">
+          <input type="text" id="name" name="sender" placeholder=" Name" title="Please provide your name." size="33vw" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" aria-describedby="prospective" class="form-control">
         </div>
         <!-- Email -->
         <div class="formEmail">
           <label for="email" id="prospectiveEmail"></label>
-          <input type="email" id="email"  placeholder=" Email Address" value="" name="senderEmail" size="50vw" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required aria-required="true" aria-describedby="prospectiveEmail" title="Please provide your email.">
+          <input type="email" id="email"  placeholder=" Email Address" value="" name="senderEmail" size="33vw" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required aria-required="true" aria-describedby="prospectiveEmail" title="Please provide your email.">
         </div>
         <!-- Message -->
         <div class="formMSG">
           <label for="message" id="prospectiveMSG"></label>
-          <textarea type="text" id="message" name="message" placeholder="Share your thoughts..." cols="52" rows="7" maxlength="5000" required aria-required="true" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have."></textarea>
+          <textarea type="text" id="message" name="message" placeholder="Share your thoughts..." cols="35" rows="7" maxlength="5000" required aria-required="true" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have."></textarea>
         </div>
         <!-- Submit >> Modal Trigger -->
         <div class="formSubmit">
