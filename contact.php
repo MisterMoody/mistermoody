@@ -7,11 +7,11 @@ include ("inc/header.php");
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-        <div class="contactForm">
-          <h3 style="text-align: center;">Share Your Thoughts. </h3>
-          <!-- PHP -->
-          <?php
-          if(isset($_POST["submit"])) {
+  <section class="contactForm">
+    <h3 style="text-align: center;">Share Your Thoughts. </h3>
+    <!-- PHP -->
+    <?php
+    if(isset($_POST["submit"])) {
             $sender=$_POST["sender"];
             $senderEmail=$_POST["senderEmail"];
             $message=$_POST["message"];
@@ -24,36 +24,34 @@ include ("inc/header.php");
              header('Location: index.php');/*Redirect Page*/
            }        
           }
-          ?>
-          <!-- 'FORM'-->
-          <form method="post" action="contact.php" name="contactForm">
-            <div class="form" id="contact_form" href="thankyou.html">
-              <!-- Name -->
-              <div class="formName">
-                <label for="name"></label>
-                <input type="text" id="name" name="sender" placeholder=" Name" title="Please provide your name." size="44px" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" aria-describedby="prospective" class="form-control" >
-                <br>
-              </div>
-              <!-- Email -->
-              <div class="formEmail">
-                <label for="email" id="prospectiveEmail"></label>
-                <input type="email" id="email"  placeholder=" Email Address" value="" name="senderEmail" size="44px" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required aria-required="true" aria-describedby="prospectiveEmail" title="Please provide your email.">
-                <br>
-              </div>
-              <!-- Message -->
-              <div class="formMSG">
-                <label for="message" id="prospectiveMSG"></label>
-                <textarea type="text" id="message" name="message" placeholder="Share your thoughts..." size="44px" rows="7" maxlength="5000" required aria-required="true" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have."></textarea>
-              </div>
-              <!-- Submit >> Modal Trigger -->
-              <div class="formSubmit">
-                <input type="submit" name="submit" value="Submit" id="submit_button">
-              </div>
-              <!---->
-            </div>
-          </form>
-          <!-- END of FORM -->
+    ?>
+    <!-- 'FORM'-->
+    <form method="post" action="contact.php" name="contactForm">
+      <div class="form" id="contact_form" href="thankyou.html">
+        <!-- Name -->
+        <div class="formName">
+          <label for="name"></label>
+          <input type="text" id="name" name="sender" placeholder=" Name" title="Please provide your name." size="50vw" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" aria-describedby="prospective" class="form-control">
         </div>
+        <!-- Email -->
+        <div class="formEmail">
+          <label for="email" id="prospectiveEmail"></label>
+          <input type="email" id="email"  placeholder=" Email Address" value="" name="senderEmail" size="50vw" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required aria-required="true" aria-describedby="prospectiveEmail" title="Please provide your email.">
+        </div>
+        <!-- Message -->
+        <div class="formMSG">
+          <label for="message" id="prospectiveMSG"></label>
+          <textarea type="text" id="message" name="message" placeholder="Share your thoughts..." cols="52" rows="7" maxlength="5000" required aria-required="true" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have."></textarea>
+        </div>
+        <!-- Submit >> Modal Trigger -->
+        <div class="formSubmit">
+          <input type="submit" name="submit" value="Submit" id="submit_button">
+        </div>
+        <!---->
+      </div>
+    </form>
+    <!-- END of FORM -->
+  </section>
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->       
 <?php

@@ -200,10 +200,9 @@ img.intro {max-width: 100%; height: auto; }
 .formSubmit {grid-area: submit;}
 .form {
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0;
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, minmax(62px, auto)) 5.5em 30px; /*repeat(2, minmax(50px, auto) 100px*/
+  grid-template-rows: repeat(2, minmax(44px, auto)) 5.5em 30px;
   grid-template-areas: 
     "name"
     "email"

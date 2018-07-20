@@ -345,9 +345,9 @@ p > .dCV {margin-bottom: 20px;}
 
 
   
-/* CONTACT.php =========================== */
-main > div.contactForm {
-  margin: 10px 0;
+
+section.contactForm {
+  margin: 0 auto;
   color: #000;
   font-weight: bold; 
   height: 15em;
@@ -361,7 +361,9 @@ input, textarea{
 	border: solid 1px #000;
   height: 44px;
 }
-textarea {height: 100px;}
+textarea {
+  resize: none;
+  }
 #submit_button {
 	border-radius: 4px;
   background-color: #3a3a3a;
@@ -384,8 +386,8 @@ label.required:after {
   content:'*';
   color:red;
 }
-@media only screen and (min-width: 500px) {
-  main > div.contactForm {
+@media only screen and (min-width: 600px) {
+  main > section.contactForm {
     margin: 0 auto; 
     height: 14em;
   }
