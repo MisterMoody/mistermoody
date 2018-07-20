@@ -33,7 +33,7 @@
             <!--<i class="fa fa-home fa-2x" aria-hidden="true"></i>--></a>
           </li>
           <li class="about">
-            <a href="about.php" title="About Mister Moody">About
+            <a href="http://mistermoody.com/about.php" title="about" title="About Mister Moody">About
             <!--<i class="fa fa-user fa-2x" aria-hidden="true"></i>--></a>
           </li>
           <li class="portfolio">

@@ -58,7 +58,7 @@ li > a {font-size: 0.79em;}
 	margin: 0px auto;/*0 4w*/
   padding: 0;
 	display: grid;
-	grid-template-rows: 24px 275px 24px 8px; 
+	grid-template-rows: 32px 300px 32px 16px; 
   justify-content: space-around;
 	grid-gap: 4px;
 }
@@ -69,7 +69,7 @@ li > a {font-size: 0.79em;}
 .twitter {grid-area: twitter;}
 ul.social {
   list-style-type: none; 
-  margin: 16px 8px;
+  margin: 24px 8px;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, auto);
