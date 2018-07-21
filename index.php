@@ -37,7 +37,7 @@ include ("inc/vcardHead.php");
   </nav>
   <!-- -->
   <div class="entersite">
-    <p><a href="about.php">Enter Website</a></p>
+    <p><a href="about">Enter Website</a></p>
   </div>
   <!-- -->
 </section>

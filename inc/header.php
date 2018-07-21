@@ -29,19 +29,19 @@
       <header>
         <ul class="nav">
           <li class="home">
-            <a href="index.php">Mister Moody
+            <a href="index">Mister Moody
             <!--<i class="fa fa-home fa-2x" aria-hidden="true"></i>--></a>
           </li>
           <li class="about">
-            <a href="http://mistermoody.com/about.php" title="about" title="About Mister Moody">About
+            <a href="about" title="about" title="About Mister Moody">About
             <!--<i class="fa fa-user fa-2x" aria-hidden="true"></i>--></a>
           </li>
           <li class="portfolio">
-            <a href="portfolio.php" title="Check Out My Work">Portfolio
+            <a href="portfolio" title="Check Out My Work">Portfolio
             <!--<i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>--></a>
           </li>
           <li class="contact">
-            <a href="contact.php" title="Get in Touch!">Contact
+            <a href="contact" title="Get in Touch!">Contact
             <!--<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>--></a>
           </li>
         </ul>
