@@ -14,13 +14,11 @@ include ("inc/header.php");
     <div class=""></div>
   </section>
   <!-- -->
-  <section id="edupreneur">
-    <div class=""></div>
-  </section>
+  <!-- Find a way to REMOVE without Modifying Layout -->
+  <!--  <section id="edupreneur"></section>-->
   <!-- -->
   <section id="about">
-    <div class="">
-      <h2>About Mister Moody</h2>
+    <div class="card">
       <!-- -->
       <p class="slideL"><img src="img/yungn.JPG" class="imgR" alt="Mister Moody"/>For nearly 20 years, I have worked with public and private institutions of education in America, China, Japan and South Korea. My contributions as a non-traditional educator consist of providing TEFL teacher training services, developing curricula, analyzing learner assessments, and facilitating courses for learners of varying fluency levels.</p>
       <p class="slideR"><img src="img/workVanilla.jpg" class="imgL" alt="Mister Moody"/>Still in the infancy of my web dev career, I have become rather adept at designing, developing and deploying  applications to spec using HTML, CSS, JavaScript and PHP. As a  developer, the creative process of application design can be loads of fun, but it’s the peculiar challenges that arise when coding an interactive application that fuels my drive.</p>
@@ -29,7 +27,7 @@ include ("inc/header.php");
   </section>
   <!-- -->
       <br>
-      <hr style="margin: 0 auto;">
+      <hr style="margin: 0 20px;">
       <br>
   <section id="skills">
     <div>

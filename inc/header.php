@@ -33,7 +33,7 @@
             <!--<i class="fa fa-home fa-2x" aria-hidden="true"></i>--></a>
           </li>
         <li class="edupreneur">
-            <a href="#edupreneur">EDUpreneur
+            <a href="">EDUpreneur
             <!--<i class="fa fa-home fa-2x" aria-hidden="true"></i>--></a>
           </li>
         <li class="about">

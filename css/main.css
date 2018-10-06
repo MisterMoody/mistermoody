@@ -14,7 +14,6 @@
 
 
 /**/
-/*Removes Browser Scroll + Gives Site an 'APP'*/
 /* 
   Removes Browser Scroll + Gives Site an 'APP' 
 html {
@@ -295,11 +294,8 @@ table {width: 100%;}
   .skillSpecs {
     margin-bottom: 0.57em; 
     font-size: 0.64em;
-}
+  }
+} 
+/*.training, .skills {width: 100%;}*/
 /**//***********************************//**/
 
-
-
-  
-
-/**//***********************************//**/

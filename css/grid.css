@@ -6,10 +6,10 @@
 /* ********************************** */
 /* MAIN-TEMPLATE GRID */
 .grid {
-	margin: 8vw;
+	margin: 0 2vw;
   padding: 0 auto;
 	display: grid;
-	grid-template-rows: 2vmin 100% minmax(10px,auto); /*10vmin 100% minmax(20px,auto)*/
+	grid-template-rows: 8vmin 100% minmax(10px,auto); /*10vmin 100% minmax(20px,auto)*/
 	grid-gap: 4px;
 }
 @media only screen and (min-width: 800px) {
@@ -49,12 +49,13 @@
 }
 /**/
 nav > ul {
-  margin: 0 auto;
+  width: 96%;         /*REQ. Aligns with '.grid*/
+  margin: 0 0.001em;  /*REQ. Aligns with '.grid*/
   padding: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, auto)/*repeat(4, auto)*/;
-  grid-template-rows: repeat(2, auto);
-  /*grid-gap: 0.62em;*/
+  grid-template-rows: repeat(2, minmax(10px, auto));
+  grid-row-gap: 0px;
   justify-content: space-between;
   grid-template-areas: 
     "home home edupreneur edupreneur"
@@ -66,8 +67,6 @@ nav > ul {
   /*Priority View*/
   z-index: 1;
 }
-/*for Consistent Width*/
-ul {width: 81vw;}
 
 /*Highlights Current Section = BROKEN*/
 nav > ul > li > a.current {
@@ -81,18 +80,21 @@ html {
 
 @media only screen and (min-width: 800px) {
   nav > ul {
+    width: 79vw;  /*REQ. Aligns with '.grid*/
+    margin: 0 auto;
     display: grid;
-    /*grid-gap: 0.42em;*/
-  justify-content: space-around;
-  align-items: baseline;
+    grid-template-columns: repeat(4, auto)/*repeat(4, auto)*/;
+    grid-template-rows: repeat(2, minmax(10px, auto));
+    grid-row-gap: 0px;
+    justify-content: space-around;
+    align-items: baseline;
   }
   /*for Consistent Width*/
-  ul {width: 80%;}
+  ul {width: 100%;}
   /*Titles Flex to Center*/
   .home {justify-self: right;}
   .edupreneur {justify-self: left;}
 }
-
 
 
 
@@ -102,9 +104,12 @@ html {
   padding: 0 auto;
   display: grid;
   grid-template-rows: repeat(auto, 1fr);
+  grid-template-columns: auto;
 }
 @media only screen and (min-width: 800px) {
   .subGrid {
+    margin: 0 auto;
+    padding: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 49%);  /*repeat(auto-fit, minmax(200px, 1fr))*/
     grid-template-rows: 88vh;
