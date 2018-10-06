@@ -11,7 +11,12 @@
     margin: 0;
   }
 }
-/* Removes Browser Scroll + Gives Site an 'APP' */
+
+
+/**/
+/*Removes Browser Scroll + Gives Site an 'APP'*/
+/* 
+  Removes Browser Scroll + Gives Site an 'APP' 
 html {
   overflow: scroll;
   overflow-x: hidden;
@@ -20,7 +25,10 @@ html {
   width: 0px;               
   background: transparent;  
 }
+*/
 /**/
+
+
 body {
   margin: 0 auto;
   padding: 0 auto;
@@ -28,12 +36,13 @@ body {
 	font-family: 'Raleway', sans-serif;
   letter-spacing: 0.6px;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   margin: 16px 0;
   padding: 0 auto;
   text-align: center;
 } /*for TOP Alignment */
 p {
+  text-align: justify;
   line-height: 1.5; 
   font-size: 0.74em;
 }
@@ -56,41 +65,8 @@ li > a {font-size: 0.79em;}
   .listGroup {margin-top: -28px;}
 }
 /**/
-.arrow {opacity: 1; transition: all .5s ease-in 3s;}
-.arrow {
-  position: relative;
-  bottom: 44px;
-  left: 50%;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #fff;
-  background-size: 14px auto;
-  border-radius: 50%;
-  animation: bounce 2s infinite 2s;
-}
-.arrow:before {
-  position: absolute;
-  top: calc(50% - 8px);
-  left: calc(50% - 6px);
-  transform: rotate(-45deg);
-  display: block;
-  width: 12px;
-  height: 12px;
-  content: "";
-  border: 2px solid white;
-  border-width: 0px 0 2px 2px;
-}
-@media only screen and (min-width: 800px) {
-  .arrow {bottom: 84px;}
-}
-@keyframes bounce {
-  0%, 100%, 20%, 50%, 
-  80% {transform: translateY(0);}
-  40% {transform: translateY(-10px);}
-  60% {transform: translateY(-5px);}
-}
 .clear {opacity: 0.1;}
+
 /* <a> Links 'Arrow' Transform */
 span.read {font-weight: 900;}
 span.read {
@@ -102,10 +78,10 @@ span.read:before {
 	font-family: FontAwesome;
 	content:"\f101";
 	position: absolute;
-	left: 105px; /*Icon Position*/
+	left: 100px; /*Icon Position*/
 	transition: all 200ms ease;
 } 
-span.read:hover:before {left: 112px;}
+span.read:hover:before {left: 110px;}
 @media only screen and (min-width: 800px) {
   p.span {text-align: center;}
   span.read:before {left: 151px;}
@@ -155,10 +131,13 @@ footer.credit {font-size: 14px;}
 }
 /* =========================================================== */
 
+
+
 /* IMAGES ================================ */
-
-
-/**/
+.mainImage {
+  width: 100%;
+  height: auto;
+}
 .imgL {
   float: left;
   margin: 8px 8px 0 0;
@@ -207,8 +186,12 @@ p.btn {
 
 @media only screen and (min-width: 800px) {
   .miniGallery {margin: 50px 0;}
-  p.btn {border: none;}
+  /*p.btn {border: none;}*/
 }
+
+
+
+
 /**/
 /* [#] SKILLS & TRAINING */
 /*Skill Bars*/
@@ -316,88 +299,7 @@ table {width: 100%;}
 /**//***********************************//**/
 
 
-/* PORTFOLIO.php ========================= */
-.downloadCV {
-  margin: 20px 0; 
-  text-align: center;
-}
-@media only screen and (min-width: 800px) {
-  .downloadCV {margin: 35px 0;}
-}
-.dCV {
-	border-radius: 4px;
-  background-color: #3a3a3a;
-  color: #fff;
-	font-weight: bold;
-  font-size: 1.5em;
-  transition-duration: .5s;
-  cursor: pointer;
-  padding: 1.5vmax;
-  margin: 46px 0;
-}
-.dCV:hover {
-  background-color: #1a1a1a;
-  border: 1px solid #fff;
-  transition-duration: .5s;  
-}
-p > .dCV {margin-bottom: 20px;}
-/**//***********************************//**/
-
 
   
 
-section.contactForm {
-  margin: 0 auto;
-  color: #000;
-  font-weight: bold; 
-  height: 15em;
-}
-input, textarea{
-  width: 99%;
-  margin: 1px 0;
-  font-size: 0.9em;
-	border-radius: 4px;
-	background-color: #fff;
-	border: solid 1px #000;
-  height: 44px;
-}
-textarea {
-  resize: none;
-  }
-#submit_button {
-	border-radius: 4px;
-  background-color: #3a3a3a;
-  color: #fff;
-	font-weight: bold;
-  font-size: 16px;
-  transition-duration: .5s;
-  cursor: pointer;
-  padding: 1vmax;
-  width: 40%; 
-  margin: 0 30% 0;
-}
-#submit_button:hover {
-  background-color: #1a1a1a;
-  border: 1px solid #fff;
-  box-shadow: 2px 2px 20px #000;
-  transition-duration: .5s;  
-}
-label.required:after {
-  content:'*';
-  color:red;
-}
-@media only screen and (min-width: 600px) {
-  main > section.contactForm {
-    margin: 0 auto; 
-    height: 14em;
-  }
-  textarea {width: 99.5%; height: 6em;}
-  #submit_button {
-    padding: 1vmax;
-    width: 35%;
-    margin: 0 32% 0;
-  font-size: 1em;
-    height: 2em;
-  }
-}
 /**//***********************************//**/

@@ -24,28 +24,34 @@
   <!-- ********************************************************* -->
   <!-- ********************************************************* -->
     <!-- ****** <MAIN-GRID>  ***** -->
-    <div class="grid">    
-      <!-- //HEADER Navigation -->
-      <header>
-        <ul class="nav">
-          <li class="home">
-            <a href="index">Mister Moody
+    <div class="grid">
+    <!-- //Header NAVIGATION -->
+    <nav>
+      <ul>
+        <li class="home">
+            <a href="#home">Mister Moody
             <!--<i class="fa fa-home fa-2x" aria-hidden="true"></i>--></a>
           </li>
-          <li class="about">
-            <a href="about" title="about" title="About Mister Moody">About
+        <li class="edupreneur">
+            <a href="#edupreneur">EDUpreneur
+            <!--<i class="fa fa-home fa-2x" aria-hidden="true"></i>--></a>
+          </li>
+        <li class="about">
+            <a href="#about" title="about" title="About Mister Moody">About
             <!--<i class="fa fa-user fa-2x" aria-hidden="true"></i>--></a>
           </li>
-          <li class="portfolio">
-            <a href="portfolio" title="Check Out My Work">Portfolio
-            <!--<i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>--></a>
-          </li>
-          <li class="contact">
-            <a href="contact" title="Get in Touch!">Contact
-            <!--<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>--></a>
-          </li>
-        </ul>
-      </header>
-      <!-- //CONTENT -->
-      <main>
-        <!-- //BEGIN...... -->
+        <li class="skills">
+          <a href="#skills" title="What I Can Do">Skills
+          <!--<i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>--></a>
+        </li>
+        <li class="work">
+          <a href="#work" title="What I Have Done">Work
+          <!--<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>--></a>
+        </li>
+        <li class="contact">
+          <a href="#contact" title="Get in Touch!">Contact
+          <!--<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>--></a>
+        </li>
+      </ul>
+    </nav>    
+      <!-- //CONTENT-BEGINS..... -->

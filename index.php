@@ -1,48 +1,22 @@
 <?php
 $pageTitle = "Official Homepage of Mister Moody";
 
-include ("inc/vcardHead.php");
+include ("inc/header.php");
 ?>
 <!-- ******************************************************* -->
-
-<section class="vcard">
+<main>
   <!-- -->
-  <div class="vcardIntroduction">
-    <h3>Mister Moody <span class="title">EDUpreneur</span></h3>
-  </div>
+  <section id="home">
+    <div class="">
+      <figure>
+        <img class="mainImage" src="img/free.jpg" alt="I am Mister Moody"/>
+      </figure>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligul. <span class="read">Learn More</span></p>
+    </div>
+  </section>
   <!-- -->
-  <div class="vcardImage">
-    <figure><img class="intro" src="img/tailorVanilla.jpg" alt="I am Mister Moody"/></figure>
-  </div>
-  <!-- -->
-  <nav>
-    <ul class="social upright">
-      <li>
-        <a class="github" href="https://github.com/MisterMoody" alt="Github" target="_blank" title="Check Out My Work on Github">
-        <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
-      </li>
-      <li>
-        <a class="twitter" href="https://twitter.com/Mister_Moody" alt="Twitter" target="_blank" title="Follow Me on Twitter">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-      </li>
-      <li>
-        <a class="download" src="moodyCV.docx" href="moodyCV.docx" title="Download My Resume"  alt="Download My Resume">
-        <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i></a>
-      </li>
-      <li>
-        <a class="phone" href="tel:+15025589240" alt="Call Me" title="Call Me">
-        <i class="fa fa-mobile fa-2x" aria-hidden="true"></i></a>
-      </li>
-    </ul>
-  </nav>
-  <!-- -->
-  <div class="entersite">
-    <p><a href="about">Enter Website</a></p>
-  </div>
-  <!-- -->
-</section>
-
+</main>
 <!-- ******************************************************* -->
 <?php
-include ("inc/vcardFoot.php"); 
+include ("inc/footer.php"); 
 ?>

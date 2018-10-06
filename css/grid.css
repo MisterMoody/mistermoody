@@ -1,227 +1,125 @@
 /* =========================================================== */
 /* ====================== GRID LAYOUTS ======================= */
 
+
+
 /* ********************************** */
 /* MAIN-TEMPLATE GRID */
 .grid {
-	margin: 0 8vw;
+	margin: 8vw;
   padding: 0 auto;
 	display: grid;
-	grid-template-rows: 15vmin 100% minmax(20px,auto); /*10vmin 100% minmax(10px,auto)*/
+	grid-template-rows: 2vmin 100% minmax(10px,auto); /*10vmin 100% minmax(20px,auto)*/
 	grid-gap: 4px;
 }
 @media only screen and (min-width: 800px) {
   .grid {
-	margin: 0 12vw;
+	margin: 0 10vw;
   padding: 0 auto;
 	display: grid;
-	grid-template-rows: 10vmin minmax(350px,auto) 10px;
-	grid-gap: 4px;
+	grid-template-rows: 15vmin minmax(350px,auto) 10px;
   }
 }
+
+
+/* ********************************** */
 /* Main NAVIGATION GRID */
-.home {grid-area: home;}
-.about {grid-area: about;}
-.portfolio {grid-area: portfolio;}
-.contact {grid-area: contact;}
-ul.nav {
-  margin: 0 auto;
-  padding: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: 16px 8px;
-  grid-gap: 0.62em;
-  justify-content: space-between;
-  grid-template-areas: 
-    "home home home"
-    "about portfolio contact";
-}
+/*Grid-Area: 1st-Row*/
 .home {
-  justify-self: center; 
+  grid-area: home;
   text-transform: uppercase; 
   font-weight: bold;
 }
-@media only screen and (min-width: 800px) {
-  ul.nav {
-    display: grid;
-    grid-template-columns: 6fr repeat(3, 1fr);
-    grid-gap: 14px;
-    grid-template-areas: 
-      "home about portfolio contact";
-  }
-  .home {justify-self: left;}
+.edupreneur {
+  grid-area: edupreneur;
+  text-align: right;
 }
+/*Grid-Area: 2nd-Row*/
+.about {
+  grid-area: about;
+}
+.skills {
+  grid-area: skills;
+}
+.work {
+  grid-area: work;
+}
+.contact {
+  grid-area: contact;
+}
+/**/
+nav > ul {
+  margin: 0 auto;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto)/*repeat(4, auto)*/;
+  grid-template-rows: repeat(2, auto);
+  /*grid-gap: 0.62em;*/
+  justify-content: space-between;
+  grid-template-areas: 
+    "home home edupreneur edupreneur"
+    "about skills work contact";
+  /*Stickyness*/
+  position: fixed;
+  top: 0;
+  background-color: #bbb;
+  /*Priority View*/
+  z-index: 1;
+}
+/*for Consistent Width*/
+ul {width: 81vw;}
+
+/*Highlights Current Section = BROKEN*/
+nav > ul > li > a.current {
+  background: #ccc;
+}
+
+/*Smooth Scroll Effect*/
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 800px) {
+  nav > ul {
+    display: grid;
+    /*grid-gap: 0.42em;*/
+  justify-content: space-around;
+  align-items: baseline;
+  }
+  /*for Consistent Width*/
+  ul {width: 80%;}
+  /*Titles Flex to Center*/
+  .home {justify-self: right;}
+  .edupreneur {justify-self: left;}
+}
+
+
+
 
 /* CONTENT SUB-GRID */
 .subGrid {
   margin: 0 auto;
   padding: 0 auto;
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(auto, 1fr);
 }
 @media only screen and (min-width: 800px) {
   .subGrid {
     display: grid;
-    grid-template-columns: repeat(2, 50%);  /*repeat(auto-fit, minmax(200px, 1fr))*/
+    grid-template-columns: repeat(2, 49%);  /*repeat(auto-fit, minmax(200px, 1fr))*/
     grid-template-rows: 88vh;
-    grid-column-gap: 10px;
-  }
-}
-/* ********************************** */
-
-/* ********************************** */
-/*Homepage Image*/
-img.intro {max-width: 100%; height: auto; }
-@media only screen and (min-width: 800px) {
-  img.intro {
-    margin: 26px 0;
-  }
-
-}
-/* ********************************** */
-
-/* ********************************** */
-/* SERVICES */
-/*.esl {grid-area: esl;}
-.edit {grid-area: edit;}
-.design {grid-area: design;}
-.va {grid-area: va;}*/
-.servicesGrid {
-  /*text-align: justify;*/
-  margin: 4px 0;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.servicesCard {
-  max-width: 100%;
-  /*height: 300px;*/
-  margin: 4px 0;
-}
-.servicesCard:hover {
-  background-color: #000;
-  transition: 0.5s;
-  color: #fff;
-}
-.serviceIntro {
-  margin: 8px 0 0 26px;
-  font-size: 0.70em;
-  text-align: left;
-}
-.scTitle {
-  font-size: 1.2em;
-  margin-left: 16px
-}
-@media only screen and (min-width: 800px) {
-  .servicesGrid {
-    /*text-align: justify;*/
-    margin: 4px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 4px;
-  }
-  .servicesCard {
-    max-width: 100%;
-    margin: 14px 0;
-  }
-  .serviceIntro {
-    margin-left: 8px;
-    font-size: 0.70em;
-    text-align: left;
-  }
-  .scTitle {
-    font-size: 1.2em;
-    margin-left: 24px
+    grid-column-gap: 20px;
   }
 }
 /* ********************************** */
 
 
-
-/* ********************************** */
-/* PORTFOLIO */
-.gallery {
-  margin: 0 auto;
-  padding: 0 auto;
-  display: grid;
-  grid-gap: 2px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-auto-rows: repeat(auto-fit, minmax(150px, 150px));
-  grid-auto-flow: dense;
-}
-.item:nth-child(3n){grid-column: span 2; grid-row: span 2;}
-.item:nth-child(11n){grid-column: span 2; grid-row: span 2;}
-.item > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  }
-
-@media only screen and (min-width: 800px) {
-  .gallery {
-    margin: 0 auto;
-    padding: 0 auto;
-    display: grid;
-    grid-gap: 2px;
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-    grid-auto-rows: 200px 150px;
-    grid-auto-flow: dense;
-  }
-  .item:nth-child(1){
-    grid-row: 1 / 3;
-    grid-column: 1 / 3;
-  }
-  .item:nth-child(2) {
-    grid-row: 1 / 2;
-    grid-column: 3 / 5;
-  }
-  .item:nth-child(3n){grid-row: 2 / 3; grid-column: 3 / 4;}
-  .item:nth-child(6n){grid-row: 6 / 7; grid-column: 1 / 3}
-  .item:nth-child(9n){grid-row: 4 / 5; grid-column: 2 / 3;}
-  .item:nth-child(10n){grid-row: 3 / 4; grid-column: 3 / 5;}
-  .item:nth-child(11n){grid-column: span 2; grid-row: span 2;}
-  .item:nth-child(13n){grid-row: 4 / 6; grid-column: 2 / 3;}
-  .item:nth-child(15n){grid-row: 4 / 5; grid-column: 1 / 2;}
-  .item > img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-}
-/* Tutorial: https://medium.com/deemaze-software/css-grid-responsive-layouts-and-components-eee1badd5a2f */
 /* ********************************** */
 
-/* ********************************** */
-/* CONTACT */
-.formName {grid-area: name;}
-.formEmail {grid-area: email;}
-.formMSG {grid-area: msg;}
-.formSubmit {grid-area: submit;}
-.form {
-  margin: 0 auto;
-  padding: 0;
-  display: grid;
-  grid-template-rows: repeat(2, minmax(44px, auto)) 5.5em 30px;
-  grid-template-areas: 
-    "name"
-    "email"
-    "msg"
-    "submit";
-}
-@media only screen and (min-width: 800px) {
-  .form {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: minmax(71px, auto) 6em 30px;
-    grid-template-areas: 
-      "name email"
-      "msg msg"
-      "submit submit";
-    grid-gap: 2px;
-  }
-}
-/* ********************************** */
+
+
+
+
 
 /* FEATURE QUERY for BROWSER SUPPORT */
 @supports (display: grid) {

@@ -3,8 +3,7 @@
 
 
 
-        
-      <!-- ........END// -->
+      <!-- ........CONTENT-ENDS// -->
       <!-- //FOOTER --> 
       <footer class="credit">
         <small>&#169;<span class=""><?php echo date('Y'); ?></span></small>&#32;&#32;
@@ -14,9 +13,11 @@
     <!-- ************************* -->
     
     <!-- JAVASCRIPT ************** --> 
+    <!-- \\\\\\ Navigation -->
+    <script src="inc/nav.js"></script>
     <!-- \\\\\\ Font-Awesome Icons -->
     <script src="https://use.fontawesome.com/ceeedfe13b.js"></script>
-    <!-- \\\\\\\\\\\ Reportcard JS -->
+    <!-- \\\\\\\ Reportcard JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="js/reportcard/js/reportcard.js"></script>
     <script>$('.report-card.treehouse').reportCard({
