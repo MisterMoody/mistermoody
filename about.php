@@ -1,157 +1,224 @@
 <?php
+$pageTitle = "Official Homepage of Mister Moody";
 
-$pageTitle = "About Mister Moody";
+include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
 
-include ("inc/header.php");
 ?>
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
 <!-- ******************************************************* -->
+
+<!-- ******************** <<HOMEPAGE>>  ******************** -->
+
+<!---->
+<!-- //CONTENT-BEGINS..... -->
+<!---->
+      
+
 <main>
   <!-- -->
-  <section id="home">
-    <div class=""></div>
-  </section>
-  <!-- -->
-  <!-- Find a way to REMOVE without Modifying Layout -->
-  <!--  <section id="edupreneur"></section>-->
-  <!-- -->
-  <section id="about">
-    <div class="card">
+  <section>
+    <div>    
+      <p class="readText"><image src="img/workVanilla.jpg" class="imgL"></image>My contributions as an educator spans the globe and is as diverse as the nations that I have worked in. Whilst facilitating English language courses for non-native speakers' accounts for the bulk of my career, I am also a proficient curriculum developer, a skilled TEFL teacher trainer, and an advocate for at-risk youth.</p>
       <!-- -->
-      <p class="slideL"><img src="img/yungn.JPG" class="imgR" alt="Mister Moody"/>For nearly 20 years, I have worked with public and private institutions of education in America, China, Japan and South Korea. My contributions as a non-traditional educator consist of providing TEFL teacher training services, developing curricula, analyzing learner assessments, and facilitating courses for learners of varying fluency levels.</p>
-      <p class="slideR"><img src="img/workVanilla.jpg" class="imgL" alt="Mister Moody"/>Still in the infancy of my web dev career, I have become rather adept at designing, developing and deploying  applications to spec using HTML, CSS, JavaScript and PHP. As a  developer, the creative process of application design can be loads of fun, but it’s the peculiar challenges that arise when coding an interactive application that fuels my drive.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligul. <span class="read">Learn More</span></p>
+      <p class="readText">By virtue of academic perseverance, I was able to escape the cumbersome hindrances of poverty to achieve unimaginable goals. Early academic success afforded me opportunities that I otherwise would not have been privy to. As a life learner, I have an incessant thirst for knowledge and a special affinity for the learning process as a whole. Of the various disciplines that I have studied, foreign language has invariably had the most profound impact on my life as it has allowed me to gain an international perspective of the world that I live within.</p> 
+      <!-- -->
+      <p class="readText"><image src="img/jdhs.jpg" class="imgR"></image>Being a pseudo-polyglot inspired me to venture into the dominion of web design and development. For the past few years, I have engaged in a self-directing sojourn that has taken me around the internet universe and back, acquiring in-depth knowledge of practices imperative to becoming a web implementation specialist.</p> 
+      <p class="readText">As a designer, I can adapt a low-fidelity prototype into a viable website using HTML, CSS, JavaScript, content management tools and digital media. As a developer, I utilize the PHP scripting language that incorporates object-oriented programming practices to integrate server-side functionality into a web application. Vital components of this process entails auscultating user-experience; amalgamating accessibility, performance requirements and other technical considerations; HTTP server installation; database configuration; and using the SSH protocol in conjunction with a version control system to provide remote access securely to mitigate maintenance concerns.</p>
+      <!-- -->
+      <p class="readText">To this end, I am currently exploring pathways by which I can leverage my unique skillset to eloquently transition into a web developer-teaching career.</p>
+      <!-- -->
     </div>
   </section>
-  <!-- -->
-      <br>
-      <hr style="margin: 0 20px;">
-      <br>
-  <section id="skills">
-    <div>
-      <h2>SKILLS Section</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligul.</p>
-    </div>    
+  <!---->
+  <!---->
+  <hr>
+  <section>
+    <h2 style="font-variant: small-caps;">Training &amp; Skills</h2>
+    <p class="readText">Jack-of-All-Trades, I am not. However, I am an effective communicator with a distinctive international experience capable of doing anything that I put my mind to. Who knows? Maybe I will open a school one day!</p>
+    <!--<p class="readText">Instant cortado coffee decaffeinated white black siphon extra black fair trade dark, sugar that, café au lait rich filter, half and half brewed café au lait cup sugar mocha. Espresso eu cream trifecta et french press half and half eu, et decaffeinated ut french press, qui to go filter steamed fair trade roast so at doppio.</p> 
     
+    <!-- TRAINING +AND+ SKILLS -->
     <div class="subGrid">
-      <div class="card">
-        <div class="training">
-          <h3>Training</h3>
-          <div>
-            <table>
-              <tr>
-                <td class="date">2015</td>
-                <td class="train">Web Dev Training</td>
-              </tr>
-              <tr>
-                <td class="place">USA</td>
-                <td class="institution">Treehouse</td>
-              </tr>
-              <tr>
-                <td class="date">2011</td>
-                <td class="train">Manadarin Language</td>
-              </tr>
-              <tr>
-                <td class="place">China</td>
-                <td class="institution">Shanghai Ocean University</td>
-              </tr>
-              <tr>
-                <td class="date">2010</td>
-                <td class="train">MOS Training</td>
-              </tr>
-              <tr>
-                <td class="place">USA</td>
-                <td class="institution">Microsoft</td>
-              </tr>
-              <tr>
-                <td class="date">2007</td>
-                <td class="train">TEFL Teacher Training</td>
-              </tr>
-              <tr>
-                <td class="place">Thailand</td>
-                <td class="institution">ITTT, Inc.</td>
-              </tr>
-              <tr>
-                <td class="date">2003</td>
-                <td class="train">B.A. Political Science</td>
-              </tr>
-              <tr>
-                <td class="place">USA</td>
-                <td class="institution">University of Louisville</td>
-              </tr>
-            </table>
-          </div>
+      <!-- Training -->
+      <div>
+        <div class="grid-table">
+          <span>2015</span>
+          <span>Web Dev Training</span>
+          <span>USA</span>
+          <span>Treehouse</span>
+          
+          <span>2011</span>
+          <span>Mandarin Language Studies</span>
+          <span>China</span>
+          <span>Shanghai Ocean University</span>
+          
+          <span>2010</span>
+          <span>MOS Training</span>
+          <span>USA</span>
+          <span>Microsoft</span>
+          
+          <span>2007</span>
+          <span>TEFL Teacher Training</span>
+          <span>Thailand</span>
+          <span class="smallSpan">International TEFL Teacher Training, Inc.</span>
+          
+          <span>2003</span>
+          <span>B.A. Political Science</span>
+          <span>USA</span>
+          <span>University of Louisville</span>
+          
+          <!--<span>aaaaaaaa</span>
+          <span>bbbbbbbb</span>
+          <span>cccccccc</span>
+          <span>dddddddd</span>-->
         </div>
       </div>
-      <div class="card">
-        <div class="skills">
-          <h3 style="margin-bottom: 15px;">Skills</h3>
+      <!-- Skills -->
+      <div>
+        <div class="grid-row">
           <div class="SkillBar">
             <div id="Skill-Design">
-              <span class="Skill-Area">Design</span> <span class="PercentText">75%</span>
+              <span class="Skill-Area">Design</span> <span class="PercentText">80%</span>
             </div>
           </div>
-          <p class="skillSpecs">HTML | CSS | Accessibility | Systems</p>
+          <div class="skillSpecs">
+            <span>HTML | CSS | IA/UI/UX |Accessibility | Wireframes</span>
+          </div>
+        </div>
+        <!-- -->
+        <div class="grid-row">
           <div class="SkillBar">
             <div id="Skill-Develop">
-              <span class="Skill-Area">Develop</span> <span class="PercentText">64%</span>
+              <span class="Skill-Area">Develop</span> <span class="PercentText">68%</span>
             </div>
           </div>
-          <p class="skillSpecs">PHP | Composer | JavaScript | npm</p>
+          <div class="skillSpecs">
+            <span>PHP | Composer | JavaScript | npm</span>
+          </div>
+          </div>
+        <!-- -->
+        <div class="grid-row">
           <div class="SkillBar">
             <div id="Skill-Deploy">
-              <span class="Skill-Area">Deploy</span> <span class="PercentText">81%</span>
+              <span class="Skill-Area">Deploy</span> <span class="PercentText">82%</span>
             </div>
           </div>
-          <p class="skillSpecs">Host | Version Control | SFTP</p>
+          <div class="skillSpecs">
+            <span>Server Config. | Version Control | SFTP | SSH</span>
+          </div>
+        </div>
+        <!-- -->
+        <div class="grid-row">
           <div class="SkillBar">
             <div id="Skill-Copy">
-              <span class="Skill-Area">Writing &amp; Editing</span> <span class="PercentText">95%</span>
+              <span class="Skill-Area">Writing &amp; Editing</span> <span class="PercentText">91%</span>
             </div>
           </div>
-          <p class="skillSpecs">Creative | AP &amp; MLA Style | Research</p>
+          <div class="skillSpecs">
+            <span>Creative | AP &amp; MLA Style | Research</span>
+          </div>
+        </div>
+        <!-- -->
+        <div class="grid-row">
           <div class="SkillBar">
             <div id="Skill-Interpersonal">
-              <span class="Skill-Area">Interpersonal</span> <span class="PercentText">88%</span>
+              <span class="Skill-Area">Interpersonal</span> <span class="PercentText">79%</span>
             </div>
           </div>
-          <p class="skillSpecs">Ethical | Organized | Problem Solver</p>
+          <div class="skillSpecs">
+            <span>Articulate | Ethical | Problem Solver | Weird A.F.</span>
+          </div>
         </div>
+        <!--<div class="grid-table">
+          <span>aaaaaaaa</span>
+          <span>bbbbbbbb</span>
+          <span>cccccccc</span>
+          <span>dddddddd</span>
+        </div>-->
       </div>
     </div>
-    
-    <div class="report-card treehouse"></div>
-    
-  <p class="btn"><a src="moodyCV.doc" href="moodyCV.doc" title="View My Work History"  alt="View My Work History">Download CV <i class="fa fa-cloud-download" aria-hidden="true"></i></a></p> 
-    
+      <details><!-- <details 'open'> will OPEN Module from Start -->
+        <summary>Teaching Experience &nbsp;<code>9,000+ Hours</code></summary>
+        <p class="readText">Below is a list of some of the educational institutions that I have collaborated with:</p>
+        <aside>
+          <div class="trainingGrid">
+            <span>2018 - <!--<small><i>Present</i></small>--> </span>
+            <span><!--Substitute Teacher <b>&#64;</b> -->Jefferson Co. Public Schools <small>(KY)</small></span>
+            <!-- -->
+            <span>2016 - 2017 </span>
+            <span><!--TEFL Instructor <b>&#64;</b> -->Jiaxing College</span>
+            <!-- -->
+            <span>2012 - 2013 </span>
+            <span><!--TEFL Instructor <b>&#64;</b> -->Zhejiang Middle School</span>
+          <!-- -->
+            <span>2007 - 2009 </span>
+            <span><!--TEFL Trainer <b>&#64;</b> -->Oxford Seminars</span>
+          <!-- -->
+            <span>2005 - 2006 </span>
+            <span><!--TEFL Instructor <b>&#64;</b> -->Joongdong High School</span>
+          <!-- -->
+            <span>2004 - 2006 </span>
+            <span><!--TEFL Consultant <b>&#64;</b> -->US-Japan Edu. Exchange Program</span>
+          <!-- -->
+            <span>2003 - 2004 </span>
+            <span><!--TEFL Instructor <b>&#64;</b> -->Sogang University</span>
+          <!-- -->            
+            <span>2000 - 2001 </span>
+            <span><!--Rec. Supervisor <b>&#64;</b> -->Cabbage Patch Settlement House</span>
+          </div>
+        </aside> 
+        <!-- -->  
+      </details>
+    <!-- -->
+    <!-- -->
+      <details>
+        <summary>Web Dev Experience &nbsp;<code>2,000+ Hours</code></summary>
+        <!--<p>MDN Resources <code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank" rel="noopener">details</a></code></p>
+        <ul>
+          <li><a href="https://www.scottohara.me/blog/2018/09/03/details-and-summary.html" target="_blank" rel="noopener">Scott O'Hara</a></li>
+        </ul>-->
+        <div class="report-card treehouse"></div>
+      </details>
+    <!-- -->
+    <p class="readText">If you are interested in learning more about my work, please visit my <u><a href="portfolio.php">portfolio</a></u> and check out projects that I have in the works!</p>
   </section>
-  <!-- -->
-      <br>
-      <hr style="margin: 0 auto;">
-      <br>
-  <section id="work">
-    <div>
-      <h2>WORK Section</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligul.</p>
-    </div>
+  <!---->
+  <!---->
+  <hr>
+  <section>
+    <h3>Get In Touch</h3>
+    <p classs="readText">Are you a small business seeking an overhaul of your legacy website? An entrepreneur in need of a digital presence?  A student seeking mentorship? No matter your situation, I offer services to all!</p>
+    <br>
+    <ul class="social">
+      <li>
+        <a class="github" href="https://github.com/MisterMoody" alt="Github" target="_blank" title="Check Out My Work on Github">
+        <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a class="twitter" href="https://twitter.com/Mister_Moody" alt="Twitter" target="_blank" title="Follow Me on Twitter">
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      </li>
+      <!--<li>
+        <a class="download" src="moodyCV.doc" href="moodyCV.docx" title="Download My Resume"  alt="Download My Resume">
+        <i class="fa fa-cloud-download fa-2x" aria-hidden="true"></i></a>
+      </li>-->
+      <li>
+        <a class="phone" href="tel:+15025589240" alt="Call Me" title="Call Me">
+        <i class="fa fa-mobile fa-2x" aria-hidden="true"></i></a>
+      </li>
+      <li>
+        <a class="email" href="contact.php" alt="Email Me" title="Email Me">
+        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+    <br>
   </section>
-  <!-- -->
-      <br>
-      <hr style="margin: 0 auto;">
-      <br>
-  <section id="contact">
-    <div>
-      <h2>Contact Mister Moody</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligul.</p>
-    </div>
-  </section>
-  <!-- -->
+  <!---->
+  <!---->
 </main>
+      
 
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->       
 <?php
-include ("inc/footer.php"); 
+include ("inc/footer.php"); //Contains '<footer>' element'
 ?>

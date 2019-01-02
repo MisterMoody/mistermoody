@@ -8,7 +8,8 @@ include ("inc/header.php");
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
   <section class="contactForm">
-    <h3 style="text-align: center;">Share Your Thoughts. </h3>
+    <h3>Have an idea?</h3>
+    <h3>Shoot your shot?</h3>
     <!-- PHP -->
     <?php
     if(isset($_POST["submit"])) {

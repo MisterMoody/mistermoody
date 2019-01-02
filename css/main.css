@@ -1,21 +1,14 @@
-/* =========================================================== */
-/* ================= UNIVERSAL BASE STYLES =================== */
-@media only screen and (min-width: 800px) {
-  .hide {display: none;}
-}
+/*******************************************/
+/** UNIVERSAL BASE STYLES ******************/
+/*******************************************/
+
 *, *:before, *:after {box-sizing: border-box;} 
-/*Feature Query = Browser Support*/
-@supports (display: grid) {
-  .grid > * {
-    width: auto;
-    margin: 0;
-  }
-}
-
-
 /**/
+/*Smooth Scroll Effect*/
+html {scroll-behavior: smooth;}
+/**/
+/* Remove Browser Scroll + Gives Site an 'APP' */
 /* 
-  Removes Browser Scroll + Gives Site an 'APP' 
 html {
   overflow: scroll;
   overflow-x: hidden;
@@ -27,65 +20,84 @@ html {
 */
 /**/
 
-
 body {
   margin: 0 auto;
   padding: 0 auto;
-  font-size: calc(1.15em + 1.05vw); 
+  font-size: calc(1em + 1vw); 
+  /*min-height: calc(100vh - 5em)*/
 	font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.6px;
+  font-kerning: auto;
 }
+
+/* FONT-STYLES for 'HEADINGS' */
+h1 {font-size: 2em;}
+h2 {font-size: 1.563em;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 0.8em;}
+h5 {font-size: 0.64em;}
+h6 {font-size: 0.512;}
 h1, h2, h3, h4, h5, h6 {
-  margin: 16px 0;
-  padding: 0 auto;
   text-align: center;
-} /*for TOP Alignment */
-p {
-  text-align: justify;
-  line-height: 1.5; 
-  font-size: 0.74em;
+  font-weight: 900;
+} 
+
+/* FONT-STYLES for 'PARAGRAPHS/TEXT' */
+.readText { 
+  text-align: left;
+  line-height: 24px;/*26px*/
+  /*letter-spacing: 0.01rem;*/
 }
+.readText {font-size: 0.80em;}/*0.82em*/
+@media only screen and (min-width: 800px) {
+  .readText {
+    text-align: justify;
+    line-height: 32px; 
+  }
+  .readText {font-size: 0.88em;}
+}
+
+/* FONT-STYLES for 'PARAGRAPHS/TEXT' */
+.portText { 
+  margin: 1em;
+  text-align: left;
+  line-height: 24px;/*26px*/
+  /*letter-spacing: 0.01rem;*/
+}
+.portText {font-size: 0.80em;}/*0.82em*/
+@media only screen and (min-width: 800px) {
+  .portText {
+    margin: 1.5em 2.5em;
+    text-align: justify;
+    line-height: 32px; 
+  }
+  .portText {font-size: 0.88em;}
+}
+
+/* <anchor> LINK STYLES*/
 a {
   text-decoration: none;
-  color: black;
+  color: black; 
+  transition: all .25s ease-in-out;
 }
-a:hover {opacity: 0.7;}
+a:hover {
+  opacity: 0.7;
+  transition: all .25s ease-in-out;
+}
+/* LIST STYLES*/
 ul {
   list-style-type: none; 
   margin: 0; 
   padding: 0;
 }
-li > a {font-size: 0.79em;}
-.listGroup {
-  font-size: 0.84em;
-}
-@media only screen and (min-width: 800px) {
-  p {text-align: justify; line-height: 1.339;}
-  .listGroup {margin-top: -28px;}
-}
-/**/
-.clear {opacity: 0.1;}
+/* CODE STYLES */
+/*code {
+  padding: 0.2em;
+  border-radius: 3px;
+  background-color: rebeccapurple;
+  font-family: monospace;
+}*/
 
-/* <a> Links 'Arrow' Transform */
-span.read {font-weight: 900;}
-span.read {
-	position: relative;
-	transition: all 500ms ease; 
-	overflow:hidden;
-}
-span.read:before {
-	font-family: FontAwesome;
-	content:"\f101";
-	position: absolute;
-	left: 100px; /*Icon Position*/
-	transition: all 200ms ease;
-} 
-span.read:hover:before {left: 110px;}
-@media only screen and (min-width: 800px) {
-  p.span {text-align: center;}
-  span.read:before {left: 151px;}
-  span.read:hover:before {left: 160px;}
-}
+/* 'Line' Divider Styles*/
 hr {
   background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
   border: 0;
@@ -107,82 +119,175 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   position: relative;
   top: -0.7em;
 }
-/* =========================================================== */
 
-
-/* HEADER */
-header {margin: 0px;}
-
-/* NAVIGATION */
-
-/* FOOTER */
-footer {text-align: center; margin-top: 4px;}
-footer.credit {font-size: 14px;}
-.fa-heart {
-  color: red;
-  animation: pulse 1.3s ease infinite;
-  padding-top: -50px;  /*Required for Heart Animation*/
+/*Visibility*/
+@media only screen and (max-width: 799px) {
+  .viewDesktop {display: none;}
 }
-@keyframes pulse {
-  0% {transform: scale(0.5);}
-  50% {transform: scale(0.7);}
-  100% {transform: scale(0.5);}
+@media only screen and (min-width: 800px) {
+  .viewDesktop {display: block;}
 }
-/* =========================================================== */
+/* ********************************************** */
+/* ********************************************** */
 
 
 
-/* IMAGES ================================ */
+/*******************************************/
+/** NAVIAGATION ****************************/
+/* https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf */
+.navbar {
+  background-image: linear-gradient(0deg, #ddd 10%, #222 100%);
+}
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+.nav-links,
+.logo {
+  margin-left: 4.2vw;  
+  text-decoration: none;
+  color: black;
+  /*color: rgba(255, 255, 255, 0.5);*/
+  transition: all .25s ease-in-out;
+}
+.logo,
+.main-nav li {
+  margin-top: 8px;
+}
+.logo {
+  display: inline-block;
+  font-size: 1.3em;
+}
+
+/*Hamburger ICON*/
+.navbar-toggle {
+  font-size: 28px;
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  transition: all .25s ease-in-out;
+  cursor: pointer; 
+  color: black; /*rgba(255,255,255,0.8)*/
+}
+/*Icon TOGGLE = Is this Required????*/
+.active {
+  display: block;
+}
+@media screen and (min-width: 800px) {
+  .navbar {
+    display: flex;
+    padding-bottom: 0;
+    height: 53px;
+  }
+  .main-nav {
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    flex-direction: row;
+  }
+  
+  /*Align Margins with 'grid' Margins*/
+  .logo {
+    margin-left: 6vw;
+  }
+  .main-nav li {
+    font-size: 0.80em;
+    margin-right: 6vw;
+  }
+  /*Space between nav-links
+  margin-left: -10px;*/
+  .nav-links {
+    margin-left: -10px; 
+  }
+  /*.main-nav, .logo {margin: 0 6vw;}*/
+  .navbar-toggle {
+    display: none;
+  }
+  /*.logo:hover,
+  .nav-links:last-child {margin-right: 6vw;}*/
+  .nav-links:hover {
+    opacity: 0.5;
+    transition: all .25s ease-in-out;
+  }
+}
+/*******************************************/
+/*******************************************/
+
+
+
+
+/*******************************************/
+/** FOOTER *********************************/
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-image: linear-gradient(180deg, #ddd 32%, #222 100%);
+}
+footer.credit {
+  font-size: 0.80em;
+} /*575em*/
+@media only screen and (min-width: 800px) {
+  footer {
+    margin-top: 4px;
+  }
+  footer.credit {
+    font-size: 1em;
+  }
+}
+/*******************************************/
+/*******************************************/
+
+
+/*******************************************/
+/** IMAGES *********************************/
 .mainImage {
+  /*margin: 4px 0;*/
   width: 100%;
   height: auto;
 }
 .imgL {
   float: left;
-  margin: 8px 8px 0 0;
-  width: 33%;
-  height: auto; 
-  border-radius: 8px;
+  margin: 10px 6px 0 0; /*8px 4px 0 0;*/
+  width: 45%;
+  height: 155px; 
+  /*border-radius: 0 8px 0 0;*/
 }  
 .imgR {
   float: right;
-  margin: 8px 0 0 4px;
-  width: 34%;
-  height: auto; 
-  border-radius: 8px;
+  margin: 10px 0 0 6px;
+  width: 45%;
+  height: 168px; 
+  /*border-radius: 8px 0 0 0;*/
 } 
+.imgL, .imgR {
+    border: 2px solid #838487;
+}
 @media all and (min-width: 800px) {  
+  .mainImage {height: auto;}
   .imgL {
     float: left;
     margin: 5px 20px 0 0;
-    width: 35%;
-    height: auto; 
-    /*border: 2px solid #c41e3a;*/
-    border-radius: 2px;
+    width: 40%;
+    height: 275px;/*auto*/ 
   }
   .imgR {
     float: right;
     margin: 8px 0 0 20px; /*0 0 10px 25px*/
-    width: 32%;
-    height: auto; 
-    /*border: 2px solid #c41e3a;*/
+    width: 40%;
+    height: 275px;/*auto*/
     border-radius: 2px;
   }
   /**/
 }
-/**//*******************************//**/
+/*******************************************/
+/*******************************************/
 
 
-.card {
-  width: 100%;
-  margin: 0 auto;
-}
 p.btn {
   height: 100%;
   text-align: center;
   border: 2px solid #000;
 }
-
 @media only screen and (min-width: 800px) {
   .miniGallery {margin: 50px 0;}
   /*p.btn {border: none;}*/
@@ -190,112 +295,258 @@ p.btn {
 
 
 
-
-/**/
-/* [#] SKILLS & TRAINING */
+/*******************************************/
+/** SKILLS & TRAINING **********************/
 /*Skill Bars*/
 .SkillBar {
-    width: 100%;
-    height: 30px;
-    position: relative;
-    background: rgba(17, 17, 17, .3);
-    margin: 6px auto;
+  width: 100%;
+  height: 25px;
+  position: relative;
+  background: #838487;
+  /*margin: 2px 0 -4px 0;
+  padding-bottom: -18px;*/
 }
 .Skill-Area {
   float: left;
   position: absolute;
   text-shadow: none;
   color: #fff;
-  font-size: 0.88em;
 }
 .PercentText {
-    position: relative;
-    padding-right: 15px;
-    margin-top: 2px;
-    float: right;
-    text-shadow: none;
-    color: #fff;
-    font-size: 0.88em;
+  position: relative;
+  padding-right: 15px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
 }
 .skillSpecs {
-  margin-top: -8px;
-  margin-bottom: 0;
-  font-size: 0.74em;
+  font-size: 0.68em;
+  margin-bottom: 8px;
+  /*background-color: #B93A32;*/
 }
+/*Individual Skill Bar 'width'*/
 #Skill-Design {
-  width: 75%;
-  height: 30px;
-  position: absolute;
-  background-color: #000;
+  width: 80%;
 }
 #Skill-Develop {
-    animation: Animate-JS 4s;
-    -webkit-animation: Animate-JS 4s;
-    -moz-animation: Animate-JS 4s;
-    -o-animation: Animate-JS 4s;
-    width: 64%;
-    height: 30px;
-    position: absolute;
-    background-color: #000;
-
+    width: 68%;
 }
 #Skill-Deploy {
-    width: 81%;
-    height: 30px;
-    position: absolute;
-    background-color: #000;
+    width: 82%;
 }
 #Skill-Copy {
-    width: 95%;
-    height: 30px;
-    position: absolute;
-    background-color: #000;
+    width: 91%;
 }
 #Skill-Interpersonal {
-  width: 88%;
-  height: 30px;
-  position: absolute;
+  width: 79%;
+}
+/*General Skill-Bar Settings*/
+#Skill-Design, 
+#Skill-Develop, 
+#Skill-Deploy, 
+#Skill-Copy, 
+#Skill-Interpersonal {
+  height: inherit; /* Use 'inherit' */
+  position: absolute;  
   background-color: #000;
 }
-/*Training*/
-.date {
-  float: left;
-  position: absolute;
-}
-.train {
-  position: relative;
-  padding-right: 0;
-  float: right;
-  margin-bottom: 0px;
-}
-.date, .train {
-  text-shadow: none;
-  color: #000;
-  font-size: 0.88em;
-  font-weight: 700;  
-}
-.place {
-  float: left;
-  position: absolute;
-  font-size: 0.74em;
-}
-.institution {
-  position: relative;
-  padding-right: 0;
-  float: right;
-  text-shadow: none;
-  font-size: 0.74em;
-  margin-bottom: 0.95px;    /*Required for Row-Alignment*/ 
-}
-table {width: 100%;}
+/**/
 @media only screen and (min-width: 800px) {
   .skills {margin-top: 25px;}
   .PercentText {margin: 0 auto;}
   .skillSpecs {
-    margin-bottom: 0.57em; 
-    font-size: 0.64em;
+    margin-bottom: 8px;
   }
+  div.skillSpecs {
+    font-size: 0.62em;
+  }
+  #Skill-Design, 
+  #Skill-Develop, 
+  #Skill-Deploy, 
+  #Skill-Copy, 
+  #Skill-Interpersonal, 
+  .SkillBar, .Skill-Area, .PercentText {
+    height: 1.07em;
+  }
+  
 } 
-/*.training, .skills {width: 100%;}*/
-/**//***********************************//**/
+/*******************************************/
+/*******************************************/
 
+
+
+/*******************************************/
+/** WORK SECTION ***************************/
+details {
+  margin: 1rem auto;
+  padding: 0 0.8rem 0 0.2rem;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  border: 1px solid #838487;
+  border-radius: 4px;
+  color: #000;
+  /*background-color: #E0E0E0;
+  transition: background-color .15s;*/
+}
+details > :last-child {
+  margin-bottom: 1rem;
+}
+details::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  opacity: .15;
+  box-shadow: 0 .25em .25em #838487;
+  transition: opacity .2s;
+  z-index: -1;
+}
+details[open] {
+  background-color: #fff;
+}
+details[open]::before {
+  opacity: .6;
+}
+/*See '.summaryTable'*/
+
+summary {
+  font-size: 0.64em;
+  padding: 0.5rem 1em 0.5rem 0;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+summary::before, summary::after {
+  width: .75em;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  background-color: #000;
+  text-align: right;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+summary::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+[open] summary::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details > p {
+  margin: 0 0 1em;
+}
+/*details > ul {
+  margin: 0 0 1em;
+  padding: 0 0 0 1em;
+}*/
+details > li:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+/*******************************************/
+/*******************************************/
+
+
+/*******************************************/
+/** CONTACT FORM ***************************/
+main > div.contactForm {
+  margin: 20px 0;
+  color: #000;
+  font-weight: bold; 
+  height: 275px;
+}
+input, textarea{
+  width: 99%;
+  margin: 1px 0;
+  font-size: 1em;
+	border-radius: 4px;
+	background-color: rgba(255,255,255,.6);
+	border: solid 1px #000;
+  padding: 1vmax 0;
+}
+#submit_button {
+	border-radius: 4px;
+  background-color: #3a3a3a;
+  color: #fff;
+	font-weight: bold;
+  font-size: 1em;
+  transition-duration: .5s;
+  cursor: pointer;
+  padding: 2vmax;
+  width: 40%; 
+  margin: 16px 30%;
+}
+#submit_button:hover {
+  background-color: #1a1a1a;
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 20px #000;
+  transition-duration: .5s;  
+}
+label.required:after {
+  content:'*';
+  color:red;
+}
+@media only screen and (min-width: 800px) {
+  main > div.contactForm {
+    margin: 0 auto; 
+    height: 100%;
+  }
+  textarea {width: 99.5%;}
+  #submit_button {
+    padding: 1vmax;
+    width: 35%;
+  margin: 16px 30%;
+  }
+}
+/*******************************************/
+/*******************************************/
+
+
+/*******************************************/
+/** SCROLL-to-TOP Button *******************/
+/*SCROLL-to-TOP Button*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  right: 0px; /* Place the button 30px from the right */
+  bottom: 350px;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  /* color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0;  /*Some padding */
+  /* border-radius: 10px; /* Rounded corners */
+  font-size: 10px; /* Increase font size */
+}
+#myBtn:hover {
+  /* background-color: #ccc; Add a dark-grey background on hover */
+  opacity: 0.7; color: blue;
+}
+@media screen and (min-width: 768px) {
+  #myBtn {
+    bottom: 50%; /* Place the button 26px at the bottom of the page */
+    right: 8px; /* Place the button 30px from the right */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    background-color: #838487; /* Set a background color */
+  }
+}
+/*******************************************/
+/*******************************************/

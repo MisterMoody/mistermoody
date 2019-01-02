@@ -1,136 +1,328 @@
-/* =========================================================== */
-/* ====================== GRID LAYOUTS ======================= */
+/*******************************************/
+/** GRID LAYOUTS ***************************/
+/*******************************************/
 
 
-
-/* ********************************** */
-/* MAIN-TEMPLATE GRID */
-.grid {
-	margin: 0 2vw;
+/*******************************************/
+/** MAIN TEMPLATE GRID *********************/
+article {
+	margin: 0vh 0vw;
   padding: 0 auto;
 	display: grid;
-	grid-template-rows: 8vmin 100% minmax(10px,auto); /*10vmin 100% minmax(20px,auto)*/
-	grid-gap: 4px;
+	grid-template-rows:  8vmin repeat(auto, minmax(200px,auto));
+	grid-gap: 0px;
 }
+main {margin: 0vh 4.2vw;}
 @media only screen and (min-width: 800px) {
-  .grid {
-	margin: 0 10vw;
-  padding: 0 auto;
-	display: grid;
-	grid-template-rows: 15vmin minmax(350px,auto) 10px;
-  }
-}
-
-
-/* ********************************** */
-/* Main NAVIGATION GRID */
-/*Grid-Area: 1st-Row*/
-.home {
-  grid-area: home;
-  text-transform: uppercase; 
-  font-weight: bold;
-}
-.edupreneur {
-  grid-area: edupreneur;
-  text-align: right;
-}
-/*Grid-Area: 2nd-Row*/
-.about {
-  grid-area: about;
-}
-.skills {
-  grid-area: skills;
-}
-.work {
-  grid-area: work;
-}
-.contact {
-  grid-area: contact;
-}
-/**/
-nav > ul {
-  width: 96%;         /*REQ. Aligns with '.grid*/
-  margin: 0 0.001em;  /*REQ. Aligns with '.grid*/
-  padding: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, auto)/*repeat(4, auto)*/;
-  grid-template-rows: repeat(2, minmax(10px, auto));
-  grid-row-gap: 0px;
-  justify-content: space-between;
-  grid-template-areas: 
-    "home home edupreneur edupreneur"
-    "about skills work contact";
-  /*Stickyness*/
-  position: fixed;
-  top: 0;
-  background-color: #bbb;
-  /*Priority View*/
-  z-index: 1;
-}
-
-/*Highlights Current Section = BROKEN*/
-nav > ul > li > a.current {
-  background: #ccc;
-}
-
-/*Smooth Scroll Effect*/
-html {
-  scroll-behavior: smooth;
-}
-
-@media only screen and (min-width: 800px) {
-  nav > ul {
-    width: 79vw;  /*REQ. Aligns with '.grid*/
-    margin: 0 auto;
+  article {
+    margin: 0 0vw;
+    padding: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, auto)/*repeat(4, auto)*/;
-    grid-template-rows: repeat(2, minmax(10px, auto));
-    grid-row-gap: 0px;
-    justify-content: space-around;
-    align-items: baseline;
+    grid-template-rows: 10vh repeat(auto, minmax(200px,auto));
   }
-  /*for Consistent Width*/
-  ul {width: 100%;}
-  /*Titles Flex to Center*/
-  .home {justify-self: right;}
-  .edupreneur {justify-self: left;}
+  main {margin: 0vh 6vw;}
 }
+/*******************************************/
+/*******************************************/
 
 
-
-/* CONTENT SUB-GRID */
+/*******************************************/
+/** Main Template SUB-GRID *****************/
 .subGrid {
   margin: 0 auto;
   padding: 0 auto;
   display: grid;
   grid-template-rows: repeat(auto, 1fr);
-  grid-template-columns: auto;
+  grid-template-columns: repeat(auto, minmax(200px,auto));
+  grid-gap: 8px;
+}
+.module {
+  border: 2px dashed red;
+  background-color: green;
 }
 @media only screen and (min-width: 800px) {
   .subGrid {
     margin: 0 auto;
     padding: 0 auto;
     display: grid;
+    grid-template-rows: repeat(auto, 1fr);  /*88vh*/
     grid-template-columns: repeat(2, 49%);  /*repeat(auto-fit, minmax(200px, 1fr))*/
-    grid-template-rows: 88vh;
-    grid-column-gap: 20px;
+    grid-gap: 24px;
+    
   }
 }
-/* ********************************** */
-
-
-/* ********************************** */
-
+/*******************************************/
+/*******************************************/
 
 
 
+/*******************************************/
+/** DEVOPS.php 'Grids' *********************/
 
-
-/* FEATURE QUERY for BROWSER SUPPORT */
-@supports (display: grid) {
-  .grid > * {
-    width: auto;
+/*Grid Template Areas*/
+.design {grid-area: design; background-color: #aa5;}
+.develop {grid-area: develop; background-color: #bb4;}
+.deploy {grid-area: deploy; background-color: #cc3;}
+.technical {grid-area: technical; background-color: #dd2;}
+/*Sectional Grid*/
+.devOpsGrid {
+  margin: 0;
+  padding: 4px;           /* Some padding */
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;     /* Rounded border */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 8px;  
+  grid-template-areas: 
+    "design develop"
+    "deploy technical";
+  } 
+/**/
+.devOpsItem  /*> div > i.fa*/ {
+  margin: 0;
+  padding: 0;
+  display: subgrid;
+  grid-template-rows: repeat(2, minmax(71px, auto));
+  grid-template-areas:
+    "decal"
+    "story";
+  text-align: center; 
+  padding: 4px 0;
+}
+div.devOpsStory > h3 {
+  padding: 0; 
+  margin: 0; 
+ /* font-size: 1.7em;*/}
+@media only screen and (min-width: 800px) {
+  /*Grid Template Areas*/
+  .design {grid-area: design;}
+  .develop {grid-area: develop;}
+  .deploy {grid-area: deploy;}
+  .technical {grid-area: technical;}
+  .devOpsGrid {
     margin: 0;
+    padding: 4px;           /* Some padding */
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;     /* Rounded border */
+    display: grid;
+    grid-template-rows: auto;  /*88vh*/
+    grid-template-columns: repeat(2, 1fr);  /*88px auto;*/
+    grid-gap: 8px;  
+  } 
+  /**/
+  .devOpsIcon {grid-area: decal;}
+  .devOpsStory {grid-area: story;}
+  .devOpsItem  /*> div > i.fa*/ {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 88px auto;
+    grid-template-rows: 1fr;
+    text-align: center; 
+    padding: 4px 0;
+    grid-template-areas:
+      "decal story";
+    grid-gap: 4px;
   }
 }
-/* ********************************** */
+/*Row-Alignment (Grid)*/
+div.devOpsRow {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 88px auto;  
+}
+/*******************************************/
+/*******************************************/
+
+
+/*******************************************/
+/** SOCIAL MEDIA GRID **********************/
+/*.download {grid-area: download;}
+Convert Grid 
+  > Modify g-t-c > replace '4' w. '5'
+  > Modify g-t-a > include 'download
+*/
+.github {grid-area: github;}
+.twitter {grid-area: twitter;}
+.email {grid-area: email;}
+.phone {grid-area: phone;}
+ul.social {
+  margin-top: -18px; margin-bottom: -1px;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1.81rem;
+  justify-content: space-between;
+  grid-template-areas: 
+    "github twitter email phone";
+}
+@media only screen and (min-width: 800px){
+  ul.social {
+    margin-top: 10px; margin-bottom: -10px;
+  }
+}
+/*******************************************/
+/*******************************************/
+
+
+/*******************************************/
+/**SKILLS & TRAINING GRID ******************/
+/* Training & Skills GRID-Table/Row for ABOUT.php */
+.grid-table {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  /*font-size: 0.82em;*/
+}
+.grid-row {
+  display: subgrid;
+  grid-template-rows: 1fr;
+  /*font-size: 0.82em;*/
+}
+.grid-table > span:nth-child(4n+1),
+.grid-table > span:nth-child(4n+2) {
+  background-color:#838487;
+  font-size: 0.88em;
+}
+.grid-table > span:nth-child(4n+3),
+.grid-table > span:nth-child(4n+4) {
+  /*background-color: #B93A32;*/
+  margin-bottom: 8px;
+  font-size: 0.68em;
+}
+/*Decrease Size of 'Long-string Content' 
+.grid-table > span.smallSpan {
+  font-size: 0.54em;
+}*/
+@media only screen and (min-width: 800px){
+  .grid-table {
+  grid-template-columns: 90px 1fr;
+  }
+  .grid-table > span:nth-child(4n+3),
+  .grid-table > span:nth-child(4n+4){
+    /*font-size: 0.88em;*/
+  }
+  /*Decrease Size of 'Long-string Content' */
+  .grid-table > span.smallSpan {
+    font-size: 0.6em;
+  }
+  .grid-row {
+    grid-row-gap: 4px;
+    /*font-size: 0.88em;*/ 
+  }
+}
+/* WORK-Experience Grid */  
+.trainingGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: repeat(autofit, minmax(15px, auto));
+  font-size: 0.65em;
+  grid-row-gap: 4px; 
+}
+.trainingGrid > span:nth-child(4n+1),
+.trainingGrid > span:nth-child(4n+2) {
+  background-color: #838487;
+}
+
+/*aside > div.trainingGrid {}*/
+@media only screen and (min-width: 500px){
+  .trainingGrid {
+    grid-template-columns: 132px 1fr;
+    font-size: 0.71em;
+  }
+}
+@media only screen and (min-width: 800px){
+  .trainingGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 1px;
+    /*font-size: 0.88em;*/
+  }
+  .trainingGrid > p {text-align: right; margin: 0 auto; padding: 0;}
+}
+/*******************************************/
+/*******************************************/
+
+
+/*******************************************/
+/** GRID for 'Links to News Articles' ******/
+/*
+  NOT CURRENTLY IN USE
+*/
+.newsTitle {grid-area: ntitle;}
+.newsLinkImage {grid-area: nLinkImage;}
+.newsLinkStory {grid-area: nLinkStory;}
+/**/
+aside.newsLinkGrid {}
+.newsLinkGrid {
+  margin: 0;
+  padding: 4px;           /* Some padding */
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;     /* Rounded border */
+  display: grid;
+  grid-template-rows: repeat(auto, minxmax(400, auto));  /*88vh*/
+  grid-template-columns:  88px auto;
+  grid-gap: 8px;  
+  grid-template-areas:
+    "nLinkImage ntitle"
+    "nLinkStory nLinkStory";
+  } 
+.newsLinkStory {
+  padding: 0; margin: 0;
+    /*font-size: 0.88em;*/
+}
+.newsLinkImage /*> picture > i.fa*/ {
+  text-align: center;
+}
+.newLinkImage, 
+.newsImage {
+  max-width: 100%;
+  height: auto;}
+/* Add a hover effect (blue shadow) */
+.newsImage:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+@media only screen and (min-width: 800px) {
+.newsLinkGrid {
+  border: 4px solid #ddd; /* Gray border */
+  border-radius: 4px;     /* Rounded border */
+  padding: 0px;           /* Some padding */
+  display: grid;
+  grid-template-rows: repeat(3, 400);  /*88vh*/
+  grid-template-columns:  8vw auto;
+  grid-gap: 0px;  
+  /*grid-template-areas:
+    "ntitle "
+    "nLinkImage"
+    "nLinkStory";*/
+}   
+  .newsLinkStory > h3 {
+    padding: 0; margin: 0;
+   /* font-size: 1.3em;*/
+  }
+  .newsLinkStory > p {
+    padding: 0; margin: 0;
+  }
+}
+/*Background Colors*/
+aside.newsLinkGrid {background-color: #fff;}
+.newsTitle {background-color: #f2edf3;}
+.newsLinkImage {background-color: #cd135e;}
+.newsLinkStory {background-color: #a5231d;}
+
+/*******************************************/
+/*******************************************/
+
+
+/*******************************************/
+/** FEATURE QUERY for BROWSER SUPPORT ******/
+@supports (display: grid) { 
+  .grid > * {
+    width: auto; 
+    margin: 0;
+  } 
+}
+/*******************************************/
+/*******************************************/

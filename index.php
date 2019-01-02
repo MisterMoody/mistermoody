@@ -1,22 +1,37 @@
 <?php
 $pageTitle = "Official Homepage of Mister Moody";
 
-include ("inc/header.php");
+include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
 ?>
 <!-- ******************************************************* -->
+<!-- ******************** <<HOMEPAGE>>  ******************** -->
+
+<!---->
+<!-- //CONTENT-BEGINS..... -->
+<!---->   
 <main>
+  <!-- 'Notification Scroll' -->
+  <div class="scroll-left">
+    <p>Best Wishes to You &amp; Yours for 2019!</p>
+  </div>
   <!-- -->
-  <section id="home">
-    <div class="">
-      <figure>
-        <img class="mainImage" src="img/free.jpg" alt="I am Mister Moody"/>
-      </figure>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligul. <span class="read">Learn More</span></p>
+  <section class="subGrid">
+    <div>
+      <picture><image src="img/tailorVanilla.jpg" class="mainImage"></image></picture>
     </div>
-  </section>
+    <div>
+      <p>Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.
+      </p>
+      <!--<p>Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification.</p>-->
+      <h4><a href="about.php" class="learn">Learn More</a></h4>
+    </div>
+  </section> 
   <!-- -->
 </main>
-<!-- ******************************************************* -->
+      
+
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++ -->       
 <?php
-include ("inc/footer.php"); 
+include ("inc/footer.php"); //Contains '<footer>' element'
 ?>
