@@ -9,7 +9,7 @@ include ("inc/header.php");
 <!-- //CONTENT-BEGINS..... -->
 <main>
   <section class="contactForm">
-    <h3>Have an idea? Shoot your shot!</h3>
+    <h3>Share Your Thoughts!</h3>
     <!-- PHP -->
     <?php
     if(isset($_POST["submit"])) {
@@ -17,7 +17,7 @@ include ("inc/header.php");
             $senderEmail=$_POST["senderEmail"];
             $message=$_POST["message"];
 
-            $recipient="raymoody10@gmail.com";
+            $recipient="principal@mistermoody.com";
             $subject="Mister Moody Alert: EMAILS from Prospective Clients";
             $mailBody="Name: $sender\nEmail$senderEmail\n\n$message";
 
@@ -51,7 +51,6 @@ include ("inc/header.php");
         <!---->
       </div>
     </form>
-    <!-- END of FORM -->
   </section>
 </main>
 <!-- .....CONTENT-ENDS// --> 

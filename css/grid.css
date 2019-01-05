@@ -55,10 +55,8 @@ main {margin: 0vh 4.2vw;}
 /*******************************************/
 
 
-
 /*******************************************/
 /** DEVOPS.php 'Grids' *********************/
-
 /*Grid Template Areas*/
 .design {grid-area: design; background-color: #aa5;}
 .develop {grid-area: develop; background-color: #bb4;}
