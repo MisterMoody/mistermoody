@@ -123,13 +123,14 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 /*Visibility*/
 @media only screen and (max-width: 799px) {
   .viewDesktop {display: none;}
+  .viewMobile {display: block;}
 }
 @media only screen and (min-width: 800px) {
   .viewDesktop {display: block;}
+  .viewMobile {display: none;}
 }
 /* ********************************************** */
 /* ********************************************** */
-
 
 
 /*******************************************/
@@ -214,8 +215,6 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 /*******************************************/
 
 
-
-
 /*******************************************/
 /** FOOTER *********************************/
 footer {
@@ -241,7 +240,7 @@ footer.credit {
 /*******************************************/
 /** IMAGES *********************************/
 .mainImage {
-  /*margin: 4px 0;*/
+  margin: 1em 0 0 0;
   width: 100%;
   height: auto;
 }

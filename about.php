@@ -186,7 +186,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
   <hr>
   <section>
     <h3>Get In Touch</h3>
-    <p classs="readText">Are you a small business seeking an overhaul of your legacy website? An entrepreneur in need of a digital presence?  A student seeking mentorship? No matter your situation, I offer services to all!</p>
+    <p class="readText">Are you a small business seeking an overhaul of your legacy website? An entrepreneur in need of a digital presence?  A student seeking mentorship? No matter your situation, I offer services to all!</p>
     <br>
     <ul class="social">
       <li>
