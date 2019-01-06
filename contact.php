@@ -18,8 +18,8 @@ include ("inc/header.php");
             $message=$_POST["message"];
 
             $recipient="principal@mistermoody.com";
-            $subject="Mister Moody Alert: EMAILS from Prospective Clients";
-            $mailBody="Name: $sender\nEmail$senderEmail\n\n$message";
+            $subject="Mister Moody Alert: Prospective Client Email";
+            $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
            if ( mail($recipient, $subject, $mailBody, "From: $sender<$senderEmail>")) {
              header('Location: index.php');/*Redirect Page*/
