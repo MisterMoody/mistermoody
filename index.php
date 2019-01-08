@@ -16,9 +16,9 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
       <picture><image src="img/tailorVanilla.jpg" class="mainImage"></image></picture>
     </div>
     <div>
-      <p>Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.
+      <p class="mainText1">Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.
       </p>
-      <p>Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification.</p>
+      <p class="mainText2">Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification.</p>
       <h4><a href="about.php" class="learn">Learn More</a></h4>
     </div>
   </section> 
