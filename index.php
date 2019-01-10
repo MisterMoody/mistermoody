@@ -11,8 +11,8 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
   <!-- 'Notification Scroll' 
   <div class="scroll-left"><p>Notification HERE</p></div>
   -->
-  <section class="subGrid">
-    <div>
+  <section class="homePage">
+    <div class="viewMobile">
       <picture><image src="img/tailorVanilla.jpg" class="mainImage"></image></picture>
     </div>
     <div>

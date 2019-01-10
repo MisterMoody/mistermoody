@@ -12,7 +12,8 @@ article {
 	grid-template-rows:  8vmin repeat(auto, minmax(200px,auto));
 	grid-gap: 0px;
 }
-main {margin: 0vh 4.2vw;}
+main {
+  margin: 0vh 4.2vw;}
 @media only screen and (min-width: 800px) {
   article {
     margin: 0 0vw;
@@ -21,6 +22,32 @@ main {margin: 0vh 4.2vw;}
     grid-template-rows: 10vh repeat(auto, minmax(200px,auto));
   }
   main {margin: 0vh 6vw;}
+}
+/*******************************************/
+/*******************************************/
+
+
+/*******************************************/
+/** Homepage SUB-GRID **********************/
+.homePage {
+  margin: 0 auto;
+  padding: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  /*grid-template-columns: repeat(auto, minmax(200px,auto));*/
+  grid-gap: 0;
+}
+@media only screen and (min-width: 800px) {
+  .homePage {
+    margin: 0 auto;
+    padding: 0 auto;
+    display: grid;
+    grid-template-rows: 88vh;  /*repeat(auto, 1fr)*/
+    align-items: center;
+    justify-content: center;
+    /*grid-template-columns: repeat(2, 49%);
+    grid-gap: 24px;*/     
+  }
 }
 /*******************************************/
 /*******************************************/

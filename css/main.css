@@ -51,10 +51,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mainText1, .mainText2 {
   font-size: 0.80em; 
-  line-height: 24px;
+  line-height: 22px;
 }
 .mainText1 {margin-top: 0px; }
-.mainText2 {margin-top: 2px;}
 @media only screen and (min-width: 800px) {
   .readText {
     text-align: justify;
@@ -62,8 +61,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.88em;
   }
   .mainText1, .mainText2 {
-    font-size: 0.93em;
-    line-height: 32px;
+    font-size: 1.15em;
+    line-height: 40px;
   }
   .mainText1 {margin-top: 1em;}
 }
