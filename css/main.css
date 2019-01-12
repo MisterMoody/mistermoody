@@ -61,8 +61,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.88em;
   }
   .mainText1, .mainText2 {
-    font-size: 1.15em;
-    line-height: 40px;
+    font-size: 1.24em;
+    line-height: 44px;
   }
   .mainText1 {margin-top: 1em;}
 }
@@ -95,6 +95,7 @@ a:hover {
   opacity: 0.7;
   transition: all .25s ease-in-out;
 }
+
 /* LIST STYLES*/
 ul {
   list-style-type: none; 
@@ -274,7 +275,11 @@ footer.credit {
     border: 2px solid #838487;
 }
 @media all and (min-width: 800px) {  
-  .mainImage {height: auto;}
+  .mainImage {
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
+  }
   .imgL {
     float: left;
     margin: 5px 20px 0 0;
