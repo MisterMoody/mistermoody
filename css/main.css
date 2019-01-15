@@ -522,14 +522,15 @@ label.required:after {
 }
 @media only screen and (min-width: 800px) {
   .contactForm {
-    margin: 0 auto; 
+    margin: 50px auto; 
     height: 100%;
   }
-  textarea {width: 99.5%;}
+  .lineInput {height: 1em;}
+  textarea {width: 99%;}
   #submit_button {
     padding: 1vmax;
     width: 35%;
-  margin: 16px 30%;
+    margin: 16px 30%;
   }
 }
 /*******************************************/
