@@ -483,11 +483,11 @@ details > li:not(:last-child) {
 
 /*******************************************/
 /** CONTACT FORM ***************************/
-main > div.contactForm {
+.contactForm {
   margin: 20px 0;
   color: #000;
   font-weight: bold; 
-  height: 275px;
+  height: 100%;
 }
 input, textarea{
   width: 99%;
@@ -521,7 +521,7 @@ label.required:after {
   color:red;
 }
 @media only screen and (min-width: 800px) {
-  main > div.contactForm {
+  .contactForm {
     margin: 0 auto; 
     height: 100%;
   }
