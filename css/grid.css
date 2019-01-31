@@ -82,14 +82,12 @@ main {
 /*******************************************/
 /** Portfolio PAGE 'Category' Module *******/
 .category {
-  margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit,  1fr);
 	grid-gap: 4px;
 }
 @media screen and (min-width: 800px) {
 	.category {
-    margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat (2, 1fr);

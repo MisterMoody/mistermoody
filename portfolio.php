@@ -5,13 +5,13 @@ include ("inc/header.php");
 <!-- ******************************************************* -->
 <!-- *************** <<PORTFOLIO GALLERY>>  **************** -->
 
-
+<main>
 <!-- //CONTENT-BEGINS..... -->
 <section>
   <div class="cat__title">
     <code class="cat__code">
       .malfunction {
-      <br>&nbsp;&nbsp;in-progress: nearly-finished;
+      <br>&nbsp;&nbsp;in-progress: &nbsp;&nbsp;nearly-finished;
       <br>}</code>
   </div>
 </section>
@@ -51,7 +51,7 @@ include ("inc/header.php");
 	</div>
 </section>
 <!-- .....CONTENT-ENDS// --> 
-
+</main>
 
 <!-- ******************************************************* -->
 <!-- ******************************************************* -->
