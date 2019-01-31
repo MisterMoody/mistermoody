@@ -8,11 +8,19 @@ include ("inc/header.php");
 <main>
 <!-- //CONTENT-BEGINS..... -->
 <section>
-  <div class="cat__title">
+  <!--<div class="cat__title">
     <code class="cat__code">
       .malfunction {
       <br>&nbsp;&nbsp;in-progress: &nbsp;&nbsp;nearly-finished;
       <br>}</code>
+  </div>-->
+  <div class="cat__title">    
+    <code class="cat__code">
+      <div class="rowOne">.malfunction {</div>
+      <div class="rowTwo">in-progress: </div>
+      <div class="rowThree">nearly-finished;</div>
+      <div class="rowFour">}</div>
+    </code>
   </div>
 </section>
 <!-- -->

@@ -69,23 +69,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /*******************************************/
 /** Portfolio PAGE 'Category' Module *******/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .cat__title {
     margin-top: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  .cat__code {}  
+  .cat__code {
+    /*See 'line 91, animation.css' */
+  }  
 }
 /**/
 .cat__container {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	display: inline-block;
+	display: inline-block; 
 }
-.cat__title {margin: 0 auto;}
+.cat__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .cat__image {
 	display: block;
 	width: 100%;

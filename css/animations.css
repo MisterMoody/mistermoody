@@ -82,34 +82,46 @@ transform: translateX(100%);
 transform: translateX(-100%); 
 }
 }
+/* ********************************** */
 
-/* *************** */
 
-/* GLITCH-SHAKE*/
 
+/* GLITCH-SHAKE */
+/* Layout */
 .cat__code {
   position: relative;
-  letter-spacing: 6px;
-  /*font-size: 10vw;
-  font-weight: 900;
-  text-transform: uppercase;*/
+  letter-spacing: 8px;
+  font-size: 1.2em;
   text-decoration: none;
-  display: inline-block;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(150px, auto));
   background-size: 120% 100%;
-  -webkit-background-clip: text;
+  /*-webkit-background-clip: text;
   -moz-background-clip: text;
-  -ms-background-clip: text;
+  -ms-background-clip: text;*/
   background-clip: text;
   color: black;
-  /*    Amazing Gradient Color on 'Shake'
-  background-image: linear-gradient(45deg, 
-                    #7794ff, 
-                    #44107A,
-                    #FF1361,
-                    #FFF800);  
-  background-size: 120% 100%;
-  */
   animation: .8s shake infinite alternate;
+}
+/* "Grid-Row" for 'Glitch' Content */
+.rowTwo, .rowThree {margin-left: 32px;}
+@media screen and (min-width: 1000px) {
+  .rowOne {grid-area: rOne;}
+  .rowTwo {grid-area: rTwo;}
+  .rowThree {grid-area: rThree;}
+  .rowFour {grid-area: rFour;}
+  /**/
+  .cat__code {
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "rOne rTwo rThree rFour"
+  }
+  /**/
+  .rowTwo, .rowFour {margin-left: 4px;}
+  .rowThree {margin-left: 16px;} 
 }
 @keyframes shake {
   0% { transform: skewX(-15deg); }
