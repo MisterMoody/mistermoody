@@ -98,11 +98,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font-family: sans-serif;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 20px;
+	top: 40%;
+	left: 20%;
+	transform: translate(-10%, -50%);
+	font-size: 1.2em;
 }
+p.cat__pTtext {font-size: 0.88em;}
 /**/
 .overlay {
 	position: absolute;
@@ -374,15 +375,34 @@ footer.credit {
 /*******************************************/
 /*******************************************/
 
-
+.btn {
+  display: inline-block;
+  width: 272px;
+  text-align: center; 
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: #000;
+  border-radius: 0.35em;
+  text-align: center;
+  border: 2px solid #fff;
+}
+.btn:hover {
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  opacity: 1;
+}
 p.btn {
   height: 100%;
   text-align: center;
   border: 2px solid #000;
 }
 @media only screen and (min-width: 800px) {
+  .btn {
+    width: 22rem;
+    height: 44px;
+  }
   .miniGallery {margin: 50px 0;}
-  /*p.btn {border: none;}*/
 }
 
 
