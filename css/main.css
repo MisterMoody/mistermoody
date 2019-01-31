@@ -67,22 +67,89 @@ h1, h2, h3, h4, h5, h6 {
   .mainText1 {margin-top: 1em;}
 }
 
-/* FONT-STYLES for 'PARAGRAPHS/TEXT' */
-.portText { 
-  margin: 1em;
-  text-align: left;
-  line-height: 24px;/*26px*/
-  /*letter-spacing: 0.01rem;*/
-}
-.portText {font-size: 0.80em;}/*0.82em*/
-@media only screen and (min-width: 800px) {
-  .portText {
-    margin: 1.5em 2.5em;
-    text-align: justify;
-    line-height: 32px; 
+/*******************************************/
+/** Portfolio PAGE 'Category' Module *******/
+@media screen and (min-width: 800px) {
+  .cat__title {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .portText {font-size: 0.88em;}
+  .cat__code {}  
 }
+/**/
+.cat__container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.cat__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.cat__text {
+	color: #fff;
+	font-family: sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+}
+/**/
+.overlay {
+	position: absolute;
+	transition: all .3s ease;
+	opacity: 0;
+}
+.cat__container:hover .overlay {
+	width: 100%;
+	opacity: 1;
+}
+/**/
+.overlayLeft {
+	height: 100%;
+	width: 0;
+	top: 0;
+	left: 0;
+	background-color: #838487;
+}
+.overlayRight {
+	height: 100%;
+	width: 0;
+	top: 0;
+	right: 0;
+	background-color: #838487;
+}
+.overlayTop {
+	height: 0;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #838487;
+}
+.overlayBottom {
+	height: 0;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #838487;
+}
+/*	++ Not Req. 
+		because .container:hover .overlay"
+.container:hover .overlayLeft,
+.container:hover .overlayRight {
+	width: 100%;
+}*/
+.cat__container:hover .overlayTop, .cat__container:hover .overlayBottom {
+	height: 100%;
+	opacity: 1;
+}
+
+/**//***********************************//**/
 
 
 /* <anchor> LINK STYLES*/
