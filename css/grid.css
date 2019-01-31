@@ -82,6 +82,7 @@ main {
 /*******************************************/
 /** Portfolio PAGE 'Category' Module *******/
 .category {
+  margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit,  1fr);
 	grid-gap: 4px;

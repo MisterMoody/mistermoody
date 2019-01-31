@@ -5,7 +5,7 @@ include ("inc/header.php");
 <!-- ******************************************************* -->
 <!-- *************** <<PORTFOLIO GALLERY>>  **************** -->
 
-<main>
+
 <!-- //CONTENT-BEGINS..... -->
 <section>
   <div class="cat__title">
@@ -43,15 +43,15 @@ include ("inc/header.php");
 	</div>
 
 	<div class="cat__container"><!-- BOTTOM -->
-		<img src="https://via.placeholder.com/350x255/000000/FFFFFF.png?text=Aborigine" 
+		<img src="https://via.placeholder.com/350x225/000000/FFFFFF.png?text=Aborigine" 
 					 alt="img" class="cat__image">
-		<div class="overlay overlayRight">
+		<div class="overlay overlayLeft">
 			<div class="cat__text">a Self-Discovery project to better understand my ancestry</div>
 		</div>
 	</div>
 </section>
 <!-- .....CONTENT-ENDS// --> 
-</main>
+
 
 <!-- ******************************************************* -->
 <!-- ******************************************************* -->

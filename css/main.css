@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 	display: inline-block;
 }
+.cat__title {margin: 0 auto;}
 .cat__image {
 	display: block;
 	width: 100%;
@@ -117,13 +118,14 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	background-color: #838487;
 }
+/*  Issue with Mobile-Browser 'Right-Edge Hanggar'
 .overlayRight {
 	height: 100%;
 	width: 0;
 	top: 0;
 	right: 0;
 	background-color: #838487;
-}
+}*/
 .overlayTop {
 	height: 0;
 	width: 100%;
