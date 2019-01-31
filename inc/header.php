@@ -12,7 +12,7 @@
     <!-- Custom CSS Styles -->   
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/assets.css">
     <link rel="stylesheet" href="css/animations.css">
     <!-- 
     <link rel="stylesheet" href="css/animations.css">-->
