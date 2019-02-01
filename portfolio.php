@@ -30,7 +30,7 @@ include ("inc/header.php");
 					 alt="img" class="cat__image">
     <div class="overlay overlayLeft">
       <div class="cat__text">
-        <p class=".cat__pTtext">Learn <a>Web Design</a> using HTML and CSS</p>
+        <p>Learn <a>Web Design</a> using HTML and CSS</p>
         <a class="btn" href="https://mistermoody.github.io/" alt="Link to Portfolio" target="_blank" title="Check Out My Work on Github">Learn More</a>
       </div>
     </div>
