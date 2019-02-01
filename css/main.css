@@ -69,14 +69,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*******************************************/
 /** Portfolio PAGE 'Category' Module *******/
-@media screen and (min-width: 1000px) {
-  .cat__title {
-    margin-top: 24px;
-  }
-  .cat__code {
-    /*See 'line 91, animation.css' */
-  }  
-}
 /**/
 .cat__container {
 	position: relative;
@@ -103,7 +95,6 @@ h1, h2, h3, h4, h5, h6 {
 	transform: translate(-10%, -50%);
 	font-size: 1.2em;
 }
-p.cat__pTtext {font-size: 0.88em;}
 /**/
 .overlay {
 	position: absolute;
@@ -154,7 +145,89 @@ p.cat__pTtext {font-size: 0.88em;}
 	height: 100%;
 	opacity: 1;
 }
+/**/
+@media screen and (min-width: 1000px) {
+  .cat__title {
+    margin-top: 24px;
+  }
+  .cat__code {
+    /*See 'line 91, animation.css' */
+  }  
+}
+/*
+*
+*
+*/
 
+main.bhm > p {
+  margin: 0 0 0.5em 0; 
+  font-size: 0.9em; 
+  line-height: 1.5;
+}
+/* */
+ol.list {
+  margin: 0;
+  font-size: 0.8em;
+}
+/**/
+img {
+  margin: 0 auto;
+  width: 100%; 
+  height: auto;
+}
+figure {
+  margin: 0 0.38em; 
+  padding: 0;
+}
+figcaption {
+  font-size: 0.68em;
+  font-style: italic;
+  text-align: center;
+}
+@media all and (min-width: 1000px) {  
+  main.bhm > p {font-size: 0.75em;}
+  ol.list {
+    margin: 0 0 0 -22px;
+  }
+  ol.list > li {
+    margin: 12px 0;
+  }
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  figure {margin: 1em 0;}
+}
+
+/*******************************************/
+/** 'bhm.ph' <video> Module Styles for LPs */
+section {margin: 32px 0;}
+small {font-size: 0.8em; }
+p {
+  margin: 0 0 0.5em 0; 
+  font-size: 0.9em; 
+  line-height: 1.5;
+}
+@media only screen and (min-width: 800px) {
+  p {font-size: 0.75em;}
+}
+/** <Video> DIV ***************************/
+.wrapper {
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+video, audio, iframe {
+  margin: 0 auto;
+  display: block;
+  width: 100%;  /* ADD 'Responsiveness' */
+}
+/**/
+.author {text-align: center; color: #838487; }
+/**//*********************************//**/
 /**//***********************************//**/
 
 
@@ -404,6 +477,7 @@ p.btn {
   }
   .miniGallery {margin: 50px 0;}
 }
+
 
 
 
