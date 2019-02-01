@@ -7,7 +7,7 @@ include ("inc/header.php");
 
 
 <!-- //CONTENT-BEGINS..... -->
-<main>
+<main class="bhm">
   <section>
     <h1>Black History Month <small><span><hr> <?php echo date('l M j, Y'); ?></span></small></h1>  
     <p>
@@ -90,7 +90,7 @@ include ("inc/header.php");
         <ol class="list">
           <li>What evidence do you have that you came from Africa?</li>
           <li>Who told you that you came from Africa?</li>
-          <li>When did you first learn that you came from Africa?</li>
+          <li>When did you learn that you came from Africa?</li>
           <li>Inquire &#64; 5:00min </li>
         </ol>
       </div>
