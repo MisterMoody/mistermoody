@@ -10,6 +10,7 @@ include ("inc/header.php");
 <main>
   <section>
     <h3>Share Your Thoughts!</h3>
+    <p>Have a question? I've got an answer. And if I don't, I have a particular set of skills that will allow me to help you unearth a suitable outcome. </p>
     <!-- PHP -->
     <?php
     if(isset($_POST["submit"])) {
@@ -22,7 +23,7 @@ include ("inc/header.php");
             $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
            if ( mail($recipient, $subject, $mailBody, "From: $sender<$senderEmail>")) {
-             header('Location: index.php');/*Redirect Page*/
+             header('Location: portfolio.php');/*Redirect Page*/
            }        
           }
     ?>
