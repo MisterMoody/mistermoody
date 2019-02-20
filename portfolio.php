@@ -43,7 +43,7 @@ include ("inc/header.php");
 		<div class="overlay overlayTop">
 			<div class="cat__text">
         <p>Bespoke <a>Curriculum Materials</a> for Learners</p>
-        <a class="btn" href="bhm.php" alt="Link to Portfolio" target="_blank" title="">Learn More</a>
+        <a class="btn" href="" alt="Link to Portfolio" target="_blank" title="">Coming Soon</a>
       </div>
 		</div>
 	</div>
@@ -54,7 +54,7 @@ include ("inc/header.php");
 		<div class="overlay overlayBottom">
 			<div class="cat__text">
         <p>Learn <a>Mandarin</a> from an Experienced Traveler</p>
-        <a class="btn" href="" alt="Link to Portfolio" target="_blank" title="">Coming Soon</a>
+        <a class="btn" href="" alt="" target="_blank" title="">Coming Soon</a>
       </div>
 		</div>
 	</div>
@@ -65,7 +65,7 @@ include ("inc/header.php");
 		<div class="overlay overlayLeft">
 			<div class="cat__text">
         <p>a Self-Discovery project to Understand my Ancestry</p>
-        <a class="btn" href="" alt="Link to Portfolio" target="_blank" title="">Coming Soon</a>
+        <a class="btn" href="" alt="" target="_blank" title="">Coming Soon</a>
       </div>
 		</div>
 	</div>
