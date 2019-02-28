@@ -9,7 +9,7 @@ article {
 	margin: 0vh 0vw;
   padding: 0 auto;
 	display: grid;
-	grid-template-rows:  8vmin repeat(auto, minmax(200px,auto));
+  grid-template-rows: auto 100% auto;
 	grid-gap: 0px;
 }
 main {
@@ -20,7 +20,7 @@ main {
     margin: 0 0vw;
     padding: 0 auto;
     display: grid;
-    grid-template-rows: 10vh repeat(auto, minmax(200px,auto));
+    grid-template-rows: auto 100% auto;
   }
   main {margin: 0vh 6vw;}
 }

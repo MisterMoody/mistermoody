@@ -5,7 +5,10 @@
 *, *:before, *:after {box-sizing: border-box;} 
 /**/
 /*Smooth Scroll Effect*/
-html {scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
 /**/
 /* Remove Browser Scroll + Gives Site an 'APP' */
 /* 
@@ -25,6 +28,7 @@ body {
   padding: 0 auto;
   font-size: calc(1em + 1vw); 
   /*min-height: calc(100vh - 5em)*/
+  min-height: 100%;
 	font-family: 'Raleway', sans-serif;
   font-kerning: auto;
 }
@@ -654,7 +658,7 @@ details > li:not(:last-child) {
   margin: 20px 0;
   color: #000;
   font-weight: bold; 
-  height: 70vh;
+  height: 100%;
 }
 input, textarea{
   width: 99%;
@@ -690,7 +694,7 @@ label.required:after {
 @media only screen and (min-width: 800px) {
   .contactForm {
     margin: 50px auto; 
-  height: 100vh;
+  height: 80vh;
   }
   .lineInput {height: 1em;}
   textarea {width: 99%;}
