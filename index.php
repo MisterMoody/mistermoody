@@ -19,7 +19,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
       <p class="mainText1">Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.
       </p>
       <p class="mainText2">Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification.</p>
-      <h4><a href="about.php" class="learn">Learn More</a></h4>
+      <h4><a href="about.php" class="btn">Learn More</a></h4>
     </div>
   </section> 
 </main>
