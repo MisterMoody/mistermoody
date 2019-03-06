@@ -42,7 +42,7 @@
                 <a href="about.php" class=" active nav-links">About</a>
             </li>
             <li>
-                <a href="portfolio.php" class="nav-links">Porfolio</a>
+                <a href="work.php" class="nav-links">Work</a>
             </li>
             <li>
                 <a href="contact.php" class="nav-links">Contact</a>
