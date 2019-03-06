@@ -6,7 +6,7 @@
 /**/
 /*Smooth Scroll Effect*/
 html {
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
   height: 100%;
 }
 /**/
