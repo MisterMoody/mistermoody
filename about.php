@@ -143,7 +143,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
       <summary>Web Dev Experience &nbsp;<code>2,000+ Hours</code></summary>
       <div class="report-card treehouse"></div>
     </details>
-    <p class="readText">If you are interested in learning more about my work, please visit my <u><a href="portfolio.php">portfolio</a></u> and check out projects that I have in the works!</p>
+    <p class="readText">If you are interested in learning more about my work, please visit my <u><a href="work.php">portfolio</a></u> and check out projects that I have in the works!</p>
   </section>
   <!---->
   <!---->
