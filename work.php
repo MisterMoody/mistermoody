@@ -42,7 +42,7 @@ include ("inc/header.php");
 		</div>
 	</div>
 
-	<div class="cat__container"><!-- TOP -->
+	<div class="cat__container">
 		<img src="https://via.placeholder.com/350x255/000000/FFFFFF.png?text=Mandarin" 
 					 alt="img" class="cat__image">
 		<div class="overlay overlayBottom">
@@ -52,17 +52,6 @@ include ("inc/header.php");
       </div>
 		</div>
 	</div>
-
-	<!--<div class="cat__container">
-		<img src="https://via.placeholder.com/350x225/000000/FFFFFF.png?text=Aborigine" 
-					 alt="img" class="cat__image">
-		<div class="overlay overlayLeft">
-			<div class="cat__text">
-        <p>a Self-Discovery project to Understand my Ancestry</p>
-        <a class="btn" href="" alt="" target="_blank" title="">Coming Soon</a>
-      </div>
-		</div>
-	</div>-->
 </section>
 <!-- .....CONTENT-ENDS// --> 
 </main>
