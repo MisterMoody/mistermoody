@@ -10,10 +10,11 @@
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- Custom CSS Styles -->   
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/minified.css">
+    <!--<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/assets.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/animations.css">-->
     <!-- 
     <link rel="stylesheet" href="css/animations.css">-->
     <!-- Custom Fonts -->       
