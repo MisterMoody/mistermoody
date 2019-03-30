@@ -36,7 +36,7 @@
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fa fa-bars"></i>
         </span>
-        <a href="index.php" class="logo">Mister Moody</a>
+        <a href="index" class="logo">Mister Moody</a>
         <ul class="main-nav" id="js-menu">
             <li>
                 <a href="about" class=" active nav-links">About</a>
