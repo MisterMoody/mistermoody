@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+  # TURN-On 'mod_rewrite'
+  RewriteEngine On
+  
+  #Eschew '.php' File Extension
+  Options +MultiViews
+  
+  
+  
+  # DO NOT FORGET TO PLACE THIS FILE ON THE OUTSIDE OF THE 'root/' FOLDER
+    
+    #METHODS THAT COULD WORK~ ...but DID NOT!
+    # RewriteBase /
+
+    # RewriteRule ^about/?$ about.php [NC,L]
+    # RewriteRule ^work/?$ work.php [NC,L]
+    # RewriteRule ^contact/?$ contact.php [NC,L]
+
+    # RewriteRule ^(about)$ $1.php [NC,L]
+    
+    # RewriteRule /contact.php /contact
+</IfModule>

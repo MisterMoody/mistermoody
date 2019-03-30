@@ -39,13 +39,13 @@
         <a href="index.php" class="logo">Mister Moody</a>
         <ul class="main-nav" id="js-menu">
             <li>
-                <a href="about.php" class=" active nav-links">About</a>
+                <a href="about" class=" active nav-links">About</a>
             </li>
             <li>
-                <a href="work.php" class="nav-links">Work</a>
+                <a href="work" class="nav-links">Work</a>
             </li>
             <li>
-                <a href="contact.php" class="nav-links">Contact</a>
+                <a href="contact" class="nav-links">Contact</a>
             </li>
             <!--<li>
                 <a href="devops.php" class="nav-links">Dev Ops</a>
