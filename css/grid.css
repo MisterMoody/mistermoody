@@ -20,7 +20,7 @@ h3, h4, h5 {color: #838487;}
 p {
   text-align: justify;
   line-height: 1.5; 
-  font-size: 0.74em;
+  font-size: 0.88em;
 }
 a {
   text-decoration: none;
@@ -142,7 +142,7 @@ header {
     margin: 0 6vw;
     padding: 0;
     display: grid;
-    grid-template-rows: repeat(3, auto); /*8vh minmax(200px,auto) 7.2314vh;*/
+    grid-template-rows: repeat(2, auto) 4vh; /*8vh minmax(200px,auto) 7.2314vh;*/
     grid-gap: 4px;
   }
   header {
@@ -353,9 +353,88 @@ summary::-webkit-details-marker {display: none;} /* !REQUIRED! */
 */
 
 
-
-
-
+.resourceGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
+  grid-template-rows: 4.2em;
+  grid-gap: 1.12em; 
+}
+.resourceItem {
+  display: grid;
+  grid-template-rows: 1.6em 2.2em;
+  border: 2px groove #838487;
+  justify-content: center; 
+  grid-gap: 0;
+}
+.resourceItem > h4, .resourceItem > h5 {
+  color: grey; 
+  text-align: center;
+  padding-top: 0.26em;
+}
+/**/
+.resourceItem > h4 {background-color: pink; text-transform: uppercase;}
+.resourceItem > h5, .resourceItem > p {background-color: yellow;}
+.resourceItem {background-color: lime;}
+@media only screen and (min-width: 800px) {
+  .resourceGrid {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 5.3em;
+  }
+  .resourceItem {
+    display: grid;
+    grid-template-rows: 2em 2.8em;
+  }
+  .resourceItem > h4, .resourceItem > h5 {
+    color: grey; 
+    text-align: center;
+    padding-top: 0.35em;  /* Center Text */
+  }
+}
+/*
+*/
+.resourceLink {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  margin-bottom: 1em;
+}
+.resourceText {
+  text-decoration: underline;
+}
+.resourceText:hover {
+  background-color: #000;
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+  border-radius: 8px;
+}
+/* Alternate Background-Scheme */
+.resourceLink > span:nth-child(4n+1),
+.resourceLink > span:nth-child(4n+2) {
+  background-color:#838487;
+}
+/* Font Scheme */
+.resourceLink > span:nth-child(4n+1),
+.resourceLink > span:nth-child(4n+2),
+.resourceLink > span:nth-child(4n+3),
+.resourceLink > span:nth-child(4n+4) {
+  font-size: 0.88em;
+}
+/* Source-Alignment Scheme */
+.resourceLink > span:nth-child(4n+1),
+.resourceLink > span:nth-child(4n+3) {
+   padding-left: 8px;
+}
+.resourceLink > span:nth-child(4n+2),
+.resourceLink > span:nth-child(4n+4) {
+  text-align: right; padding-right: 8px;
+}
+@media only screen and (min-width: 800px){
+  .resourceLink {
+    grid-template-columns: 1fr 144px;
+  }
+}
 /*******************************************/
 /** Portfolio PAGE  ************************/
 
