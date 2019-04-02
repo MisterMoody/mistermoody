@@ -16,7 +16,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
   </section>
   <!-- -->
   <!-- #Contact -->
-  <section id="contact">
+  <section>
     <h4>Get In Touch</h4>
     <p class="readText">I am on the web. Check out my work on Github, follow me on Twitter, download my resume. Heck, give me a call or text me an email. Do it now!</p>
     <ul class="social">
