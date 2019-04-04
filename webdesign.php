@@ -29,8 +29,12 @@ include ("inc/header.php");
       <div>
         <!--<h5>xxxx</h5>-->
         <div class="resourceLink">
+          <span><a target="_blank" href="https://html5boilerplate.com/">Boilerplate</a></span>
+          <span>[Elements]</span>
+          
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Element Reference</a></span>
           <span>[Elements]</span>
+          
           <span><a target="_blank" href="https://htmlreference.io/base/">Element Reference</a></span>
           <span>[Elements]</span>
           
@@ -105,35 +109,8 @@ include ("inc/header.php");
           <span><a target="_blank" href="https://www.searchenginejournal.com/website-accessibility-law/285199/">Accessible Law</a></span>
           <span>[Accessibility]</span>
 
-          <span><a target="_blank" href="https://dillinger.io/">README.md Markdown</a></span>
-          <span>[Markdown]</span>
-
-          <span><a target="_blank" href="http://www.dirtymarkup.com/ ">Code Formatter</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="https://www.freeprivacypolicy.com">Privacy Policy</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="http://opendatacommons.org/licenses/">Licenses</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="https://freesitemapgenerator.com/">Sitemap Generator</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="">Performance Optimization</a></span>
-          <span>[Technical]</span><!--
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-          
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>-->
+          <span><a target="_blank" href="https://whimsical.co/">Whimsical</a></span>
+          <span>[Wireframe]</span>
         </div>
       </div>
       <!-- 
@@ -171,7 +148,7 @@ include ("inc/header.php");
   </section>  
   <!--<br>-->
   <!-- CSS -->
-  <!--<section>
+  <section>
     <h3>CSS</h3>
     <h4>*Coming Soon*</h4>
     <p>These resources are useful for referencing Cascading Style Sheet syntax to create declarations that control the presentation of HTML elements. Learn more about <a class="resourceText" target="_blank" href="https://mistermoody.github.io/usingCSS.html">CSS</a>, which is the standard programming language used to make websites 'pretty.'</p>
@@ -179,70 +156,31 @@ include ("inc/header.php");
       <div>
         <h5>xxx</h5>
         <div class="resourceLink">
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-        </div>
-      </div>
-      <div>
-        <h5>Styles</h5>
-        <div class="resourceLink">
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference ">Property Reference</a></span>
           <span>[Properties]</span>
+
+          <span><a target="_blank" href="https://css-tricks.com/almanac/">CSS-Tricks Almanac</a></span>
+          <span>[Properties]</span>
+
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Animatable Properties</a></span>
+          <span>[Properties]</span>
+          
+          <span><a target="_blank" href="https://codepen.io/collection/nMpBQm/">Animation DIY</a></span>
+          <span>[Animation]</span>
+
+          <span><a target="_blank" href="http://animista.net/">Animista Animations</a></span>
+          <span>[Animation]</span>
+          <span><a target="_blank" href="https://htmlcolorcodes.com/">Color Codes</a></span>
+          <span>[Color]</span>
+
+          <span><a target="_blank" href="http://paletton.com/">Color Palette</a></span>
+          <span>[Color]</span>
+
+          <span><a target="_blank" href="https://webgradients.com/">Background Gradients</a></span>
+          <span>[Color]</span>
+          
+          <span><a target="_blank" href="https://contrastchecker.com/">WCAG Contrast Checker</a></span>
+          <span>[Color]</span>
 
           <span><a target="_blank" href="https://type-scale.com/">Font-Scale by Type-Scale</a></span>
           <span>[Font]</span>
@@ -253,20 +191,18 @@ include ("inc/header.php");
           <span><a target="_blank" href="http://pxtoem.com/">Convert PX to EM</a></span>
           <span>[Font]</span>
 
-          <span><a target="_blank" href="https://htmlcolorcodes.com/">Color Codes</a></span>
-          <span>[Color]</span>
-
-          <span><a target="_blank" href="">Color Palette</a></span>
-          <span>[Color]</span>
-
-          <span><a target="_blank" href="https://webgradients.com/">Background Gradients</a></span>
-          <span>[Color]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
           <span><a target="_blank" href="https://khaledkzy.github.io/pixel-vh-vw-converter/">Convert PX to VH/VW</a></span>
           <span>[Font]</span>
+        </div>
+      </div>
+      <div>
+        <h5>xxx</h5>
+        <div class="resourceLink">
+          <span><a target="_blank" href="https://bl.ocks.org/">Bl.ocks Infographics</a></span>
+          <span>[Graphics]</span>
+
+          <span><a target="_blank" href="https://www.easel.ly/home">Easel.ly Infographics</a></span>
+          <span>[Graphics]</span>
           
           <span><a target="_blank" href="https://css-tricks.com/snippets/css/">CSS-Tricks</a></span>
           <span>[Snippets]</span>
@@ -275,6 +211,9 @@ include ("inc/header.php");
           <span>[Snippets]</span>
 
           <span><a target="_blank" href="https://30-seconds.github.io/30-seconds-of-css/">30secs of CSS</a></span>
+          <span>[Snippets]</span>
+
+          <span><a target="_blank" href="https://codemyui.com/">Code My UI</a></span>
           <span>[Snippets]</span>
 
           <span><a target="_blank" href="http://ui-patterns.com/patterns">UI Patterns</a></span>
@@ -286,33 +225,42 @@ include ("inc/header.php");
           <span><a target="_blank" href="https://www.uigoodies.com/">UI Goodies</a></span>
           <span>[UI Kit]</span>
 
-          <span><a target="_blank" href="https://whimsical.co/">Whimsical</a></span>
-          <span>[Wireframe]</span>
+          <span><a target="_blank" href="https://www.webcomponents.org/introduction">Web Components</a></span>
+          <span>[UI Kit]</span>
 
-          <span><a target="_blank" href="http://animista.net/">Animista Animations</a></span>
-          <span>[Animation]</span>
+          <span><a target="_blank" href="https://vaadin.com/components">Open Source Components</a></span>
+          <span>[UI Kit]</span>
 
-          <span><a target="_blank" href="https://bl.ocks.org/">Bl.ocks Infographics</a></span>
-          <span>[Graphics]</span>
-
-          <span><a target="_blank" href="https://www.easel.ly/home">Easel.ly Infographics</a></span>
-          <span>[Graphics]</span>
+          <span><a target="_blank" href="https://developers.google.com/web/fundamentals/web-components/customelements">G+ Web Components</a></span>
+          <span>[UI Kit]</span>
         </div>
       </div>
       <div>
-        <h5>xxx</h5>
+        <h5>Technical</h5>
         <div class="resourceLink">
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="https://dillinger.io/">README.md Markdown</a></span>
+          <span>[Technical]</span>
 
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="http://www.dirtymarkup.com/ ">Code Formatter</a></span>
+          <span>[Technical]</span>
 
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="https://www.freeprivacypolicy.com">Privacy Policy</a></span>
+          <span>[Technical]</span>
 
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="http://opendatacommons.org/licenses/">Licenses</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="https://freesitemapgenerator.com/">Sitemap Generator</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="">Performance Optimization</a></span>
+          <span>[Technical]</span>
+          
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="http://getbem.com/naming/">BEM Methodology </a></span>
+          <span>[Technical]</span>
         </div>
       </div>
       <div>
@@ -350,7 +298,7 @@ include ("inc/header.php");
         </div>
       </div>
     </div>
-  </section>-->
+  </section>
   <!--<br>-->
   <!-- Project Management -->
   <!--<section>
@@ -421,7 +369,7 @@ include ("inc/header.php");
           <span><a target="_blank" href="http://www.tutorialspoint.com">TutorialsPoint</a></span>
           <span>[Learn]</span>
 
-          <span><a target="_blank" href="">x</a></span>
+          <span><a target="_blank" href="https://html-css-js.com/">HTML-CSS-JS</a></span>
           <span>[Learn]</span>
 
           <span><a target="_blank" href="">x</a></span>
