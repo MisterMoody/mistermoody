@@ -27,30 +27,55 @@ include ("inc/header.php");
     </div>
     <div class="subGrid">
       <div>
-        <!--<h5>xxxx</h5>-->
+        <h5>Syntax</h5>
         <div class="resourceLink">
-          <span><a target="_blank" href="https://html5boilerplate.com/">Boilerplate</a></span>
+          <span><a target="_blank" href="https://html5boilerplate.com/">HTML Boilerplate</a></span>
           <span>[Elements]</span>
           
-          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Element Reference</a></span>
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements</a></span>
           <span>[Elements]</span>
           
-          <span><a target="_blank" href="https://htmlreference.io/base/">Element Reference</a></span>
-          <span>[Elements]</span>
-          
-          <span><a target="_blank" href="https://www.w3schools.com/html/html_attributes.asp">Attribute Reference</a></span>
+          <span><a target="_blank" href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a></span>
           <span>[Attributes]</span>
+          
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors">CSS Selector</a></span>
+          <span>[Declarations]</span>
+          
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Property</a></span>
+          <span>[Declarations]</span>
+          
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units">CSS Values</a></span>
+          <span>[Declarations]</span>
 
-          <span><a target="_blank" href="https://loremipsum.io/">Text Placeholder</a></span>
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Animatable Properties</a></span>
+          <span>[Declarations]</span>
+
+          <span><a target="_blank" href="https://css-tricks.com/almanac/">CSS-Tricks Almanac</a></span>
+          <span>[Declarations]</span>
+
+          <span><a target="_blank" href="http://getbem.com/naming/">BEM Methodology </a></span>
+          <span>[Declaration]</span>
+
+          <span><a target="_blank" href="http://dev.w3.org/html5/html-author/charref">HTML ASCII Chart</a></span>
           <span>[Text]</span>
 
-          <span><a target="_blank" href="http://dev.w3.org/html5/html-author/charref">ASCII Chart</a></span>
+          <span><a target="_blank" href="https://dillinger.io/">README.md Markdown</a></span>
+          <span>[Technical]</span>
+        </div>
+      </div>
+      <div>
+        <h5>Content</h5>
+        <div class="resourceLink">
+          <span><a target="_blank" href="https://loremipsum.io/">Text Placeholder</a></span>
           <span>[Text]</span>
 
           <span><a target="_blank" href="https://placeholder.com/">Image Placeholder</a></span>
           <span>[Image]</span>
           
           <span><a target="_blank" href="https://tinypng.com/">Image Compression</a></span>
+          <span>[Image]</span>
+
+          <span><a target="_blank" href="https://www.tineye.com/">Reverse Image Search</a></span>
           <span>[Image]</span>
 
           <span><a target="_blank" href="e.com/v4.7.0/cheatsheet/">FontAwesome Icons</a></span>
@@ -68,7 +93,7 @@ include ("inc/header.php");
           <span><a target="_blank" href="https://mailtolink.me/">Mail-to-Link</a></span>
           <span>[Forms]</span>
           
-          <span><a target="_blank" href="https://html5sec.org/">Security Cheatsheet</a></span>
+          <span><a target="_blank" href="https://html5sec.org/">Form Security</a></span>
           <span>[Forms]</span><!--
 
           <span><a target="_blank" href="">x</a></span>
@@ -86,31 +111,22 @@ include ("inc/header.php");
       </div>
       <!-- -->
       <div>
-        <!--<h5>xxxx</h5>-->
+        <h5>Accessibility</h5>
         <div class="resourceLink">
+          <span><a target="_blank" href="https://www.w3.org/WAI/standards-guidelines/wcag/">Accessibility Standards</a></span>
+          <span>[Accessibility]</span>
+          
           <span><a target="_blank" href="https://a11yproject.com/">A11Y</a></span>
           <span>[Accessibility]</span>
+          
+          <span><a target="_blank" href="https://a11y-style-guide.com/style-guide/">A11Y Style Guide</a></span>
+          <span>[Accessibility]</span>
 
-          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessible Attributes</a></span>
+          <span><a target="_blank" href="https://moritzgiessmann.de/accessibility-cheatsheet/">Accessibility Cheatsheet</a></span>
           <span>[Accessibility]</span>
 
           <span><a target="_blank" href="https://wave.webaim.org/extension/">Accessibility Test Tool</a></span>
           <span>[Accessibility]</span>
-
-          <span><a target="_blank" href="https://speech-to-text-demo.ng.bluemix.net/">Speech-to-Text</a></span>
-          <span>[Accessibility]</span>
-
-          <span><a target="_blank" href="http://www.d.umn.edu/itss/training/online/webdesign/accessibility.html">Accessibility Guide</a></span>
-          <span>[Accessibility]</span>
-
-          <span><a target="_blank" href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility</a></span>
-          <span>[Accessibility]</span>
-
-          <span><a target="_blank" href="https://www.searchenginejournal.com/website-accessibility-law/285199/">Accessible Law</a></span>
-          <span>[Accessibility]</span>
-
-          <span><a target="_blank" href="https://whimsical.co/">Whimsical</a></span>
-          <span>[Wireframe]</span>
         </div>
       </div>
       <!-- 
@@ -150,26 +166,31 @@ include ("inc/header.php");
   <!-- CSS -->
   <section>
     <h3>CSS</h3>
-    <h4>*Coming Soon*</h4>
     <p>These resources are useful for referencing Cascading Style Sheet syntax to create declarations that control the presentation of HTML elements. Learn more about <a class="resourceText" target="_blank" href="https://mistermoody.github.io/usingCSS.html">CSS</a>, which is the standard programming language used to make websites 'pretty.'</p>
     <div class="subGrid">
       <div>
-        <h5>xxx</h5>
+        <h5>Layout</h5>
         <div class="resourceLink">
-          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference ">Property Reference</a></span>
-          <span>[Properties]</span>
+          <span><a target="_blank" href="https://gridbyexample.com/">Grid by Example</a></span>
+          <span>[Grid]</span>
 
-          <span><a target="_blank" href="https://css-tricks.com/almanac/">CSS-Tricks Almanac</a></span>
-          <span>[Properties]</span>
+          <span><a target="_blank" href="https://cssgr.id/">Interactive Grid Generator</a></span>
+          <span>[Grid]</span>
 
-          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Animatable Properties</a></span>
-          <span>[Properties]</span>
-          
-          <span><a target="_blank" href="https://codepen.io/collection/nMpBQm/">Animation DIY</a></span>
-          <span>[Animation]</span>
+          <span><a target="_blank" href="http://grid.malven.co/">Clipboard Grid</a></span>
+          <span>[Grid]</span>
 
-          <span><a target="_blank" href="http://animista.net/">Animista Animations</a></span>
-          <span>[Animation]</span>
+          <span><a target="_blank" href="https://learncssgrid.com/">Learn Grid</a></span>
+          <span>[Grid]</span>
+
+          <span><a target="_blank" href="https://www.sketchingwithcss.com/samplechapter/cheatsheet.html">Flexbox Cheatsheet</a></span>
+          <span>[Flexbox]</span>
+
+          <span><a target="_blank" href="https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2">Flexbox Tutorial</a></span>
+          <span>[Flexbox]</span>
+        </div>
+        <h5>Styles</h5>
+        <div class="resourceLink">          
           <span><a target="_blank" href="https://htmlcolorcodes.com/">Color Codes</a></span>
           <span>[Color]</span>
 
@@ -178,14 +199,14 @@ include ("inc/header.php");
 
           <span><a target="_blank" href="https://webgradients.com/">Background Gradients</a></span>
           <span>[Color]</span>
+
+          <span><a target="_blank" href="https://trianglify.io/">Poly Pattern Generator</a></span>
+          <span>[Color]</span>
           
           <span><a target="_blank" href="https://contrastchecker.com/">WCAG Contrast Checker</a></span>
           <span>[Color]</span>
 
           <span><a target="_blank" href="https://type-scale.com/">Font-Scale by Type-Scale</a></span>
-          <span>[Font]</span>
-
-          <span><a target="_blank" href="https://play.typedetail.com/">Font-Scale by Type Detail</a></span>
           <span>[Font]</span>
 
           <span><a target="_blank" href="http://pxtoem.com/">Convert PX to EM</a></span>
@@ -196,13 +217,8 @@ include ("inc/header.php");
         </div>
       </div>
       <div>
-        <h5>xxx</h5>
+        <h5>Snippets</h5>
         <div class="resourceLink">
-          <span><a target="_blank" href="https://bl.ocks.org/">Bl.ocks Infographics</a></span>
-          <span>[Graphics]</span>
-
-          <span><a target="_blank" href="https://www.easel.ly/home">Easel.ly Infographics</a></span>
-          <span>[Graphics]</span>
           
           <span><a target="_blank" href="https://css-tricks.com/snippets/css/">CSS-Tricks</a></span>
           <span>[Snippets]</span>
@@ -234,119 +250,32 @@ include ("inc/header.php");
           <span><a target="_blank" href="https://developers.google.com/web/fundamentals/web-components/customelements">G+ Web Components</a></span>
           <span>[UI Kit]</span>
         </div>
-      </div>
-      <div>
-        <h5>Technical</h5>
+        <h5>Interactive</h5>
         <div class="resourceLink">
-          <span><a target="_blank" href="https://dillinger.io/">README.md Markdown</a></span>
-          <span>[Technical]</span>
+          <span><a target="_blank" href="https://codepen.io/collection/nMpBQm/">Animation DIY</a></span>
+          <span>[Declarations]</span>
 
-          <span><a target="_blank" href="http://www.dirtymarkup.com/ ">Code Formatter</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="https://www.freeprivacypolicy.com">Privacy Policy</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="http://opendatacommons.org/licenses/">Licenses</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="https://freesitemapgenerator.com/">Sitemap Generator</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="">Performance Optimization</a></span>
-          <span>[Technical]</span>
+          <span><a target="_blank" href="http://animista.net/">Animista Animations</a></span>
+          <span>[Declarations]</span>
           
-          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control</a></span>
-          <span>[Technical]</span>
+          <span><a target="_blank" href="https://bl.ocks.org/">Bl.ocks Infographics</a></span>
+          <span>[Graphics]</span>
 
-          <span><a target="_blank" href="http://getbem.com/naming/">BEM Methodology </a></span>
-          <span>[Technical]</span>
-        </div>
-      </div>
-      <div>
-        <h5>Layout</h5>
-        <div class="resourceLink">
-          <span><a target="_blank" href="https://gridbyexample.com/">Grid by Example</a></span>
-          <span>[Grid]</span>
-
-          <span><a target="_blank" href="http://grid.malven.co/">Clipboard Grid</a></span>
-          <span>[Grid]</span>
-
-          <span><a target="_blank" href="https://learncssgrid.com/">Learn Grid</a></span>
-          <span>[Grid]</span>
-          
-          <span><a target="_blank" href="https://css-tricks.com/snippets/css/complete-guide-grid/">Guide to Grid</a></span>
-          <span>[Grid]</span>
-
-          <span><a target="_blank" href="https://noti.st/rachelandrew/VdNKCh#sDP2053">Curated List</a></span>
-          <span>[Grid]</span>
-
-          <span><a target="_blank" href="https://www.sketchingwithcss.com/samplechapter/cheatsheet.html">Flexbox Cheatsheet</a></span>
-          <span>[Flexbox]</span>
-
-          <span><a target="_blank" href="https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2">Animated Tutorial</a></span>
-          <span>[Flexbox]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="https://www.easel.ly/home">Easel.ly Infographics</a></span>
+          <span>[Graphics]</span>
         </div>
       </div>
     </div>
   </section>
-  <!--<br>-->
+  <br>
   <!-- Project Management -->
-  <!--<section>
+  <section>
     <h3>Project Management</h3>
     <h4>*Coming Soon*</h4>
     <p>These resources are useful for managing projects insofar as the front-end is concerned. Learn more about ways to <a class="resourceText" target="_blank" href="https://mistermoody.github.io/management.html">manage a project</a>.</p>
     <div class="subGrid">
       <div>
-        <div class="resourceLink">
-          <span><a target="_blank" href="http://app.xrespond.com/">Mobile Testing</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="https://bitly.com/">URL Shortner</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="https://validator.w3.org/#validate_by_input">HTML Validator</a></span>
-          <span>[Technical]</span>
-
-          <span><a target="_blank" href="https://www.willpeavy.com/minifier/">HTML Minifier</a></span>
-          <span>[Technical]</span>
-        </div>
-      </div>
-      <div>
-        <div class="resourceLink">
-          <span>Content Title + Link</span>
-          <span>[Link]</span>
-
-          <span>Content Title + Link</span>
-          <span>[Link]</span>
-
-          <span>Content Title + Link</span>
-          <span>[Link]</span>
-
-          <span>Content Title + Link</span>
-          <span>[Link]</span>
-
-          <span>Content Title + Link</span>
-          <span>[Link]</span>
-        </div>
-      </div>
-      <div>
-        <h5>Learn</h5>
+        <h5>Help</h5>
         <div class="resourceLink">
           <span><a target="_blank" href="https://developer.mozilla.org/ ">Mozilla</a></span>
           <span>[Learn]</span>
@@ -354,16 +283,22 @@ include ("inc/header.php");
           <span><a target="_blank" href="https://stackoverflow.com/">StackOverflow</a></span>
           <span>[Learn]</span>
 
-          <span><a target="_blank" href="https://w3.org">W3.org</a></span>
+          <span><a target="_blank" href="https://css-tricks.com ">CSS-Tricks</a></span>
           <span>[Learn]</span>
 
           <span><a target="_blank" href="https://W3schools.com">W3Schools</a></span>
           <span>[Learn]</span>
 
-          <span><a target="_blank" href="https://devdocs.io">DevDocs</a></span>
+          <span><a target="_blank" href="https://w3.org">W3.org</a></span>
           <span>[Learn]</span>
 
-          <span><a target="_blank" href="https://css-tricks.com ">CSS-Tricks</a></span>
+          <span><a target="_blank" href="https://teamtreehouse">Treehouse</a></span>
+          <span>[Learn]</span>
+
+          <span><a target="_blank" href="https://learn.shayhowe.com/advanced-html-css/">Learn w/ ShayHowe</a></span>
+          <span>[Learn]</span>
+
+          <span><a target="_blank" href="https://devdocs.io">DevDocs</a></span>
           <span>[Learn]</span>
 
           <span><a target="_blank" href="http://www.tutorialspoint.com">TutorialsPoint</a></span>
@@ -371,41 +306,97 @@ include ("inc/header.php");
 
           <span><a target="_blank" href="https://html-css-js.com/">HTML-CSS-JS</a></span>
           <span>[Learn]</span>
+        </div>
+        <h5>Version Control</h5>
+        <div class="resourceLink">
+          <span><a target="_blank" href="https://github.com/">Github VCS</a></span>
+          <span>[VCS]</span>
 
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Learn]</span>
+          <span><a target="_blank" href="https://gist.github.com/BolajiAyodeji/d5393b90650c49ba9ef81493bfca9cda">Git Cheatsheet</a></span>
+          <span>[VCS]</span>
 
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Learn]</span>
+          <span><a target="_blank" href="https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369 ">Using Github</a></span>
+          <span>[VCS]</span>
+          
+          <span><a target="_blank" href="https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369">Managing Projects</a></span>
+          <span>[VCS]</span>
 
-          <span><a target="_blank" href="https://teamtreehouse">Treehouse</a></span>
-          <span>[Learn]</span>
+          <span><a target="_blank" href="https://help.github.com/artices/connecting-to-github-with-ssh/ ">Github SSH</a></span>
+          <span>[VCS]</span>
         </div>
       </div>
       <div>
-        <h5>Github</h5>
+        <h5>Manage</h5>
         <div class="resourceLink">
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="https://frontendchecklist.io/">Front-End Checklist</a></span>
+          <span>[Technical]</span>
 
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="">Performance Optimization</a></span>
+          <span>[Technical]</span>
 
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
-          <span><a target="_blank" href="">x</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="https://www.gloomaps.com/">Visual Sitemap</a></span>
+          <span>[Technical]</span>
 
-          <span><a target="_blank" href="https://help.github.com/artices/connecting-to-github-with-ssh/ ">Github SSH</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="https://www.freeprivacypolicy.com">Privacy Policy</a></span>
+          <span>[Technical]</span>
 
-          <span><a target="_blank" href="https://medium.freecodecamp.org/how-to-use-git-efficiently-54320a236369 ">Using Github</a></span>
-          <span>[Link]</span>
+          <span><a target="_blank" href="http://opendatacommons.org/licenses/">Licenses</a></span>
+          <span>[Technical]</span>
+          
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">Cache-Control</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="https://bitly.com/">URL Shortner</a></span>
+          <span>[Technical]</span>
+        </div>
+        <h5>Tools</h5>
+        <div class="resourceLink">
+          <span><a target="_blank" href="http://www.dirtymarkup.com/ ">Code Formatter</a></span>
+          <span>[Technical]</span>
+          
+          <span><a target="_blank" href="https://validator.w3.org/#validate_by_input">HTML Validator</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="https://www.willpeavy.com/minifier/">HTML Minifier</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="https://jigsaw.w3.org/css-validator/#validate_by_input">CSS Validator</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="http://csscompressor.com/">CSS Compressor</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="https://javascript-compressor.com/">JavaScript Validator</a></span>
+          <span>[Technical]</span>
+
+          <span><a target="_blank" href="http://jsonlint.com/">JSON Linter</a></span>
+          <span>[Technical]</span>
+          
+          <span><a target="_blank" href="http://app.xrespond.com/">Mobile Testing</a></span>
+          <span>[Technical]</span>
         </div>
       </div>
+      <!--<div>
+        <h5>empty</h5>
+        <div class="resourceLink">
+          <span>Content Title + Link</span>
+          <span>[Link]</span>
+
+          <span>Content Title + Link</span>
+          <span>[Link]</span>
+
+          <span>Content Title + Link</span>
+          <span>[Link]</span>
+
+          <span>Content Title + Link</span>
+          <span>[Link]</span>
+
+          <span>Content Title + Link</span>
+          <span>[Link]</span>
+        </div>
+      </div>-->
     </div>
-  </section>-->
-  <!-- -->
+  </section>
   <!--<br>-->
   <!-- -->
   <section></section>
