@@ -58,7 +58,7 @@ include ("inc/header.php");
   </section>
   <!-- -->
   <section>
-    <h3>"HIStory" by <span class="author">Gil Scott Heron</span></h3>
+    <h3>"HIS Story" by <span class="author">Gil Scott Heron</span></h3>
     <p>
     <u><a href="http://webstersdictionary1828.com/Dictionary/black" target="_blank">Gil Scott Heron</a></u> was a legendary poet born in Chicago, Illinois. His parents were famous: his mother was an opera singer and his father an international futbol star. His parents separated when he was 12 years old, that is when he went to live with his grandmother in Tennessee.  
     </p>
