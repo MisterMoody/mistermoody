@@ -2,8 +2,7 @@
 /* ********* UNIVERSAL BASE STYLES *********/
 /* Universal Layout Containment */
 *, *:before, *:after {box-sizing: border-box;} 
-/*
-*/
+/**/
 body {
   margin: 0 auto;
   padding: 0;
@@ -63,8 +62,6 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   }
 }
 /**//***********************************//**/
-/*
-*/
 /* IMAGES ******************************** */
 .mainImage {
   width: 100%;
@@ -104,13 +101,11 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   /**/
 }
 /**//***********************************//**/
-/*
-*/
-/*
-*/
+
+
 /**//***********************************//**/
 /* ***** GRID LAYOUTS & Section Styles *****/
-/* Website Grid Container*/
+/* Universal Site Grid Container*/
 .indexGrid {
 	margin: 1vh 4vw;
   padding: 0;
@@ -118,9 +113,9 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 	grid-template-rows: repeat(3, auto);
 	grid-gap: 4px;
 }
-/*
-*/
-/* Header Navigation */
+/****
+****/
+/* Universal Header Navigation */
 header {
   margin: 0;
   display: grid;
@@ -143,7 +138,7 @@ header {
   font-size: 0.91em;
   display: grid;
   max-height: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
 }
 @media only screen and (min-width: 800px){
@@ -168,10 +163,19 @@ header {
     text-align: right;
   }
 }
-/*
-*/
-/* Row 2/3 - Main Content (Part A) */
-/** #Training (Education) Grid *****/
+/****
+****/
+footer  {
+  text-align: center;
+  font-size: 14px; 
+  color: #838487;
+}
+/**//***********************************//**/
+
+
+/**//***********************************//**/
+/**//** WORK.PHP ***********************//**/
+/* Training (Edu) Grid */
 .subGrid {
   margin: 0 auto;
   padding: 0;
@@ -211,11 +215,9 @@ header {
     font-size: 0.6em;
   }
 }
-/**//***********************************//**/
 /*
 */
-/* Row 2/3 - Main Content (Part B) */
-/** #Training (Skills) Grid ********/
+/* #Training (Skills) Grid */
 .grid-row {
   display: subgrid;
   grid-template-rows: 1fr;
@@ -267,11 +269,9 @@ header {
   .SkillBar, .Skill-Area, .PercentText {height: 1em;}
   
 } 
-/**//***********************************//**/
 /*
 */
-/* Row 2/3 - Main Content (Part C) */
-/* #Experience (Work) Grid *********/  
+/* #Experience (Work) Grid */  
 /* 'Details' Component */
 details {
   margin: 1rem auto;
@@ -330,7 +330,7 @@ summary::after {
   transform: translateY(-50%) rotate(180deg);
 }
 summary::-webkit-details-marker {display: none;} /* !REQUIRED! */
-/* Resume Grid */
+/**/
 .trainingGrid {
   display: grid;
   width: 100%;
@@ -358,10 +358,12 @@ summary::-webkit-details-marker {display: none;} /* !REQUIRED! */
   .trainingGrid > p {text-align: right; margin: 0 auto; padding: 0;}
 }
 /**//***********************************//**/
-/*
-*/
+/**//***********************************//**/
 
-/* WebDesign Page = Online Resources Grid*/
+
+/**//***********************************//**/
+/**//** WEBDESIGN.php ******************//**/
+/*  Online Resources Grid*/
 .resourceGrid {
   display: grid;
   width: 100%;
@@ -415,11 +417,11 @@ summary::-webkit-details-marker {display: none;} /* !REQUIRED! */
   }
 }
 /**//***********************************//**/
+/**//***********************************//**/
 
 
-/*******************************************/
-/** Portfolio PAGE  ************************/
-
+/**//***********************************//**/
+/**//** PORTFOLIO.php ******************//**/
 /* GLITCH-SHAKE 'ANIMATION' */
 .cat__title {
   display: flex;
@@ -501,8 +503,11 @@ p.btn {
   }
   .miniGallery {margin: 50px 0;}
 }
-/*
-*/
+/**//***********************************//**/
+/**//***********************************//**/
+
+
+/**//***********************************//**/
 /** ASSET: 'Grid' News/Article 'Links' *****/
 .newsTitle {grid-area: ntitle;}
 .newsLinkImage {grid-area: nLinkImage;}
@@ -568,9 +573,9 @@ aside.newsLinkGrid {background-color: #fff;}
 /**//***********************************//**/
 
 
-
-
-/** CONTACT Page ( Contact Form) ***********/
+/**//***********************************//**/
+/**//** CONTACT.php ********************//**/
+/* ( Contact Form) */
 .contactForm {
   margin: 20px 0;
   color: #000;
@@ -640,10 +645,10 @@ ul.social {
     "download github twitter email phone";
 }
 /**//***********************************//**/
-/*
-*/
-/*
-*/
+/**//***********************************//**/
+
+
+/**//***********************************//**/
 /*******************************************/
 /*SCROLL-to-TOP Button*/
 #myBtn {
@@ -676,14 +681,3 @@ ul.social {
   }
 }
 /*******************************************/
-/*
-*/
-/*
-*/
-/* */
-footer  {
-  text-align: center;
-  font-size: 14px; 
-  color: #838487;
-}
-/**//***********************************//**/
