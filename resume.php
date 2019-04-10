@@ -30,8 +30,50 @@ include ("inc/header.php");
     <!-- -->
     <section class="resume__work">
       <div class="res__sectionTitle">Work Experience</div>
-        <p>Nunc eget faucibus suspendisse ut imperdiet tellus. Vivamus metus leo, molestie et nec felis.  Pellentesque habitant morbi tristique senectus turpis egestas.  Maecenas vel turpis id nisl porttitor tincidunt.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget faucibus lorem. Suspendisse ut imperdiet tellus. Vivamus metus leo, molestie et molestie vitae, iaculis nec felis. In molestie euismod imperdiet.</p>
+      <div class="resume__Card">
+        <div class="res__work__Employment">
+          <div class="res__work__jobTitle">Substitute Teacher</div>
+          <div class="res__work__jobEmployer">Jefferson Co. Public Schools</div>
+          <div class="res__work__jobDate">1&#47;2018 &#45; Present</div>
+          <div class="res__work__jobLocation">Louisville, KY</div>
+        </div>
+        <div class="res__work__Responsibilities">
+          <ol>
+            <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment, encouraging cooperative learning techniques and accomodating the diverse needs of students.</li>
+            <li>Completed professional development activities related to instructional strategies and accomodating the diverse needs of students as well as violence prevention, intervention and restraint.</li>
+            <li>Awarded 40 assignments at 16 schools; facilitated courses for more than 1,500 learners on subjects that include Computer Literacy, ESL, History and Math.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="resume__Card">
+        <div class="res__work__Employment">
+          <div class="res__work__jobTitle">Sole-Proprietor</div>
+          <div class="res__work__jobEmployer">Mister Moody</div>
+          <div class="res__work__jobDate">2&#47;2015 &#45; Present</div>
+          <div class="res__work__jobLocation">Louisville, KY</div>
+        </div>
+        <div class="res__work__Responsibilities">
+          <ol>
+            <li>niche business leveraging my professional skillset</li>
+          </ol>
+        </div>
+      </div>
+      <div class="resume__Card">
+        <div class="res__work__Employment">
+          <div class="res__work__jobTitle">TEFL Specialist</div>
+          <div class="res__work__jobEmployer">Independent Contractor</div>
+          <div class="res__work__jobDate">8&#47;2003 &#45; 5&#47;2017</div>
+          <div class="res__work__jobLocation">Northeast Asia</div>
+        </div>
+        <div class="res__work__Responsibilities">
+          <ol>
+            <li>Nearly 10&#44;000 hours facilitating courses to learners of varying fluency</li>
+            <li>Awarded Foreign Expert Certificate by Peoples Republic of China to assist the foreign language departments at tho state&#45;run institutions of education</li>
+            <li>Cooperated with private agencies and recruiters to scout ESL teacher candidates </li>
+            <li>Developed curricula materials and procurred authentic relia</li>
+          </ol>
+        </div>
+      </div>
       <!--<div class="res__work__Card">
         <div class="res__work__JobEmployer">
           
@@ -53,11 +95,10 @@ include ("inc/header.php");
     </section>
     <!-- -->
     <section class="resume__education">
-      <div>
-        <div class="res__sectionTitle">Training</div>
+      <div class="res__sectionTitle">Training</div>
       <div class="resume__Card">
         <div class="res__work__Employment">
-          <div class="res__work__jobTitle"><span>C.C.</span> Web Development Cohort</div>
+          <div class="res__work__jobTitle">Web Development</div>
           <div class="res__work__jobEmployer">&#60;Code&#62; Louisville</div>
           <div class="res__work__jobDate">1&#47;2015 &#45; 6&#47;2015</div>
           <div class="res__work__jobLocation">Louisville, KY</div>
@@ -72,7 +113,7 @@ include ("inc/header.php");
       </div>
       <div class="resume__Card">
         <div class="res__work__Employment">
-          <div class="res__work__jobTitle"><span>C.C.</span>Microsoft Office Specialist</div>
+          <div class="res__work__jobTitle">Microsoft Office CERT</div>
           <div class="res__work__jobEmployer">Microsoft</div>
           <div class="res__work__jobDate">2&#47;2010</div>
           <div class="res__work__jobLocation">Online</div>
@@ -85,9 +126,9 @@ include ("inc/header.php");
       </div>
       <div class="resume__Card">
         <div class="res__work__Employment">
-          <div class="res__work__jobTitle"><span>C.C.</span> TEFL</div>
+          <div class="res__work__jobTitle">TEFL CERT</div>
           <div class="res__work__jobEmployer">ITTT Inc.</div>
-          <div class="res__work__jobDate">5&#47;2007 &#45; 7&#47;2007</div>
+          <div class="res__work__jobDate">5&#47;2007 &#45; 6&#47;2007</div>
           <div class="res__work__jobLocation">Thailand</div>
         </div>
         <div class="res__work__Responsibilities">
@@ -98,7 +139,7 @@ include ("inc/header.php");
       </div>
       <div class="resume__Card">
         <div class="res__work__Employment">
-          <div class="res__work__jobTitle"><span>B.A.</span> Political Science</div>
+          <div class="res__work__jobTitle">B.A. Political Science</div>
           <div class="res__work__jobEmployer">the University of Louisville</div>
           <div class="res__work__jobDate">1&#47;2000 &#45; 5&#47;2003</div>
           <div class="res__work__jobLocation">Louisville, KY</div>
@@ -112,7 +153,6 @@ include ("inc/header.php");
             <li>Volunteer Tutor: Louisville Urban League</li>
           </ol>
         </div>
-      </div>
       </div>
     </section>
     <!-- -->
