@@ -144,11 +144,13 @@ include ("inc/header.php");
 
           <span><a target="_blank" href="https://type-scale.com/">Font-Scale</a></span>
 
+          <span><a target="_blank" href="https://mixfont.com/">Font Generator</a></span>
+
+          <span><a target="_blank" href="http://letteringjs.com">Radical Typography</a></span>
+
           <span><a target="_blank" href="http://pxtoem.com/">Convert PX-to-EM</a></span>
 
           <span><a target="_blank" href="https://khaledkzy.github.io/pixel-vh-vw-converter/">Convert PX-to-VH</a></span>
-          
-          <span><a target="_blank" href="http://cubic-bezier.com">Cubic-Bezier</a></span>
           
           <span><a target="_blank" href="https://codepen.io/collection/nMpBQm/">Animation DIY</a></span>
 
