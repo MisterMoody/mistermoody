@@ -148,14 +148,7 @@ include ("inc/header.php");
   <!-- Links to Projects -->
   <section>
     <div>
-      <p>Not much going on at the moment. The link below will allow you to explore a portal consisting of web technologies that I am familiar with. </p>
-      <p><a class="btn" href="https://mistermoody.github.io/" alt="Link to Portfolio" target="_blank" title="Blog of #FEWD Knowledge">Blog of #FEWD Knowledge</a></p>
-      <!--
-      <aside class="newsLinkGrid">
-        <div class="newsLinkImage">image</div>
-        <div class="newsTitle">title</div>
-        <div class="newsLinkStory">story</div>
-      </aside> -->
+      <p>Waayyy too much going on at the moment, currently focused on curating portfolio items that require documentation. I put together a table of useful <a class="resourceText" href="webdesign" alt="Link to Resources" target="_blank" title="Online Resources">Online Resources</a> that help me build websites, which is a supplement to this <a class="resourceText" href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">DIY Guide</a> to creating a website.</p>
     </div>
   </section>
   <!-- -->
