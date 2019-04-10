@@ -36,7 +36,7 @@ ol {
   margin: 0; 
   padding-left: 1.1em;
 } /* Styles specific to Resume */
-li > a {font-size: 0.79em;}
+li > a {font-size: 0.88em;}
 hr {
   background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
   border: 0;
@@ -479,7 +479,7 @@ summary::-webkit-details-marker {display: none;} /* !REQUIRED! */
 res__work__jobLocation {grid-area: jLocation;}
 .res__work__Employment {
   display: grid;
-  grid-template-columns: 63% auto;
+  grid-template-columns: 63vw auto;
   grid-template-areas: 
     "jTitle jDate"
     "jEmployer jLocation";
@@ -504,7 +504,21 @@ res__work__jobLocation {grid-area: jLocation;}
   width: 100%;
 }
 .resume__skills > th {width: 100px;}
+/* Download Resume */
+.resume__download {
+  text-align: center;
+  font-variant: small-caps;
+}
 /**/
+@media only screen and (min-width: 500px) and (max-width: 799px){
+  .res__work__Employment {
+    display: grid;
+    grid-template-columns: 67vw auto;
+    grid-template-areas: 
+      "jTitle jDate"
+      "jEmployer jLocation";
+  }
+}
 @media only screen and (min-width: 800px){
   .resumeGrid {
     display: grid;
@@ -530,7 +544,7 @@ res__work__jobLocation {grid-area: jLocation;}
   /**/
   .res__work__Employment {
     display: grid;
-    grid-template-columns: 80% auto;
+    grid-template-columns: 81% auto;
     grid-template-areas: 
       "jTitle jDate"
       "jEmployer jLocation";
