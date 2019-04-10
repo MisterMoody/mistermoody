@@ -158,6 +158,8 @@ include ("inc/header.php");
           </ol>
         </div>
       </div>
+      <h5 class="resume__download">
+        <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">Download Resume</a></h5>
     </section>
     <!-- -->
   </article>
