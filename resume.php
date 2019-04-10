@@ -74,24 +74,28 @@ include ("inc/header.php");
           </ol>
         </div>
       </div>
-      <!--<div class="res__work__Card">
-        <div class="res__work__JobEmployer">
-          
-        </div>
-        <div class="res__work__DateLocation">
-          
-        </div>
-        <div class="res__work__Responsibilities">
-          
-        </div>
-      </div>-->
     </section>
     <!-- -->
     <section class="resume__skills">
-      <div>
-        <div class="res__sectionTitle">Skills</div>
-        <p>Aliquam ullamcorper sapien nec felis tempor, in viverra augue euismod. Maecenas vel turpis id nisl porttitor tincidunt. In molestie euismod imperdiet. </p>
-      </div>
+      <div class="res__sectionTitle">Skills</div>
+      <table>
+        <tr>
+          <th>Programming</th>
+          <td>HTML/CSS, JavaScript, jQuery (JSON), PHP, Android, Bootstrap</td>
+        </tr>
+        <tr>
+          <th>Design</th>
+          <td>IA/UI/UX, Mobile 1st, Grid Layout, W Accessibility Compliant</td>
+        </tr>
+        <tr>
+          <th>Develop</th>
+          <td>APIs, Dependency Management, Optimization, Config &amp; Install </td>
+        </tr>
+        <tr>
+          <th>Deploy</th>
+          <td>Command-line Interface, Version Control, SFTP/SSH, DNS Hosting</td>
+        </tr>
+      </table>
     </section>
     <!-- -->
     <section class="resume__education">
@@ -148,7 +152,7 @@ include ("inc/header.php");
           <ol>
             <li>Chapter President: Pi Sigma Alpha</li>
             <li>Student Assistant: Office of the President</li>
-            <li>Intern: Legislative Research Commission &#40;Office of Budget Review&#41;</li>
+            <li>Intern: Legislative Research Commission</li>
             <li>Co&#45;Op: The Econ Village Group, LLC </li>
             <li>Volunteer Tutor: Louisville Urban League</li>
           </ol>
