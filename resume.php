@@ -109,9 +109,9 @@ include ("inc/header.php");
         </div>
         <div class="res__work__Responsibilities">
           <ol>
-            <li>Duis commodo ante ac bibendum placerat ligula</li>
-            <li>Pellentesque habitant morbi tristique senectus</li>
-            <li>Rutrum nisi, eget molestie ligula sapien ac mauris et netus et malesuada fames ac turpis egestas.</li>
+            <li>Utilized <a href="https://teamtreehouse.com/mistermoody" target="_blank">Treehouse</a> curriculum to build a foundation of knowledge</li>
+            <li>Attended weekly meetups with mentors and cohort peers to discuss curriculum code challenges and make inquiries regarding project status.</li>
+            <li>Awarded Certificates of Completion for HTML, CSS, JavaScript and Android</li>
           </ol>
         </div>
       </div>
