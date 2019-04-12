@@ -5,6 +5,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
 <!-- ************************************************** -->
 <!-- ******************** <<HOMEPAGE>>  *************** -->
 
+
 <main>
 <!-- //CONTENT-BEGINS..... -->
   <!-- #About (Introduction) -->
@@ -43,8 +44,8 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
     </ul>
   </section>
   <!-- -->
-</main>
-<!-- .....CONTENT-ENDS// -->  
+<!-- .....CONTENT-ENDS// --> 
+</main> 
 
 
 <!-- ************************************************** -->
