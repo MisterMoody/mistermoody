@@ -479,7 +479,7 @@ summary::-webkit-details-marker {display: none;} /* !REQUIRED! */
 res__work__jobLocation {grid-area: jLocation;}
 .res__work__Employment {
   display: grid;
-  grid-template-columns: 63vw auto;
+  grid-template-columns: 57vw auto;
   grid-template-areas: 
     "jTitle jDate"
     "jEmployer jLocation";
@@ -493,7 +493,7 @@ res__work__jobLocation {grid-area: jLocation;}
 .res__work__jobDate {font-size: 0.80em;}
 .res__work__Responsibilities {
   margin-top: 4px;
-  max-width: 90%; 
+  max-width: 90%;  
   /*Adjust 'with' res__work__jEmployement*/
 }
 /**/
@@ -513,7 +513,7 @@ res__work__jobLocation {grid-area: jLocation;}
 @media only screen and (min-width: 500px) and (max-width: 799px){
   .res__work__Employment {
     display: grid;
-    grid-template-columns: 67vw auto;
+    grid-template-columns: 65vw auto;
     grid-template-areas: 
       "jTitle jDate"
       "jEmployer jLocation";
