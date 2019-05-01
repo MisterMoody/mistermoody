@@ -232,7 +232,7 @@ footer  {
 /*Skill Bars*/
 .SkillBar {
   width: 100%;
-  height: 25px;
+  height: 1em;
   position: relative;
   background: #838487;
 }
@@ -263,7 +263,7 @@ footer  {
 #Skill-Design, #Skill-Develop, 
 #Skill-Deploy, #Skill-Copy, 
 #Skill-Interpersonal {
-  height: inherit;
+  height: auto;
   position: absolute;  
   background-color: #000;
   font-size: 0.82em;
@@ -271,9 +271,8 @@ footer  {
 @media only screen and (min-width: 800px) {
   .skills {margin-top: 25px;}
   .PercentText {margin: 0 auto;}
-  .skillSpecs {margin-bottom: 8px;}
+  .skillSpecs {margin-bottom: 0.6em;}
   div.skillSpecs {font-size: 0.62em;}
-  .SkillBar, .Skill-Area, .PercentText {height: 1em;}
   
 } 
 /*
