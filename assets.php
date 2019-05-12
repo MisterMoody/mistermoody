@@ -16,7 +16,7 @@ include ("inc/header.php");
       <li>News Article Link Grid</li>
     </ol>
   </section>
-  <!-- -->
+  <!-- 
   <section class="gallery">
     <div class="item"><img src="img/cnID.jpg"/></div>
     <div class="item"><img src="img/cnvisa.jpg"/></div>
@@ -36,7 +36,7 @@ include ("inc/header.php");
     <div class="item"><img src="img/workVanilla.jpg"/></div>
     <div class="item"><img src="img/free.jpg"/></div>
   </section>
-  <!-- -->
+   -->
   <section>
     <aside class="newsLinkGrid">
       <div class="newsLinkImage">image</div>
