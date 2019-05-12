@@ -25,7 +25,7 @@ include ("inc/header.php");
     <!-- -->
     <section class="resume__background">
       <div class="res__sectionTitle">Background</div>
-      <p>Non&#45;traditional educator and web technology enthusiast exploring front-end web developer opportunities. Self-directive learner with a full-stack mentality capable of designing, developing and deploying a website to specification. Results&#45;oriented, hands&#45;on professional with a distinctinve cosmopolitan experience delievering proficient customer and language acquisition services. </p>
+      <p>Non&#45;traditional educator and web technology enthusiast exploring front-end web developer opportunities. Self-directive learner with a full-stack mentality capable of designing, developing and deploying a website to specification. Results&#45;oriented, hands&#45;on professional with a distinctive cosmopolitan experience delivering proficient customer and language acquisition services. </p>
     </section>
     <!-- -->
     <section class="resume__work">
@@ -39,8 +39,8 @@ include ("inc/header.php");
         </div>
         <div class="res__work__Responsibilities">
           <ol>
-            <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment, encouraging cooperative learning techniques and accomodating the diverse needs of students.</li>
-            <li>Completed professional development activities related to instructional strategies and accomodating the diverse needs of students as well as violence prevention, intervention and restraint.</li>
+            <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques.</li>
+            <li>Completed professional development activities related to instructional strategies and accommodating the diverse needs of students as well as violence prevention, intervention and restraint.</li>
             <li>Awarded 40 assignments at 16 schools; facilitated courses for more than 1,500 learners on subjects that include Computer Literacy, ESL, History and Math.</li>
           </ol>
         </div>
@@ -68,7 +68,7 @@ include ("inc/header.php");
         <div class="res__work__Responsibilities">
           <ol>
             <li>Nearly 10&#44;000 hours facilitating courses to learners of varying fluency</li>
-            <li>Awarded Foreign Expert Certificate by Peoples Republic of China to assist the foreign language departments at tho state&#45;run institutions of education</li>
+            <li>Awarded Foreign Expert Certificate by Peoples Republic of China to assist the foreign language departments at three state&#45;run institutions of education</li>
             <li>Cooperated with private agencies and recruiters to scout ESL teacher candidates </li>
             <li>Developed curricula materials and procurred authentic relia</li>
           </ol>

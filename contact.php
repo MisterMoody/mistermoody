@@ -19,17 +19,17 @@ include ("inc/header.php");
             $message=$_POST["message"];
 
             $recipient="principal@mistermoody.com";
-            $subject="Mister Moody Alert: Prospective Client Email";
+            $subject="MisterMoody.com: Prospective Client Email";
             $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
            if ( mail($recipient, $subject, $mailBody, "From: $sender<$senderEmail>")) {
-             header('Location: portfolio.php');/*Redirect Page*/
+             header('Location: about.php');/*Redirect Page*/
            }        
           }
     ?>
     <!-- 'FORM'-->
     <form class="contactForm" method="post" action="contact.php" name="contactForm">
-      <div href="thankyou.html">
+      <div>
         <!-- Name -->
         <div>
           <label class="lineInput" for="name"></label>
