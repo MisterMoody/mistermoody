@@ -1,24 +1,150 @@
+/* ========================================= */
+/* CASCADING STYLESHEET ==================== */
+/*
+      *   Main Navigation
+      1.  xyz123
+      2.  xyz123
+      3.  xyz123              
+      4.  xyz123
+      5.  xyz123                     */
+/* ========================================= */
+
+
+/* ============================================ */
+/* 1. TOP-NAVIGATION ========================== */
+.topnav {
+  overflow: hidden;
+  background-color: #333; /* DELETE before Production */
+}
+/**/
+main {padding: 0 1em;}
+/**/
+.topnav a:first-child {float: right;}
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.topnav a:hover {
+  /*background-color: red;
+  color: black;*/
+	transition-duration: 0.8s;
+}
+.topnav a:not(.active) {}
+header.topnav > .active {
+  /*background-color: red;*/
+  color: white;
+  padding-right: 2.6em;
+}
+.topnav .icon {
+  display: none;
+}
+fa-home {
+  padding-right: 75px;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:first-child {float: left;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*Settings for 'FIXED-Header/Nav' on 'Desktop = REQ'*/
+@media screen and (min-width: 800px) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+  }
+  main {margin-top: 44px;}
+}
+/* ============================================ */
+
+
+/* ***** GRID LAYOUTS & Section Styles *****/
+/* Website Grid Container*/
+
+@media only screen and (min-width: 800px) {
+  section {
+    display: grid;
+    grid-auto-flow: column;
+  }
+}
+
+section {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+
+
+
+
+section:first-child {margin: 0px;}
+
+
+/*Gradient Text*/
+.gradient-text {
+  background: -webkit-linear-gradient(pink, red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/**/
+
+
+/*Section Background Color
+section:nth-child(odd){background: palegoldenrod;}
+*/
+
+
+
+
+
 /**//***********************************//**/
 /* ********* UNIVERSAL BASE STYLES *********/
 /* Universal Layout Containment */
 *, *:before, *:after {box-sizing: border-box;} 
-/**/
+/*
+*/
 body {
-  margin: 0 auto;
-  padding: 0;
-  font-size: 1em; /*calc(1.01em + 1.01vw)*/ 
+  margin: 0;
+  padding: 0px 16px;
+  /*font-size: calc(1.01em + 1.01vw); */
 	font-family: 'Raleway', sans-serif;
   letter-spacing: 0.6px;
+  /*background-image: linear-gradient(to right, #434343 0%, black 100%); Premium Dark */
+  /*Above the Sky*/
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  /*Slick Carbon
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;*/
 }
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
+h1, h2, h3, h4, h5, h6 {
+  /*margin: 0;
+  padding: 0;*/
   text-align: center;
 }
-h3, h4, h5 {color: #838487;}
 p {
+  text-align: justify;
   line-height: 1.5; 
-  font-size: 0.88em;
+  /*font-size: 0.88em;*/
 }
 a {
   text-decoration: none;
@@ -27,16 +153,10 @@ a {
 a:hover {opacity: 0.7;}
 ul {
   list-style-type: none; 
-  margin: 0; 
-  padding: 0;
+  /*margin: 0; 
+  padding: 0;*/
 }
-ol {
-  font-size: 0.75em;
-  list-style-type: circle; 
-  margin: 0; 
-  padding-left: 1.1em;
-} /* Styles specific to Resume */
-li > a {font-size: 0.88em;}
+li {}
 hr {
   background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
   border: 0;
@@ -57,17 +177,43 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   position: relative;
   top: -0.7em;
 }
-@media all and (min-width: 800px) {
-  body {
-    font-size: calc(0.92em + 0.92vw); 
+/**//***********************************//**/
+/*
+*/
+/* BUTTONS ******************************* */
+.btn {
+  display: inline-block;
+  width: 95%;
+  margin: 0; padding: 0;
+  text-align: center; 
+  color: #fff;
+  letter-spacing: 1px;
+  background-color: #000;
+  border-radius: 0.35em;
+  text-align: center;
+  border: 2px solid #fff;
+}
+.btn:hover {
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  opacity: 1;
+}
+p.btn {
+  height: 100%;
+  text-align: center;
+  border: 2px solid #000;
+}
+@media only screen and (min-width: 800px) {
+  .btn {
+    width: 100%;
+    height: 44px;
   }
-  p {
-    line-height: 1.4; 
-    /*letter-spacing: 0.4px;*/
-    font-size: 0.81em;
-  }
+  .miniGallery {margin: 50px 0;}
 }
 /**//***********************************//**/
+/*
+*/
 /* IMAGES ******************************** */
 .mainImage {
   width: 100%;
@@ -108,177 +254,28 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 }
 /**//***********************************//**/
 
-
-/**//***********************************//**/
-/* ** GRID LAYOUTS &  Styles ***************/
-/* Universal Site Grid Container*/
-.indexGrid {
-	margin: 1vh 4vw;
-  padding: 0;
-	display: grid;
-	grid-template-rows: repeat(3, auto);
-	grid-gap: 4px;
-}
-/****
-****/
-/* Universal Header Navigation */
-header {
-  margin: 0;
-  display: grid;
-  max-height: 100%;
-  grid-template-areas: "logo"
-                       "title";
-  grid-template-rows: repeat(auto-fit, 32px);
-  grid-template-columns: 1fr;
-  grid-gap: 8px;
-  /* Fixed Position*/
-  z-index: 1;
-  position: sticky; top: 0;
-  background-color: #fff;
-}
-.header__logo {text-align: center;}
-.header__title {
-  margin: 0;
-  padding: 0 0 4px 0;
-  color: #838487; 
-  font-size: 0.91em;
-  display: grid;
-  max-height: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  text-align: center;
-}
-@media only screen and (min-width: 800px){
-  .indexGrid {
-    margin: 0 6vw;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(2, auto) 4vh; /*8vh minmax(200px,auto) 7.2314vh;*/
-    grid-gap: 4px;
-  }
-  header {
-    padding: 4px 0;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas: "logo title";
-    grid-template-columns: auto 1fr;
-    
-  }
-  .header__title {
-    font-size: 24px; 
-    margin-top: 16px;
-    text-align: right;
-  }
-}
-/****
-****/
-footer  {
-  text-align: center;
-  font-size: 14px; 
-  color: #838487;
-}
-/**//***********************************//**/
-/**//***********************************//**/
-
-
-/**//***********************************//**/
-/**//** WORK.PHP ***********************//**/
-/* Training (Edu) Grid */
-.subGrid {
-  margin: 0 auto;
+/** #Contact (Social Media) Grid ***/
+.download {grid-area: download;}
+.github {grid-area: github;}
+.twitter {grid-area: twitter;}
+.email {grid-area: email;}
+.phone {grid-area: phone;}
+ul.social {
+  margin: 0.4em;
   padding: 0;
   display: grid;
-  grid-template-rows: repeat(auto-fit, 1fr);
-  grid-gap: 8px;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 1.81rem;
+  justify-content: space-between;
+  grid-template-areas: 
+    "download github twitter email phone";
 }
-.grid-table {
-  display: grid;
-  grid-template-columns: 70px 1fr;
-}
-.grid-table > span:nth-child(4n+1),
-.grid-table > span:nth-child(4n+2) {
-  background-color:#838487;
-  font-size: 0.82em;
-}
-.grid-table > span:nth-child(4n+3),
-.grid-table > span:nth-child(4n+4) {
-  margin-bottom: 8px;
-  font-size: 0.68em;
-}
-@media only screen and (min-width: 800px){
-  .subGrid {
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
-    grid-template-columns: repeat(2, 49%);
-    grid-gap: 24px;
-    
-  }
-  .grid-table {
-  grid-template-columns: 90px 1fr;
-  }
-  /*Decrease Size of 'Long-string Content' */
-  .grid-table > span.smallSpan {
-    font-size: 0.6em;
-  }
-}
+/**//***********************************//**/
+/**//***********************************//**/
+
 /*
 */
-/* #Training (Skills) Grid */
-.grid-row {
-  display: subgrid;
-  grid-template-rows: 1fr;
-}
-/*Skill Bars*/
-.SkillBar {
-  width: 100%;
-  height: 1em;
-  position: relative;
-  background: #838487;
-}
-.Skill-Area {
-  float: left;
-  position: absolute;
-  text-shadow: none;
-  color: #fff;
-}
-.PercentText {
-  position: relative;
-  padding-right: 15px;
-  float: right;
-  text-shadow: none;
-  color: #fff;
-}
-.skillSpecs {
-  font-size: 0.64em;
-  margin-bottom: 8px;
-}
-/*Individual Skill Bar 'width'*/
-#Skill-Design {width: 80%;}
-#Skill-Develop {width: 68%;}
-#Skill-Deploy {width: 82%;}
-#Skill-Copy {width: 91%;}
-#Skill-Interpersonal {width: 79%;}
-/*General Skill-Bar Settings*/
-#Skill-Design, #Skill-Develop, 
-#Skill-Deploy, #Skill-Copy, 
-#Skill-Interpersonal {
-  height: auto;
-  position: absolute;  
-  background-color: #000;
-  font-size: 0.82em;
-}
-@media only screen and (min-width: 800px) {
-  .skills {margin-top: 25px;}
-  .PercentText {margin: 0 auto;}
-  .skillSpecs {margin-bottom: 0.6em;}
-  div.skillSpecs {font-size: 0.62em;}
-  
-} 
-/*
-*/
-/* #Experience (Work) Grid */  
-/* 'Details' Component */
+/* DETAILS ******************************* */
 details {
   margin: 1rem auto;
   padding: 0 0.8rem 0 0.2rem;
@@ -336,424 +333,9 @@ summary::after {
   transform: translateY(-50%) rotate(180deg);
 }
 summary::-webkit-details-marker {display: none;} /* !REQUIRED! */
-/**/
-.trainingGrid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(15px, auto));
-  font-size: 0.65em;
-  grid-row-gap: 4px; 
-}
-.trainingGrid > span:nth-child(4n+1),
-.trainingGrid > span:nth-child(4n+2) {
-  background-color: #838487;
-}
-@media only screen and (min-width: 500px){
-  .trainingGrid {
-    grid-template-columns: 132px 1fr;
-    font-size: 0.71em;
-  }
-}
-@media only screen and (min-width: 800px){
-  .trainingGrid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-row-gap: 1px;
-  }
-  .trainingGrid > p {text-align: right; margin: 0 auto; padding: 0;}
-}
-/**//***********************************//**/
 /**//***********************************//**/
 
-
-/**//***********************************//**/
-/**//** WEBDESIGN.php ******************//**/
-/*  Online Resources Grid*/
-.resourceGrid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(20px, auto);
-  grid-gap: 10px;
-}
-.resourceLink {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-bottom: 1em;
-}
-/* Font Scheme */
-.resourceLink > span {
-  padding-left: 4px;
-   font-size: 0.81em;
-}
-/* Alternate Background-Scheme */
-.resourceLink > span:nth-child(even) {
-  background-color:#838487;
-}
-/**/
-.resourceText {
-  text-decoration: underline;
-}
-.resourceText:hover {
-  background-color: #000;
-  color: #fff;
-  opacity: 1;
-  text-decoration: none;
-  border-radius: 8px;
-}
-/*
-*/
-@media only screen and (min-width: 800px) {
-  .resourceGrid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-      "syntax content layout styles"
-      "snippets help manage tools";
-  }  
-  .resourceLink {
-    font-size: 0.88em;
-  }
-  .resourceLink > span {
-    padding-left: 4px;
-    font-size: 0.71em;
-  }
-}
-/**//***********************************//**/
-/**//***********************************//**/
-
-
-/**//***********************************//**/
-/**//** RESUME.php *********************//**/
-.resumeGrid {
-  display: grid;
-  grid-template-rows: 62px repeat(auto-fit, minmax(100px, 1fr)); 
-  text-align: left;
-  grid-gap: 10px;
-}
-/* Section 'Title' Styles */
-.res__sectionTitle {
-  color: #838487;
-  font-weight: 600;
-  font-variant: small-caps;
-}
-/* Spacing to Focus on 'Author & Background' */
-.resume__author, 
-.resume__background {margin: 0.95em 0;}
-.resume__background > p {font-size: 0.85em;}
-/**/
-.resume__title {
-  grid-area: title; 
-  font-weight: 900;
-  font-variant: small-caps; 
-}
-.resume__contact {
-  grid-area: contact; 
-  font-size: 0.88em;
-  font-variant: small-caps; 
-  text-align: right;
-}
-.resume__author {
-  display: grid;
-  grid-template-columns: 47% 1fr;
-  grid-template-areas: "title contact";
-}
-/* 
-  Resume Training/Work 'Card' 
-  * Labeled for Work =>
-  *   jTitle = Topic Studied / jEmployer = School
-  *   jDate & jLocation = Date & Location
-*/
-.resume__Card {
-  margin-bottom: 24px;
-  display: grid;
-}
-/**/
-.res__work__jobTitle {grid-area: jTitle;}
-.res__work__jobEmployer {grid-area: jEmployer;}
-.res__work__jobDate {grid-area: jDate;}
-res__work__jobLocation {grid-area: jLocation;}
-.res__work__Employment {
-  display: grid;
-  grid-template-columns: 57vw auto;
-  grid-template-areas: 
-    "jTitle jDate"
-    "jEmployer jLocation";
-}
-.res__work__jobTitle {
-  font-size: 0.85em;
-  font-weight: 700;
-}
-.res__work__jobEmployer, 
-.res__work__jobLocation, 
-.res__work__jobDate {font-size: 0.80em;}
-.res__work__Responsibilities {
-  margin-top: 4px;
-  max-width: 90%;  
-  /*Adjust 'with' res__work__jEmployement*/
-}
-/**/
-/* Resume 'Skills' */
-.resume__skills { margin-bottom: 1em;}
-.resume__skills > table {
-  font-size: 0.80em;
-  width: 100%;
-}
-.resume__skills > th {width: 100px;}
-/* Download Resume */
-.resume__download {
-  text-align: center;
-  font-variant: small-caps;
-}
-/**/
-@media only screen and (min-width: 500px) and (max-width: 799px){
-  .res__work__Employment {
-    display: grid;
-    grid-template-columns: 65vw auto;
-    grid-template-areas: 
-      "jTitle jDate"
-      "jEmployer jLocation";
-  }
-}
-@media only screen and (min-width: 800px){
-  .resumeGrid {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(62px, 1fr)); /* replace 1fr w/ min-content */
-    text-align: left;
-    grid-gap: 10px;
-  }
-  /**/
-  .resume__author {margin: 0.70em 0;} 
-  .resume__background {margin: 0.80em 0;}
-  /**/
-  .resume__author {
-    display: grid;
-    grid-template-columns: 55% 1fr;
-    grid-template-areas: "title contact";
-  }
-  .resume__title {
-    /*padding-top: 10px; = Will Center */
-  }
-  .resume__contact {
-    text-align: left;
-  }
-  /**/
-  .res__work__Employment {
-    display: grid;
-    grid-template-columns: 81% auto;
-    grid-template-areas: 
-      "jTitle jDate"
-      "jEmployer jLocation";
-  }
-  .res__work__Responsibilities {
-    max-width: 68vw;
-  }
-}
-/**//***********************************//**/
-/**//***********************************//**/
-
-
-/**//***********************************//**/
-/**//** PORTFOLIO.php ******************//**/
-/* GLITCH-SHAKE 'ANIMATION' */
-.cat__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cat__code {
-  position: relative;
-  letter-spacing: 8px;
-  font-size: 1em;
-  text-decoration: none;
-  display: grid;
-  grid-template-rows: repeat(auto, minmax(100px, auto));
-  background-clip: text;
-  color: black;
-  animation: .8s shake infinite alternate;
-}
-/* "Grid-Row" for 'Glitch' Content */
-.rowTwo, .rowThree {margin-left: 35px;}
-@media screen and (min-width: 1000px) {
-  .cat__title {
-    margin-top: 24px;
-  }
-  .rowOne {grid-area: rOne;}
-  .rowTwo {grid-area: rTwo;}
-  .rowThree {grid-area: rThree;}
-  .rowFour {grid-area: rFour;}
-  /**/
-  .cat__code {
-    letter-spacing: 2px;
-    font-size: 1.1em;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas:
-      "rOne rTwo rThree rFour"
-  }
-  /**/
-  .rowTwo, .rowFour {margin-left: 4px;}
-  .rowThree {margin-left: 16px;} 
-}
-@keyframes shake {
-  0% { transform: skewX(-15deg); }
-  5% { transform: skewX(15deg); }
-  10% { transform: skewX(-15deg); }
-  15% { transform: skewX(15deg); }
-  20% { transform: skewX(0deg); }
-  100% { transform: skewX(0deg); }  
-}
-/*
-*/
-/* Category Buttons */
-.btn {
-  display: inline-block;
-  width: 95%;
-  margin: 0; padding: 0;
-  text-align: center; 
-  color: #fff;
-  letter-spacing: 1px;
-  background-color: #000;
-  border-radius: 0.35em;
-  text-align: center;
-  border: 2px solid #fff;
-}
-.btn:hover {
-  border: 2px solid #000;
-  background-color: #fff;
-  color: #000;
-  opacity: 1;
-}
-p.btn {
-  height: 100%;
-  text-align: center;
-  border: 2px solid #000;
-}
-@media only screen and (min-width: 800px) {
-  .btn {
-    width: 100%;
-    height: 44px;
-  }
-  .miniGallery {margin: 50px 0;}
-}
-/**//***********************************//**/
-/**//***********************************//**/
-
-
-/**//***********************************//**/
-/** ASSET: 'Grid' News/Article 'Links' *****/
-.newsTitle {grid-area: ntitle;}
-.newsLinkImage {grid-area: nLinkImage;}
-.newsLinkStory {grid-area: nLinkStory;}
-/**/
-aside.newsLinkGrid {}
-.newsLinkGrid {
-  margin: 0;
-  padding: 4px;           /* Some padding */
-  border: 1px solid #ddd; /* Gray border */
-  border-radius: 4px;     /* Rounded border */
-  display: grid;
-  grid-template-rows: repeat(auto, minxmax(400, auto));  /*88vh*/
-  grid-template-columns:  88px auto;
-  grid-gap: 8px;  
-  grid-template-areas:
-    "nLinkImage ntitle"
-    "nLinkStory nLinkStory";
-  } 
-.newsLinkStory {
-  padding: 0; margin: 0;
-    /*font-size: 0.88em;*/
-}
-.newsLinkImage /*> picture > i.fa*/ {
-  text-align: center;
-}
-.newLinkImage, 
-.newsImage {
-  max-width: 100%;
-  height: auto;}
-/* Add a hover effect (blue shadow) */
-.newsImage:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-@media only screen and (min-width: 800px) {
-  .newsLinkGrid {
-    border: 4px solid #ddd; /* Gray border */
-    border-radius: 4px;     /* Rounded border */
-    padding: 0px;           /* Some padding */
-    display: grid;
-    grid-template-rows: repeat(2, 400);  /*88vh*/
-    grid-template-columns:  10vw auto;
-    grid-gap: 8px;  
-  }   
-}
-/*Background Colors*/
-aside.newsLinkGrid {background-color: #fff;}
-.newsTitle {background-color: #f2edf3;}
-.newsLinkImage {background-color: #cd135e;}
-.newsLinkStory {background-color: #a5231d;}
-/**//***********************************//**/
-/**//***********************************//**/
-
-
-/**//***********************************//**/
-/**//** CONTACT.php ********************//**/
-/* ( Contact Form) */
-.contactForm {
-  margin: 20px 0;
-  color: #000;
-  font-weight: bold; 
-  height: 100%;
-}
-input, textarea{
-  width: 99%;
-  margin: 1px 0;
-  font-size: 1em;
-	border-radius: 4px;
-	background-color: rgba(255,255,255,.6);
-	border: solid 1px #000;
-  padding: 1vmax 0;
-}
-#submit_button {
-	border-radius: 4px;
-  background-color: #3a3a3a;
-  color: #fff;
-	font-weight: bold;
-  font-size: 1em;
-  transition-duration: .5s;
-  cursor: pointer;
-  padding: 2vmax;
-  width: 40%; 
-  margin: 16px 30%;
-}
-#submit_button:hover {
-  background-color: #1a1a1a;
-  border: 1px solid #fff;
-  box-shadow: 2px 2px 20px #000;
-  transition-duration: .5s;  
-}
-label.required:after {
-  content:'*';
-  color:red;
-}
-@media only screen and (min-width: 800px) {
-  .contactForm {
-    margin: 50px auto; 
-  height: 80vh;
-  }
-  .lineInput {height: 1em;}
-  textarea {width: 99%;}
-  #submit_button {
-    padding: 1vmax;
-    width: 35%;
-    margin: 16px 30%;
-  }
-}
-/* 
-*/
-/** #Contact (Social Media) Grid ***/
+/** SOCIAL MEDIA + FOOTER **************** */
 .download {grid-area: download;}
 .github {grid-area: github;}
 .twitter {grid-area: twitter;}
@@ -769,40 +351,12 @@ ul.social {
   grid-template-areas: 
     "download github twitter email phone";
 }
+/*
+*/
+footer  {
+  text-align: center;
+  font-size: 14px; 
+  color: #838487;
+}
 /**//***********************************//**/
 /**//***********************************//**/
-
-
-/**//***********************************//**/
-/*******************************************/
-/*SCROLL-to-TOP Button*/
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  right: 0px; /* Place the button 30px from the right */
-  bottom: 224px;
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: white; /* Set a background color */
-  /* color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 0;  /*Some padding */
-  /* border-radius: 10px; /* Rounded corners */
-  font-size: 8px; /* Increase font size */
-}
-#myBtn:hover {
-  /* background-color: #ccc; Add a dark-grey background on hover */
-  opacity: 0.7; color: blue;
-}
-@media screen and (min-width: 768px) {
-  #myBtn {
-    bottom: 50%; /* Place the button 26px at the bottom of the page */
-    right: 8px; /* Place the button 30px from the right */
-    padding: 8px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 16px; /* Increase font size */
-    background-color: #838487; /* Set a background color */
-  }
-}
-/*******************************************/

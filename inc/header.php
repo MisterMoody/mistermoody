@@ -15,26 +15,27 @@
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway">
     <!-- FontAwesome Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Treehouse 'Badges' ReportCard by Riley Hilliard -->
-    <link href="js/reportcard/css/badges.css" rel="stylesheet">
   </head>
   <body>
   <!-- ********************************* -->
   <!-- ** // GRID CONTAINER 'start' **** -->
   <!-- ********************************* -->
-    <article class="indexGrid">    
-      
-      <!--  // HEADER ( Nav / Logo ) *** -->
-      <header>
-        <div class="header__logo"><h1><a href="index">Mister Moody</a></h1></div>
-          <ul class="header__title">
-            <li><a href="index">About</a></li>
-            <li><a href="resume">Resume</a></li>
-            <li><a href="work">Work</a></li>
-            <li><a href="contact">Contact</a></li>
-          </ul>
-      </header>
-      <!-- ***************************** -->   
+  <!--  might need / might not
+  <article class="indexGrid">    
+  -->
+    <!-- ************ MAIN SITE NAVIGATION *********** -->
+    <!-- (Outside of 'Grid' for Responsiveness) -->
+		<header class="topnav" id="myTopnav">
+      <a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a>
+      <a href="about">About</a>
+      <a href="usingCSS">Curriculums</a>
+      <a href="usingJS">Services</a>
+      <a href="management">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars responsive"></i>
+      </a>
+    </header>
+    <!-- ********************************************* -->  
             
       <!-- ***************************** -->
       <!-- // CONTENT-BEGINS............ -->
