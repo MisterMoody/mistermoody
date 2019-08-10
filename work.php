@@ -5,49 +5,42 @@ include ("inc/header.php");
 <!-- ******************************************************* -->
 <!-- ************* <<PORTFOLIO GALLERY>>  ************* -->
 
-<main>
+
 <!-- //CONTENT-BEGINS..... -->
-  <!-- #Experience (Work) -->
+<main>
+  <h1 style="height: 85vh;">Coming Soon</h1>
+
+  <!-- #Experience (Work) 
   <section>
     <div>
       <p>I am currently employed as a substitute teacher with <a href="https://jefferson.kyschools.us/" target="_blank">Jefferson County Public Schools</a> in my hometown of Louisville, Kentucky. In my spare time, I tinker with web technologies in an effort to develop my sole-proprietorship. I kindly invite you to explore the content on this page to learn more about my professional experiences and how we could possibly collaborate on a project.</p>
-      <!-- Resume -->
-      <details><!-- <details 'open'> will OPEN Module from Start -->
+      <details>
         <summary>Teaching Experience &nbsp;<code>9,000+ Hours</code></summary>
         <p>Below is a list of some of the educational institutions that I have collaborated with:</p>
         <div class="trainingGrid">
-          <span>2018 - <!--<small><i>Present</i></small>--> </span>
-          <span><!--Substitute Teacher <b>&#64;</b> -->Jefferson Co. Public Schools <small>(KY)</small></span>
+          <span>2018 - <small><i>Present</i></small> </span>
+          <span>Substitute Teacher <b>&#64;</b> Jefferson Co. Public Schools <small>(KY)</small></span>
           <span>2016 - 2017 </span>
-          <span><!--TEFL Instructor <b>&#64;</b> -->Jiaxing College</span>
+          <span>TEFL Instructor <b>&#64;</b> Jiaxing College</span>
           <span>2012 - 2013 </span>
-          <span><!--TEFL Instructor <b>&#64;</b> -->Zhejiang Middle School</span>
+          <span>TEFL Instructor <b>&#64;</b> Zhejiang Middle School</span>
           <span>2007 - 2009 </span>
-          <span><!--TEFL Trainer <b>&#64;</b> -->Oxford Seminars</span>
+          <span>TEFL Trainer <b>&#64;</b> Oxford Seminars</span>
           <span>2005 - 2006 </span>
-          <span><!--TEFL Instructor <b>&#64;</b> -->Joongdong High School</span>
+          <span>TEFL Instructor <b>&#64;</b> Joongdong High School</span>
           <span>2004 - 2006 </span>
-          <span><!--TEFL Consultant <b>&#64;</b> -->US-Japan Edu. Exchange Program</span>
+          <span>TEFL Consultant <b>&#64;</b> US-Japan Edu. Exchange Program</span>
           <span>2003 - 2004 </span>
-          <span><!--TEFL Instructor <b>&#64;</b> -->Sogang University</span>
+          <span>TEFL Instructor <b>&#64;</b> Sogang University</span>
           <span>2000 - 2001 </span>
-          <span><!--Rec. Supervisor <b>&#64;</b> -->Cabbage Patch Settlement House</span>
+          <span>Rec. Supervisor <b>&#64;</b> Cabbage Patch Settlement House</span>
         </div> 
-      </details>
-      <!-- Treehouse Marks -->
-      <details>
-        <summary>Web Dev Experience &nbsp;<code>2,000+ Hours</code></summary>
-        <div class="report-card treehouse"></div>
       </details>
     </div>
   </section>
-  <!-- -->
-  <br><hr style="margin: 0 20px;"><br>
-  <!-- #Training (Skills) -->
   <section>
     <p>Jack-of-All-Trades, I am not. However, I am an effective communicator with a distinctive international experience capable of doing anything that I put my mind to.</p>
     <div class="subGrid">
-      <!-- Training -->
       <div>
         <div class="grid-table">
           <span>2015</span>
@@ -76,7 +69,7 @@ include ("inc/header.php");
           <span>University of Louisville</span>
         </div>
       </div>
-      <!-- Skills -->
+      
       <div>
         <div class="grid-row">
           <div class="SkillBar">
@@ -131,7 +124,6 @@ include ("inc/header.php");
       </div>
     </div>
   </section>
-  <!-- -->
   <br>
   <section>
     <div class="cat__title">    
@@ -144,17 +136,13 @@ include ("inc/header.php");
     </div>
   </section>
   <br>
-  <!-- -->
-  <!-- Links to Projects -->
   <section>
     <div>
       <p>Waayyy too much going on at the moment, currently focused on curating portfolio items that require documentation. I put together a table of useful <a class="resourceText" href="webdesign" alt="Link to Resources" target="_blank" title="Online Resources">Online Resources</a> that help me build websites, which is a supplement to this <a class="resourceText" href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">DIY Guide</a> for creating a website.</p>
     </div>
-  </section>
-  <!-- -->
-  
-<!-- .....CONTENT-ENDS// --> 
+  </section> -->
 </main>
+<!-- .....CONTENT-ENDS// --> 
 
 <!-- ************************************************** -->
 <!-- ************************************************** -->

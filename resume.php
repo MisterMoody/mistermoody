@@ -5,10 +5,12 @@ include ("inc/header.php");
 <!-- ************************************************** -->
 <!-- ******************** <<HOMEPAGE>>  *************** -->
 
-<main>
+
 <!-- //CONTENT-BEGINS..... -->
-  
-  <article class="resumeGrid">
+<main>
+  <h1 style="height: 85vh;">Coming Soon</h1>
+ 
+  <!--<article class="resumeGrid">
     <section class="resume__author">
       <div class="resume__title">
         <div>Ray Moody</div>
@@ -22,12 +24,12 @@ include ("inc/header.php");
         </ul>
       </div>
     </section>
-    <!-- -->
+    
     <section class="resume__background">
       <div class="res__sectionTitle">Background</div>
       <p>Non&#45;traditional educator and web technology enthusiast exploring front-end web developer opportunities. Self-directive learner with a full-stack mentality capable of designing, developing and deploying a website to specification. Results&#45;oriented, hands&#45;on professional with a distinctive cosmopolitan experience delivering proficient customer and language acquisition services. </p>
     </section>
-    <!-- -->
+    
     <section class="resume__work">
       <div class="res__sectionTitle">Work Experience</div>
       <div class="resume__Card">
@@ -75,7 +77,7 @@ include ("inc/header.php");
         </div>
       </div>
     </section>
-    <!-- -->
+    
     <section class="resume__skills">
       <div class="res__sectionTitle">Skills</div>
       <table>
@@ -97,7 +99,7 @@ include ("inc/header.php");
         </tr>
       </table>
     </section>
-    <!-- -->
+    
     <section class="resume__education">
       <div class="res__sectionTitle">Training</div>
       <div class="resume__Card">
@@ -161,12 +163,10 @@ include ("inc/header.php");
       <h5 class="resume__download">
         <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">Download Resume</a></h5>
     </section>
-    <!-- -->
-  </article>
-
-
+    
+  </article>-->
+</main>
 <!-- .....CONTENT-ENDS// --> 
-</main> 
 
 
 <!-- ************************************************** -->
