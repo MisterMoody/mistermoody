@@ -28,9 +28,9 @@
 		<header class="topnav" id="myTopnav">
       <a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a>
       <a href="about">About</a>
-      <a href="usingCSS">Curriculums</a>
-      <a href="usingJS">Services</a>
-      <a href="management">Contact</a>
+      <a href="curriculums">Curriculums</a>
+      <!--<a href="services">Services</a>-->
+      <a href="contact">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars responsive"></i>
       </a>
