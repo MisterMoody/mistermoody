@@ -10,8 +10,8 @@ include ("inc/header.php");
 <main>
   <h1 style="height: 85vh;">Coming Soon</h1>
 
-  <!-- #Experience (Work) 
-  <section>
+  
+  <!--<section>
     <div>
       <p>I am currently employed as a substitute teacher with <a href="https://jefferson.kyschools.us/" target="_blank">Jefferson County Public Schools</a> in my hometown of Louisville, Kentucky. In my spare time, I tinker with web technologies in an effort to develop my sole-proprietorship. I kindly invite you to explore the content on this page to learn more about my professional experiences and how we could possibly collaborate on a project.</p>
       <details>
@@ -122,23 +122,6 @@ include ("inc/header.php");
                 </div>
               </div>
       </div>
-    </div>
-  </section>
-  <br>
-  <section>
-    <div class="cat__title">    
-      <code class="cat__code">
-        <div class="rowOne">.malfunction {</div>
-        <div class="rowTwo">in-progress: </div>
-        <div class="rowThree">nearly-finished;</div>
-        <div class="rowFour">}</div>
-      </code>
-    </div>
-  </section>
-  <br>
-  <section>
-    <div>
-      <p>Waayyy too much going on at the moment, currently focused on curating portfolio items that require documentation. I put together a table of useful <a class="resourceText" href="webdesign" alt="Link to Resources" target="_blank" title="Online Resources">Online Resources</a> that help me build websites, which is a supplement to this <a class="resourceText" href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">DIY Guide</a> for creating a website.</p>
     </div>
   </section> -->
 </main>

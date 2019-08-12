@@ -10,7 +10,7 @@ include ("inc/header.php");
 <main>
   <h1 style="height: 85vh;">Coming Soon</h1>
  
-  <!--<article class="resumeGrid">
+  <article class="resumeGrid">
     <section class="resume__author">
       <div class="resume__title">
         <div>Ray Moody</div>

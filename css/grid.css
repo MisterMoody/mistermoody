@@ -95,10 +95,7 @@ section {
 
 
 
-
-
 section:first-child {margin: 0px;}
-
 
 /*Gradient Text*/
 .gradient-text {
@@ -107,20 +104,35 @@ section:first-child {margin: 0px;}
   -webkit-background-clip: text;
 }
 /**/
-
-
 /*Section Background Color
 section:nth-child(odd){background: palegoldenrod;}
 */
 
 
-
-
-
 /**//***********************************//**/
 /* ********* UNIVERSAL BASE STYLES *********/
 /* Universal Layout Containment */
-*, *:before, *:after {box-sizing: border-box;} 
+html {box-sizing: border-box;} 
+*:before, *:after {box-sizing: inherit;} 
+/*
+*/
+/*Smooth Scroll Effect
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}*/
+/**/
+/* Remove Browser Scroll + Gives Site an 'APP' */
+/* 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;               
+  background: transparent;  
+}
+*/
 /*
 */
 body {
@@ -252,26 +264,6 @@ p.btn {
   }
   /**/
 }
-/**//***********************************//**/
-
-/** #Contact (Social Media) Grid ***/
-.download {grid-area: download;}
-.github {grid-area: github;}
-.twitter {grid-area: twitter;}
-.email {grid-area: email;}
-.phone {grid-area: phone;}
-ul.social {
-  margin: 0.4em;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 1.81rem;
-  justify-content: space-between;
-  grid-template-areas: 
-    "download github twitter email phone";
-}
-/**//***********************************//**/
-/**//***********************************//**/
 
 /*
 */
@@ -351,8 +343,7 @@ ul.social {
   grid-template-areas: 
     "download github twitter email phone";
 }
-/*
-*/
+/**/
 footer  {
   text-align: center;
   font-size: 14px; 
@@ -360,3 +351,292 @@ footer  {
 }
 /**//***********************************//**/
 /**//***********************************//**/
+
+/*******************************************/
+/** CONTACT FORM ***************************/
+.contactForm {
+  margin: 20px 0;
+  color: #000;
+  font-weight: bold; 
+  height: 100%;
+}
+input, textarea{
+  width: 99%;
+  margin: 1px 0;
+  font-size: 1em;
+	border-radius: 4px;
+	background-color: rgba(255,255,255,.6);
+	border: solid 1px #000;
+  padding: 1vmax 0;
+}
+#submit_button {
+	border-radius: 4px;
+  background-color: #3a3a3a;
+  color: #fff;
+	font-weight: bold;
+  font-size: 1em;
+  transition-duration: .5s;
+  cursor: pointer;
+  padding: 2vmax;
+  width: 40%; 
+  margin: 16px 30%;
+}
+#submit_button:hover {
+  background-color: #1a1a1a;
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 20px #000;
+  transition-duration: .5s;  
+}
+label.required:after {
+  content:'*';
+  color:red;
+}
+@media only screen and (min-width: 800px) {
+  .contactForm {
+    margin: 50px auto; 
+  height: 80vh;
+  }
+  .lineInput {height: 1em;}
+  textarea {width: 99%;}
+  #submit_button {
+    padding: 1vmax;
+    width: 35%;
+    margin: 16px 30%;
+  }
+}
+/*******************************************/
+/*******************************************/
+
+
+
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/** CSS for RESUME + WORK SECTION **********/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/** SKILLS & TRAINING **********************/
+/*Skill Bars*/
+.SkillBar {
+  width: 100%;
+  height: 25px;
+  position: relative;
+  background: #838487;
+  /*margin: 2px 0 -4px 0;
+  padding-bottom: -18px;*/
+}
+.Skill-Area {
+  float: left;
+  position: absolute;
+  text-shadow: none;
+  color: #fff;
+}
+.PercentText {
+  position: relative;
+  padding-right: 15px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+}
+.skillSpecs {
+  font-size: 0.68em;
+  margin-bottom: 8px;
+  /*background-color: #B93A32;*/
+}
+/*Individual Skill Bar 'width'*/
+#Skill-Design {
+  width: 80%;
+}
+#Skill-Develop {
+    width: 68%;
+}
+#Skill-Deploy {
+    width: 82%;
+}
+#Skill-Copy {
+    width: 91%;
+}
+#Skill-Interpersonal {
+  width: 79%;
+}
+/*General Skill-Bar Settings*/
+#Skill-Design, 
+#Skill-Develop, 
+#Skill-Deploy, 
+#Skill-Copy, 
+#Skill-Interpersonal {
+  height: inherit; /* Use 'inherit' */
+  position: absolute;  
+  background-color: #000;
+}
+@media only screen and (min-width: 800px) {
+  .skills {margin-top: 25px;}
+  .PercentText {margin: 0 auto;}
+  .skillSpecs {
+    margin-bottom: 8px;
+  }
+  div.skillSpecs {
+    font-size: 0.62em;
+  }
+  #Skill-Design, 
+  #Skill-Develop, 
+  #Skill-Deploy, 
+  #Skill-Copy, 
+  #Skill-Interpersonal, 
+  .SkillBar, .Skill-Area, .PercentText {
+    height: 1.07em;
+  }
+  
+} 
+/*******************************************/
+/*******************************************/
+/**SKILLS & TRAINING GRID ******************/
+/* Training & Skills GRID-Table/Row for ABOUT.php */
+.grid-table {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+}
+.grid-row {
+  display: subgrid;
+  grid-template-rows: 1fr;
+}
+.grid-table > span:nth-child(4n+1),
+.grid-table > span:nth-child(4n+2) {
+  background-color:#838487;
+  font-size: 0.88em;
+}
+.grid-table > span:nth-child(4n+3),
+.grid-table > span:nth-child(4n+4) {
+  /*background-color: #B93A32;*/
+  margin-bottom: 8px;
+  font-size: 0.68em;
+}
+@media only screen and (min-width: 800px){
+  .grid-table {
+  grid-template-columns: 90px 1fr;
+  }
+  .grid-table > span:nth-child(4n+3),
+  .grid-table > span:nth-child(4n+4){
+    /*font-size: 0.88em;*/
+  }
+  /*Decrease Size of 'Long-string Content' */
+  .grid-table > span.smallSpan {
+    font-size: 0.6em;
+  }
+  .grid-row {
+    grid-row-gap: 4px;
+    /*font-size: 0.88em;*/ 
+  }
+}
+/* WORK-Experience Grid */  
+.trainingGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: repeat(autofit, minmax(15px, auto));
+  font-size: 0.65em;
+  grid-row-gap: 4px; 
+}
+.trainingGrid > span:nth-child(4n+1),
+.trainingGrid > span:nth-child(4n+2) {
+  background-color: #838487;
+}
+@media only screen and (min-width: 500px){
+  .trainingGrid {
+    grid-template-columns: 132px 1fr;
+    font-size: 0.71em;
+  }
+}
+@media only screen and (min-width: 800px){
+  .trainingGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 1px;
+    /*font-size: 0.88em;*/
+  }
+  .trainingGrid > p {text-align: right; margin: 0 auto; padding: 0;}
+}
+/**//***********************************//**/
+/*******************************************/
+/** THIS CODE IS REDUNDANT = CHOOSE 1 ******/
+/*details {
+  margin: 1rem auto;
+  padding: 0 0.8rem 0 0.2rem;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  border: 1px solid #838487;
+  border-radius: 4px;
+  color: #000;
+  background-color: #E0E0E0;
+  transition: background-color .15s;
+}
+details > :last-child {
+  margin-bottom: 1rem;
+}
+details::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  opacity: .15;
+  box-shadow: 0 .25em .25em #838487;
+  transition: opacity .2s;
+  z-index: -1;
+}
+details[open] {
+  background-color: #fff;
+}
+details[open]::before {
+  opacity: .6;
+}
+
+summary {
+  font-size: 0.64em;
+  padding: 0.5rem 1em 0.5rem 0;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+summary::before, summary::after {
+  width: .75em;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  background-color: #000;
+  text-align: right;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+summary::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+[open] summary::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details > p {
+  margin: 0 0 1em;
+}
+details > li:not(:last-child) {
+  margin-bottom: 0.5em;
+}*/
+/*******************************************/
+/*******************************************/
