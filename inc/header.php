@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Mister Moody</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-    <title>Mister Moody</title>
     <meta name='description' content="Official Site for Mister Moody" />
     <meta name="keywords" content="" />
-    <!-- Browser Tab Icon -->
+    <meta name="theme-color" content="#c41e3b">
+    <meta name="msapplication-navbutton-color" content="#c41e3b">
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- CSS Styles -->   
     <link rel="stylesheet" href="css/grid.css">
