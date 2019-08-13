@@ -12,16 +12,24 @@ include ("inc/header.php");
   <!-- CURRICULUM "TOPICS"  -->
   <article class="cur__TopicGrid">
     <section class="cur__TopicStyle">
+      <div class="code">
       <h1>Web Dev Starter Kit</h1>
+      </div>
     </section>
     <section class="cur__TopicStyle">
-      <h1>Language Arts</h1>
+      <div class="language">
+        <h1>Language <span class="variant">for</span> Artists</h1>
+      </div>
     </section>
     <section class="cur__TopicStyle">
-      <h1>STEM Math</h1>
+      <div class="math">
+        <h1>STEM Mathematics</h1>
+      </div>
     </section>
     <section class="cur__TopicStyle">
-      <h1>Digital Citizenship</h1>
+      <div class="id-card">
+        <h1>Digital Citizenship</h1>
+        </div>
     </section>
   </article>
   

@@ -7,7 +7,7 @@
       3.  xyz123              
       4.  xyz123
       5.  xyz123                     */
-/* ========================================= */
+/* ============================================ */
 
 
 /* ============================================ */
@@ -89,32 +89,82 @@ section {
   display: grid;
   grid-auto-flow: row;
 }
-
 /**/
 
 /* ============================================ */
 /* CURRICULUMS ================================ */
+/* [a]  Grid Layout*/
 .cur__TopicGrid {
-  border: 1px solid #434343;
   display: grid;
-  grid-auto-flow: rows;
+  grid-auto-rows: 20vh;
   grid-gap: 0.2em;
 }
 .cur__TopicStyle {
-  border: 1px solid #434343;
+  display: grid;
+  grid-auto-flow: rows;
   align-content: center;
+  justify-content: center;
   font-variant: small-caps;
+  box-shadow: 0px 0px 1px white;  
+  color: white;
 }
-.cur__TopicStyle:nth-child(odd){background: palegoldenrod;}
-.cur__TopicStyle:nth-child(even){background: aqua;}
+.cur__TopicStyle h1 {
+  font-size: 1.4em; 
+}
+span.variant {
+  font-variant: normal; 
+  font-weight: 100; 
+  font-size: 0.5em;
+}
+/* [b] 'Custom' :hover Styles */
+.cur__TopicStyle:hover, .cur__TopicStyle:focus {
+  color: #ccc; 
+  background: white;
+  transition: all .35s ease-out;
+}
+/* [c] 'Centered Background-Icons' + Icon Positioning + FA-Icon */
+.code, .language, .math, .id-card {
+  padding-left: 32px;
+  position: relative;
+}
+.code:before, .language:before, .math:before, .id-card:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 1.8em;
+  left: -.4em;
+  opacity: 0.8;
+  
+}
+.code:before {content: "\f121";}
+.language:before {content: "\f1ab";}
+.math:before {content: "\f1ec";}
+.id-card:before {content: "\f2c2";}
+/**/
+/* [d] Media Querys  */
 @media only screen and (min-width: 800px) {
   .cur__TopicGrid {
-    border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-auto-rows: 44vh;
+    grid-auto-rows: 44vh; 
+    grid-gap: 0.4em;
+  }
+  .cur__TopicStyle {font-size: 25vh; }
+  .cur__TopicStyle h1 {
+    font-size: 0.32em; 
+  }
+  .code:before, 
+  .language:before, 
+  .math:before, 
+  .id-card:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 0;
+    left: 32%;
+    opacity: 0.2;
   }
 }
+/* ============================================ */
+
 
 
 
@@ -205,12 +255,7 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   top: -0.7em;
 }
 /**//***********************************//**/
-/*Gradient Text*/
-.gradient-text {
-  background: -webkit-linear-gradient(pink, red);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
+
 /**/
 /*
 */
@@ -367,9 +412,16 @@ ul.social {
 }
 /**/
 footer  {
+  margin-top: 8px;
   text-align: center;
   font-size: 14px; 
-  color: #838487;
+  color: white;
+  /*position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  text-align: center;*/
 }
 /**//***********************************//**/
 /**//***********************************//**/
