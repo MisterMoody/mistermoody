@@ -24,6 +24,8 @@
     <script src="inc/topNav.js"></script>
     <!-- \\\\ Font-Awesome Icons ******* -->
     <script src="https://use.fontawesome.com/ceeedfe13b.js"></script>
-    <!-- ******************************* -->   
+    <!-- ******************************* -->  
+
+    <script src="inc/scripts.js"></script>
   </body>
 </html>
