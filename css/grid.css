@@ -117,11 +117,15 @@ span.variant {
   font-size: 0.5em;
 }
 /* [b] 'Custom' :hover Styles */
-.cur__TopicStyle:hover, .cur__TopicStyle:focus {
-  color: #ccc; 
-  background: white;
+.cur__TopicStyle:hover {
+  background-color: #dadada;
   transition: all .35s ease-out;
 }
+.cur__TopicStyle:focus {
+  background-color: #c1c4c2;
+  outline: 0;
+}
+.cur__TopicStyle:active {background-color: #828181;}
 /* [c] 'Centered Background-Icons' + Icon Positioning + FA-Icon */
 .code, .language, .math, .id-card {
   padding-left: 32px;
@@ -140,7 +144,7 @@ span.variant {
 .math:before {content: "\f1ec";}
 .id-card:before {content: "\f2c2";}
 /**/
-/* [d] Media Querys  */
+/* [d] Media Queries */
 @media only screen and (min-width: 800px) {
   .cur__TopicGrid {
     display: grid;
