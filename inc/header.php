@@ -21,9 +21,7 @@
   <!-- ********************************* -->
   <!-- ** // GRID CONTAINER 'start' **** -->
   <!-- ********************************* -->
-  <!--  might need / might not
-  <article class="indexGrid">    
-  -->
+
     <!-- ************ MAIN SITE NAVIGATION *********** -->
     <!-- (Outside of 'Grid' for Responsiveness) -->
 		<header class="topnav" id="myTopnav">
@@ -32,7 +30,7 @@
       <a href="curriculums">Curriculums</a>
       <!--<a href="services">Services</a>-->
       <a href="contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="topNav()">
         <i class="fa fa-bars responsive"></i>
       </a>
     </header>
