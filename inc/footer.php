@@ -25,7 +25,7 @@
     <!-- \\\\ Font-Awesome Icons ******* -->
     <script src="https://use.fontawesome.com/ceeedfe13b.js"></script>
     <!-- ******************************* -->  
-
+    <!-- \\\\ Non-Global Scripts -->
     <script src="inc/scripts.js"></script>
   </body>
 </html>
