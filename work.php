@@ -121,6 +121,13 @@ include ("inc/header.php");
       </div>
     </div>
   </section> 
+  <!-- Links to Projects -->
+  <section>
+    <div>
+      <p>Waayyy too much going on at the moment, currently focused on curating portfolio items that require documentation. I put together a table of useful <a class="resourceText" href="webdesign" alt="Link to Resources" target="_blank" title="Online Resources">Online Resources</a> that help me build websites, which is a supplement to this <a class="resourceText" href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">DIY Guide</a> for creating a website.</p>
+    </div>
+  </section>
+  <!-- -->
 </main>
 <!-- .....CONTENT-ENDS// --> 
 
