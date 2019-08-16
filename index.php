@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "Official Homepage of Mister Moody";
-include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
+include ("inc/header.php"); 
+//Contains 'metadata' and '<navigation> element'
 ?>
 <!-- ************************************************** -->
 <!-- ******************** <<HOMEPAGE>>  *************** -->
@@ -8,8 +9,8 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
 
 <!-- //CONTENT-BEGINS..... -->
 <main>
-  
-  <section>
+  <h1 class="construction"></h1>
+  <!--<section>
     <h1>Moody 2020</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </section>
@@ -31,9 +32,10 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
     <p>Morbi non arcu risus quis. Fames ac turpis egestas maecenas pharetra convallis posuere. Eget est lorem ipsum dolor sit amet consectetur. Vestibulum morbi blandit cursus risus. Volutpat diam ut venenatis tellus in metus. Neque convallis a cras semper auctor neque vitae tempus. Pretium vulputate sapien nec sagittis. Diam in arcu cursus euismod quis viverra nibh cras.</p>
     <p>Nisl condimentum id venenatis a condimentum vitae. Proin sed libero enim sed faucibus turpis. Non tellus orci ac auctor augue mauris augue. Elementum curabitur vitae nunc sed velit dignissim sodales. Elementum pulvinar etiam non quam lacus. Pretium aenean pharetra magna ac placerat. Commodo sed egestas egestas fringilla phasellus. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Aliquam id diam maecenas ultricies mi eget mauris. Augue ut lectus arcu bibendum at varius vel pharetra. Morbi tempus iaculis urna id. </p>
   </section>
-  <hr>
-  <!-- #Contact -->
+  <hr>-->
+  <!-- #Contact 
   <section>
+    <h1> Under Construction</h1>
     <h4>Get In Touch</h4>
     <p class="readText">I am on the web. Check out my work on Github, follow me on Twitter, download my resume. Heck, give me a call or text me an email. Do it now!</p>
     <ul class="social">
@@ -58,7 +60,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
           <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
       </li>
     </ul>
-  </section>
+  </section>-->
   <!-- -->
 </main>
 <!-- .....CONTENT-ENDS// -->  
