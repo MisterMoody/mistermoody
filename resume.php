@@ -1,15 +1,13 @@
 <?php
-$pageTitle = "Official Homepage of Mister Moody";
+$pageTitle = "";
 include ("inc/header.php");
 ?>
-<!-- ************************************************** -->
-<!-- ******************** <<HOMEPAGE>>  *************** -->
+<!-- ******************************************************* -->
+<!-- ************* <<XXXXXXXXXXXXXXXXXXXXXX>>  ************* -->
 
 
 <!-- //CONTENT-BEGINS..... -->
 <main>
-  <h1 style="height: 85vh;">Coming Soon</h1>
- 
   <article class="resumeGrid">
     <section class="resume__author">
       <div class="resume__title">
@@ -164,7 +162,7 @@ include ("inc/header.php");
         <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">Download Resume</a></h5>
     </section>
     
-  </article>-->
+  </article>
 </main>
 <!-- .....CONTENT-ENDS// --> 
 

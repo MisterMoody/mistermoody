@@ -1,17 +1,14 @@
 <?php
-$pageTitle = "Portfolio Gallery for Mister Moody";
+$pageTitle = "";
 include ("inc/header.php");
 ?>
 <!-- ******************************************************* -->
-<!-- ************* <<PORTFOLIO GALLERY>>  ************* -->
+<!-- ************* <<XXXXXXXXXXXXXXXXXXXXXX>>  ************* -->
 
 
 <!-- //CONTENT-BEGINS..... -->
 <main>
-  <h1 style="height: 85vh;">Coming Soon</h1>
-
-  
-  <!--<section>
+  <section>
     <div>
       <p>I am currently employed as a substitute teacher with <a href="https://jefferson.kyschools.us/" target="_blank">Jefferson County Public Schools</a> in my hometown of Louisville, Kentucky. In my spare time, I tinker with web technologies in an effort to develop my sole-proprietorship. I kindly invite you to explore the content on this page to learn more about my professional experiences and how we could possibly collaborate on a project.</p>
       <details>
@@ -123,7 +120,7 @@ include ("inc/header.php");
               </div>
       </div>
     </div>
-  </section> -->
+  </section> 
 </main>
 <!-- .....CONTENT-ENDS// --> 
 
