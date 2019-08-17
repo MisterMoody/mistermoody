@@ -21,11 +21,11 @@
 
     <!-- JAVASCRIPT ******************** --> 
     <!-- \\\\ Scroll-to-Top   ********** -->
-    <script src="inc/topNav.js"></script>
+    <script src="js/topNav.js"></script>
+    <!-- \\\\ Non-Global Scripts -->
+    <script src="js/scripts.js"></script>
     <!-- \\\\ Font-Awesome Icons ******* -->
     <script src="https://use.fontawesome.com/ceeedfe13b.js"></script>
     <!-- ******************************* -->  
-    <!-- \\\\ Non-Global Scripts -->
-    <script src="inc/scripts.js"></script>
   </body>
 </html>
