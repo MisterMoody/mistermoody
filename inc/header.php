@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
     <title>Mister Moody</title>
@@ -15,8 +15,6 @@
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway">
     <!-- FontAwesome Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Treehouse 'Badges' ReportCard by Riley Hilliard -->
-    <link href="js/reportcard/css/badges.css" rel="stylesheet">
   </head>
   <body>
   <!-- ********************************* -->
@@ -25,13 +23,12 @@
     <article class="indexGrid">    
       
       <!--  // HEADER ( Nav / Logo ) *** -->
-      <header>
-        <div class="header__logo"><h1><a href="index">Mister Moody</a></h1></div>
-          <ul class="header__title">
-            <li><a href="index">About</a></li>
-            <li><a href="portfolio">Portfolio</a></li>
-            <li><a href="contact">Contact</a></li>
-          </ul>
+      <header class="topnav" id="myTopnav">
+        <a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a>
+        <a href="about">About</a>
+        <a href="curriculums">Curriculums</a>
+        <a href="contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars responsive"></i></a>
       </header>
       <!-- ***************************** -->   
             
