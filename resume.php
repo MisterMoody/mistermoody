@@ -3,16 +3,16 @@ $pageTitle = "";
 include ("inc/header.php");
 ?>
 <!-- ******************************************************* -->
-<!-- ************* <<XXXXXXXXXXXXXXXXXXXXXX>>  ************* -->
+<!-- ****************** << RESUME.php >>  ****************** -->
 
 
 <!-- //CONTENT-BEGINS..... -->
 <main>
   <article class="resumeGrid">
     <section class="resume__author">
-      <div class="resume__title">
-        <div>Ray Moody</div>
-        <div class="res__sectionTitle">Web Developer</div>
+      <div>
+        <div class="resume__title">Ray Moody</div>
+        <div class="res__sectionTitle">WebDevEduPreneur</div>
       </div>
       <div class="resume__contact">
         <ul>
@@ -22,10 +22,12 @@ include ("inc/header.php");
         </ul>
       </div>
     </section>
-    
+    <hr>
     <section class="resume__background">
       <div class="res__sectionTitle">Background</div>
-      <p>Non&#45;traditional educator and web technology enthusiast exploring front-end web developer opportunities. Self-directive learner with a full-stack mentality capable of designing, developing and deploying a website to specification. Results&#45;oriented, hands&#45;on professional with a distinctive cosmopolitan experience delivering proficient customer and language acquisition services. </p>
+      <div class="resume__Card">
+        Non&#45;traditional educator and web technology enthusiast exploring front-end web developer opportunities. Self-directive learner with a full-stack mentality capable of designing, developing and deploying a website to specification. Results&#45;oriented, hands&#45;on professional with a distinctive cosmopolitan experience delivering proficient customer and language acquisition services. 
+      </div>
     </section>
     
     <section class="resume__work">
@@ -81,19 +83,19 @@ include ("inc/header.php");
       <table>
         <tr>
           <th>Programming</th>
-          <td>HTML/CSS, JavaScript, jQuery (JSON), PHP, Android, Bootstrap</td>
+          <td>HTML5/CSS3, JavaScript, PHP, Android</td>
         </tr>
         <tr>
           <th>Design</th>
-          <td>IA/UI/UX, Mobile 1st, Grid Layout, W Accessibility Compliant</td>
+          <td>Mobile 1st, Grid Layout, Accessibility Compliant</td>
         </tr>
         <tr>
           <th>Develop</th>
-          <td>APIs, Dependency Management, Optimization, Config &amp; Install </td>
+          <td>APIs, Dependency Management, Optimization</td>
         </tr>
         <tr>
           <th>Deploy</th>
-          <td>Command-line Interface, Version Control, SFTP/SSH, DNS Hosting</td>
+          <td>Command-line Interface, Version Control, SFTP</td>
         </tr>
       </table>
     </section>
@@ -158,10 +160,9 @@ include ("inc/header.php");
           </ol>
         </div>
       </div>
-      <h5 class="resume__download">
-        <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">Download Resume</a></h5>
+      <!--<h5 class="resume__download">
+        <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">Download Resume</a></h5>-->
     </section>
-    
   </article>
 </main>
 <!-- .....CONTENT-ENDS// --> 
