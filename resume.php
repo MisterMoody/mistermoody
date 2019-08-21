@@ -9,7 +9,7 @@ include ("inc/header.php");
 <!-- //CONTENT-BEGINS..... -->
 <main>
   <article class="resumeGrid">
-    <section class="resume__author">
+    <!--<section class="resume__author">
       <div>
         <div class="resume__title">Ray Moody</div>
         <div class="res__sectionTitle">WebDevEduPreneur</div>
@@ -21,8 +21,8 @@ include ("inc/header.php");
           <li>Louisville, Kentucky 40211</li>
         </ul>
       </div>
-    </section>
-    <hr>
+    </section>-->
+
     <section class="resume__background">
       <div class="res__sectionTitle">Background</div>
       <div class="resume__Card">
@@ -56,7 +56,7 @@ include ("inc/header.php");
         </div>
         <div class="res__work__Responsibilities">
           <ol>
-            <li>niche business leveraging my professional skillset</li>
+            <li>Niche business leveraging my professional skillset.</li>
           </ol>
         </div>
       </div>
@@ -87,15 +87,15 @@ include ("inc/header.php");
         </tr>
         <tr>
           <th>Design</th>
-          <td>Mobile 1st, Grid Layout, Accessibility Compliant</td>
+          <td>Mobile 1st, Grid Layout, Accessibility</td>
         </tr>
         <tr>
           <th>Develop</th>
-          <td>APIs, Dependency Management, Optimization</td>
+          <td>APIs, Project Management, Optimization</td>
         </tr>
         <tr>
           <th>Deploy</th>
-          <td>Command-line Interface, Version Control, SFTP</td>
+          <td>Version Control, CLI/Console, SFTP</td>
         </tr>
       </table>
     </section>

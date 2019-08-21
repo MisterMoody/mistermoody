@@ -10,7 +10,7 @@ include ("inc/header.php");
 <!-- //CONTENT-BEGINS..... -->
 <main>
   <p style="height: 8vh;"></p>
-  <picture><img class="mainImage" src="img/MMgrey.jpg"></picture>
+  <picture><a href="resume.php"><img class="mainImage" src="img/MMgrey.jpg"></a></picture>
   <!--<section>
     <h1>Moody 2020</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

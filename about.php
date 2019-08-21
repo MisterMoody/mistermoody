@@ -12,7 +12,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
     <p>Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.</p>
     <picture><img src="img/MMgrey.jpg" class="mainImage" alt="Mister Moody Logo"/></picture>
     <p id="about">Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification.</p>
-    <p><img src="img/tailorVanilla.jpg" class="imgL" alt="Sewing in a Chinese Factory"/>As a designer, I can adapt a low-fidelity prototype into a viable website using HTML, CSS, JavaScript, content management tools and digital media. As a developer, I utilize the PHP scripting language that incorporates object-oriented programming practices to integrate server-side functionality into a web application. Vital components of this process entails auscultating user-experience; amalgamating accessibility, performance requirements and other technical considerations; HTTP server installation; database configuration; and using the SSH protocol in conjunction with version control to provide secure remote access to mitigate maintenance concerns. To this end, I am currently exploring opportunities by which I can leverage my skillset to pursue a position in the tech industry.</p>
+    <p>As a designer, I can adapt a low-fidelity prototype into a viable website using HTML, CSS, JavaScript, content management tools and digital media. As a developer, I utilize the PHP scripting language that incorporates object-oriented programming practices to integrate server-side functionality into a web application. Vital components of this process entails auscultating user-experience; amalgamating accessibility, performance requirements and other technical considerations; HTTP server installation; database configuration; and using the SSH protocol in conjunction with version control to provide secure remote access to mitigate maintenance concerns. To this end, I am currently exploring opportunities by which I can leverage my skillset to pursue a position in the tech industry.</p>
   </section>
   
   <hr>
@@ -139,6 +139,8 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
       </div>
     </div>
   </section> 
+  
+  <hr>
   
   <!-- # -->
   
