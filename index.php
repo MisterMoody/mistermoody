@@ -34,11 +34,11 @@ include ("inc/header.php");
     <p>Nisl condimentum id venenatis a condimentum vitae. Proin sed libero enim sed faucibus turpis. Non tellus orci ac auctor augue mauris augue. Elementum curabitur vitae nunc sed velit dignissim sodales. Elementum pulvinar etiam non quam lacus. Pretium aenean pharetra magna ac placerat. Commodo sed egestas egestas fringilla phasellus. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Aliquam id diam maecenas ultricies mi eget mauris. Augue ut lectus arcu bibendum at varius vel pharetra. Morbi tempus iaculis urna id. </p>
   </section>
   <hr>-->
-  <!-- #Contact 
-  <section>
-    <h1> Under Construction</h1>
-    <h4>Get In Touch</h4>
-    <p class="readText">I am on the web. Check out my work on Github, follow me on Twitter, download my resume. Heck, give me a call or text me an email. Do it now!</p>
+  <!-- #Contact -->
+  <p style="height: 8vh;"></p>
+  <section style="border: none; margin: 2em 0;">
+    <!--<h4>Get In Touch</h4>
+    <p class="readText">I am on the web. Check out my work on Github, follow me on Twitter, download my resume. Heck, give me a call or text me an email. Do it now!</p>-->
     <ul class="social">
       <li>
         <a class="github" href="https://github.com/MisterMoody" target="_blank" title="Check Out My Work on Github">
@@ -48,10 +48,10 @@ include ("inc/header.php");
         <a class="twitter" href="https://twitter.com/Mister_Moody" target="_blank" title="Follow Me on Twitter">
           <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
       </li>
-      <li>
+      <!--<li>
         <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">
           <i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
-      </li>
+      </li>-->
       <li>
         <a class="phone" href="tel:+15025589240" title="Call Me">
           <i class="fa fa-mobile fa-2x" aria-hidden="true"></i></a>
@@ -61,7 +61,7 @@ include ("inc/header.php");
           <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
       </li>
     </ul>
-  </section>-->
+  </section>
   <!-- -->
 </main>
 <!-- .....CONTENT-ENDS// -->  

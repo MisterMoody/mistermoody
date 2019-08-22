@@ -16,7 +16,7 @@
 
 
 section:nth-child(odd){border: 1px solid #434343;}
-section:nth-child(even){border: 1px solid #000000;}
+section:nth-child(even){border: 1px solid #111;}
 
 @media all and (min-width: 800px) {
   .construction {
@@ -131,7 +131,8 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 /* IMAGES ===================================== */
 .mainImage {
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 96vh;
 }
 .imgL {
   float: left;
@@ -660,37 +661,41 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
 /* ============================================ */
 /* == RESUME.php ============================== */
 .resumeGrid {
+  width: 100%;
+  max-width: 99vw;
   display: grid;
-  grid-template-rows: 62px repeat(auto-fit, minmax(100px, 1fr)); 
+  grid-template-rows: repeat(auto-fit, min-content); 
   text-align: left;
   grid-gap: 10px;
 }
 /* Section 'Title' Styles */
 .res__sectionTitle {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #838487;
-  font-weight: 900;
+  font-weight: 700;
   font-variant: small-caps;
 }
 /**/
+.resume__author {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40vw 1fr;
+  grid-template-areas: "title contact";
+}
 .resume__title {
   margin-top: 12px;
   grid-area: title; 
-  font-weight: 900;
-  font-size: 1.4em;
+  font-weight: 800;
+  font-size: 0.88em;
   font-variant: small-caps; 
 }
 .resume__contact {
   grid-area: contact; 
-  font-size: 0.88em;
-  font-variant: small-caps; 
+  font-size: 0.80em;
+  font-variant: normal;
   text-align: right;
 }
-.resume__author {
-  display: grid;
-  grid-template-columns: 47% 1fr;
-  grid-template-areas: "title contact";
-}
+.resume__background {font-size: 0.88em;}
 .resume__Card {margin-bottom: 1em;}
 /**/
 .res__work__jobTitle {grid-area: jTitle;}
@@ -699,22 +704,23 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
 .res__work__jobLocation {grid-area: jLocation;}
 .res__work__Employment {
   display: grid;
-  grid-template-columns: 95vw auto;
+  grid-template-columns: 60vw 1fr;
   grid-template-areas: 
     "jTitle jDate"
     "jEmployer jLocation";
 }
 .res__work__jobTitle {
-  font-size: 0.9em;
-  font-weight: 700;
+  font-size: 0.86em;
+  font-weight: 600;
 }
+.res__work__jobEmployer {font-style: italic;}
 .res__work__jobEmployer, 
 .res__work__jobLocation, 
-.res__work__jobDate {font-size: 0.90em;}
+.res__work__jobDate {font-size: 0.86em;}
 .res__work__Responsibilities {
-  margin: -0.4em 4px 0 -1.4em;
-  font-size: 0.90em;
-  max-width: 100%;  
+  margin: -0.8em 0 0 -2em;
+  font-size: 0.80em;
+  /*max-width: 100%; */ 
 }
 /* Resume 'Skills' */
 .resume__skills > table {
@@ -880,11 +886,11 @@ ul.social {
   margin: 0.4em;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 1.81rem;
   justify-content: space-between;
   grid-template-areas: 
-    "download github twitter email phone";
+    "github twitter email phone";
 }
 /* ============================================ */
 
