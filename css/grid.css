@@ -86,9 +86,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;*/
   text-align: center;
 }
-p {
-  line-height: 1.5; 
+p { 
   font-size: 0.88em;
+  line-height: 1.5;
   /*text-align: justify;*/
 }
 a {
@@ -696,7 +696,7 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
   text-align: right;
 }
 .resume__background {font-size: 0.88em;}
-.resume__Card {margin-bottom: 1em;}
+.resume__Card {margin: 0.8em 0;}
 /**/
 .res__work__jobTitle {grid-area: jTitle;}
 .res__work__jobEmployer {grid-area: jEmployer;}
@@ -710,16 +710,17 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
     "jEmployer jLocation";
 }
 .res__work__jobTitle {
-  font-size: 0.86em;
+  font-size: 0.84em;
   font-weight: 600;
 }
 .res__work__jobEmployer {font-style: italic;}
 .res__work__jobEmployer, 
 .res__work__jobLocation, 
-.res__work__jobDate {font-size: 0.86em;}
+.res__work__jobDate {font-size: 0.84em;}
 .res__work__Responsibilities {
   margin: -0.8em 0 0 -2em;
   font-size: 0.80em;
+  line-height: 1.5;
   /*max-width: 100%; */ 
 }
 /* Resume 'Skills' */
@@ -888,7 +889,7 @@ ul.social {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 1.81rem;
-  justify-content: space-between;
+  justify-content: space-around;
   grid-template-areas: 
     "github twitter email phone";
 }

@@ -25,8 +25,13 @@ include ("inc/header.php");
 
     <section class="resume__background">
       <div class="res__sectionTitle">Background</div>
-      <div class="resume__Card">
-        Non&#45;traditional educator and web technology enthusiast exploring front-end web developer opportunities. Self-directive learner with a full-stack mentality capable of designing, developing and deploying a website to specification. Results&#45;oriented, hands&#45;on professional with a distinctive cosmopolitan experience delivering proficient customer and language acquisition services. 
+      <div>
+        <p>
+          Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States. Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification. Results&#45;oriented, hands&#45;on professional with a distinctive cosmopolitan experience.
+        </p>
+        <!--<p>
+          Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification. As a designer, I can adapt a low-fidelity prototype into a viable website using HTML, CSS, JavaScript, content management tools and digital media. As a developer, I utilize the PHP scripting language that incorporates object-oriented programming practices to integrate server-side functionality into a web application. Vital components of this process entails auscultating user-experience; amalgamating accessibility, performance requirements and other technical considerations; HTTP server installation; database configuration; and using the SSH protocol in conjunction with version control to provide secure remote access to mitigate maintenance concerns. To this end, I am currently exploring opportunities by which I can leverage my skillset to pursue a position in the tech industry.
+        </p>-->
       </div>
     </section>
     
@@ -78,28 +83,32 @@ include ("inc/header.php");
       </div>
     </section>
     
-    <section class="resume__skills">
-      <div class="res__sectionTitle">Skills</div>
-      <table>
-        <tr>
-          <th>Programming</th>
-          <td>HTML5/CSS3, JavaScript, PHP, Android</td>
-        </tr>
-        <tr>
-          <th>Design</th>
-          <td>Mobile 1st, Grid Layout, Accessibility</td>
-        </tr>
-        <tr>
-          <th>Develop</th>
-          <td>APIs, Project Management, Optimization</td>
-        </tr>
-        <tr>
-          <th>Deploy</th>
-          <td>Version Control, CLI/Console, SFTP</td>
-        </tr>
-      </table>
+    <!-- Teaching Experience -->
+    <section>
+      <!--<p>
+        I put together a table of useful <a class="resourceText" href="webdesign" alt="Link to Resources" target="_blank" title="Online Resources">Online Resources</a> that help me build websites, which is a supplement to this <a class="resourceText" href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">DIY Guide</a> for creating a website.
+      </p>-->
+      <details>
+        <summary>International Teaching Experience &nbsp;<code>9,000+ Hours</code></summary>
+        <p>Below is a list of some of the educational institutions that I have collaborated with:</p>
+        <div class="trainingGrid">
+          <span>2016 - 2017 </span>
+          <span>TEFL Instructor <b>&#64;</b> Jiaxing College</span>
+          <span>2012 - 2013 </span>
+          <span>TEFL Instructor <b>&#64;</b> Zhejiang Middle School</span>
+          <span>2007 - 2009 </span>
+          <span>TEFL Trainer <b>&#64;</b> Oxford Seminars</span>
+          <span>2005 - 2006 </span>
+          <span>TEFL Instructor <b>&#64;</b> Joongdong High School</span>
+          <span>2004 - 2006 </span>
+          <span>TEFL Consultant <b>&#64;</b> US-Japan Edu. Exchange Program</span>
+          <span>2003 - 2004 </span>
+          <span>TEFL Instructor <b>&#64;</b> Sogang University</span>
+          <span>2000 - 2001 </span>
+          <span>Rec. Supervisor <b>&#64;</b> Cabbage Patch Settlement House</span>
+        </div> 
+      </details>
     </section>
-    
     <section class="resume__education">
       <div class="res__sectionTitle">Training</div>
       <div class="resume__Card">
@@ -162,6 +171,116 @@ include ("inc/header.php");
       </div>
       <!--<h5 class="resume__download">
         <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">Download Resume</a></h5>-->
+    </section>
+    
+    <section class="resume__skills">
+      <div class="res__sectionTitle">Skills</div>
+      <table>
+        <tr>
+          <th>Programming</th>
+          <td>HTML5, CSS3, JavaScript, PHP</td>
+        </tr>
+        <tr>
+          <th>Design</th>
+          <td>Mobile 1st, Grid Layout, Accessibility</td>
+        </tr>
+        <tr>
+          <th>Develop</th>
+          <td>APIs, Project Mgmt., Optimization</td>
+        </tr>
+        <tr>
+          <th>Deploy</th>
+          <td>Version Control, CLI/Console, SFTP</td>
+        </tr>
+      </table>
+    </section>
+    
+      <!-- Education + Skills from About.php -->
+    <section>
+      <div class="subGrid">
+      <!-- Education -->
+      <div>
+        <div class="grid-table">
+          <span>2015</span>
+          <span>Web Dev Training</span>
+          <span>USA</span>
+          <span>Treehouse</span>
+
+          <span>2011</span>
+          <span>Mandarin Language Studies</span>
+          <span>China</span>
+          <span>Shanghai Ocean University</span>
+
+          <span>2010</span>
+          <span>MOS Training</span>
+          <span>USA</span>
+          <span>Microsoft</span>
+
+          <span>2007</span>
+          <span>TEFL Teacher Training</span>
+          <span>Thailand</span>
+          <span class="smallSpan">International TEFL Teacher Training, Inc.</span>
+
+          <span>2003</span>
+          <span>B.A. Political Science</span>
+          <span>USA</span>
+          <span>University of Louisville</span>
+        </div>
+      </div>
+      <!-- Skills -->
+      <div>
+        <div class="grid-row">
+          <div class="SkillBar">
+            <div id="Skill-Design">
+              <span class="Skill-Area">Design</span> <span class="PercentText">80%</span>
+            </div>
+          </div>
+          <div class="skillSpecs">
+            <span>HTML5 | CSS3 | IA/UI/UX | Accessibility</span>
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="SkillBar">
+            <div id="Skill-Develop">
+              <span class="Skill-Area">Develop</span> <span class="PercentText">68%</span>
+            </div>
+          </div>
+          <div class="skillSpecs">
+            <span>PHP7 | Composer | JavaScript | npm</span>
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="SkillBar">
+            <div id="Skill-Deploy">
+              <span class="Skill-Area">Deploy</span> <span class="PercentText">82%</span>
+            </div>
+          </div>
+          <div class="skillSpecs">
+                  <span>Server Config. | Version Control | SFTP</span>
+                </div>
+              </div>
+        <div class="grid-row">
+          <div class="SkillBar">
+            <div id="Skill-Copy">
+              <span class="Skill-Area">Writing &amp; Editing</span> <span class="PercentText">91%</span>
+            </div>
+          </div>
+          <div class="skillSpecs">
+            <span>Creative | AP &amp; MLA Style | Research</span>
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="SkillBar">
+            <div id="Skill-Interpersonal">
+              <span class="Skill-Area">Interpersonal</span> <span class="PercentText">79%</span>
+            </div>
+          </div>
+          <div class="skillSpecs">
+            <span>Articulate | Ethical | Problem Solver | Weird A.F.</span>
+                </div>
+              </div>
+      </div>
+    </div>
     </section>
   </article>
 </main>
