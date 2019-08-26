@@ -1,15 +1,25 @@
+/* UNDER CONSTRUCTION STYLES */
+section:nth-child(odd){border: 1px solid #434343;}
+section:nth-child(even){border: 1px solid #111;}
+/*@media only screen and (min-width: 800px) {
+  section {
+    display: grid;
+    grid-auto-flow: column;
+  }
+}
+section {
+  display: grid;
+  grid-auto-flow: row;
+}*/
+/* ============================================ */
 
-/* ========================================= */
-
-
-
-/* ========================================= */
-/* CASCADING STYLESHEET ==================== */
+/* ============================================ */
+/* CASCADING STYLESHEET ======================= */
 /*
       1.  Universal Styles
       2.  Global Navigation
-      3.  xyz123              
-      4.  xyz123
+      3.  INDEX.php              
+      4.  ABOUT.php
       5.  xyz123                     */
 /* ============================================ */
 
@@ -28,14 +38,14 @@ html {
 }
 ::-webkit-scrollbar {
   width: 0px;               
-  background: transparent;  
+  /*background: transparent;  */
 }
 
 /**/
 body {
-  margin: 0;
-  padding: 0px 8px;
   height: 100%;
+  margin: 0;
+  padding: 0 8px;
   color: #fff;
   /*font-size: calc(1.01em + 1.01vw); */
 	font-family: 'Raleway', sans-serif;
@@ -46,11 +56,10 @@ body {
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;*/
 }
-h1, h2, h3, h4, h5, h6 {
-  /*margin: 0;
-  padding: 0;*/
-  text-align: center;
-}
+/* Inner <body> Content Alignment
+section {padding: 0 1em;} */
+/**/
+h1, h2, h3, h4, h5, h6 {text-align: center;}
 p { 
   font-size: 0.88em;
   line-height: 1.5;
@@ -66,7 +75,6 @@ ul {
   /*margin: 0; 
   padding: 0;*/
 }
-li {}
 hr {
   background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
   border: 0;
@@ -82,7 +90,7 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   border: 1px dotted rgba(10, 9, 9, 0.7);
   border-radius: 50%;
   display: inline-block;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 0 0.6em;
   position: relative;
   top: -0.7em;
@@ -93,7 +101,7 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   p {font-size: 1em;}
 }
 /**/
-/* IMAGES ===================================== */
+/* Images ===================================== */
 .mainImage {
   width: 100%;
   height: 100%;
@@ -102,7 +110,7 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 .imgL {
   float: left;
   margin: 8px 8px 0 0;
-  width: 33%;
+  width: 35%;
   height: auto; 
   border-radius: 8px;
 }  
@@ -135,16 +143,17 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 /**/
 /* BUTTONS ==================================== */
 .btn {
+  margin: 0.8em 0; 
+  padding: 0.44em 0.88em;
   display: inline-block;
-  width: 95%;
-  margin: 0; padding: 0;
-  text-align: center; 
+  width: auto;
+ text-align: center;
   color: #fff;
   letter-spacing: 1px;
   background-color: #000;
   border-radius: 0.35em;
-  text-align: center;
   border: 2px solid #fff;
+ transition: all 0.15s;
 }
 .btn:hover {
   border: 2px solid #000;
@@ -159,17 +168,20 @@ p.btn {
 }
 @media only screen and (min-width: 800px) {
   .btn {
+    margin: 0;
+    padding: 0;
     width: 100%;
+    max-width: 250px;
     height: 44px;
   }
   .miniGallery {margin: 50px 0;}
 }
 /**/
 footer  {
-  margin-top: 8px;
+  margin: 4px 0;
   text-align: center;
   font-size: 14px; 
-  color: white;
+  /*color: #838487;*/
   /*Sticky
   position: fixed;
   left: 0;
@@ -278,11 +290,11 @@ fa-home {
 .email {grid-area: email;}
 .phone {grid-area: phone;}
 ul.social {
-  margin: 0 0.4em;
+  margin: 1em 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-column-gap: 1.81rem;
+  grid-gap: 1.81rem;
   justify-content: space-around;
   grid-template-areas: 
     "github twitter email phone";
@@ -291,7 +303,323 @@ ul.social {
 
 
 /* ============================================ */
-/* CURRICULUMS ================================ */
+/* 4. ABOUT.php =============================== */
+/* Resume Grid ================================ */
+.resumeGrid {
+  width: 100%;
+  max-width: 99vw;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, min-content); 
+  text-align: left;
+}
+/* Section 'Title' Styles */
+.res__sectionTitle {
+  margin: 12px 0 -8px 0;
+  color: #838487;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+/**/
+.resume__author {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40vw 1fr;
+  grid-template-areas: "title contact";
+}
+.resume__title {
+  margin-top: 12px;
+  grid-area: title; 
+  font-weight: 800;
+  font-size: 0.88em;
+  font-variant: small-caps; 
+}
+.resume__contact {
+  grid-area: contact; 
+  font-size: 0.80em;
+  font-variant: normal;
+  text-align: right;
+}
+.resume__background {font-size: 0.88em;}
+.resume__Card {margin: 0.8em 0;}
+/**/
+.res__work__jobTitle {grid-area: jTitle;}
+.res__work__jobEmployer {grid-area: jEmployer;}
+.res__work__jobDate {grid-area: jDate;}
+.res__work__jobLocation {grid-area: jLocation;}
+.res__work__Employment {
+  display: grid;
+  grid-template-columns: 60vw 1fr;
+  grid-template-areas: 
+    "jTitle jDate"
+    "jEmployer jLocation";
+}
+.res__work__jobTitle {
+  font-size: 0.84em;
+  font-weight: 600;
+}
+.res__work__jobEmployer {font-style: italic;}
+.res__work__jobEmployer, 
+.res__work__jobLocation, 
+.res__work__jobDate {font-size: 0.84em;}
+.res__work__Responsibilities {
+  margin: -0.8em 0 0 -2em;
+  font-size: 0.80em;
+  line-height: 1.5;
+  /*max-width: 100%; */ 
+}
+.res__work__Responsibilities ol li {
+  list-style-type: disc;
+}
+/* Resume 'Skills' */
+.resume__skills > table {
+  font-size: 0.80em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.resume__skills > th {width: 100px;}
+/* Download Resume */
+.resume__download {
+  text-align: center;
+  font-variant: small-caps;
+}
+/**/
+@media only screen and (min-width: 500px) and (max-width: 799px){
+  .res__work__Employment {
+    display: grid;
+    grid-template-columns: 65vw auto;
+    grid-template-areas: 
+      "jTitle jDate"
+      "jEmployer jLocation";
+  }
+}
+@media only screen and (min-width: 800px){
+  .resumeGrid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(62px, 1fr)); /* replace 1fr w/ min-content */
+    text-align: left;
+    grid-gap: 10px;
+  }
+  /**/
+  .resume__author {margin: 0.70em 0;} 
+  .resume__background {margin: 0.80em 0;}
+  /**/
+  .resume__author {
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    grid-template-areas: "title contact";
+  }
+  .resume__contact {text-align: left;}
+  /**/
+  .res__work__Employment {
+    display: grid;
+    grid-template-columns: 81% auto;
+    grid-template-areas: 
+      "jTitle jDate"
+      "jEmployer jLocation";
+  }
+  .res__work__Responsibilities {
+    max-width: 68vw;
+    margin: -0.4em 4px 0 -0.4em;
+  }
+  
+  .res__work__Responsibilities, .resume__skills > table {font-size: 1em;}
+} 
+/* Teaching Exp via Details Component ========= */
+details {
+  margin: 0.4em auto;
+  padding: 0 0.08rem;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  border: 1px solid #838487;
+  border-radius: 4px;
+  color: #000;
+  background-color: #E0E0E0;
+  transition: background-color .15s;
+}
+details::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  opacity: .15;
+  box-shadow: 0 .25em .25em #838487;
+  transition: opacity .2s;
+  z-index: -1;
+}
+details[open] {
+  background-color: #fff;
+}
+details[open]::before {opacity: .6;}
+summary {
+  font-size: 0.88em;
+  padding: 0.4em 0;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+summary::before, summary::after {
+  width: .75em;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  background-color: #000;
+  text-align: right;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+summary::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+[open] summary::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+summary::-webkit-details-marker {display: none;}
+details > p {margin: 0.8em 0;}
+details > li:not(:last-child) {margin-bottom: 0.4em;}
+ /* Teach/Work History for Details */  
+.trainingGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: repeat(autofit, minmax(15px, auto));
+  font-size: 0.65em;
+  grid-row-gap: 4px; 
+}
+.trainingGrid > span:nth-child(4n+1),
+.trainingGrid > span:nth-child(4n+2) {
+  background-color: #838487;
+}
+@media only screen and (min-width: 500px){
+  .trainingGrid {
+    grid-template-columns: 132px 1fr;
+    font-size: 0.71em;
+  }
+}
+@media only screen and (min-width: 800px){
+  .trainingGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 1px;
+    /*font-size: 0.88em;*/
+  }
+  .trainingGrid > p {text-align: right; margin: 0 auto; padding: 0;}
+}
+    /* Talents / Skills GRID */
+.subGrid {
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-gap: 8px;
+}
+.grid-table {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+}
+.grid-row {
+  display: subgrid;
+  grid-template-rows: 1fr;
+}
+.grid-table > span:nth-child(4n+1),
+.grid-table > span:nth-child(4n+2) {
+  background-color:#838487;
+  font-size: 0.88em;
+}
+.grid-table > span:nth-child(4n+3),
+.grid-table > span:nth-child(4n+4) {
+  /*background-color: #B93A32;*/
+  margin-bottom: 8px;
+  font-size: 0.68em;
+}
+@media only screen and (min-width: 800px){
+  .subGrid {
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 24px;
+  }
+  .grid-table {
+    grid-template-columns: 90px 1fr;
+  }
+  .grid-table > span:nth-child(4n+3),
+  .grid-table > span:nth-child(4n+4){
+    font-size: 0.80em;
+  }
+  /*Decrease Size of 'Long-string Content' */
+  .grid-table > span.smallSpan {font-size: 0.6em;}
+  .grid-row {grid-row-gap: 4px;}
+}
+  /* */
+  /* General Skill Bars */
+.SkillBar {
+  width: 100%;
+  height: 1em;
+  position: relative;
+  background: #838487;
+}
+  /* Ind. Skill-Bar Settings */
+#Skill-Design, 
+#Skill-Develop, 
+#Skill-Deploy, 
+#Skill-Copy, 
+#Skill-Interpersonal {
+  height: 1em; 
+  position: absolute;  
+  background-color: #434343;
+}
+.Skill-Area {
+  float: left;
+  position: absolute;
+  text-shadow: none;
+  color: #fff;
+}
+.PercentText {
+  position: relative;
+  padding-right: 15px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+}
+.skillSpecs {
+  font-size: 0.68em;
+  margin: 0.2em 0 0.6em;
+}
+  /* Individual Skill Bar 'width' */
+#Skill-Design {width: 80%;}
+#Skill-Develop {width: 68%;}
+#Skill-Deploy {width: 82%;}
+#Skill-Copy {width: 91%;}
+#Skill-Interpersonal {width: 79%;}
+@media only screen and (min-width: 800px) {
+  .PercentText {margin: 0 auto;}
+  div.skillSpecs {font-size: 0.68em;}
+  #Skill-Design, 
+  #Skill-Develop, 
+  #Skill-Deploy, 
+  #Skill-Copy, 
+  #Skill-Interpersonal, 
+  .SkillBar, .Skill-Area, .PercentText {height: 1.07em;}  
+} 
+/* ============================================ */
+/* ============================================ */
+
+
+
+/* ============================================ */
+/* 5. CURRICULUMS ============================= */
 /* [a]  Grid Layout*/
 .cur__TopicGrid {
   display: grid; 
@@ -451,331 +779,6 @@ span.variant {
 
 
 
-
-/* ============================================ */
-/* ============================================ */
-/** ABOUT.php   =>    WORK Section ============ */
-    /* Teaching Exp. 'Details-Component' */
-details {
-  margin: 0.4em auto;
-  padding: 0 0.08rem;
-  width: 100%;
-  max-width: 100%;
-  position: relative;
-  border: 1px solid #838487;
-  border-radius: 4px;
-  color: #000;
-  background-color: #E0E0E0;
-  transition: background-color .15s;
-}
-details::before {
-  width: 100%;
-  height: 100%;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: inherit;
-  opacity: .15;
-  box-shadow: 0 .25em .25em #838487;
-  transition: opacity .2s;
-  z-index: -1;
-}
-details[open] {
-  background-color: #fff;
-}
-details[open]::before {opacity: .6;}
-summary {
-  font-size: 0.88em;
-  padding: 0.4em 0;
-  display: block;
-  position: relative;
-  cursor: pointer;
-}
-summary::before, summary::after {
-  width: .75em;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  content: '';
-  background-color: #000;
-  text-align: right;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
-}
-summary::after {
-  -webkit-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
-}
-[open] summary::after {
-  -webkit-transform: translateY(-50%) rotate(180deg);
-          transform: translateY(-50%) rotate(180deg);
-}
-summary::-webkit-details-marker {display: none;}
-details > p {margin: 0.8em 0;}
-details > li:not(:last-child) {margin-bottom: 0.4em;}
-    /** Teach Exp. + Work History **************/  
-.trainingGrid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: repeat(autofit, minmax(15px, auto));
-  font-size: 0.65em;
-  grid-row-gap: 4px; 
-}
-.trainingGrid > span:nth-child(4n+1),
-.trainingGrid > span:nth-child(4n+2) {
-  background-color: #838487;
-}
-@media only screen and (min-width: 500px){
-  .trainingGrid {
-    grid-template-columns: 132px 1fr;
-    font-size: 0.71em;
-  }
-}
-@media only screen and (min-width: 800px){
-  .trainingGrid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-row-gap: 1px;
-    /*font-size: 0.88em;*/
-  }
-  .trainingGrid > p {text-align: right; margin: 0 auto; padding: 0;}
-}
-    /* Educational Learning + Skills GRID */
-.subGrid {
-  margin: 0 auto;
-  padding: 0;
-  display: grid;
-  grid-template-rows: repeat(auto-fit, 1fr);
-  grid-gap: 8px;
-}
-.grid-table {
-  display: grid;
-  grid-template-columns: 70px 1fr;
-}
-.grid-row {
-  display: subgrid;
-  grid-template-rows: 1fr;
-}
-.grid-table > span:nth-child(4n+1),
-.grid-table > span:nth-child(4n+2) {
-  background-color:#838487;
-  font-size: 0.88em;
-}
-.grid-table > span:nth-child(4n+3),
-.grid-table > span:nth-child(4n+4) {
-  /*background-color: #B93A32;*/
-  margin-bottom: 8px;
-  font-size: 0.68em;
-}
-@media only screen and (min-width: 800px){
-  .subGrid {
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
-    grid-template-columns: repeat(2, 49%);
-    grid-gap: 24px;
-  }
-  .grid-table {
-    grid-template-columns: 90px 1fr;
-  }
-  .grid-table > span:nth-child(4n+3),
-  .grid-table > span:nth-child(4n+4){
-    font-size: 0.80em;
-  }
-  /*Decrease Size of 'Long-string Content' */
-  .grid-table > span.smallSpan {font-size: 0.6em;}
-  .grid-row {grid-row-gap: 4px;}
-}
-/*******************************************/
-    /* General Skill Bars */
-.SkillBar {
-  width: 100%;
-  height: 1em;
-  position: relative;
-  background: #838487;
-}
-    /* Ind. Skill-Bar Settings */
-#Skill-Design, 
-#Skill-Develop, 
-#Skill-Deploy, 
-#Skill-Copy, 
-#Skill-Interpersonal {
-  height: 1em; 
-  position: absolute;  
-  background-color: #434343;
-}
-.Skill-Area {
-  float: left;
-  position: absolute;
-  text-shadow: none;
-  color: #fff;
-}
-.PercentText {
-  position: relative;
-  padding-right: 15px;
-  float: right;
-  text-shadow: none;
-  color: #fff;
-}
-.skillSpecs {
-  font-size: 0.68em;
-  margin: 0.2em 0 0.6em;
-}
-    /* Individual Skill Bar 'width' */
-#Skill-Design {width: 80%;}
-#Skill-Develop {width: 68%;}
-#Skill-Deploy {width: 82%;}
-#Skill-Copy {width: 91%;}
-#Skill-Interpersonal {width: 79%;}
-@media only screen and (min-width: 800px) {
-  .PercentText {margin: 0 auto;}
-  div.skillSpecs {font-size: 0.68em;}
-  #Skill-Design, 
-  #Skill-Develop, 
-  #Skill-Deploy, 
-  #Skill-Copy, 
-  #Skill-Interpersonal, 
-  .SkillBar, .Skill-Area, .PercentText {height: 1.07em;}  
-} 
-/* ============================================ */
-
-
-
-
-/* ============================================ */
-/* == RESUME.php ============================== */
-.resumeGrid {
-  width: 100%;
-  max-width: 99vw;
-  display: grid;
-  grid-template-rows: repeat(auto-fit, min-content); 
-  text-align: left;
-  grid-gap: 10px;
-}
-/* Section 'Title' Styles */
-.res__sectionTitle {
-  font-size: 1em;
-  color: #838487;
-  font-weight: 700;
-  font-variant: small-caps;
-}
-/**/
-.resume__author {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 40vw 1fr;
-  grid-template-areas: "title contact";
-}
-.resume__title {
-  margin-top: 12px;
-  grid-area: title; 
-  font-weight: 800;
-  font-size: 0.88em;
-  font-variant: small-caps; 
-}
-.resume__contact {
-  grid-area: contact; 
-  font-size: 0.80em;
-  font-variant: normal;
-  text-align: right;
-}
-.resume__background {font-size: 0.88em;}
-.resume__Card {margin: 0.8em 0;}
-/**/
-.res__work__jobTitle {grid-area: jTitle;}
-.res__work__jobEmployer {grid-area: jEmployer;}
-.res__work__jobDate {grid-area: jDate;}
-.res__work__jobLocation {grid-area: jLocation;}
-.res__work__Employment {
-  display: grid;
-  grid-template-columns: 60vw 1fr;
-  grid-template-areas: 
-    "jTitle jDate"
-    "jEmployer jLocation";
-}
-.res__work__jobTitle {
-  font-size: 0.84em;
-  font-weight: 600;
-}
-.res__work__jobEmployer {font-style: italic;}
-.res__work__jobEmployer, 
-.res__work__jobLocation, 
-.res__work__jobDate {font-size: 0.84em;}
-.res__work__Responsibilities {
-  margin: -0.8em 0 0 -2em;
-  font-size: 0.80em;
-  line-height: 1.5;
-  /*max-width: 100%; */ 
-}
-.res__work__Responsibilities ol li {
-  list-style-type: disc;
-}
-/* Resume 'Skills' */
-.resume__skills > table {
-  font-size: 0.80em;
-  width: 100%;
-  margin-bottom: 1em;
-}
-.resume__skills > th {width: 100px;}
-/* Download Resume */
-.resume__download {
-  text-align: center;
-  font-variant: small-caps;
-}
-/**/
-@media only screen and (min-width: 500px) and (max-width: 799px){
-  .res__work__Employment {
-    display: grid;
-    grid-template-columns: 65vw auto;
-    grid-template-areas: 
-      "jTitle jDate"
-      "jEmployer jLocation";
-  }
-}
-@media only screen and (min-width: 800px){
-  .resumeGrid {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(62px, 1fr)); /* replace 1fr w/ min-content */
-    text-align: left;
-    grid-gap: 10px;
-  }
-  /**/
-  .resume__author {margin: 0.70em 0;} 
-  .resume__background {margin: 0.80em 0;}
-  /**/
-  .resume__author {
-    display: grid;
-    grid-template-columns: 75% 1fr;
-    grid-template-areas: "title contact";
-  }
-  .resume__contact {text-align: left;}
-  /**/
-  .res__work__Employment {
-    display: grid;
-    grid-template-columns: 81% auto;
-    grid-template-areas: 
-      "jTitle jDate"
-      "jEmployer jLocation";
-  }
-  .res__work__Responsibilities {
-    max-width: 68vw;
-    margin: -0.4em 4px 0 -0.4em;
-  }
-  
-  .res__work__Responsibilities, .resume__skills > table {font-size: 1em;}
-}
-/* ============================================ */
-
-
-
-
 /* WebDesign Page = Online Resources Grid*/
 .resSyntax {grid-area: syntax;}
 .resContent {grid-area: content;}
@@ -857,9 +860,7 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
     padding-top: 0.35em;  /* Center Text */
   }
 }
-/*
-*/
-
+/**/
 /* Font Scheme */
 .resourceLink > span:nth-child(4n+1),
 .resourceLink > span:nth-child(4n+2),
@@ -867,31 +868,12 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
 .resourceLink > span:nth-child(4n+4) {
   font-size: 0.81em;
 }
-/*******************************************/
-
-
 /* ============================================ */
-/* SOCIAL MEDIA + FOOTER ====================== */
-.download {grid-area: download;}
-.github {grid-area: github;}
-.twitter {grid-area: twitter;}
-.email {grid-area: email;}
-.phone {grid-area: phone;}
-ul.social {
-  margin: 0.4em;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 1.81rem;
-  justify-content: space-around;
-  grid-template-areas: 
-    "github twitter email phone";
-}
 /* ============================================ */
 
 
 /* ============================================ */
-/* CONTACT FORM =============================== */
+/* #. CONTACT FORM ============================ */
 .contactForm {
   margin: 20px 0;
   color: #000;
