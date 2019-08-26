@@ -1,6 +1,6 @@
-/* UNDER CONSTRUCTION STYLES */
-/*section:nth-child(odd){border: 1px solid #434343;}
-section:nth-child(even){border: 1px solid #111;}*/
+/* UNDER CONSTRUCTION STYLES 
+section:nth-child(even){border: 1px solid #3F3F3F;}
+section:nth-child(odd){border: 1px solid #000;} */
 
 /* ============================================ */
 
@@ -133,17 +133,16 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 /**/
 /* BUTTONS ==================================== */
 .btn {
-  margin: 0.8em 0; 
+  margin: 0.4em 0; 
   padding: 0.44em 0.88em;
   display: inline-block;
   width: auto;
  text-align: center;
-  color: #fff;
   letter-spacing: 1px;
+  color: #fff;
   background-color: #000;
-  border-radius: 0.35em;
   border: 2px solid #fff;
- transition: all 0.15s;
+  border-radius: 0.35em;
 }
 .btn:hover {
   border: 2px solid #000;
@@ -262,7 +261,7 @@ fa-home {
   height: 100vh;
   width: 100%;
   color: #222;
-  background: transparent url(../img/me.jpg) no-repeat 44% fixed / cover;
+  background: transparent url(../img/knowledge.jpg) no-repeat 53% fixed / cover;
 }
 @media screen and (min-width: 800px) {
   /* Opening Paragraph */
@@ -270,7 +269,7 @@ fa-home {
     /*padding: 0 16px;*/
     font-size: calc(0.8em + 0.8vw);
   }
-  .bgImg {display: none;}
+  /*.bgImg {display: none;}*/
 }
 /* SOCIAL MEDIA =============================== */
 .bgImg h3 {margin: 4px; padding: 0;}
@@ -323,6 +322,7 @@ ul.social {
   grid-template-areas: 
     "jTitle jDate"
     "jEmployer jLocation";
+  justify-content: space-between;
 }
 .res__work__jobTitle {
   font-size: 0.84em;
@@ -336,7 +336,6 @@ ul.social {
   margin: -0.8em 0 0 -2em;
   font-size: 0.80em;
   line-height: 1.5;
-  /*max-width: 100%; */ 
 }
 .res__work__Responsibilities ol li {
   list-style-type: disc;
@@ -371,15 +370,7 @@ ul.social {
     grid-gap: 10px;
   }
   /**/
-  .resume__author {margin: 0.70em 0;} 
   .resume__background {margin: 0.80em 0;}
-  /**/
-  .resume__author {
-    display: grid;
-    grid-template-columns: 75% 1fr;
-    grid-template-areas: "title contact";
-  }
-  .resume__contact {text-align: left;}
   /**/
   .res__work__Employment {
     display: grid;
@@ -390,10 +381,14 @@ ul.social {
   }
   .res__work__Responsibilities {
     max-width: 68vw;
-    margin: -0.4em 4px 0 -0.4em;
+    margin: -0.4em 4px 0 -1em;
   }
-  
-  .res__work__Responsibilities, .resume__skills > table {font-size: 1em;}
+  /**/
+  .res__work__jobTitle, 
+  .res__work__jobLocation, 
+  .res__work__jobDate,
+  .res__work__Responsibilities {font-size: 1em;}
+  .res__work__jobEmployer {font-size: 1.1em;}
 } 
 /* Teaching Exp via Details Component ========= */
 details {
@@ -494,25 +489,24 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
   grid-template-rows: repeat(auto-fit, 1fr);
   grid-gap: 8px;
 }
-.grid-table {
+/*.grid-table {
   display: grid;
   grid-template-columns: 70px 1fr;
-}
+}*/
 .grid-row {
   display: subgrid;
   grid-template-rows: 1fr;
 }
-.grid-table > span:nth-child(4n+1),
+/*.grid-table > span:nth-child(4n+1),
 .grid-table > span:nth-child(4n+2) {
   background-color:#838487;
   font-size: 0.88em;
 }
 .grid-table > span:nth-child(4n+3),
 .grid-table > span:nth-child(4n+4) {
-  /*background-color: #B93A32;*/
   margin-bottom: 8px;
   font-size: 0.68em;
-}
+}*/
 @media only screen and (min-width: 800px){
   .subGrid {
     margin: 0 auto;
@@ -522,15 +516,9 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
     grid-template-columns: repeat(2, 49%);
     grid-gap: 24px;
   }
-  .grid-table {
-    grid-template-columns: 90px 1fr;
-  }
+  /*.grid-table {grid-template-columns: 90px 1fr;}
   .grid-table > span:nth-child(4n+3),
-  .grid-table > span:nth-child(4n+4){
-    font-size: 0.80em;
-  }
-  /*Decrease Size of 'Long-string Content' */
-  .grid-table > span.smallSpan {font-size: 0.6em;}
+  .grid-table > span:nth-child(4n+4){font-size: 0.80em;}*/
   .grid-row {grid-row-gap: 4px;}
 }
   /* */
@@ -576,13 +564,13 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
 #Skill-Interpersonal {width: 79%;}
 @media only screen and (min-width: 800px) {
   .PercentText {margin: 0 auto;}
-  div.skillSpecs {font-size: 0.68em;}
+  div.skillSpecs {font-size: 0.8em;}
   #Skill-Design, 
   #Skill-Develop, 
   #Skill-Deploy, 
   #Skill-Copy, 
   #Skill-Interpersonal, 
-  .SkillBar, .Skill-Area, .PercentText {height: 1.07em;}  
+  .SkillBar, .Skill-Area, .PercentText {height: 1.21em;}  
 } 
 /* ============================================ */
 /* ============================================ */

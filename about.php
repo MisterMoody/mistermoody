@@ -5,34 +5,23 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
 <!-- ************************************************** -->
 <!-- ******************** <<HOMEPAGE>>  *************** -->
 
-<!-- //CONTENT-BEGINS..... -->
-
+<!-- ** // Start of CONTENT *** -->
   <article class="resumeGrid">
-    <!--<section class="resume__author">
-      <div>
-        <div class="resume__title">Ray Moody</div>
-        <div class="res__sectionTitle">WebDevEduPreneur</div>
-      </div>
-      <div class="resume__contact">
-        <ul>
-          <li>&#40;502&#41; 558&#45;9240</li>
-          <li>principal&#64;mistermoody&#46;com</li>
-          <li>Louisville, Kentucky 40211</li>
-        </ul>
-      </div>
-    </section>-->
     <!--  Background -->
     <section class="resume__background">
       <h2 class="res__sectionTitle">Background</h2>
       <div class="intro">
         <p>
-          I was born in Louisville, Kentucky and raised in a single-parent household. The relationship between my father and I was broken at age seven, and his abscence could best explain the behavioral and emotional rollercoaster that I would endure throughtout my youth. Environmental and financial woes caused my family to be uprooted frequently while being compelled to make due with scarce provisions. 
+          I was born in Louisville, Kentucky and raised in a single-parent household. The relationship between my father and I had severed at age seven, and his absence could best explain the behavioral and emotional rollercoaster that I would endure throughout my youth. Environmental and financial woes frequently displaced my family, but we were able to cope with scarce provisions. 
         </p>
         <p>
-          At age 11, I discovered a passion for playing basketball, and devoted all of my energy toward the sport. Like many of the kids that I grew up with, attending college was an elusive life experience attainable only through athletic scholarship. I developed well as a player competing in amateur athletics and was enrolled at an academically rigorous institution that allowed me to showcase my athletic talents while preparing me for a tertiary education. As a four year letterman and team captain, I led my school to a state tournament and had received my fair share of scholarship offers. That was until I blew out my knee and was forced to reevaluate my future as 100% of all offers were rescinded. Because I graduated in the top-percentile of my class, being accepted into a university was not much of a challenge. Paying the tuition, on the other hand, was and so I hedged a bet to mortgage my future for a university education! 
+          At age 11, I discovered a passion for playing basketball, and devoted all of my energy toward the sport. Like many of the kids that I grew up with, attending college was an elusive life experience attainable only through athletic scholarship. I developed well as a player competing in amateur athletics, which led to my enrollment at an academically rigorous institution that allowed me to showcase my athletic talents while preparing me for a tertiary education. As a senior and team captain, I led my school to a state tournament and had received my fair share of scholarship offers. That was until I blew out my knee: my injury scared aware every school that had recruited me, resulting in 100% of all offers being rescinded. Because I graduated in the top-percentile of my class, being accepted into a university was not much of a challenge. Paying the tuition, on the other hand, was and so I hedged a bet to mortgage my future for a university education!
         </p>
         <p>
-          Basketball was always more than a game for me: it was an outlet for expression and a means to attain a middle-class lifestyle. Being an athlete allowed me to become a scholar. Being a scholar led me to study multiple disciplines at seven colleges and universities in three countries. Through education I was able to change the trajectory of my future and in the process I became an educator. 
+          While attending university, I became interested in economics and political science: I wanted to better understand the system functionality of American democracy. The opportunities to explore this field were ample while living the student life: I performed internships with local, state and federal government agencies, explored tort law at a prestigious university and provided assistance for a limited liability company with drafting an overseas private investment corporation application. As a university graduate, however, I was not as fortunate in procuring suitable employment related to my degree. Moreover, I had come to the stark reality that attending law school was an expense that I simply could not afford. Instead of settling for the first job to become available, I embarked on a sojourn abroad to teach English as a Second Language. I landed in South Korea three months after graduating university with the mindset that I would save up for law school. That didn't happen. Instead, I began to explore the world, having since travelled to nearly two dozen nations. I accomplished these feats, and many more, through my service to others which was teaching~
+        </p>
+        <p>
+          Basketball was always more than a game for me: it was an outlet for expression and a means to achieve the American dream. Being an athlete allowed me to become a scholar. Being a scholar led me to study multiple disciplines at seven colleges and universities in three countries. Through education I altered the trajectory of my future and in the process I became an educator. 
         </p>
       </div>
     </section>
@@ -126,12 +115,12 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         <div class="res__work__Employment">
           <div class="res__work__jobTitle">TEFL CERT</div>
           <div class="res__work__jobEmployer">ITTT Inc.</div>
-          <div class="res__work__jobDate">5&#47;2007 &#45; 6&#47;2007</div>
-          <div class="res__work__jobLocation">Thailand</div>
+          <div class="res__work__jobDate">6&#47;2007</div>
+          <div class="res__work__jobLocation">Online</div>
         </div>
         <div class="res__work__Responsibilities">
           <ol>
-            <li>Completed 100&#45;hour curriculum on topics that included classroom management, lesson planning and teaching English grammar to non-native speaker.</li>
+            <li>Completed a 100&#45;hour curriculum on topics that included classroom management, lesson planning and teaching English grammar to non-native speaker.</li>
           </ol>
         </div>
       </div>
@@ -144,11 +133,11 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         </div>
         <div class="res__work__Responsibilities">
           <ol>
-            <li>Chapter President: Pi Sigma Alpha</li>
-            <li>Student Assistant: Office of the President</li>
-            <li>Intern: Legislative Research Commission</li>
-            <li>Co&#45;Op: The Econ Village Group, LLC </li>
-            <li>Volunteer Tutor: Louisville Urban League</li>
+            <li>Business Co-Op with The Econ Village Group</li>
+            <li>Office of Budget Review Intern with the Kentucky Legislative Research Commission</li>
+            <li>Elected chapter President of Pi Sigma Alpha (Political Science Honors Society)</li>
+            <li>Student Assistant for Office of the President</li>
+            <li>Volunteer Tutor with the Louisville Urban League</li>
           </ol>
         </div>
       </div>
@@ -217,23 +206,14 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         <div>
           <h2 class="res__sectionTitle">Goals</h2>
           <p>
-            I am currently engaged in self-fulfilling work teaching youth in my hometown after living abroad for most of my adult life. In desperate need of brushing up on my Mandarin and Spanish language skills. Coding like crazy! Thinking seriously about enrolling in an accredited graduate teaching program. Would like to open a neighborhood summer school that introduces individuals to software programming in an effort to enable folks with skills that they can use to jumpstart a web development career.
+            Pass the PRAXIS examination in order to enroll in a Master of Arts Teaching program. Review the Kentucky Department of Educations' Academic Standards for reading, writing and computer science. Explore the possibility of establishing a summer program that encourages youth to explore career pathways related to aquaponics and web application development. Brush up on my Mandarin and Spanish. Craft more and continue coding~
           </p>
         </div>
       </div>
     </section>
-    
-    <!--<section>
-      <p>
-        I put together a table of useful <a class="resourceText" href="webdesign" alt="Link to Resources" target="_blank" title="Online Resources">Online Resources</a> that help me build websites, which is a supplement to this <a class="resourceText" href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">DIY Guide</a> for creating a website.
-      </p>
-      <p>
-        Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification. As a designer, I can adapt a low-fidelity prototype into a viable website using HTML, CSS, JavaScript, content management tools and digital media. As a developer, I utilize the PHP scripting language that incorporates object-oriented programming practices to integrate server-side functionality into a web application. Vital components of this process entails auscultating user-experience; amalgamating accessibility, performance requirements and other technical considerations; HTTP server installation; database configuration; and using the SSH protocol in conjunction with version control to provide secure remote access to mitigate maintenance concerns. To this end, I am currently exploring opportunities by which I can leverage my skillset to pursue a position in the tech industry.
-      </p>
-    </section>-->
   </article>
+<!-- ** // End of CONTENT ***** --> 
 
-<!-- .....CONTENT-ENDS// --> 
 
 <!-- ************************************************** -->
 <!-- ************************************************** -->
