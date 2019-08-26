@@ -24,7 +24,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
     <!--  Background -->
     <section class="resume__background">
       <h2 class="res__sectionTitle">Background</h2>
-      <div>
+      <div class="intro">
         <p>
           I was born in Louisville, Kentucky and raised in a single-parent household. The relationship between my father and I was broken at age seven, and his abscence could best explain the behavioral and emotional rollercoaster that I would endure throughtout my youth. Environmental and financial woes caused my family to be uprooted frequently while being compelled to make due with scarce provisions. 
         </p>
