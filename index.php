@@ -15,15 +15,13 @@ include ("inc/header.php");
     <p>
       Course facilitation practices that I promote amalgamates 21<sup>st</sup> Century Learning and Literacy Skills that encourage youth to be diligent learners in the classroom and on the internet. Core compenticies include critical processing of information, communicative etiquette and mutually beneficial collaboration with peers.
     </p>
-    <h3 class="btn"><a href="about.php">Learn More</a></h3>
+    <h3><a href="about.php" class="btn">Learn More</a></h3>
     <p></p>
   </section>
   <!-- -->
   <section>
     <!-- #Contact -->
     <div>
-      <h3>Get In Touch</h3>
-      <!--<p class="readText">I am on the web. Check out my work on Github, follow me on Twitter, download my resume. Heck, give me a call or text me an email. Do it now!</p>-->
       <ul class="social">
         <li>
           <a class="github" href="https://github.com/MisterMoody" target="_blank" title="Check Out My Work on Github">
