@@ -1,26 +1,17 @@
 /* UNDER CONSTRUCTION STYLES */
-section:nth-child(odd){border: 1px solid #434343;}
-section:nth-child(even){border: 1px solid #111;}
-/*@media only screen and (min-width: 800px) {
-  section {
-    display: grid;
-    grid-auto-flow: column;
-  }
-}
-section {
-  display: grid;
-  grid-auto-flow: row;
-}*/
+/*section:nth-child(odd){border: 1px solid #434343;}
+section:nth-child(even){border: 1px solid #111;}*/
+
 /* ============================================ */
 
 /* ============================================ */
 /* CASCADING STYLESHEET ======================= */
 /*
       1.  Universal Styles
-      2.  Global Navigation
+      2.  Global NAVIGATION
       3.  INDEX.php              
       4.  ABOUT.php
-      5.  xyz123                     */
+      5.  CURRICULUMS.php                       */
 /* ============================================ */
 
 
@@ -63,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {text-align: center;}
 p { 
   font-size: 0.88em;
   line-height: 1.5;
-  /*text-align: justify;*/
 }
 a {
   text-decoration: none;
@@ -98,7 +88,7 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 /**/
 @media all and (min-width: 800px) {  
   body {margin: 0 3.5em;}
-  p {font-size: 1em;}
+  p {font-size: 1.1em;}
 }
 /**/
 /* Images ===================================== */
@@ -277,8 +267,8 @@ fa-home {
 @media screen and (min-width: 800px) {
   /* Opening Paragraph */
   .intro {
-    padding: 0 16px;
-    font-size: calc(1.02em + 1vw);
+    /*padding: 0 16px;*/
+    font-size: calc(0.8em + 0.8vw);
   }
   .bgImg {display: none;}
 }
@@ -320,25 +310,6 @@ ul.social {
   font-variant: small-caps;
 }
 /**/
-.resume__author {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 40vw 1fr;
-  grid-template-areas: "title contact";
-}
-.resume__title {
-  margin-top: 12px;
-  grid-area: title; 
-  font-weight: 800;
-  font-size: 0.88em;
-  font-variant: small-caps; 
-}
-.resume__contact {
-  grid-area: contact; 
-  font-size: 0.80em;
-  font-variant: normal;
-  text-align: right;
-}
 .resume__background {font-size: 0.88em;}
 .resume__Card {margin: 0.8em 0;}
 /**/
