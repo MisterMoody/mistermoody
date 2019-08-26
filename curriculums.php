@@ -3,11 +3,8 @@ $pageTitle = "Mister Moody CURRICULUMS";
 include ("inc/header.php");
 ?>
 <!-- ******************************************************* -->
-<!-- *************** <<PORTFOLIO GALLERY>>  **************** -->
+<!-- *************** << CURRICULUMS >>  ******************** -->
 
-
-<!-- //CONTENT-BEGINS..... -->
-<main>
   <!-- CURRICULUM "TOPICS"  -->
   <article class="cur__TopicGrid">
     <section class="cur__TopicStyle">
@@ -87,10 +84,15 @@ include ("inc/header.php");
       <button class="modalBTN" onclick="clickOnSTEM()">Learn More</button>
     </section>
   </article>
-</main>
-<!-- .....CONTENT-ENDS// --> 
 
-
+    <!--<section>
+      <p>
+        I put together a table of useful <a class="resourceText" href="webdesign" alt="Link to Resources" target="_blank" title="Online Resources">Online Resources</a> that help me build websites, which is a supplement to this <a class="resourceText" href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">DIY Guide</a> for creating a website.
+      </p>
+      <p>
+        Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification. As a designer, I can adapt a low-fidelity prototype into a viable website using HTML, CSS, JavaScript, content management tools and digital media. As a developer, I utilize the PHP scripting language that incorporates object-oriented programming practices to integrate server-side functionality into a web application. Vital components of this process entails auscultating user-experience; amalgamating accessibility, performance requirements and other technical considerations; HTTP server installation; database configuration; and using the SSH protocol in conjunction with version control to provide secure remote access to mitigate maintenance concerns. To this end, I am currently exploring opportunities by which I can leverage my skillset to pursue a position in the tech industry.
+      </p>
+    </section>-->
 <!-- ******************************************************* -->
 <!-- ******************************************************* -->
 <?php
