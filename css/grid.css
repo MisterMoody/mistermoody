@@ -1,39 +1,4 @@
-/* UNDER CONSTRUCTION STYLES */
-.construction {
-  position: relative;
-  height: 100%;
-  min-height: 68vh;
-  max-height: 100vh;
-    
-}
-.construction:before {
-  position: absolute;
-  top: 1.8em;
-  left: 15vw;
-  opacity: 0.8;
-  content: "Under Construction";
-}
 
-
-section:nth-child(odd){border: 1px solid #434343;}
-section:nth-child(even){border: 1px solid #111;}
-
-@media all and (min-width: 800px) {
-  .construction {
-    padding-left: 28px;
-    position: relative;
-    margin: 1.4em;
-    /*height: 100%;*/
-  }
-  .construction:before {
-    position: absolute;
-    top: 1.8em;
-    left: 25vw;
-    opacity: 0.8;
-    content: "Under Construction";
-  }
-}
-/* Remove AFTER-CONSTRUCTION */
 /* ========================================= */
 
 
@@ -239,7 +204,10 @@ main {padding: 0 0.2em;}
   color: black;*/
 	transition-duration: 0.8s;
 }
-header {background-color: inherit; z-index: 100;}
+header {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  z-index: 100;
+}
 header.topnav > .active {
   color: white;
   margin-right: 5.5em;
