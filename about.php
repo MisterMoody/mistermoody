@@ -10,7 +10,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
     <!--  Background -->
     <section class="resume__background">
       <h2 class="res__sectionTitle">Background</h2>
-      <div class="intro">
+      <div>
         <p>
           I was born in Louisville, Kentucky and raised in a single-parent household. The relationship between my father and I had severed at age seven, and his absence could best explain the behavioral and emotional rollercoaster that I would endure throughout my youth. Environmental and financial woes frequently displaced my family, but we were able to cope with scarce provisions. 
         </p>
@@ -37,9 +37,9 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         </div>
         <div class="res__work__Responsibilities">
           <ol>
-            <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques.</li>
-            <li>Completed professional development activities related to instructional strategies and accommodating the diverse needs of students as well as violence prevention, intervention and restraint.</li>
-            <li>Awarded 40 assignments at 16 schools; facilitated courses for more than 1,500 learners on subjects that include Computer Literacy, ESL, History and Math.</li>
+            <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques</li>
+            <li>Engage in professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
+            <li>Awarded 40+ assignments at 17 schools; facilitated courses for more than 1,500 learners on subjects that include Computer Literacy, ESL and History</li>
           </ol>
         </div>
       </div>
@@ -53,32 +53,11 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         <div class="res__work__Responsibilities">
           <ol>
             <li>Nearly 10&#44;000 hours facilitating courses to learners of varying fluency</li>
-            <li>Awarded Foreign Expert Certificate by Peoples Republic of China to assist the foreign language departments at three state&#45;run institutions of education</li>
+            <li>Awarded Foreign Expert Certificate by Peoples Republic of China to assist foreign language departments; charged with assisting staff with curricula development and course facilitation</li>
             <li>Cooperated with private agencies and recruiters to scout ESL teacher candidates </li>
-            <li>Developed curricula materials and procurred authentic relia</li>
           </ol>
         </div>
       </div>
-      <!--<details>
-        <summary>International Teaching Experience &nbsp;</summary>
-        <p>Below is a list of some of the educational institutions that I have collaborated with:</p>
-        <div class="trainingGrid">
-          <span>2016 - 2017 </span>
-          <span>TEFL Instructor <b>&#64;</b> Jiaxing College</span>
-          <span>2012 - 2013 </span>
-          <span>TEFL Instructor <b>&#64;</b> Zhejiang Middle School</span>
-          <span>2007 - 2009 </span>
-          <span>TEFL Trainer <b>&#64;</b> Oxford Seminars</span>
-          <span>2005 - 2006 </span>
-          <span>TEFL Instructor <b>&#64;</b> Joongdong High School</span>
-          <span>2004 - 2006 </span>
-          <span>TEFL Consultant <b>&#64;</b> US-Japan Edu. Exchange Program</span>
-          <span>2003 - 2004 </span>
-          <span>TEFL Instructor <b>&#64;</b> Sogang University</span>
-          <span>2000 - 2001 </span>
-          <span>Rec. Supervisor <b>&#64;</b> Cabbage Patch Settlement House</span>
-        </div> 
-      </details>-->
     </section>
     <!-- Training (Edu) -->
     <section class="resume__education">
@@ -203,10 +182,10 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
           </div>
           </div>
         </div>
-        <div>
+        <div><!-- Include class="intro" to modify Text-Size -->
           <h2 class="res__sectionTitle">Goals</h2>
           <p>
-            Pass the PRAXIS examination in order to enroll in a Master of Arts Teaching program. Review the Kentucky Department of Educations' Academic Standards for reading, writing and computer science. Explore the possibility of establishing a summer program that encourages youth to explore career pathways related to aquaponics and web application development. Brush up on my Mandarin and Spanish. Craft more and continue coding~
+            Register, study and pass the PRAXIS examination in order to enroll in a Master of Arts Teaching program. Review the Kentucky Department of Educations' Academic Standards for reading, writing and computer science. Dive into the new JCPS Digital Backpackk for Teachers. Explore the possibility of establishing a summer program that encourages youth to explore career pathways related to aquaponics and web application development. Brush up on my Mandarin and Spanish. Craft more and continue coding~
           </p>
         </div>
       </div>
