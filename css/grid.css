@@ -87,7 +87,7 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 }
 /**/
 @media all and (min-width: 800px) {  
-  body {margin: 0 3.5em;}
+  body {margin: 0 5.3em;}
   p {font-size: 1.1em;}
 }
 /**/
@@ -211,7 +211,7 @@ header {
 }
 header.topnav > .active {
   color: white;
-  margin-right: 5.5em;
+  margin-right: 7.58em;  /* Fixed to <body> 'margin' @ min-width 800px */
 }
 .topnav .icon {
   display: none;
@@ -272,7 +272,6 @@ fa-home {
   /*.bgImg {display: none;}*/
 }
 /* SOCIAL MEDIA =============================== */
-.bgImg h3 {margin: 4px; padding: 0;}
 .download {grid-area: download;}
 .github {grid-area: github;}
 .twitter {grid-area: twitter;}
@@ -309,7 +308,6 @@ ul.social {
   font-variant: small-caps;
 }
 /**/
-.resume__background {font-size: 0.88em;}
 .resume__Card {margin: 0.8em 0;}
 /**/
 .res__work__jobTitle {grid-area: jTitle;}
@@ -453,34 +451,6 @@ summary::after {
 summary::-webkit-details-marker {display: none;}
 details > p {margin: 0.8em 0;}
 details > li:not(:last-child) {margin-bottom: 0.4em;}
- /* Teach/Work History for Details */  
-.trainingGrid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: repeat(autofit, minmax(15px, auto));
-  font-size: 0.65em;
-  grid-row-gap: 4px; 
-}
-.trainingGrid > span:nth-child(4n+1),
-.trainingGrid > span:nth-child(4n+2) {
-  background-color: #838487;
-}
-@media only screen and (min-width: 500px){
-  .trainingGrid {
-    grid-template-columns: 132px 1fr;
-    font-size: 0.71em;
-  }
-}
-@media only screen and (min-width: 800px){
-  .trainingGrid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-row-gap: 1px;
-    /*font-size: 0.88em;*/
-  }
-  .trainingGrid > p {text-align: right; margin: 0 auto; padding: 0;}
-}
     /* Talents / Skills GRID */
 .subGrid {
   margin: 0 auto;
@@ -489,24 +459,10 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
   grid-template-rows: repeat(auto-fit, 1fr);
   grid-gap: 8px;
 }
-/*.grid-table {
-  display: grid;
-  grid-template-columns: 70px 1fr;
-}*/
 .grid-row {
   display: subgrid;
   grid-template-rows: 1fr;
 }
-/*.grid-table > span:nth-child(4n+1),
-.grid-table > span:nth-child(4n+2) {
-  background-color:#838487;
-  font-size: 0.88em;
-}
-.grid-table > span:nth-child(4n+3),
-.grid-table > span:nth-child(4n+4) {
-  margin-bottom: 8px;
-  font-size: 0.68em;
-}*/
 @media only screen and (min-width: 800px){
   .subGrid {
     margin: 0 auto;
@@ -516,9 +472,6 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
     grid-template-columns: repeat(2, 49%);
     grid-gap: 24px;
   }
-  /*.grid-table {grid-template-columns: 90px 1fr;}
-  .grid-table > span:nth-child(4n+3),
-  .grid-table > span:nth-child(4n+4){font-size: 0.80em;}*/
   .grid-row {grid-row-gap: 4px;}
 }
   /* */
@@ -553,7 +506,7 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
   color: #fff;
 }
 .skillSpecs {
-  font-size: 0.68em;
+  font-size: 0.88em;
   margin: 0.2em 0 0.6em;
 }
   /* Individual Skill Bar 'width' */
@@ -564,7 +517,7 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
 #Skill-Interpersonal {width: 79%;}
 @media only screen and (min-width: 800px) {
   .PercentText {margin: 0 auto;}
-  div.skillSpecs {font-size: 0.8em;}
+  div.skillSpecs {font-size: 0.95em;}
   #Skill-Design, 
   #Skill-Develop, 
   #Skill-Deploy, 
