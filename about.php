@@ -39,7 +39,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
           <ol>
             <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques</li>
             <li>Engage in professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
-            <li>Awarded 40+ assignments at 17 schools; facilitated courses for more than 1,500 learners on subjects that include Computer Literacy, ESL and History</li>
+            <li>Awarded 40+ assignments at 17 schools; facilitated courses for more than 1,700 learners <!--on subjects that include Computer Literacy, ESL and History--></li>
           </ol>
         </div>
       </div>
@@ -133,7 +133,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
             <div class="grid-row">
               <div class="SkillBar">
                 <div id="Skill-Design">
-                  <span class="Skill-Area">Design</span> <span class="PercentText">80%</span>
+                  <span class="Skill-Area">Web Design</span> <span class="PercentText">80%</span>
                 </div>
               </div>
               <div class="skillSpecs">
@@ -143,7 +143,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
             <div class="grid-row">
               <div class="SkillBar">
                 <div id="Skill-Develop">
-                  <span class="Skill-Area">Develop</span> <span class="PercentText">68%</span>
+                  <span class="Skill-Area">Web Develop</span> <span class="PercentText">68%</span>
                 </div>
               </div>
               <div class="skillSpecs">
@@ -153,11 +153,11 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
             <div class="grid-row">
               <div class="SkillBar">
                 <div id="Skill-Deploy">
-                  <span class="Skill-Area">Deploy</span> <span class="PercentText">82%</span>
+                  <span class="Skill-Area">Application Deployment</span> <span class="PercentText">82%</span>
                 </div>
               </div>
               <div class="skillSpecs">
-                      <span>Server Config. | Version Control | SFTP</span>
+                      <span>Server Configuration | Version Control | SFTP</span>
                     </div>
                   </div>
             <div class="grid-row">
@@ -185,7 +185,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         <div><!-- Include class="intro" to modify Text-Size -->
           <h2 class="res__sectionTitle">Goals</h2>
           <p>
-            Register, study and pass the PRAXIS examination in order to enroll in a Master of Arts Teaching program. Review the Kentucky Department of Educations' Academic Standards for reading, writing and computer science. Dive into the new JCPS Digital Backpackk for Teachers. Explore the possibility of establishing a summer program that encourages youth to explore career pathways related to aquaponics and web application development. Brush up on my Mandarin and Spanish. Craft more and continue coding~
+            Pass the PRAXIS examination in order to enroll in a Master of Arts Teaching program. Review the Kentucky Department of Educations' Academic Standards for reading, writing and computer science. Dive into the new JCPS Digital Backpack for Teachers. Explore the possibility of establishing a summer program that encourages youth to explore career pathways related to aquaponics and web application development. Brush up on my Mandarin and Spanish. Craft more and continue coding~
           </p>
         </div>
       </div>
