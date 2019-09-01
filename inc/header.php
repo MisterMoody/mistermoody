@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
     <title>Mister Moody</title>
-    <meta name='description' content="Official Site for Mister Moody" />
-    <meta name="keywords" content="" />
+    <meta name="author" content="Ray Moody">
+    <meta name="twitter:title" content="Mister_Moody">     <!-- Link to Twitter -->
+    <meta name="description" content="Official Site for Mister Moody">
+    <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->
