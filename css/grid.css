@@ -351,6 +351,11 @@ ul.social {
   font-variant: small-caps;
 }
 /**/
+/* .scrSnp {scroll-snap-type: y proximity;}
+.scrSnpChild {scroll-snap-align: start; scroll-snap-stop: always;}*/
+.scrSnp {scroll-snap-type: y mandatory;}
+.scrSnpChild {scroll-snap-align: start;}
+/**/
 @media only screen and (min-width: 500px) and (max-width: 799px){
   .res__work__Employment {
     display: grid;

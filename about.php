@@ -6,9 +6,9 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
 <!-- ******************** <<HOMEPAGE>>  *************** -->
 
 <!-- ** // Start of CONTENT *** -->
-  <article class="resumeGrid">
+  <article class="resumeGrid scrSnp">
     <!--  Background -->
-    <section class="resume__background">
+    <section class="resume__background scrSnpChild">
       <h2 class="res__sectionTitle">Background</h2>
       <div>
         <p>
@@ -26,7 +26,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
       </div>
     </section>
     <!-- Teaching Experience -->
-    <section class="resume__work">
+    <section class="resume__work scrSnpChild">
       <h2 class="res__sectionTitle">Teaching Experience</h2>
       <div class="resume__Card">
         <div class="res__work__Employment">
@@ -60,7 +60,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
       </div>
     </section>
     <!-- Training (Edu) -->
-    <section class="resume__education">
+    <section class="resume__education scrSnpChild">
       <h2 class="res__sectionTitle">Training</h2>
       <div class="resume__Card">
         <div class="res__work__Employment">
@@ -124,7 +124,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">Download Resume</a></h5>-->
     </section>
     <!-- Talents (Skills) + Goals -->
-    <section class="resume__skills">
+    <section class="resume__skills scrSnpChild">
       <div class="subGrid">
         <div>
           <h2 class="res__sectionTitle">Talents</h2>
