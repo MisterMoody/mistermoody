@@ -39,7 +39,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
           <ol>
             <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques</li>
             <li>Engage in professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
-            <li>Awarded 40+ assignments at 17 schools; facilitated courses for more than 1,700 learners <!--on subjects that include Computer Literacy, ESL and History--></li>
+            <li>Awarded 50+ assignments at 21 schools; facilitated courses for more than 1,900 learners</li>
           </ol>
         </div>
       </div>
