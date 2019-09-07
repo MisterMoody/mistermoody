@@ -39,7 +39,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
           <ol>
             <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques</li>
             <li>Engage in professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
-            <li>Awarded 50+ assignments at 21 schools; facilitated courses for more than 1,900 learners</li>
+            <li>Awarded 50+ assignments at 21 schools; facilitated courses for more than 1,800 learners</li>
           </ol>
         </div>
       </div>
@@ -185,7 +185,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         <div><!-- Include class="intro" to modify Text-Size -->
           <h2 class="res__sectionTitle">Goals</h2>
           <p>
-            Pass the PRAXIS examination in order to enroll in a Master of Arts Teaching program. Review the Kentucky Department of Educations' Academic Standards for reading, writing and computer science. Dive into the new JCPS Digital Backpack for Teachers. Explore the possibility of establishing a summer program that encourages youth to explore career pathways related to aquaponics and web application development. Brush up on my Mandarin and Spanish. Craft more and continue coding~
+            Pass the PRAXIS examination in order to enroll in a Master of Arts Teaching program. Review the Kentucky Department of Educations' Academic Standards for reading, writing and computer science. Dive into the new JCPS Digital Backpack for Teachers. Explore the possibility of establishing a summer program that encourages youth to explore career pathways related to aquaponics and web application development. Brush up on my Mandarin and Spanish. Code and craft more~
           </p>
         </div>
       </div>
