@@ -24,6 +24,15 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
           Basketball was always more than a game for me: it was an outlet for expression and a means to achieve the American dream. Being an athlete allowed me to become a scholar. Being a scholar led me to study multiple disciplines at seven colleges and universities in three countries. Through education I altered the trajectory of my future and in the process I became an educator. 
         </p>
       </div>
+      <aside class="">
+        <div class="bgImg1"></div>
+        <div class="bgImg2"></div>
+        <div class="bgImg3"></div>
+        <div class="bgImg4"></div>
+        <div class="bgImg5"></div>
+        <div class="bgImg6"></div>
+        <div class="bgImg7"></div>
+      </aside>
     </section>
     <!-- Teaching Experience -->
     <section class="resume__work scrSnpChild">

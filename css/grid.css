@@ -13,8 +13,9 @@ section:nth-child(odd){border: 1px solid #000;} */
       4.  ABOUT.php
       5.  CURRICULUMS.php                       */
 /* ============================================ */
-
-
+/*  Ultimate Construction Grid Highlighter
+* {outline: 1px solid red;}
+*/
 /* ============================================ */
 /* ========== UNIVERSAL BASE STYLES =========== */
 /* Universal Layout Containment */
@@ -257,11 +258,67 @@ fa-home {
 /* 3. INDEX.php =============================== */
   /* Opening Paragraph */
   /* Parallax Background-Image */
-.bgImg {
+.parallaxGrid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+}
+/*.bgImg {
   height: 100vh;
   width: 100%;
   color: #222;
   background: transparent url(../img/knowledge.jpg) no-repeat 53% fixed / cover;
+}
+.bgImg {
+  background: transparent url(../img/narita08.jpg) no-repeat 35px 0px fixed / cover;
+}*/
+.bgImg2, .bgImg3, .bgImg5, .bgImg6{
+  height: 100vh;
+  width: 100%;  
+}
+.bgImg1, .bgImg4, .bgImg7  {
+  height: 100vh;
+  width: 100%;  
+}
+.bgImg1 {
+  background: transparent url(../img/amsterdam.jpg) no-repeat 50% fixed / cover;
+}
+.bgImg2 {
+  background: transparent url(../img/eat.jpg) no-repeat 100% fixed / cover;
+}
+.bgImg3 {
+  background: transparent url(../img/free.jpg) no-repeat 50% fixed / cover;
+}
+.bgImg4 {
+  background: transparent url(../img/tailorVanilla.jpg) no-repeat 50%  fixed / cover;
+}
+.bgImg5 {
+  background: transparent url(../img/hk.jpg) no-repeat 50% fixed / cover;
+}
+.bgImg6 {
+  background: transparent url(../img/narita08.jpg) no-repeat 50%  fixed / cover;
+}
+.bgImg7 {
+  background: transparent url(../img/knowledge.jpg) no-repeat 50% fixed / cover;
+}
+/**/
+.bgImg1 {grid-area: long1;}
+.bgImg2 {grid-area: short1;}
+.bgImg3 {grid-area: short2;}
+.bgImg4 {grid-area: long2;}
+.bgImg5 {grid-area: short3;}
+.bgImg6 {grid-area: short4;}
+.bgImg7 {grid-area: long3;}
+.parallaxGrid2 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "long1 long1"
+    "short1 short2"
+    "long2 long2"
+    "short3 short4"
+    "long3 long3";
 }
 @media screen and (min-width: 800px) {
   /* Opening Paragraph */
@@ -269,7 +326,7 @@ fa-home {
     /*padding: 0 16px;*/
     font-size: calc(0.8em + 0.8vw);
   }
-  /*.bgImg {display: none;}*/
+  .parallaxGrid, .parallaxGrid2 {display: none;}
 }
 /* SOCIAL MEDIA =============================== */
 .download {grid-area: download;}
@@ -302,7 +359,7 @@ ul.social {
 }
 /* Section 'Title' Styles */
 .res__sectionTitle {
-  margin: 12px 0 -8px 0;
+  margin: 4px 0 -8px 0;
   color: #838487;
   font-weight: 700;
   font-variant: small-caps;
@@ -373,6 +430,10 @@ ul.social {
     grid-gap: 10px;
   }
   /**/
+  .res__sectionTitle {
+    margin: 12px 0 -8px 0;
+    font-weight: 800;
+  }
   .resume__background {margin: 0.80em 0;}
   /**/
   .res__work__Employment {
