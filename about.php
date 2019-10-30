@@ -8,7 +8,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
 <!-- ** // Start of CONTENT *** -->
   <article class="resumeGrid scrSnp">
     <!--  Background -->
-    <section class="resume__background scrSnpChild">
+    <!--<section class="resume__background scrSnpChild">
       <h2 class="res__sectionTitle">Background</h2>
       <div>
         <p>
@@ -24,7 +24,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
           Basketball was always more than a game for me: it was an outlet for expression and a means to achieve the American dream. Being an athlete allowed me to become a scholar. Being a scholar led me to study multiple disciplines at seven colleges and universities in three countries. Through education I altered the trajectory of my future and in the process I became an educator. 
         </p>
       </div>
-      <aside class="">
+      <aside class="parallaxGrid2">
         <div class="bgImg1"></div>
         <div class="bgImg2"></div>
         <div class="bgImg3"></div>
@@ -33,7 +33,7 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         <div class="bgImg6"></div>
         <div class="bgImg7"></div>
       </aside>
-    </section>
+    </section>-->
     <!-- Teaching Experience -->
     <section class="resume__work scrSnpChild">
       <h2 class="res__sectionTitle">Teaching Experience</h2>
@@ -47,8 +47,8 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
         <div class="res__work__Responsibilities">
           <ol>
             <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques</li>
-            <li>Engage in professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
-            <li>Awarded 50+ assignments at 21 schools; facilitated courses for more than 1,800 learners</li>
+            <li>Complete professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
+            <li>Awarded 90 assignments at 37 schools; facilitated courses for more than 2,500 learners</li>
           </ol>
         </div>
       </div>
