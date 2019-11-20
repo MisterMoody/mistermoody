@@ -7,7 +7,9 @@ include ("inc/header.php");
 <!-- ******************** <<HOMEPAGE>>  *************** -->
 
 <!-- ** // Start of CONTENT *** -->
-  <section class="intro">
+
+  <!--  ** MOVED to 'about/resume.php' ***  -->
+  <!--<section class="intro">
     <p>
       <img class="imgL" src="img/workVanilla.jpg">Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.
     </p>
@@ -16,24 +18,24 @@ include ("inc/header.php");
     </p>
     <h3><a href="about/" class="btn">Learn More</a></h3>
     <p></p>
-  </section>
-  <!-- -->
+  </section>-->
+  <!--  **********************************  -->
+<article class="homepage">
   <section>
-    <!-- #Contact -->
-    <div>
+    <img class="mainImage" src="img/me.jpg" />
+    <h4>EDUpreneur</h4>
+  </section>
+  <!-- #Contact + Social Media -->
+  <section>
       <ul class="social">
         <li>
-          <a class="github" href="https://github.com/MisterMoody" target="_blank" title="Check Out My Work on Github">
+          <a class="github" href="https://github.com/MisterMoody" target="_blank" title="Check Out My Github Portfolio">
             <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
         </li>
         <li>
           <a class="twitter" href="https://twitter.com/Mister_Moody" target="_blank" title="Follow Me on Twitter">
             <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
         </li>
-        <!--<li>
-          <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">
-            <i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
-        </li>-->
         <li>
           <a class="phone" href="tel:+15025589240" title="Call Me">
             <i class="fa fa-mobile fa-2x" aria-hidden="true"></i></a>
@@ -43,8 +45,8 @@ include ("inc/header.php");
             <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
         </li>
       </ul>
-      </div>
   </section>
+</article>
 <!-- ** // End of CONTENT ***** --> 
 
 <!-- ************************************************** -->
