@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "";
-include ("inc/header.php");
+$pageTitle = "Mister Moodys 中文 CV";
+include ("../inc/header.php");
 ?>
 <!-- ******************************************************* -->
 <!-- ************** << Chinese RESUME.php >>  ************** -->
@@ -8,23 +8,16 @@ include ("inc/header.php");
 
   <!-- ** Chinese RESUME *********************** -->
   <article>
-    <section class="subGrid">
-      <div>
-        <picture><img class="mainImage" src="img/knowledge.jpg" alt="Image of Mister Moody">
-        </picture>
-      </div>
-      <div>
+    <section>
+        <img class="mainImage" src="img/knowledge.jpg" alt="Image of Mister Moody">
         <h1>我是谁?</h1>
-        <p class="intro">
+        <p>
           你好. 我是 Mister Moody, 但不 请叫我羊瑞. 我教育顾问, 英语老师 和 网络开发人员. 我已经提供语言习得服务10多年了. 我提供许多对学生和老师都有用的服务. 我已经教过美国, 中国, 韩国和日本的各种年龄和流利程度的学生. 我也有广泛的经验, 直接与教育行政人员一起开发课程材料, 其中包括建筑评估和课程计划, 以及采购正宗的实地补充教学.
         </p>
-      </div>
     </section>
-  </article>
-<!-- ************************************************** -->
-<!-- ************************************************** -->
-
-
+    <!-- -->
+    <!-- -->
+    <section>
     <div class="container" id="introduction">
       
       <!-- INTRODUCTION Row -->
@@ -226,7 +219,13 @@ include ("inc/header.php");
       </div> 
       <!-- -->
     </div>
+    </section>
+  </article>
+<!-- ************************************************** -->
+<!-- ************************************************** -->
+
+
 
 <?php
-include ("inc/footer.php");
+include ("../inc/footer.php");
 ?>
