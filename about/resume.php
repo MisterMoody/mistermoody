@@ -8,34 +8,20 @@ include ("../inc/header.php")
 
 
 <!-- ** // Start of CONTENT *** -->
+<article>
+  <section class="intro">
+    <!-- Teacher Introduction -->
+    <h1>[ <b><em>RESUME</em></b> File ]</h1>
+    <p>
+      <img class="imgL" src="img/workVanilla.jpg">Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.
+    </p>
+    <p>
+      Course facilitation practices that I promote amalgamates 21<sup>st</sup> Century Learning and Literacy Skills that encourage youth to be diligent learners in the classroom and on the internet. Core compenticies include critical processing of information, communicative etiquette and mutually beneficial collaboration with peers.
+    </p>
+  </section>
+</article>
   <article class="resumeGrid scrSnp">
-    <!--  Background -->
-    <!--<section class="resume__background scrSnpChild">
-      <h2 class="res__sectionTitle">Background</h2>
-      <div>
-        <p>
-          I was born in Louisville, Kentucky and raised in a single-parent household. The relationship between my father and I had severed at age seven, and his absence could best explain the behavioral and emotional rollercoaster that I would endure throughout my youth. Environmental and financial woes frequently displaced my family, but we were able to cope with scarce provisions. 
-        </p>
-        <p>
-          At age 11, I discovered a passion for playing basketball, and devoted all of my energy toward the sport. Like many of the kids that I grew up with, attending college was an elusive life experience attainable only through athletic scholarship. I developed well as a player competing in amateur athletics, which led to my enrollment at an academically rigorous institution that allowed me to showcase my athletic talents while preparing me for a tertiary education. As a senior and team captain, I led my school to a state tournament and had received my fair share of scholarship offers. That was until I blew out my knee: my injury scared aware every school that had recruited me, resulting in 100% of all offers being rescinded. Because I graduated in the top-percentile of my class, being accepted into a university was not much of a challenge. Paying the tuition, on the other hand, was and so I hedged a bet to mortgage my future for a university education!
-        </p>
-        <p>
-          While attending university, I became interested in economics and political science: I wanted to better understand the system functionality of American democracy. The opportunities to explore this field were ample while living the student life: I performed internships with local, state and federal government agencies, explored tort law at a prestigious university and provided assistance for a limited liability company with drafting an overseas private investment corporation application. As a university graduate, however, I was not as fortunate in procuring suitable employment related to my degree. Moreover, I had come to the stark reality that attending law school was an expense that I simply could not afford. Instead of settling for the first job to become available, I embarked on a sojourn abroad to teach English as a Second Language. I landed in South Korea three months after graduating university with the mindset that I would save up for law school. That didn't happen. Instead, I began to explore the world, having since travelled to nearly two dozen nations. I accomplished these feats, and many more, through my service to others which was teaching~
-        </p>
-        <p>
-          Basketball was always more than a game for me: it was an outlet for expression and a means to achieve the American dream. Being an athlete allowed me to become a scholar. Being a scholar led me to study multiple disciplines at seven colleges and universities in three countries. Through education I altered the trajectory of my future and in the process I became an educator. 
-        </p>
-      </div>
-      <aside class="parallaxGrid2">
-        <div class="bgImg1"></div>
-        <div class="bgImg2"></div>
-        <div class="bgImg3"></div>
-        <div class="bgImg4"></div>
-        <div class="bgImg5"></div>
-        <div class="bgImg6"></div>
-        <div class="bgImg7"></div>
-      </aside>
-    </section>-->
+    <hr>
     <!-- Teaching Experience -->
     <section class="resume__work scrSnpChild">
       <h2 class="res__sectionTitle">Teaching Experience</h2>
@@ -71,6 +57,7 @@ include ("../inc/header.php")
       </div>
     </section>
     <!-- Training (Edu) -->
+    <hr>
     <section class="resume__education scrSnpChild">
       <h2 class="res__sectionTitle">Training</h2>
       <div class="resume__Card">
@@ -134,7 +121,8 @@ include ("../inc/header.php")
       <!--<h5 class="resume__download">
         <a class="download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">Download Resume</a></h5>-->
     </section>
-    <!-- Talents (Skills) + Goals -->
+    <!-- Talents (Skills) + Download/Reference Option(s) -->
+    <hr>
     <section class="resume__skills scrSnpChild">
         <div>
           <h2 class="res__sectionTitle">Talents</h2>
@@ -192,9 +180,17 @@ include ("../inc/header.php")
           </div>
           </div>
         </div>
-        <div>
-          <h4><em>References available upon request.</em></h4>
-        </div>
+      <div>
+        <h3>
+          <a class="btn download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">
+          <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+          Download Resume
+        </a>
+        </h3>
+      </div>
+      <div>
+        <h4><em>References available upon request.</em></h4>
+      </div>
     </section>
   </article>
 <!-- ** // End of CONTENT ***** --> 
