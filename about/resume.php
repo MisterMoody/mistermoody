@@ -1,9 +1,11 @@
 <?php
 $pageTitle = "Official Homepage of Mister Moody";
-include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
+include ("../inc/header.php")
+//Contains 'metadata' and '<navigation> element'
 ?>
 <!-- ************************************************** -->
 <!-- ******************** <<HOMEPAGE>>  *************** -->
+
 
 <!-- ** // Start of CONTENT *** -->
   <article class="resumeGrid scrSnp">
@@ -134,7 +136,6 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
     </section>
     <!-- Talents (Skills) + Goals -->
     <section class="resume__skills scrSnpChild">
-      <div class="subGrid">
         <div>
           <h2 class="res__sectionTitle">Talents</h2>
           <p></p><!-- Need CSS for 'margin/padding SPACE' -->
@@ -191,13 +192,9 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
           </div>
           </div>
         </div>
-        <div><!-- Include class="intro" to modify Text-Size -->
-          <h2 class="res__sectionTitle">Goals</h2>
-          <p>
-            Pass the PRAXIS examination in order to enroll in a Master of Arts Teaching program. Review the Kentucky Department of Educations' Academic Standards for reading, writing and computer science. Dive into the new JCPS Digital Backpack for Teachers. Explore the possibility of establishing a summer program that encourages youth to explore career pathways related to aquaponics and web application development. Brush up on my Mandarin and Spanish. Code and craft more~
-          </p>
+        <div>
+          <h4><em>References available upon request.</em></h4>
         </div>
-      </div>
     </section>
   </article>
 <!-- ** // End of CONTENT ***** --> 
@@ -206,5 +203,5 @@ include ("inc/header.php"); //Contains 'metadata' and '<navigation> element'
 <!-- ************************************************** -->
 <!-- ************************************************** -->
 <?php
-include ("inc/footer.php"); //Contains '<footer>' element'
+include ("../inc/footer.php"); //Contains '<footer>' element'
 ?>
