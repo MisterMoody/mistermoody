@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Official Homepage of Mister Moody";
-include ("inc/header.php"); 
+include ("inc/homepage.php"); 
 //Contains 'metadata' and '<navigation> element'
 ?>
 <!-- ************************************************** -->
@@ -23,7 +23,11 @@ include ("inc/header.php");
 <article class="homepage">
   <section>
     <img class="mainImage" src="img/me.jpg" />
-    <h4>EDUpreneur</h4>
+    <h4>
+      <a href="about/">About</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp;
+      <a href="portfolio/">Portfolio</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp; 
+      <a href="contact">Contact</a>
+    </h4>
   </section>
   <!-- #Contact + Social Media -->
   <section>
