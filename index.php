@@ -14,7 +14,7 @@ include ("inc/header.php");
     <p>
       Course facilitation practices that I promote amalgamates 21<sup>st</sup> Century Learning and Literacy Skills that encourage youth to be diligent learners in the classroom and on the internet. Core compenticies include critical processing of information, communicative etiquette and mutually beneficial collaboration with peers.
     </p>
-    <h3><a href="about.php" class="btn">Learn More</a></h3>
+    <h3><a href="about/" class="btn">Learn More</a></h3>
     <p></p>
   </section>
   <!-- -->

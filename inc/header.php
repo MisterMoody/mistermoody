@@ -9,6 +9,9 @@
     <meta name="twitter:title" content="Mister_Moody">     <!-- Link to Twitter -->
     <meta name="description" content="Official Site for Mister Moody">
     <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
+    <!-- Absolute URL Reference [Req. to Add <links> to Subdirectory Files] -->
+    <!-- https://webmasters.stackexchange.com/questions/86450/htaccess-rewrite-url-leads-to-missing-css -->
+    <base href="http://localhost:8012/mistermoody/">
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->
@@ -24,8 +27,7 @@
     <header class="topnav" id="myTopnav">
       <a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a>
       <a href="about">About</a>
-      <a href="work">Portfolio</a>
-      <a href="curriculums">Curriculums</a>
+      <a href="portfolio">Portfolio</a>
       <a href="contact">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars responsive"></i></a>
     </header>
