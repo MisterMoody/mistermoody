@@ -9,8 +9,8 @@ include ("inc/header.php");
 <!-- //CONTENT-BEGINS..... -->
 <main>
   <section>
-    <h4>Share Your Thoughts!</h4>
-    <p>Are you an employer with a specific opportunity that you would like to share? A small business seeking an overhaul of your legacy website? An entrepreneur in need of a digital presence?  A student seeking mentorship? No matter your situation, give me the opportunity to help!</p>
+    <h4>Get In Touch!</h4>
+    <p>Are you an employer with a specific opportunity that you would like to share? A small business seeking an overhaul of your legacy website? An entrepreneur in need of a digital presence?  A student in urgent need of tutorial assistance? No matter your situation, give me the opportunity to help!</p>
     
     <?php
     if(isset($_POST["submit"])) {
