@@ -95,8 +95,9 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 /* Images ===================================== */
 .mainImage {
   max-width: 62vw;
-  height: 100%;
+  max-height: 100%;
 display: block;
+  margin-bottom: 2.4em;
 margin-left: auto;
 margin-right: auto;
     border-radius: 50%;
@@ -291,11 +292,12 @@ fa-home {
 
 /* ============================================ */
 /* 3. INDEX.php =============================== */
-.homepage {
-  max-height: 100%;
+.homepage { height: 80vh;}
+.homepage section {margin: 2.4em 0;}
+@media screen and (min-width: 800px){
+  .homepage { height: 100%;}
+  .homepage section {margin: 0;}
 }
-.homepage section {margin: 8%;}
-
 
 /* SOCIAL MEDIA =============================== */
 .download {grid-area: download;}
@@ -304,12 +306,13 @@ fa-home {
 .email {grid-area: email;}
 .phone {grid-area: phone;}
 ul.social {
-  /*font-size: 0.8em;*/
-  margin: 1em 0;
+  /*font-size: 0.8em;
+  margin: 0.2em 0;*/
+  margin-top: 2.4em;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 1.21rem;
+  /*grid-gap: 1.41rem;*/
   justify-content: space-around;
   grid-template-areas: 
     "github twitter email phone";
