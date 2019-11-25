@@ -8,20 +8,10 @@ include ("../inc/header.php")
 
 
 <!-- ** // Start of CONTENT *** -->
-<article>
-  <section class="intro">
-    <!-- Teacher Introduction -->
-    <h1>[ <b><em>RESUME</em></b> File ]</h1>
-    <p>
-      <img class="imgL" src="img/workVanilla.jpg">Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.
-    </p>
-    <p>
-      Course facilitation practices that I promote amalgamates 21<sup>st</sup> Century Learning and Literacy Skills that encourage youth to be diligent learners in the classroom and on the internet. Core compenticies include critical processing of information, communicative etiquette and mutually beneficial collaboration with peers.
-    </p>
-  </section>
-</article>
+
   <article class="resumeGrid scrSnp">
-    <hr>
+    <h2>Career General Overview</h2>
+    <p></p>
     <!-- Teaching Experience -->
     <section class="resume__work scrSnpChild">
       <h2 class="res__sectionTitle">Teaching Experience</h2>
@@ -36,7 +26,7 @@ include ("../inc/header.php")
           <ol>
             <li>Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques</li>
             <li>Complete professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
-            <li>Awarded 90 assignments at 37 schools; facilitated courses for more than 2,500 learners</li>
+            <li>Awarded 93 assignments at 40 schools; facilitated courses for more than 2,500 learners</li>
           </ol>
         </div>
       </div>
@@ -181,16 +171,23 @@ include ("../inc/header.php")
           </div>
         </div>
       <div>
-        <h3>
+        <!--<h3>
           <a class="btn download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">
           <i class="fa fa-download fa-2x" aria-hidden="true"></i>
           Download Resume
         </a>
-        </h3>
+        </h3>-->
       </div>
-      <div>
+      <!--<div>
         <h4><em>References available upon request.</em></h4>
-      </div>
+      </div>-->
+    </section>
+    <!-- -->
+    <hr>
+    <section>
+        <h5>
+          <a class="" href="contact" title="Email Me">Send me an Email. <br>I will send you my resume!</a>
+        </h5>
     </section>
   </article>
 <!-- ** // End of CONTENT ***** --> 

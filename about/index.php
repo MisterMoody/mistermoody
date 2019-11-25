@@ -7,28 +7,38 @@ include ("../inc/header.php")
 <!-- ******************** <<HOMEPAGE>>  *************** -->
 
 <!-- ** // Start of CONTENT *** -->
-  <article class="resumeGrid scrSnp">
-    <!--  Background -->
-    <section>
-      <h1>[ <b><em>ABOUT</em></b> Folder ]</h1>
-      <!-- <h3><a href="about/index" class="btn">Background</a></h3> -->
-      <h3><a href="about/bio" class="btn">Bio</a></h3>
-      <h3><a href="about/resume" class="btn">Resume</a></h3>
-      <h6><em>Nothing to see yet. Enjoy the Views!</em></h6>
-    </section>
-    <!-- -->
-    <section>
-      <aside class="parallaxGrid2">
-        <div class="bgImg1"></div>
-        <div class="bgImg2"></div>
-        <div class="bgImg3"></div>
-        <div class="bgImg4"></div>
-        <div class="bgImg5"></div>
-        <div class="bgImg6"></div>
-        <div class="bgImg7"></div>
-      </aside>
-    </section>
-  </article>
+  <section>
+    <aside class="aboutIntro">
+      <h2>Hi. I'm Mister Moody.</h2>
+      <img class="mainImage" src="img/workVanilla.jpg">
+      <h4>I build web applications and teach language art skills.</h4>
+      <!-- Update .aboutIntro{} IF Delete 'scroll' -->
+      <a class="scroll bounce" href="about/#read" title="Scroll Down">
+          <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></a>
+    </aside>
+    <article>
+      <p id="read">
+        As a TEFL instructor, I have accumulated a plethora of experiences delivering language acquisition services for learners studying at private and public institutions of education in China, Japan, South Korea and the United States. The opportunities that were afforded to me yielded a diverse experience by which I was enabled to work with individuals of varying age, fluency and cultural awareness. 
+      </p>
+      <p>
+        <img class="imgR" src="img/knowledge.jpg">Sogang University, Oxford Seminars, Joogdong High School, YBM International Academy, Tongxiang Modern Experimental School,  Jiaxing University and Jefferson County Public Schools (Kentucky) are a few agencies that enabled me to hone my craft in promoting 21st century digital learning and literacy skills.
+      </p>
+      <p>Check out my <a href="about/resume">resume</a> to learn more.</p>
+      </article>
+    <!--<article>
+      <img src="img/code.png">
+    </article>-->
+  </section>  
+  <!-- HIDDEN PARALAX BKGRD 
+  <section>
+    <aside class="parallaxGrid">
+      <div class="bgImg1"></div>
+      <div class="bgImg2"></div>
+      <div class="bgImg3"></div>
+      <div class="bgImg4"></div>
+      <div class="bgImg7"></div>
+    </aside>
+  </section> -->
 <!-- ** // End of CONTENT ***** --> 
 
 <!-- ************************************************** -->

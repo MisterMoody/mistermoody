@@ -8,15 +8,9 @@ include ("../inc/header.php");
   <!-- CURRICULUM "TOPICS"  -->
   <article class="">
     <section>
-      <h1>[ <b><em>PORTFOLIO</em></b> Folder ]</h1>
-      <h3><a href="portfolio/TEFL" class="btn">TEFL Teaching</a></h3>
-      <h3><a href="portfolio/webdesign" class="btn">Web Design</a></h3>
-      <p>
-        Proin sed libero enim sed faucibus turpis in eu mi. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Vulputate eu scelerisque felis imperdiet proin fermentum. Nec nam aliquam sem et tortor. Lacus viverra vitae congue eu consequat. Turpis egestas integer eget aliquet nibh praesent tristique. Feugiat sed lectus vestibulum mattis ullamcorper. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Facilisi cras fermentum odio eu feugiat pretium nibh. Pulvinar mattis nunc sed blandit libero. "C'est la vie~ 4 da win on dat reelnegusish!"
-      </p>
-      <p>
-        Proin sed libero enim sed faucibus turpis in eu mi. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Vulputate eu scelerisque felis imperdiet proin fermentum. Nec nam aliquam sem et tortor. Lacus viverra vitae congue eu consequat. Turpis egestas integer eget aliquet nibh praesent tristique. Feugiat sed lectus vestibulum mattis ullamcorper. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Facilisi cras fermentum odio eu feugiat pretium nibh. Pulvinar mattis nunc sed blandit libero. "C'est la vie~ 4 da win on dat reelnegusish!"
-      </p>
+      <h2>[ <b><em>PORTFOLIO</em></b> ]</h2>
+      <p>The contents of this portfolio are designed to provide tangible evidence of my knowledge and skillset related to developing web applications and providing TEFL instruction.</p>
+      <p>A work in progress for sure, anticipate a swell collection no later than January 2020!</p>
     </section>
   </article>
 
@@ -33,6 +27,7 @@ include ("../inc/header.php");
             <p>
               As an autodidact, I have studied five foreign languages in a formal academic setting and taught myself four programming languages through independent study. Moreover, I have provided more than 10,000 hours of language instruction to learners of English as a Second Language, facilitating courses to individuals of varying age and fluency levels. This course is intended for learners of all ages who strive to speak proper English, emphasizing vocabulary, encoding, coherence, non-verbal cues and connections, and gauging your audience.
             </p>
+            <p><a href="portfolio/TEFL" class="btn">TEFL Teaching</a></p>
           </div>
         </div>  
       </div>
@@ -40,7 +35,7 @@ include ("../inc/header.php");
     </section>
     <section class="cur__TopicStyle">
       <div class="code">
-        <h1>Web Design &amp; Development</h1>
+        <h1>Web Implementations</h1>
         <div id="overlayWebDev">
           <div id="textWebDev">
             <i class="fa fa-times" onclick="clickOffWebDev()"></i>
@@ -58,6 +53,7 @@ include ("../inc/header.php");
               <div>XAMPP</div>
               <div>Filezilla</div>
             </div>
+            <p><a href="portfolio/webdesign" class="btn">Web Design</a></p>
           </div>
         </div>  
       </div>
