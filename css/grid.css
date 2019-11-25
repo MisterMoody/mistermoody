@@ -48,6 +48,9 @@ body {
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;*/
 }
+@media all and (min-width: 888px){
+  main {display: none;}
+}
 /* Inner <body> Content Alignment
 section {padding: 0 1em;} */
 /**/
@@ -59,6 +62,8 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  /*  Text-Decoration Color + Underline Offset + TD Thickness*/
+  border-bottom: #ccc 0.088em dashed;
 }
 a:hover {opacity: 0.7;}
 ul {
@@ -97,9 +102,7 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   max-width: 62vw;
   max-height: 100%;
 display: block;
-  margin-bottom: 2.4em;
-margin-left: auto;
-margin-right: auto;
+margin: 2.4em auto;
     border-radius: 50%;
   filter: drop-shadow(4px 4px 4px #cccccc);
 }
@@ -113,7 +116,7 @@ margin-right: auto;
 .imgR {
   float: right;
   margin: 8px 0 0 4px;
-  width: 34%;
+  width: 40%;
   height: auto; 
   border-radius: 8px;
 } 
@@ -235,6 +238,7 @@ main {padding: 0 0.2em;}
   padding: 0 0.2em;
   text-decoration: none;
   font-size: 1.5em;
+  border-bottom: none;
 }
 .topnav a:first-child {float: right;}
 .topnav a:hover {
@@ -298,7 +302,6 @@ fa-home {
   .homepage { height: 100%;}
   .homepage section {margin: 0;}
 }
-
 /* SOCIAL MEDIA =============================== */
 .download {grid-area: download;}
 .github {grid-area: github;}
@@ -315,38 +318,49 @@ ul.social {
   /*grid-gap: 1.41rem;*/
   justify-content: space-around;
   grid-template-areas: 
-    "github twitter email phone";
+    "github twitter email phone"; 
 }
+.social a {border-bottom: none;}
 /* ============================================ */
 
 
 /* ============================================ */
 /* 4. ABOUT.php =============================== */
-/* Resume Grid ================================ */
+/*  about/  */
+.aboutIntro {
+  margin: 0.8em 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 4vh 52vh 20vh 12vh;
+}
+.scroll {
+  border-bottom: none;
+  text-align: center;
+}
+.bounce {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 .parallaxGrid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
   grid-template-rows: auto;
 }
-.bgImg {
-  height: 100vh;
-  width: 100%;
-  color: #222;
-  background: transparent url(../img/knowledge.jpg) no-repeat 53% fixed / cover;
-}
-.bgImg {
-  background: transparent url(../img/narita08.jpg) no-repeat 35px 0px fixed / cover;
-}
-.bgImg2, .bgImg3, .bgImg5, .bgImg6{
-  height: 100vh;
-  width: 100%;  
-}
-.bgImg1, .bgImg4, .bgImg7  {
-  height: 100vh;
+.bgImg1, .bgImg2, .bgImg3, .bgImg4, .bgImg7  {
+  height:100vh;
   width: 100%;  
 }
 .bgImg1 {
-  background: transparent url(../img/amsterdam.jpg) no-repeat 50% fixed / cover;
+  background: transparent url(../img/code.png) no-repeat 100% fixed / cover;
 }
 .bgImg2 {
   background: transparent url(../img/eat.jpg) no-repeat 100% fixed / cover;
@@ -357,43 +371,15 @@ ul.social {
 .bgImg4 {
   background: transparent url(../img/tailorVanilla.jpg) no-repeat 50%  fixed / cover;
 }
-.bgImg5 {
-  background: transparent url(../img/hk.jpg) no-repeat 50% fixed / cover;
-}
-.bgImg6 {
-  background: transparent url(../img/narita08.jpg) no-repeat 50%  fixed / cover;
-}
 .bgImg7 {
   background: transparent url(../img/knowledge.jpg) no-repeat 50% fixed / cover;
 }
 /**/
-.bgImg1 {grid-area: long1;}
-.bgImg2 {grid-area: short1;}
-.bgImg3 {grid-area: short2;}
-.bgImg4 {grid-area: long2;}
-.bgImg5 {grid-area: short3;}
-.bgImg6 {grid-area: short4;}
-.bgImg7 {grid-area: long3;}
-.parallaxGrid2 {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "long1 long1"
-    "short1 short2"
-    "long2 long2"
-    "short3 short4"
-    "long3 long3";
-}
 @media screen and (min-width: 800px) {
-  /* Opening Paragraph */
-  .intro {
-    /*padding: 0 16px;*/
-    font-size: calc(0.8em + 0.8vw);
-  }
-  .parallaxGrid, .parallaxGrid2 {display: none;}
+  .parallaxGrid {display: none;}
 }
 /**/
+/* Resume Grid ================================ */
 .resumeGrid {
   width: 100%;
   max-width: 99vw;
@@ -646,7 +632,7 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
 .cur__TopicGrid {
   display: grid; 
   height: 100%;
-  grid-template-rows: repeat(2, 19vh);
+  grid-template-rows: repeat(2, 24vh);
   grid-gap: 0.4em;
 }
 
@@ -689,7 +675,7 @@ span.variant {
   position: absolute;
   font-family: 'FontAwesome';
   top: 1.8em;
-  left: -.4em;
+  left: -2.4em;
   opacity: 0.8;
   
 }

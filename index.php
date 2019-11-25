@@ -8,18 +8,7 @@ include ("inc/homepage.php");
 
 <!-- ** // Start of CONTENT *** -->
 
-  <!--  ** MOVED to 'about/resume.php' ***  -->
-  <!--<section class="intro">
-    <p>
-      <img class="imgL" src="img/workVanilla.jpg">Non-traditional educator with a plethora of experiences delivering language acquisition services for private and public institutions of education in China, Japan, South Korea and the United States.
-    </p>
-    <p>
-      Course facilitation practices that I promote amalgamates 21<sup>st</sup> Century Learning and Literacy Skills that encourage youth to be diligent learners in the classroom and on the internet. Core compenticies include critical processing of information, communicative etiquette and mutually beneficial collaboration with peers.
-    </p>
-    <h3><a href="about/" class="btn">Learn More</a></h3>
-    <p></p>
-  </section>-->
-  <!--  **********************************  -->
+<!--  **********************************  -->
 <article class="homepage">
   <section>
     <img class="mainImage" src="img/me.jpg" />
