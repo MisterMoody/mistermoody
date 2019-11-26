@@ -9,15 +9,15 @@ include ("../inc/header.php");
   <article class="">
     <section>
       <h2>[ <b><em>PORTFOLIO</em></b> ]</h2>
-      <p>The contents of this portfolio are designed to provide tangible evidence of my knowledge and skillset related to developing web applications and providing TEFL instruction.</p>
-      <p>A work in progress for sure, anticipate a swell collection no later than January 2020!</p>
+      <p>The contents of this portfolio provides tangible evidence of my knowledge to develop web apps and facilitate TEFL instruction.</p>
+      <p>A work in progress, anticipate a swell collection no later than January 2020!</p>
     </section>
   </article>
 
   <article class="cur__TopicGrid">
     <section class="cur__TopicStyle">
       <div class="language">
-        <h3>ESL Teaching</h3>
+        <h3><i class="fa fa-language" aria-hidden="true"></i> ESL Teaching</h3>
         <div id="overlayLangArts">
           <div id="textLangArts">
             <i class="fa fa-times" onclick="clickOffLangArts()"></i>
@@ -27,7 +27,7 @@ include ("../inc/header.php");
             <p>
               As an autodidact, I have studied five foreign languages in a formal academic setting and taught myself four programming languages through independent study. Moreover, I have provided more than 10,000 hours of language instruction to learners of English as a Second Language, facilitating courses to individuals of varying age and fluency levels. This course is intended for learners of all ages who strive to speak proper English, emphasizing vocabulary, encoding, coherence, non-verbal cues and connections, and gauging your audience.
             </p>
-            <p><a href="portfolio/TEFL" class="btn">TEFL Teaching</a></p>
+            <!--<p><a href="portfolio/TEFL" class="btn">TEFL Teaching</a></p>-->
           </div>
         </div>  
       </div>
@@ -35,7 +35,7 @@ include ("../inc/header.php");
     </section>
     <section class="cur__TopicStyle">
       <div class="code">
-        <h3>Web Implementations</h3>
+        <h3><i class="fa fa-code" aria-hidden="true"></i> Web Implementations</h3>
         <div id="overlayWebDev">
           <div id="textWebDev">
             <i class="fa fa-times" onclick="clickOffWebDev()"></i>
@@ -53,7 +53,7 @@ include ("../inc/header.php");
               <div>XAMPP</div>
               <div>Filezilla</div>
             </div>-->
-            <p><a href="portfolio/webdesign" class="btn">Web Design</a></p>
+            <!--<p><a href="portfolio/webdesign" class="btn">Web Design</a></p>-->
           </div>
         </div>  
       </div>
