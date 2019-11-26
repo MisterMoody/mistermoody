@@ -10,8 +10,8 @@ include ("../inc/header.php")
 <!-- ** // Start of CONTENT *** -->
 
   <article class="resumeGrid scrSnp">
-    <h2>Career General Overview</h2>
-    <p></p>
+    <h2>[ <b><em>Resume</em></b> ]</h2>
+    <p>The contents below generally defines my teaching experience, training and skillset. If less than impressed with this presentation, and I suspect you are, just send me an <a class="" href="contact" title="Email Me">email</a> and I will send you a hard-copy of my resume!</p>
     <!-- Teaching Experience -->
     <section class="resume__work scrSnpChild">
       <h2 class="res__sectionTitle">Teaching Experience</h2>
@@ -182,14 +182,6 @@ include ("../inc/header.php")
         <h4><em>References available upon request.</em></h4>
       </div>-->
     </section>
-    <!-- -->
-    <hr>
-    <section>
-        <h5>
-          <a class="" href="contact" title="Email Me">Send me an Email. <br>I will send you my resume!</a>
-        </h5>
-    </section>
-  </article>
 <!-- ** // End of CONTENT ***** --> 
 
 
