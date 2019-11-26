@@ -49,14 +49,15 @@ body {
   background-blend-mode: multiply;*/
 }
 @media all and (min-width: 888px){
-  main {display: none;}
+  /* HIDE Site on 'Desktop' */
+  body {display: none;}
 }
 /* Inner <body> Content Alignment
 section {padding: 0 1em;} */
 /**/
 h1, h2, h3, h4, h5, h6 {text-align: center;}
 p { 
-  font-size: 0.88em;
+  font-size: inherit; /*0.88em;*/
   line-height: 1.5;
 }
 a {
@@ -117,7 +118,7 @@ margin: 2.4em auto;
   float: right;
   margin: 8px 0 0 4px;
   width: 40%;
-  height: auto; 
+  height: 40vh; 
   border-radius: 8px;
 } 
 @media all and (min-width: 800px) { 
@@ -628,18 +629,18 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
 
 /* ============================================ */
 /* 5. PORTFOLIO =============================== */
-/* [a]  Grid Layout*/
+/* [a] 'Grid' Styles */
 .cur__TopicGrid {
   display: grid; 
   height: 100%;
   grid-template-rows: repeat(2, 24vh);
   grid-gap: 0.4em;
 }
-
 .cur__TopicStyle {
   margin: 0;
   padding: 0;
   display: grid;
+  grid-gap: 0.4em;
   grid-auto-flow: row;
   align-content: center;
   justify-content: center;
@@ -647,14 +648,7 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
   box-shadow: 0px 0px 1px white;  
   color: white;
 }
-.cur__TopicStyle h1 {
-  font-size: 1.4em; 
-}
-span.variant {
-  font-variant: normal; 
-  font-weight: 100; 
-  font-size: 0.5em;
-}
+
 /* [b] 'Custom' :HOVER Styles */
 .cur__TopicStyle:hover {
   background-color: #dadada;
@@ -666,23 +660,22 @@ span.variant {
 }
 .cur__TopicStyle:active {background-color: #828181;}
 /* [c] 'Centered Background-Icons' + Icon Positioning + FA-Icon */
-.code, .language, .math, .id-card {
-  padding-left: 28px;
+.code, .language {
+  padding: 0;
   position: relative;
   margin-top: -1.4em;
 }
-.code:before, .language:before, .math:before, .id-card:before {
+.code:before, .language:before{
   position: absolute;
   font-family: 'FontAwesome';
-  top: 1.8em;
-  left: -2.4em;
+  top: -0.08em;
+  left: -1.4em;
   opacity: 0.8;
-  
 }
+.code:before, .language:before {font-size: 3.21em;}
 .code:before {content: "\f121";}
 .language:before {content: "\f1ab";}
-.math:before {content: "\f1ec";}
-.id-card:before {content: "\f2c2";}
+
 /* [d] 'Customs' MODAL Styles */
 .modalBTN {
   display: inline-block;
@@ -756,9 +749,6 @@ span.variant {
   .cur__TopicStyle {
     margin: 0;
     padding: 0;
-  }
-  .cur__TopicStyle h1 {
-    font-size: 0.32em; 
   }
   /**/
   .code, .language, .math, .id-card {font-size: 25vh; margin-top: 0;}

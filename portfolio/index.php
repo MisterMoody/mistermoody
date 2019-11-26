@@ -17,7 +17,7 @@ include ("../inc/header.php");
   <article class="cur__TopicGrid">
     <section class="cur__TopicStyle">
       <div class="language">
-        <h1>ESL Teaching</h1>
+        <h3>ESL Teaching</h3>
         <div id="overlayLangArts">
           <div id="textLangArts">
             <i class="fa fa-times" onclick="clickOffLangArts()"></i>
@@ -35,7 +35,7 @@ include ("../inc/header.php");
     </section>
     <section class="cur__TopicStyle">
       <div class="code">
-        <h1>Web Implementations</h1>
+        <h3>Web Implementations</h3>
         <div id="overlayWebDev">
           <div id="textWebDev">
             <i class="fa fa-times" onclick="clickOffWebDev()"></i>
@@ -45,14 +45,14 @@ include ("../inc/header.php");
             <p>
               Advancements in technology will only enhance means by which we are able communicate. For instance, brain controlled technology: the idea that a human can use their mind to control virtual and real objects, is no longer an idea –it’s an actual product. Thus, it is more important than ever for youth to learn best practices which produce positive and self-fulfilling experiences, enabling the learners to move forward with an understanding of the important role that technology plays in our everyday lives. 
             </p>
-            <div class="tags">
+            <!--<div class="tags">
               <div>HTML5</div>
               <div>CSS3</div>
               <div>JavaScript</div>
               <div>Github</div>
               <div>XAMPP</div>
               <div>Filezilla</div>
-            </div>
+            </div>-->
             <p><a href="portfolio/webdesign" class="btn">Web Design</a></p>
           </div>
         </div>  
