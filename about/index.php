@@ -9,19 +9,21 @@ include ("../inc/header.php")
 <!-- ** // Start of CONTENT *** -->
   <section>
     <aside class="aboutIntro">
-      <h2>Hi. I'm Mister Moody.</h2>
+      <h2>Hi. I'm Ray.</h2>
       <img class="mainImage" src="img/workVanilla.jpg">
       <h4>I build web applications and teach language art skills.</h4>
       <!-- Update .aboutIntro{} IF Delete 'scroll' -->
       <a class="scroll bounce" href="about/#read" title="Scroll Down">
-          <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></a>
+          <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a>
     </aside>
     <article>
       <p id="read">
-        <img class="imgR" src="img/knowledge.jpg">As a TEFL instructor, I have accumulated a plethora of experiences delivering language acquisition services for learners studying at private and public institutions of education in China, Japan, South Korea and the United States. 
-        <br>The opportunities that were afforded to me yielded a diverse experience by which I was enabled to work with individuals of varying age, fluency and cultural awareness. Sogang University, Oxford Seminars, Joogdong High School, YBM International Academy, Tongxiang Modern Experimental School,  Jiaxing University and Jefferson County Public Schools (Kentucky) are a few agencies that enabled me to hone my craft in promoting 21st century digital learning and literacy skills.
+        <img class="imgR" src="img/knowledge.jpg">As a TEFL instructor, I have delivered language acquisition services for learners of varying age and fluency studying at private and public institutions of education in China, Japan, South Korea and the United States. 
       </p>
-      <p>Check out my <a href="about/resume">resume</a> to learn more about my experience, skillset and projects that I am currently working on.</p>
+      <p>
+        Opportunities afforded to me yielded a diverse career whereby I immersed my life in foreign culture as an emigrant, which cultivated a work ethic that allowed me to relate to struggles encountered by the learners I served. Sogang University, Oxford Seminars, Joongdong High School, Tongxiang Modern Experimental School, Jiaxing University and Jefferson County Public Schools (Kentucky) are agencies that have enabled me to conduct my craft in promoting 21st century literacy skills.
+      </p>
+      <p>Check out my <a href="about/resume">resume</a> to learn more about my skillset.</p>
       </article>
     <!--<article>
       <img src="img/code.png">

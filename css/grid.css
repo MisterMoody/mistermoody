@@ -57,8 +57,8 @@ section {padding: 0 1em;} */
 /**/
 h1, h2, h3, h4, h5, h6 {text-align: center;}
 p { 
-  font-size: inherit; /*0.88em;*/
-  line-height: 1.5;
+  font-size: 0.95em; /*0.88em;*/
+  line-height: 1.4;
 }
 a {
   text-decoration: none;
@@ -116,9 +116,9 @@ margin: 2.4em auto;
 }  
 .imgR {
   float: right;
-  margin: 8px 0 0 4px;
-  width: 40%;
-  height: 40vh; 
+  margin: 8px 0 0 8px;
+  width: 34%;
+  height: 34vh; 
   border-radius: 8px;
 } 
 @media all and (min-width: 800px) { 
@@ -332,11 +332,14 @@ ul.social {
   margin: 0.8em 0;
   padding: 0;
   display: grid;
-  grid-template-rows: 4vh 52vh 20vh 12vh;
+  grid-template-rows: 8vh 44vh 22vh 8vh;
+  /*grid-gap: 0.4em;
+  height: 95vh;*/
 }
 .scroll {
   border-bottom: none;
   text-align: center;
+  opacity: 0.8; font-weight: 100;
 }
 .bounce {
   animation: bounce 2s infinite;
