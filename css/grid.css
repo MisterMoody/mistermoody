@@ -1,8 +1,7 @@
-/* UNDER CONSTRUCTION STYLES 
-section:nth-child(even){border: 1px solid #3F3F3F;}
-section:nth-child(odd){border: 1px solid #000;} */
-
-/* ============================================ */
+/*    UNDER CONSTRUCTION STYLES 
+* Ultimate Construction Grid Highlighter => * {outline: 1px solid red;}
+* section:nth-child(even){border: 1px solid #3F3F3F;}
+* section:nth-child(odd){border: 1px solid #000;}         */
 
 /* ============================================ */
 /* CASCADING STYLESHEET ======================= */
@@ -13,8 +12,7 @@ section:nth-child(odd){border: 1px solid #000;} */
       4.  ABOUT.php
       5.  CURRICULUMS.php                       */
 /* ============================================ */
-/*  Ultimate Construction Grid Highlighter
-* {outline: 1px solid red;}
+/* 
 */
 /* ============================================ */
 /* ========== UNIVERSAL BASE STYLES =========== */
@@ -48,16 +46,15 @@ body {
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;*/
 }
+/*    @media all and (min-width: 500px){body {margin: 0 1.21em;}}   */
 @media all and (min-width: 888px){
   /* HIDE Site on 'Desktop' */
   body {display: none;}
 }
-/* Inner <body> Content Alignment
-section {padding: 0 1em;} */
 /**/
 h1, h2, h3, h4, h5, h6 {text-align: center;}
 p { 
-  font-size: 0.95em; /*0.88em;*/
+  font-size: 0.94em; /*0.88em;*/
   line-height: 1.4;
 }
 a {
@@ -92,7 +89,6 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   position: relative;
   top: -0.7em;
 }
-/**/
 @media all and (min-width: 800px) {  
   body {margin: 0 5.3em;}
   p {font-size: 1.1em;}
@@ -109,9 +105,9 @@ margin: 2.4em auto;
 }
 .imgL {
   float: left;
-  margin: 8px 8px 0 0;
+  margin: 4px 16px 0 0;
   width: 35%;
-  height: auto; 
+  height: auto;
   border-radius: 8px;
 }  
 .imgR {
@@ -384,6 +380,10 @@ ul.social {
 }
 /**/
 /* Resume Grid ================================ */
+/* .scrSnp {scroll-snap-type: y proximity;}
+.scrSnpChild {scroll-snap-align: start; scroll-snap-stop: always;}*/
+.scrSnp {scroll-snap-type: y mandatory;}
+.scrSnpChild {scroll-snap-align: start;}
 .resumeGrid {
   width: 100%;
   max-width: 99vw;
@@ -393,23 +393,27 @@ ul.social {
 }
 /* Section 'Title' Styles */
 .res__sectionTitle {
-  margin: 4px 0 -8px 0;
+  margin: 4px 0 -4px 0;
   color: #838487;
   font-weight: 700;
   font-variant: small-caps;
 }
+h2.res__sectionTitle + div {margin-bottom: 0.4em;}
+.resume__sectionIntro {font-size: 0.92em;}
 /**/
-.resume__Card {margin: 0.8em 0;}
+.resume__Card {margin: 0.4em 0;}
 /**/
 .res__work__jobTitle {grid-area: jTitle;}
 .res__work__jobEmployer {grid-area: jEmployer;}
 .res__work__jobDate {grid-area: jDate;}
 .res__work__jobLocation {grid-area: jLocation;}
 .res__work__Employment {
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
+  padding: 0;
   border-bottom: 1px solid #434343;
   display: grid;
-  grid-template-columns: 60vw 1fr;
+  grid-template-rows: repeat(auto-fit, 1em);
+  grid-template-columns: 62vw 1fr;
   grid-template-areas: 
     "jTitle jDate"
     "jEmployer jLocation";
@@ -422,33 +426,24 @@ ul.social {
 .res__work__jobEmployer {font-style: italic;}
 .res__work__jobEmployer, 
 .res__work__jobLocation, 
-.res__work__jobDate {font-size: 0.84em;}
+.res__work__jobDate {font-size: 0.82em;}
 .res__work__Responsibilities {
-  margin: -0.8em 0 0 -2em;
+  margin-left: -0.4884em;
+  /*margin: -0.8em 0 0 -2em;
+  list-style-type: disc;*/
   font-size: 0.80em;
-  line-height: 1.5;
-}
-.res__work__Responsibilities ol li {
-  list-style-type: disc;
+  line-height: 1.4;
 }
 /* Resume 'Skills' */
-.resume__skills > table {
-  font-size: 0.80em;
-  width: 100%;
-  margin-bottom: 1em;
+.resume__skills  {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
 }
-.resume__skills > th {width: 100px;}
 /* Download Resume */
 .resume__download {
   text-align: center;
   font-variant: small-caps;
 }
-/**/
-/* .scrSnp {scroll-snap-type: y proximity;}
-.scrSnpChild {scroll-snap-align: start; scroll-snap-stop: always;}*/
-.scrSnp {scroll-snap-type: y mandatory;}
-.scrSnpChild {scroll-snap-align: start;}
-/**/
 @media only screen and (min-width: 500px) and (max-width: 799px){
   .res__work__Employment {
     display: grid;
@@ -490,70 +485,7 @@ ul.social {
   .res__work__Responsibilities {font-size: 1em;}
   .res__work__jobEmployer {font-size: 1.1em;}
 } 
-/* Teaching Exp via Details Component ========= */
-details {
-  margin: 0.4em auto;
-  padding: 0 0.08rem;
-  width: 100%;
-  max-width: 100%;
-  position: relative;
-  border: 1px solid #838487;
-  border-radius: 4px;
-  color: #000;
-  background-color: #E0E0E0;
-  transition: background-color .15s;
-}
-details::before {
-  width: 100%;
-  height: 100%;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: inherit;
-  opacity: .15;
-  box-shadow: 0 .25em .25em #838487;
-  transition: opacity .2s;
-  z-index: -1;
-}
-details[open] {
-  background-color: #fff;
-}
-details[open]::before {opacity: .6;}
-summary {
-  font-size: 0.88em;
-  padding: 0.4em 0;
-  display: block;
-  position: relative;
-  cursor: pointer;
-}
-summary::before, summary::after {
-  width: .75em;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  content: '';
-  background-color: #000;
-  text-align: right;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
-}
-summary::after {
-  -webkit-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
-}
-[open] summary::after {
-  -webkit-transform: translateY(-50%) rotate(180deg);
-          transform: translateY(-50%) rotate(180deg);
-}
-summary::-webkit-details-marker {display: none;}
-details > p {margin: 0.8em 0;}
-details > li:not(:last-child) {margin-bottom: 0.4em;}
-    /* Talents / Skills GRID */
+/* Talents + Skills GRID
 .subGrid {
   margin: 0 auto;
   padding: 0;
@@ -576,21 +508,23 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
   }
   .grid-row {grid-row-gap: 4px;}
 }
-  /* */
-  /* General Skill Bars */
+   */
+  /* TALENT Skill Bars */
 .SkillBar {
+  font-size: 0.94em;
   width: 100%;
-  height: 1em;
+  height: 1.2em;
   position: relative;
   background: #838487;
 }
   /* Ind. Skill-Bar Settings */
+#Skill-Pedagogical,
+#Skill-Copy, 
+#Skill-Interpersonal,
 #Skill-Design, 
 #Skill-Develop, 
-#Skill-Deploy, 
-#Skill-Copy, 
-#Skill-Interpersonal {
-  height: 1em; 
+#Skill-Deploy {
+  height: 1.2em; 
   position: absolute;  
   background-color: #434343;
 }
@@ -599,6 +533,7 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
   position: absolute;
   text-shadow: none;
   color: #fff;
+  font-weight: 700;
 }
 .PercentText {
   position: relative;
@@ -607,16 +542,17 @@ details > li:not(:last-child) {margin-bottom: 0.4em;}
   text-shadow: none;
   color: #fff;
 }
+.Skill-Area, .PercentText {margin-top: -0.1em;}
 .skillSpecs {
-  font-size: 0.88em;
-  margin: 0.2em 0 0.6em;
+  font-size: 0.82em;
+  margin: 0 0 0.6em;
 }
   /* Individual Skill Bar 'width' */
-#Skill-Design {width: 80%;}
-#Skill-Develop {width: 68%;}
-#Skill-Deploy {width: 82%;}
-#Skill-Copy {width: 91%;}
-#Skill-Interpersonal {width: 79%;}
+#Skill-Pedagogical {width: 82%;}
+#Skill-Copy {width: 85%;}
+#Skill-Interpersonal {width: 90%;}
+#Skill-Design {width: 77%;}
+#Skill-Deploy {width: 74%;}
 @media only screen and (min-width: 800px) {
   .PercentText {margin: 0 auto;}
   div.skillSpecs {font-size: 0.95em;}
