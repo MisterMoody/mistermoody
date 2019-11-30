@@ -8,18 +8,26 @@ include ("../inc/header.php")
 
 
 <!-- ** // Start of CONTENT *** -->
-
-  <article class="resumeGrid scrSnp">
-    <p>The content below is a general outline of my teaching experience, relevant training and overall skill set. If less than impressed, and I suspect you are, send me an <a href="contact" title="Email Me">email</a> and I will forward you a hard-copy of my resume!</p>
+  <section class="resumeGrid scrSnp">
     <!-- DOWNLOAD CV Button -->
     <!--<h3>
           <a class="btn download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">
           <i class="fa fa-download fa-2x" aria-hidden="true"></i>
           Download Resume
         </a>
-      </h3>-->
+      </h3>-->    
+    
+    <article>
+      <p>The content below is a general outline of my teaching experience, relevant training and overall skill set. If less than impressed, and I suspect you are, send me an <a href="contact" title="Email Me">email</a> and I will forward you a hard-copy of my resume!</p>
+    </article>
+    <!-- FULL-SCREEN PARALLAX <image> -->
+    <aside class="para25">
+      <div class="bgImg_face"></div>
+    </aside>
+    <!--<picture><img class="responsive" src="img/MMgrey.jpg"></picture>-->
+    
     <!-- Teaching Experience -->
-    <section class="resume__work scrSnpChild">
+    <article class="resume__work scrSnpChild">
       <h2 class="res__sectionTitle">Teaching Experience</h2>
       <div class="resume__Card">
         <div class="res__work__Employment">
@@ -51,9 +59,27 @@ include ("../inc/header.php")
           </ol>
         </div>
       </div>
-    </section>
+    </article>
+        
+    <aside class="imageGrid">
+      <!-- Row of 4 -->
+      <img src="img/3yrjpn.jpg">
+      <img src="img/cnID.jpg" style="height: 100%;">
+      <img src="img/cnvisa.jpg" style="height: 100%;">
+      <img src="img/jpnstamp.jpg" style="height: 100%;">
+      <!-- Dbl-Row of 2+1 -->
+      <img src="img/jdhs.jpg">
+      <img src="img/Fadeaway.jpg">
+      <!-- Row of 4 -->
+      <img src="img/cn09.jpg" style="height: 100%;">
+      <img src="img/jpnyahata.jpg" style="height: 100%;">
+      <img src="img/hk.jpg">
+      <img src="img/yungn.jpg" style="height: 100%;">
+      <img src="img/krwvisa.jpg" style="height: 100%;">
+    </aside>
+    
     <!-- Training (Edu) -->
-    <section class="resume__education scrSnpChild">
+    <article class="resume__education scrSnpChild">
       <h2 class="res__sectionTitle">Training</h2>
       <div class="resume__Card">
         <div class="res__work__Employment">
@@ -113,15 +139,28 @@ include ("../inc/header.php")
           </ol>
         </div>
       </div>
-    </section>
-    <!-- Talents (Skills) + Download/Reference Option(s) -->
-    <section class="resume__skills scrSnpChild">
-        <h2 class="res__sectionTitle">Talents</h2>
-        <div class="resume__sectionIntro">
-          <p><img class="imgL" src="img/tailorVanilla.jpg">Jack-of-all-trades, I am not, but my superpowers are helping me be the change that I want to see in the world!</p>
-        </div>
-        <div>
-          <div class="grid-row">
+    </article>
+    <!-- FULL-SCREEN PARALLAX <image> -->
+    <aside class="para100">
+      <div class="bgImg_code"></div>
+    </aside>
+    
+    <!-- Talents (Skills) I -->
+    <article class="resume__skills scrSnpChild">
+      <h2 class="res__sectionTitle">Talents</h2>
+      <div class="resume__sectionIntro">
+        <p><!--<img class="imgL" src="img/tailorVanilla.jpg">-->Jack-of-all-trades, I am not, but my superpowers are helping me be the change that I want to see in the world!</p>
+      </div>
+    </article>
+    <!-- FULL-SCREEN PARALLAX <image> -->
+    <aside class="para25">
+      <div class="bgImg_tailor"></div>
+    </aside>
+    <!-- Talents (Skills) II -->
+    <article class="resume__skills scrSnpChild">
+      <p></p><!-- REQUIRED for 'artificial margins' -->
+      <div>
+        <div class="grid-row">
               <div class="SkillBar">
                 <div id="Skill-Pedagogical">
                   <span class="Skill-Area">Pedagogical Methods</span> <span class="PercentText">82%</span>
@@ -131,7 +170,7 @@ include ("../inc/header.php")
                 <span>Adaptable | Collaborative | Tech-infused</span>
               </div>
             </div>
-          <div class="grid-row">
+        <div class="grid-row">
               <div class="SkillBar">
                 <div id="Skill-Copy">
                   <span class="Skill-Area">Writing &amp; Editing</span> <span class="PercentText">85%</span>
@@ -141,7 +180,7 @@ include ("../inc/header.php")
                 <span>Creative | AP &amp; MLA Style | Research | 55 wpm</span>
               </div>
             </div>
-          <div class="grid-row">
+        <div class="grid-row">
               <div class="SkillBar">
                 <div id="Skill-Interpersonal">
                   <span class="Skill-Area">Interpersonal</span> <span class="PercentText">90%</span>
@@ -151,7 +190,7 @@ include ("../inc/header.php")
                 <span>Articulate | Ethical | Problem Solver | Weird A.F.</span>
               </div>
             </div>
-          <div class="grid-row">
+        <div class="grid-row">
               <div class="SkillBar">
                 <div id="Skill-Design">
                   <span class="Skill-Area">Web Design</span> <span class="PercentText">77%</span>
@@ -161,7 +200,7 @@ include ("../inc/header.php")
                 <span>HTML5 | CSS3 | JavaScript | PHP7 | IA/UI/UX</span>
               </div>
             </div>
-          <div class="grid-row">
+        <div class="grid-row">
               <div class="SkillBar">
                 <div id="Skill-Deploy">
                   <span class="Skill-Area">Application Deployment</span> <span class="PercentText">74%</span>
@@ -171,10 +210,11 @@ include ("../inc/header.php")
                 <span>Server Configuration | Version Control | SFTP</span>
               </div>
             </div>
-        </div>
+      </div>
       <p>Talk is cheap: check out my <a href="portfolio/" title="Email Me">portfolio</a> to evaluate my work for yourself!</p>
-    </section>
-  </article>
+    </article>
+
+  </section>
 <!-- ** // End of CONTENT ***** --> 
 
 
