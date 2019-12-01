@@ -31,7 +31,8 @@ include ("../inc/header.php");
           </div>
         </div>  
       </div>
-      <button class="modalBTN" onclick="clickOnLangArts()">Learn More</button>
+      <button class="modalBTN">Coming Soon</button>
+      <!--<button class="modalBTN" onclick="clickOnLangArts()">Learn More</button>-->
     </section>
     <section class="cur__TopicStyle">
       <div class="code">
@@ -57,7 +58,8 @@ include ("../inc/header.php");
           </div>
         </div>  
       </div>
-      <button class="modalBTN" onclick="clickOnWebDev()">Learn More</button>
+      <button class="modalBTN">Coming Soon</button>
+      <!--<button class="modalBTN" onclick="clickOnWebDev()">Learn More</button>-->
     </section>
   </article>
     <!--<section>
