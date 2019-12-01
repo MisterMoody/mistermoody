@@ -482,15 +482,23 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
   display: grid;
   grid-template-rows: 25vh;
 }
-.bgImg_face {
-  height:25vh;
-  width: 100%; 
-  background: transparent url(../img/free.jpg) no-repeat 30% fixed / cover; 
-}
 .bgImg_tailor {
   height:25vh;
   width: 100%; 
   background: transparent url(../img/tailorVanilla.jpg) no-repeat 30% fixed / cover; 
+}
+/* 25vh Parallax */
+.bgImg_50 {
+  margin-top: -1em;
+  display: grid;
+  grid-template-rows: 44vh;
+}
+.bgImg_teach {
+  height:44vh;
+  width: 100%; 
+  background: transparent url(../img/gutES.jpg) no-repeat 100% fixed / cover; 
+  
+  background-position: left center;
 }
 /* 100vh Parallax */
 .para100 {

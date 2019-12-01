@@ -8,7 +8,20 @@ include ("../inc/header.php")
 
 
 <!-- ** // Start of CONTENT *** -->
-  <section class="resumeGrid scrSnp">
+  <section class="resumeGrid scrSnp">  
+    <!-- INTRODUCTION -->
+    <article>
+      <p>Of the various hats worn as a professional, none have been more rewarding than that of an educator!</p>
+    </article>
+    <!-- FULL-SCREEN PARALLAX <image> -->
+    <aside class="bgImg_50">
+      <div class="bgImg_teach"></div>
+    </aside>
+    <!--<picture><img class="responsive" src="img/MMgrey.jpg"></picture>-->
+    
+    <!-- Teaching Experience -->
+    <article class="resume__work scrSnpChild">
+      <p>The road that I have traveled is an unorthodox path that has prepared me for greater challenges. Please take a moment to explore some of the crossroads in my life.  If less than impressed, and I suspect you will be, send me an <a href="contact" title="Email Me">email</a> and I will forward you a detailed resume!</p>
     <!-- DOWNLOAD CV Button -->
     <!--<h3>
           <a class="btn download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">
@@ -16,18 +29,6 @@ include ("../inc/header.php")
           Download Resume
         </a>
       </h3>-->    
-    
-    <article>
-      <p>The content below is a general outline of my teaching experience, relevant training and overall skill set. If less than impressed, and I suspect you are, send me an <a href="contact" title="Email Me">email</a> and I will forward you a hard-copy of my resume!</p>
-    </article>
-    <!-- FULL-SCREEN PARALLAX <image> -->
-    <aside class="para25">
-      <div class="bgImg_face"></div>
-    </aside>
-    <!--<picture><img class="responsive" src="img/MMgrey.jpg"></picture>-->
-    
-    <!-- Teaching Experience -->
-    <article class="resume__work scrSnpChild">
       <h2 class="res__sectionTitle">Teaching Experience</h2>
       <div class="resume__Card">
         <div class="res__work__Employment">
@@ -53,14 +54,17 @@ include ("../inc/header.php")
         </div>
         <div class="res__work__Responsibilities">
           <ol class="fa-ul">
-            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Nearly 10&#44;000 hours facilitating courses to learners of varying fluency</li>
-            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Awarded Foreign Expert Certificate by Peoples Republic of China to assist foreign language departments; charged with assisting staff with curricula development and course facilitation</li>
-            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Cooperated with private agencies and recruiters to scout ESL teacher candidates </li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i>Facilitated nearly 10,000 hours of face-to-face ESL courses on subjects that included business, exam prep, grammar and reading comprehension</li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i>Developed and delivered lesson plans that incorporated appropriate teaching techniques</li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i>Employed a plethora of instructional strategies to meet different learner aptitudes</li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Administered language assessments for initial learner placement and to evaluate progress</li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Maintained accurate records of learner progress </li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Assisted supervisors with teacher recruitment and administrative duties as needed</li>
           </ol>
         </div>
       </div>
     </article>
-        
+    <!-- FULL-SCREEN <image> GALLERY -->    
     <aside class="imageGrid">
       <!-- Row of 4 -->
       <img src="img/3yrjpn.jpg">
@@ -91,7 +95,7 @@ include ("../inc/header.php")
         <div class="res__work__Responsibilities">
           <ol class="fa-ul">
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Utilized <a href="https://teamtreehouse.com/mistermoody" target="_blank">online</a> curriculum to learn full-stack development best practices</li>
-            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Attended weekly meetups to strategize for how to tackle curriculum code challenges</li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Met with mentor and cohort peers weekly to formulate strategies to complete  &#60;code&#62; challenges</li>
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Awarded Certificates of Completion for HTML, CSS, JavaScript, PHP and Android</li>
           </ol>
         </div>
