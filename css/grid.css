@@ -682,20 +682,24 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
 }
 /*Modal Reference Tags*/
 .tags{
-  margin: 0;
+  margin: 1em 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-  grid-template-rows: repeat(auto-fit, 30px;);
-  grid-gap: 0.2em;
+  grid-template-columns: repeat(auto-fill, minmax(62px, 1fr));
+  grid-template-rows: repeat(auto-fit, 16px;);
+  grid-gap: 0.4em;
   text-align: center;
 }
 .tags div { 
   font-size: 0.80em;
   margin: 0;
-  padding: 4px;
+  padding: 2px;
   border: 1px solid #fff;
   border-radius: 8px;
+  /*max-width: 100%;*/
+  box-shadow: 0px 2px 4px 0px  rgba(255,255,255,0.8);
 }
+/* Portal Link */
+.portalLink {text-align: center;}
 /* [+] Media Queries */
 @media only screen and (min-width: 800px) {
   .cur__TopicGrid {
