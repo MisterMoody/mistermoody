@@ -51,21 +51,8 @@ I would like to conclude by stating that I am confident in my ability to demonst
         Opportunities afforded to me yielded a diverse career whereby I immersed my life in foreign culture as an emigrant, which cultivated a work ethic that allowed me to relate to struggles encountered by the learners I served. Sogang University, Oxford Seminars, Joongdong High School, Tongxiang Modern Experimental School, Jiaxing University and Jefferson County Public Schools (Kentucky) are agencies that have enabled me to conduct my craft in promoting 21st century literacy skills.
       </p>
       <p>Check out my <a href="about/resume">resume</a> to learn more about my skillset.</p>
-      </article>
-    <!--<article>
-      <img src="img/code.png">
-    </article>-->
+    </article>
   </section>  
-  <!-- HIDDEN PARALAX BKGRD 
-  <section>
-    <aside class="parallaxGrid">
-      <div class="bgImg1"></div>
-      <div class="bgImg2"></div>
-      <div class="bgImg3"></div>
-      <div class="bgImg4"></div>
-      <div class="bgImg7"></div>
-    </aside>
-  </section> -->
 <!-- ** // End of CONTENT ***** --> 
 
 <!-- ************************************************** -->

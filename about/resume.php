@@ -14,10 +14,10 @@ include ("../inc/header.php")
       <p>Of the various hats worn as a professional, none have been more rewarding than that of an educator!</p>
     </article>
     <!-- FULL-SCREEN PARALLAX <image> -->
-    <aside class="bgImg_50">
+    <aside class="bgImg_44">
       <div class="bgImg_teach"></div>
     </aside>
-    <!--<picture><img class="responsive" src="img/MMgrey.jpg"></picture>-->
+    <!--<picture><img class="responsive" src="img/MMgrey.jpg" loading="lazy"></picture>-->
     
     <!-- Teaching Experience -->
     <article class="resume__work scrSnpChild">
@@ -67,19 +67,19 @@ include ("../inc/header.php")
     <!-- FULL-SCREEN <image> GALLERY -->    
     <aside class="imageGrid">
       <!-- Row of 4 -->
-      <img src="img/3yrjpn.jpg">
-      <img src="img/cnID.jpg" style="height: 100%;">
-      <img src="img/cnvisa.jpg" style="height: 100%;">
-      <img src="img/jpnstamp.jpg" style="height: 100%;">
+      <img src="img/3yrjpn.jpg" loading="lazy">
+      <img src="img/cnID.jpg" loading="lazy" style="height: 100%;">
+      <img src="img/cnvisa.jpg" loading="lazy" style="height: 100%;">
+      <img src="img/jpnstamp.jpg" loading="lazy" style="height: 100%;">
       <!-- Dbl-Row of 2+1 -->
-      <img src="img/jdhs.jpg">
-      <img src="img/Fadeaway.jpg">
+      <img src="img/jdhs.jpg" loading="lazy">
+      <img src="img/Fadeaway.jpg" loading="lazy">
       <!-- Row of 4 -->
-      <img src="img/cn09.jpg" style="height: 100%;">
-      <img src="img/jpnyahata.jpg" style="height: 100%;">
-      <img src="img/hk.jpg">
-      <img src="img/yungn.jpg" style="height: 100%;">
-      <img src="img/krwvisa.jpg" style="height: 100%;">
+      <img src="img/cn09.jpg" loading="lazy" style="height: 100%;">
+      <img src="img/jpnyahata.jpg" loading="lazy" style="height: 100%;">
+      <img src="img/hk.jpg" loading="lazy">
+      <img src="img/yungn.jpg" loading="lazy" style="height: 100%;">
+      <img src="img/krwvisa.jpg" loading="lazy" style="height: 100%;">
     </aside>
     
     <!-- Training (Edu) -->
@@ -145,7 +145,7 @@ include ("../inc/header.php")
       </div>
     </article>
     <!-- FULL-SCREEN PARALLAX <image> -->
-    <aside class="para100">
+    <aside class="bgImg_100">
       <div class="bgImg_code"></div>
     </aside>
     
@@ -157,7 +157,7 @@ include ("../inc/header.php")
       </div>
     </article>
     <!-- FULL-SCREEN PARALLAX <image> -->
-    <aside class="para25">
+    <aside class="bgImg_25">
       <div class="bgImg_tailor"></div>
     </aside>
     <!-- Talents (Skills) II -->
