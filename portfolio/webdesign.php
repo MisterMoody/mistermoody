@@ -10,9 +10,14 @@ include ("../inc/header.php");
 <main>
 <!-- //CONTENT-BEGINS..... -->
   <!-- HTML -->
-  <section style="height: 88vh;">
-    <h2>Web Design 101</h2>
-    <h6>Nothing to see here. Move along!</h6>
+  <section style="height: 84vh; text-align: center;">
+    <article>
+      <h2>Web Design 101</h2>
+      <h6>Nothing to see here. Move along!</h6>
+      <p>
+        All that I can offer are some <a href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">notes</a>.
+      </p>
+    </article>
     <!--<p>
       Hypertext Markup Language is the standard markup language for creating semantic layouts for websites. HTML uses elements (i.e. tags) that allows designers to organize the content of a web page. Although there are dozens of elements that can be used, all elements are either semantic or not. Semantic elements clearly defines content for the browser and is used to provide structure for the overall layout for the content of a web page. Such elements always begin on a new line on a web page, extending the full-width of the horizontal space of its parent element (i.e. container).
     </p>
