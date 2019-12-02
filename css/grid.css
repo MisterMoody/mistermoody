@@ -49,10 +49,13 @@ body {
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   background-blend-mode: multiply;*/
 }
+main {}                   /* 'PHP' Container */
 /* Page-Alignment => REQUIRED for Full-Width Images
    Images 'MUST' be placed 'Outside of Section or Article' */
-article {margin: 0 8px;}
-@media all and (min-width: 888px){
+section {}                /* 'HTML' Containers */
+aside {}                  /* Container for Full-Width <img>*/
+article {margin: 0 8px;}  /* Container for 'Content' */
+@media all and (min-width: 764px){
   body {display: none;}         /* HIDE Site on 'Desktop' */
   /*article {margin: 0 1.21em;}  Page-Alignment */
 }
@@ -475,10 +478,10 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
   font-variant: small-caps;
 }
 
-/* 'PARALLAX' IMAGES ('NOT' Working on Mobile) ======== 
-   Nexted with <aside> Elements */
+/* 'Custom PARALLAX' IMAGES ======== 
+   ('NOT' Working on Mobile) */
 /* 25vh Parallax */
-.para25 {
+.bgImg_25 {
   display: grid;
   grid-template-rows: 25vh;
 }
@@ -487,28 +490,27 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
   width: 100%; 
   background: transparent url(../img/tailorVanilla.jpg) no-repeat 30% fixed / cover; 
 }
-/* 25vh Parallax */
-.bgImg_50 {
+/* 44vh Parallax */
+.bgImg_44 {
   margin-top: -1em;
   display: grid;
   grid-template-rows: 44vh;
 }
 .bgImg_teach {
-  height:44vh;
+  height: 44vh;
   width: 100%; 
   background: transparent url(../img/gutES.jpg) no-repeat 100% fixed / cover; 
-  
   background-position: left center;
 }
 /* 100vh Parallax */
-.para100 {
+.bgImg_100 {
   display: grid;
   grid-template-rows: 100vh;
 }
 .bgImg_code {
   height:100vh;
   width: 100%;  
-  background: transparent url(../img/code.png) no-repeat 10% fixed / cover;
+  background: transparent url(../img/frontendCode.png) no-repeat 100% fixed / cover;
 }
 @media only screen and (min-width: 500px) and (max-width: 799px){
   .res__work__Employment {
@@ -688,6 +690,7 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
   text-align: center;
 }
 .tags div { 
+  font-size: 0.80em;
   margin: 0;
   padding: 4px;
   border: 1px solid #fff;
