@@ -23,7 +23,7 @@ include ("inc/header.php");
             $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
            if ( mail($recipient, $subject, $mailBody, "From: $sender<$senderEmail>")) {
-             header('Location: about.php');/*Redirect Page*/
+             header('Location: about/');/*Redirect Page*/
            }        
           }
     ?>
