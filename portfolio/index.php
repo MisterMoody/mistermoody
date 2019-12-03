@@ -9,8 +9,8 @@ include ("../inc/header.php");
   <article class="">
     <section>
       <h2>[ <b><em>PORTFOLIO</em></b> ]</h2>
-      <p>The contents of this portfolio provides tangible evidence of my knowledge to develop web apps and facilitate TEFL instruction.</p>
-      <p>A work in progress, anticipate a swell collection no later than January 2020!</p>
+      <p>This collection of items represents tangible evidence of my knowledge to develop web apps and facilitate TEFL instruction.</p>
+      <p style="text-align: center;"><i class="fa fa-warning" aria-hidden="true"></i> &nbsp; Return 1 January 2020 for rollout!</p>
     </section>
   </article>
 
@@ -22,11 +22,12 @@ include ("../inc/header.php");
           <div id="textLangArts">
             <i class="fa fa-times" onclick="clickOffLangArts()"></i>
             <p>
-              Communication, regardless of language, is simply the act of exchanging information, and one’s ability to articulate their ideas in a fashion that is readily comprehensible will prove them to be an effective communicator. Speaking patiently, avoiding the use of jargon and taking into account cultural differences are significant means by which a speaker can convey their message. Listeners can strive for full comprehension of a speaker’s message by listening intently, remaining open-minded about the subject and being courteous to the speaker by not interrupting them during oration. It comes as no surprise that when people ignore these best practices, issues in communication arise. "C'est la vie~ 4 da win on dat reelnegusish!"
-            </p>
-            <p>
-              As an autodidact, I have studied five foreign languages in a formal academic setting and taught myself four programming languages through independent study. Moreover, I have provided more than 10,000 hours of language instruction to learners of English as a Second Language, facilitating courses to individuals of varying age and fluency levels. This course is intended for learners of all ages who strive to speak proper English, emphasizing vocabulary, encoding, coherence, non-verbal cues and connections, and gauging your audience.
-            </p>
+              Communication, regardless of language, is simply the act of exchanging information, and one’s ability to articulate their ideas in a fashion that is readily comprehensible will prove them to be an effective communicator. Speaking patiently, avoiding the use of jargon and taking into account cultural differences are significant means by which a speaker can convey their message. Listeners can strive for full comprehension of a speaker’s message by listening intently, remaining open-minded about the subject and being courteous to the speaker by not interrupting them during oration. It comes as no surprise that when people ignore these best practices, issues in communication arise. 
+            </p><div class="tags">
+              <div>ESL</div>
+              <div>ESP</div>
+              <div>TEFL</div>
+            </div>
             <p class="portalLink">Enter <a href="portfolio/TEFL">TEFL Teacher</a> Portal</p>
           </div>
         </div>  
