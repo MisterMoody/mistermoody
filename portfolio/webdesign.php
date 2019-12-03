@@ -10,7 +10,7 @@ include ("../inc/header.php");
 <main>
 <!-- //CONTENT-BEGINS..... -->
   <!-- HTML -->
-  <section style="height: 84vh; text-align: center;">
+  <section style="height: 78vh; text-align: center;">
     <article>
       <h2>Web Design 101</h2>
       <h6>Nothing to see here. Move along!</h6>

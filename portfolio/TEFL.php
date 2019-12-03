@@ -7,7 +7,7 @@ include ("../inc/header.php");
 
 
 <!-- ** // Start of CONTENT *** -->
-  <section style="height: 88vh;">
+  <section style="height: 78vh;">
     <h2>TEFL Teaching</h2>
     <h6>Nothing to see here. Move along!</h6>
   </section>
