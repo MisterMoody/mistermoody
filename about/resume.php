@@ -17,7 +17,6 @@ include ("../inc/header.php")
     <aside class="bgImg_44">
       <div class="bgImg_teach"></div>
     </aside>
-    <!--<picture><img class="responsive" src="img/MMgrey.jpg" loading="lazy"></picture>-->
     
     <!-- Teaching Experience -->
     <article class="resume__work scrSnpChild">
@@ -144,11 +143,7 @@ include ("../inc/header.php")
         </div>
       </div>
     </article>
-    <!-- FULL-SCREEN PARALLAX <image> -->
-    <aside class="bgImg_100">
-      <div class="bgImg_code"></div>
-    </aside>
-    
+        
     <!-- Talents (Skills) I -->
     <article class="resume__skills scrSnpChild">
       <h2 class="res__sectionTitle">Talents</h2>

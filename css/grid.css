@@ -120,9 +120,9 @@ margin: 2.4em auto;
 }  
 .imgR {
   float: right;
-  margin: 8px 0 0 8px;
+  margin: 7px 0 0 7px;
   width: 34%;
-  height: 34vh; 
+  height: 32vh; 
   border-radius: 8px;
 } 
 .responsive {
@@ -492,9 +492,10 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
 }
 /* 44vh Parallax */
 .bgImg_44 {
-  margin-top: -1em;
+  margin-top: -0.2em;
+  margin-bottom: 0.2em;
   display: grid;
-  grid-template-rows: 44vh;
+  grid-template-rows: 48vh;
 }
 .bgImg_teach {
   height: 44vh;
@@ -502,7 +503,7 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
   background: transparent url(../img/gutES.jpg) no-repeat 100% fixed / cover; 
   background-position: left center;
 }
-/* 100vh Parallax */
+/* FULL-SCREEN100vh Parallax
 .bgImg_100 {
   display: grid;
   grid-template-rows: 100vh;
@@ -512,6 +513,7 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
   width: 100%;  
   background: transparent url(../img/frontendCode.png) no-repeat 100% fixed / cover;
 }
+<aside class="bgImg_100"><div class="bgImg_code"></div></aside>*/
 @media only screen and (min-width: 500px) and (max-width: 799px){
   .res__work__Employment {
     display: grid;
@@ -606,11 +608,13 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
 
 /* ============================================ */
 /* 5. PORTFOLIO =============================== */
+/* Temp WARNING Sign Style*/
+.fa-warning {color: #ffcc00;}
 /* [a] 'Grid' Styles */
 .cur__TopicGrid {
   display: grid; 
   height: 100%;
-  grid-template-rows: repeat(2, 20vh);
+  grid-template-rows: repeat(2, 26vh);
   grid-gap: 0.4em;
 }
 .cur__TopicStyle {
@@ -674,7 +678,7 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
   top: 50%;
   left: 50%;
   width: 90%;
-  font-size: 0.8em; 
+  font-size: inherit; 
   font-variant: normal;
   color: white;
   transform: translate(-50%,-50%);
@@ -684,18 +688,18 @@ h2.res__sectionTitle + div.resume__sectionIntro {margin-bottom: -0.8em;}
 .tags{
   margin: 1em 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(62px, 1fr));
-  grid-template-rows: repeat(auto-fit, 16px;);
+  grid-template-columns: repeat(auto-fit, minmax(3rem, min-content));
+  /*grid-template-columns: repeat(auto-fill, minmax(62px, 1fr));*/
+  grid-auto-rows: 24px;
+  grid-auto-flow: dense;
   grid-gap: 0.4em;
   text-align: center;
 }
 .tags div { 
   font-size: 0.80em;
-  margin: 0;
   padding: 2px;
   border: 1px solid #fff;
   border-radius: 8px;
-  /*max-width: 100%;*/
   box-shadow: 0px 2px 4px 0px  rgba(255,255,255,0.8);
 }
 /* Portal Link */

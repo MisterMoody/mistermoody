@@ -8,27 +8,27 @@ include ("../inc/header.php");
   <!-- CURRICULUM "TOPICS"  -->
   <article class="">
     <section>
-      <h2>[ <b><em>PORTFOLIO</em></b> ]</h2>
-      <p>This collection of items represents tangible evidence of my knowledge to develop web apps and facilitate TEFL instruction.</p>
-      <p style="text-align: center;"><i class="fa fa-warning" aria-hidden="true"></i> &nbsp; Return 1 January 2020 for rollout!</p>
+      <p>Assembled herein you will find a collection of items which demonstrate my knowledge to develop web apps and facilitate TEFL instruction.</p>
+      <p style="text-align: center;"><i class="fa fa-warning" aria-hidden="true"></i> &nbsp; In-Progress: Return 1 January 2020</p>
     </section>
   </article>
 
   <article class="cur__TopicGrid">
     <section class="cur__TopicStyle">
       <div class="language">
-        <h3><i class="fa fa-language" aria-hidden="true"></i> ESL Teaching</h3>
+        <h3><i class="fa fa-language" aria-hidden="true"></i> TEFL Teaching</h3>
         <div id="overlayLangArts">
           <div id="textLangArts">
             <i class="fa fa-times" onclick="clickOffLangArts()"></i>
             <p>
-              Communication, regardless of language, is simply the act of exchanging information, and one’s ability to articulate their ideas in a fashion that is readily comprehensible will prove them to be an effective communicator. Speaking patiently, avoiding the use of jargon and taking into account cultural differences are significant means by which a speaker can convey their message. Listeners can strive for full comprehension of a speaker’s message by listening intently, remaining open-minded about the subject and being courteous to the speaker by not interrupting them during oration. It comes as no surprise that when people ignore these best practices, issues in communication arise. 
+              Items in this collection include ESL and ESP lesson plans that will demonstrate my ability to write concise objectives that explains an activity, the level of interaction and timing for each activity. Instructional strategies will be outlined as well to help the reader visualize how to apply such techniques.
             </p><div class="tags">
               <div>ESL</div>
               <div>ESP</div>
               <div>TEFL</div>
+              <div>Toolkit</div>
             </div>
-            <p class="portalLink">Enter <a href="portfolio/TEFL">TEFL Teacher</a> Portal</p>
+            <p class="portalLink">Enter <a href="portfolio/TEFL">TEFL Teacher</a> Portal&nbsp; <i class="fa fa-angle-double-right"></i></p>
           </div>
         </div>  
       </div>
@@ -41,7 +41,7 @@ include ("../inc/header.php");
           <div id="textWebDev">
             <i class="fa fa-times" onclick="clickOffWebDev()"></i>
             <p>
-              <img class="imgR" src="img/frontendCode.png">Self-taught web implementation specialist able to proficiently design, develop and deploy a web application to specification. As a designer, I adapt low-fidelity prototype into viable websites using HTML, CSS, JavaScript, and digital media. As a developer, I utilize PHP object-oriented programming practices to integrate server-side functionality into an application. Vital components of this process entails auscultating user-experience; HTTP server installation; and using the SSH protocol in conjunction with version control to provide secure remote access to mitigate maintenance concerns. To this end, I am currently exploring opportunities by which I can leverage my skillset to pursue a position in the tech industry.
+             Items in this collection include articles written to demonstrate my proficiencies as a self-taught web implementation specialist able to design, develop and deploy a web application to specification. Articles will focus primarily on coding best practices, developer tools, version control and server management.
             </p>
             <div class="tags">
               <div>HTML5</div>
