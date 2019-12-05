@@ -7,17 +7,15 @@ include ("../../inc/header.php");
 
 
 <!-- //CONTENT-BEGINS..... -->
-<main>
-<!-- //CONTENT-BEGINS..... -->
   <!-- HTML -->
-  <section style="height: 78vh;">
+  <section>
     <article>
       <h2>Web Design 101</h2>
       <p>
-       Items in this collection include articles written to demonstrate my proficiencies as a self-taught web implementation specialist able to design, develop and deploy a web application to specification. Articles will focus primarily on coding best practices, developer tools, version control and server management.
+       Items in this collection include articles written to demonstrate my proficiencies as a self-taught web implementation specialist able to design, develop and deploy a web application to specification. Articles will focus primarily on coding best practices, developer tools and version control.
       </p>
-      <h3>Coming Soon</h3>
-      <!--<div class="tags">
+      <!-- Article 'Reference' Tags
+<div class="tags">
         <div>HTML5</div>
         <div>CSS3</div>
         <div>JavaScript</div>
@@ -27,6 +25,77 @@ include ("../../inc/header.php");
       <p>
         All that I can offer are some <a href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">notes</a>.
       </p>-->
+    </article>
+    <!-- -->
+    <article class="article__Container">
+      <div class="article__Row">
+        <!-- Article I: Building your Dev Environ-->
+        <div class="article__Item">
+          <h5 class="article__Item__Headline">Building your Dev Environ</h5>
+          <figure>
+            <img class="responsive article__Item__Img" src="img/frontendCode.png">
+            <figcaption>HTML + CSS Code</figcaption>
+          </figure>
+          <aside>
+            <div class="article__Date_Tags">
+              <div>&nbsp;Published: January 2020</div>
+              <div class="article__Tags">Tags:
+                <div>IDE</div>
+                <div>HTTP</div>
+                <div>VCS</div>
+              </div>
+            </div>
+          <p class="article__Item__Text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Phasellus tristique tellus molestie hendrerit maximus. Donec augue purus, tempor vel sem vel, malesuada pharetra eros. In felis metus, pulvinar id lorem vel, porttitor laoreet ipsum. Donec ac felis dui. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+          </aside>
+        </div>
+        <!-- Article [Template] -->
+        <!-- 
+        <div class="article__Item">
+          <h5 class="article__Item__Headline">Article Headline II</h5>
+          <figure>
+            <img class="responsive article__Item__Img" src="img/frontendCode.png">
+            <figcaption>HTML + CSS Code</figcaption>
+          </figure>
+          <aside>
+            <div class="article__Date_Tags">
+              <div>&nbsp;Published: January 2020</div>
+              <div class="article__Tags">Tags:
+                <div>IDE</div>
+                <div>HTTP</div>
+                <div>VCS</div>
+              </div>
+            </div>
+          <p class="article__Item__Text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Phasellus tristique tellus molestie hendrerit maximus. Donec augue purus, tempor vel sem vel, malesuada pharetra eros. Sed non tincidunt augue, et aliquam enim.&nbsp; 
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+          </aside>
+        </div>
+        <div class="article__Item">
+          <h5 class="article__Item__Headline">Article Headline III</h5>
+          <figure>
+            <img class="responsive article__Item__Img" src="img/frontendCode.png">
+            <figcaption>HTML + CSS Code</figcaption>
+          </figure>
+          <aside>
+            <div class="article__Date_Tags">
+              <div>&nbsp;Published: January 2020</div>
+              <div class="article__Tags">Tags:
+                <div>IDE</div>
+                <div>HTTP</div>
+                <div>VCS</div>
+              </div>
+            </div>
+          <p class="article__Item__Text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Phasellus tristique tellus molestie hendrerit maximus. Donec augue purus, tempor vel sem vel, malesuada pharetra eros. Sed non tincidunt augue, et aliquam enim.&nbsp; 
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+          </aside>
+        </div>-->
+      </div>
     </article>
     <!--<p>
       Hypertext Markup Language is the standard markup language for creating semantic layouts for websites. HTML uses elements (i.e. tags) that allows designers to organize the content of a web page. Although there are dozens of elements that can be used, all elements are either semantic or not. Semantic elements clearly defines content for the browser and is used to provide structure for the overall layout for the content of a web page. Such elements always begin on a new line on a web page, extending the full-width of the horizontal space of its parent element (i.e. container).
@@ -278,8 +347,6 @@ include ("../../inc/header.php");
       </p>
     </div>-->
   </section> 
-<!-- .....CONTENT-ENDS// --> 
-</main>
 <!-- .....CONTENT-ENDS// --> 
 
 <!-- ************************************************** -->

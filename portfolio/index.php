@@ -18,13 +18,13 @@ include ("../inc/header.php");
       <div class="language">
         <h3><i class="fa fa-language" aria-hidden="true"></i> Language Arts</h3> 
       </div>
-      <p>Enter <a href="portfolio/languagearts">Language Arts</a> Portal&nbsp; <i class="fa fa-angle-double-right"></i></p>
+      <p><a href="portfolio/languagearts">Enter Portal</a> &nbsp; <i class="fa fa-angle-double-right"></i></p>
     </section>
     <section class="cur__TopicStyle">
       <div class="code">
         <h3><i class="fa fa-code" aria-hidden="true"></i> Web Implementations</h3> 
       </div>
-      <p style="text-align: center;">Enter <a href="portfolio/webdesign">Web Design</a> Portal&nbsp; <i class="fa fa-angle-double-right"></i></p>
+      <p><a href="portfolio/webdesign">Enter Portal</a> &nbsp; <i class="fa fa-angle-double-right"></i></p>
     </section>
   </article>
 
