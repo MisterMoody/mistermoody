@@ -16,45 +16,15 @@ include ("../inc/header.php");
   <article class="cur__TopicGrid">
     <section class="cur__TopicStyle">
       <div class="language">
-        <h3><i class="fa fa-language" aria-hidden="true"></i> TEFL Teaching</h3>
-        <div id="overlayLangArts">
-          <div id="textLangArts">
-            <i class="fa fa-times" onclick="clickOffLangArts()"></i>
-            <p>
-              Items in this collection include ESL and ESP lesson plans that will demonstrate my ability to write concise objectives that explains an activity, the level of interaction and timing for each activity. Instructional strategies will be outlined as well to help the reader visualize how to apply such techniques.
-            </p><div class="tags">
-              <div>ESL</div>
-              <div>ESP</div>
-              <div>TEFL</div>
-              <div>Toolkit</div>
-            </div>
-            <p class="portalLink">Enter <a href="portfolio/TEFL">TEFL Teacher</a> Portal&nbsp; <i class="fa fa-angle-double-right"></i></p>
-          </div>
-        </div>  
+        <h3><i class="fa fa-language" aria-hidden="true"></i> Language Arts</h3> 
       </div>
-      <button class="modalBTN" onclick="clickOnLangArts()">Learn More</button>
+      <p>Enter <a href="portfolio/languagearts">Language Arts</a> Portal&nbsp; <i class="fa fa-angle-double-right"></i></p>
     </section>
     <section class="cur__TopicStyle">
       <div class="code">
-        <h3><i class="fa fa-code" aria-hidden="true"></i> Web Implementations</h3>
-        <div id="overlayWebDev">
-          <div id="textWebDev">
-            <i class="fa fa-times" onclick="clickOffWebDev()"></i>
-            <p>
-             Items in this collection include articles written to demonstrate my proficiencies as a self-taught web implementation specialist able to design, develop and deploy a web application to specification. Articles will focus primarily on coding best practices, developer tools, version control and server management.
-            </p>
-            <div class="tags">
-              <div>HTML5</div>
-              <div>CSS3</div>
-              <div>JavaScript</div>
-              <div>PHP</div>
-              <div>Github</div>
-            </div>
-            <p class="portalLink">Enter <a href="portfolio/webdesign">Web Dev</a> Portal&nbsp; <i class="fa fa-angle-double-right"></i></p>
-          </div>
-        </div>  
+        <h3><i class="fa fa-code" aria-hidden="true"></i> Web Implementations</h3> 
       </div>
-      <button class="modalBTN" onclick="clickOnWebDev()">Learn More</button>
+      <p style="text-align: center;">Enter <a href="portfolio/webdesign">Web Design</a> Portal&nbsp; <i class="fa fa-angle-double-right"></i></p>
     </section>
   </article>
 

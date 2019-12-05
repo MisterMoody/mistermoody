@@ -19,7 +19,7 @@ include ("../inc/header.php")
     </aside>
     
     <!-- Teaching Experience -->
-    <article class="resume__work scrSnpChild">
+    <article class="scrSnpChild">
       <p>The road that I have traveled has been an unorthodox path. Please take a moment to explore some of the crossroads in my life.  If less than impressed, and I suspect you will be, send me an <a href="contact" title="Email Me">email</a> and I will forward you a detailed resume!</p>
     <!-- DOWNLOAD CV Button -->
     <!--<h3>
@@ -82,7 +82,7 @@ include ("../inc/header.php")
     </aside>
     
     <!-- Training (Edu) -->
-    <article class="resume__education scrSnpChild">
+    <article class="scrSnpChild">
       <h2 class="res__sectionTitle">Training</h2>
       <div class="resume__Card">
         <div class="res__work__Employment">
@@ -148,7 +148,7 @@ include ("../inc/header.php")
     <article class="resume__skills scrSnpChild">
       <h2 class="res__sectionTitle">Talents</h2>
       <div class="resume__sectionIntro">
-        <p><!--<img class="imgL" src="img/tailorVanilla.jpg">-->Jack-of-all-trades, I am not, but my superpowers are helping me be the change that I want to see in the world!</p>
+        <p><!--<img class="imgL" src="img/tailorVanilla.jpg">-->Jack-of-all-trades, I am not, but my unique skill set helps be be the change that I want to see in the world!</p>
       </div>
     </article>
     <!-- FULL-SCREEN PARALLAX <image> -->

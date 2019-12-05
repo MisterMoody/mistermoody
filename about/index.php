@@ -18,12 +18,12 @@ include ("../inc/header.php")
     </aside>
     <article>
       <p id="read">
-        <img class="imgR" src="img/knowledge.jpg">As a TEFL instructor, I have delivered language acquisition services for learners of varying age and fluency studying at private and public institutions of education in China, Japan, South Korea and the United States. 
+        My career as an educator began when I was an undergraduate employed as a supervisor for an at-risk youth community center. Shortly after graduating university, I embarked on a sojourn abroad to teach English as a second language. 
       </p>
       <p>
-        Opportunities afforded to me yielded a diverse career whereby I immersed my life in foreign culture as an emigrant, which cultivated a work ethic that allowed me to relate to struggles encountered by the learners I served. Sogang University, Oxford Seminars, Joongdong High School, Tongxiang Modern Experimental School, Jiaxing University and Jefferson County Public Schools (Kentucky) are agencies that have enabled me to conduct my craft in promoting 21st century literacy skills.
+       What was supposed to have been a gap year turned into a life altering experience in which my life was immersed in foreign culture.  Being a pseudo-polyglot allowed me to empathize with language acquisition struggles learners encounter and I believe this helped me thrive in assisting learners from China, Japan, South Korea and the United States improve their language fluency. Some of the agencies that have enabled me to practice my craft include Sogang Uni., Oxford Seminars, Joongdong High School, YBM International Academy, Tongxiang Middle School, Jiaxing College and Jefferson County Public Schools (Kentucky). 
       </p>
-      <p>Check out my <a href="about/resume">resume</a> to learn more about my skillset.</p>
+      <p>Check out my <a href="about/resume">resume</a> to learn more about my skill set.</p>
     </article>
   </section>  
 <!-- ** // End of CONTENT ***** --> 
