@@ -10,10 +10,19 @@ include ("../inc/header.php");
 <main>
 <!-- //CONTENT-BEGINS..... -->
   <!-- HTML -->
-  <section style="height: 78vh; text-align: center;">
+  <section style="height: 78vh;">
     <article>
       <h2>Web Design 101</h2>
-      <h6>Nothing to see here. Move along!</h6>
+      <p>
+       Items in this collection include articles written to demonstrate my proficiencies as a self-taught web implementation specialist able to design, develop and deploy a web application to specification. Articles will focus primarily on coding best practices, developer tools, version control and server management.
+      </p>
+      <div class="tags">
+        <div>HTML5</div>
+        <div>CSS3</div>
+        <div>JavaScript</div>
+        <div>PHP</div>
+        <div>Github</div>
+      </div>
       <p>
         All that I can offer are some <a href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">notes</a>.
       </p>
