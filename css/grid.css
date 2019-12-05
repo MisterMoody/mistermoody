@@ -56,7 +56,8 @@ section {}                /* 'HTML' Containers */
 aside {}                  /* Container for Full-Width <img>*/
 article {margin: 0 8px;}  /* Container for 'Content' */
 @media all and (min-width: 764px){
-  body {display: none;}         /* HIDE Site on 'Desktop' */
+  body {margin: 8em;}
+   /* body {display: none;}        HIDE Site on 'Desktop' */
   /*article {margin: 0 1.21em;}  Page-Alignment */
 }
 /**/
@@ -161,7 +162,7 @@ margin: 2.4em auto;
   height: auto;
 }
 figure {
-  margin: 0 0.38em; 
+  margin: 0; 
   padding: 0;
 }
 figcaption {
@@ -543,17 +544,6 @@ h2.res__sectionTitle + div.resume__sectionIntro {
   background: transparent url(../img/gutES.jpg) no-repeat 100% fixed / cover; 
   background-position: left center;
 }
-/* FULL-SCREEN100vh Parallax
-.bgImg_100 {
-  display: grid;
-  grid-template-rows: 100vh;
-}
-.bgImg_code {
-  height:100vh;
-  width: 100%;  
-  background: transparent url(../img/frontendCode.png) no-repeat 100% fixed / cover;
-}
-<aside class="bgImg_100"><div class="bgImg_code"></div></aside>*/
 @media only screen and (min-width: 500px) and (max-width: 799px){
   .res__work__Employment {
     display: grid;
@@ -670,8 +660,73 @@ h2.res__sectionTitle + div.resume__sectionIntro {
   color: white;
 }
 .cur__TopicStyle h3 i {opacity: 0.4;}
-/*Modal Reference Tags*/
-.tags{
+.cur__TopicStyle p {text-align: center;}
+/* [+] Media Queries */
+@media only screen and (min-width: 800px) {
+  .cur__TopicGrid {
+    margin: 0; padding: 0;
+    display: grid; 
+    max-height: 90vh;
+    grid-template-columns: repeat(2, 50%);
+    /*grid-auto-rows: 44vh; */
+    grid-template-rows: repeat(auto-fit, 40vh);
+    grid-gap: 0.4em;
+  }
+  .cur__TopicStyle {
+    margin: 0;
+    padding: 0;
+  }
+}
+/*
+*/
+/* Portfolio 'Article' Styles 
+  [Container + Headline + Image + Date/Reference Tags + Text */
+.article__Row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.article__Item {
+  margin: 2px 0;
+  border: 1px solid #ccc;
+  height: auto;
+  width: 100%;
+  flex-basis: 100%;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.article__Item__Headline {}
+.article__Item__Text {font-size: 0.9em;}
+div.article__Date_Tags {
+  font-size: 0.68em;
+}
+.article__Date_Tags {
+  margin: 0.8em 0 1.2em 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, minmax(44px, 1fr));
+  justify-content: space-between;
+}
+/* Article 'Headline' TAGS */
+.article__Tags {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, auto));
+  grid-auto-rows: 16px;
+  grid-auto-flow: dense;
+  grid-gap: 0.4em;
+  text-align: center;
+}
+.article__Tags div {
+  font-size: 0.8em;
+  padding: 1px 0;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px  rgba(255,255,255,0.8);
+}
+/* Article 'Reference' TAGS */
+.tags {
   margin: 1em 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(3rem, min-content));
@@ -688,20 +743,29 @@ h2.res__sectionTitle + div.resume__sectionIntro {
   border-radius: 8px;
   box-shadow: 0px 2px 4px 0px  rgba(255,255,255,0.8);
 }
-/* [+] Media Queries */
 @media only screen and (min-width: 800px) {
-  .cur__TopicGrid {
-    margin: 0; padding: 0;
-    display: grid; 
-    max-height: 90vh;
-    grid-template-columns: repeat(2, 50%);
-    /*grid-auto-rows: 44vh; */
-    grid-template-rows: repeat(auto-fit, 40vh);
-    grid-gap: 0.4em;
+  .article__Container{
+    margin: 0 auto;
   }
-  .cur__TopicStyle {
-    margin: 0;
-    padding: 0;
+  .article__Row {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .article__Item {
+    margin: 4px;
+    border: 1px solid green;
+    height: 100%;
+    width: 242px;
+    flex-basis: 32.333%;
+    position: relative;
+    padding: 0.4em;
+    box-sizing: border-box;
+  }
+  .article__Date_Tags {
+    display: grid;
+    grid-template-rows: repeat(2, 16px);
+    grid-template-columns: auto;
+    grid-gap: 4px;
   }
 }
 /* ============================================ */
@@ -802,20 +866,27 @@ h2.res__sectionTitle + div.resume__sectionIntro {
 
 /* ============================================ */
 /* #. CONTACT FORM ============================ */
+.contactGrid {
+  margin-top: -1em;
+  margin-bottom: auto;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(28px, 44px)) 8rem 4.2rem;
+  grid-gap: 4px;
+}
 .contactForm {
-  margin: 20px 0;
+  margin: 0;
   color: #000;
   font-weight: bold; 
   height: 100%;
 }
 input, textarea{
   width: 99%;
-  margin: 1px 0;
+  margin: 0;
   font-size: 1em;
 	border-radius: 4px;
 	background-color: rgba(255,255,255,.6);
 	border: solid 1px #000;
-  padding: 1vmax 0;
+  padding: 1vmax 8px;
 }
 #submit_button {
 	border-radius: 4px;
@@ -825,9 +896,9 @@ input, textarea{
   font-size: 1em;
   transition-duration: .5s;
   cursor: pointer;
-  padding: 2vmax;
+  padding: 0.4vmax;
   width: 40%; 
-  margin: 16px 30%;
+  margin: 24px 30%;
 }
 #submit_button:hover {
   background-color: #1a1a1a;
