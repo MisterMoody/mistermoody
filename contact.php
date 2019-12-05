@@ -7,10 +7,10 @@ include ("inc/header.php");
 
 
 <!-- //CONTENT-BEGINS..... -->
-<main>
-  <section>
+<section>
+  <article>
     <h4>Get In Touch!</h4>
-    <p>Are you an employer with a specific opportunity that you would like to share? A small business seeking an overhaul of your legacy website? An entrepreneur in need of a digital presence?  A student in urgent need of tutorial assistance? No matter your situation, give me the opportunity to help!</p>
+    <p>Thank you for taking the time to review my portfolio. If you have a question about anything that you read or are interested in collaborating on a project, let me know. </p>
     
     <?php
     if(isset($_POST["submit"])) {
@@ -29,11 +29,11 @@ include ("inc/header.php");
     ?>
     
     <form class="contactForm" method="post" action="contact.php" name="contactForm">
-      <div>
+      <div class="contactGrid">
         
         <div>
           <label class="lineInput" for="name"></label>
-          <input type="text" id="name" name="sender" placeholder=" Name" title="Please provide your name." size="33vw" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" aria-describedby="prospective" class="form-control">
+          <input type="text" id="name" name="sender" placeholder="Name" title="Please provide your name." size="33vw" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" aria-describedby="prospective" class="form-control">
         </div>
         
         <div>
@@ -52,9 +52,9 @@ include ("inc/header.php");
         
       </div>
     </form>
-  </section>
+  </article>
   
-</main>
+</section>
 <!-- .....CONTENT-ENDS// --> 
 
 
