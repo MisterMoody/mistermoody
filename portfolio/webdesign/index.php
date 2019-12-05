@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Web Design and Development";
-include ("../inc/header.php");
+include ("../../inc/header.php");
 ?>
 <!-- ************************************************** -->
 <!-- ************ <<WEB DESIGN KNOWLEDGE>> ************ -->
@@ -16,7 +16,8 @@ include ("../inc/header.php");
       <p>
        Items in this collection include articles written to demonstrate my proficiencies as a self-taught web implementation specialist able to design, develop and deploy a web application to specification. Articles will focus primarily on coding best practices, developer tools, version control and server management.
       </p>
-      <div class="tags">
+      <h3>Coming Soon</h3>
+      <!--<div class="tags">
         <div>HTML5</div>
         <div>CSS3</div>
         <div>JavaScript</div>
@@ -25,7 +26,7 @@ include ("../inc/header.php");
       </div>
       <p>
         All that I can offer are some <a href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">notes</a>.
-      </p>
+      </p>-->
     </article>
     <!--<p>
       Hypertext Markup Language is the standard markup language for creating semantic layouts for websites. HTML uses elements (i.e. tags) that allows designers to organize the content of a web page. Although there are dozens of elements that can be used, all elements are either semantic or not. Semantic elements clearly defines content for the browser and is used to provide structure for the overall layout for the content of a web page. Such elements always begin on a new line on a web page, extending the full-width of the horizontal space of its parent element (i.e. container).
@@ -284,5 +285,5 @@ include ("../inc/header.php");
 <!-- ************************************************** -->
 <!-- ************************************************** -->
 <?php
-include ("../inc/footer.php"); 
+include ("../../inc/footer.php"); 
 ?>
