@@ -22,6 +22,8 @@
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway">
     <!-- Custom CSS Styles -->   
     <link rel="stylesheet" href="css/grid.css">
+    <!-- Flickity Carousel CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
   <body>
     <!-- ********************************* -->    
