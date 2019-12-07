@@ -10,9 +10,9 @@ include ("../../inc/header.php");
   <!-- HTML -->
   <section>
     <article>
-      <h2>Web Design 101</h2>
+      <h3>Web Implementations</h3>
       <p>
-       Items in this collection include articles written to demonstrate my proficiencies as a self-taught web implementation specialist able to design, develop and deploy a web application to specification. Articles will focus primarily on coding best practices, developer tools and version control.
+      This collection of articles demonstrate my proficiencies as a web developer to design, develop and deploy a web app. 
       </p>
       <!-- Article 'Reference' Tags
 <div class="tags">
@@ -31,24 +31,24 @@ include ("../../inc/header.php");
       <div class="article__Row">
         <!-- Article I: Building your Dev Environ-->
         <div class="article__Item">
-          <h5 class="article__Item__Headline">Building your Dev Environ</h5>
+          <h5 class="article__Item__Headline">Setting up a Workstation</h5>
           <figure>
-            <img class="responsive article__Item__Img" src="img/frontendCode.png">
-            <figcaption>HTML + CSS Code</figcaption>
+            <img class="article__Item__Img" src="img/workstation.png">
+            <figcaption>A developers workstation</figcaption>
           </figure>
           <aside>
             <div class="article__Date_Tags">
               <div>&nbsp;Published: January 2020</div>
               <div class="article__Tags">Tags:
                 <div>IDE</div>
-                <div>HTTP</div>
+                <div>Server</div>
                 <div>VCS</div>
               </div>
             </div>
-          <p class="article__Item__Text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Phasellus tristique tellus molestie hendrerit maximus. Donec augue purus, tempor vel sem vel, malesuada pharetra eros. In felis metus, pulvinar id lorem vel, porttitor laoreet ipsum. Donec ac felis dui. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
-            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
-          </p>
+            <p class="article__Item__Text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Phasellus tristique tellus molestie hendrerit maximus. Donec augue purus, tempor vel sem vel, malesuada pharetra eros. In felis metus, pulvinar id lorem vel, porttitor laoreet ipsum. Donec ac felis dui. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+              <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+            </p>
           </aside>
         </div>
         <!-- Article [Template] -->

@@ -126,10 +126,6 @@ margin: 2.4em auto;
   height: 32vh; 
   border-radius: 8px;
 } 
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
 /*  Simple Image 'Gallery' ======== */
 .imageGrid { 
   padding-bottom: 0.612em;    /* Offeset top-margin */
@@ -155,21 +151,7 @@ margin: 2.4em auto;
   grid-column: span 1;
   grid-row: span 2;
   }
-/* Article Images */
-.articleImage {
-  margin: 0 auto;
-  max-width: 100%; 
-  height: auto;
-}
-figure {
-  margin: 0; 
-  padding: 0;
-}
-figcaption {
-  font-size: 0.68em;
-  font-style: italic;
-  text-align: center;
-}
+/**/
 address {
   margin: 0 0 0.4em 0;
   color: red;
@@ -200,13 +182,6 @@ address {
     border-radius: 2px;
   }
   /**/
-  .articleImage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  }
-  figure {margin: 0;}
   address {
     margin: 0 0 2em 0;
     color: red;
@@ -215,34 +190,6 @@ address {
     text-align: center;
   }
 }
-/* 'UNUSED' PARALLAX CSS */
-/* 
-<html>  =>  <aside class="img">
-.parallaxGrid {
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(100px, 100vh));
-}
-.img {
-  height:100%;
-  width: 100%;  
-}
-Full-Screen Parallax Image
-.img {
-  background: transparent url(../img/free.jpg) no-repeat 100% fixed / cover;
-}
-Half-Screen Parallax Image 
-.img {
-  background: transparent url(../img/yungn.jpg) no-repeat 50% fixed / contain;
-  background: transparent url(../img/yungn.jpg) no-repeat 100% fixed / contain;
-}
-Full-Screen Image 'WITHOUT' Parallax
-.bgImg3 {
-  background: transparent url(../img/free.jpg) no-repeat 50% scroll / cover;
-}
-
-@media screen and (min-width: 800px) {
-  .parallaxGrid {display: none;}
-}*/
 /**/
 /* BUTTONS ==================================== */
 /* 'Ripple-Effect' Button */
@@ -696,6 +643,23 @@ h2.res__sectionTitle + div.resume__sectionIntro {
   box-sizing: border-box;
 }
 .article__Item__Headline {}
+
+/* Article Images */
+.article__Item__Img {
+  margin: 0 auto;
+  width: 100%; 
+  height: auto;
+}
+figure {
+  margin: 0; 
+  padding: 0;
+}
+figcaption {
+  font-size: 0.68em;
+  font-style: italic;
+  text-align: center;
+}
+/**/
 .article__Item__Text {font-size: 0.9em;}
 div.article__Date_Tags {
   font-size: 0.68em;
@@ -761,6 +725,13 @@ div.article__Date_Tags {
     padding: 0.4em;
     box-sizing: border-box;
   }
+  .article__Item__Img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  figure {margin: 0;}
   .article__Date_Tags {
     display: grid;
     grid-template-rows: repeat(2, 16px);

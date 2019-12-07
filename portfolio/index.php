@@ -8,7 +8,7 @@ include ("../inc/header.php");
   <!-- CURRICULUM "TOPICS"  -->
   <article class="">
     <section>
-      <p>Assembled herein you will find a collection of items which demonstrate my knowledge to develop web apps and facilitate TEFL instruction.</p>
+      <p>Assembled herein you will find a collection of items which demonstrate my knowledge to develop web applications and facilitate TEFL instruction.</p>
       <p style="text-align: center;"><i class="fa fa-warning" aria-hidden="true"></i> &nbsp; In-Progress: Return 1 January 2020</p>
     </section>
   </article>
