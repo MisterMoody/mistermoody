@@ -626,8 +626,40 @@ h2.res__sectionTitle + div.resume__sectionIntro {
 }
 /*
 */
-/* Portfolio 'Article' Styles 
-  [Container + Headline + Image + Date/Reference Tags + Text */
+/* Portfolio 'Article' Styles */
+.gallery {
+  background: #EEE;
+}
+/*Article ITEM*/
+.gallery-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  background: #434343;
+  counter-increment: gallery-cell;
+}
+/* Highlights Current Slide */
+.gallery-cell.is-selected {
+  background: #ddd;
+  color: #000;
+}
+
+/* cell number 
+DELETE THIS CODE
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  height: 150px;
+  font-size: 80px;
+  color: white;
+}*/
+
+@media screen and ( min-width: 768px ) {
+  .gallery {padding-bottom: 1em 0;}
+  .gallery-cell {width: 50%;}
+}
+/*  [Container + Headline + Image + Date/Reference Tags + Text */
 .article__Row {
   display: flex;
   flex-flow: row wrap;
@@ -636,7 +668,7 @@ h2.res__sectionTitle + div.resume__sectionIntro {
   margin: 2px 0;
   border: 1px solid #ccc;
   height: auto;
-  width: 100%;
+  /*width: 100%;*/
   flex-basis: 100%;
   position: relative;
   padding: 10px;
@@ -729,16 +761,62 @@ div.article__Date_Tags {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 85%;
+    max-height: 200px;
   }
   figure {margin: 0;}
+
+  /* Single-Line Date + Tags
   .article__Date_Tags {
     display: grid;
     grid-template-rows: repeat(2, 16px);
     grid-template-columns: auto;
     grid-gap: 4px;
+  } */
+  .article__Text__Container {
+    margin: 0 2em;
+    font-size: 0.9em;
   }
 }
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+/* position dots in gallery */
+.flickity-page-dots {
+  margin: 1.4em 0;
+  top: 97%;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid navy;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: purple;
+}
+/* RESOURCE: https://flickity.metafizzy.co/options.html*/
 /* ============================================ */
 
 

@@ -12,7 +12,7 @@ include ("../../inc/header.php");
     <article>
       <h3>Web Implementations</h3>
       <p>
-      This collection of articles demonstrate my proficiencies as a web developer to design, develop and deploy a web app. 
+      This collection of articles demonstrate my proficiencies as a web developer to design, develop and deploy a web application. 
       </p>
       <!-- Article 'Reference' Tags
 <div class="tags">
@@ -29,8 +29,8 @@ include ("../../inc/header.php");
     <!-- -->
     <article class="article__Container">
       <div class="article__Row">
-        <!-- Article I: Building your Dev Environ-->
-        <div class="article__Item">
+        <!-- OLD Container = Remove IF NEW Works -->
+        <!--<div class="article__Item">
           <h5 class="article__Item__Headline">Setting up a Workstation</h5>
           <figure>
             <img class="article__Item__Img" src="img/workstation.png">
@@ -50,7 +50,7 @@ include ("../../inc/header.php");
               <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
             </p>
           </aside>
-        </div>
+        </div>-->
         <!-- Article [Template] -->
         <!-- 
         <div class="article__Item">
@@ -97,6 +97,116 @@ include ("../../inc/header.php");
         </div>-->
       </div>
     </article>
+  </section> 
+    <!-- -->
+  <section>
+    <article class="gallery js-flickity">
+			<div class="gallery-cell">
+        <h5 class="article__Item__Headline">Setting up a Workstation</h5>
+        <figure>
+          <img class="article__Item__Img" src="img/workstation.png">
+          <figcaption>A developers workstation</figcaption>
+        </figure>
+        <aside class="article__Text__Container">
+          <div class="article__Date_Tags">
+              <div>&nbsp;Published: January 2020</div>
+              <div class="article__Tags">Tags:
+                <div>IDE</div>
+                <div>Server</div>
+                <div>VCS</div>
+              </div>
+            </div>
+          <p class="article__Item__Text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus.Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+        </aside>
+			</div>
+			<div class="gallery-cell">
+        <h5 class="article__Item__Headline">Content Strategy</h5>
+        <figure>
+          <img class="responsive article__Item__Img" src="img/puzzle2.jpg">
+          <figcaption>A challenging puzzle</figcaption>
+        </figure>
+        <aside class="article__Text__Container">
+            <div class="article__Date_Tags">
+              <div>&nbsp;Published: January 2020</div>
+              <div class="article__Tags">Tags:
+                <div>Design</div>
+                <div>Research</div>
+              </div>
+            </div>
+          <p class="article__Item__Text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus.Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+          </aside>
+      </div>
+			<div class="gallery-cell">
+        <h5 class="article__Item__Headline">&#60;HTML&#62; Markup</h5>
+        <figure>
+          <img class="responsive article__Item__Img" src="img/frontendCode.png">
+            <figcaption>Content written in &#60;HTML&#62; </figcaption>
+        </figure>
+        <aside class="article__Text__Container">
+          <div class="article__Date_Tags">
+            <div>&nbsp;Published: January 2020</div>
+             <div class="article__Tags">Tags:
+               <div>IDE</div>
+               <div>HTTP</div>
+               <div>VCS</div>
+             </div>
+           </div>
+          <p class="article__Item__Text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus.Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+        </aside>
+      </div>
+			<div class="gallery-cell">
+        <h5 class="article__Item__Headline">Styling Content with CSS</h5>
+        <figure>
+          <img class="responsive article__Item__Img" src="img/designStyle.jpg" style="max-width: 100%;">
+            <figcaption>xxxx </figcaption>
+        </figure>
+        <aside class="article__Text__Container">
+          <div class="article__Date_Tags">
+            <div>&nbsp;Published: January 2020</div>
+             <div class="article__Tags">Tags:
+               <div>IDE</div>
+               <div>HTTP</div>
+               <div>VCS</div>
+             </div>
+           </div>
+          <p class="article__Item__Text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+        </aside>
+      </div>
+			<div class="gallery-cell">
+        <h5 class="article__Item__Headline">Adding Interactivity</h5>
+        <figure>
+          <img class="responsive article__Item__Img" src="img/chess.jpg">
+            <figcaption>The game is chess, not checkers</figcaption>
+        </figure>
+        <aside class="article__Text__Container">
+          <div class="article__Date_Tags">
+            <div>&nbsp;Published: January 2020</div>
+             <div class="article__Tags">Tags:
+               <div>IDE</div>
+               <div>HTTP</div>
+               <div>VCS</div>
+             </div>
+           </div>
+          <p class="article__Item__Text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+        </aside>
+      </div>
+		</article>
+      </section>
     <!--<p>
       Hypertext Markup Language is the standard markup language for creating semantic layouts for websites. HTML uses elements (i.e. tags) that allows designers to organize the content of a web page. Although there are dozens of elements that can be used, all elements are either semantic or not. Semantic elements clearly defines content for the browser and is used to provide structure for the overall layout for the content of a web page. Such elements always begin on a new line on a web page, extending the full-width of the horizontal space of its parent element (i.e. container).
     </p>
@@ -346,7 +456,6 @@ include ("../../inc/header.php");
         Blogged Resources: <a class="resourceText" target="_blank" href="https://mistermoody.github.io/usingHTML.html">HTML</a> -- <a class="resourceText" target="_blank" href="https://mistermoody.github.io/usingCSS.html">CSS</a> -- <a class="resourceText" target="_blank" href="https://mistermoody.github.io/management.html">Project Management</a>
       </p>
     </div>-->
-  </section> 
 <!-- .....CONTENT-ENDS// --> 
 
 <!-- ************************************************** -->
