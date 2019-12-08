@@ -627,16 +627,13 @@ h2.res__sectionTitle + div.resume__sectionIntro {
 /*
 */
 /* Portfolio 'Article' Styles */
-.gallery {
-  background: #EEE;
-}
+.gallery {background: #DDD;}
 /*Article ITEM*/
 .gallery-cell {
   width: 100%;
   height: auto;
   margin-right: 10px;
   background: #434343;
-  counter-increment: gallery-cell;
 }
 /* Highlights Current Slide */
 .gallery-cell.is-selected {
@@ -644,16 +641,7 @@ h2.res__sectionTitle + div.resume__sectionIntro {
   color: #000;
 }
 
-/* cell number 
-DELETE THIS CODE
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  height: 150px;
-  font-size: 80px;
-  color: white;
-}*/
+
 
 @media screen and ( min-width: 768px ) {
   .gallery {padding-bottom: 1em 0;}
@@ -780,6 +768,7 @@ div.article__Date_Tags {
 }
 
 /* big buttons, no circle */
+
 .flickity-prev-next-button {
   width: 100px;
   height: 100px;
@@ -787,7 +776,7 @@ div.article__Date_Tags {
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: #434343;
 }
 .flickity-prev-next-button.no-svg {
   color: white;
@@ -806,15 +795,16 @@ div.article__Date_Tags {
 }
 /* white circles */
 .flickity-page-dots .dot {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   opacity: 1;
-  background: transparent;
-  border: 2px solid navy;
+  background: #DDD;
+  border: 2px solid #fff;
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
-  background: purple;
+  border: 2px solid #333;
+  background: #fff;
 }
 /* RESOURCE: https://flickity.metafizzy.co/options.html*/
 /* ============================================ */
