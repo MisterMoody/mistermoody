@@ -15,87 +15,9 @@ include ("../../inc/header.php");
       This collection of articles demonstrate my proficiencies as a web developer to design, develop and deploy a web application. 
       </p>
       <!-- Article 'Reference' Tags
-<div class="tags">
-        <div>HTML5</div>
-        <div>CSS3</div>
-        <div>JavaScript</div>
-        <div>PHP</div>
-        <div>Github</div>
-      </div>
       <p>
         All that I can offer are some <a href="https://mistermoody.github.io/" alt="Link to Blog" target="_blank" title="Blog of Knowledge">notes</a>.
       </p>-->
-    </article>
-    <!-- -->
-    <article class="article__Container">
-      <div class="article__Row">
-        <!-- OLD Container = Remove IF NEW Works -->
-        <!--<div class="article__Item">
-          <h5 class="article__Item__Headline">Setting up a Workstation</h5>
-          <figure>
-            <img class="article__Item__Img" src="img/workstation.png">
-            <figcaption>A developers workstation</figcaption>
-          </figure>
-          <aside>
-            <div class="article__Date_Tags">
-              <div>&nbsp;Published: January 2020</div>
-              <div class="article__Tags">Tags:
-                <div>IDE</div>
-                <div>Server</div>
-                <div>VCS</div>
-              </div>
-            </div>
-            <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Phasellus tristique tellus molestie hendrerit maximus. Donec augue purus, tempor vel sem vel, malesuada pharetra eros. In felis metus, pulvinar id lorem vel, porttitor laoreet ipsum. Donec ac felis dui. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
-              <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
-            </p>
-          </aside>
-        </div>-->
-        <!-- Article [Template] -->
-        <!-- 
-        <div class="article__Item">
-          <h5 class="article__Item__Headline">Article Headline II</h5>
-          <figure>
-            <img class="responsive article__Item__Img" src="img/frontendCode.png">
-            <figcaption>HTML + CSS Code</figcaption>
-          </figure>
-          <aside>
-            <div class="article__Date_Tags">
-              <div>&nbsp;Published: January 2020</div>
-              <div class="article__Tags">Tags:
-                <div>IDE</div>
-                <div>HTTP</div>
-                <div>VCS</div>
-              </div>
-            </div>
-          <p class="article__Item__Text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Phasellus tristique tellus molestie hendrerit maximus. Donec augue purus, tempor vel sem vel, malesuada pharetra eros. Sed non tincidunt augue, et aliquam enim.&nbsp; 
-            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
-          </p>
-          </aside>
-        </div>
-        <div class="article__Item">
-          <h5 class="article__Item__Headline">Article Headline III</h5>
-          <figure>
-            <img class="responsive article__Item__Img" src="img/frontendCode.png">
-            <figcaption>HTML + CSS Code</figcaption>
-          </figure>
-          <aside>
-            <div class="article__Date_Tags">
-              <div>&nbsp;Published: January 2020</div>
-              <div class="article__Tags">Tags:
-                <div>IDE</div>
-                <div>HTTP</div>
-                <div>VCS</div>
-              </div>
-            </div>
-          <p class="article__Item__Text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Phasellus tristique tellus molestie hendrerit maximus. Donec augue purus, tempor vel sem vel, malesuada pharetra eros. Sed non tincidunt augue, et aliquam enim.&nbsp; 
-            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
-          </p>
-          </aside>
-        </div>-->
-      </div>
     </article>
   </section> 
     <!-- -->
@@ -109,13 +31,15 @@ include ("../../inc/header.php");
         </figure>
         <aside class="article__Text__Container">
           <div class="article__Date_Tags">
-              <div>&nbsp;Published: January 2020</div>
-              <div class="article__Tags">Tags:
-                <div>IDE</div>
-                <div>Server</div>
-                <div>VCS</div>
-              </div>
+            <div>
+              <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
             </div>
+            <div class="article__Tags">
+              <div>IDE</div>
+              <div>Server</div>
+              <div>VCS</div>
+            </div>
+          </div>
           <p class="article__Item__Text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus.Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
@@ -130,8 +54,10 @@ include ("../../inc/header.php");
         </figure>
         <aside class="article__Text__Container">
             <div class="article__Date_Tags">
-              <div>&nbsp;Published: January 2020</div>
-              <div class="article__Tags">Tags:
+              <div>
+                <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
+              </div>
+              <div class="article__Tags">
                 <div>Design</div>
                 <div>Research</div>
               </div>
@@ -150,11 +76,11 @@ include ("../../inc/header.php");
         </figure>
         <aside class="article__Text__Container">
           <div class="article__Date_Tags">
-            <div>&nbsp;Published: January 2020</div>
-             <div class="article__Tags">Tags:
-               <div>IDE</div>
-               <div>HTTP</div>
-               <div>VCS</div>
+            <div>
+              <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
+            </div>
+             <div class="article__Tags">
+               <div>HTML</div>
              </div>
            </div>
           <p class="article__Item__Text">
@@ -171,11 +97,12 @@ include ("../../inc/header.php");
         </figure>
         <aside class="article__Text__Container">
           <div class="article__Date_Tags">
-            <div>&nbsp;Published: January 2020</div>
-             <div class="article__Tags">Tags:
-               <div>IDE</div>
-               <div>HTTP</div>
-               <div>VCS</div>
+            <div>
+              <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
+            </div>
+             <div class="article__Tags">
+               <div>CSS</div>
+               <div>Design</div>
              </div>
            </div>
           <p class="article__Item__Text">
@@ -192,11 +119,12 @@ include ("../../inc/header.php");
         </figure>
         <aside class="article__Text__Container">
           <div class="article__Date_Tags">
-            <div>&nbsp;Published: January 2020</div>
-             <div class="article__Tags">Tags:
-               <div>IDE</div>
-               <div>HTTP</div>
-               <div>VCS</div>
+            <div>
+              <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
+            </div>
+             <div class="article__Tags">
+               <div>JS</div>
+               <div>PHP</div>
              </div>
            </div>
           <p class="article__Item__Text">
