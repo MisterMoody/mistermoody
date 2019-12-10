@@ -663,12 +663,11 @@ h2.res__sectionTitle + div.resume__sectionIntro {
 }
   /* Resource by https://flickity.metafizzy.co/ */
   /* Article Layout */
-.gallery {}
+.gallery {background-color: transparent;}
 .gallery-cell {
   width: 100%;
   height: auto;
   margin-right: 10px;
-  background: #434343;
 }
 .article__Item__Headline {font-variant: small-caps;}
 .article__Item__Img {   /* Article Images */
@@ -693,7 +692,7 @@ div.article__Date_Tags {
   padding: 0;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(2, minmax(44px, 1fr));
+  grid-template-columns: 25vw repeat(auto-fill, minmax(44px, 150px));
   justify-content: space-between;
 }
 .article__Tags {      /* Article 'Headline' TAGS */

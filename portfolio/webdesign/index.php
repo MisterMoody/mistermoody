@@ -41,7 +41,7 @@ include ("../../inc/header.php");
             </div>
           </div>
           <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus.Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
           </p>
         </aside>
@@ -63,7 +63,7 @@ include ("../../inc/header.php");
               </div>
             </div>
           <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus.Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
           </p>
           </aside>
@@ -71,8 +71,8 @@ include ("../../inc/header.php");
 			<div class="gallery-cell">
         <h5 class="article__Item__Headline">&#60;HTML&#62; Markup</h5>
         <figure>
-          <img class="responsive article__Item__Img" src="img/frontendCode.png">
-            <figcaption>Content written in &#60;HTML&#62; </figcaption>
+          <img class="responsive article__Item__Img" src="img/html.png">
+            <figcaption>A simple &#60;HTML&#62; template</figcaption>
         </figure>
         <aside class="article__Text__Container">
           <div class="article__Date_Tags">
@@ -84,7 +84,7 @@ include ("../../inc/header.php");
              </div>
            </div>
           <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus.Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
           </p>
         </aside>
@@ -106,7 +106,7 @@ include ("../../inc/header.php");
              </div>
            </div>
           <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
           </p>
         </aside>
@@ -128,7 +128,30 @@ include ("../../inc/header.php");
              </div>
            </div>
           <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. Phasellus hendrerit eleifend varius. Nulla iaculis rutrum tempus. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+            <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
+          </p>
+        </aside>
+      </div>
+			<div class="gallery-cell">
+        <h5 class="article__Item__Headline">Resources</h5>
+        <figure>
+          <img class="responsive article__Item__Img" src="img/gold.jpg">
+            <figcaption>Worth its weight in gold!</figcaption>
+        </figure>
+        <aside class="article__Text__Container">
+          <div class="article__Date_Tags">
+            <div>
+              <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
+            </div>
+             <div class="article__Tags">
+               <div>Front-end</div>
+               <div>Back-end</div>
+               <div>DevOps</div>
+             </div>
+           </div>
+          <p class="article__Item__Text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
           </p>
         </aside>
