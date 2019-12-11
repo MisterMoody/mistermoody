@@ -41,7 +41,7 @@ include ("../../inc/header.php");
             </div>
           </div>
           <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
+              Establishing a proper developer environment requires amalgamating technologies that will facilitate a process permitting developers to write, test and manage a web application. This can be achieved with a text-editor, a VCS and a local host server.&nbsp;  
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
           </p>
         </aside>
@@ -50,7 +50,7 @@ include ("../../inc/header.php");
         <h5 class="article__Item__Headline">Content Strategy</h5>
         <figure>
           <img class="responsive article__Item__Img" src="img/puzzle2.jpg">
-          <figcaption>A challenging puzzle</figcaption>
+          <figcaption>Challenges present infinite possibilities</figcaption>
         </figure>
         <aside class="article__Text__Container">
             <div class="article__Date_Tags">
@@ -63,7 +63,7 @@ include ("../../inc/header.php");
               </div>
             </div>
           <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp;  
+              Writing compelling copy and using media that properly articulates your message is of utmost importance before structuring a layout design for a website. Producing content that provides a meaningful user experience is the ultimate goal. &nbsp;  
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
           </p>
           </aside>
@@ -79,12 +79,12 @@ include ("../../inc/header.php");
             <div>
               <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
             </div>
-             <div class="article__Tags">
+             <div class="article__Tags" style="width: 44px;">
                <div>HTML</div>
              </div>
            </div>
           <p class="article__Item__Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed urna mi. In hac habitasse platea dictumst. Phasellus sed urna mi. Phasellus eleifend varius. Zhrah soek ulenti lorem un xuexi. Fusce rutrum lacinia mattis das ultima negus lordy anikin.&nbsp; 
+              The Hyper Text Markup Language (HTML) is used to markup content using elements that specifies a purpose, determining how content will be displayed in a browser. Attributes can be applied within an element to modify its default functionality. &nbsp; 
             <a href="portfolio/webdesign/">Read More</a> <i class="fa fa-angle-double-right"></i>
           </p>
         </aside>
@@ -125,6 +125,7 @@ include ("../../inc/header.php");
              <div class="article__Tags">
                <div>JS</div>
                <div>PHP</div>
+               <div>Development</div>
              </div>
            </div>
           <p class="article__Item__Text">
@@ -158,6 +159,7 @@ include ("../../inc/header.php");
       </div>
 		</article>
       </section>
+<!-- <html> Markup Content -->
     <!--<p>
       Hypertext Markup Language is the standard markup language for creating semantic layouts for websites. HTML uses elements (i.e. tags) that allows designers to organize the content of a web page. Although there are dozens of elements that can be used, all elements are either semantic or not. Semantic elements clearly defines content for the browser and is used to provide structure for the overall layout for the content of a web page. Such elements always begin on a new line on a web page, extending the full-width of the horizontal space of its parent element (i.e. container).
     </p>
