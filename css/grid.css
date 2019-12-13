@@ -104,6 +104,12 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 }
 /**/
 /* Images ======== */
+.fadeIn {  animation: fadeIn ease 4.4s;}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+/**/
 .mainImage {
   max-width: 62vw;
   max-height: 100%;
@@ -699,10 +705,10 @@ div.article__Date_Tags {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20px, auto));
-  grid-auto-rows: 16px;
+  grid-auto-rows: 16px;  
   grid-auto-flow: dense;
   grid-gap: 0.4em;
-  text-align: center;
+  text-align: center; 
 }
 .article__Tags div {
   font-size: 0.8em;

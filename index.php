@@ -11,7 +11,10 @@ include ("inc/homepage.php");
 <!--  **********************************  -->
 <article class="homepage">
   <section>
-    <img class="mainImage" src="img/me.jpg" />
+    <div class="fadeIn">
+      <img class="mainImage" src="img/me.jpg" />
+    </div>
+    
     <h4>
       <a href="about/">About</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp;
       <a href="portfolio/">Portfolio</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp; 
