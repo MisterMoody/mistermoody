@@ -8,22 +8,41 @@ include ("../inc/header.php")
 
 <!-- ** // Start of CONTENT *** -->
   <section>
-    <aside class="aboutIntro">
-      <h2>Hi. I'm Ray.</h2>
-      <img class="mainImage" src="img/workVanilla.jpg">
-      <h4>I build web applications and teach language art skills.</h4>
-      <!-- Update .aboutIntro{} IF Delete 'scroll' -->
-      <a class="scroll bounce" href="about/#read" title="Scroll Down">
-          <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a>
-    </aside>
+    
     <article>
-      <p id="read">
+      <h1>Hi. I'm Ray.</h1>
+    </article>
+    
+    <!-- FULL-SCREEN <image> GALLERY -->    
+    <aside class="imageGrid">
+      <!-- Row of 4 -->
+      <img src="img/3yrjpn.jpg">
+      <img src="img/cnID.jpg" style="height: 100%;">
+      <img src="img/cnvisa.jpg" style="height: 100%;">
+      <img src="img/jpnstamp.jpg" style="height: 100%;">
+      <!-- Dbl-Row of 2+1 -->
+      <img src="img/jdhs.jpg">
+      <img src="img/Fadeaway.jpg">
+      <!-- Row of 4 -->
+      <img src="img/cn09.jpg" style="height: 100%;">
+      <img src="img/jpnyahata.jpg" style="height: 100%;">
+      <img src="img/hk.jpg">
+      <img src="img/yungn.jpg" style="height: 100%;">
+      <img src="img/krwvisa.jpg" style="height: 100%;">
+    </aside>
+
+    <article>
+      <h5>I build web applications and teach language art skills.</h5>
+    <!--<p>
+In all of my days working, no job has been more rewarding than being an educator!
+</p>-->
+      <p>
         My career as an educator began when I was an undergraduate employed as a supervisor for an at-risk youth community center. Shortly after graduating university, I embarked on a sojourn abroad to teach English as a second language. 
       </p>
       <p>
        What was supposed to have been a gap year turned into a life altering experience in which my life was immersed in foreign culture.  Being a pseudo-polyglot allowed me to empathize with language acquisition struggles learners encounter and I believe this helped me thrive in assisting learners from China, Japan, South Korea and the United States improve their language fluency. Some of the agencies that have enabled me to practice my craft include Sogang Uni., Oxford Seminars, Joongdong High School, YBM International Academy, Tongxiang Middle School, Jiaxing College and Jefferson County Public Schools (Kentucky). 
       </p>
-      <p>Check out my <a href="about/resume">resume</a> to learn more about my skill set.</p>
+      <h5>Check out my <a href="about/resume">resume</a> &nbsp;<i class="fa fa-angle-double-right"></i></h5>
     </article>
   </section>  
 <!-- ** // End of CONTENT ***** --> 

@@ -25,15 +25,9 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
-::-webkit-scrollbar {
-  width: 0px;               
-  /*background: transparent;  */
-}
 
-/* .scrSnp {scroll-snap-type: y proximity;}
-.scrSnpChild {scroll-snap-align: start; scroll-snap-stop: always;}*/
-.scrSnp {scroll-snap-type: y mandatory;}
-.scrSnpChild {scroll-snap-align: start;}
+
+
 /**/
 body {
   height: 100%;
@@ -104,12 +98,11 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 }
 /**/
 /* Images ======== */
-.fadeIn {  animation: fadeIn ease 4.4s;}
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+img {
+  display: block;
+  max-width: 100%;
 }
-/**/
+/* Custom */
 .mainImage {
   max-width: 62vw;
   max-height: 100%;
@@ -132,6 +125,12 @@ margin: 2.4em auto;
   height: 32vh; 
   border-radius: 8px;
 } 
+/**/
+.fadeIn {  animation: fadeIn ease 4.4s;}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 /*  Simple Image 'Gallery' ======== */
 .imageGrid { 
   padding-bottom: 0.612em;    /* Offeset top-margin */
@@ -349,10 +348,9 @@ fa-home {
 /* 3. INDEX.php =============================== */
 .homepage {
   margin: 2em 0; height: 31.250em;
-display: grid;
+  display: grid;
   grid-template-rows: 20em 4.8em 50px;
 } 
-.homepage section {}
 @media screen and (min-width: 800px){
   .homepage { height: 100%;}
   .homepage section {margin: 0;}
@@ -381,34 +379,53 @@ ul.social {
 
 /* ============================================ */
 /* 4. ABOUT.php =============================== */
-/*  about/  */
-.aboutIntro {
-  margin: 0.8em 0;
-  padding: 0;
-  display: grid;
-  grid-template-rows: 8vh 44vh 22vh 8vh;
-  /*grid-gap: 0.4em;
-  height: 95vh;*/
+
+
+/* SCROLL-SNAP Container */
+article.wrapper {
+  /*margin: 0;
+  padding: 0;*/
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
 }
+.scrSnap {
+  height: 100%;
+  width: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+/* Hide Scroll-Snap Scrollbar */
+.scrSnap::-webkit-scrollbar {width: 0px; !important;}
+/**/
+.item {
+  display: flex;
+  flex: 1;
+ /* overflow: auto;*/
+}
+.item {
+  scroll-snap-align: start;
+}
+
 .scroll {
-  border-bottom: none;
-  text-align: center;
-  opacity: 0.8; font-weight: 100;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
 }
-.bounce {
-  animation: bounce 2s infinite;
+.scroll .item {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
 }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
+/*.scroll .item {min-height: 100%;}*/
+
 /**/
 /* Resume Grid ================================ */
 .resumeGrid {
@@ -466,40 +483,10 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
 }
-/* Align with Parallax Image */
-h2.res__sectionTitle + div.resume__sectionIntro {
-  margin-bottom: -0.8em;
-}
 /* Download Resume */
 .resume__download {
   text-align: center;
   font-variant: small-caps;
-}
-
-/* 'Custom PARALLAX' IMAGES ======== 
-   ('NOT' Working on Mobile) */
-/* 25vh Parallax */
-.bgImg_25 {
-  display: grid;
-  grid-template-rows: 25vh;
-}
-.bgImg_tailor {
-  height:25vh;
-  width: 100%; 
-  background: transparent url(../img/tailorVanilla.jpg) no-repeat 30% fixed / cover; 
-}
-/* 44vh Parallax */
-.bgImg_44 {
-  margin-top: inherit;
-  margin-bottom: -0.2em;
-  display: grid;
-  grid-template-rows: 48vh;
-}
-.bgImg_teach {
-  height: 44vh;
-  width: 100%; 
-  background: transparent url(../img/gutES.jpg) no-repeat 100% fixed / cover; 
-  background-position: left center;
 }
 @media only screen and (min-width: 500px) and (max-width: 799px){
   .res__work__Employment {
