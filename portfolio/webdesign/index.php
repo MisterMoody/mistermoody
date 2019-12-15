@@ -114,10 +114,13 @@ include ("../../inc/header.php");
       </div>
 			<div class="gallery-cell">
         <h5 class="article__Item__Headline">Adding Interactivity</h5>
-        <div><i class="fa fa-heart"></i>
-          <!--<img class="responsive article__Item__Img" src="img/chess.jpg">-->
+        <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/b2CD0Qrq2ulwY" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+        <!-- Non-Responsive-->
+        <iframe src="https://giphy.com/embed/b2CD0Qrq2ulwY" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <!--<div>
+          <img class="responsive article__Item__Img" src="img/chess.jpg">
             <figcaption>The Game is Chess, not Checkers</figcaption>
-        </div>
+        </div>-->
         <aside class="article__Text__Container">
           <div class="article__Date_Tags">
             <div>

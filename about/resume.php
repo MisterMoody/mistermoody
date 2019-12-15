@@ -10,17 +10,17 @@ include ("../inc/header.php")
 <!-- ** // Start of CONTENT *** -->
   <section class="resumeGrid scrSnp">  
     <!-- INTRODUCTION -->
-    <article>
+    <!--<article>
       <p>In all of my days working, no job has been more rewarding than being an educator!</p>
-    </article>
+    </article>-->
     <!-- FULL-SCREEN PARALLAX <image> -->
-    <aside class="bgImg_44">
+    <!--<aside class="bgImg_44">
       <div class="bgImg_teach"></div>
-    </aside>
+    </aside>-->
     
     <!-- Teaching Experience -->
     <article class="scrSnpChild">
-      <p>The road that I have traveled has been an unorthodox path. Please take a moment to explore some of the crossroads in my life.  If less than impressed, and I suspect you will be, send me an <a href="contact" title="Email Me">email</a> and I will forward you a detailed resume!</p>
+      <!--<p>The road that I have traveled has been an unorthodox path. Please take a moment to explore some of the crossroads in my life.  If less than impressed, and I suspect you will be, send me an <a href="contact" title="Email Me">email</a> and I will forward you a detailed resume!</p>-->
     <!-- DOWNLOAD CV Button -->
     <!--<h3>
           <a class="btn download" href="moodyCV.doc" download="moodyCV.doc" title="Download Resume">
@@ -63,23 +63,6 @@ include ("../inc/header.php")
         </div>
       </div>
     </article>
-    <!-- FULL-SCREEN <image> GALLERY -->    
-    <aside class="imageGrid">
-      <!-- Row of 4 -->
-      <img src="img/3yrjpn.jpg">
-      <img src="img/cnID.jpg" style="height: 100%;">
-      <img src="img/cnvisa.jpg" style="height: 100%;">
-      <img src="img/jpnstamp.jpg" style="height: 100%;">
-      <!-- Dbl-Row of 2+1 -->
-      <img src="img/jdhs.jpg">
-      <img src="img/Fadeaway.jpg">
-      <!-- Row of 4 -->
-      <img src="img/cn09.jpg" style="height: 100%;">
-      <img src="img/jpnyahata.jpg" style="height: 100%;">
-      <img src="img/hk.jpg">
-      <img src="img/yungn.jpg" style="height: 100%;">
-      <img src="img/krwvisa.jpg" style="height: 100%;">
-    </aside>
     
     <!-- Training (Edu) -->
     <article class="scrSnpChild">
@@ -148,13 +131,13 @@ include ("../inc/header.php")
     <article class="resume__skills scrSnpChild">
       <h2 class="res__sectionTitle">Talents</h2>
       <div class="resume__sectionIntro">
-        <p><!--<img class="imgL" src="img/tailorVanilla.jpg">-->Jack-of-all-trades, I am not, but my unique skill set helps be be the change that I want to see in the world!</p>
+        <p><!--<img class="imgL" src="img/tailorVanilla.jpg">-->Jack-of-all-trades, I am not, but my unique skill set helps me be the change that I want to see in the world!</p>
       </div>
     </article>
     <!-- FULL-SCREEN PARALLAX <image> -->
-    <aside class="bgImg_25">
+    <!--<aside class="bgImg_25">
       <div class="bgImg_tailor"></div>
-    </aside>
+    </aside>-->
     <!-- Talents (Skills) II -->
     <article class="resume__skills scrSnpChild">
       <p></p><!-- REQUIRED for 'artificial margins' -->
@@ -210,9 +193,28 @@ include ("../inc/header.php")
               </div>
             </div>
       </div>
-      <p>Talk is cheap: check out my <a href="portfolio/" title="Email Me">portfolio</a> to evaluate my work for yourself!</p>
     </article>
 
+    <!-- FULL-SCREEN <image> GALLERY -->    
+    <aside class="imageGrid">
+      <!-- Row of 4 -->
+      <img src="img/3yrjpn.jpg">
+      <img src="img/cnID.jpg" style="height: 100%;">
+      <img src="img/cnvisa.jpg" style="height: 100%;">
+      <img src="img/jpnstamp.jpg" style="height: 100%;">
+      <!-- Dbl-Row of 2+1 -->
+      <img src="img/jdhs.jpg">
+      <img src="img/Fadeaway.jpg">
+      <!-- Row of 4 -->
+      <img src="img/cn09.jpg" style="height: 100%;">
+      <img src="img/jpnyahata.jpg" style="height: 100%;">
+      <img src="img/hk.jpg">
+      <img src="img/yungn.jpg" style="height: 100%;">
+      <img src="img/krwvisa.jpg" style="height: 100%;">
+    </aside>
+    <article>
+      <p>Check out my <a href="portfolio/" title="Email Me">portfolio</a>!</p>
+    </article>
   </section>
 <!-- ** // End of CONTENT ***** --> 
 

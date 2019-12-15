@@ -10,11 +10,10 @@ include ("inc/homepage.php");
 
 <!--  **********************************  -->
 <article class="homepage">
-  <section>
     <div class="fadeIn">
       <img class="mainImage" src="img/me.jpg" />
     </div>
-    
+    <!-- Quick Nav -->
     <h4>
       <a href="about/">About</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp;
       <a href="portfolio/">Portfolio</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp; 
@@ -39,7 +38,6 @@ include ("inc/homepage.php");
           <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
         </li>
     </ul>
-  </section>
 </article>
 <!-- ** // End of CONTENT ***** --> 
 
