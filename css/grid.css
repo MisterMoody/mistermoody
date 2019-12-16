@@ -186,6 +186,7 @@ address {
     /*border: 2px solid #c41e3a;*/
     border-radius: 2px;
   }
+  .imageGrid {display: none;}
   /**/
   address {
     margin: 0 0 2em 0;
