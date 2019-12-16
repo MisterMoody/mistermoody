@@ -400,21 +400,17 @@ article.wrapper {
 }
 /* Hide Scroll-Snap Scrollbar */
 .scrSnap::-webkit-scrollbar {width: 0px; !important;}
-/**/
-.item {
-  display: flex;
-  flex: 1;
- /* overflow: auto;*/
-}
-.item {
-  scroll-snap-align: start;
-}
-
 .scroll {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  scroll-snap-align: start;
+}
+.item {
+  display: flex;
+  flex: 1;
+ /* overflow: auto;*/
   scroll-snap-align: start;
 }
 .scroll .item {
@@ -423,10 +419,10 @@ article.wrapper {
   -webkit-overflow-scrolling: touch;
   display: flex;
   flex-direction: column;
+/* min-height: 100%; */
 }
-/*.scroll .item {min-height: 100%;}*/
-
 /**/
+
 /* Resume Grid ================================ */
 .resumeGrid {
   width: 100%;
@@ -584,8 +580,9 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
 /* 5. PORTFOLIO =============================== */
 /* Temp WARNING Sign Style*/
 .fa-warning {color: #ffcc00;}
-/* [a] 'Grid' Styles */
+/* 'Grid' Styles */
 .cur__TopicGrid {
+  margin-bottom: 0.8em;
   display: grid; 
   height: 100%;
   grid-template-rows: repeat(2, 30vh);
@@ -622,7 +619,7 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
 }
   /*
   */
-/* PORTFOLIO/webdesign */
+/* PORTFOLIO/"webdesign" */
   /* Slider for Articles */
 .flickity-prev-next-button {
   width: 100px;
@@ -729,13 +726,13 @@ div.article__Date_Tags {
 /* ============================================ */
 
 
-/* WebDesign Page = Online Resources Grid*/
+/* PORTFOLIO/WebDesign/"resources" */
 .resSyntax {grid-area: syntax;}
-.resContent {grid-area: content;}
+.resContent {grid-area: contentRes;}
 .resLayout {grid-area: layout;}
 .resStyles {grid-area: styles;}
 .resSnippets {grid-area: snippets;}
-.resHelp {grid-area: help;}
+.resHelp {grid-area: helpRes;}
 .resManage {grid-area: manage;}
 .resTools {grid-area: tools;}
 .resourceGrid {
@@ -744,48 +741,23 @@ div.article__Date_Tags {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: minmax(20px, auto);
   grid-template-areas:
-    "syntax content"
+    "syntax contentRes"
     "layout styles"
-    "snippets help"
+    "snippets helpRes"
     "manage tools";
-  grid-gap: 10px;
+  grid-gap: 1em;
 }
 .resourceLink {
+  margin-bottom: 1em; 
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 1em; font-size: 0.79em;
+  font-size: 0.84em;
+  grid-gap: 0.48em;
 }
 /* Alternate Background-Scheme */
 .resourceLink > span:nth-child(4n+1),
 .resourceLink > span:nth-child(4n+3) {
   background-color:#838487;
-}
-.resourceItem {
-  display: grid;
-  grid-template-rows: 1.6em 2.2em;
-  border: 2px groove #838487;
-  justify-content: center; 
-  grid-gap: 0;
-}
-.resourceItem > h4, .resourceItem > h5 {
-  color: grey; 
-  text-align: center;
-  padding-top: 0.26em;
-}
-/**/
-.resourceItem > h4 {background-color: pink; text-transform: uppercase;}
-.resourceItem > h5, .resourceItem > p {background-color: yellow;}
-.resourceItem {background-color: lime;}
-/**/
-.resourceText {
-  text-decoration: underline;
-}
-.resourceText:hover {
-  background-color: #000;
-  color: #fff;
-  opacity: 1;
-  text-decoration: none;
-  border-radius: 8px;
 }
 @media only screen and (min-width: 800px) {
   .resourceGrid {
@@ -794,29 +766,13 @@ div.article__Date_Tags {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-      "syntax content layout styles"
-      "snippets help manage tools";
+      "syntax contentRes layout styles"
+      "snippets helpRes manage tools";
   }  
   .resourceLink {
-    font-size: 0.88em;
+    font-size: 0.9em;
+  grid-gap: 0.84em;
   }
-  .resourceItem {
-    display: grid;
-    grid-template-rows: 2em 2.8em;
-  }
-  .resourceItem > h4, .resourceItem > h5 {
-    color: grey; 
-    text-align: center;
-    padding-top: 0.35em;  /* Center Text */
-  }
-}
-/**/
-/* Font Scheme */
-.resourceLink > span:nth-child(4n+1),
-.resourceLink > span:nth-child(4n+2),
-.resourceLink > span:nth-child(4n+3),
-.resourceLink > span:nth-child(4n+4) {
-  font-size: 0.81em;
 }
 /* ============================================ */
 /* ============================================ */
