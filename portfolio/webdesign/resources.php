@@ -41,6 +41,8 @@ include ("../../inc/header.php");
           
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements</a></span>
           
+          <span><a target="_blank" href="https://htmlhead.dev">Guide to &#60;head&#62; Elements</a></span>
+          
           <span><a target="_blank" href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a></span>
           
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors">CSS Selector</a></span>
@@ -178,6 +180,8 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://30-seconds.github.io/30-seconds-of-css/">30secs of CSS</a></span>
 
           <span><a target="_blank" href="https://www.checklist.design/">Design Assets</a></span>
+          
+          <span><a target="_blank" href="https://michalsnik.github.io/aos/">Animate Scroll</a></span>
 
           <span><a target="_blank" href="https://codemyui.com/">Code My UI</a></span>
 
@@ -204,6 +208,8 @@ include ("../../inc/header.php");
 
           <span><a target="_blank" href="https://stackoverflow.com/">StackOverflow</a></span>
 
+          <span><a target="_blank" href="https:/dev.to">Dev.to</a></span>
+          
           <span><a target="_blank" href="https://css-tricks.com ">CSS-Tricks</a></span>
 
           <span><a target="_blank" href="https://w3schools.com">W3Schools</a></span>
@@ -219,6 +225,8 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://html-css-js.com/">HTML-CSS-JS</a></span>
           
           <span><a target="_blank" href="https://learn-html.org">LearnHTML</a></span>
+          
+          <span><a target="_blank" href="https://github.com/kamranahmedse/developer-roadmap">Dev Roadmap</a></span>
         </div>
       </div>
       <div class="resManage">
