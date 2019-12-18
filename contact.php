@@ -32,18 +32,18 @@ include ("inc/header.php");
       <div class="contactGrid">
         
         <div>
-          <label class="lineInput" for="name"></label>
+          <label for="name"></label>
           <input type="text" id="name" name="sender" placeholder="Name" title="Please provide your name." size="33vw" pattern="^([- \w\d\u00c0-\u024f]+)$" required aria-required="true" aria-describedby="prospective" class="form-control">
         </div>
         
         <div>
-          <label class="lineInput" for="email" id="prospectiveEmail"></label>
-          <input type="email" id="email"  placeholder=" Email Address" value="" name="senderEmail" size="33vw" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required aria-required="true" aria-describedby="prospectiveEmail" title="Please provide your email.">
+          <label for="email" id="prospectiveEmail"></label>
+          <input type="email" id="email" name="senderEmail" placeholder=" Email Address" size="33vw" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required aria-required="true" aria-describedby="prospectiveEmail" title="Please provide your email." class="form-control">
         </div>
         
         <div>
           <label for="message" id="prospectiveMSG"></label>
-          <textarea type="text" id="message" name="message" placeholder="Share your thoughts..." cols="4" rows="4" maxlength="5000" required aria-required="true" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have."></textarea>
+          <textarea type="text" id="message" name="message" placeholder="Share your thoughts..." cols="4" rows="4" maxlength="5000" required aria-required="true" aria-describedby="prospectiveMSG" title="Please write a detailed message describing your project, scope, timetable and any immediate concerns that you have." class="form-control"></textarea>
         </div>
         
         <div>
