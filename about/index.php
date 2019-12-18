@@ -9,10 +9,6 @@ include ("../inc/header.php")
 <!-- ** // Start of CONTENT *** -->
   <section>
     
-    <article>
-      <h1>Hi. I'm Ray.</h1>
-    </article>
-    
     <!-- FULL-SCREEN <image> GALLERY -->    
     <aside class="imageGrid">
       <!-- Row of 4 -->
@@ -32,10 +28,6 @@ include ("../inc/header.php")
     </aside>
 
     <article>
-      <h5>I build web applications and teach language art skills.</h5>
-    <!--<p>
-In all of my days working, no job has been more rewarding than being an educator!
-</p>-->
       <p>
         My career as an educator began when I was an undergraduate employed as a supervisor for an at-risk youth community center. Shortly after graduating university, I embarked on a sojourn abroad to teach English as a second language. 
       </p>
