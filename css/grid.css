@@ -818,8 +818,8 @@ label.required:after {
 }
 @media only screen and (min-width: 500px) {
   .contactForm {
-    margin: 24px auto; 
-    height: 80vh;
+    margin: 4px auto; 
+    height: 71vh;
   }
   input, textarea {width: 100%; }
   #submit_button {
@@ -833,7 +833,7 @@ label.required:after {
 /* Animation, Transition + Transforms */
 
 /**/
-.fadeIn {  animation: fadeIn ease 4.4s;}
+.fadeIn {  animation: fadeIn ease 8.8s;}
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
