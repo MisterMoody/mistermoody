@@ -13,6 +13,7 @@ include ("inc/homepage.php");
   <div>
     <h1>Hi. I'm Ray.</h1>
   </div>
+  <!-- -->
   <div>
     <img class="mainImage" src="img/me.jpg" />
   </div>

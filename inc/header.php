@@ -9,9 +9,10 @@
     <meta name="twitter:title" content="Mister_Moody">     <!-- Link to Twitter -->
     <meta name="description" content="Official Site for Mister Moody">
     <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
-    <!-- Absolute URL Reference [Req. to Add <links> to Subdirectory Files] -->
-    <!-- https://webmasters.stackexchange.com/questions/86450/htaccess-rewrite-url-leads-to-missing-css -->
+    <!-- Absolute URL Reference '.htaccess URL Rewrite -->
+    <!-- [Req. to Add <links> to Subdirectory Files] -->
     <base href="http://localhost:8012/mistermoody/">
+    <!--  Use this <link> to *GO-LIVE*  <base href="https://mistermoody.com">--> 
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->

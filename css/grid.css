@@ -597,7 +597,7 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
     max-height: 90vh;
     grid-template-columns: repeat(2, 50%);
     /*grid-auto-rows: 44vh; */
-    grid-template-rows: repeat(auto-fit, 40vh);
+    grid-template-rows: repeat(auto-fit, 62vh);
     grid-gap: 0.4em;
   }
   .cur__TopicStyle {
