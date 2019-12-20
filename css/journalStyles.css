@@ -1,0 +1,446 @@
+/* GRID-LINES for TESTING 'ONLY' */
+* {outline: 1px solid red;}
+h1, h2, h3, h4, h5, h6  {outline: 4px solid black;}
+p {outline: 2px solid green;}
+ul, ol {outline: 3px dashed purple;}
+li {outline: 1px dashed purple;}
+a  {outline: 2px dashed black;}
+/* ============================================ */
+/* CASCADING STYLESHEET ======================= */
+/*
+      1.  Global NAVIGATION
+      2.  UNIVERSAL Styles
+      3.                
+      4.  
+      5.  
+      6.  
+      7.  
+      8.  
+      9.  
+      10.                             */
+/* ============================================ */
+
+
+
+/* ============================================ */
+/* 1. Global NAVIGATION ======================= */
+/* ============================================ */
+  /* Page ALIGNMENT */
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  margin: 8px 0;
+  padding: 0 0.2em;
+  text-decoration: none;
+  font-size: 1.5em;
+  border-bottom: none;
+}
+.topnav a:first-child {float: right;}
+.topnav a:hover {
+  /*background-color: red;
+  color: black;*/
+	transition-duration: 0.8s;
+}
+header {
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  z-index: 100;
+}
+header.topnav > .active {
+  color: white;
+  /*margin-right: 7.58em;*/  /* Fixed to <body> 'margin' @ min-width 800px */
+}
+.topnav .icon {
+  display: none;
+}
+fa-home {
+  padding-right: 75px;
+}
+@media screen and (max-width: 800px) {
+  .topnav a {font-size: 1em;}
+  .topnav a:first-child {float: left;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* ******************************************** */
+/* ****Header PERFECTLY Aligned with <body>**** */
+/* ============================================ */
+
+
+
+
+/* ============================================ */
+/* 2. UNIVERSAL BASE STYLES =================== */
+/* ============================================ */
+
+/* Universal Layout Containment */
+html {box-sizing: border-box;} 
+*:before, *:after {box-sizing: inherit;} 
+/* Smooth Scroll Effect + Remove Browser Scroll */
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/**/
+body {
+  height: 100%;
+  margin: 0 1em;
+  padding: 0;
+  /*font-size: calc(1.01em + 1.01vw); */
+	font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.6px;
+}
+main {}                   /* 'PHP' Container */
+/* Page-Alignment Container for Full-Width Images */
+article {margin: 0 8px;}  
+footer  {
+  margin: 4px 0;
+  text-align: center;
+  font-size: 14px; 
+  /*color: #838487;*/
+  /*Sticky
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  text-align: center;*/
+}
+@media all and (min-width: 800px){
+  body {margin: 8em;}
+   /* body {display: none;}        HIDE Site on 'Desktop' */
+  /*article {margin: 0 1.21em;}  Page-Alignment */
+}
+/**/
+/**/
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /*  Text-Decoration Color + Underline Offset + TD Thickness*/
+  border-bottom: #ccc 0.088em dashed;
+}
+a:hover {opacity: 0.7;}
+address {
+  margin: 0 0 0.4em 0;
+  color: red;
+  font-size: 0.6em;
+  font-family: cursive;
+  text-align: center;
+}
+code {
+  background: #ccc; 
+  /*border: 1px solid #888;
+  border-radius: 5px;*/
+  font-family: monospace;
+  font-size: 0.80em;
+  font-weight: 700;
+  line-height: 0;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+details {margin: 0 4px; font-size: 0.8em;}
+figure {margin: 0; padding: 0;}
+figcaption {
+  font-size: 0.68em;
+  font-style: italic;
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {text-align: center;}
+hr {
+  background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
+  border: 0;
+  height: 1px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  overflow: visible;
+  text-align: center;
+}
+hr:after { /*rgba(255, 0, 0, 0.8)*/
+  background: rgba(192, 192, 192, 0.6);
+  content: ' \00A7';
+  border: 1px dotted rgba(10, 9, 9, 0.7);
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0 0.6em;
+  position: relative;
+  top: -0.7em;
+}
+mark {background: #ccc;}
+p { 
+  font-size: 0.94em; /*0.88em;*/
+  line-height: 1.4;
+}
+/**/
+li {padding-left: 16px;}
+li > a {font-size: 0.62em;}
+li > a.active {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  padding: 2px;
+}
+ol {font-size: 0.68em;}
+ol.alpha {list-style-type: lower-alpha;}
+ul {
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0;
+}
+@media all and (min-width: 800px) {  
+  address {
+    margin: 0 0 2em 0;
+    color: red;
+    font-size: 0.6em;
+    font-family: cursive;
+    text-align: center;
+  }
+  body {margin: 0 5.3em;}
+  code {font-size: 0.88em;}
+  details {margin: 0 4px; font-size: 1em;}
+  figure {margin: 0;}
+  p {font-size: 1.1em;}
+}
+/* ============================================ */
+/* ============================================ */
+
+
+
+
+/* ============================================ */
+/* 3. IMAGES + BUTTONS + CARDS + TABLES ======= */
+/* ============================================ */
+img { /* Default */
+  display: block;
+  max-width: 100%;
+}
+.mainImage { /* Custom */
+  max-width: 62vw;
+  max-height: 100%;
+  display: block;
+  margin: 2.4em auto;
+  border-radius: 50%;
+  filter: drop-shadow(4px 4px 4px #cccccc);
+}
+.imgL {
+  float: left;
+  margin: 4px 16px 0 0;
+  width: 35%;
+  height: auto;
+  border-radius: 8px;
+}  
+.imgR {
+  float: right;
+  margin: 7px 0 0 7px;
+  width: 34%;
+  height: 32vh; 
+  border-radius: 8px;
+} 
+@media all and (min-width: 800px) { 
+  .mainImage {
+    width: 35vw;
+    height: 100%;
+    max-height: 62vh; 
+  }
+  .imgL {
+    float: left;
+    margin: 5px 20px 0 0;
+    width: 35%;
+    height: auto; 
+    /*border: 2px solid #c41e3a;*/
+    border-radius: 2px;
+  }
+  .imgR {
+    float: right;
+    margin: 8px 0 0 20px; /*0 0 10px 25px*/
+    width: 32%;
+    height: auto; 
+    /*border: 2px solid #c41e3a;*/
+    border-radius: 2px;
+  }
+}
+/*
+**//******************************************//**
+*/
+/* Buttons w/ 'Ripple-Effect' ==== */
+.btn {
+  background-position: center;
+  transition: background 0.8s;
+}
+.btn:hover {
+  background: #222 radial-gradient(circle, transparent 1%, #111 1%) center/15000%;
+}
+.btn:active {
+  background-color: #333;
+  background-size: 100%;
+  transition: background 0s;
+}
+a.btn {
+  border: none;
+  border-radius: 2px;
+  margin: 0.4em 0; 
+  padding: 0.44em 0.88em;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background-color: #000;
+  box-shadow: 0 0 4px #fff;
+  outline: none;
+}
+p.btn {
+  height: 100%;
+  text-align: center;
+  border: 2px solid #000;
+}
+@media only screen and (min-width: 800px) {
+  .btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 250px;
+    height: 44px;
+  }
+}
+/*
+**//******************************************//**
+*/
+/*Unicode <div> Style*/
+.asciiItem {
+  background: grey;
+  text-align: center;
+}
+/*Unicode 1st Row*/
+.asciiItemChar {
+  font-size: 1.5em;
+}
+.block {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	
+  grid-template-columns: 1fr;    
+}
+.blockCard {
+  margin: 4px 6px;
+  padding: 0;
+  border: 1px solid #838487;
+}
+.card {
+  margin: 6px;
+  padding: 8px;
+  border: 1px solid #838487;
+  text-align: center;
+}
+/*Unicode Character Grid*/
+.characterGrid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 4px;
+}
+dialog::backdrop {
+  background: rgba(255,0,0,.25);
+}
+/* Glossary GRID ==== */
+.glossary {
+   width: 100%;
+   font-size: 0.74em;
+   margin: 0 auto;
+   padding: 0;
+   display: grid;
+   grid-template-rows: repeat(auto, 24px);
+   grid-template-columns: 8em 1fr;
+   grid-gap: 2px;
+ }
+.material-icons {
+  color: #ff4d4d; 
+  font-size: 1em;
+}
+.table, .tableEven {
+  width: 100%;
+  font-size: 0.68em;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	grid-template-columns: 1fr;
+}
+/* Tag Reference GRID */
+.tagRef {
+  margin: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(24px, auto);
+  grid-gap: 8px;  
+}
+@media all and (min-width: 800px) {
+  .block {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(24px, auto));	
+    grid-template-columns: repeat(2, 1fr);   
+    grid-gap: 2px; 
+  }
+  .blockCard {
+    margin: 2px 8px;
+    padding: 0;
+  }
+  .characterGrid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 8px;
+  }
+	.table {
+    width: 100%;
+    font-size: 0.74em;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: 16em 1fr;
+    grid-gap: 2px;
+  }
+	.tableEven {
+    width: 100%;
+    font-size: 0.74em;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+  }
+}
+/* ============================================ */
+/* ============================================ */
+
