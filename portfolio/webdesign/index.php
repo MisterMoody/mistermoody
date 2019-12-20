@@ -104,7 +104,7 @@ include ("../../inc/header.php");
            </div>
           <p class="article__Item__Text">
               Cascading Style Sheets are used to define the aesthetic qualities desired from HTML markup. Selectors are used to target elements which invoke declarations of property-value pairings. There hundreds of properties available for designers to create magic! &nbsp; 
-            <a href="portfolio/webdesign/">Read More</a>
+            <a href="journal/styling-content-with-css/">Read More</a>
           </p>
         </aside>
       </div>
