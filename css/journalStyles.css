@@ -4,7 +4,8 @@ h1, h2, h3, h4, h5, h6  {outline: 4px solid black;}
 p {outline: 2px solid green;}
 ul, ol {outline: 3px dashed purple;}
 li {outline: 1px dashed purple;}
-a  {outline: 2px dashed black;}
+a  {outline: 2px dashed gold;}
+blockquote, div {outline: 1px solid purple;}
 /* ============================================ */
 /* CASCADING STYLESHEET ======================= */
 /*
@@ -111,8 +112,6 @@ body {
   letter-spacing: 0.6px;
 }
 main {}                   /* 'PHP' Container */
-/* Page-Alignment Container for Full-Width Images */
-article {margin: 0 8px;}  
 footer  {
   margin: 4px 0;
   text-align: center;
@@ -148,17 +147,15 @@ address {
   font-family: cursive;
   text-align: center;
 }
+blockquote {text-align: center;}
 code {
   background: #ccc; 
   /*border: 1px solid #888;
   border-radius: 5px;*/
   font-family: monospace;
   font-size: 0.80em;
-  font-weight: 700;
-  line-height: 0;
-  letter-spacing: 0;
-  margin: 0;
-  padding: 0;
+  font-weight: bold;
+  letter-spacing: .8;
 }
 details {margin: 0 4px; font-size: 0.8em;}
 figure {margin: 0; padding: 0;}
@@ -167,7 +164,11 @@ figcaption {
   font-style: italic;
   text-align: center;
 }
-h1, h2, h3, h4, h5, h6 {text-align: center;}
+.title {text-align: center;}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bolder;
+  font-variant: small-caps;
+}
 hr {
   background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
   border: 0;
@@ -188,8 +189,16 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   position: relative;
   top: -0.7em;
 }
+/* Highlights 'Terminology' => DO NOT REMOVE */
+i {
+  color: #111;
+  font-variant: small-caps;
+  font-weight: bold;
+} 
+/**/
 mark {background: #ccc;}
 p { 
+  color: #444;
   font-size: 0.94em; /*0.88em;*/
   line-height: 1.4;
 }
@@ -203,11 +212,6 @@ li > a.active {
 }
 ol {font-size: 0.68em;}
 ol.alpha {list-style-type: lower-alpha;}
-ul {
-  list-style-type: none; 
-  margin: 0; 
-  padding: 0;
-}
 @media all and (min-width: 800px) {  
   address {
     margin: 0 0 2em 0;
@@ -234,14 +238,13 @@ ul {
 img { /* Default */
   display: block;
   max-width: 100%;
+  width: 100%;
 }
 .mainImage { /* Custom */
-  max-width: 62vw;
-  max-height: 100%;
-  display: block;
-  margin: 2.4em auto;
-  border-radius: 50%;
-  filter: drop-shadow(4px 4px 4px #cccccc);
+  max-width: 100%;  
+  width: 100%; 
+  height: auto;
+  margin: 0;
 }
 .imgL {
   float: left;
@@ -257,11 +260,13 @@ img { /* Default */
   height: 32vh; 
   border-radius: 8px;
 } 
-@media all and (min-width: 800px) { 
-  .mainImage {
-    width: 35vw;
-    height: 100%;
-    max-height: 62vh; 
+@media all and (min-width: 800px) {
+  .mainImage {  /*Center Image*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 85%;*/
+    max-height: 200px;
   }
   .imgL {
     float: left;

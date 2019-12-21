@@ -6,143 +6,174 @@ include ("../inc/journalHeader.php");
 <!-- ************ <<WEB DESIGN KNOWLEDGE>> ************ -->
 
 
-<!-- //CONTENT-BEGINS..... -->
-<!-- ++Using CSS++ -->
-<section class="intro">
-  <h2> Using CSS</h2>
-  <p>
-    This page defines the Cascading stylesheet Language, better known as CSS, which is the programming language that controls the presentation of HTML elements used when creating a website. The list of topics that are covered include:
-  </p>
-  <ol>
-    <li>What is CSS?</li>
-    <li>CSS Snytax</li>
-    <li>The Cascade, Inheritance and Specificity</li>
-    <li>Debugging and Optimizing CSS</li>
-    <li>Layout</li>
-    <li>General Styles</li>
-    <li>Advanced Styles</li>
-  </ol> 
-  <p>
-    Examples will be provided throughout the page in the form of <u>contextual links</u> or <code class="reference"><a href="">&lt;code&gt;</a></code> references. Perhaps more valuable is the curated list of resources (coming soon). Now that we have a gameplan, lets look at how to write CSS.
-  </p>
-</section>
-        
-<!-- ++What is CSS?++ -->
-<hr>
-<hr>
-<div class="intro" id="whatIsCSS">
-  <h2>What is CSS?</h2>
-  <p><u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Cascading stylesheets</a></u> (CSS) is a stylesheet language used to describe the rendering of elements on an HTML document. In the same fashion that HTML has a standardized set of specifications, the <u><a href="https://www.w3.org/Style/CSS" target="_blank">W3C</a></u> group is also the leading authority of CSS best practices. <u><a href="https://developer.mozilla.org/en-US/Learn/CSS/Introduction_to_CSS" target="_blank">Mozilla</a></u> and <u><a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">W3Schools</a></u>, however, are great sources of reference that offer a suite of articles, tutorials and tools for implementing CSS.</p>
-  <p>The setup for <u><a href="https://www.w3schools.com/css/css_howto.asp" target="_blank">applying CSS</a></u> to a web page using CSS is quite simple and begins by creating a file with the extension .css then including that file in the <code>&lt;head&gt;</code> of the HTML document that you want to style as a <code>&lt;link&gt;</code>. The <code>&lt;link&gt;</code> tag requires three attributes to be effectively implemented with an HTML document. Those attributes include the <code>href="val"</code>, <code>rel="val"</code> and the <code>type="val"</code> attributes.</p>
-  <figure>
-    <img alt="Strategy to Link a CSS File with an HTML Document" src="img/cssLinkStrategy.JPG">
-    <figcaption>
-      CSS &lt;Link&gt; Strategy
-    </figcaption>
-  </figure>
-  <p>The <code class="reference"><a href="https://www.w3schools.com/tags/att_link_href.asp" target="_blank">href="val"</a></code> attribute specifies the location of an external resource and that resource will always be an external stylesheet whose location is referenced on the same server as the webpage that contains it. This attribute accepts a <code class="reference"><a href="https://www.webopedia.com/TERM/U/URL.html" target="_blank">URL</a></code> as its value to establish a connection with an <code class="reference"><a href="https://www.techopedia.com/definition/25421/external-style-sheet" target="_blank">external stylesheet</a></code>. While an <code>external stylesheet</code> is the file that is linked to the HTML document, the precise value for this element is the stylesheets' <code>URL</code>, or Uniform Resource Locator, which is the web browser mechanism used to retrieve a unique resource located on the web.</p>
-  <p>Authored stylesheets have a relative URL, which is an implicit reference to a resource located on the same server as the web page. However, some resources are located somewhere else in the webiverse and these have an <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL" target="_blank">absolute</a></code> URL, which is an explicitly specified web address. Where a relative URL requires a simple file path to process a file, an absolute URL takes the following format: <code>protocol://domain/path/resource</code>.</p>
-  <p>Here, <u><a href="https://docs.microsoft.com/en-us/sql/ado/guide/data/absolute-and-relative-urls?view=sql-server-2017" target="_blank">protocol</a></u> specifies how the resource is to be accessed while the domain specifies the name of the computer where the resource is located. The path specifies the sequence of directories leading to the target while the resource, if included, is the target, typically the name of a file. The <u><a href="https://www.webopedia.com/TERM/U/URL.html" target="_blank">protocol identifier</a></u> is either <code>http</code> or <code>https</code>, and is separated from the domain by a colon and two forward slashes. While the protocol is a method for exchanging or transferring data around a computer network, the domain is the server that is being requested. While it is clear that developers should use relative URLs to server style sheets, <u><a href="https://www.seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/" target="_blank">an argument can be made for using an absolute URL instead</a></u>. <u><a href="https://www.ietf.org/rfc/rfc1738.txt" target="_blank">Learn more about URLs</a></u> and how they formally came about via the <u><a href="https://www.rfc-editor.org/info/rfc1738" target="_blank">RFC 1738</a></u> pact.</p>
-  <p>The <code class="reference"><a href="https://www.w3schools.com/tags/att_link_rel.asp" target="_blank">rel="val"</a></code> attribute specifies the relationship of the target object to the link object and can accept a dozen values to specify a particular relationship with the document, but when implementing CSS, its value is always <code>"stylesheet"</code>.</p>
-  <p>The <code class="reference"><a href="https://www.w3schools.com/tags/att_link_type.asp" target="_blank">type="val"</a></code> attribute specifies the Internet media type of the linked resources; a value of <code>"text/css"</code> indicates that the referenced document is an external stylesheet. This attribute is required only when the <code>href="val"</code> attribute is set.</p>
-  <p>As you can see, setting up a web project to handle CSS is simple, but as the project grows, it will become difficult to manage how styles are applied. A good practice here is to separate project styles from one another using multiple &lt;link&gt; tags in order to prevent <u><a href="https://www.computerhope.com/jargon/s/spaghett.htm" target="_blank">spaghetti code</a></u>. This occurs when you have different layout styles or patterns applied to various elements across multiple pages.</p>
-  <p>With that covered, lets focus on writing CSS!</p>
-</div>
-<!-- ++CSS Syntax++ -->
-<hr>
-<div class="intro" id="cssSyntax">
-  <h2>CSS Syntax</h2>
-  <p>In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document to display a certain way. CSS is created by employing a <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works" target="_blank">rule-set</a></u>, which is a rule for how the browser will interpret styling an HTML element. A rule-set is simply a block of code that consists of a selector, which references the HTML element that you want to apply styles to, and a declaration, which sets the property and value for the applied style. The terms rule-set, declaration and statement can be used interchangeably.</p>
-  <p><u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax" target="_blank">Selectors</a></u> are used to select elements based on their name, class, id or attribute. <u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax" target="_blank">Declarations</a></u> have beginning and ending curly braces and are composed of a property and corresponding value. A <u><a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">property</a></u> is an identifier for an HTML attribute that indicates which stylistic features to implement while its <u><a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">value</a></u> are specifications for how you want those stylistic features. A colon separates the property from its value while a semi-colon separates declarations from one another. With more than 300 <u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS properties</a></u>, the number of styling possibilities is endless!</p>
-  <h5>Selector Types</h5>
-  <p>There are seven types of selectors, all of which are used for a specific purpose. An explanation for how to use selectors appropriately can be found <u><a href="https://css-tricks.com/how-css-selectors-work/" target="_blank">here</a></u>, <u><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">here</a></u> and <u><a href="https://www.tutorialspoint.com/css/css_syntax.htm" target="_blank">here</a></u>.</p>
-  <p>The <u><em><a href="https://css-tricks.com/almanac/selectors/t/type/" target="_blank">element</a></em></u> selector <code>element &#123;prop: val;&#125;</code> will apply consistent styles to a specific HTML element. In the example below, all <code>&lt;h1&gt;</code> headings are modified to accept a 'grey' color and 'increased' size.</p>
-  <figure>
-    <img alt="Example of how to Style the #ID Selector" src="img/selectorTYPE.JPG">
-    <figcaption>
-      Example of an Element Selector
-    </figcaption>
-  </figure><br>
-  <p>The <u><em><a href="https://css-tricks.com/almanac/selectors/d/descendant/" target="_blank">descendant</a></em></u> selector <code>element<sup>1</sup> element<sup>2</sup> &#123;prop: val;&#125;</code> is useful for applying styles to a <u><a href="https://www.webopedia.com/TERM/N/nesting.html" target="_blank">nested</a></u> element. In the example below, the <code>&lt;li&gt;</code> within the <code>&lt;ul&gt;</code> will accept a 'grey' color and 'decreased' size.</p>
-  <figure>
-    <img alt="Example of how to Style the Descendant Selector" src="img/selectorDESCENDANT.JPG">
-    <figcaption>
-      Example of a descendant Selector
-    </figcaption>
-  </figure><br>
-  <p>The <u><em><a href="https://css-tricks.com/almanac/selectors/c/child/" target="_blank">child</a></em></u> selector <code>element<sup>1</sup> &#62; element<sup>2</sup> &#123;prop: val;&#125;</code> applies styles to an elements in the event that it is the direct child of that element. In the example below, the declaration renders all <code>&lt;li&gt;</code> elements within a <code>&lt;ol&gt;</code> as green.</p>
-  <figure>
-    <img alt="Example of how to Style the Child Selector" src="img/selectorCHILD.JPG">
-    <figcaption>
-      Example of a child Selector
-    </figcaption>
-  </figure><br>
-  <p>The <u><em><a href="https://css-tricks.com/almanac/selectors/c/class/" target="_blank">.class</a></em></u> selector <code>&#46;class &#123;prop: val;&#125;</code> selects elements with a specific class, and can be applied to more than one element.</p>
-  <figure>
-    <img alt="Example of how to Style the .CLASS Selector" src="img/selectorClass.JPG">
-    <figcaption>
-      Example of a .CLASS Selector applied to HTML
-    </figcaption>
-  </figure>
-  <p>The illustration above highlights the simplicity in applying a <code>&lt;.class&gt;</code> to an HTML element while the illustration below indicates the style change and how it is applied. In this example, the first declaration will render elements that contain a <code>.class</code> selector as 'red' whereas the second declaration will render <code>&lt;p&gt;</code> elements that contain a <code>.class</code> selector as 'yellow.'</p>
-  <figure>
-    <img alt="Example of how to Style the .CLASS Selector" src="img/selectorClass2.JPG">
-    <figcaption>
-      Examples of .CLASS Selectors applied in CSS
-    </figcaption>
-  </figure><br>
-  <p>The <u><em><a href="https://css-tricks.com/almanac/selectors/i/id/" target="_blank">#id</a></em></u> selector <code>&#35;id &#123;prop: val;&#125;</code> is a unique CSS identifier that can only be used on one element. Whereas the element selector is the most commonly used for applying styles to the same element, the #id selector has the highest level of <u><a href="https://developer.mozilla.org/en/docs/Web/CSS/Specificity" target="_blank">specificity</a></u> among all selectors. It is very useful when referencing the location of a block of code, being the only purpose of which I employ this selector.</p>
-  <figure>
-    <img alt="Example of how to Style the #ID Selector" src="img/selectorID.JPG">
-    <figcaption>
-      Example of an #id Selector
-    </figcaption>
-  </figure>
-  <p>In the example above, an #id selector is applied to the navigational links' <code>&lt;a href&#61;&#34;&#35;val&#34;&gt;</code> attribute that, when clicked, will transport the user to the <code>&lt;div&gt;</code> with the corresponding <code>id&#34;val&#34;</code>. Notice the placement of the hashtag &#40;&#35;&#41;; it is always placed in an <code>&lt;a&gt;</code> tag, but not with the targeted element.</p><br>
-  <p>The <u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors" target="_blank">universal</a></em></u> selector <code><b>&#42;</b> &#123;prop: val;&#125;</code> is used to render a specific style to all elements of a website. In the illustration below, all text elements will render 'blue.'</p>
-  <figure>
-    <img alt="Example of how to Style the Universal Selector" src="img/selectorUNIVERSAL.JPG">
-    <figcaption>
-      Example of an Universal Selector
-    </figcaption>
-  </figure>
-  <p>One must be careful when using this selector for certain properties as it severly limits application of the same property applied to a different selector. For example, all <code>&lt;a href&#61;&#34;val&#34;&gt;</code> have a default style where <code>&lt;link&gt;</code> elements render 'blue' in color. The rule-set above would cause havoc as it would be difficult to differentiate normal text from an <code>&lt;a&gt;</code> element embedded within a block of text.</p><br>
-  <p><u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">Pseudo-class</a></em></u> selector <code><b>&#58;pseudo-class</b> &#123;prop: val;&#125;</code> are actually keywords that are added to other selectors and provide a unique style during a particular instance of that selector. Knowing <u><a href="https://css-tricks.com/pseudo-class-selectors/" target="_blank">how to apply</a></u> a pseudo-class will seem difficult at first, but developers become familiar with these quickly as it provides additional styling capabilities. The illustration below highlights ways in which these selectors can be applied to navigational links.</p>
-  <figure>
-    <img alt="Example of how to Style a Pseudo-Class Selector" src="img/selectorPSEUDOclass.JPG">
-    <figcaption>
-      Example of a Pseudo-Class Selector
-    </figcaption>
-  </figure>
-  <p>It would be wise to check out this handy <u><a href="https://css-tricks.com/almanac/selectors/" target="_blank">almanac</a></u> of pseudo-class selectors to better understand how these can be applied in a variety of situations, one of which is a pseudo-class based on <u><a href="https://css-tricks.com/pseudo-class-selectors/#article-header-id-2" target="_blank">position</a></u>, which is a good method for specifiying a location for blocks of code. In this regard, understanding how to <u><a href="https://css-tricks.com/how-nth-child-works/" target="_blank">use</a></u> and <u><a href="https://css-tricks.com/examples/nth-child-tester/" target="_blank">test</a></u> the <code class="reference"><a href="https://css-tricks.com/useful-nth-child-recipies/" target="_blank">&#58;nth-child&#40;&#41;</a></code>, which selects elements based on an algebraic expression, is imperative, but that should not stop one from exploring <code class="reference"><a href="https://css-tricks.com/almanac/selectors/r/required/" target="_blank">&#58;required&#40;&#41;</a></code>, <code class="reference"><a href="https://css-tricks.com/almanac/selectors/f/focus/" target="_blank">&#58;focus</a></code> and <code class="reference"><a href="https://css-tricks.com/almanac/selectors/d/disabled/" target="_blank">&#58;disabled</a></code> pseudo-class selectors that go far when styling <code>&lt;form&gt;</code>inputs.</p><br>
-  <p>In contrast to pseudo-class selectors, <u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">pseudo-element</a></em></u> selector can be used to style a specific part of an element. There are many <u><a href="https://css-tricks.com/pseudo-element-roundup/" target="_blank">amazing ways</a></u> to use pseudo-elements, but the scope of this subject focuses on four selectors that adds depth to elements that possess text.</p>
-  <p>The <code class="reference"><a href="https://css-tricks.com/almanac/selectors/f/first-letter/" target="_blank">&#58;first-letter</a></code> and <code class="reference"><a href="https://css-tricks.com/almanac/selectors/f/first-line/" target="_blank">&#58;first-line</a></code> pseudo-elements can be used to add style to the first letter or first line of text, respectively, but they can only be applied to <u><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">block-level</a></u> elements. In the illustration below, the first declaration states that the 'first letter' of 'every paragraph' with a class of 'intro' will display as 'red.' The second declaration states that the 'first line' of 'every paragraph' with a class of 'intro' will display 'bolder' than the text below it.</p>
-  <figure>
-    <img alt="Example of how to Style a Pseudo-Element Selector" src="img/selectorPSEUDOelement.JPG">
-    <figcaption>
-      Example of a Pseudo-Element Selector
-    </figcaption>
-  </figure>
-  <p>The <code class="reference"><a href="https://css-tricks.com/almanac/selectors/a/after-and-before/" target="_blank">&#58;&#58;before</a></code> and <code class="reference"><a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">&#58;&#58;after</a></code> pseudo-elements can be used to add content before or after an element, respectively. The key to these selectors is that they require the <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" target="_blank">content&#58; &#34;&#34;&#59;</a></code> property in order to work. Add a symbol as a value for the property, or leave it empty and add the <code class="reference"><a href="https://developer.mozilla.org/en/docs/Web/CSS/background" target="_blank">background</a></code> shorthand property to the declaration with the resource (i.e. URL, image, string) that you want to display. In the illustration below, the value of the <code>content&#58; &#34;&#34;&#59;</code> property will display a checkmark before any list-item.</p>
-  <figure>
-    <img alt="Example of how to Style a Pseudo-Element Selector" src="img/selectorPSEUDOelement2.JPG">
-    <figcaption>
-      Example of a Pseudo-Element Selector
-    </figcaption>
-  </figure>
-  <p>These selector types can do more than improve how text is displayed: they can even be used to create <u><a href="http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/" target="_blank">multiple backgrounds</a></u> and borders.</p><br>
-  <p>The <u><em><a href="https://developer.mozilla.org/en/docs/Web/CSS/Attribute_selectors" target="_blank">attribute</a></em></u> selector <code>element&#91;<b>attribute</b> &#61; &#34;val&#34; &#123;prop: val;&#125;</code> is used to apply styles to an HTML element with a specific attribute, but what do I know: I never use this selector! If I did, I would probably use it to select all <code>&lt;p&gt;</code> elements with a <code>lang</code> attribute that has a value of <code>zh</code>, for the Mandarin language. But what would I use that for!?!</p>
-  <figure>
-    <img alt="Example of how to Style the Attribute Selector" src="img/selectorATTRIBUTE.JPG">
-    <figcaption>
-      Example of an Attribute Selector
-    </figcaption>
-  </figure>
-  <p>Again, learning to use these selectors is a challenge every developer encounters. One thing to remember is that sometimes <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Combinators_and_multiple_selectors" target="_blank">combinator</a></u> selectors can be more efficient than creating separate styles for each targeted element. Equally important is to know how to hide styles when in production-mode. We implement <u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Comments" target="_blank">comments</a></u> by adding <code>&#47;&#42;</code> and <code>&#42;&#47;</code> to the beginning and end of any text; this will prevent any code from being rendered by the browser. Comments are also useful when collaborating on a project to ensure that all team members can readily comprehend its working status.</p>
-</div>
+<!-- // CONTENT-BEGINS ////////////////////////// -->
+<article>
+  <!-- // Introduction -->
+  <section>
+    <h1 class="title">Styling Content with CSS</h1>
+      <figure>
+        <img class="mainImage" src="img/designStyle.jpg"/>
+        <figcaption>So Many Colors, So Many </figcaption>
+      </figure>
+    <p>
+      CSS is an acronym for Cascading Stylesheet, which is a programming language that controls the presentation of <code>&#60;html&#62;</code> elements when displayed in the browser. This article is a follow-up to <a href="journal/semantic-markup">semantic markup</a> and explores fundamental usage of CSS best practices to follow when styling content for a web applications. Topics covered include:
+    </p>
+    <ol>
+      <li>Create and Load a Stylesheet</li>
+      <li>CSS Snytax</li>
+      <li>Structuring a Stylesheet</li>
+      <li>The Cascade, Inheritance and Specificity</li>
+      <li>Debugging and Optimizing CSS</li>
+      <li>General Styles</li>
+    </ol> 
+  </section>
+  <hr>
+  
+  <!-- ++Create and Load a Stylesheet++ -->
+  <section>
+    <h4>Create and Load a Stylesheet</h4>
+    <p>Implementing CSS in a web application begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css.'</p>
+    <p>Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>html</code> document using the <code>&lt;link&gt;</code> tag. This tag requires three attributes: <code>href="val"</code>, <code>rel="val"</code> and the <code>type="val"</code> attributes.</p>
+    <figure>
+      <img alt="Strategy to Link a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">
+      <figcaption>
+        CSS &lt;Link&gt; Strategy
+      </figcaption>
+    </figure>
+    <p>
+      The <code>rel="..."</code> attribute specifies the relationship of the target object with the <code>&lt;link&gt;</code> to specify its relationship with the document. When implementing CSS, its value is always <code>"stylesheet"</code>. Although omitted here, the <code>type="..."</code> attribute specifies the <i>media type</i> being used as a resource. When implementing CSS, the values for these atributes should be <code>"stylesheet"</code> and <code>"text/css"</code>, respectively, to dictate that the referenced resource is in fact an external stylesheet. The former attribute is required only when its latter counterpart is set.
+    </p>
+    <p>
+      The <code>href="val"</code> attribute specifies the location of an external resource whose location is referenced on the same server as the webpage that contains it. This attribute accepts a <i>URL</i> (Uniform Resource Locator) as its value to establish a connection with an <i>external stylsheet</i>. The examples above highlight use of a <i>relative</i> URL, which is an <i>implicit</i> reference to a resource located on the same server as the web page using a simple file path. Not all resources are located on the same server. Many web apps utilize resources that are stashed throughout the webiverse: these use <i>explicitly</i> specified web address are are called <i>absolute</i> URL. An absolute URL takes the following format:
+    </p>
+    <blockquote>
+      <code>protocol://domain/path/resource</code>
+    </blockquote>
+    <p>
+      Here, <i>protocol</i> specifies how the resource is to be accessed while the <i>domain</i> specifies the name of the computer (or website) where the resource is located. The <i>path</i> specifies the sequence of directories leading to the target while the <i>resource</i>, if included, is the target, typically the name of a file. The protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks whilethe domain is the server from which data is requested. 
+    </p>
+    <p>
+      Before moving forward, keep in mind that it is good practice to separate code into multiple stylesheets in order to avoid writting <i>spaghetti code</i>, which occurs when  different layout styles or patterns are applied to elements spread throughout multiple pages.
+    </p>
+    <p>With that covered, lets focus on writing CSS!</p>
+  </section>
+
+  <!-- ++CSS Syntax++ -->
+  <hr>
+  <section>
+    <h4>CSS Syntax</h4>
+    <p>
+      In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document to display a certain way. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a <i>selector</i> and a <i>declaration</i>. 
+    </p>
+    <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
+    <p>
+      Selectors reference <code>html</code> elements targeted for styling. The aesthetic quality for a selector is embodied within its declaration, which begins and ends with curly braces and is composed of a <i>key/value</i> pair. The key refers to a <i>property</i> that identifies the aesthetic quality to modify while the <i>value</i> or <i>keyword</i> quantifies to what extent that property is modified. The property and value/keyword are succeeded by a colon and semi-colon, respectively, to separate the property from its value and to finalize a declaration.
+    </p>
+    <!-- Selector Types-->
+    <h5>Selector Types</h5>
+    <p>
+      There are seven types of selectors:
+    </p>
+    <p>
+      The <i>universal</i> selector is used to render a specific style to all elements of a website. The example below dictates that all <code>html</code> elements will have 'margins' all around at a value of half an em.
+    </p>
+    <blockquote>
+      <code>* &#123; margin: 0.4em; &#125;</code>
+    </blockquote>
+
+    <p>
+      The <i>element</i> selector applies consistent styles to a specific <code>html</code> element. The example below dictates that all <code>&lt;h1&gt;</code> headings are 'grey' and 'large.'
+    </p>
+    <blockquote>
+      <code>h1 &#123; color: #838487; font-size: 10em; &#125;</code>
+    </blockquote>
+
+    <p>
+      The <i>descendant</i> selector is used to apply styles for <i>nested</i> elements only in the event that there is an ancestral lineage between the two elements. The example below dictates that <code>&lt;li&gt;</code> within the <code>&lt;ul&gt;</code> are 'small.'
+    </p>
+    <blockquote>
+      <code>ul li &#123; font-size: 0.848emm; &#125;</code>
+    </blockquote>
+
+    <p>
+      The <i>child</i> selector is used to match all elements that are children of a specified element . The example below dictates that all <code>&lt;li&gt;</code> elements that are children of<code>&lt;ol&gt;</code> are 'periwinkle' in color.
+    </p>
+    <blockquote>
+      <code>ol &#62; li &#123; color: #c3cde6; &#125;</code>
+    </blockquote>
+
+    <p>
+      The <i>.class</i> selector targets elements with a specific class reference. A class can be added to any element. The example below dictates that a 'grid' is applied to the class.
+    </p>
+    <blockquote>
+      <code>.class &#123; display: grid; &#125;</code>
+    </blockquote>
+
+    <p>
+      The <i>attribute</i>selec tor applies styles to an <code>html</code> element that possesses a specific attribute. The example below dictates that <code>a</code> elements with the attribute of 'title' will be 'purple.'
+    </p>
+    <blockquote>
+      <code>a &#91; title &#93;; &#123; color &#125;</code>
+    </blockquote>
+
+    <p>
+      <i>&#58;Pseudo-class</i> selectors are actually keywords that are added to other selectors and provide a unique style during a particular instance of that selector. The examples below dictates how <code>a</code> elements can be modified based on a particular instance. The keywords 'active', 'hover' and 'visited' dictate that styles are applied in the instance that a user is on a current page, has hovered over an element or has already visited that page.
+    </p>
+    <blockquote>
+      <code>a&#58;active &#123; ... &#125;</code><br>
+      <code>a&#58;hover &#123; ... &#125;</code><br>
+      <code>a&#58;visited &#123; ... &#125;</code>
+    </blockquote>
+    <p>
+      Other useful pseudo-class selectors include <code><a href="https://css-tricks.com/useful-nth-child-recipies/" target="_blank">&#58;nth-child&#40;&#41;</a></code>, <code><a href="https://css-tricks.com/almanac/selectors/r/required/" target="_blank">&#58;required&#40;&#41;</a></code>, <code><a href="https://css-tricks.com/almanac/selectors/f/focus/" target="_blank">&#58;focus</a></code> and <code><a href="https://css-tricks.com/almanac/selectors/d/disabled/" target="_blank">&#58;disabled</a></code>.
+    </p>
+
+    <p>
+      <i>&#58;&#58;Pseudo-element</i> selectors, on the other hand, are used to style a specific part of an element. The difference between the two is in the number of colons. Ther following focuses on four selectors that adds depth to elements that possess text.
+    </p>
+    <p>
+      The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements. The examples below dictates that the 'first letter' of 'every paragraph' with a class of 'intro' will display as 'red' and that the 'first line' of 'every paragraph' with a class of 'intro' will display 'bolder' than the text below it.
+    </p>
+    <blockquote>
+      <code>p.intro&#58;&#58;first-letter &#123; color: #ff0000; &#125;</code>
+      <code>p.intro&#58;&#58;first-line &#123; font-weight: 900; &#125;</code>
+    </blockquote>
+
+    <p>
+      The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" target="_blank">content&#58; &#34;&#34;&#59;</a></code> property in order to work. This is useful when you want to include an icon or background image. The example below dictates that a checkmark will be displayed <em>before</em> any list-item.
+    </p>
+    <blockquote>
+      <code>li&#58;&#58;before &#123; content&#58; &#34;\2713&#34;&#59; &#125;</code>
+    </blockquote>
+
+    <p>
+      The <u>#id</u> selector <em>should not be used in CSS</em> because it is a unique identifier that should be used exclusively as a 'hook' for <code>html</code> and <code>JavaScript</code> implementations.
+    </p>
+
+    <p>
+      In general, it is best practice to employ <i>comments</i> extensively throughout a styesheet in an effort 
+    </p>
+  </section>
+
+  <!-- Structuring a Stylesheet -->
+  <section>
+    <h4>Structuring a Stylesheet</h4>
+    <p>
+      Writing CSS requires a plan: no plan will result in spaghetti code. There are ways to avoid code purgatory and it all begins with using <i>comments</i> to <em>document points-of-emphasis for each rule-set</em>. This practice makes reading code easier and is especially important when collaborating on a team project. The example below is a single-line comment where the '...' references the comment.
+    </p>
+    <blockquote>
+      <code>/* ... */</code>
+    </blockquote>
+    <p>
+      Leaving comments is only one method of writing legible code: double-space tabs, lowercase text, meaningful class names, avoiding unnecessary type selectors (ie nesting to deep) and using shorthand properties will go a long way in formatting.
+    </p>
+  </section>
+
+</article>
+
 <!-- ++C.I.S.++ -->
 <hr>
-<div class="intro" id="casInheritSpecify">
+<div>
   <h2>The Cascade, Inheritance &amp; Specificity</h2>
   <p>The core of CSS is the <u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade" target="_blank">Cascade</a></u>, an algorithm that defines how to combine property values that originate from different sources. Essentially, it defines that the order of CSS rules is important, and when not followed, could produce disastrous results. In accordance with the rules, developers should be wary of the descending order of importance for the cascade: origin, specificity and order.</p>
   <p>The <u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#Cascading_order" target="_blank">order</a></u> in which CSS declarations cascade depends on the origin of CSS declarations. Because style sheets come from different origins, they tend to overlap in scope, and this is when the algorithm defines the interaction. The browser uses a basic style sheet known as a <u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#User-agent_stylesheets" target="_blank">user-agent</a></em></u> stylesheet that provides a default style to any document. A <u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#User_stylesheets" target="_blank">user</a></em></u> stylesheet is created by individual users to customize and override styles that have been applied to the browser, regardless of origin. <u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#Author_stylesheets" target="_blank">Authored</a></em></u> stylesheets are CSS files created by developers to define how a website will display. Respectively, these origins represent the order of priority in which they cascade, top-down, meaning that a user-agent stylesheet will take precedence over an authored stylesheet.</p>
@@ -159,7 +190,7 @@ include ("../inc/journalHeader.php");
 </div>
 <!-- ++Debugging CSS++ -->
 <hr>
-<div class="intro" id="debugCSS">
+<div>
   <h2>Debugging CSS</h2>
   <p>There are times when developers write declarations that are not rendered in the browser, and a simple explanation would target a syntax error as the culprit. When this happens, the browser will simply ignore the rule. If this happens, developers will have to resolve the conflict independently, and this sometimes creates headaches. Luckily, there are plenty of resources available to help <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank">debug</a></u> CSS.</p>
   <p>Major internet browsers –Chrome, Firefox, Microsoft Edge and Safari, all offer <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-browser-based-developer-tools/" target="_blank">dev tools</a></u> to help troubleshoot CSS issues. These toolkits employ an element inspector, a styles panel and a mode for responsive debugging that allows developers to understand where styling conflicts exist. When inspecting styles, it is important to note the declarations that are crossed out or have a warning icon, for example, have been overridden or are invalid. Thus, such elements should be the focus for trying to alleviate any style concerns. Learn more about <u><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome</a></u>, <u><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox</a></u>, <u><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">Microsoft Edge</a></u> and <u><a href="https://developer.apple.com/safari/tools/" target="_blank">Safari</a></u> dev tools.</p>
@@ -171,12 +202,12 @@ include ("../inc/journalHeader.php");
 <!-- -->
 <!-- ++General Styles++ -->
 <hr>
-<div class="intro" id="cssGenStyles">
+<div>
   <h2>General Styles</h2>
   <p></p>
 </div>
 <!-- ++ 'FONT' sub-section for 'General Styles'++ -->
-<div id="fonts">
+<div>
   <h3>Font Properties</h3>
   <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" target="_blank">font</a></code> CSS <em>Property</em> allows developers to modify how text is displayed. This property can be used to set the elements font to the systems font or as a shorthand for setting multiple font-property <em>Values</em>. There are nearly a dozen distinctive font-property features that can be used for styling. I categorically understand such properties to either modify the style or spacing of text.</p>
   <h6>Font-Family</h6>
