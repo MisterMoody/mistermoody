@@ -13,27 +13,27 @@ include ("../inc/journalHeader.php");
     <h1 class="title">Styling Content with CSS</h1>
       <figure>
         <img class="mainImage" src="img/designStyle.jpg"/>
-        <figcaption>So Many Colors, So Many </figcaption>
+        <figcaption>So Many Colors, So Many Style Possibilities</figcaption>
       </figure>
     <p>
-      CSS is an acronym for Cascading Stylesheet, which is a programming language that controls the presentation of <code>&#60;html&#62;</code> elements when displayed in the browser. This article is a follow-up to <a href="journal/semantic-markup">semantic markup</a> and explores fundamental usage of CSS best practices to follow when styling content for a web applications. Topics covered include:
+      CSS is an acronym for Cascading Style Sheets, a style sheet language that controls the presentation of <code>&#60;html&#62;</code> elements when displayed in the browser. This article is a follow-up to <a href="journal/semantic-markup">semantic markup</a> and explores fundamental usage of CSS best practices to follow when styling content for a web applications. Topics covered include:
     </p>
     <ol>
       <li>Create and Load a Stylesheet</li>
       <li>CSS Snytax</li>
-      <li>Structuring a Stylesheet</li>
-      <li>The Cascade, Inheritance and Specificity</li>
-      <li>Debugging and Optimizing CSS</li>
-      <li>General Styles</li>
+      <li>Style Sheet Format and Structure</li>
+      <li>Declaration Examples</li>
+      <!--<li>Debugging and Optimizing CSS</li>-->
     </ol> 
   </section>
+  
   <hr>
   
   <!-- ++Create and Load a Stylesheet++ -->
   <section>
-    <h4>Create and Load a Stylesheet</h4>
-    <p>Implementing CSS in a web application begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css.'</p>
-    <p>Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>html</code> document using the <code>&lt;link&gt;</code> tag. This tag requires three attributes: <code>href="val"</code>, <code>rel="val"</code> and the <code>type="val"</code> attributes.</p>
+    <h4>Part 1: Create and Load a Stylesheet</h4>
+    <p>Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css.'</p>
+    <p>Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>html</code> document using the <code>&lt;link&gt;</code> tag, which requires three attributes: <code>rel="keyword"</code>, <code>href="URL"</code>, and the <code>type="keyword"</code> attributes.</p>
     <figure>
       <img alt="Strategy to Link a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">
       <figcaption>
@@ -41,33 +41,33 @@ include ("../inc/journalHeader.php");
       </figcaption>
     </figure>
     <p>
-      The <code>rel="..."</code> attribute specifies the relationship of the target object with the <code>&lt;link&gt;</code> to specify its relationship with the document. When implementing CSS, its value is always <code>"stylesheet"</code>. Although omitted here, the <code>type="..."</code> attribute specifies the <i>media type</i> being used as a resource. When implementing CSS, the values for these atributes should be <code>"stylesheet"</code> and <code>"text/css"</code>, respectively, to dictate that the referenced resource is in fact an external stylesheet. The former attribute is required only when its latter counterpart is set.
+      The <code>rel="..."</code> attribute specifies the relationship of the target object with the <code>&lt;link&gt;</code> to specify its relationship with the document. Although omitted here, the <code>type="..."</code> attribute specifies the <i>media type</i> being used as a resource. The keywords <code>"stylesheet"</code> and <code>"text/css"</code>, respectively, are utilized to notify the document that this is an external stylesheet. 
     </p>
     <p>
-      The <code>href="val"</code> attribute specifies the location of an external resource whose location is referenced on the same server as the webpage that contains it. This attribute accepts a <i>URL</i> (Uniform Resource Locator) as its value to establish a connection with an <i>external stylsheet</i>. The examples above highlight use of a <i>relative</i> URL, which is an <i>implicit</i> reference to a resource located on the same server as the web page using a simple file path. Not all resources are located on the same server. Many web apps utilize resources that are stashed throughout the webiverse: these use <i>explicitly</i> specified web address are are called <i>absolute</i> URL. An absolute URL takes the following format:
+      The <code>href="URL"</code> attribute specifies the location of an external resource via its <i>url</i> (Uniform Resource Locator) by establishing a connection between the document and an <i>external stylsheet</i>. The examples above highlight use of <i>relative</i> URLs, which is an <i>implicit</i> reference to a resource located on the same server as the web page using a simple file path. Not all resources are located on the same server. Many web apps utilize resources that are stashed throughout the webiverse: these use <i>explicitly</i> specified web address and are called <i>absolute</i> URLs. An absolute URL takes the following format:
     </p>
     <blockquote>
       <code>protocol://domain/path/resource</code>
     </blockquote>
     <p>
-      Here, <i>protocol</i> specifies how the resource is to be accessed while the <i>domain</i> specifies the name of the computer (or website) where the resource is located. The <i>path</i> specifies the sequence of directories leading to the target while the <i>resource</i>, if included, is the target, typically the name of a file. The protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks whilethe domain is the server from which data is requested. 
+      Here, <i>protocol</i> specifies how the resource is to be accessed while the <i>domain</i> specifies the name of the computer (or website) where the resource is located. The <i>path</i> specifies the sequence of directories leading to the target while the <i>resource</i>, if included, is the target, typically the name of a file. The protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the server from which data is requested. 
     </p>
     <p>
-      Before moving forward, keep in mind that it is good practice to separate code into multiple stylesheets in order to avoid writting <i>spaghetti code</i>, which occurs when  different layout styles or patterns are applied to elements spread throughout multiple pages.
+      Moving forward, keep in mind that it is good practice to separate code into multiple style sheets in order to avoid writting <i>spaghetti code</i>, which occurs when different layout styles or patterns are inconsistently applied to elements throughout a style sheet.With that covered, lets focus on writing CSS!
     </p>
-    <p>With that covered, lets focus on writing CSS!</p>
   </section>
 
-  <!-- ++CSS Syntax++ -->
   <hr>
+  
+  <!-- ++CSS Syntax++ -->
   <section>
-    <h4>CSS Syntax</h4>
+    <h4>Part 2: CSS Syntax</h4>
     <p>
-      In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document to display a certain way. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a <i>selector</i> and a <i>declaration</i>. 
+      In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a <i>selector</i> and a <i>declaration</i>. 
     </p>
     <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
     <p>
-      Selectors reference <code>html</code> elements targeted for styling. The aesthetic quality for a selector is embodied within its declaration, which begins and ends with curly braces and is composed of a <i>key/value</i> pair. The key refers to a <i>property</i> that identifies the aesthetic quality to modify while the <i>value</i> or <i>keyword</i> quantifies to what extent that property is modified. The property and value/keyword are succeeded by a colon and semi-colon, respectively, to separate the property from its value and to finalize a declaration.
+      Selectors reference <code>html</code> elements targeted for styling. The aesthetic quality for a selector is embodied within its declaration, which begins and ends with curly braces and is composed of a <i>key/value</i> pair. The key refers to a <i>property</i> that identifies the aesthetic quality to modify while the <i>keyword</i> or <i>value</i> quantifies to what extent that property is modified. The property and value/keyword are succeeded by a colon and semi-colon, respectively, for separation and finalization of a declaration.
     </p>
     <!-- Selector Types-->
     <h5>Selector Types</h5>
@@ -150,14 +150,13 @@ include ("../inc/journalHeader.php");
       The <u>#id</u> selector <em>should not be used in CSS</em> because it is a unique identifier that should be used exclusively as a 'hook' for <code>html</code> and <code>JavaScript</code> implementations.
     </p>
 
-    <p>
-      In general, it is best practice to employ <i>comments</i> extensively throughout a styesheet in an effort 
-    </p>
   </section>
 
+  <hr>
+  
   <!-- Structuring a Stylesheet -->
   <section>
-    <h4>Structuring a Stylesheet</h4>
+    <h4>Part 3: Style Sheet Format and Structure</h4>
     <p>
       Writing CSS requires a plan: no plan will result in spaghetti code. There are ways to avoid code purgatory and it all begins with using <i>comments</i> to <em>document points-of-emphasis for each rule-set</em>. This practice makes reading code easier and is especially important when collaborating on a team project. The example below is a single-line comment where the '...' references the comment.
     </p>
@@ -165,48 +164,69 @@ include ("../inc/journalHeader.php");
       <code>/* ... */</code>
     </blockquote>
     <p>
-      Leaving comments is only one method of writing legible code: double-space tabs, lowercase text, meaningful class names, avoiding unnecessary type selectors (ie nesting to deep) and using shorthand properties will go a long way in formatting.
+      Leaving comments is only one method of writing legible code: double-space indention, lowercase text, meaningful class names, avoiding unnecessary type selectors (ie nesting to deep) and using shorthand properties will go a long way in formatting code so that anyone can read it. Don't be afraid to use lines of space, commented or not, to separate significant chunks of code.
     </p>
+    <p>
+      As a dev, it is imperative to comprehend the cascade, inheritance and specificity when structuring a style sheet as these factors hold the key to how styles are applied or if they are applied at all. At the core of CSS is its rule-defining algorithm that defines the order by which CSS rules cascade.
+    </p>
+    <p>
+      Because style sheets come from different origins, they tend to overlap in scope. For example, browsers use a <i>user-agent</i> style sheet that provides a default style to all documents while devs create  <i>authored</i> style sheets. The algorithm defines the interaction between these files by prioritizing their order. Whereas user-agent style sheets are applied by default, an authored style sheet will follow. In the event that multiple declarations of equal value are made in both files, the rule-sheet of the latter style sheet will be prioritized. This is <i>specificity</i>.
+    </p>
+    <p>
+      The same is true of such an instance taking place within the same style sheet. The example below dictates that the color of the <code>.class</code> will render 'black' because of the source order determination (ie specificity) on which declaration to utilize.
+    </p>
+    <figure>
+      <img alt="Specificity Exemplified" src="img/specificity.jpg">
+      <figcaption>
+        Specificity Exemplified
+      </figcaption>
+    </figure>
+    <p>
+      Selectors have an applicable specificity rank-order as well where rule-sets are prioritized based on their importance. Selector rank-order (most-to-least) is as follow: <code>&#35;id</code>, <code>&#46;class</code>, <code>&#91;attribute &#61; &#34;val&#34;&#93;</code>, <code>&#58;pseudo-class</code>, <code>&lt;element&gt;</code> then <code>&#58;&#58;pseudo-element</code>. Selectors that do not impair specificity include the universal selector <code>&#91; &#42; &#93;</code>, selector combinators <code>&#91; &#43;&#44; &gt;&#44; &#126;&#44; &#39;&#39;&#44; &#124;&#124; &#93;</code> and the negation pseudo-class <code>&#91; &#58;not&#40;&#41; &#93;</code>. The <i>!important exemption</i> <code>&#91; &#33; &#93;</code>, as well as an <i>inline-style</i>, can be used to override any declaration. However, the exception should be used sparingly, if at all, and it is considered bad practice to write inline-styles. 
+    </p>
+    <p>
+      CSS styles are also controlled via <i>inheritance</i>: the concept that some property values applied to an element will be inherited by its children, but some will not. An example of this is a <code>&lt;p&gt;</code> tag nested in a <code>&lt;div&gt;</code>: setting the color property for the <code>&lt;div&gt;</code> will cause the <code>&lt;p&gt;</code> to be the same color. Setting the color property for the <code>&lt;p&gt;</code> will override the styles applied to the <code>&lt;div&gt;</code>. Always consult a CSS property reference list to ascertain which properties are natively inherited.
+    </p>
+    <p>
+      In a nutshell: write styles that are broadly applied and have low specificity at the start of a style sheet so that they can be overridden (if necessary) by styles of a higher specificity written beneath them. Thus, include box-sizing, font, preprocessors, and variable definitions at the top of the style sheet followed by default style settings and ending with class-based selectors, components, defined patterns and helper classes.
+    </p>
+    <p>
+      Lastly, employing a <i>naming convention</i> is a beneficial technique that establishes a clear relationship among CSS selectors. The <i>Block-Element-Modifier</i> (BEM) namespace is a method that encapsulates a <code>.class</code> as a block of code bound to an element that can be modified with precision.
+    </p>
+    <blockquote>
+      <code>.block__element--modifier</code>
+    </blockquote>
+    <p>
+      Pre-selectors can be used to indicate the purpose of a rule-set. Very useful for distinguishing blocks of code.
+    </p>
+    <blockquote>
+      <code>.c-block &#123; ... &#125; = an HTML component</code><br>
+      <code>.js-block &#123; ... &#125; = bout to JavaScript</code><br>
+      <code>.u-block &#123; ... &#125; = Q+A Automate Tests</code>
+    </blockquote>
   </section>
 
-</article>
-
-<!-- ++C.I.S.++ -->
-<hr>
-<div>
-  <h2>The Cascade, Inheritance &amp; Specificity</h2>
-  <p>The core of CSS is the <u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade" target="_blank">Cascade</a></u>, an algorithm that defines how to combine property values that originate from different sources. Essentially, it defines that the order of CSS rules is important, and when not followed, could produce disastrous results. In accordance with the rules, developers should be wary of the descending order of importance for the cascade: origin, specificity and order.</p>
-  <p>The <u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#Cascading_order" target="_blank">order</a></u> in which CSS declarations cascade depends on the origin of CSS declarations. Because style sheets come from different origins, they tend to overlap in scope, and this is when the algorithm defines the interaction. The browser uses a basic style sheet known as a <u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#User-agent_stylesheets" target="_blank">user-agent</a></em></u> stylesheet that provides a default style to any document. A <u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#User_stylesheets" target="_blank">user</a></em></u> stylesheet is created by individual users to customize and override styles that have been applied to the browser, regardless of origin. <u><em><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#Author_stylesheets" target="_blank">Authored</a></em></u> stylesheets are CSS files created by developers to define how a website will display. Respectively, these origins represent the order of priority in which they cascade, top-down, meaning that a user-agent stylesheet will take precedence over an authored stylesheet.</p>
-  <p>In the event that multiple declarations target one specific element, <u><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">specificity</a></u> is invoked, which are actions taken by browsers to determine which CSS declaration should be applied. Generally, the last declaration made based on multiple declarations of equal specificity will be applied to the CSS. In the illustration below, the color of the class <code>.fav</code> will render 'black' because the source order determines which declaration to utilize.</p>
-  <figure>
-    <img alt="Specificity Exemplified" src="img/specificity.JPG">
-    <figcaption>
-      Example of Specifity at Work
-    </figcaption>
-  </figure>
-  <p>The amount of specificity possessed by selectors can alter such measurement, which is why <u><a href="https://css-tricks.com/specifics-on-css-specificity/" target="_blank">calculating</a></u> specificity values can be challenging. The basic principle of specificity defines a rank-order of most to least significant selectors to use when writing CSS. <code>&#35;id</code> selectors have the highest rank followed by <code>&#46;class</code>, <code>&#91;attribute &#61; &#34;val&#34;&#93;</code>, <code>&#58;pseudo-class</code>, <code>&lt;element&gt;</code> then finally the <code>&#58;&#58;pseudo-element</code>.</p>
-  <p>It should be mentioned that the universal selector <code>&#91; &#42; &#93;</code>, selector combinators <code>&#91; &#43;&#44; &gt;&#44; &#126;&#44; &#39;&#39;&#44; &#124;&#124; &#93;</code> and the negation pseudo-class <code>&#91; &#58;not&#40;&#41; &#93;</code>do not impair specificity. The <u><a href="https://css-tricks.com/when-using-important-is-the-right-choice/" target="_blank">!important</a></u> exemption <code>&#91; &#33; &#93;</code>, as well as an <u><a href="https://www.lifewire.com/what-is-css-inline-style-3466446" target="_blank">inline-style</a></u>, can be used to override any declaration, but it is considered bad practice due to the complications that can arise with debugging. There are <u><a href="https://www.w3schools.com/css/css_specificity.asp" target="_blank">plenty</a></u> <u><a href="https://specifishity.com/" target="_blank">of</a></u> <u><a href="https://cssspecificity.com" target="_blank">tools</a></u> readily available online to help developers better understand this concept.</p>
-  <p>CSS styles are also controlled via <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Inheritance" target="_blank">inheritance</a></u>, which is the concept that some property values applied to an element will be inherited by its children, but some will not. A <u><a href="https://medium.com/@sayes2x/css-cascade-inheritance-and-specificity-9b18550b7637" target="_blank">good example</a></u> is a <code>&lt;p&gt;</code> tag nested in a <code>&lt;div&gt;</code>; setting the color property for the <code>&lt;div&gt;</code> will cause the <code>&lt;p&gt;</code> to be the same color. Setting the color property for the <code>&lt;p&gt;</code> will override the styles applied to the <code>&lt;div&gt;</code>. Developers should consult a CSS property <u><a href="" target="_blank">reference list</a></u> to ascertain which properties are natively inherited.</p>
-</div>
-<!-- ++Debugging CSS++ -->
-<hr>
-<div>
-  <h2>Debugging CSS</h2>
-  <p>There are times when developers write declarations that are not rendered in the browser, and a simple explanation would target a syntax error as the culprit. When this happens, the browser will simply ignore the rule. If this happens, developers will have to resolve the conflict independently, and this sometimes creates headaches. Luckily, there are plenty of resources available to help <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank">debug</a></u> CSS.</p>
-  <p>Major internet browsers –Chrome, Firefox, Microsoft Edge and Safari, all offer <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-browser-based-developer-tools/" target="_blank">dev tools</a></u> to help troubleshoot CSS issues. These toolkits employ an element inspector, a styles panel and a mode for responsive debugging that allows developers to understand where styling conflicts exist. When inspecting styles, it is important to note the declarations that are crossed out or have a warning icon, for example, have been overridden or are invalid. Thus, such elements should be the focus for trying to alleviate any style concerns. Learn more about <u><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome</a></u>, <u><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox</a></u>, <u><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">Microsoft Edge</a></u> and <u><a href="https://developer.apple.com/safari/tools/" target="_blank">Safari</a></u> dev tools.</p>
-  <p>A simpler way to parse code for potential errors would be to use a <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-code-quality-tools/" target="_blank">linter</a></u>, which searches for invalid declarations, specificity, and duplicate or unused selectors in an effort to sanitize code of any unnecessary elements. The W3C group has a quality online <u><a href="https://jigsaw.w3.org/css-validator/" target="_blank">validator</a></u>.</p>
-  <p>There are additional methods that developers can take to optimize a web site and minifying files is a good first step. <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-minification-csso/" target="_blank">Minification</a></u> is the process of removing unnecessary characters from the file in order to improve the files efficiency by decreasing the size of the file.</p>
-  <p>Above all else, developers can best serve themselves by <u><a href="https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/" target="_blank">refactoring</a></u> their code. Refactoring is the process of organizing code as most efficiently as possible; enhancing readability affords faster code execution, which is the ultimate goal here. When reorganizing code, it is a good practice to subscribe to a specific style guide with criteria that concentrates on declaration order, formatting rules and use of unit-values that you want to use. Employing a Block Element Modifier &#40;BEM&#41; naming convention would provide a more consistent code structure for code sharing in front-end development. Learn more about <u><a href="http://getbem.com" target="_blank">BEM</a></u>.</p>
-</div>
-<!-- -->
-<!-- -->
-<!-- ++General Styles++ -->
-<hr>
-<div>
-  <h2>General Styles</h2>
-  <p></p>
-</div>
-<!-- ++ 'FONT' sub-section for 'General Styles'++ -->
+  <hr>
+  
+  <!-- Declaration Examples -->
+  <section>
+    <h4>Part 4: Making Declarations</h4>
+    <p></p>
+    <h5>Layout</h5>
+    <p>
+      
+    </p>
+    <aside class="tableEven">
+      <div><code>abc defg hijk lmnop</code></div>
+      <div><code>dsa;fjadff</code></div>
+      <div><code>abc defgdefg hijk lmnop</code></div>
+      <div><code>dsa;fjadff</code></div>
+      <div><span>element</span><code> { display: inline; }</code></div>
+      <div><span>// Horizontal Navigation</span></div>
+    </aside>
+  </section>
+  
+<!-- ++ 'FONT' sub-section for 'General Styles'++ 
 <div>
   <h3>Font Properties</h3>
   <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" target="_blank">font</a></code> CSS <em>Property</em> allows developers to modify how text is displayed. This property can be used to set the elements font to the systems font or as a shorthand for setting multiple font-property <em>Values</em>. There are nearly a dozen distinctive font-property features that can be used for styling. I categorically understand such properties to either modify the style or spacing of text.</p>
@@ -294,7 +314,20 @@ include ("../inc/journalHeader.php");
   <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing" target="_blank">word-spacing</a></code> CSS property specifies the spacing behavior between individual words. Idea values to use for such cases include <code>0.2em</code>, <code>2px</code> and <code>0.4ch</code>.</p>
   <h6>Icons</h6>
   <p>Using icons as font is another practice web developers should be familiar with. Outfits like <u><a href="https://fontawesome.com/v4.7.0/cheatsheet/">Font</a></u>-<u><a href="https://fontawesome.com/cheatsheet">Awesome</a></u> and <u><a href="https://material.io/tools/icons/?style=baseline">Material</a></u> <u><a href="http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html">Design</a></u> make including icon fonts into a web project simple.</p>
-</div><!-- -->       
+</div> -->
+  
+</article>
+
+
+<!-- ++Debugging CSS++ 
+<div>
+  <h4>Debugging CSS</h4>
+  <p>There are times when developers write declarations that are not rendered in the browser, and a simple explanation would target a syntax error as the culprit. When this happens, the browser will simply ignore the rule. If this happens, developers will have to resolve the conflict independently, and this sometimes creates headaches. Luckily, there are plenty of resources available to help <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank">debug</a></u> CSS.</p>
+  <p>Major internet browsers –Chrome, Firefox, Microsoft Edge and Safari, all offer <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-browser-based-developer-tools/" target="_blank">dev tools</a></u> to help troubleshoot CSS issues. These toolkits employ an element inspector, a styles panel and a mode for responsive debugging that allows developers to understand where styling conflicts exist. When inspecting styles, it is important to note the declarations that are crossed out or have a warning icon, for example, have been overridden or are invalid. Thus, such elements should be the focus for trying to alleviate any style concerns. Learn more about <u><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome</a></u>, <u><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox</a></u>, <u><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">Microsoft Edge</a></u> and <u><a href="https://developer.apple.com/safari/tools/" target="_blank">Safari</a></u> dev tools.</p>
+  <p>A simpler way to parse code for potential errors would be to use a <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-code-quality-tools/" target="_blank">linter</a></u>, which searches for invalid declarations, specificity, and duplicate or unused selectors in an effort to sanitize code of any unnecessary elements. The W3C group has a quality online <u><a href="https://jigsaw.w3.org/css-validator/" target="_blank">validator</a></u>.</p>
+  <p>There are additional methods that developers can take to optimize a web site and minifying files is a good first step. <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-minification-csso/" target="_blank">Minification</a></u> is the process of removing unnecessary characters from the file in order to improve the files efficiency by decreasing the size of the file.</p>
+  <p>Above all else, developers can best serve themselves by <u><a href="https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/" target="_blank">refactoring</a></u> their code. Refactoring is the process of organizing code as most efficiently as possible; enhancing readability affords faster code execution, which is the ultimate goal here. When reorganizing code, it is a good practice to subscribe to a specific style guide with criteria that concentrates on declaration order, formatting rules and use of unit-values that you want to use. Employing a Block Element Modifier &#40;BEM&#41; naming convention would provide a more consistent code structure for code sharing in front-end development. Learn more about <u><a href="http://getbem.com" target="_blank">BEM</a></u>.</p>
+</div>-->
 <!-- -->
 <!-- .....CONTENT-ENDS// --> 
 
