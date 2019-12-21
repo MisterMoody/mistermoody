@@ -72,7 +72,7 @@ include ("../inc/journalHeader.php");
     <!-- Selector Types-->
     <h5>Selector Types</h5>
     <p>
-      There are seven types of selectors:
+      There are several selectors that can be used:
     </p>
     <p>
       The <i>universal</i> selector is used to render a specific style to all elements of a website. The example below dictates that all <code>html</code> elements will have 'margins' all around at a value of half an em.
@@ -115,6 +115,22 @@ include ("../inc/journalHeader.php");
     <blockquote>
       <code>a &#91; title &#93;; &#123; color &#125;</code>
     </blockquote>
+    
+    <p>
+      Combinators are useful to establish relationships between two or more selectors.
+    </p>
+    <aside class="tableEven">
+      <div><code>Selector List</code></div>
+      <div><code>A, B&nbsp; = Both elements selected</code></div>
+      <div><code>Adjacent Sibling</code></div>
+      <div><code>A + B = B immediately follows A</code></div>
+      <div><code>General Sibling</code></div>
+      <div><code>A ~ B = B follows A</code></div>
+      <div><code>Child Combinator</code></div>
+      <div><code>A > B = B is direct child of A</code></div>
+      <div><code>Descendant Combinator</code></div>
+      <div><code>A  B &nbsp; = B is descendant of A</code></div>
+    </aside>
 
     <p>
       <i>&#58;Pseudo-class</i> selectors are actually keywords that are added to other selectors and provide a unique style during a particular instance of that selector. The examples below dictates how <code>a</code> elements can be modified based on a particular instance. The keywords 'active', 'hover' and 'visited' dictate that styles are applied in the instance that a user is on a current page, has hovered over an element or has already visited that page.
@@ -182,13 +198,24 @@ include ("../inc/journalHeader.php");
       </figcaption>
     </figure>
     <p>
-      Selectors have an applicable specificity rank-order as well where rule-sets are prioritized based on their importance. Selector rank-order (most-to-least) is as follow: <code>&#35;id</code>, <code>&#46;class</code>, <code>&#91;attribute &#61; &#34;val&#34;&#93;</code>, <code>&#58;pseudo-class</code>, <code>&lt;element&gt;</code> then <code>&#58;&#58;pseudo-element</code>. Selectors that do not impair specificity include the universal selector <code>&#91; &#42; &#93;</code>, selector combinators <code>&#91; &#43;&#44; &gt;&#44; &#126;&#44; &#39;&#39;&#44; &#124;&#124; &#93;</code> and the negation pseudo-class <code>&#91; &#58;not&#40;&#41; &#93;</code>. The <i>!important exemption</i> <code>&#91; &#33; &#93;</code>, as well as an <i>inline-style</i>, can be used to override any declaration. However, the exception should be used sparingly, if at all, and it is considered bad practice to write inline-styles. 
+      Selectors have an applicable specificity rank-order as well where rule-sets are prioritized based on their importance. Selector rank-order (highest-to-lowest) is as follow:
+    </p>
+    <blockquote>
+      <code>&#35;id</code><br> 
+      <code>&#46;class</code><br> 
+      <code>&#91;attribute &#61; &#34;val&#34;&#93;</code><br> 
+      <code>&#58;pseudo-class</code><br> 
+      <code>&lt;element&gt;</code><br> 
+      <code>&#58;&#58;pseudo-element</code>
+    </blockquote>
+    <p>
+      Selector combinators, the negation :pseudo-class <code>&#91; &#58;not&#40;&#41; &#93;</code> and the universal selector do not impair specificity. The <i>!important exemption</i> <code>&#91; &#33; &#93;</code> and <i>inline-style</i> can be used to override any declaration. However, the exception should be used sparingly, if at all, and it is considered bad practice to write inline-styles. 
     </p>
     <p>
       CSS styles are also controlled via <i>inheritance</i>: the concept that some property values applied to an element will be inherited by its children, but some will not. An example of this is a <code>&lt;p&gt;</code> tag nested in a <code>&lt;div&gt;</code>: setting the color property for the <code>&lt;div&gt;</code> will cause the <code>&lt;p&gt;</code> to be the same color. Setting the color property for the <code>&lt;p&gt;</code> will override the styles applied to the <code>&lt;div&gt;</code>. Always consult a CSS property reference list to ascertain which properties are natively inherited.
     </p>
     <p>
-      In a nutshell: write styles that are broadly applied and have low specificity at the start of a style sheet so that they can be overridden (if necessary) by styles of a higher specificity written beneath them. Thus, include box-sizing, font, preprocessors, and variable definitions at the top of the style sheet followed by default style settings and ending with class-based selectors, components, defined patterns and helper classes.
+      In a nutshell: write styles that are broadly applied and have low specificity at the start of a style sheet so that they can be overridden (if necessary) by styles of a higher specificity written beneath them. Thus, include box-sizing, font, preprocessors, and variable definitions at the top of the style sheet followed by default style settings and ending with class-based selectors, components, defined patterns and utilities.
     </p>
     <p>
       Lastly, employing a <i>naming convention</i> is a beneficial technique that establishes a clear relationship among CSS selectors. The <i>Block-Element-Modifier</i> (BEM) namespace is a method that encapsulates a <code>.class</code> as a block of code bound to an element that can be modified with precision.
@@ -208,23 +235,77 @@ include ("../inc/journalHeader.php");
 
   <hr>
   
-  <!-- Declaration Examples -->
+  <!-- Declaration Examples 
+  Still need to include 'Shorthand Properties'
+-->
   <section>
     <h4>Part 4: Making Declarations</h4>
-    <p></p>
-    <h5>Layout</h5>
+    <p>There are a lot of properties available for modifying <code>html</code> elements: no project regardless of size will utilize all of them. The list provided below denotes a usage case using the most basic of properties based on visual layout, text and fonts, background and borders, colors, content and list-style <small>??add Animation, Transition + Transform??</small>.</p>
+    
+    <h5>Visual Layout</h5>
     <p>
       
     </p>
     <aside class="tableEven">
-      <div><code>abc defg hijk lmnop</code></div>
-      <div><code>dsa;fjadff</code></div>
-      <div><code>abc defgdefg hijk lmnop</code></div>
-      <div><code>dsa;fjadff</code></div>
-      <div><span>element</span><code> { display: inline; }</code></div>
-      <div><span>// Horizontal Navigation</span></div>
+      <div><code>{ display: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;&nbsp;: inline-block; }</code></div>
+      <div><span>// Horizontal Layout</span></div>
+      <div><code>{&nbsp;&nbsp;: flex; }</code></div>
+      <div><span>// Flexible Layout</span></div>
+      <div><code>{&nbsp;&nbsp;: grid; }</code></div>
+      <div><span>// Grid Layout</span></div>
+      <div><code>{&nbsp;&nbsp;: none; }</code></div>
+      <div><span>// Hides Element</span></div>
     </aside>
   </section>
+  
+</article>    
+    <!--<h5>Colors</h5>
+    <p>
+      
+    </p>
+    <aside class="tableEven">
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>
+    
+    <h5>Text / Font (List-style + Content)</h5>
+    <p>
+      
+    </p>
+    <aside class="tableEven">
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>
+    
+    <h5>Backgrounds + Borders</h5>
+    <p>
+      
+    </p>
+    <aside class="tableEven">
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>
+    -->
   
 <!-- ++ 'FONT' sub-section for 'General Styles'++ 
 <div>
@@ -315,8 +396,21 @@ include ("../inc/journalHeader.php");
   <h6>Icons</h6>
   <p>Using icons as font is another practice web developers should be familiar with. Outfits like <u><a href="https://fontawesome.com/v4.7.0/cheatsheet/">Font</a></u>-<u><a href="https://fontawesome.com/cheatsheet">Awesome</a></u> and <u><a href="https://material.io/tools/icons/?style=baseline">Material</a></u> <u><a href="http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html">Design</a></u> make including icon fonts into a web project simple.</p>
 </div> -->
-  
-</article>
+    
+    <!--<h5>Animation + Transition + Transform</h5>
+    <p>
+      
+    </p>
+    <aside class="tableEven">
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{ x: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>-->
 
 
 <!-- ++Debugging CSS++ 

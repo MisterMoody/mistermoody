@@ -6,6 +6,15 @@ ul, ol {outline: 3px dashed purple;}
 li {outline: 1px dashed purple;}
 a  {outline: 2px dashed gold;}
 blockquote, div {outline: 1px solid purple;}
+
+/* Prevent 'User CopynPaste = * {
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+for Safari, Firefox and IE
+*/
 /* ============================================ */
 /* CASCADING STYLESHEET ======================= */
 /*
@@ -388,12 +397,15 @@ dialog::backdrop {
 }
 .table, .tableEven {
   width: 100%;
-  font-size: 0.68em;
+  /*font-size: 0.68em;*/
   margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-rows: repeat(auto, minmax(24px, auto));	grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	
+  grid-template-columns: max-content auto;
+  grid-column-gap: 0.4em;
 }
+.tableEven span {font-size: 0.71em;}
 /* Tag Reference GRID */
 .tagRef {
   margin: 0;
@@ -437,7 +449,7 @@ dialog::backdrop {
   }
 	.tableEven {
     width: 100%;
-    font-size: 0.74em;
+    /*font-size: 0.74em;*/
     margin: 0 auto;
     padding: 0;
     display: grid;
