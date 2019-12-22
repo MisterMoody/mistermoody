@@ -123,13 +123,15 @@ include ("../inc/journalHeader.php");
       <div><code>Selector List</code></div>
       <div><code>A, B&nbsp; = Both elements selected</code></div>
       <div><code>Adjacent Sibling</code></div>
-      <div><code>A + B = B immediately follows A</code></div>
+      <div><code>A + B = Targets Immediate Siblings</code></div>
       <div><code>General Sibling</code></div>
-      <div><code>A ~ B = B follows A</code></div>
-      <div><code>Child Combinator</code></div>
-      <div><code>A > B = B is direct child of A</code></div>
-      <div><code>Descendant Combinator</code></div>
-      <div><code>A  B &nbsp; = B is descendant of A</code></div>
+      <div><code>A ~ B = Targets All Siblings</code></div>
+      <div><code>Child Combo</code></div>
+      <div><code>A > B = Targets Direct Children</code></div>
+      <div><code>Descendant Combo</code></div>
+      <div><code>A  B &nbsp; = Targets Both</code></div>
+      <div><code>Match Attribute</code></div>
+      <div><code>A[href<sup>*</sup>="fee"] = Targts  ALL"fee"</code></div>
     </aside>
 
     <p>
@@ -240,58 +242,206 @@ include ("../inc/journalHeader.php");
 -->
   <section>
     <h4>Part 4: Making Declarations</h4>
-    <p>There are a lot of properties available for modifying <code>html</code> elements: no project regardless of size will utilize all of them. The list provided below denotes a usage case using the most basic of properties based on visual layout, text and fonts, background and borders, colors, content and list-style <small>??add Animation, Transition + Transform??</small>.</p>
+    <p>There are a lot of properties available for modifying <code>html</code> elements: no project regardless of size will utilize all of them. The list provided below denotes a usage case using the most basic of properties based on visual layout, text and fonts, background and borders, colors, content and list-style <small>??add Animation, Transition + Transform??</small>. </p>
     
     <h5>Visual Layout</h5>
-    <p>
+    <p>Lorem ipsum doler uit sem apch reaale negus
       
     </p>
     <aside class="tableEven">
-      <div><code>{ display: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{display: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;&nbsp;: inline-block; }</code></div>
+      <div><code>{&nbsp;: inline-block; }</code></div>
       <div><span>// Horizontal Layout</span></div>
-      <div><code>{&nbsp;&nbsp;: flex; }</code></div>
+      <div><code>{&nbsp;: flex; }</code></div>
       <div><span>// Flexible Layout</span></div>
-      <div><code>{&nbsp;&nbsp;: grid; }</code></div>
+      <div><code>{&nbsp;: grid; }</code></div>
       <div><span>// Grid Layout</span></div>
-      <div><code>{&nbsp;&nbsp;: none; }</code></div>
+      <div><code>{&nbsp;: none; }</code></div>
       <div><span>// Hides Element</span></div>
     </aside>
-  </section>
-  
-</article>    
-    <!--<h5>Colors</h5>
+    <br>
     <p>
-      
+      The <i>Position</i> property can be used to re-position an element from its initial position.
     </p>
     <aside class="tableEven">
-      <div><code>{ x: y; }</code></div>
+      <div><code>{position: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: static; }</code></div>
+      <div><span>// Default Setting</span></div>
+      <div><code>{&nbsp;: relative; }</code></div>
+      <div><span>// Implements Positional Properties</span></div>
+      <div><code>{&nbsp;: absolute; }</code></div>
+      <div><span>// Ignores Children + Implements PP</span></div>
+      <div><code>{&nbsp;: fixed; }</code></div>
+      <div><span>// Element Does not Scroll</span></div>
+      <div><code>{&nbsp;: sticky; }</code></div>
+      <div><span>// Scroll to a Fixed Position</span></div>
+    </aside>
+    <br>
+    <p>
+      <i>Positional Properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
+    </p>
+    <aside class="tableEven">
+      <div><code>{top / right / bottom / right: value; }</code></div>
+    </aside>
+    <br>
+    <p>
+      The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
+    </p>
+    <aside class="tableEven">
+      <div><code>{z-index: value; }</code></div>
+    </aside>
+    <br>
+    <p><i>Margin is a shorthand property</i></p>
+    <aside class="tableEven">
+      <div><code>{margin: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Value Description</b></span></div>
+      <div><code>{margin-top: value; }</code></div>
       <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
+      <div><code>{margin-right: value; }</code></div>
       <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
+      <div><code>{margin-bottom: value; }</code></div>
       <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
+      <div><code>{margin-left: value; }</code></div>
       <div><span>// note</span></div>
     </aside>
+    <br>
+    <p><i>Padding is a shorthand property</i></p>
+    <aside class="tableEven">
+      <div><code>{padding: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Value Description</b></span></div>
+      <div><code>{padding-top: value; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{padding-right: value; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{padding-bottom: value; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{padding-left: value; }</code></div>
+      <div><span>// note</span></div>
+    </aside>
+    <!--<aside class="tableEven">
+      <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Key/Val Description</b></span></div>
+      <div><code>{&nbsp;: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{&nbsp;: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{&nbsp;: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{&nbsp;: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>-->
     
-    <h5>Text / Font (List-style + Content)</h5>
-    <p>
+    <h5>Colors</h5>
+    <p>Lorem ipsum doler uit sem apch reaale negus
       
     </p>
     <aside class="tableEven">
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
+      <div><code>{color: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Value Description</b></span></div>
+      <div><code>{&nbsp;: #00FFFF; }</code></div>
+      <div><span>// Hexidecimal</span></div>
+      <div><code>{&nbsp;: #0FF; }</code></div>
+      <div><span>// Hexidecimal</span></div>
+      <div><code>{&nbsp;: red; }</code></div>
+      <div><span>// Named</span></div>
+      <div><code>{&nbsp;: rgba(0, 255, 255, .5); }</code></div>
+      <div><span>// RGBa</span></div>
+      <div><code>{&nbsp;: hsla(180, 100%, 5%, .5); }</code></div>
+      <div><span>// HSLa</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{opacity: # between 0.0 - 1; }</code></div>
+      <div><span>// Defines Transparency</span></div>
     </aside>
     
     <h5>Backgrounds + Borders</h5>
+    <p>
+      <i>Background is a shorthand property.</i>
+    </p>
+    <aside class="tableEven">
+      <div><code>{background: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Key/Val Description</b></span></div>
+      <div><code>{background-image: image; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{background-position: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{background-size: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{background-repeat: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{background-attachment: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{background-origin: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{background-clip: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{background-color: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>
+    <p>
+      <i>Border is a shorthand property.</i>
+    </p>
+    <aside class="tableEven">
+      <div><code>{border: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Key/Val Description</b></span></div>
+      <div><code>{border-width: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{border-style: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{border-color: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{border-radius: y; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{border-image: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>
+    
+    <h5>Font + Text</h5>
+    <p>
+      <i>Font is a shorthand property.</i>
+    </p>
+    <aside class="tableEven">
+      <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Key/Val Description</b></span></div>
+      <div><code>{font-style: keyword; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{font-weight: keyword; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{font-size: value; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{line-height: value; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{font-family: keyword; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{font-: y; }</code></div>
+      <div><span>// note</span></div>
+    </aside>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section>
+    <mark> ! THIS IS A TEST ! </mark>
+    <h1>Head 1</h1>
+    <h2>Head 2</h2>
+    <h3>Head 3</h3>
+    <h4>Head 4</h4>
+    <h5>Head 5</h5>
+    <h6>Head 6</h6>
+    <p>Paragraph</p>
+    <ol><li>OL + LI List Item</li></ol>
+    <code>Monospace Code</code>
+  </section>
+  
+</article>    
+    <!--<h5>Text / Font (List-style + Content)</h5>
     <p>
       
     </p>

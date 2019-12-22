@@ -405,6 +405,7 @@ dialog::backdrop {
   grid-template-columns: max-content auto;
   grid-column-gap: 0.4em;
 }
+p + .tableEven {margin-top: -12px; margin-bottom: -8px;}   /* Layout REQ.*/
 .tableEven span {font-size: 0.71em;}
 /* Tag Reference GRID */
 .tagRef {
@@ -450,7 +451,6 @@ dialog::backdrop {
 	.tableEven {
     width: 100%;
     /*font-size: 0.74em;*/
-    margin: 0 auto;
     padding: 0;
     display: grid;
     grid-template-rows: repeat(auto, 24px);
