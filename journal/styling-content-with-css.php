@@ -287,10 +287,93 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
+      The <i>Z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
     </p>
     <aside class="tableEven">
       <div><code>{z-index: value; }</code></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Height</i> property is used to <em>specify content height and width</em> of boxes. The <i>Min/Max-Height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
+    </p>
+    <aside class="tableEven">
+      <div><code> {height: value; }</code></div>
+      <div><span>// Specify Content Height</span></div>
+      <div><code> {min-height: value; }</code></div>
+      <div><span>// Specify Minimum Content Height</span></div>
+      <div><code> {max-height: value; }</code></div>
+      <div><span>// Specify Maximum Content Height</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Width</i> property is used to <em>specify content width</em> of boxes. <i>Min/Max-Width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
+    </p>
+    <aside class="tableEven">
+      <div><code> {width: value; }</code></div>
+      <div><span>// Specify Content Width</span></div>
+      <div><code> {min-width: value; }</code></div>
+      <div><span>// Specify Minimum Content Width</span></div>
+      <div><code> {max-width: value; }</code></div>
+      <div><span>// Specify Maximum Content Width</span></div>
+      <div><code> {fit-content: value; }</code></div>
+      <div><span>// Center Content Horizontally</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Object-Fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>Object-Position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{object-fit: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: fill; }</code></div>
+      <div><span>// Default Value Stretches Media to Fit</span></div>
+      <div><code>{&nbsp;: cover; }</code></div>
+      <div><span>// Media Crop</span></div>
+      <div><code>{&nbsp;: contain; }</code></div>
+      <div><span>// Sizes Media to Fill</span></div>
+      <div><code>{&nbsp;: scale-down; }</code></div>
+      <div><span>// Resize to Smallest Size</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Float</i> property is used to <em>wrap text around images</em> while the <i>Clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>Overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>* { box-sizing: border-box; }</code></div>
+      <div><span>// Eliminates spacing concerns</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: none; }</code></div>
+      <div><span>// Default Value (No Float)</span></div>
+      <div><code>{&nbsp;: left; }</code></div>
+      <div><span>// Floats Left</span></div>
+      <div><code>{&nbsp;: right; }</code></div>
+      <div><span>// Floats Right</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{clear: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: both; }</code></div>
+      <div><span>// Clears X+Y-axis Floats</span></div>
+      <div><code>{&nbsp;: auto; }</code></div>
+      <div><span>// Clears Float</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{overflow: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: auto; }</code></div>
+      <div><span>// Hidden Scroll(s) unless Overflow</span></div>
+      <div><code>{&nbsp;: visible; }</code></div>
+      <div><span>// Default Value</span></div>
+      <div><code>{&nbsp;: hidden; }</code></div>
+      <div><span>// Hides Overflow</span></div>
+      <div><code>{&nbsp;: scroll; }</code></div>
+      <div><span>// Scroll(s) for Overflow</span></div>
     </aside>
     <br>
     <p><i>Margin is a shorthand property</i></p>
@@ -319,6 +402,12 @@ include ("../inc/journalHeader.php");
       <div><span>// note</span></div>
       <div><code>{padding-left: value; }</code></div>
       <div><span>// note</span></div>
+    </aside>
+    <br>
+    <p>Eliminate concerns about spacing by adding the <i>box-sizing</i> property with a universal selector.</p>
+    <aside class="tableEven">
+      <div><code>* { box-sizing: border-box; }</code></div>
+      <div><span>// Eliminates spacing concerns</span></div>
     </aside>
     <!--<aside class="tableEven">
       <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -355,6 +444,21 @@ include ("../inc/journalHeader.php");
     <aside class="tableEven">
       <div><code>{opacity: # between 0.0 - 1; }</code></div>
       <div><span>// Defines Transparency</span></div>
+    </aside>
+    <p>
+      The <i>Box-Sizing</i> property can be used to cast a shadow on an element. The values represent the horizontal/vertal offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required.   
+    </p>
+    <aside class="tableEven">
+      <div><code>{box-sizing: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Value Description</b></span></div>
+      <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
+      <div><span>// Outer Offset</span></div>
+      <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
+      <div><span>// Inner Offset</span></div>
+      <div><code>{&nbsp;: 0 8px 6px -6px red; }</code></div>
+      <div><span>// Bottom Offset</span></div>
+      <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
+      <div><span>// Multiple Offsets</span></div>
     </aside>
     
     <h5>Backgrounds + Borders</h5>
@@ -404,40 +508,153 @@ include ("../inc/journalHeader.php");
     
     <h5>Font + Text</h5>
     <p>
-      <i>Font is a shorthand property.</i>
+      <i>Font</i> is a shorthand property for font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order. The <i>Font-Variant</i> prop is used to <em>modify text to uppercase</em>. The <i>Font-Weight</i> prop <em>sets the font thickness</em>. The <i>Font-Size</i> prop <em>sets the font height</em>. The <i>Line-Height</i> prop <em>sets the space above and below inline elements</em>. The <i>Font-Family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. It is good practice to include a generic name as a fallback.
     </p>
     <aside class="tableEven">
       <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Key/Val Description</b></span></div>
       <div><code>{font-style: keyword; }</code></div>
       <div><span>// note</span></div>
+      <div><code>{font-variant: keyword; }</code></div>
+      <div><span>// note</span></div>
       <div><code>{font-weight: keyword; }</code></div>
       <div><span>// note</span></div>
-      <div><code>{font-size: value; }</code></div>
+      <div><code>{font-size: unit/value; }</code></div>
       <div><span>// note</span></div>
       <div><code>{line-height: value; }</code></div>
       <div><span>// note</span></div>
       <div><code>{font-family: keyword; }</code></div>
       <div><span>// note</span></div>
-      <div><code>{font-: y; }</code></div>
-      <div><span>// note</span></div>
     </aside>
-  </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  <section>
-    <mark> ! THIS IS A TEST ! </mark>
-    <h1>Head 1</h1>
-    <h2>Head 2</h2>
-    <h3>Head 3</h3>
-    <h4>Head 4</h4>
-    <h5>Head 5</h5>
-    <h6>Head 6</h6>
-    <p>Paragraph</p>
-    <ol><li>OL + LI List Item</li></ol>
-    <code>Monospace Code</code>
+    <br>
+    <aside class="tableEven">
+      <div><code>{font-variant: keyword; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{&nbsp;: normal; }</code></div>
+      <div><span>// xxx</span></div>
+      <div><code>{&nbsp;: small-caps; }</code></div>
+      <div><span>// xxx</span></div>
+      <div><code>{&nbsp;: petite-caps; }</code></div>
+      <div><span>// xxx</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{font-weight: 700, 800, 900; }</code></div>
+      <div><span>// Font Thickness</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{font-size: unit/value; }</code></div>
+      <div><span>// Font Height</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{line-height: % value; }</code></div>
+      <div><span>// Line Height</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{font-family: &nbsp;&nbsp;; }</code></div>
+      <div><span>// </span></div>
+      <div><code>{&nbsp;: Arial, sans-serif; }</code></div>
+      <div><span>// </span></div>
+      <div><code>{&nbsp;: "Times New Roman", serif; }</code></div>
+      <div><span>// </span></div>
+      <div><code>{&nbsp;: monospace; }</code></div>
+      <div><span>// Computer Code</span></div>
+      <div><code>{&nbsp;: cursive; }</code></div>
+      <div><span>// Script</span></div>
+      <div><code>{&nbsp;: small-caption; }</code></div>
+      <div><span>// All Words Smll Caps</span></div>
+    </aside>
+    <br>
+    <p>The <i>Letter-Spacing</i> and <i>Word-Spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
+    <aside class="tableEven">
+      <div><code>{letter-spacing: unit/value; }</code></div>
+      <div><span>// Space between Letters</span></div>
+      <div><code>{word-spacing: keyword; }</code></div>
+      <div><span>// Space between Words</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{text-align: left / center / justify; }</code></div>
+      <div><span><b>// Aligns Text</b></span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Text-Decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{text-decoration: &nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: underline red; }</code></div>
+      <div><span>// Underline</span></div>
+      <div><code>{&nbsp;: line-through; }</code></div>
+      <div><span>// Line Through Text</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Text-Transform</i> property <em>sets the text case and capitalization</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{text-transform: ;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: uppercase; }</code></div>
+      <div><span>// Capitalizes All Letters</span></div>
+      <div><code>{&nbsp;: capitalize; }</code></div>
+      <div><span>// Capitalizes 1st Letters</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Writing-Mode</i> property <em>sets the vertical and horizontal alignment of text</em>. It is useful when working with Asian languages: when doing so, be sure to implement the <i>Word-Break</i> property to ensure text words are not broken.
+    </p>
+    <aside class="tableEven">
+      <div><code>{writing-mode: &nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: horizontal-tb; }</code></div>
+      <div><span>// English Style</span></div>
+      <div><code>{&nbsp;: vertical-rl; }</code></div>
+      <div><span>// Japanese Style</span></div>
+      <div><code>{word-break: keep-all; }</code></div>
+      <div><span><b>// Word-chars Always Together</b></span></div>
+    </aside>
+    
+    <h5>List-style</h5>
+    <p>
+      <i>List-style</i> is a shorthand property that defines a type, position and image. The <i>List-Style-Type</i> prop <em>sets what type of bullet to use</em>. The <i>List-Style-Position</i> prop <em>sets the bullet inside or outside of the margin</em>. The <i>List-Style-Image</i> prop <em>uses a url to set the bullet as an image</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{list-style-type: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: none; }</code></div>
+      <div><span>// No Bullets</span></div>
+      <div><code>{&nbsp;: circle; }</code></div>
+      <div><span>// Transparent Circle</span></div>
+      <div><code>{&nbsp;: disc; }</code></div>
+      <div><span>// Black Circle</span></div>
+      <div><code>{&nbsp;: square; }</code></div>
+      <div><span>// Black Square</span></div>
+      <div><code>{&nbsp;: decimal; }</code></div>
+      <div><span>// Alpha Numbers</span></div>
+      <div><code>{&nbsp;: upper-roman; }</code></div>
+      <div><span>// Roman Numbers</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{list-style-position:&nbsp;; }</code></div>
+      <div><span>// </span></div>
+      <div><code>{&nbsp;: inside; }</code></div>
+      <div><span>// Inside of Margin</span></div>
+      <div><code>{&nbsp;: outside; }</code></div>
+      <div><span>// Outside of Margin</span></div>
+    </aside>
+    <br>
+    <aside class="tableEven">
+      <div><code>{list-style-image: &nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span>// note</span></div>
+      <div><code>{&nbsp;: url(img/smile.png); }</code></div>
+      <div><span>// URL to Image</span></div>
+    </aside>
   </section>
   
 </article>    
