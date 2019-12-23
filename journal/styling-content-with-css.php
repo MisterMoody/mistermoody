@@ -10,7 +10,7 @@ include ("../inc/journalHeader.php");
 <article>
   <!-- // Introduction -->
   <section>
-    <h1 class="title">Styling Content with CSS</h1>
+    <h3 class="title">Styling Content with CSS</h3>
       <figure>
         <img class="mainImage" src="img/designStyle.jpg"/>
         <figcaption>So Many Colors, So Many Style Possibilities</figcaption>
@@ -33,7 +33,9 @@ include ("../inc/journalHeader.php");
   <section>
     <h4>Part 1: Create and Load a Stylesheet</h4>
     <p>Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css.'</p>
-    <p>Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>html</code> document using the <code>&lt;link&gt;</code> tag, which requires three attributes: <code>rel="keyword"</code>, <code>href="URL"</code>, and the <code>type="keyword"</code> attributes.</p>
+    <p>
+      Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>&#60;html&#62;</code> document using the <code>&lt;link&gt;</code> tag, which requires three attributes: <code>rel="keyword"</code>, <code>href="URL"</code>, and the <code>type="keyword"</code> attributes.
+    </p>
     <figure>
       <img alt="Strategy to Link a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">
       <figcaption>
@@ -67,7 +69,7 @@ include ("../inc/journalHeader.php");
     </p>
     <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
     <p>
-      Selectors reference <code>html</code> elements targeted for styling. The aesthetic quality for a selector is embodied within its declaration, which begins and ends with curly braces and is composed of a <i>key/value</i> pair. The key refers to a <i>property</i> that identifies the aesthetic quality to modify while the <i>keyword</i> or <i>value</i> quantifies to what extent that property is modified. The property and value/keyword are succeeded by a colon and semi-colon, respectively, for separation and finalization of a declaration.
+      Selectors reference <code>&#60;html&#62;</code> elements targeted for styling. The aesthetic quality for a selector is embodied within its declaration, which begins and ends with curly braces and is composed of a <i>key/value</i> pair. The key refers to a <i>property</i> that identifies the aesthetic quality to modify while the <i>keyword</i> or <i>value</i> quantifies to what extent that property is modified. The property and value/keyword are succeeded by a colon and semi-colon, respectively, for separation and finalization of a declaration.
     </p>
     <!-- Selector Types-->
     <h5>Selector Types</h5>
@@ -75,14 +77,14 @@ include ("../inc/journalHeader.php");
       There are several selectors that can be used:
     </p>
     <p>
-      The <i>universal</i> selector is used to render a specific style to all elements of a website. The example below dictates that all <code>html</code> elements will have 'margins' all around at a value of half an em.
+      The <i>universal</i> selector is used to render a specific style to all elements of a website. The example below dictates that all <code>&#60;html&#62;</code> elements will have 'margins' all around at a value of half an em.
     </p>
     <blockquote>
       <code>* &#123; margin: 0.4em; &#125;</code>
     </blockquote>
 
     <p>
-      The <i>element</i> selector applies consistent styles to a specific <code>html</code> element. The example below dictates that all <code>&lt;h1&gt;</code> headings are 'grey' and 'large.'
+      The <i>element</i> selector applies consistent styles to a specific <code>&#60;html&#62;</code> element. The example below dictates that all <code>&lt;h1&gt;</code> headings are 'grey' and 'large.'
     </p>
     <blockquote>
       <code>h1 &#123; color: #838487; font-size: 10em; &#125;</code>
@@ -101,6 +103,10 @@ include ("../inc/journalHeader.php");
     <blockquote>
       <code>ol &#62; li &#123; color: #c3cde6; &#125;</code>
     </blockquote>
+    
+    <p>
+      The <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that should be used exclusively as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
+    </p>
 
     <p>
       The <i>.class</i> selector targets elements with a specific class reference. A class can be added to any element. The example below dictates that a 'grid' is applied to the class.
@@ -110,7 +116,7 @@ include ("../inc/journalHeader.php");
     </blockquote>
 
     <p>
-      The <i>attribute</i>selec tor applies styles to an <code>html</code> element that possesses a specific attribute. The example below dictates that <code>a</code> elements with the attribute of 'title' will be 'purple.'
+      The <i>attribute</i> selector applies styles to an <code>&#60;html&#62;</code> element that possesses a specific attribute. The example below dictates that <code>&#60;a&#62;</code> elements with the attribute of 'title' will be 'purple.'
     </p>
     <blockquote>
       <code>a &#91; title &#93;; &#123; color &#125;</code>
@@ -135,7 +141,7 @@ include ("../inc/journalHeader.php");
     </aside>
 
     <p>
-      <i>&#58;Pseudo-class</i> selectors are actually keywords that are added to other selectors and provide a unique style during a particular instance of that selector. The examples below dictates how <code>a</code> elements can be modified based on a particular instance. The keywords 'active', 'hover' and 'visited' dictate that styles are applied in the instance that a user is on a current page, has hovered over an element or has already visited that page.
+      <i>&#58;Pseudo-class</i> selectors are actually keywords that are added to other selectors and provide a unique style during a particular instance of that selector. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords 'active', 'hover' and 'visited' dictate that styles are applied in the instance that a user is on a current page, has hovered over an element or has already visited that page.
     </p>
     <blockquote>
       <code>a&#58;active &#123; ... &#125;</code><br>
@@ -163,11 +169,6 @@ include ("../inc/journalHeader.php");
     <blockquote>
       <code>li&#58;&#58;before &#123; content&#58; &#34;\2713&#34;&#59; &#125;</code>
     </blockquote>
-
-    <p>
-      The <u>#id</u> selector <em>should not be used in CSS</em> because it is a unique identifier that should be used exclusively as a 'hook' for <code>html</code> and <code>JavaScript</code> implementations.
-    </p>
-
   </section>
 
   <hr>
@@ -220,7 +221,7 @@ include ("../inc/journalHeader.php");
       In a nutshell: write styles that are broadly applied and have low specificity at the start of a style sheet so that they can be overridden (if necessary) by styles of a higher specificity written beneath them. Thus, include box-sizing, font, preprocessors, and variable definitions at the top of the style sheet followed by default style settings and ending with class-based selectors, components, defined patterns and utilities.
     </p>
     <p>
-      Lastly, employing a <i>naming convention</i> is a beneficial technique that establishes a clear relationship among CSS selectors. The <i>Block-Element-Modifier</i> (BEM) namespace is a method that encapsulates a <code>.class</code> as a block of code bound to an element that can be modified with precision.
+      Lastly, employing a <i>naming convention</i> is a beneficial technique that establishes a clear relationship among CSS selectors. The <i>block-element-modifier</i> (BEM) namespace is a method that encapsulates a <code>.class</code> as a block of code bound to an element that can be modified with precision.
     </p>
     <blockquote>
       <code>.block__element--modifier</code>
@@ -240,11 +241,11 @@ include ("../inc/journalHeader.php");
   <!-- Declaration Examples -->
   <section>
     <h4>Part 4: Making Declarations</h4>
-    <p>There are a lot of properties available for modifying <code>html</code> elements: no project regardless of size will utilize all of them. The list provided below denotes a usage case using the most basic of properties based on visual layout, text and fonts, background and borders, colors, content and list-style <small>??add Animation, Transition + Transform??</small>. </p>
+    <p>There are a lot of properties available for modifying <code>&#60;html&#62;</code> elements: no project regardless of size will utilize all of them. The list provided below denotes a usage case using the most basic of properties based on visual layout, text and fonts, background and borders, colors, content and list-style <small>??add Animation, Transition + Transform??</small>. </p>
     
     <h5>Visual Layout</h5>
     <p>
-      The <i>Display</i> property <em>manages precisely how an element behaves</em> insofar as its layout is concerned. Available keywords for this prop are based on the elements function. The keyword <code><i>inline</i></code> is the default value for elements <em>that wraps text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code><i>block</i></code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. This prop can also be used to <em>hide elements</em> using the keyword <code><i>none</i></code>.
+      The <i>display</i> property <em>manages precisely how an element behaves</em> insofar as its layout is concerned. Available keywords for this prop are based on the elements function. The keyword <code>inline</code> is the default value for elements <em>that wraps text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. This prop can also be used to <em>hide elements</em> using the keyword <code>none</code>.
     </p>
     <aside class="tableEven">
       <div><code>{display: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -258,7 +259,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <code><i>Flex</i></code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>Flex-Direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>Flex-Wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
+      The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
     </p>
     <aside class="tableEven">
       <div><code>{display: flex; }</code></div>
@@ -304,7 +305,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <code><i>Grid</i></code> keyword acts like flexbox, but is more powerful in <em>creating a grid container</em>. Grid is similar to flexbox in that it justifies content and aligns items. The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
+      The <code>grid</code> keyword acts like flexbox, but is more powerful in <em>creating a grid container</em>. Grid is similar to flexbox in that it justifies content and aligns items. The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
     </p>
     <aside class="tableEven">
       <div><code>{display: Grid; }</code></div>
@@ -312,7 +313,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Justify-Items</i> sub-prop <em>aligns grid items horizontally</em>.
+      The <i>justify-items</i> sub-prop <em>aligns grid items horizontally</em>.
     </p>
     <aside class="tableEven">
       <div><code>{justify-items: &nbsp;&nbsp;; }</code></div>
@@ -328,7 +329,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Align-Items</i> sub-prop <em>aligns grid items vertically</em>.
+      The <i>align-items</i> sub-prop <em>aligns grid items vertically</em>.
     </p>
     <aside class="tableEven">
       <div><code>{align-items: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -344,7 +345,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      Use the <i>Justify-Content</i> and <i>Align-Content</i> sub-props <em>whenever the total size of the grid/item is less than the size of its container</em> to set the alignment of the grid/item within the container.
+      Use the <i>justify-content</i> and <i>align-content</i> sub-props <em>whenever the total size of the grid/item is less than the size of its container</em> to set the alignment of the grid/item within the container.
     </p>
     <aside class="tableEven">
       <div><code>{justify-content: ; }</code></div>
@@ -366,7 +367,7 @@ include ("../inc/journalHeader.php");
     </p>
     <aside class="tableEven">
       <div><code>{g-t-c: unit/value; }</code></div>
-      <div><span><b>// Vertical Container</b></span></div>
+      <div><span>// Vertical Container</span></div>
       <div><code>{g-t-r: unit/value; }</code></div>
       <div><span>// Horizontal Container</span></div>
       <div><code>{g-c-g: unit/value; }</code></div>
@@ -402,7 +403,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Position</i> property can be used to re-position an element from its initial position.
+      The <i>position</i> property can be used to re-position an element from its initial position.
     </p>
     <aside class="tableEven">
       <div><code>{position: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -420,21 +421,21 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      <i>Positional Properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
+      <i>positional properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
     </p>
     <aside class="tableEven">
       <div><code>{top / right / bottom / right: value; }</code></div>
     </aside>
     <br>
     <p>
-      The <i>Z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
+      The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
     </p>
     <aside class="tableEven">
       <div><code>{z-index: value; }</code></div>
     </aside>
     <br>
     <p>
-      The <i>Height</i> property is used to <em>specify content height and width</em> of boxes. The <i>Min/Max-Height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
+      The <i>height</i> property is used to <em>specify content height and width</em> of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
     </p>
     <aside class="tableEven">
       <div><code> {height: value; }</code></div>
@@ -446,7 +447,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Width</i> property is used to <em>specify content width</em> of boxes. <i>Min/Max-Width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
+      The <i>width</i> property is used to <em>specify content width</em> of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
     </p>
     <aside class="tableEven">
       <div><code> {width: value; }</code></div>
@@ -460,7 +461,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Object-Fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>Object-Position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
+      The <i>object-fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>object-position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
     </p>
     <aside class="tableEven">
       <div><code>{object-fit: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -476,7 +477,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Float</i> property is used to <em>wrap text around images</em> while the <i>Clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>Overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
+      The <i>float</i> property is used to <em>wrap text around images</em> while the <i>clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
     </p>
     <aside class="tableEven">
       <div><code>* { box-sizing: border-box; }</code></div>
@@ -516,7 +517,7 @@ include ("../inc/journalHeader.php");
       <div><span>// Scroll(s) for Overflow</span></div>
     </aside>
     <br>
-    <p><i>Margin is a shorthand property</i></p>
+    <p><i>Margin</i>  is a shorthand property.</p>
     <aside class="tableEven">
       <div><code>{margin: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Value Description</b></span></div>
@@ -530,7 +531,7 @@ include ("../inc/journalHeader.php");
       <div><span>// note</span></div>
     </aside>
     <br>
-    <p><i>Padding is a shorthand property</i></p>
+    <p><i>Padding</i> is a shorthand property.</p>
     <aside class="tableEven">
       <div><code>{padding: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Value Description</b></span></div>
@@ -544,10 +545,21 @@ include ("../inc/journalHeader.php");
       <div><span>// note</span></div>
     </aside>
     <br>
-    <p>Eliminate concerns about spacing by adding the <i>box-sizing</i> property with a universal selector.</p>
+    <p>
+      Eliminate concerns about spacing by adding the <i>box-sizing</i> property with a universal selector to act as a container for a webpage. This prop can also be used to cast a shadow on an element. The values represent the horizontal/vertical offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required: <code>* { box-sizing: border-box; }</code>
+    </p>
+    <br>
     <aside class="tableEven">
-      <div><code>* { box-sizing: border-box; }</code></div>
-      <div><span>// Eliminates spacing concerns</span></div>
+      <div><code>{box-sizing: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Value </b></span></div>
+      <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
+      <div><span>// Outer Offset</span></div>
+      <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
+      <div><span>// Inner Offset</span></div>
+      <div><code>{&nbsp;: 0 8px 6px -6px red; }</code></div>
+      <div><span>// Bottom Offset</span></div>
+      <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
+      <div><span>// Multiple Offsets</span></div>
     </aside>
     <!--<aside class="tableEven">
       <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -585,25 +597,10 @@ include ("../inc/journalHeader.php");
       <div><code>{opacity: # between 0.0 - 1; }</code></div>
       <div><span>// Defines Transparency</span></div>
     </aside>
-    <p>
-      The <i>Box-Sizing</i> property can be used to cast a shadow on an element. The values represent the horizontal/vertal offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required.   
-    </p>
-    <aside class="tableEven">
-      <div><code>{box-sizing: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Value Description</b></span></div>
-      <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
-      <div><span>// Outer Offset</span></div>
-      <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
-      <div><span>// Inner Offset</span></div>
-      <div><code>{&nbsp;: 0 8px 6px -6px red; }</code></div>
-      <div><span>// Bottom Offset</span></div>
-      <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
-      <div><span>// Multiple Offsets</span></div>
-    </aside>
     
     <h5>Backgrounds + Borders</h5>
     <p>
-      <i>Background is a shorthand property.</i>
+      <i>Background</i> is a shorthand property.
     </p>
     <aside class="tableEven">
       <div><code>{background: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -626,11 +623,11 @@ include ("../inc/journalHeader.php");
       <div><span>// note</span></div>
     </aside>
     <p>
-      <i>Border is a shorthand property.</i>
+      <i>Border</i> is a shorthand property.
     </p>
     <aside class="tableEven">
       <div><code>{border: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Key/Val Description</b></span></div>
+      <div><span><b>// Keyword/Value Description</b></span></div>
       <div><code>{border-width: y; }</code></div>
       <div><span>// note</span></div>
       <div><code>{border-style: y; }</code></div>
@@ -648,47 +645,56 @@ include ("../inc/journalHeader.php");
     
     <h5>Font + Text</h5>
     <p>
-      <i>Font</i> is a shorthand property for font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order. The <i>Font-Variant</i> prop is used to <em>modify text to uppercase</em>. The <i>Font-Weight</i> prop <em>sets the font thickness</em>. The <i>Font-Size</i> prop <em>sets the font height</em>. The <i>Line-Height</i> prop <em>sets the space above and below inline elements</em>. The <i>Font-Family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. It is good practice to include a generic name as a fallback.
+      <i>font</i> is a property that is used to <em>set the style of text</em>. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
     </p>
     <aside class="tableEven">
-      <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Key/Val Description</b></span></div>
-      <div><code>{font-style: keyword; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{font-variant: keyword; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{font-weight: keyword; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{font-size: unit/value; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{line-height: value; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{font-family: keyword; }</code></div>
-      <div><span>// note</span></div>
+      <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+      <div><span><b>// Keyword/Value Description</b></span></div>
     </aside>
     <br>
+    <p>
+      The <i>-style</i> <em>is used to italicize text</em>, but is commonly only used within the shorthand.
+    </p>
     <aside class="tableEven">
-      <div><code>{font-variant: keyword; }</code></div>
-      <div><span>// note</span></div>
+      <div><code>{font-style: normal; &nbsp;&nbsp;&nbsp;}</code></div>
+      <div><span>// Not Italicized</span></div>
+    </aside>
+    <br>
+    <p>The <i>-variant</i> <em>makes all text uppercase</em>.</p>
+    <aside class="tableEven">
+      <div><code>{font-variant: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: normal; }</code></div>
-      <div><span>// xxx</span></div>
+      <div><span>// Normal Letters</span></div>
       <div><code>{&nbsp;: small-caps; }</code></div>
-      <div><span>// xxx</span></div>
+      <div><span>// Small Caplital Letters</span></div>
       <div><code>{&nbsp;: petite-caps; }</code></div>
-      <div><span>// xxx</span></div>
+      <div><span>// Thin Capital Letters</span></div>
     </aside>
     <br>
+    <p> 
+      The <i>-weight</i> <em>sets font thickness or width</em>, but its font-family will determine how the weight is applied, if applied at all. Values for this property use an incremental numerical scale from a lot point of 100 to its peak of 900 (increments of 100).
+    </p>
     <aside class="tableEven">
-      <div><code>{font-weight: 600-900; }</code></div>
+      <div><code>{font-weight: 600-900; &nbsp;}</code></div>
       <div><span>// Font Thickness</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>-size</i> <em>specifies the size of the font using numerical values (ie em, rem + px)</em>. The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, <em>sets the space above and below inline elements</em>. 
+    </p>
+    <aside class="tableEven">
       <div><code>{font-size: unit/value;&nbsp;}</code></div>
       <div><span>// Font Height</span></div>
       <div><code>{line-height: % value; &nbsp;}</code></div>
       <div><span>// Line Height</span></div>
     </aside>
     <br>
+    <p>
+      The <i>font-family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement.
+    </p>
     <aside class="tableEven">
-      <div><code>{font-family: &nbsp;&nbsp;; }</code></div>
+      <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: Arial, sans-serif; }</code></div>
       <div><span></span></div>
@@ -702,7 +708,7 @@ include ("../inc/journalHeader.php");
       <div><span>// All Words Smll Caps</span></div>
     </aside>
     <br>
-    <p>The <i>Letter-Spacing</i> and <i>Word-Spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
+    <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
     <aside class="tableEven">
       <div><code>{letter-spacing: unit/value; }</code></div>
       <div><span>// Space between Letters</span></div>
@@ -716,7 +722,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Text-Decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code><i>solid</i></code>, <code><i>double</i></code>, <code><i>dotted</i></code>, <code><i>dashed</i></code> and <code><i>wavy</i></code>.
+      The <i>text-decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
     </p>
     <aside class="tableEven">
       <div><code>{text-decoration: &nbsp;; }</code></div>
@@ -728,7 +734,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Text-Transform</i> property <em>sets the text case and capitalization</em>.
+      The <i>text-transform</i> property <em>sets the text case and capitalization</em>.
     </p>
     <aside class="tableEven">
       <div><code>{text-transform: &nbsp;&nbsp;; }</code></div>
@@ -740,7 +746,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>Writing-Mode</i> property <em>sets the vertical and horizontal alignment of text</em>. It is useful when working with Asian languages: when doing so, be sure to implement the <i>Word-Break</i> property to ensure text words are not broken.
+      The <i>writing-mode</i> property <em>sets the vertical and horizontal alignment of text</em>. It is useful when working with Asian languages: when doing so, be sure to implement the <i>word-break</i> property to ensure text words are not broken.
     </p>
     <aside class="tableEven">
       <div><code>{writing-mode: &nbsp;&nbsp;; }</code></div>
@@ -750,12 +756,12 @@ include ("../inc/journalHeader.php");
       <div><code>{&nbsp;: vertical-rl; }</code></div>
       <div><span>// Japanese Style</span></div>
       <div><code>{word-break: keep-all; }</code></div>
-      <div><span>// Word-chars Always Together</span></div>
+      <div><span>// Characters Stay Together</span></div>
     </aside>
     
     <h5>List-style</h5>
     <p>
-      <i>List-style</i> is a shorthand property that defines a type, position and image. The <i>List-Style-Type</i> prop <em>sets what type of bullet to use</em>. The <i>List-Style-Position</i> prop <em>sets the bullet inside or outside of the margin</em>. The <i>List-Style-Image</i> prop <em>uses a url to set the bullet as an image</em>.
+      <i>list-style</i> is a shorthand property that defines a type, position and image. The <i>list-style-type</i> prop <em>sets what type of bullet to use</em>. The <i>list-style-position</i> prop <em>sets the bullet inside or outside of the margin</em>. The <i>list-style-image</i> prop <em>uses a url to set the bullet as an image</em>.
     </p>
     <aside class="tableEven">
       <div><code>{list-style-type: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -785,7 +791,7 @@ include ("../inc/journalHeader.php");
     <br>
     <aside class="tableEven">
       <div><code>{list-style-image: &nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span>// note</span></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: url(img/smile.png); }</code></div>
       <div><span>// URL to Image</span></div>
     </aside>

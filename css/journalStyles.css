@@ -208,7 +208,7 @@ i {
 mark {background: #ccc;}
 p { 
   color: #444;
-  font-size: 0.94em; /*0.88em;*/
+  font-size: 0.90em; /*0.88em;*/
   line-height: 1.4;
 }
 /**/
@@ -340,61 +340,8 @@ p.btn {
 /*
 **//******************************************//**
 */
-/*Unicode <div> Style*/
-.asciiItem {
-  background: grey;
-  text-align: center;
-}
-/*Unicode 1st Row*/
-.asciiItemChar {
-  font-size: 1.5em;
-}
-.block {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  display: grid;
-  grid-template-rows: repeat(auto, minmax(24px, auto));	
-  grid-template-columns: 1fr;    
-}
-.blockCard {
-  margin: 4px 6px;
-  padding: 0;
-  border: 1px solid #838487;
-}
-.card {
-  margin: 6px;
-  padding: 8px;
-  border: 1px solid #838487;
-  text-align: center;
-}
-/*Unicode Character Grid*/
-.characterGrid {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 4px;
-}
-dialog::backdrop {
-  background: rgba(255,0,0,.25);
-}
-/* Glossary GRID ==== */
-.glossary {
-   width: 100%;
-   font-size: 0.74em;
-   margin: 0 auto;
-   padding: 0;
-   display: grid;
-   grid-template-rows: repeat(auto, 24px);
-   grid-template-columns: 8em 1fr;
-   grid-gap: 2px;
- }
-.material-icons {
-  color: #ff4d4d; 
-  font-size: 1em;
-}
+
+/* Code Grid + Styles */
 .table, .tableEven {
   width: 100%;
   /*font-size: 0.68em;*/
