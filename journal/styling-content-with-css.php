@@ -237,28 +237,168 @@ include ("../inc/journalHeader.php");
 
   <hr>
   
-  <!-- Declaration Examples 
-  Still need to include 'Shorthand Properties'
--->
+  <!-- Declaration Examples -->
   <section>
     <h4>Part 4: Making Declarations</h4>
     <p>There are a lot of properties available for modifying <code>html</code> elements: no project regardless of size will utilize all of them. The list provided below denotes a usage case using the most basic of properties based on visual layout, text and fonts, background and borders, colors, content and list-style <small>??add Animation, Transition + Transform??</small>. </p>
     
     <h5>Visual Layout</h5>
-    <p>Lorem ipsum doler uit sem apch reaale negus
-      
+    <p>
+      The <i>Display</i> property <em>manages precisely how an element behaves</em> insofar as its layout is concerned. Available keywords for this prop are based on the elements function. The keyword <code><i>inline</i></code> is the default value for elements <em>that wraps text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code><i>block</i></code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. This prop can also be used to <em>hide elements</em> using the keyword <code><i>none</i></code>.
     </p>
     <aside class="tableEven">
       <div><code>{display: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: inline-block; }</code></div>
-      <div><span>// Horizontal Layout</span></div>
-      <div><code>{&nbsp;: flex; }</code></div>
-      <div><span>// Flexible Layout</span></div>
-      <div><code>{&nbsp;: grid; }</code></div>
-      <div><span>// Grid Layout</span></div>
+      <div><code>{&nbsp;: inline; }</code></div>
+      <div><span>// Horizontal Line Alignment</span></div>
+      <div><code>{&nbsp;: block; }</code></div>
+      <div><span>// Vertical Block Alignment</span></div>
       <div><code>{&nbsp;: none; }</code></div>
       <div><span>// Hides Element</span></div>
+    </aside>
+    <br>
+    <p>
+      The <code><i>Flex</i></code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>Flex-Direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>Flex-Wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
+    </p>
+    <aside class="tableEven">
+      <div><code>{display: flex; }</code></div>
+      <div><span>// Flexible Element Layout</span></div>
+      <div><code>{flex-direction: row/column; }</code></div>
+      <div><span>// Cross-Axis Alignment</span></div>
+      <div><code>{flex-wrap: nowrap/wrap; }</code></div>
+      <div><span>// Single-Line/Multi-Line</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>justify-content</i> sub-prop <em>manages item alignment along the main horizontal axis</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{justify-content: &nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: flex-start; }</code></div>
+      <div><span>// Default Value (Left)</span></div>
+      <div><code>{&nbsp;: flex-end; }</code></div>
+      <div><span>// Aligns Items to Right</span></div>
+      <div><code>{&nbsp;: center; }</code></div>
+      <div><span>// Center Aligns Items</span></div>
+      <div><code>{&nbsp;: space-between; }</code></div>
+      <div><span>// Equal Space Between Items</span></div>
+      <div><code>{&nbsp;: space-evenly; }</code></div>
+      <div><span>// Equal Space Around Items</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{align-items: &nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: flex-start; }</code></div>
+      <div><span>// Default Value (Top)</span></div>
+      <div><code>{&nbsp;: flex-end; }</code></div>
+      <div><span>// Aligns Items to Bottom</span></div>
+      <div><code>{&nbsp;: center; }</code></div>
+      <div><span>// Center Aligns Items</span></div>
+      <div><code>{&nbsp;: stretch; }</code></div>
+      <div><span>// Fills Container</span></div>
+    </aside>
+    <br>
+    <p>
+      The <code><i>Grid</i></code> keyword acts like flexbox, but is more powerful in <em>creating a grid container</em>. Grid is similar to flexbox in that it justifies content and aligns items. The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{display: Grid; }</code></div>
+      <div><span><b>// Grid Structured Layout</b></span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Justify-Items</i> sub-prop <em>aligns grid items horizontally</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{justify-items: &nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: stretch; }</code></div>
+      <div><span>// Default - Fills Width of Cell</span></div>
+      <div><code>{&nbsp;: start; }</code></div>
+      <div><span>// Aligns Items to Left</span></div>
+      <div><code>{&nbsp;: end; }</code></div>
+      <div><span>// Aligns Items to Right</span></div>
+      <div><code>{&nbsp;: center; }</code></div>
+      <div><span>// Center Aligns Items</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>Align-Items</i> sub-prop <em>aligns grid items vertically</em>.
+    </p>
+    <aside class="tableEven">
+      <div><code>{align-items: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: stretch; }</code></div>
+      <div><span>// Default - Fills Width of Cell</span></div>
+      <div><code>{&nbsp;: start; }</code></div>
+      <div><span>// Aligns Items to Left</span></div>
+      <div><code>{&nbsp;: end; }</code></div>
+      <div><span>// Aligns Items to Right</span></div>
+      <div><code>{&nbsp;: center; }</code></div>
+      <div><span>// Center Aligns Items</span></div>
+    </aside>
+    <br>
+    <p>
+      Use the <i>Justify-Content</i> and <i>Align-Content</i> sub-props <em>whenever the total size of the grid/item is less than the size of its container</em> to set the alignment of the grid/item within the container.
+    </p>
+    <aside class="tableEven">
+      <div><code>{justify-content: ; }</code></div>
+      <div><span><b>// Keyword Description</b></span></div>
+      <div><code>{&nbsp;: start; }</code></div>
+      <div><span>// Default Value (Left)</span></div>
+      <div><code>{&nbsp;: end; }</code></div>
+      <div><span>// Aligns Items to Right</span></div>
+      <div><code>{&nbsp;: center; }</code></div>
+      <div><span>// Center Aligns Items</span></div>
+      <div><code>{&nbsp;: space-between; }</code></div>
+      <div><span>// Equal Space Between Items</span></div>
+      <div><code>{&nbsp;: space-around; }</code></div>
+      <div><span>// Equal Space Around Items</span></div>
+    </aside>
+    <br>
+    <p>
+      The <i>grid-template-columns</i> and <i>grid-template-rows</i> sub-props <em>outlines grid container columns and rows</em>, respectively. Add margins between the columns and rows by using the  <i>grid-column-gap</i> and <i>grid-row-gap</i> sub-props: <i>grid-gap</i> is the shorthand.
+    </p>
+    <aside class="tableEven">
+      <div><code>{g-t-c: unit/value; }</code></div>
+      <div><span><b>// Vertical Container</b></span></div>
+      <div><code>{g-t-r: unit/value; }</code></div>
+      <div><span>// Horizontal Container</span></div>
+      <div><code>{g-c-g: unit/value; }</code></div>
+      <div><span>// Vertical Gutter</span></div>
+      <div><code>{g-r-g: unit/value; }</code></div>
+      <div><span>// Horizontal Gutter</span></div>
+      <div><code>{grid-gap: unit/value; }</code></div>
+      <div><span>// Gutters</span></div>
+    </aside>
+    <br>
+    <p>
+      The documentation on flexbox and grid is extensive. There is much more that can be done to control the layout of elements using these keywords with the display property.
+    </p>
+    <p>Useful units and length values:</p>
+    <aside class="tableEven">
+      <div><code>{&nbsp;: repeat(3, 1fr); }</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: minmax(200px, 1fr); }</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: auto-fit / auto-fill; }</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: repeat(auto-fill, minmax(x,y)); }</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: 25% 100px auto; }</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: min-content/max-content; }</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: 25% 100px auto; }</code></div>
+      <div><span></span></div>
+      <div><code>{grid: 100px 300px / auto-flow 200px; }</code></div>
+      <div></div>
+      <div><code>{grid: auto-flow dense 100px / 1fr 2fr; }</code></div>
     </aside>
     <br>
     <p>
@@ -539,27 +679,21 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <aside class="tableEven">
-      <div><code>{font-weight: 700, 800, 900; }</code></div>
+      <div><code>{font-weight: 600-900; }</code></div>
       <div><span>// Font Thickness</span></div>
-    </aside>
-    <br>
-    <aside class="tableEven">
-      <div><code>{font-size: unit/value; }</code></div>
+      <div><code>{font-size: unit/value;&nbsp;}</code></div>
       <div><span>// Font Height</span></div>
-    </aside>
-    <br>
-    <aside class="tableEven">
-      <div><code>{line-height: % value; }</code></div>
+      <div><code>{line-height: % value; &nbsp;}</code></div>
       <div><span>// Line Height</span></div>
     </aside>
     <br>
     <aside class="tableEven">
       <div><code>{font-family: &nbsp;&nbsp;; }</code></div>
-      <div><span>// </span></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: Arial, sans-serif; }</code></div>
-      <div><span>// </span></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: "Times New Roman", serif; }</code></div>
-      <div><span>// </span></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: monospace; }</code></div>
       <div><span>// Computer Code</span></div>
       <div><code>{&nbsp;: cursive; }</code></div>
@@ -577,15 +711,15 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <aside class="tableEven">
-      <div><code>{text-align: left / center / justify; }</code></div>
-      <div><span><b>// Aligns Text</b></span></div>
+      <div><code>{text-align: left/center/justify; }</code></div>
+      <div><span>// Aligns Text</span></div>
     </aside>
     <br>
     <p>
-      The <i>Text-Decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
+      The <i>Text-Decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code><i>solid</i></code>, <code><i>double</i></code>, <code><i>dotted</i></code>, <code><i>dashed</i></code> and <code><i>wavy</i></code>.
     </p>
     <aside class="tableEven">
-      <div><code>{text-decoration: &nbsp;&nbsp;; }</code></div>
+      <div><code>{text-decoration: &nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: underline red; }</code></div>
       <div><span>// Underline</span></div>
@@ -597,7 +731,7 @@ include ("../inc/journalHeader.php");
       The <i>Text-Transform</i> property <em>sets the text case and capitalization</em>.
     </p>
     <aside class="tableEven">
-      <div><code>{text-transform: ;&nbsp;&nbsp;; }</code></div>
+      <div><code>{text-transform: &nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: uppercase; }</code></div>
       <div><span>// Capitalizes All Letters</span></div>
@@ -616,7 +750,7 @@ include ("../inc/journalHeader.php");
       <div><code>{&nbsp;: vertical-rl; }</code></div>
       <div><span>// Japanese Style</span></div>
       <div><code>{word-break: keep-all; }</code></div>
-      <div><span><b>// Word-chars Always Together</b></span></div>
+      <div><span>// Word-chars Always Together</span></div>
     </aside>
     
     <h5>List-style</h5>
@@ -642,7 +776,7 @@ include ("../inc/journalHeader.php");
     <br>
     <aside class="tableEven">
       <div><code>{list-style-position:&nbsp;; }</code></div>
-      <div><span>// </span></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: inside; }</code></div>
       <div><span>// Inside of Margin</span></div>
       <div><code>{&nbsp;: outside; }</code></div>
