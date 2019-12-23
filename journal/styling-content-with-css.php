@@ -248,13 +248,13 @@ include ("../inc/journalHeader.php");
       The <i>display</i> property <em>manages precisely how an element behaves</em> insofar as its layout is concerned. Available keywords for this prop are based on the elements function. The keyword <code>inline</code> is the default value for elements <em>that wraps text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. This prop can also be used to <em>hide elements</em> using the keyword <code>none</code>.
     </p>
     <aside class="tableEven">
-      <div><code>{display: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{display: ;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: inline; }</code></div>
+      <div><code>{&nbsp;: inline;}</code></div>
       <div><span>// Horizontal Line Alignment</span></div>
-      <div><code>{&nbsp;: block; }</code></div>
+      <div><code>{&nbsp;: block;}</code></div>
       <div><span>// Vertical Block Alignment</span></div>
-      <div><code>{&nbsp;: none; }</code></div>
+      <div><code>{&nbsp;: none;}</code></div>
       <div><span>// Hides Element</span></div>
     </aside>
     <br>
@@ -262,11 +262,11 @@ include ("../inc/journalHeader.php");
       The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
     </p>
     <aside class="tableEven">
-      <div><code>{display: flex; }</code></div>
+      <div><code>{display: flex;}</code></div>
       <div><span>// Flexible Element Layout</span></div>
-      <div><code>{flex-direction: row/column; }</code></div>
+      <div><code>{flex-direction: row/column;}</code></div>
       <div><span>// Cross-Axis Alignment</span></div>
-      <div><code>{flex-wrap: nowrap/wrap; }</code></div>
+      <div><code>{flex-wrap: nowrap/wrap;}</code></div>
       <div><span>// Single-Line/Multi-Line</span></div>
     </aside>
     <br>
@@ -274,17 +274,17 @@ include ("../inc/journalHeader.php");
       The <i>justify-content</i> sub-prop <em>manages item alignment along the main horizontal axis</em>.
     </p>
     <aside class="tableEven">
-      <div><code>{justify-content: &nbsp;&nbsp;; }</code></div>
+      <div><code>{justify-content: ;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: flex-start; }</code></div>
+      <div><code>{&nbsp;: flex-start;}</code></div>
       <div><span>// Default Value (Left)</span></div>
-      <div><code>{&nbsp;: flex-end; }</code></div>
+      <div><code>{&nbsp;: flex-end;}</code></div>
       <div><span>// Aligns Items to Right</span></div>
-      <div><code>{&nbsp;: center; }</code></div>
+      <div><code>{&nbsp;: center;}</code></div>
       <div><span>// Center Aligns Items</span></div>
-      <div><code>{&nbsp;: space-between; }</code></div>
+      <div><code>{&nbsp;: space-between;}</code></div>
       <div><span>// Equal Space Between Items</span></div>
-      <div><code>{&nbsp;: space-evenly; }</code></div>
+      <div><code>{&nbsp;: space-evenly;}</code></div>
       <div><span>// Equal Space Around Items</span></div>
     </aside>
     <br>
@@ -292,15 +292,15 @@ include ("../inc/journalHeader.php");
       The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
     </p>
     <aside class="tableEven">
-      <div><code>{align-items: &nbsp;&nbsp;; }</code></div>
+      <div><code>{align-items: ;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: flex-start; }</code></div>
+      <div><code>{&nbsp;: flex-start;}</code></div>
       <div><span>// Default Value (Top)</span></div>
-      <div><code>{&nbsp;: flex-end; }</code></div>
+      <div><code>{&nbsp;: flex-end;}</code></div>
       <div><span>// Aligns Items to Bottom</span></div>
-      <div><code>{&nbsp;: center; }</code></div>
+      <div><code>{&nbsp;: center;}</code></div>
       <div><span>// Center Aligns Items</span></div>
-      <div><code>{&nbsp;: stretch; }</code></div>
+      <div><code>{&nbsp;: stretch;}</code></div>
       <div><span>// Fills Container</span></div>
     </aside>
     <br>
@@ -348,17 +348,17 @@ include ("../inc/journalHeader.php");
       Use the <i>justify-content</i> and <i>align-content</i> sub-props <em>whenever the total size of the grid/item is less than the size of its container</em> to set the alignment of the grid/item within the container.
     </p>
     <aside class="tableEven">
-      <div><code>{justify-content: ; }</code></div>
+      <div><code>{justify-content: ;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: start; }</code></div>
+      <div><code>{&nbsp;: start;}</code></div>
       <div><span>// Default Value (Left)</span></div>
       <div><code>{&nbsp;: end; }</code></div>
       <div><span>// Aligns Items to Right</span></div>
-      <div><code>{&nbsp;: center; }</code></div>
+      <div><code>{&nbsp;: center;}</code></div>
       <div><span>// Center Aligns Items</span></div>
-      <div><code>{&nbsp;: space-between; }</code></div>
+      <div><code>{&nbsp;: space-between;}</code></div>
       <div><span>// Equal Space Between Items</span></div>
-      <div><code>{&nbsp;: space-around; }</code></div>
+      <div><code>{&nbsp;: space-around;}</code></div>
       <div><span>// Equal Space Around Items</span></div>
     </aside>
     <br>
@@ -366,83 +366,80 @@ include ("../inc/journalHeader.php");
       The <i>grid-template-columns</i> and <i>grid-template-rows</i> sub-props <em>outlines grid container columns and rows</em>, respectively. Add margins between the columns and rows by using the  <i>grid-column-gap</i> and <i>grid-row-gap</i> sub-props: <i>grid-gap</i> is the shorthand.
     </p>
     <aside class="tableEven">
-      <div><code>{g-t-c: unit/value; }</code></div>
+      <div><code>{g-t-c: unit/value;}</code></div>
       <div><span>// Vertical Container</span></div>
-      <div><code>{g-t-r: unit/value; }</code></div>
+      <div><code>{g-t-r: unit/value;}</code></div>
       <div><span>// Horizontal Container</span></div>
-      <div><code>{g-c-g: unit/value; }</code></div>
+      <div><code>{g-c-g: unit/value;}</code></div>
       <div><span>// Vertical Gutter</span></div>
-      <div><code>{g-r-g: unit/value; }</code></div>
+      <div><code>{g-r-g: unit/value;}</code></div>
       <div><span>// Horizontal Gutter</span></div>
-      <div><code>{grid-gap: unit/value; }</code></div>
+      <div><code>{grid-gap: unit/value;}</code></div>
       <div><span>// Gutters</span></div>
     </aside>
     <br>
     <p>
-      The documentation on flexbox and grid is extensive. There is much more that can be done to control the layout of elements using these keywords with the display property.
+      The documentation on flexbox and grid is extensive. There is much more that can be done to control the layout of elements using these keywords with the display property. Useful units and length values:
     </p>
-    <p>Useful units and length values:</p>
     <aside class="tableEven">
-      <div><code>{&nbsp;: repeat(3, 1fr); }</code></div>
+      <div><code>{&nbsp;: repeat(3, 1fr);}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: minmax(200px, 1fr); }</code></div>
+      <div><code>{&nbsp;: minmax(200px, 1fr);}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: auto-fit / auto-fill; }</code></div>
+      <div><code>{&nbsp;: auto-fit / auto-fill;}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: repeat(auto-fill, minmax(x,y)); }</code></div>
+      <div><code>{&nbsp;: repeat(auto-fill, minmax(x,y));}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: 25% 100px auto; }</code></div>
+      <div><code>{&nbsp;: 25% 100px auto;}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: min-content/max-content; }</code></div>
+      <div><code>{&nbsp;: min-content/max-content;}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: 25% 100px auto; }</code></div>
+      <div><code>{&nbsp;: 25% 100px auto;}</code></div>
       <div><span></span></div>
-      <div><code>{grid: 100px 300px / auto-flow 200px; }</code></div>
+      <div><code>{grid: 100px 300px / auto-flow 200px;}</code></div>
       <div></div>
-      <div><code>{grid: auto-flow dense 100px / 1fr 2fr; }</code></div>
+      <div><code>{grid: auto-flow dense 100px / 1fr 2fr;}</code></div>
     </aside>
     <br>
     <p>
-      The <i>position</i> property can be used to re-position an element from its initial position.
+      The <i>position</i> property can be used to re-position an element from its initial position. <i>positional properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
     </p>
     <aside class="tableEven">
-      <div><code>{position: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{position: &nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: static; }</code></div>
+      <div><code>{&nbsp;: static;}</code></div>
       <div><span>// Default Setting</span></div>
-      <div><code>{&nbsp;: relative; }</code></div>
+      <div><code>{&nbsp;: relative;}</code></div>
       <div><span>// Implements Positional Properties</span></div>
-      <div><code>{&nbsp;: absolute; }</code></div>
+      <div><code>{&nbsp;: absolute;}</code></div>
       <div><span>// Ignores Children + Implements PP</span></div>
-      <div><code>{&nbsp;: fixed; }</code></div>
+      <div><code>{&nbsp;: fixed;}</code></div>
       <div><span>// Element Does not Scroll</span></div>
-      <div><code>{&nbsp;: sticky; }</code></div>
+      <div><code>{&nbsp;: sticky;}</code></div>
       <div><span>// Scroll to a Fixed Position</span></div>
     </aside>
     <br>
-    <p>
-      <i>positional properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
-    </p>
     <aside class="tableEven">
-      <div><code>{top / right / bottom / right: value; }</code></div>
+      <div><code>{top / right / bottom / right: value;}</code></div>
     </aside>
     <br>
     <p>
       The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
     </p>
     <aside class="tableEven">
-      <div><code>{z-index: value; }</code></div>
+      <div><code>{z-index: 100;}</code></div>
+      <div><span>// Stacked Above Elements</span></div>
     </aside>
     <br>
     <p>
       The <i>height</i> property is used to <em>specify content height and width</em> of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
     </p>
     <aside class="tableEven">
-      <div><code> {height: value; }</code></div>
+      <div><code> {height: value;}</code></div>
       <div><span>// Specify Content Height</span></div>
-      <div><code> {min-height: value; }</code></div>
+      <div><code> {min-height: value;}</code></div>
       <div><span>// Specify Minimum Content Height</span></div>
-      <div><code> {max-height: value; }</code></div>
+      <div><code> {max-height: value;}</code></div>
       <div><span>// Specify Maximum Content Height</span></div>
     </aside>
     <br>
@@ -450,13 +447,13 @@ include ("../inc/journalHeader.php");
       The <i>width</i> property is used to <em>specify content width</em> of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
     </p>
     <aside class="tableEven">
-      <div><code> {width: value; }</code></div>
+      <div><code> {width: value;}</code></div>
       <div><span>// Specify Content Width</span></div>
-      <div><code> {min-width: value; }</code></div>
+      <div><code> {min-width: value;}</code></div>
       <div><span>// Specify Minimum Content Width</span></div>
-      <div><code> {max-width: value; }</code></div>
+      <div><code> {max-width: value;}</code></div>
       <div><span>// Specify Maximum Content Width</span></div>
-      <div><code> {fit-content: value; }</code></div>
+      <div><code> {fit-content: value;}</code></div>
       <div><span>// Center Content Horizontally</span></div>
     </aside>
     <br>
@@ -464,85 +461,63 @@ include ("../inc/journalHeader.php");
       The <i>object-fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>object-position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
     </p>
     <aside class="tableEven">
-      <div><code>{object-fit: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{object-fit: &nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: fill; }</code></div>
-      <div><span>// Default Value Stretches Media to Fit</span></div>
-      <div><code>{&nbsp;: cover; }</code></div>
+      <div><code>{&nbsp;: fill;}</code></div>
+      <div><span>// Stretches Media to Fit</span></div>
+      <div><code>{&nbsp;: cover;}</code></div>
       <div><span>// Media Crop</span></div>
-      <div><code>{&nbsp;: contain; }</code></div>
+      <div><code>{&nbsp;: contain;}</code></div>
       <div><span>// Sizes Media to Fill</span></div>
-      <div><code>{&nbsp;: scale-down; }</code></div>
+      <div><code>{&nbsp;: scale-down;}</code></div>
       <div><span>// Resize to Smallest Size</span></div>
     </aside>
     <br>
     <p>
       The <i>float</i> property is used to <em>wrap text around images</em> while the <i>clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
     </p>
-    <aside class="tableEven">
-      <div><code>* { box-sizing: border-box; }</code></div>
-      <div><span>// Eliminates spacing concerns</span></div>
-    </aside>
     <br>
     <aside class="tableEven">
-      <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: none; }</code></div>
+      <div><code>{&nbsp;: none;}</code></div>
       <div><span>// Default Value (No Float)</span></div>
-      <div><code>{&nbsp;: left; }</code></div>
+      <div><code>{&nbsp;: left;}</code></div>
       <div><span>// Floats Left</span></div>
-      <div><code>{&nbsp;: right; }</code></div>
+      <div><code>{&nbsp;: right;}</code></div>
       <div><span>// Floats Right</span></div>
     </aside>
     <br>
     <aside class="tableEven">
-      <div><code>{clear: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{clear: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: both; }</code></div>
+      <div><code>{&nbsp;: both;}</code></div>
       <div><span>// Clears X+Y-axis Floats</span></div>
-      <div><code>{&nbsp;: auto; }</code></div>
+      <div><code>{&nbsp;: auto;}</code></div>
       <div><span>// Clears Float</span></div>
     </aside>
     <br>
     <aside class="tableEven">
-      <div><code>{overflow: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{overflow: &nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: auto; }</code></div>
       <div><span>// Hidden Scroll(s) unless Overflow</span></div>
-      <div><code>{&nbsp;: visible; }</code></div>
+      <div><code>{&nbsp;: visible;}</code></div>
       <div><span>// Default Value</span></div>
-      <div><code>{&nbsp;: hidden; }</code></div>
+      <div><code>{&nbsp;: hidden;}</code></div>
       <div><span>// Hides Overflow</span></div>
-      <div><code>{&nbsp;: scroll; }</code></div>
+      <div><code>{&nbsp;: scroll;}</code></div>
       <div><span>// Scroll(s) for Overflow</span></div>
     </aside>
     <br>
-    <p><i>Margin</i>  is a shorthand property.</p>
+    <p>
+      The <i>Margin</i> property <em>specifies the outside borders of an element</em>. The <i>Padding</i> property <em>specifies the inside borders of an element</em>. Both props accept a single value as a shorthand for top, right, bottom or left sides.
+    </p>
     <aside class="tableEven">
-      <div><code>{margin: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Value Description</b></span></div>
-      <div><code>{margin-top: value; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{margin-right: value; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{margin-bottom: value; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{margin-left: value; }</code></div>
-      <div><span>// note</span></div>
-    </aside>
-    <br>
-    <p><i>Padding</i> is a shorthand property.</p>
-    <aside class="tableEven">
-      <div><code>{padding: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Value Description</b></span></div>
-      <div><code>{padding-top: value; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{padding-right: value; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{padding-bottom: value; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{padding-left: value; }</code></div>
-      <div><span>// note</span></div>
+      <div><code>{margin: 4vw; }</code></div>
+      <div><span></span></div>
+      <div><code>{padding: 8px; }</code></div>
+      <div><span></span></div>
     </aside>
     <br>
     <p>
@@ -575,8 +550,8 @@ include ("../inc/journalHeader.php");
     </aside>-->
     
     <h5>Colors</h5>
-    <p>Lorem ipsum doler uit sem apch reaale negus
-      
+    <p>
+      The <i>color</i> property accepts any color value to <em>set the color of text</em> and is combined with other properties to color backgrounds, borders and what have you.
     </p>
     <aside class="tableEven">
       <div><code>{color: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -600,47 +575,53 @@ include ("../inc/journalHeader.php");
     
     <h5>Backgrounds + Borders</h5>
     <p>
-      <i>Background</i> is a shorthand property.
+      The <i>background</i> property is used to <em>layer an image underneath content</em>. As a shorthand, it accepts sub-props that include image, position, size, repeat, attachment, origin, clip and color.
     </p>
     <aside class="tableEven">
-      <div><code>{background: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Key/Val Description</b></span></div>
-      <div><code>{background-image: image; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{background-position: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{background-size: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{background-repeat: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{background-attachment: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{background-origin: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{background-clip: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{background-color: y; }</code></div>
-      <div><span>// note</span></div>
+      <div><code>{background: url(xyz.jpg); }</code></div>
+      <div><span></span></div>
+      <div><code>{background-position: top center; }</code></div>
+      <div><span></span></div>
+      <div><code>{background-size: cover; }</code></div>
+      <div><span></span></div>      
+      <div><code>{background-repeat: no-repeat; }</code></div>
+      <div><span></span></div>
+      <div><code>{background-attachment: fixed; }</code></div>
+      <div><span></span></div>
+      <div><code>{background-origin: border-box; }</code></div>
+      <div><span></span></div>
+      <div><code>{background-clip: content-box; }</code></div>
+      <div><span></span></div>
+      <div><code>{background-color: #3ab1fd; }</code></div>
+      <div><span></span></div>
     </aside>
+    <br>
     <p>
-      <i>Border</i> is a shorthand property.
+      <i>border</i> is a property that <em>applies a border around and element</em>. As a shorthand, it accepts keywords and values for its width, style and color.
     </p>
     <aside class="tableEven">
       <div><code>{border: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword/Value Description</b></span></div>
-      <div><code>{border-width: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{border-style: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{border-color: y; }</code></div>
-      <div><span>// note</span></div>
+      <div><code>{border-width: thin; }</code></div>
+      <div><span></span></div>
+      <div><code>{border-style: &nbsp;&nbsp;;}</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: none / solid; }</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: dashed / dotted; }</code></div>
+      <div><span></span></div>
+      <div><code>{&nbsp;: groove / ridge; &nbsp;}</code></div>
+      <div><span></span></div>
+      <div><code>{border-color: #hex; }</code></div>
+      <div><span></span></div>
     </aside>
     <br>
+    <p>
+      The <i>border-radius</i> property <em>applies rounded corners</em> on elements, accepting 1, 2 or 3 values.
+    </p>
     <aside class="tableEven">
-      <div><code>{border-radius: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{border-image: y; }</code></div>
-      <div><span>// note</span></div>
+      <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
+      <div><span>Soft Round Corners</span></div>
     </aside>
     
     <h5>Font + Text</h5>
