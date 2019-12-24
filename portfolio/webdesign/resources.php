@@ -258,6 +258,8 @@ include ("../../inc/header.php");
       <div class="resTools">
         <h5>Tools</h5>
         <div class="resourceLink">
+          <span><a target="_blank" href="https://lisacatalano.github.io/brackets_course/pc.html">Brackets IDE Cheatsheet</a></span>
+          
           <span><a target="_blank" href="http://www.dirtymarkup.com/">Code Formatter</a></span>
           
           <span><a target="_blank" href="https://validator.w3.org/#validate_by_input">HTML Validator</a></span>
