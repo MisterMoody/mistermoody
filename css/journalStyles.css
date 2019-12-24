@@ -107,6 +107,7 @@ html {box-sizing: border-box;}
 *:before, *:after {box-sizing: inherit;} 
 /* Smooth Scroll Effect + Remove Browser Scroll */
 html {
+  font-smoothing: antialiased;
   scroll-behavior: smooth;
   overflow: scroll;
   overflow-x: hidden;
@@ -140,8 +141,6 @@ footer  {
   /*article {margin: 0 1.21em;}  Page-Alignment */
 }
 /**/
-/**/
-
 a {
   text-decoration: none;
   color: inherit;
@@ -159,17 +158,16 @@ address {
 blockquote {text-align: center;}
 code {
   background: #ccc; 
-  /*border: 1px solid #888;
-  border-radius: 5px;*/
+  border-radius: 5px;
   font-family: monospace;
-  font-size: 0.80em;
+  font-size: 0.84em;
   font-weight: bold;
   letter-spacing: .8;
 }
 details {margin: 0 4px; font-size: 0.8em;}
 figure {margin: 0; padding: 0;}
 figcaption {
-  font-size: 0.68em;
+  font-size: 0.80em;
   font-style: italic;
   text-align: center;
 }
@@ -198,45 +196,58 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   position: relative;
   top: -0.7em;
 }
-/* Highlights 'Terminology' => DO NOT REMOVE */
+/* Highlights 'Terminology' => DO NOT EDIT ~or~ REMOVE */
 i {
   color: #111;
   font-variant: small-caps;
   font-weight: bold;
 } 
-/**/
-mark {background: #ccc;}
+em {font-size: .90em;}
 p { 
   color: #444;
   font-size: 0.90em; /*0.88em;*/
-  line-height: 1.4;
+  line-height: 1.248; margin: 0;
 }
 /**/
-li {padding-left: 16px;}
-li > a {font-size: 0.62em;}
-li > a.active {
-  font-weight: bold;
-  border-bottom: 1px solid #000;
-  padding: 2px;
-}
-ol {font-size: 0.68em;}
+ol {font-size: 0.88em;}
 ol.alpha {list-style-type: lower-alpha;}
 @media all and (min-width: 800px) {  
-  address {
-    margin: 0 0 2em 0;
-    color: red;
-    font-size: 0.6em;
-    font-family: cursive;
-    text-align: center;
-  }
   body {margin: 0 5.3em;}
-  code {font-size: 0.88em;}
-  details {margin: 0 4px; font-size: 1em;}
+  code {font-size: 1em;}
   figure {margin: 0;}
-  p {font-size: 1.1em;}
+  em {font-size: 1em;}
+  p {font-size: 1.1em; margin: 0;}
 }
 /* ============================================ */
 /* ============================================ */
+
+
+.tableEven {
+  width: 100%;
+  /*font-size: 0.68em;*/
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	
+  grid-template-columns: max-content auto;
+  grid-column-gap: 0.4em;
+}
+h5 {margin-bottom: 2px;}
+.tableEven span {font-size: 0.71em;}
+@media all and (min-width: 800px) {
+	.tableEven {
+    width: 100%;
+    /*font-size: 0.74em;*/
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+  }
+}
+/* ============================================ */
+/* ============================================ */
+
 
 
 
@@ -340,71 +351,4 @@ p.btn {
 /*
 **//******************************************//**
 */
-
-/* Code Grid + Styles */
-.table, .tableEven {
-  width: 100%;
-  /*font-size: 0.68em;*/
-  margin: 0 auto;
-  padding: 0;
-  display: grid;
-  grid-template-rows: repeat(auto, minmax(24px, auto));	
-  grid-template-columns: max-content auto;
-  grid-column-gap: 0.4em;
-}
-p + .tableEven {margin-top: -12px; margin-bottom: -8px;}   /* Layout REQ.*/
-.tableEven span {font-size: 0.71em;}
-/* Tag Reference GRID */
-.tagRef {
-  margin: 0;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(24px, auto);
-  grid-gap: 8px;  
-}
-@media all and (min-width: 800px) {
-  .block {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto, minmax(24px, auto));	
-    grid-template-columns: repeat(2, 1fr);   
-    grid-gap: 2px; 
-  }
-  .blockCard {
-    margin: 2px 8px;
-    padding: 0;
-  }
-  .characterGrid {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 8px;
-  }
-	.table {
-    width: 100%;
-    font-size: 0.74em;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto, 24px);
-    grid-template-columns: 16em 1fr;
-    grid-gap: 2px;
-  }
-	.tableEven {
-    width: 100%;
-    /*font-size: 0.74em;*/
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto, 24px);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2px;
-  }
-}
-/* ============================================ */
-/* ============================================ */
 

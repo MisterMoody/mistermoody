@@ -164,11 +164,30 @@ include ("../inc/journalHeader.php");
     </blockquote>
 
     <p>
-      The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" target="_blank">content&#58; &#34;&#34;&#59;</a></code> property in order to work. This is useful when you want to include an icon or background image. The example below dictates that a checkmark will be displayed <em>before</em> any list-item.
+      The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" target="_blank">content&#58; &#34;&#34;&#59;</a></code> property in order to work. This is useful when you want to include an icon or background image: something tangible. The example below dictates that a checkmark will be displayed <em>before</em> any list-item.
     </p>
     <blockquote>
       <code>li&#58;&#58;before &#123; content&#58; &#34;\2713&#34;&#59; &#125;</code>
     </blockquote>
+    <br>
+    <aside class="tableEven">
+      <div><code>:root</code></div>
+      <div><span>// Targets Most Parent</span></div>
+      <div><code>:target</code></div>
+      <div><span>// Selects Element Target of Link</span></div>
+      <div><code>:nth-child()</code></div>
+      <div><span>// Targets Specific Elements</span></div>
+      <div><code>:nth-child(2n + 4)</code></div>
+      <div><span>// Targets  4-2-2-2</span></div>
+      <div><code>:nth-child(even)</code></div>
+      <div><span>// Targets Even Elements</span></div>
+      <div><code>:nth-child(odd)</code></div>
+      <div><span>// Targets Odd Elements</span></div>
+      <div><code>:nth-of-type(5)</code></div>
+      <div><span>// Targets 5th Type of~</span></div>
+      <div><code>:not([type="xyz"])</code></div>
+      <div><span>// Not this Element</span></div>
+    </aside>
   </section>
 
   <hr>
@@ -418,7 +437,6 @@ include ("../inc/journalHeader.php");
       <div><code>{&nbsp;: sticky;}</code></div>
       <div><span>// Scroll to a Fixed Position</span></div>
     </aside>
-    <br>
     <aside class="tableEven">
       <div><code>{top / right / bottom / right: value;}</code></div>
     </aside>
@@ -450,9 +468,9 @@ include ("../inc/journalHeader.php");
       <div><code> {width: value;}</code></div>
       <div><span>// Specify Content Width</span></div>
       <div><code> {min-width: value;}</code></div>
-      <div><span>// Specify Minimum Content Width</span></div>
+      <div><span>// Specify Min Content Width</span></div>
       <div><code> {max-width: value;}</code></div>
-      <div><span>// Specify Maximum Content Width</span></div>
+      <div><span>// Specify Max Content Width</span></div>
       <div><code> {fit-content: value;}</code></div>
       <div><span>// Center Content Horizontally</span></div>
     </aside>
@@ -476,30 +494,23 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>float</i> property is used to <em>wrap text around images</em> while the <i>clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
     </p>
-    <br>
     <aside class="tableEven">
       <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: none;}</code></div>
       <div><span>// Default Value (No Float)</span></div>
       <div><code>{&nbsp;: left;}</code></div>
       <div><span>// Floats Left</span></div>
       <div><code>{&nbsp;: right;}</code></div>
       <div><span>// Floats Right</span></div>
-    </aside>
-    <br>
-    <aside class="tableEven">
       <div><code>{clear: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: both;}</code></div>
       <div><span>// Clears X+Y-axis Floats</span></div>
       <div><code>{&nbsp;: auto;}</code></div>
       <div><span>// Clears Float</span></div>
-    </aside>
-    <br>
-    <aside class="tableEven">
       <div><code>{overflow: &nbsp;;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
+      <div><span></span></div>
       <div><code>{&nbsp;: auto; }</code></div>
       <div><span>// Hidden Scroll(s) unless Overflow</span></div>
       <div><code>{&nbsp;: visible;}</code></div>
@@ -526,28 +537,16 @@ include ("../inc/journalHeader.php");
     <br>
     <aside class="tableEven">
       <div><code>{box-sizing: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Value </b></span></div>
+      <div><span><b>// Offset </b></span></div>
       <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
-      <div><span>// Outer Offset</span></div>
+      <div><span>// Outer</span></div>
       <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
-      <div><span>// Inner Offset</span></div>
+      <div><span>// Inner</span></div>
       <div><code>{&nbsp;: 0 8px 6px -6px red; }</code></div>
-      <div><span>// Bottom Offset</span></div>
+      <div><span>// Bottom</span></div>
       <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
-      <div><span>// Multiple Offsets</span></div>
+      <div><span>// Multiple</span></div>
     </aside>
-    <!--<aside class="tableEven">
-      <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Key/Val Description</b></span></div>
-      <div><code>{&nbsp;: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{&nbsp;: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{&nbsp;: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{&nbsp;: y; }</code></div>
-      <div><span>// note</span></div>
-    </aside>-->
     
     <h5>Colors</h5>
     <p>
@@ -621,7 +620,7 @@ include ("../inc/journalHeader.php");
     </p>
     <aside class="tableEven">
       <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
-      <div><span>Soft Round Corners</span></div>
+      <div><span>// Soft Round Corners</span></div>
     </aside>
     
     <h5>Font + Text</h5>
@@ -677,16 +676,26 @@ include ("../inc/journalHeader.php");
     <aside class="tableEven">
       <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: Arial, sans-serif; }</code></div>
+      <div><code>{&nbsp;: Arial, sans-serif;}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: "Times New Roman", serif; }</code></div>
+      <div><code>{&nbsp;: "Times New Roman", serif;}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: monospace; }</code></div>
+      <div><code>{&nbsp;: monospace;}</code></div>
       <div><span>// Computer Code</span></div>
-      <div><code>{&nbsp;: cursive; }</code></div>
+      <div><code>{&nbsp;: cursive;}</code></div>
       <div><span>// Script</span></div>
-      <div><code>{&nbsp;: small-caption; }</code></div>
+      <div><code>{&nbsp;: small-caption;}</code></div>
       <div><span>// All Words Smll Caps</span></div>
+    </aside>
+    <br>
+    <p>
+      Although the most convenient method of adding a font to a website would be via a <code>&#60;link&#62;</code> CDN in the <code>&#60;html&#62;</code> markup, it is important to be mindful of measurement units to create responsive typography. Any relative length unit can be used: employ <code>em</code> and <code>pm</code> for the greatest control as they are dependent on parent elements and viewport dimensions. For this reason, it is a good practice to set the <code>html {font-size: 100%;}</code> to ensure the base font-size is set in the browser and to use relative units on all other elements. Other important notes include: use the <code>rem</code> unit on nested elements and avoid using <code>vh/vw</code> units on font-size.
+    </p>
+    <aside class="tableEven">
+      <div><code>{font-size:  16px / 1.248em / 2rem / 100%;}</code></div>
+      <div><span></span></div>
+      <div><code>{font-size: calc( 16px + (28 - 16) );}</code></div>
+      <div><span></span></div>
     </aside>
     <br>
     <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
@@ -695,10 +704,7 @@ include ("../inc/journalHeader.php");
       <div><span>// Space between Letters</span></div>
       <div><code>{word-spacing: keyword; }</code></div>
       <div><span>// Space between Words</span></div>
-    </aside>
-    <br>
-    <aside class="tableEven">
-      <div><code>{text-align: left/center/justify; }</code></div>
+      <div><code>{text-align: center/justify; }</code></div>
       <div><span>// Aligns Text</span></div>
     </aside>
     <br>
@@ -759,146 +765,21 @@ include ("../inc/journalHeader.php");
       <div><span>// Alpha Numbers</span></div>
       <div><code>{&nbsp;: upper-roman; }</code></div>
       <div><span>// Roman Numbers</span></div>
-    </aside>
-    <br>
-    <aside class="tableEven">
       <div><code>{list-style-position:&nbsp;; }</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: inside; }</code></div>
       <div><span>// Inside of Margin</span></div>
       <div><code>{&nbsp;: outside; }</code></div>
       <div><span>// Outside of Margin</span></div>
-    </aside>
-    <br>
-    <aside class="tableEven">
       <div><code>{list-style-image: &nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: url(img/smile.png); }</code></div>
       <div><span>// URL to Image</span></div>
     </aside>
+    <p></p>
   </section>
-  
-</article>    
-    <!--<h5>Text / Font (List-style + Content)</h5>
-    <p>
-      
-    </p>
-    <aside class="tableEven">
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-    </aside>
-    -->
-  
-<!-- ++ 'FONT' sub-section for 'General Styles'++ 
-<div>
-  <h3>Font Properties</h3>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" target="_blank">font</a></code> CSS <em>Property</em> allows developers to modify how text is displayed. This property can be used to set the elements font to the systems font or as a shorthand for setting multiple font-property <em>Values</em>. There are nearly a dozen distinctive font-property features that can be used for styling. I categorically understand such properties to either modify the style or spacing of text.</p>
-  <h6>Font-Family</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">font-family</a></code> CSS property is used to set system fonts by specifying a prioritized list of font-family names, which are separated by a comma, for the selected element. When the font name has two names, that font name must be enclosed with quotation marks. Moreover, adding a second parameter for this property is required; serif or sans-serif are your fallback options. The examples below illustrate how to plan your font-family:</p>
-  <article class="tableEven">
-    <div>
-      <code>font-family: Georgia, serif;</code>
-    </div>
-    <div>
-      <code>font-family: "Gill Sans", sans-serif;</code>
-    </div>
-  </article>
-  <p>Sometimes, one font just wont do and in such cases I utilize these two <code class="reference"><a href="http://fontjoy.com/" target="_blank">Font</a></code>-<code class="reference"><a href="https://www.canva.com/font-combinations/" target="_blank">Pairing</a></code> tools to find a typographic combination that fits my needs. My favorite fonts to work with include Helvetica, Raleway and Roboto.</p>
-  <h6>Font Shorthand</h6>
-  <p>When using font as shorthand, values for font-size and font-family must be included; values for font-style, font-variant, font-weight and line-height (lh) are optional. There is also an order of precedence for how font properties can be used. For starters, font-style, -variant and -weight precede -size. When used, line-height is attached to font-size and font-family (fam) is always the last value specified.</p>
-  <article class="tableEven">
-    <div>
-      -size / -fam
-    </div>
-    <div>
-      <code>font: 1.2em "Fira Sans", sans-serif;</code>
-    </div>
-    <div>
-      -weight / -style / -fam
-    </div>
-    <div>
-      <code>font: bold italic serif</code>
-    </div>
-    <div>
-      -variant / -weight / -size &amp; lh / -fam
-    </div>
-    <div>
-      <code>font: small-caps bold 24px/1 serif;</code>
-    </div>
-  </article>
-  <p>Again, when using all font properties, the shorthand order includes font-style, -variant, -weight, -size, line-height and font-family.</p>
-  <h6>Font-Size</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size</a></code> CSS property specifies the size of the font using numerical Values. Possible value options include PX, EM, REM, VH and VW</p>
-  <p><b>px</b> is an industry standard static value as it is used for pixel accuracy. The <b>em</b> value is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The <b>rem</b> value is an alternative to the em value in that it does not compound as it is relative to the root html element.</p>
-  <p>I learned how to calculate font-size through trial-and-error and will readily admit that I am horrible at performing math calculations. Heck, I took College Algebra 101...to graduate! There are a lot of resources designed to make sizing a less-stressful experience. <code class="reference"><a href="https://www.chenhuijing.com/blog/math-and-front-end/" target="_blank">Chen Hui-Jing</a></code> and <code class="reference"><a href="https://www.zachleat.com/web/obnoxiously-readable/" target="_blank">Zach Leatherman</a></code> wrote some good articles on using math to calculate font-sizes and typography, respectively. <code class="reference"><a href="http://type-scale.com/" target="_blank">Type Scale</a></code> is a visual calculator that allows you to preview how different font-size and font-family values would be displayed. The <code class="reference"><a href="http://pxtoem.com/" target="_blank">px-em</a></code> and <code class="reference"><a href="https://khaledkzy.github.io/pixel-vh-vw-converter/" target="_blank">px-vh</a></code> conversion tools offer a quick and easy way to convert font-sizes based on the objective.</p>
-  <h6>Font-Weight</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" target="_blank">font-weight</a></code> CSS property specifies the weight or boldness of the text. The font-family will determine how a font-weight is applied, if applied at all. Values for this property include font-weight: <code>normal</code> and <code>bold</code>. There is also a numerical scale between 100-900 that will increase font boldness with each increment (increments of 100).</p>
-  <h6>Font-Variant</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant" target="_blank">font-variant</a></code> CSS property contextually modifies font. Useful values for this property include <code>normal</code> and <code>small-caps</code>. The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform" target="_blank">text-transform</a></code> CSS property works in the same fasion, using values such as <code>uppercase</code>, <code>lowercase</code> or <code>capitalize</code>.</p>
-  <h6>Text Decorations</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank">text-decoration</a></code> CSS property specifies the appearance of decorative lines used on text. Useful values that declare how a line is used include <code>none</code>, <code>underline</code>, <code>line-through</code> and <code>blink</code>. Line style options include <code>solid</code>, <code>dashed</code>, <code>dotted</code> and <code>wavy</code>.</p>
-  <p>This property can also be used as a shorthand for setting multiple text-decoration values in a single declaration, which include text-decoration-line, text-decoration-color, and text-decoration-style with no particular order of precedence.</p>
-  <h6>Text Shadows</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow" target="_blank">text-shadow</a></code> CSS property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and any of its decorations. Each shadow is described by some combination of X and Y offsets (required) from the element, and blur radius and color (optional).</p>
-  <article class="tableEven">
-    <div>
-      offset-x | offset-y | blur-radius | color
-    </div>
-    <div>
-      <code>text-shadow: 1px 1px 2px pink;</code>
-    </div>
-    <div>
-      color | offset-x | offset-y | blur-radius
-    </div>
-    <div>
-      <code>text-shadow: #FC0 1px 0 10px;</code>
-    </div>
-    <div>
-      <small>-x | -y | blur-radius | color [x3 for 3 shadows]</small>
-    </div>
-    <div>
-      <code>text-shadow: 1px 1px 2px red,</code>
-    </div>
-    <div></div>
-    <div>
-      <code>0 0 1em blue, 0 0 0.2em blue;</code>
-    </div>
-  </article>
-  <h6>Line-Height</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" target="_blank">line-height</a></code> CSS property sets the height or amount of space placed between lines. This property uses a value that is a number, length or percentage. I enjoy what <code>150%</code> and values between <code>0.8 - 1.5</code>.</p>
-  <p>Aside from styling font, it is equally important to know how to properly position text. An example of this is the <em>line-height</em> property used above in the font-shortand, which sets the height between sentences. Below are some of the properties I have found helpful to adjust text layout.</p>
-  <h6>Text-Align</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">text-align</a></code> CSS property describes how inline content like text is aligned in its parent block element. This property accepts the values <code>left</code>, <code>right</code>, <code>center</code> or <code>justify</code> which aligns text to the left side, right side, center of box or left and right side.</p>
-  <h6>Text-Indent</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent" target="_blank">text-indent</a></code> CSS property specifies the amount of indentation (empty space) that is put before lines of text in a block. By default, this controls the indentation of only the first formatted line of the block. Trusted values that will display a proper indention are <code>16px</code>, <code>8%</code> and <code>1em</code>.</p>
-  <h6>Letter-Spacing</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing" target="_blank">letter-spacing</a></code> CSS property specifies the spacing behavior between individual letters. Depending on usage, <code>normal</code>, <code>0.2em</code> and <code>4px</code> are trusted values to use when applying this property.</p>
-  <h6>Word-Spacing</h6>
-  <p>The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing" target="_blank">word-spacing</a></code> CSS property specifies the spacing behavior between individual words. Idea values to use for such cases include <code>0.2em</code>, <code>2px</code> and <code>0.4ch</code>.</p>
-  <h6>Icons</h6>
-  <p>Using icons as font is another practice web developers should be familiar with. Outfits like <u><a href="https://fontawesome.com/v4.7.0/cheatsheet/">Font</a></u>-<u><a href="https://fontawesome.com/cheatsheet">Awesome</a></u> and <u><a href="https://material.io/tools/icons/?style=baseline">Material</a></u> <u><a href="http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html">Design</a></u> make including icon fonts into a web project simple.</p>
-</div> -->
+</article>   
     
-    <!--<h5>Animation + Transition + Transform</h5>
-    <p>
-      
-    </p>
-    <aside class="tableEven">
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-      <div><code>{ x: y; }</code></div>
-      <div><span>// note</span></div>
-    </aside>-->
 
 
 <!-- ++Debugging CSS++ 
