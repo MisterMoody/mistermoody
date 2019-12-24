@@ -222,7 +222,7 @@ ol.alpha {list-style-type: lower-alpha;}
 /* ============================================ */
 
 
-.tableEven {
+.declarations {
   width: 100%;
   /*font-size: 0.68em;*/
   margin: 0;
@@ -233,10 +233,10 @@ ol.alpha {list-style-type: lower-alpha;}
   grid-column-gap: 0.4em;
 }
 h5 {margin-bottom: 4px;}/*2px*/
-p, .tableEven {margin-bottom: 2px;}
-.tableEven span {font-size: 0.71em;}
+p, .declarations {margin-bottom: 2px;}
+.declarations span {font-size: 0.71em;}
 @media all and (min-width: 800px) {
-	.tableEven {
+	.declarations {
     width: 100%;
     /*font-size: 0.74em;*/
     padding: 0;

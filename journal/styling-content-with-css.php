@@ -125,7 +125,7 @@ include ("../inc/journalHeader.php");
     <p>
       Combinators are useful to establish relationships between two or more selectors.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>Selector List</code></div>
       <div><code>A, B&nbsp; = Both elements selected</code></div>
       <div><code>Adjacent Sibling</code></div>
@@ -170,7 +170,7 @@ include ("../inc/journalHeader.php");
       <code>li&#58;&#58;before &#123; content&#58; &#34;\2713&#34;&#59; &#125;</code>
     </blockquote>
     <br>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>:root</code></div>
       <div><span>// Targets Most Parent</span></div>
       <div><code>:target</code></div>
@@ -266,7 +266,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>display</i> property <em>manages precisely how an element behaves</em> insofar as its layout is concerned. Available keywords for this prop are based on the elements function. The keyword <code>inline</code> is the default value for elements <em>that wraps text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. This prop can also be used to <em>hide elements</em> using the keyword <code>none</code>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{display: ;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: inline;}</code></div>
@@ -280,7 +280,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{display: flex;}</code></div>
       <div><span>// Flexible Element Layout</span></div>
       <div><code>{flex-direction: row/column;}</code></div>
@@ -292,7 +292,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>justify-content</i> sub-prop <em>manages item alignment along the main horizontal axis</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{justify-content: ;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: flex-start;}</code></div>
@@ -310,7 +310,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{align-items: ;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: flex-start;}</code></div>
@@ -326,7 +326,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <code>grid</code> keyword acts like flexbox, but is more powerful in <em>creating a grid container</em>. Grid is similar to flexbox in that it justifies content and aligns items. The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{display: Grid; }</code></div>
       <div><span><b>// Grid Structured Layout</b></span></div>
     </aside>
@@ -334,7 +334,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>justify-items</i> sub-prop <em>aligns grid items horizontally</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{justify-items: &nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: stretch; }</code></div>
@@ -350,7 +350,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>align-items</i> sub-prop <em>aligns grid items vertically</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{align-items: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: stretch; }</code></div>
@@ -366,7 +366,7 @@ include ("../inc/journalHeader.php");
     <p>
       Use the <i>justify-content</i> and <i>align-content</i> sub-props <em>whenever the total size of the grid/item is less than the size of its container</em> to set the alignment of the grid/item within the container.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{justify-content: ;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: start;}</code></div>
@@ -384,7 +384,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>grid-template-columns</i> and <i>grid-template-rows</i> sub-props <em>outlines grid container columns and rows</em>, respectively. Add margins between the columns and rows by using the  <i>grid-column-gap</i> and <i>grid-row-gap</i> sub-props: <i>grid-gap</i> is the shorthand.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{g-t-c: unit/value;}</code></div>
       <div><span>// Vertical Container</span></div>
       <div><code>{g-t-r: unit/value;}</code></div>
@@ -400,7 +400,7 @@ include ("../inc/journalHeader.php");
     <p>
       The documentation on flexbox and grid is extensive. There is much more that can be done to control the layout of elements using these keywords with the display property. Useful units and length values:
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{&nbsp;: repeat(3, 1fr);}</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: minmax(200px, 1fr);}</code></div>
@@ -423,7 +423,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>position</i> property can be used to re-position an element from its initial position. <i>positional properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{position: &nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: static;}</code></div>
@@ -437,14 +437,14 @@ include ("../inc/journalHeader.php");
       <div><code>{&nbsp;: sticky;}</code></div>
       <div><span>// Scroll to a Fixed Position</span></div>
     </aside>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{top / right / bottom / right: value;}</code></div>
     </aside>
     <br>
     <p>
       The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{z-index: 100;}</code></div>
       <div><span>// Stacked Above Elements</span></div>
     </aside>
@@ -452,7 +452,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>height</i> property is used to <em>specify content height and width</em> of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code> {height: value;}</code></div>
       <div><span>// Specify Content Height</span></div>
       <div><code> {min-height: value;}</code></div>
@@ -464,7 +464,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>width</i> property is used to <em>specify content width</em> of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code> {width: value;}</code></div>
       <div><span>// Specify Content Width</span></div>
       <div><code> {min-width: value;}</code></div>
@@ -478,7 +478,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>object-fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>object-position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{object-fit: &nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: fill;}</code></div>
@@ -494,7 +494,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>float</i> property is used to <em>wrap text around images</em> while the <i>clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: none;}</code></div>
@@ -524,7 +524,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>Margin</i> property <em>specifies the outside borders of an element</em>. The <i>Padding</i> property <em>specifies the inside borders of an element</em>. Both props accept a single value as a shorthand for top, right, bottom or left sides.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{margin: 4vw; }</code></div>
       <div><span></span></div>
       <div><code>{padding: 8px; }</code></div>
@@ -535,7 +535,7 @@ include ("../inc/journalHeader.php");
       Eliminate concerns about spacing by adding the <i>box-sizing</i> property with a universal selector to act as a container for a webpage. This prop can also be used to cast a shadow on an element. The values represent the horizontal/vertical offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required: <code>* { box-sizing: border-box; }</code>
     </p>
     <br>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{box-sizing: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Offset </b></span></div>
       <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
@@ -552,7 +552,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>color</i> property accepts any color value to <em>set the color of text</em> and is combined with other properties to color backgrounds, borders and what have you.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{color: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Value Description</b></span></div>
       <div><code>{&nbsp;: #00FFFF; }</code></div>
@@ -567,7 +567,7 @@ include ("../inc/journalHeader.php");
       <div><span>// HSLa</span></div>
     </aside>
     <br>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{opacity: # between 0.0 - 1; }</code></div>
       <div><span>// Defines Transparency</span></div>
     </aside>
@@ -576,7 +576,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>background</i> property is used to <em>layer an image underneath content</em>. As a shorthand, it accepts sub-props that include image, position, size, repeat, attachment, origin, clip and color.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{background: url(xyz.jpg); }</code></div>
       <div><span></span></div>
       <div><code>{background-position: top center; }</code></div>
@@ -598,7 +598,7 @@ include ("../inc/journalHeader.php");
     <p>
       <i>border</i> is a property that <em>applies a border around and element</em>. As a shorthand, it accepts keywords and values for its width, style and color.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{border: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword/Value Description</b></span></div>
       <div><code>{border-width: thin; }</code></div>
@@ -618,7 +618,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>border-radius</i> property <em>applies rounded corners</em> on elements, accepting 1, 2 or 3 values.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
       <div><span>// Soft Round Corners</span></div>
     </aside>
@@ -627,7 +627,7 @@ include ("../inc/journalHeader.php");
     <p>
       <i>font</i> is a property that is used to <em>set the style of text</em>. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
       <div><span><b>// Keyword/Value Description</b></span></div>
     </aside>
@@ -635,13 +635,13 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>-style</i> <em>is used to italicize text</em>, but is commonly only used within the shorthand.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{font-style: normal; &nbsp;&nbsp;&nbsp;}</code></div>
       <div><span>// Not Italicized</span></div>
     </aside>
     <br>
     <p>The <i>-variant</i> <em>makes all text uppercase</em>.</p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{font-variant: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: normal; }</code></div>
@@ -655,7 +655,7 @@ include ("../inc/journalHeader.php");
     <p> 
       The <i>-weight</i> <em>sets font thickness or width</em>, but its font-family will determine how the weight is applied, if applied at all. Values for this property use an incremental numerical scale from a lot point of 100 to its peak of 900 (increments of 100).
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{font-weight: 600-900; &nbsp;}</code></div>
       <div><span>// Font Thickness</span></div>
     </aside>
@@ -663,7 +663,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>-size</i> <em>specifies the size of the font using numerical values (ie em, rem + px)</em>. The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, <em>sets the space above and below inline elements</em>. 
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{font-size: unit/value;&nbsp;}</code></div>
       <div><span>// Font Height</span></div>
       <div><code>{line-height: % value; &nbsp;}</code></div>
@@ -673,7 +673,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>font-family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement. Some web-safe fonts include <code>Arial</code>, <code>Garamond</code>, <code>Tahoma</code>, <code>"Lucida Sans"</code>, <code>Georgia</code>, <code>"Palatino Linotype"</code> and <code>Verdana</code>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: Arial, sans-serif;}</code></div>
@@ -691,7 +691,7 @@ include ("../inc/journalHeader.php");
     <p>
       Although the most convenient method of adding a font to a website would be via a <code>&#60;link&#62;</code> CDN in the <code>&#60;html&#62;</code> markup, it is important to be mindful of measurement units to create responsive typography. Any relative length unit can be used: employ <code>em</code> and <code>pm</code> for the greatest control as they are dependent on parent elements and viewport dimensions. For this reason, it is a good practice to set the <code>html {font-size: 100%;}</code> to ensure the base font-size is set in the browser and to use relative units on all other elements. Other important notes include: use the <code>rem</code> unit on nested elements, avoid using <code>vh/vw</code> units on font-size and use the <code>calc()</code> function to perform math calculations.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{font-size:  16px / 1.248em / 2rem / 100%;}</code></div>
       <div><span></span></div>
       <div><code>{font-size: calc( 16px + (28 - 16) );}</code></div>
@@ -699,7 +699,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{letter-spacing: unit/value; }</code></div>
       <div><span>// Space between Letters</span></div>
       <div><code>{word-spacing: keyword; }</code></div>
@@ -711,7 +711,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>text-decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{text-decoration: &nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: underline red; }</code></div>
@@ -723,7 +723,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>text-transform</i> property <em>sets the text case and capitalization</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{text-transform: &nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: uppercase; }</code></div>
@@ -735,7 +735,7 @@ include ("../inc/journalHeader.php");
     <p>
       The <i>writing-mode</i> property <em>sets the vertical and horizontal alignment of text</em>. It is useful when working with Asian languages: when doing so, be sure to implement the <i>word-break</i> property to ensure text words are not broken.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{writing-mode: &nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: horizontal-tb; }</code></div>
@@ -750,7 +750,7 @@ include ("../inc/journalHeader.php");
     <p>
       <i>list-style</i> is a shorthand property that defines a type, position and image. The <i>list-style-type</i> prop <em>sets what type of bullet to use</em>. The <i>list-style-position</i> prop <em>sets the bullet inside or outside of the margin</em>. The <i>list-style-image</i> prop <em>uses a url to set the bullet as an image</em>.
     </p>
-    <aside class="tableEven">
+    <aside class="declarations">
       <div><code>{list-style-type: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: none; }</code></div>
