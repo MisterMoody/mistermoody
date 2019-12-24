@@ -671,7 +671,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      The <i>font-family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement.
+      The <i>font-family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement. Some web-safe fonts include <code>Arial</code>, <code>Garamond</code>, <code>Tahoma</code>, <code>"Lucida Sans"</code>, <code>Georgia</code>, <code>"Palatino Linotype"</code> and <code>Verdana</code>.
     </p>
     <aside class="tableEven">
       <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
@@ -689,7 +689,7 @@ include ("../inc/journalHeader.php");
     </aside>
     <br>
     <p>
-      Although the most convenient method of adding a font to a website would be via a <code>&#60;link&#62;</code> CDN in the <code>&#60;html&#62;</code> markup, it is important to be mindful of measurement units to create responsive typography. Any relative length unit can be used: employ <code>em</code> and <code>pm</code> for the greatest control as they are dependent on parent elements and viewport dimensions. For this reason, it is a good practice to set the <code>html {font-size: 100%;}</code> to ensure the base font-size is set in the browser and to use relative units on all other elements. Other important notes include: use the <code>rem</code> unit on nested elements and avoid using <code>vh/vw</code> units on font-size.
+      Although the most convenient method of adding a font to a website would be via a <code>&#60;link&#62;</code> CDN in the <code>&#60;html&#62;</code> markup, it is important to be mindful of measurement units to create responsive typography. Any relative length unit can be used: employ <code>em</code> and <code>pm</code> for the greatest control as they are dependent on parent elements and viewport dimensions. For this reason, it is a good practice to set the <code>html {font-size: 100%;}</code> to ensure the base font-size is set in the browser and to use relative units on all other elements. Other important notes include: use the <code>rem</code> unit on nested elements, avoid using <code>vh/vw</code> units on font-size and use the <code>calc()</code> function to perform math calculations.
     </p>
     <aside class="tableEven">
       <div><code>{font-size:  16px / 1.248em / 2rem / 100%;}</code></div>
@@ -776,7 +776,7 @@ include ("../inc/journalHeader.php");
       <div><code>{&nbsp;: url(img/smile.png); }</code></div>
       <div><span>// URL to Image</span></div>
     </aside>
-    <p></p>
+    <p style="margin-bottom: 8px;"></p>
   </section>
 </article>   
     
