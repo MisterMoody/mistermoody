@@ -20,7 +20,7 @@ include ("../inc/journalHeader.php");
     </p>
     <ol>
       <li>Create and Load a Stylesheet</li>
-      <li>CSS Snytax</li>
+      <li>Understanding CSS Snytax</li>
       <li>Style Sheet Format and Structure</li>
       <li>Declaration Examples</li>
       <!--<li>Debugging and Optimizing CSS</li>-->
@@ -49,10 +49,10 @@ include ("../inc/journalHeader.php");
       The <code>href="URL"</code> attribute specifies the location of an external resource via its <i>url</i> (Uniform Resource Locator) by establishing a connection between the document and an <i>external stylsheet</i>. The examples above highlight use of <i>relative</i> URLs, which is an <i>implicit</i> reference to a resource located on the same server as the web page using a simple file path. Not all resources are located on the same server. Many web apps utilize resources that are stashed throughout the webiverse: these use <i>explicitly</i> specified web address and are called <i>absolute</i> URLs. An absolute URL takes the following format:
     </p>
     <blockquote>
-      <code>protocol://domain/path/resource</code>
+      <code>protocol://domain/path/</code>
     </blockquote>
     <p>
-      Here, <i>protocol</i> specifies how the resource is to be accessed while the <i>domain</i> specifies the name of the computer (or website) where the resource is located. The <i>path</i> specifies the sequence of directories leading to the target while the <i>resource</i>, if included, is the target, typically the name of a file. The protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the server from which data is requested. 
+      Here, <i>protocol</i> specifies how the resource is to be accessed: the protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the server from which data is requested, specifying the name of the computer (or website) where the resource is located. The <i>path</i> specifies the sequence of directories leading to the target. 
     </p>
     <p>
       Moving forward, keep in mind that it is good practice to separate code into multiple style sheets in order to avoid writting <i>spaghetti code</i>, which occurs when different layout styles or patterns are inconsistently applied to elements throughout a style sheet.With that covered, lets focus on writing CSS!
@@ -65,81 +65,72 @@ include ("../inc/journalHeader.php");
   <section>
     <h4>Part 2: CSS Syntax</h4>
     <p>
-      In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a <i>selector</i> and a <i>declaration</i>. 
+      In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a selector and a declaration. 
     </p>
     <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
     <p>
-      Selectors reference <code>&#60;html&#62;</code> elements targeted for styling. The aesthetic quality for a selector is embodied within its declaration, which begins and ends with curly braces and is composed of a <i>key/value</i> pair. The key refers to a <i>property</i> that identifies the aesthetic quality to modify while the <i>keyword</i> or <i>value</i> quantifies to what extent that property is modified. The property and value/keyword are succeeded by a colon and semi-colon, respectively, for separation and finalization of a declaration.
+      <i>selectors</i> <em>reference <code>&#60;html&#62;</code> elements</em> targeted for styling. The aesthetic quality for a selector is embodied within its <i>declaration</i>, which is composed of a property/value pair and enclosed with curly brackets. The <i>property</i> identifies which feature to modify while the <i>value</i> quantifies to what extent the property is modified. 
+    </p>
+    <p>
+      
     </p>
     <!-- Selector Types-->
     <h5>Selector Types</h5>
     <p>
-      There are several selectors that can be used:
+      All <code>&#60;html&#62;</code> elements can be used as a selector, but other things can be used as a selector as well. 
     </p>
     <p>
-      The <i>universal</i> selector is used to render a specific style to all elements of a website. The example below dictates that all <code>&#60;html&#62;</code> elements will have 'margins' all around at a value of half an em.
-    </p>
-    <blockquote>
-      <code>* &#123; margin: 0.4em; &#125;</code>
-    </blockquote>
-
-    <p>
-      The <i>element</i> selector applies consistent styles to a specific <code>&#60;html&#62;</code> element. The example below dictates that all <code>&lt;h1&gt;</code> headings are 'grey' and 'large.'
-    </p>
-    <blockquote>
-      <code>h1 &#123; color: #838487; font-size: 10em; &#125;</code>
-    </blockquote>
-
-    <p>
-      The <i>descendant</i> selector is used to apply styles for <i>nested</i> elements only in the event that there is an ancestral lineage between the two elements. The example below dictates that <code>&lt;li&gt;</code> within the <code>&lt;ul&gt;</code> are 'small.'
-    </p>
-    <blockquote>
-      <code>ul li &#123; font-size: 0.848emm; &#125;</code>
-    </blockquote>
-
-    <p>
-      The <i>child</i> selector is used to match all elements that are children of a specified element . The example below dictates that all <code>&lt;li&gt;</code> elements that are children of<code>&lt;ol&gt;</code> are 'periwinkle' in color.
-    </p>
-    <blockquote>
-      <code>ol &#62; li &#123; color: #c3cde6; &#125;</code>
-    </blockquote>
-    
-    <p>
-      The <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that should be used exclusively as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
-    </p>
-
-    <p>
-      The <i>.class</i> selector targets elements with a specific class reference. A class can be added to any element. The example below dictates that a 'grid' is applied to the class.
-    </p>
-    <blockquote>
-      <code>.class &#123; display: grid; &#125;</code>
-    </blockquote>
-
-    <p>
-      The <i>attribute</i> selector applies styles to an <code>&#60;html&#62;</code> element that possesses a specific attribute. The example below dictates that <code>&#60;a&#62;</code> elements with the attribute of 'title' will be 'purple.'
-    </p>
-    <blockquote>
-      <code>a &#91; title &#93;; &#123; color &#125;</code>
-    </blockquote>
-    
-    <p>
-      Combinators are useful to establish relationships between two or more selectors.
+      The <i>universal</i> selector is the most powerful selector of all as it is  used to <em>render styles to all elements</em> in a document. The <i>element</i> selector <em>renders styles to that type of element</em>. The <i>.class</i> selector <em>renders styles on elements that possess a specific class attribute</em>. And for all the power it has, the <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that <em>should be used exclusively</em> as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
     </p>
     <aside class="declarations">
-      <div><code>Selector List</code></div>
-      <div><code>A, B&nbsp; = Both elements selected</code></div>
-      <div><code>Adjacent Sibling</code></div>
-      <div><code>A + B = Targets Immediate Siblings</code></div>
-      <div><code>General Sibling</code></div>
-      <div><code>A ~ B = Targets All Siblings</code></div>
-      <div><code>Child Combo</code></div>
-      <div><code>A > B = Targets Direct Children</code></div>
-      <div><code>Descendant Combo</code></div>
-      <div><code>A  B &nbsp; = Targets Both</code></div>
-      <div><code>Match Attribute</code></div>
-      <div><code>A[href<sup>*</sup>="fee"] = Targts  ALL"fee"</code></div>
+      <div><code>* &#123; prop: val; &#125;</code></div>
+      <div><span>// Selects ALL Elements</span></div>
+      <div><code>&#60;element&#62; &#123; prop: val; &#125;</code></div>
+      <div><span>// " Elements of Type</span></div>
+      <div><code>.class &#123; prop: val; &#125;</code></div>
+      <div><span>// " Elements w/ Class Attr.</span></div>
+      <div><code>#id &#123; prop: val; &#125;</code></div>
+      <div><span>// Avoid Usage</span></div>
     </aside>
-
+    <br>
+    <p>The power of selectors can be amplified by using what is called <i>combinators</i>, which is the syntax used to <em>explain the relationship between any of the simlpe selectors</em> used above.</p>
+    <p>
+      The <i>descendant</i>...
+      The <i>child</i>...
+      The <i>adjacent sibling</i>...
+      The <i>general sibling </i>...
+    </p>
+    <aside class="declarations">
+      <div><code>Selector Group</code></div>
+      <div><span>A, B&nbsp; = Both elements selected</span></div>
+      <div><code>Descendant Combo</code></div>
+      <div><span>A  B &nbsp; = Targets Both</span></div>
+      <div><code>Child Combo</code></div>
+      <div><span>A > B = Targets Direct Children</span></div>
+      <div><code>Adjacent Sibling</code></div>
+      <div><span>A + B = Targets Immediate Siblings</span></div>
+      <div><code>General Sibling</code></div>
+      <div><span>A ~ B = Targets All Siblings</span></div>
+    </aside>
+    <br>    
+    <p>
+      The <i>descendant</i> selector <em>applies styles for nested elements only in the event that there is an ancestral lineage between the two elements</em>. The example below dictates that <code>&lt;li&gt;</code> within the <code>&lt;ul&gt;</code> are 'small.' &nbsp;<code>ul li &#123; font-size: 0.848emm; &#125;</code>
+    </p>
+    <p>
+      The <i>child</i> selector is used to match all elements that are children of a specified element . The example below dictates that all <code>&lt;li&gt;</code> elements that are children of<code>&lt;ol&gt;</code> are 'periwinkle' in color. &nbsp; <code>ol &#62; li &#123; color: #c3cde6; &#125;</code>
+    </p>
+    <!-- -->
+     <p>
+      The <i>attribute</i> selector applies styles to an <code>&#60;html&#62;</code> element that possesses a specific attribute. The example below dictates that <code>&#60;a&#62;</code> elements with the attribute of 'title' will be 'purple.'
+    </p>
+    <aside class="declarations">
+      <div><code>Attribute</code></div>
+      <div><span>A[href="fee"] = Targts  ALL"fee"</span></div>
+      <div><code>Match Attribute</code></div>
+      <div><span>A[href<sup>*</sup>="fee"] = Targts  ALL"fee"</span></div> 
+    </aside>
+    <br>    
+    <!-- -->
     <p>
       <i>&#58;Pseudo-class</i> selectors are actually keywords that are added to other selectors and provide a unique style during a particular instance of that selector. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords 'active', 'hover' and 'visited' dictate that styles are applied in the instance that a user is on a current page, has hovered over an element or has already visited that page.
     </p>
@@ -437,6 +428,7 @@ include ("../inc/journalHeader.php");
       <div><code>{&nbsp;: sticky;}</code></div>
       <div><span>// Scroll to a Fixed Position</span></div>
     </aside>
+    <p style="margin: 1em;"></p>
     <aside class="declarations">
       <div><code>{top / right / bottom / right: value;}</code></div>
     </aside>
@@ -534,7 +526,6 @@ include ("../inc/journalHeader.php");
     <p>
       Eliminate concerns about spacing by adding the <i>box-sizing</i> property with a universal selector to act as a container for a webpage. This prop can also be used to cast a shadow on an element. The values represent the horizontal/vertical offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required: <code>* { box-sizing: border-box; }</code>
     </p>
-    <br>
     <aside class="declarations">
       <div><code>{box-sizing: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
       <div><span><b>// Offset </b></span></div>
@@ -547,6 +538,7 @@ include ("../inc/journalHeader.php");
       <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
       <div><span>// Multiple</span></div>
     </aside>
+    <p style="margin: 2em;"></p>
     
     <h5>Colors</h5>
     <p>
@@ -571,6 +563,7 @@ include ("../inc/journalHeader.php");
       <div><code>{opacity: # between 0.0 - 1; }</code></div>
       <div><span>// Defines Transparency</span></div>
     </aside>
+    <p style="margin: 2em;"></p>
     
     <h5>Backgrounds + Borders</h5>
     <p>
@@ -622,6 +615,7 @@ include ("../inc/journalHeader.php");
       <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
       <div><span>// Soft Round Corners</span></div>
     </aside>
+    <p style="margin: 2em;"></p>
     
     <h5>Font + Text</h5>
     <p>
@@ -700,11 +694,11 @@ include ("../inc/journalHeader.php");
     <br>
     <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
     <aside class="declarations">
-      <div><code>{letter-spacing: unit/value; }</code></div>
+      <div><code>{letter-spacing: value;}</code></div>
       <div><span>// Space between Letters</span></div>
-      <div><code>{word-spacing: keyword; }</code></div>
+      <div><code>{word-spacing: keyword;}</code></div>
       <div><span>// Space between Words</span></div>
-      <div><code>{text-align: center/justify; }</code></div>
+      <div><code>{text-align: center/justify;}</code></div>
       <div><span>// Aligns Text</span></div>
     </aside>
     <br>
@@ -736,22 +730,23 @@ include ("../inc/journalHeader.php");
       The <i>writing-mode</i> property <em>sets the vertical and horizontal alignment of text</em>. It is useful when working with Asian languages: when doing so, be sure to implement the <i>word-break</i> property to ensure text words are not broken.
     </p>
     <aside class="declarations">
-      <div><code>{writing-mode: &nbsp;&nbsp;; }</code></div>
+      <div><code>{writing-mode: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: horizontal-tb; }</code></div>
+      <div><code>{&nbsp;: horizontal-tb;}</code></div>
       <div><span>// English Style</span></div>
-      <div><code>{&nbsp;: vertical-rl; }</code></div>
+      <div><code>{&nbsp;: vertical-rl;}</code></div>
       <div><span>// Japanese Style</span></div>
-      <div><code>{word-break: keep-all; }</code></div>
+      <div><code>{word-break: keep-all;}</code></div>
       <div><span>// Characters Stay Together</span></div>
     </aside>
     
+    <p style="margin: 2em;"></p>
     <h5>List-style</h5>
     <p>
       <i>list-style</i> is a shorthand property that defines a type, position and image. The <i>list-style-type</i> prop <em>sets what type of bullet to use</em>. The <i>list-style-position</i> prop <em>sets the bullet inside or outside of the margin</em>. The <i>list-style-image</i> prop <em>uses a url to set the bullet as an image</em>.
     </p>
     <aside class="declarations">
-      <div><code>{list-style-type: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{list-style-type: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
       <div><span><b>// Keyword Description</b></span></div>
       <div><code>{&nbsp;: none; }</code></div>
       <div><span>// No Bullets</span></div>
@@ -765,19 +760,19 @@ include ("../inc/journalHeader.php");
       <div><span>// Alpha Numbers</span></div>
       <div><code>{&nbsp;: upper-roman; }</code></div>
       <div><span>// Roman Numbers</span></div>
-      <div><code>{list-style-position:&nbsp;; }</code></div>
+      <div><code>{list-style-position:&nbsp;;}</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: inside; }</code></div>
       <div><span>// Inside of Margin</span></div>
       <div><code>{&nbsp;: outside; }</code></div>
       <div><span>// Outside of Margin</span></div>
-      <div><code>{list-style-image: &nbsp;&nbsp;&nbsp;; }</code></div>
+      <div><code>{list-style-image: &nbsp;&nbsp;&nbsp;;}</code></div>
       <div><span></span></div>
-      <div><code>{&nbsp;: url(img/smile.png); }</code></div>
+      <div><code>{&nbsp;: url(img/smile.png);}</code></div>
       <div><span>// URL to Image</span></div>
     </aside>
-    <p style="margin-bottom: 8px;"></p>
   </section>
+    <p style="margin: 2em;"></p>
 </article>   
     
 

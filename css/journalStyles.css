@@ -206,7 +206,7 @@ em {font-size: .90em;}
 p { 
   color: #444;
   font-size: 0.90em; /*0.88em;*/
-  line-height: 1.248; margin: 0;
+  line-height: 1.248; 
 }
 /**/
 ol {font-size: 0.88em;}
@@ -232,8 +232,10 @@ ol.alpha {list-style-type: lower-alpha;}
   grid-template-columns: max-content auto;
   grid-column-gap: 0.4em;
 }
-h5 {margin-bottom: 4px;}/*2px*/
-p, .declarations {margin-bottom: 2px;}
+h5 {margin-bottom: -8px;}/*4px*/
+/*p {margin-bottom: 2px;}  
+.declarations {margin-bottom: -8px;}*/
+.declarations {margin:  -12px 0;}
 .declarations span {font-size: 0.71em;}
 @media all and (min-width: 800px) {
 	.declarations {
