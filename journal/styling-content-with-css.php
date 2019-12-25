@@ -21,14 +21,16 @@ include ("../inc/journalHeader.php");
     <ol>
       <li>Create and Load a Stylesheet</li>
       <li>Understanding CSS Snytax</li>
+      <ul>
+        <li>Selector Types</li>
+        <li>Declarations</li>
+      </ul>
       <li>Style Sheet Format and Structure</li>
       <li>Declaration Examples</li>
       <!--<li>Debugging and Optimizing CSS</li>-->
     </ol> 
   </section>
-  
   <hr>
-  
   <!-- ++Create and Load a Stylesheet++ -->
   <section>
     <h4>Part 1: Create and Load a Stylesheet</h4>
@@ -58,7 +60,6 @@ include ("../inc/journalHeader.php");
       Moving forward, keep in mind that it is good practice to separate code into multiple style sheets in order to avoid writting <i>spaghetti code</i>, which occurs when different layout styles or patterns are inconsistently applied to elements throughout a style sheet.With that covered, lets focus on writing CSS!
     </p>
   </section>
-
   <hr>
   
   <!-- ++CSS Syntax++ -->
@@ -71,16 +72,14 @@ include ("../inc/journalHeader.php");
     <p>
       <i>selectors</i> <em>reference <code>&#60;html&#62;</code> elements</em> targeted for styling. The aesthetic quality for a selector is embodied within its <i>declaration</i>, which is composed of a property/value pair and enclosed with curly brackets. The <i>property</i> identifies which feature to modify while the <i>value</i> quantifies to what extent the property is modified. 
     </p>
-    <p>
-      
-    </p>
+    
     <!-- Selector Types-->
     <h5>Selector Types</h5>
     <p>
       All <code>&#60;html&#62;</code> elements can be used as a selector, but other things can be used as a selector as well. 
     </p>
     <p>
-      The <i>universal</i> selector is the most powerful selector of all as it is  used to <em>render styles to all elements</em> in a document. The <i>element</i> selector <em>renders styles to that type of element</em>. The <i>.class</i> selector <em>renders styles on elements that possess a specific class attribute</em>. And for all the power it has, the <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that <em>should be used exclusively</em> as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
+      The <i>universal</i> selector is the most powerful selector of all as it is  used to <em>render styles to all elements</em> in a document. The <i>element</i> selector <em>renders styles to that type of element</em>. The <i>.class</i> selector <em>renders styles on elements that possess a specific class attribute</em>. The <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that <em>should be used exclusively</em> as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
     </p>
     <aside class="declarations">
       <div><code>* &#123; prop: val; &#125;</code></div>
@@ -93,164 +92,115 @@ include ("../inc/journalHeader.php");
       <div><span>// Avoid Usage</span></div>
     </aside>
     <br>
-    <p>The power of selectors can be amplified by using what is called <i>combinators</i>, which is the syntax used to <em>explain the relationship between any of the simlpe selectors</em> used above.</p>
     <p>
-      The <i>descendant</i>...
-      The <i>child</i>...
-      The <i>adjacent sibling</i>...
-      The <i>general sibling </i>...
+      The power of selectors can be amplified by using a <i>combinator</i>: syntax that <em>unifies the relationship between any of the selectors</em> used above that targets and applies styles to <code>&#60;html&#62;</code> elements based on a specific criteria. The <i>descendant</i> selector <em>targets elements that descend from a specific element</em>. The <i>child</i> selector <em>targets children of a specific element</em>. The <i>adjacent sibling</i> selector <em>targets immmediate siblings of a specific element</em>. The <i>general sibling</i> selector <em>targets all siblings of a specific element</em>. Selectors can also be grouped allowing <em>application of a consistent style theme</em> to grouped elements.
     </p>
     <aside class="declarations">
-      <div><code>Selector Group</code></div>
-      <div><span>A, B&nbsp; = Both elements selected</span></div>
       <div><code>Descendant Combo</code></div>
-      <div><span>A  B &nbsp; = Targets Both</span></div>
+      <div><span>A  B &nbsp; = Targets B Nested in A</span></div>
       <div><code>Child Combo</code></div>
-      <div><span>A > B = Targets Direct Children</span></div>
+      <div><span>A > B = Targets B Direct Children of A</span></div>
       <div><code>Adjacent Sibling</code></div>
-      <div><span>A + B = Targets Immediate Siblings</span></div>
+      <div><span>A + B = Targets Immediate B Sibling</span></div>
       <div><code>General Sibling</code></div>
-      <div><span>A ~ B = Targets All Siblings</span></div>
+      <div><span>A ~ B = Targets All B Siblings</span></div>
+      <div><code>Selector Group</code></div>
+      <div><span>A, B&nbsp; = All A &amp; B Elements Targeted</span></div>
     </aside>
-    <br>    
-    <p>
-      The <i>descendant</i> selector <em>applies styles for nested elements only in the event that there is an ancestral lineage between the two elements</em>. The example below dictates that <code>&lt;li&gt;</code> within the <code>&lt;ul&gt;</code> are 'small.' &nbsp;<code>ul li &#123; font-size: 0.848emm; &#125;</code>
-    </p>
-    <p>
-      The <i>child</i> selector is used to match all elements that are children of a specified element . The example below dictates that all <code>&lt;li&gt;</code> elements that are children of<code>&lt;ol&gt;</code> are 'periwinkle' in color. &nbsp; <code>ol &#62; li &#123; color: #c3cde6; &#125;</code>
-    </p>
-    <!-- -->
+    <br>   
      <p>
-      The <i>attribute</i> selector applies styles to an <code>&#60;html&#62;</code> element that possesses a specific attribute. The example below dictates that <code>&#60;a&#62;</code> elements with the attribute of 'title' will be 'purple.'
+      There are also <i>attribute</i> selectors that can be utilized to target particular features within an <code>&#60;html&#62;</code> element, such as those used with the <code>&#60;form&#62;</code> element. 
     </p>
     <aside class="declarations">
       <div><code>Attribute</code></div>
-      <div><span>A[href="fee"] = Targts  ALL"fee"</span></div>
+      <div><span>A[attribute] = Targts Attribute</span></div>
+      <div><code>Attribute</code></div>
+      <div><span>A[attribute="fee"] = Targts Attr. &amp; Value</span></div>
+      <div><code>Attribute</code></div>
+      <div><span>A[attr~="fee"] = Targts Attr. &amp; Specific Value</span></div>
       <div><code>Match Attribute</code></div>
-      <div><span>A[href<sup>*</sup>="fee"] = Targts  ALL"fee"</span></div> 
+      <div><span>A[attribute<sup>*</sup>="fee"] = Targts  ALL"fee"</span></div> 
     </aside>
     <br>    
-    <!-- -->
     <p>
-      <i>&#58;Pseudo-class</i> selectors are actually keywords that are added to other selectors and provide a unique style during a particular instance of that selector. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords 'active', 'hover' and 'visited' dictate that styles are applied in the instance that a user is on a current page, has hovered over an element or has already visited that page.
+      There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are <em>keywords added to selectors to invoke a special 'state' during a particular instance</em>. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. 
     </p>
-    <blockquote>
-      <code>a&#58;active &#123; ... &#125;</code><br>
-      <code>a&#58;hover &#123; ... &#125;</code><br>
-      <code>a&#58;visited &#123; ... &#125;</code>
-    </blockquote>
-    <p>
-      Other useful pseudo-class selectors include <code><a href="https://css-tricks.com/useful-nth-child-recipies/" target="_blank">&#58;nth-child&#40;&#41;</a></code>, <code><a href="https://css-tricks.com/almanac/selectors/r/required/" target="_blank">&#58;required&#40;&#41;</a></code>, <code><a href="https://css-tricks.com/almanac/selectors/f/focus/" target="_blank">&#58;focus</a></code> and <code><a href="https://css-tricks.com/almanac/selectors/d/disabled/" target="_blank">&#58;disabled</a></code>.
-    </p>
-
-    <p>
-      <i>&#58;&#58;Pseudo-element</i> selectors, on the other hand, are used to style a specific part of an element. The difference between the two is in the number of colons. Ther following focuses on four selectors that adds depth to elements that possess text.
-    </p>
-    <p>
-      The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements. The examples below dictates that the 'first letter' of 'every paragraph' with a class of 'intro' will display as 'red' and that the 'first line' of 'every paragraph' with a class of 'intro' will display 'bolder' than the text below it.
-    </p>
-    <blockquote>
-      <code>p.intro&#58;&#58;first-letter &#123; color: #ff0000; &#125;</code>
-      <code>p.intro&#58;&#58;first-line &#123; font-weight: 900; &#125;</code>
-    </blockquote>
-
-    <p>
-      The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" target="_blank">content&#58; &#34;&#34;&#59;</a></code> property in order to work. This is useful when you want to include an icon or background image: something tangible. The example below dictates that a checkmark will be displayed <em>before</em> any list-item.
-    </p>
-    <blockquote>
-      <code>li&#58;&#58;before &#123; content&#58; &#34;\2713&#34;&#59; &#125;</code>
-    </blockquote>
-    <br>
+    <p>These kind of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:</p>
     <aside class="declarations">
-      <div><code>:root</code></div>
-      <div><span>// Targets Most Parent</span></div>
-      <div><code>:target</code></div>
-      <div><span>// Selects Element Target of Link</span></div>
-      <div><code>:nth-child()</code></div>
-      <div><span>// Targets Specific Elements</span></div>
-      <div><code>:nth-child(2n + 4)</code></div>
-      <div><span>// Targets  4-2-2-2</span></div>
-      <div><code>:nth-child(even)</code></div>
-      <div><span>// Targets Even Elements</span></div>
-      <div><code>:nth-child(odd)</code></div>
-      <div><span>// Targets Odd Elements</span></div>
-      <div><code>:nth-of-type(5)</code></div>
-      <div><span>// Targets 5th Type of~</span></div>
-      <div><code>:not([type="xyz"])</code></div>
-      <div><span>// Not this Element</span></div>
+      <div><code>&#58;active &#123;...&#125;</code></div>
+      <div><span>// Currently on Page</span></div> 
+      <div><code>&#58;checked &#123;...&#125;</code></div>
+      <div><span>// Selects Checked Checkboxes</span></div> 
+      <div><code>&#58;enabled &#123;...&#125;</code></div>
+      <div><span>// Selects <code>&#60;input&#62;</code> Ready to Use</span></div> 
+      <div><code>&#58;focus &#123;...&#125;</code></div>
+      <div><span>// Accessible 'hover'</span></div> 
+      <div><code>&#58;hover &#123;...&#125;</code></div>
+      <div><span>// Hovered over Element</span></div> 
+      <div><code>&#58;optional &#123;...&#125;</code></div>
+      <div><span>// Selects <code>&#60;input&#62;</code> w/o <code>:required</code> Attribute</span></div> 
+      <div><code>&#58;required &#123;...&#125;</code></div>
+      <div><span>// Selects <code>&#60;input&#62;</code> w/ <code>:required</code> Attribute</span></div> 
+      <div><code>&#58;visited &#123;...&#125;</code></div>
+      <div><span>// Already Visited Page</span></div> 
     </aside>
-  </section>
-
-  <hr>
-  
-  <!-- Structuring a Stylesheet -->
-  <section>
-    <h4>Part 3: Style Sheet Format and Structure</h4>
+    <br>
     <p>
-      Writing CSS requires a plan: no plan will result in spaghetti code. There are ways to avoid code purgatory and it all begins with using <i>comments</i> to <em>document points-of-emphasis for each rule-set</em>. This practice makes reading code easier and is especially important when collaborating on a team project. The example below is a single-line comment where the '...' references the comment.
+      A number of pseudo-class selectors are based on an elements position and will often <em>select an element based on a particular instance</em>.
     </p>
-    <blockquote>
-      <code>/* ... */</code>
-    </blockquote>
+    <aside class="declarations">
+      <div><code>&#58;first-child &#123;...&#125;</code></div>
+      <div><span>// First Element in Parent</span></div> 
+      <div><code>&#58;first-of-type &#123;...&#125;</code></div>
+      <div><span>// First Element of Type in Parent</span></div>  
+      <div><code>&#58;last-child &#123;...&#125;</code></div>
+      <div><span>// Last Element in Parent </span></div> 
+      <div><code>&#58;last-of-type &#123;...&#125;</code></div>
+      <div><span>// Last Element of Type in Parent</span></div> 
+      <div><code>&#58;not() &#123;...&#125;</code></div>
+      <div><span>// Removes Matching Elements</span></div> 
+      <div><code>&#58;nth-child() &#123;...&#125;</code></div>
+      <div><span>// #Specified Element</span></div> 
+      <div><code>&#58;nth-of-type &#123;...&#125;</code></div>
+      <div><span>// #Specified Element of Diff Type</span></div> 
+      <div><code>&#58;root &#123;...&#125;</code></div>
+      <div><span>// Matches <code>:root</code> Element</span></div>
+      <div><code>&#58;valid &#123;...&#125;</code></div>
+      <div><span>// Indicates <code>&#60;input&#62;</code> Validation</span></div> 
+    </aside>
+    <br>
     <p>
-      Leaving comments is only one method of writing legible code: double-space indention, lowercase text, meaningful class names, avoiding unnecessary type selectors (ie nesting to deep) and using shorthand properties will go a long way in formatting code so that anyone can read it. Don't be afraid to use lines of space, commented or not, to separate significant chunks of code.
-    </p>
-    <p>
-      As a dev, it is imperative to comprehend the cascade, inheritance and specificity when structuring a style sheet as these factors hold the key to how styles are applied or if they are applied at all. At the core of CSS is its rule-defining algorithm that defines the order by which CSS rules cascade.
-    </p>
-    <p>
-      Because style sheets come from different origins, they tend to overlap in scope. For example, browsers use a <i>user-agent</i> style sheet that provides a default style to all documents while devs create  <i>authored</i> style sheets. The algorithm defines the interaction between these files by prioritizing their order. Whereas user-agent style sheets are applied by default, an authored style sheet will follow. In the event that multiple declarations of equal value are made in both files, the rule-sheet of the latter style sheet will be prioritized. This is <i>specificity</i>.
-    </p>
-    <p>
-      The same is true of such an instance taking place within the same style sheet. The example below dictates that the color of the <code>.class</code> will render 'black' because of the source order determination (ie specificity) on which declaration to utilize.
-    </p>
-    <figure>
-      <img alt="Specificity Exemplified" src="img/specificity.jpg">
-      <figcaption>
-        Specificity Exemplified
-      </figcaption>
-    </figure>
-    <p>
-      Selectors have an applicable specificity rank-order as well where rule-sets are prioritized based on their importance. Selector rank-order (highest-to-lowest) is as follow:
-    </p>
-    <blockquote>
-      <code>&#35;id</code><br> 
-      <code>&#46;class</code><br> 
-      <code>&#91;attribute &#61; &#34;val&#34;&#93;</code><br> 
-      <code>&#58;pseudo-class</code><br> 
-      <code>&lt;element&gt;</code><br> 
-      <code>&#58;&#58;pseudo-element</code>
-    </blockquote>
-    <p>
-      Selector combinators, the negation :pseudo-class <code>&#91; &#58;not&#40;&#41; &#93;</code> and the universal selector do not impair specificity. The <i>!important exemption</i> <code>&#91; &#33; &#93;</code> and <i>inline-style</i> can be used to override any declaration. However, the exception should be used sparingly, if at all, and it is considered bad practice to write inline-styles. 
+      <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, <em>are used to style a specific part of a selected element</em>. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
     </p>
     <p>
-      CSS styles are also controlled via <i>inheritance</i>: the concept that some property values applied to an element will be inherited by its children, but some will not. An example of this is a <code>&lt;p&gt;</code> tag nested in a <code>&lt;div&gt;</code>: setting the color property for the <code>&lt;div&gt;</code> will cause the <code>&lt;p&gt;</code> to be the same color. Setting the color property for the <code>&lt;p&gt;</code> will override the styles applied to the <code>&lt;div&gt;</code>. Always consult a CSS property reference list to ascertain which properties are natively inherited.
+      The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements.
     </p>
     <p>
-      In a nutshell: write styles that are broadly applied and have low specificity at the start of a style sheet so that they can be overridden (if necessary) by styles of a higher specificity written beneath them. Thus, include box-sizing, font, preprocessors, and variable definitions at the top of the style sheet followed by default style settings and ending with class-based selectors, components, defined patterns and utilities.
+      The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code>content&#58; &#34;&#34;&#59;</code> property in order to work. This is useful when you want to include an icon or background image: something tangible. <i>&#58;&#58;cue</i> can be used to style media captions or  <i>&#58;&#58;placeholder</i> Represent <code>&#60;input&#62;</code> Placeholder Text, respectively.
     </p>
-    <p>
-      Lastly, employing a <i>naming convention</i> is a beneficial technique that establishes a clear relationship among CSS selectors. The <i>block-element-modifier</i> (BEM) namespace is a method that encapsulates a <code>.class</code> as a block of code bound to an element that can be modified with precision.
-    </p>
-    <blockquote>
-      <code>.block__element--modifier</code>
-    </blockquote>
-    <p>
-      Pre-selectors can be used to indicate the purpose of a rule-set. Very useful for distinguishing blocks of code.
-    </p>
-    <blockquote>
-      <code>.c-block &#123; ... &#125; = an HTML component</code><br>
-      <code>.js-block &#123; ... &#125; = bout to JavaScript</code><br>
-      <code>.u-block &#123; ... &#125; = Q+A Automate Tests</code>
-    </blockquote>
+    <aside class="declarations">    
+      <div><code>&#58;&#58;after &#123;...&#125;</code></div>
+      <div><span>// Adds Content After Element</span></div>   
+      <div><code>&#58;&#58;before &#123;...&#125;</code></div>
+      <div><span>// Adds Content Before Element</span></div> 
+      <div><code>&#58;&#58;cue &#123;...&#125;</code></div>
+      <div><span>// Style WebVTT Captions</span></div>   
+      <div><code>&#58;&#58;first-letter &#123;...&#125;</code></div>
+      <div><span>// Selects First Letter of Text</span></div> 
+      <div><code>&#58;&#58;first-line &#123;...&#125;</code></div>
+      <div><span>// Selects First Line of Text</span></div> 
+      <div><code>&#58;&#58;lang &#123;...&#125;</code></div>
+      <div><span>// Selects Element w/ <code>:lang</code> Attribute</span></div>
+      <div><code>&#58;&#58;placeholder &#123;...&#125;</code></div>
+      <div><span>// Represent <code>&#60;input&#62;</code> Placeholder Text</span></div> 
+    </aside>
   </section>
 
   <hr>
   
   <!-- Declaration Examples -->
   <section>
-    <h4>Part 4: Making Declarations</h4>
+    <h4>Part 3: Making Declarations</h4>
     <p>There are a lot of properties available for modifying <code>&#60;html&#62;</code> elements: no project regardless of size will utilize all of them. The list provided below denotes a usage case using the most basic of properties based on visual layout, text and fonts, background and borders, colors, content and list-style <small>??add Animation, Transition + Transform??</small>. </p>
     
     <h5>Visual Layout</h5>
@@ -772,7 +722,72 @@ include ("../inc/journalHeader.php");
       <div><span>// URL to Image</span></div>
     </aside>
   </section>
-    <p style="margin: 2em;"></p>
+  
+  <hr>
+  
+  <!-- Structuring a Stylesheet -->
+  <section>
+    <h4>Part 4: Style Sheet Format and Structure</h4>
+    <p>
+      Writing CSS requires a plan: no plan will result in spaghetti code. There are ways to avoid code purgatory and it all begins with using <i>comments</i> to <em>document points-of-emphasis for each rule-set</em>. This practice makes reading code easier and is especially important when collaborating on a team project. The example below is a single-line comment where the '...' references the comment.
+    </p>
+    <blockquote>
+      <code>/* ... */</code>
+    </blockquote>
+    <p>
+      Leaving comments is only one method of writing legible code: double-space indention, lowercase text, meaningful class names, avoiding unnecessary type selectors (ie nesting to deep) and using shorthand properties will go a long way in formatting code so that anyone can read it. Don't be afraid to use lines of space, commented or not, to separate significant chunks of code.
+    </p>
+    <p>
+      As a dev, it is imperative to comprehend the cascade, inheritance and specificity when structuring a style sheet as these factors hold the key to how styles are applied or if they are applied at all. At the core of CSS is its rule-defining algorithm that defines the order by which CSS rules cascade.
+    </p>
+    <p>
+      Because style sheets come from different origins, they tend to overlap in scope. For example, browsers use a <i>user-agent</i> style sheet that provides a default style to all documents while devs create  <i>authored</i> style sheets. The algorithm defines the interaction between these files by prioritizing their order. Whereas user-agent style sheets are applied by default, an authored style sheet will follow. In the event that multiple declarations of equal value are made in both files, the rule-sheet of the latter style sheet will be prioritized. This is <i>specificity</i>.
+    </p>
+    <p>
+      The same is true of such an instance taking place within the same style sheet. The example below dictates that the color of the <code>.class</code> will render 'black' because of the source order determination (ie specificity) on which declaration to utilize.
+    </p>
+    <figure>
+      <img alt="Specificity Exemplified" src="img/specificity.jpg">
+      <figcaption>
+        Specificity Exemplified
+      </figcaption>
+    </figure>
+    <p>
+      Selectors have an applicable specificity rank-order as well where rule-sets are prioritized based on their importance. Selector rank-order (highest-to-lowest) is as follow:
+    </p>
+    <blockquote>
+      <code>&#35;id</code><br> 
+      <code>&#46;class</code><br> 
+      <code>&#91;attribute &#61; &#34;val&#34;&#93;</code><br> 
+      <code>&#58;pseudo-class</code><br> 
+      <code>&lt;element&gt;</code><br> 
+      <code>&#58;&#58;pseudo-element</code>
+    </blockquote>
+    <p>
+      Selector combinators, the negation :pseudo-class <code>&#91; &#58;not&#40;&#41; &#93;</code> and the universal selector do not impair specificity. The <i>!important exemption</i> <code>&#91; &#33; &#93;</code> and <i>inline-style</i> can be used to override any declaration. However, the exception should be used sparingly, if at all, and it is considered bad practice to write inline-styles. 
+    </p>
+    <p>
+      CSS styles are also controlled via <i>inheritance</i>: the concept that some property values applied to an element will be inherited by its children, but some will not. An example of this is a <code>&lt;p&gt;</code> tag nested in a <code>&lt;div&gt;</code>: setting the color property for the <code>&lt;div&gt;</code> will cause the <code>&lt;p&gt;</code> to be the same color. Setting the color property for the <code>&lt;p&gt;</code> will override the styles applied to the <code>&lt;div&gt;</code>. Always consult a CSS property reference list to ascertain which properties are natively inherited.
+    </p>
+    <p>
+      In a nutshell: write styles that are broadly applied and have low specificity at the start of a style sheet so that they can be overridden (if necessary) by styles of a higher specificity written beneath them. Thus, include box-sizing, font, preprocessors, and variable definitions at the top of the style sheet followed by default style settings and ending with class-based selectors, components, defined patterns and utilities.
+    </p>
+    <p>
+      Lastly, employing a <i>naming convention</i> is a beneficial technique that establishes a clear relationship among CSS selectors. The <i>block-element-modifier</i> (BEM) namespace is a method that encapsulates a <code>.class</code> as a block of code bound to an element that can be modified with precision.
+    </p>
+    <blockquote>
+      <code>.block__element--modifier</code>
+    </blockquote>
+    <p>
+      Pre-selectors can be used to indicate the purpose of a rule-set. Very useful for distinguishing blocks of code.
+    </p>
+    <blockquote>
+      <code>.c-block &#123; ... &#125; = an HTML component</code><br>
+      <code>.js-block &#123; ... &#125; = bout to JavaScript</code><br>
+      <code>.u-block &#123; ... &#125; = Q+A Automate Tests</code>
+    </blockquote>
+  </section>
+  <p style="margin: 2em;"></p>
 </article>   
     
 
