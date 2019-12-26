@@ -10,7 +10,7 @@ include ("../inc/journalHeader.php");
 <article>
   <!-- // Introduction -->
   <section>
-    <h3 class="title">Styling Content with CSS</h3>
+    <h2 class="title">Styling Content with CSS</h2>
       <figure>
         <img class="mainImage" src="img/designStyle.jpg"/>
         <figcaption>So Many Colors, So Many Style Possibilities</figcaption>
@@ -31,169 +31,277 @@ include ("../inc/journalHeader.php");
     </ol> 
   </section>
   <hr>
-  <!-- ++Create and Load a Stylesheet++ -->
+  <!-- Part 1:  Create and Load a Stylesheet++ -->
   <section>
-    <h4>Part 1: Create and Load a Stylesheet</h4>
-    <p>Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css.'</p>
-    <p>
-      Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>&#60;html&#62;</code> document using the <code>&lt;link&gt;</code> tag, which requires three attributes: <code>rel="keyword"</code>, <code>href="URL"</code>, and the <code>type="keyword"</code> attributes.
+    <h3>Part 1: Create and Load a Stylesheet</h3>
+    <p>Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css' in the project folder.Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>&#60;html&#62;</code> document using the <code>&lt;link&gt;</code> tag. This element requires three attributes for valid implementation: <code>rel="keyword"</code>, <code>type="keyword"</code> and the <code>href="URL"</code>.
     </p>
     <figure>
-      <img alt="Strategy to Link a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">
+      <img alt="Linking a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">
       <figcaption>
         CSS &lt;Link&gt; Strategy
       </figcaption>
     </figure>
     <p>
-      The <code>rel="..."</code> attribute specifies the relationship of the target object with the <code>&lt;link&gt;</code> to specify its relationship with the document. Although omitted here, the <code>type="..."</code> attribute specifies the <i>media type</i> being used as a resource. The keywords <code>"stylesheet"</code> and <code>"text/css"</code>, respectively, are utilized to notify the document that this is an external stylesheet. 
+      The <code>rel="..."</code> attribute specifies the relationship of the target object with the <code>&lt;link&gt;</code> to specify its relationship with the document. The <code>type="..."</code> attribute (omitted) specifies the <i>media type</i> being used as a resource. The keywords <code>"stylesheet"</code> and <code>"text/css"</code>, respectively, are used to notify the browser that this is a cascading style sheet. The <code>href="URL"</code> attribute specifies the location of an external resource via its <i>url</i> (Uniform Resource Locator) by establishing a connection between the document and an <i>external stylsheet</i>. The examples above highlight use of <i>relative</i> URLs, which is an <i>implicit</i> reference to a resource located on the same server as the web page using a simple file path.
     </p>
     <p>
-      The <code>href="URL"</code> attribute specifies the location of an external resource via its <i>url</i> (Uniform Resource Locator) by establishing a connection between the document and an <i>external stylsheet</i>. The examples above highlight use of <i>relative</i> URLs, which is an <i>implicit</i> reference to a resource located on the same server as the web page using a simple file path. Not all resources are located on the same server. Many web apps utilize resources that are stashed throughout the webiverse: these use <i>explicitly</i> specified web address and are called <i>absolute</i> URLs. An absolute URL takes the following format:
+      Not all resources are located on the same server. Many web apps utilize resources that are stashed throughout the webiverse: these use <i>explicitly</i> specified web address and are called <i>absolute</i> URLs. An absolute URL takes the following format:
     </p>
     <blockquote>
       <code>protocol://domain/path/</code>
     </blockquote>
     <p>
-      Here, <i>protocol</i> specifies how the resource is to be accessed: the protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the server from which data is requested, specifying the name of the computer (or website) where the resource is located. The <i>path</i> specifies the sequence of directories leading to the target. 
-    </p>
-    <p>
-      Moving forward, keep in mind that it is good practice to separate code into multiple style sheets in order to avoid writting <i>spaghetti code</i>, which occurs when different layout styles or patterns are inconsistently applied to elements throughout a style sheet.With that covered, lets focus on writing CSS!
+      Here, <i>protocol</i> specifies how the resource is to be accessed: the protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the (website) server from which data is requested. The <i>path</i> specifies the sequence of directories leading to the target. That's covered. Now, lets focus on writing CSS!
     </p>
   </section>
   <hr>
   
-  <!-- ++CSS Syntax++ -->
+  <!-- Part 2:  CSS Syntax++ -->
   <section>
-    <h4>Part 2: CSS Syntax</h4>
-    <p>
-      In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a selector and a declaration. 
-    </p>
-    <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
-    <p>
-      <i>selectors</i> <em>reference <code>&#60;html&#62;</code> elements</em> targeted for styling. The aesthetic quality for a selector is embodied within its <i>declaration</i>, which is composed of a property/value pair and enclosed with curly brackets. The <i>property</i> identifies which feature to modify while the <i>value</i> quantifies to what extent the property is modified. 
-    </p>
+    <!-- Selector/Declaration Overview -->
+    <article>
+      <h3>Part 2: Understanding CSS Syntax</h3>
+      <p>
+        In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a selector and a declaration. 
+      </p>
+      <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
+      <p>
+        <i>selectors</i> <em>reference <code>&#60;html&#62;</code> elements</em> targeted for styling. Its <i>declaration</i> is made of a property and a value: the <i>property</i> identifies which element feature to modify while the <i>value</i> quantifies to what extent the property is modified. It is important to understand how to amalgamate selector with valid declarations: this can be achieved by being aware of selector types, proper measurement units and the properties that ultimately define the targeted selector or selectors!
+      </p>
+    </article>
     
-    <!-- Selector Types-->
-    <h5>Selector Types</h5>
-    <p>
-      All <code>&#60;html&#62;</code> elements can be used as a selector, but other things can be used as a selector as well. 
-    </p>
-    <p>
-      The <i>universal</i> selector is the most powerful selector of all as it is  used to <em>render styles to all elements</em> in a document. The <i>element</i> selector <em>renders styles to that type of element</em>. The <i>.class</i> selector <em>renders styles on elements that possess a specific class attribute</em>. The <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that <em>should be used exclusively</em> as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
-    </p>
-    <aside class="declarations">
-      <div><code>* &#123; prop: val; &#125;</code></div>
-      <div><span>// Selects ALL Elements</span></div>
-      <div><code>&#60;element&#62; &#123; prop: val; &#125;</code></div>
-      <div><span>// " Elements of Type</span></div>
-      <div><code>.class &#123; prop: val; &#125;</code></div>
-      <div><span>// " Elements w/ Class Attr.</span></div>
-      <div><code>#id &#123; prop: val; &#125;</code></div>
-      <div><span>// Avoid Usage</span></div>
-    </aside>
-    <br>
-    <p>
-      The power of selectors can be amplified by using a <i>combinator</i>: syntax that <em>unifies the relationship between any of the selectors</em> used above that targets and applies styles to <code>&#60;html&#62;</code> elements based on a specific criteria. The <i>descendant</i> selector <em>targets elements that descend from a specific element</em>. The <i>child</i> selector <em>targets children of a specific element</em>. The <i>adjacent sibling</i> selector <em>targets immmediate siblings of a specific element</em>. The <i>general sibling</i> selector <em>targets all siblings of a specific element</em>. Selectors can also be grouped allowing <em>application of a consistent style theme</em> to grouped elements.
-    </p>
-    <aside class="declarations">
-      <div><code>Descendant Combo</code></div>
-      <div><span>A  B &nbsp; = Targets B Nested in A</span></div>
-      <div><code>Child Combo</code></div>
-      <div><span>A > B = Targets B Direct Children of A</span></div>
-      <div><code>Adjacent Sibling</code></div>
-      <div><span>A + B = Targets Immediate B Sibling</span></div>
-      <div><code>General Sibling</code></div>
-      <div><span>A ~ B = Targets All B Siblings</span></div>
-      <div><code>Selector Group</code></div>
-      <div><span>A, B&nbsp; = All A &amp; B Elements Targeted</span></div>
-    </aside>
-    <br>   
-     <p>
-      There are also <i>attribute</i> selectors that can be utilized to target particular features within an <code>&#60;html&#62;</code> element, such as those used with the <code>&#60;form&#62;</code> element. 
-    </p>
-    <aside class="declarations">
-      <div><code>Attribute</code></div>
-      <div><span>A[attribute] = Targts Attribute</span></div>
-      <div><code>Attribute</code></div>
-      <div><span>A[attribute="fee"] = Targts Attr. &amp; Value</span></div>
-      <div><code>Attribute</code></div>
-      <div><span>A[attr~="fee"] = Targts Attr. &amp; Specific Value</span></div>
-      <div><code>Match Attribute</code></div>
-      <div><span>A[attribute<sup>*</sup>="fee"] = Targts  ALL"fee"</span></div> 
-    </aside>
-    <br>    
-    <p>
-      There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are <em>keywords added to selectors to invoke a special 'state' during a particular instance</em>. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. 
-    </p>
-    <p>These kind of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:</p>
-    <aside class="declarations">
-      <div><code>&#58;active &#123;...&#125;</code></div>
-      <div><span>// Currently on Page</span></div> 
-      <div><code>&#58;checked &#123;...&#125;</code></div>
-      <div><span>// Selects Checked Checkboxes</span></div> 
-      <div><code>&#58;enabled &#123;...&#125;</code></div>
-      <div><span>// Selects <code>&#60;input&#62;</code> Ready to Use</span></div> 
-      <div><code>&#58;focus &#123;...&#125;</code></div>
-      <div><span>// Accessible 'hover'</span></div> 
-      <div><code>&#58;hover &#123;...&#125;</code></div>
-      <div><span>// Hovered over Element</span></div> 
-      <div><code>&#58;optional &#123;...&#125;</code></div>
-      <div><span>// Selects <code>&#60;input&#62;</code> w/o <code>:required</code> Attribute</span></div> 
-      <div><code>&#58;required &#123;...&#125;</code></div>
-      <div><span>// Selects <code>&#60;input&#62;</code> w/ <code>:required</code> Attribute</span></div> 
-      <div><code>&#58;visited &#123;...&#125;</code></div>
-      <div><span>// Already Visited Page</span></div> 
-    </aside>
-    <br>
-    <p>
-      A number of pseudo-class selectors are based on an elements position and will often <em>select an element based on a particular instance</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>&#58;first-child &#123;...&#125;</code></div>
-      <div><span>// First Element in Parent</span></div> 
-      <div><code>&#58;first-of-type &#123;...&#125;</code></div>
-      <div><span>// First Element of Type in Parent</span></div>  
-      <div><code>&#58;last-child &#123;...&#125;</code></div>
-      <div><span>// Last Element in Parent </span></div> 
-      <div><code>&#58;last-of-type &#123;...&#125;</code></div>
-      <div><span>// Last Element of Type in Parent</span></div> 
-      <div><code>&#58;not() &#123;...&#125;</code></div>
-      <div><span>// Removes Matching Elements</span></div> 
-      <div><code>&#58;nth-child() &#123;...&#125;</code></div>
-      <div><span>// #Specified Element</span></div> 
-      <div><code>&#58;nth-of-type &#123;...&#125;</code></div>
-      <div><span>// #Specified Element of Diff Type</span></div> 
-      <div><code>&#58;root &#123;...&#125;</code></div>
-      <div><span>// Matches <code>:root</code> Element</span></div>
-      <div><code>&#58;valid &#123;...&#125;</code></div>
-      <div><span>// Indicates <code>&#60;input&#62;</code> Validation</span></div> 
-    </aside>
-    <br>
-    <p>
-      <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, <em>are used to style a specific part of a selected element</em>. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
-    </p>
-    <p>
-      The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements.
-    </p>
-    <p>
-      The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code>content&#58; &#34;&#34;&#59;</code> property in order to work. This is useful when you want to include an icon or background image: something tangible. <i>&#58;&#58;cue</i> can be used to style media captions or  <i>&#58;&#58;placeholder</i> Represent <code>&#60;input&#62;</code> Placeholder Text, respectively.
-    </p>
-    <aside class="declarations">    
-      <div><code>&#58;&#58;after &#123;...&#125;</code></div>
-      <div><span>// Adds Content After Element</span></div>   
-      <div><code>&#58;&#58;before &#123;...&#125;</code></div>
-      <div><span>// Adds Content Before Element</span></div> 
-      <div><code>&#58;&#58;cue &#123;...&#125;</code></div>
-      <div><span>// Style WebVTT Captions</span></div>   
-      <div><code>&#58;&#58;first-letter &#123;...&#125;</code></div>
-      <div><span>// Selects First Letter of Text</span></div> 
-      <div><code>&#58;&#58;first-line &#123;...&#125;</code></div>
-      <div><span>// Selects First Line of Text</span></div> 
-      <div><code>&#58;&#58;lang &#123;...&#125;</code></div>
-      <div><span>// Selects Element w/ <code>:lang</code> Attribute</span></div>
-      <div><code>&#58;&#58;placeholder &#123;...&#125;</code></div>
-      <div><span>// Represent <code>&#60;input&#62;</code> Placeholder Text</span></div> 
-    </aside>
+    <article>
+      <!-- Selector Types-->
+      <section>
+        <h4>Selector Types</h4>
+        <p>
+          All <code>&#60;html&#62;</code> elements can be used as a selector, but other things can be used as a selector as well. This first group of selectors are targeted most frequently.
+        </p>
+        <!-- -->
+        <h5>Simple Selectors</h5>
+        <p>
+          The <i>universal</i> selector is the most powerful selector of all as it is  used to <em>render styles to all elements</em> in a document. The <i>element</i> selector <em>renders styles to that type of element</em>. The <i>.class</i> selector <em>renders styles on elements that possess a specific class attribute</em>. The <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that <em>should be used exclusively</em> as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
+        </p>
+        <aside class="declarations">
+          <div><code>* &#123; prop: val; &#125;</code></div>
+          <div><span>// Selects ALL Elements</span></div>
+          <div><code>&#60;element&#62; &#123; prop: val; &#125;</code></div>
+          <div><span>// " Elements of Type</span></div>
+          <div><code>.class &#123; prop: val; &#125;</code></div>
+          <div><span>// " Elements w/ Class Attr.</span></div>
+          <div><code>#id &#123; prop: val; &#125;</code></div>
+          <div><span>// Avoid Usage</span></div>
+        </aside>
+        <!-- -->
+        <br>
+        <!-- -->
+        <h5>Combinators</h5>
+        <p>
+          The power of selectors can be amplified by using a <i>combinator</i>: syntax that <em>unifies the relationship between any of the selectors</em> used above that targets and applies styles to <code>&#60;html&#62;</code> elements based on a specific criteria. The <i>descendant</i> selector <em>targets elements that descend from a specific element</em>. The <i>child</i> selector <em>targets children of a specific element</em>. The <i>adjacent sibling</i> selector <em>targets immmediate siblings of a specific element</em>. The <i>general sibling</i> selector <em>targets all siblings of a specific element</em>. Selectors can also be grouped allowing <em>application of a consistent style theme</em> to grouped elements.
+        </p>
+        <aside class="declarations">
+          <div><code>Descendant</code></div>
+          <div><span>A  B &nbsp; = Targets B Nested in A</span></div>
+          <div><code>Child Combo</code></div>
+          <div><span>A > B = Targets B Direct Children of A</span></div>
+          <div><code>Adjacent Sibling</code></div>
+          <div><span>A + B = Targets Immediate B Sibling</span></div>
+          <div><code>General Sibling</code></div>
+          <div><span>A ~ B = Targets All B Siblings</span></div>
+          <div><code>Selector Group</code></div>
+          <div><span>A, B&nbsp; = All A &amp; B Elements Targeted</span></div>
+        </aside>
+        <!-- -->
+        <br>  
+        <!-- -->
+        <h5>Attribute Selector</h5>
+        <p>
+          There are also <i>attribute</i> selectors that can be utilized to target particular features within an <code>&#60;html&#62;</code> element, such as those used with the <code>&#60;form&#62;</code> element. 
+        </p>
+        <aside class="declarations">
+          <div><code>[attribute]</code></div>
+          <div><span>Targts Attribute</span></div>
+          <div><code>[attribute="fee"]</code></div>
+          <div><span>Targts Attr. &amp; Value</span></div>
+          <div><code>[attr~="fee"]</code></div>
+          <div><span>Targts Attr. &amp; Specific Value</span></div>
+          <div><code>[attribute<sup>*</sup>="fee"]</code></div>
+          <div><span>Targts ALL"fee"</span></div> 
+        </aside>        
+        <!-- -->
+        <br>  
+        <!-- -->
+        <h5>:Pseudo-Class</h5>  
+        <p>
+          There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are <em>keywords added to selectors to invoke a special 'state' during a particular instance</em>. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. This first group of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:
+        </p>
+        <aside class="declarations">
+          <div><code>&#58;active &#123;...&#125;</code></div>
+          <div><span>// Currently on Page</span></div> 
+          <div><code>&#58;checked &#123;...&#125;</code></div>
+          <div><span>// Selects Checked Checkboxes</span></div> 
+          <div><code>&#58;enabled &#123;...&#125;</code></div>
+          <div><span>// Selects <code>&#60;input&#62;</code> Ready to Use</span></div> 
+          <div><code>&#58;focus &#123;...&#125;</code></div>
+          <div><span>// Accessible 'hover'</span></div> 
+          <div><code>&#58;hover &#123;...&#125;</code></div>
+          <div><span>// Hovered over Element</span></div> 
+          <div><code>&#58;optional &#123;...&#125;</code></div>
+          <div><span>// Selects <code>&#60;input&#62;</code> w/o <code>:required</code> Attribute</span></div> 
+          <div><code>&#58;required &#123;...&#125;</code></div>
+          <div><span>// Selects <code>&#60;input&#62;</code> w/ <code>:required</code> Attribute</span></div> 
+          <div><code>&#58;visited &#123;...&#125;</code></div>
+          <div><span>// Already Visited Page</span></div> 
+        </aside>
+        <br>
+        <p>
+          A number of pseudo-class selectors are based on an elements position and will often <em>select an element based on a particular instance</em>.
+        </p>
+        <aside class="declarations">
+          <div><code>&#58;first-child &#123;...&#125;</code></div>
+          <div><span>// First Element in Parent</span></div> 
+          <div><code>&#58;first-of-type &#123;...&#125;</code></div>
+          <div><span>// First Element of Type in Parent</span></div>  
+          <div><code>&#58;last-child &#123;...&#125;</code></div>
+          <div><span>// Last Element in Parent </span></div> 
+          <div><code>&#58;last-of-type &#123;...&#125;</code></div>
+          <div><span>// Last Element of Type in Parent</span></div> 
+          <div><code>&#58;not() &#123;...&#125;</code></div>
+          <div><span>// Removes Matching Elements</span></div> 
+          <div><code>&#58;nth-child() &#123;...&#125;</code></div>
+          <div><span>// #Specified Element</span></div> 
+          <div><code>&#58;nth-of-type &#123;...&#125;</code></div>
+          <div><span>// #Specified Element of Diff Type</span></div> 
+          <div><code>&#58;root &#123;...&#125;</code></div>
+          <div><span>// Matches <code>:root</code> Element</span></div>
+          <div><code>&#58;valid &#123;...&#125;</code></div>
+          <div><span>// Indicates <code>&#60;input&#62;</code> Validation</span></div> 
+        </aside>     
+        <!-- -->
+        <br>  
+        <!-- -->
+        <h5>:Pseudo-Elements</h5>
+        <p>
+          <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, <em>are used to style a specific part of a selected element</em>. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
+        </p>
+        <p>
+          The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements.
+        </p>
+        <p>
+          The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code>content&#58; &#34;&#34;&#59;</code> property in order to work. This is useful when you want to include an icon or background image: something tangible. <i>&#58;&#58;cue</i> can be used to style media captions or  <i>&#58;&#58;placeholder</i> Represent <code>&#60;input&#62;</code> Placeholder Text, respectively.
+        </p>
+        <aside class="declarations">    
+          <div><code>&#58;&#58;after &#123;...&#125;</code></div>
+          <div><span>// Adds Content After Element</span></div>   
+          <div><code>&#58;&#58;before &#123;...&#125;</code></div>
+          <div><span>// Adds Content Before Element</span></div> 
+          <div><code>&#58;&#58;cue &#123;...&#125;</code></div>
+          <div><span>// Style WebVTT Captions</span></div>   
+          <div><code>&#58;&#58;first-letter &#123;...&#125;</code></div>
+          <div><span>// Selects First Letter of Text</span></div> 
+          <div><code>&#58;&#58;first-line &#123;...&#125;</code></div>
+          <div><span>// Selects First Line of Text</span></div> 
+          <div><code>&#58;&#58;lang &#123;...&#125;</code></div>
+          <div><span>// Selects Element w/ <code>:lang</code> Attribute</span></div>
+          <div><code>&#58;&#58;placeholder &#123;...&#125;</code></div>
+          <div><span>// Represent <code>&#60;input&#62;</code> Placeholder Text</span></div> 
+        </aside>
+      </section>
+      
+      <br>
+      
+      <!-- Value Measurement Units -->
+      <section>
+        <h4>Value Measurement Units</h4>  
+        <p>
+          Values provide properties with a measurement unit that qualifies the expected aesthetic quality. All properties have values and most of the time that value is a keyword. Often, a numeric value is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations which targets elements such as its font-size, height and width.
+        </p>
+        <!-- -->
+        <h5>Absolute vs. Relative Units</h5>
+        <p>
+          Length units are either absolute or relative in nature: <i>absolute</i> units are fixed and appear as the declared size regardless of browser/device screen size while <i>relative</i> units represents a length with the ability to scale relative to other elements on the page. With respect to responsive web design, it is obvious that relative units are a preferred choice. The <i>pixel</i> (<code>px</code>) unit is an anomoly in that it has an immutable absolute value, yet, is relative to screen resolution. Another common value is the <i>percentage</i> (<code>%</code>) relative unit: use of this is risky in that that element becomes relative to its parent. One suggestion for avoiding any risk is to add one of the rule-sets below to the top of the style sheet then never use again, laying the foundation for a responsive design: 
+        </p>
+        <blockquote>
+          <code>html &#123; font-size: 100%; &#125;</code><br>
+          <code>html &#123; font-size: min&#40;max&#40;16px, 4vw&#42;, 22px&#42;; &#125;</code>
+        </blockquote>
+        <p>
+          Relative units that build responsiveness include em, rem, vh, vw, vmin, vmax and calc(). Both <code>em</code> and <code>rem</code> units focus on styling font-size with the exception being that the former is relative to its parent while the latter is relative to the root element. Viewport units are relative measurements that provide percentage-based calculations for responsive design, making these the idea choice when working with images and layouts. The viewport height <code>(vh)</code> and viewport width <code>(vw)</code> units reflect an equal percentage of their respective viewport dimensions. Use the <code>vh</code> units on the height property to create full-screen sections. The <code>vmin</code> and <code>vmax</code> unit represents the percentage of viewport height or width, for whichever is smaller or larger. When <code>vmin</code> is used on an elements height and width, all aspects of that element will be viewable within the viewport. The <code>calc()</code> function provides a calculation that formulates responsiveness on the element of which it is applied, allowing font-size to scale depending on the device screen size. A <code>vw</code> can be added to this function to implement fluid typography.
+        </p>
+        <aside class="declarations">
+          <div><code>{prop: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+          <div><span><b>// Value Purpose</b></span></div>
+          <div><code>{prop: #px;}</code></div> 
+          <div><span>// Precisness</span></div>
+          <div><code>{prop: #%;}</code></div>
+          <div><span>// Base</span></div>
+          <div><code>{prop: #em;}</code></div>
+          <div><span>// Font</span></div>
+          <div><code>{prop: #rem;}</code></div>
+          <div><span>// Font</span></div>
+          <div><code>{prop: #vh;}</code></div>
+          <div><span>// Layout</span></div>
+          <div><code>{prop: #vw;}</code></div>
+          <div><span>// Layout | Font</span></div>
+          <div><code>{prop: #vmin;}</code></div>
+          <div><span>// Layout | Sizing</span></div>
+          <div><code>{prop: #vmax;}</code></div>
+          <div><span>// Layout | Sizing</span></div>
+          <div><code>{prop: calc(#);}</code></div>
+          <div><span>// Calculator</span></div>
+        </aside>
+        <br>  
+        <!-- -->
+        <h5>Dimensional and Time Units</h5> 
+        <p>
+          Not all values are created equal so when designing animations out from the abyss of time and space, it is helpful to be aware of dimensional and time measurement units. Enter the <code>rotate()</code> function, which is used to calculate a transformation on a specified element. This function helps ascertain movement using the <i>degree</i> <code>(deg)</code> and <i>turns</i> <code>(turn)</code> units, which are used to rotate or turn an object with the only distinction being that one turn reflects a full 360 degree whereas one degree equals just that.
+        </p>
+        <aside class="declarations">
+          <div><code>{transform: rotate&#40;720deg&#41;;}</code></div>
+          <div><span>// 2 Rotations</span></div>
+          <div><code>{transform: rotate&#40;1turn&#41;;}</code></div>
+          <div><span>// 1 Rotation</span></div>
+        </aside>
+        <br>
+        <p>
+          Other math functions that are used when designing animations:
+        </p>
+        <aside class="declarations">
+          <div><code>{transform: perspective();}</code></div> 
+          <div><span>// 3-Dimensional</span></div>
+          <div><code>{transform: matrix&#40;#&#41;;}</code></div>
+          <div><span>// 2-Dimensional</span></div>
+          <div><code>{transform: scale&#40;#&#41;;}</code></div>
+          <div><span>// Scales Element</span></div>
+          <div><code>{transform: skew&#40;#&#41;;}</code></div>
+          <div><span>// Skews Element</span></div>
+          <div><code>{transform: translate&#40;x, y&#41;;}</code></div>
+          <div><span>// Translates Element</span></div>
+        </aside>
+        <br>
+        <p>
+          The only time units worth mentioning are values for <i>seconds</i> (s) and milliseconds (ms). Outside of the scope at the moment, this is a topic to revisit.
+        </p>
+        <aside class="declarations">
+          <div><code>element &#123;transition-duration: 4400ms;&#125;</code></div> 
+          <div><span>// 4.4 seconds</span></div>
+        </aside>
+        <!-- -->
+        <br>  
+        <!-- -->
+        <h5></h5>
+           
+        <!-- -->
+        <br>  
+        <!-- -->
+        <h5></h5>   
+        <!-- -->
+        <br>  
+        <!-- -->
+      </section>
+      
+    </article>
   </section>
 
   <hr>
@@ -568,6 +676,7 @@ include ("../inc/journalHeader.php");
     <p style="margin: 2em;"></p>
     
     <h5>Font + Text</h5>
+    <p>Build fuild typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
     <p>
       <i>font</i> is a property that is used to <em>set the style of text</em>. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
     </p>
