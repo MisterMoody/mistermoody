@@ -55,30 +55,38 @@ include ("../inc/journalHeader.php");
       Here, <i>protocol</i> specifies how the resource is to be accessed: the protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the (website) server from which data is requested. The <i>path</i> specifies the sequence of directories leading to the target. That's covered. Now, lets focus on writing CSS!
     </p>
   </section>
+  <!-- ************************************************** -->
   <hr>
-  
-  <!-- Part 2:  CSS Syntax++ -->
+  <!-- ************************************************** -->
+  <!-- Part 2: Understanding CSS Syntax++ -->
   <section>
+    
     <!-- Selector/Declaration Overview -->
     <article>
       <h3>Part 2: Understanding CSS Syntax</h3>
       <p>
         In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a selector and a declaration. 
       </p>
+      <p>
+        This section is designed to explain syntax rules by dissecting a rule-set and its features. It begins with an explanation of how <code>&#60;html&#62;</code> elements are used as selectors and the means by which they can be manipulated. Next, measurement units are explored in an effort to understand how elements move or are shaped, creating the perfect segway into the next section highlighting use case declarations.
+      </p>
+      <h4>The Rule-Set</h4>
+      <p>
+        <i>selectors</i> <em>reference <code>&#60;html&#62;</code> elements</em> targeted for styling. Its <i>declaration</i> is made of a property and a value: the <i>property</i> identifies which element feature to modify while the <i>value</i> quantifies to what extent the property is modified. 
+      </p>
       <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
       <p>
-        <i>selectors</i> <em>reference <code>&#60;html&#62;</code> elements</em> targeted for styling. Its <i>declaration</i> is made of a property and a value: the <i>property</i> identifies which element feature to modify while the <i>value</i> quantifies to what extent the property is modified. It is important to understand how to amalgamate selector with valid declarations: this can be achieved by being aware of selector types, proper measurement units and the properties that ultimately define the targeted selector or selectors!
+        It is important to understand how to amalgamate selector with declarations: this can be achieved by being aware of selector types, proper measurement units and the properties that ultimately define the targeted selector or selectors!
       </p>
     </article>
     
+    <!-- Selector Types-->
     <article>
-      <!-- Selector Types-->
-      <section>
         <h4>Selector Types</h4>
         <p>
           All <code>&#60;html&#62;</code> elements can be used as a selector, but other things can be used as a selector as well. This first group of selectors are targeted most frequently.
         </p>
-        <!-- -->
+
         <h5>Simple Selectors</h5>
         <p>
           The <i>universal</i> selector is the most powerful selector of all as it is  used to <em>render styles to all elements</em> in a document. The <i>element</i> selector <em>renders styles to that type of element</em>. The <i>.class</i> selector <em>renders styles on elements that possess a specific class attribute</em>. The <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that <em>should be used exclusively</em> as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
@@ -93,141 +101,138 @@ include ("../inc/journalHeader.php");
           <div><code>#id &#123; prop: val; &#125;</code></div>
           <div><span>// Avoid Usage</span></div>
         </aside>
-        <!-- -->
+
         <br>
-        <!-- -->
+
         <h5>Combinators</h5>
         <p>
           The power of selectors can be amplified by using a <i>combinator</i>: syntax that <em>unifies the relationship between any of the selectors</em> used above that targets and applies styles to <code>&#60;html&#62;</code> elements based on a specific criteria. The <i>descendant</i> selector <em>targets elements that descend from a specific element</em>. The <i>child</i> selector <em>targets children of a specific element</em>. The <i>adjacent sibling</i> selector <em>targets immmediate siblings of a specific element</em>. The <i>general sibling</i> selector <em>targets all siblings of a specific element</em>. Selectors can also be grouped allowing <em>application of a consistent style theme</em> to grouped elements.
         </p>
         <aside class="declarations">
-          <div><code>Descendant</code></div>
-          <div><span>A  B &nbsp; = Targets B Nested in A</span></div>
-          <div><code>Child Combo</code></div>
-          <div><span>A > B = Targets B Direct Children of A</span></div>
-          <div><code>Adjacent Sibling</code></div>
-          <div><span>A + B = Targets Immediate B Sibling</span></div>
-          <div><code>General Sibling</code></div>
-          <div><span>A ~ B = Targets All B Siblings</span></div>
-          <div><code>Selector Group</code></div>
-          <div><span>A, B&nbsp; = All A &amp; B Elements Targeted</span></div>
-        </aside>
-        <!-- -->
+            <div><code>Descendant</code></div>
+            <div><span>A  B &nbsp; = Targets B Nested in A</span></div>
+            <div><code>Child Combo</code></div>
+            <div><span>A > B = Targets B Direct Children of A</span></div>
+            <div><code>Adjacent Sibling</code></div>
+            <div><span>A + B = Targets Immediate B Sibling</span></div>
+            <div><code>General Sibling</code></div>
+            <div><span>A ~ B = Targets All B Siblings</span></div>
+            <div><code>Selector Group</code></div>
+            <div><span>A, B&nbsp; = All A &amp; B Elements Targeted</span></div>
+          </aside>
+
         <br>  
-        <!-- -->
+
         <h5>Attribute Selector</h5>
         <p>
-          There are also <i>attribute</i> selectors that can be utilized to target particular features within an <code>&#60;html&#62;</code> element, such as those used with the <code>&#60;form&#62;</code> element. 
-        </p>
+            There are also <i>attribute</i> selectors that can be utilized to target particular features within an <code>&#60;html&#62;</code> element, such as those used with the <code>&#60;form&#62;</code> element. 
+          </p>
         <aside class="declarations">
-          <div><code>[attribute]</code></div>
-          <div><span>Targts Attribute</span></div>
-          <div><code>[attribute="fee"]</code></div>
-          <div><span>Targts Attr. &amp; Value</span></div>
-          <div><code>[attr~="fee"]</code></div>
-          <div><span>Targts Attr. &amp; Specific Value</span></div>
-          <div><code>[attribute<sup>*</sup>="fee"]</code></div>
-          <div><span>Targts ALL"fee"</span></div> 
-        </aside>        
-        <!-- -->
+            <div><code>[attribute]</code></div>
+            <div><span>Targts Attribute</span></div>
+            <div><code>[attribute="fee"]</code></div>
+            <div><span>Targts Attr. &amp; Value</span></div>
+            <div><code>[attr~="fee"]</code></div>
+            <div><span>Targts Attr. &amp; Specific Value</span></div>
+            <div><code>[attribute<sup>*</sup>="fee"]</code></div>
+            <div><span>Targts ALL"fee"</span></div> 
+          </aside>        
+
         <br>  
-        <!-- -->
+
         <h5>:Pseudo-Class</h5>  
         <p>
-          There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are <em>keywords added to selectors to invoke a special 'state' during a particular instance</em>. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. This first group of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:
-        </p>
+            There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are <em>keywords added to selectors to invoke a special 'state' during a particular instance</em>. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. This first group of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:
+          </p>
         <aside class="declarations">
-          <div><code>&#58;active &#123;...&#125;</code></div>
-          <div><span>// Currently on Page</span></div> 
-          <div><code>&#58;checked &#123;...&#125;</code></div>
-          <div><span>// Selects Checked Checkboxes</span></div> 
-          <div><code>&#58;enabled &#123;...&#125;</code></div>
-          <div><span>// Selects <code>&#60;input&#62;</code> Ready to Use</span></div> 
-          <div><code>&#58;focus &#123;...&#125;</code></div>
-          <div><span>// Accessible 'hover'</span></div> 
-          <div><code>&#58;hover &#123;...&#125;</code></div>
-          <div><span>// Hovered over Element</span></div> 
-          <div><code>&#58;optional &#123;...&#125;</code></div>
-          <div><span>// Selects <code>&#60;input&#62;</code> w/o <code>:required</code> Attribute</span></div> 
-          <div><code>&#58;required &#123;...&#125;</code></div>
-          <div><span>// Selects <code>&#60;input&#62;</code> w/ <code>:required</code> Attribute</span></div> 
-          <div><code>&#58;visited &#123;...&#125;</code></div>
-          <div><span>// Already Visited Page</span></div> 
-        </aside>
+            <div><code>&#58;active &#123;...&#125;</code></div>
+            <div><span>// Currently on Page</span></div> 
+            <div><code>&#58;checked &#123;...&#125;</code></div>
+            <div><span>// Selects Checked Checkboxes</span></div> 
+            <div><code>&#58;enabled &#123;...&#125;</code></div>
+            <div><span>// Selects <code>&#60;input&#62;</code> Ready to Use</span></div> 
+            <div><code>&#58;focus &#123;...&#125;</code></div>
+            <div><span>// Accessible 'hover'</span></div> 
+            <div><code>&#58;hover &#123;...&#125;</code></div>
+            <div><span>// Hovered over Element</span></div> 
+            <div><code>&#58;optional &#123;...&#125;</code></div>
+            <div><span>// Selects <code>&#60;input&#62;</code> w/o <code>:required</code> Attribute</span></div> 
+            <div><code>&#58;required &#123;...&#125;</code></div>
+            <div><span>// Selects <code>&#60;input&#62;</code> w/ <code>:required</code> Attribute</span></div> 
+            <div><code>&#58;visited &#123;...&#125;</code></div>
+            <div><span>// Already Visited Page</span></div> 
+          </aside>
         <br>
         <p>
-          A number of pseudo-class selectors are based on an elements position and will often <em>select an element based on a particular instance</em>.
-        </p>
+            A number of pseudo-class selectors are based on an elements position and will often <em>select an element based on a particular instance</em>.
+          </p>
         <aside class="declarations">
-          <div><code>&#58;first-child &#123;...&#125;</code></div>
-          <div><span>// First Element in Parent</span></div> 
-          <div><code>&#58;first-of-type &#123;...&#125;</code></div>
-          <div><span>// First Element of Type in Parent</span></div>  
-          <div><code>&#58;last-child &#123;...&#125;</code></div>
-          <div><span>// Last Element in Parent </span></div> 
-          <div><code>&#58;last-of-type &#123;...&#125;</code></div>
-          <div><span>// Last Element of Type in Parent</span></div> 
-          <div><code>&#58;not() &#123;...&#125;</code></div>
-          <div><span>// Removes Matching Elements</span></div> 
-          <div><code>&#58;nth-child() &#123;...&#125;</code></div>
-          <div><span>// #Specified Element</span></div> 
-          <div><code>&#58;nth-of-type &#123;...&#125;</code></div>
-          <div><span>// #Specified Element of Diff Type</span></div> 
-          <div><code>&#58;root &#123;...&#125;</code></div>
-          <div><span>// Matches <code>:root</code> Element</span></div>
-          <div><code>&#58;valid &#123;...&#125;</code></div>
-          <div><span>// Indicates <code>&#60;input&#62;</code> Validation</span></div> 
-        </aside>     
-        <!-- -->
+            <div><code>&#58;first-child &#123;...&#125;</code></div>
+            <div><span>// First Element in Parent</span></div> 
+            <div><code>&#58;first-of-type &#123;...&#125;</code></div>
+            <div><span>// First Element of Type in Parent</span></div>  
+            <div><code>&#58;last-child &#123;...&#125;</code></div>
+            <div><span>// Last Element in Parent </span></div> 
+            <div><code>&#58;last-of-type &#123;...&#125;</code></div>
+            <div><span>// Last Element of Type in Parent</span></div> 
+            <div><code>&#58;not() &#123;...&#125;</code></div>
+            <div><span>// Removes Matching Elements</span></div> 
+            <div><code>&#58;nth-child() &#123;...&#125;</code></div>
+            <div><span>// #Specified Element</span></div> 
+            <div><code>&#58;nth-of-type &#123;...&#125;</code></div>
+            <div><span>// #Specified Element of Diff Type</span></div> 
+            <div><code>&#58;root &#123;...&#125;</code></div>
+            <div><span>// Matches <code>:root</code> Element</span></div>
+            <div><code>&#58;valid &#123;...&#125;</code></div>
+            <div><span>// Indicates <code>&#60;input&#62;</code> Validation</span></div> 
+          </aside>     
+
         <br>  
-        <!-- -->
+
         <h5>:Pseudo-Elements</h5>
         <p>
-          <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, <em>are used to style a specific part of a selected element</em>. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
-        </p>
+            <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, <em>are used to style a specific part of a selected element</em>. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
+          </p>
         <p>
-          The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements.
-        </p>
+            The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements.
+          </p>
         <p>
-          The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code>content&#58; &#34;&#34;&#59;</code> property in order to work. This is useful when you want to include an icon or background image: something tangible. <i>&#58;&#58;cue</i> can be used to style media captions or  <i>&#58;&#58;placeholder</i> Represent <code>&#60;input&#62;</code> Placeholder Text, respectively.
-        </p>
+            The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code>content&#58; &#34;&#34;&#59;</code> property in order to work. This is useful when you want to include an icon or background image: something tangible. <i>&#58;&#58;cue</i> can be used to style media captions or  <i>&#58;&#58;placeholder</i> Represent <code>&#60;input&#62;</code> Placeholder Text, respectively.
+          </p>
         <aside class="declarations">    
-          <div><code>&#58;&#58;after &#123;...&#125;</code></div>
-          <div><span>// Adds Content After Element</span></div>   
-          <div><code>&#58;&#58;before &#123;...&#125;</code></div>
-          <div><span>// Adds Content Before Element</span></div> 
-          <div><code>&#58;&#58;cue &#123;...&#125;</code></div>
-          <div><span>// Style WebVTT Captions</span></div>   
-          <div><code>&#58;&#58;first-letter &#123;...&#125;</code></div>
-          <div><span>// Selects First Letter of Text</span></div> 
-          <div><code>&#58;&#58;first-line &#123;...&#125;</code></div>
-          <div><span>// Selects First Line of Text</span></div> 
-          <div><code>&#58;&#58;lang &#123;...&#125;</code></div>
-          <div><span>// Selects Element w/ <code>:lang</code> Attribute</span></div>
-          <div><code>&#58;&#58;placeholder &#123;...&#125;</code></div>
-          <div><span>// Represent <code>&#60;input&#62;</code> Placeholder Text</span></div> 
-        </aside>
-      </section>
-      
-      <br>
-      
-      <!-- Value Measurement Units -->
-      <section>
+            <div><code>&#58;&#58;after &#123;...&#125;</code></div>
+            <div><span>// Adds Content After Element</span></div>   
+            <div><code>&#58;&#58;before &#123;...&#125;</code></div>
+            <div><span>// Adds Content Before Element</span></div> 
+            <div><code>&#58;&#58;cue &#123;...&#125;</code></div>
+            <div><span>// Style WebVTT Captions</span></div>   
+            <div><code>&#58;&#58;first-letter &#123;...&#125;</code></div>
+            <div><span>// Selects First Letter of Text</span></div> 
+            <div><code>&#58;&#58;first-line &#123;...&#125;</code></div>
+            <div><span>// Selects First Line of Text</span></div> 
+            <div><code>&#58;&#58;lang &#123;...&#125;</code></div>
+            <div><span>// Selects Element w/ <code>:lang</code> Attribute</span></div>
+            <div><code>&#58;&#58;placeholder &#123;...&#125;</code></div>
+            <div><span>// Represent <code>&#60;input&#62;</code> Placeholder Text</span></div> 
+          </aside>
+      </article>
+    <br>  
+    <!-- Value Measurement Units -->
+    <article>
         <h4>Value Measurement Units</h4>  
         <p>
-          Values provide properties with a measurement unit that qualifies the expected aesthetic quality. All properties have values and most of the time that value is a keyword. Often, a numeric value is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations which targets elements such as its font-size, height and width.
+          Values provide properties with a measurement unit that quantifies the expected aesthetic quality. All properties have values and most of the time that value is a keyword which has a precise meaning for how an element should behave. Often, a numeric value is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations.
         </p>
-        <!-- -->
+
         <h5>Absolute vs. Relative Units</h5>
         <p>
-          Length units are either absolute or relative in nature: <i>absolute</i> units are fixed and appear as the declared size regardless of browser/device screen size while <i>relative</i> units represents a length with the ability to scale relative to other elements on the page. With respect to responsive web design, it is obvious that relative units are a preferred choice. The <i>pixel</i> (<code>px</code>) unit is an anomoly in that it has an immutable absolute value, yet, is relative to screen resolution. Another common value is the <i>percentage</i> (<code>%</code>) relative unit: use of this is risky in that that element becomes relative to its parent. One suggestion for avoiding any risk is to add one of the rule-sets below to the top of the style sheet then never use again, laying the foundation for a responsive design: 
+          Length units are either absolute or relative in nature: <i>absolute</i> units are fixed and appear as the declared size regardless of browser/device screen size while <i>relative</i> units represents a length with the ability to scale relative to other elements on the page. With respect to responsive web design, it is obvious that relative units are a preferred choice. The <i>pixel</i> (<code>px</code>) unit is an anomoly in that it has an immutable absolute value, yet, is relative to screen resolution. Another common value is the <i>percentage</i> (<code>%</code>) relative unit: use of this is risky in that that element becomes relative to its parent. One suggestion for avoiding any risk is to add the rule-set below to the top of the style sheet then never use again, laying the foundation for a responsive design: 
         </p>
         <blockquote>
-          <code>html &#123; font-size: 100%; &#125;</code><br>
-          <code>html &#123; font-size: min&#40;max&#40;16px, 4vw&#42;, 22px&#42;; &#125;</code>
+          <code>html &#123; font-size: 100%; &#125;</code>
         </blockquote>
         <p>
-          Relative units that build responsiveness include em, rem, vh, vw, vmin, vmax and calc(). Both <code>em</code> and <code>rem</code> units focus on styling font-size with the exception being that the former is relative to its parent while the latter is relative to the root element. Viewport units are relative measurements that provide percentage-based calculations for responsive design, making these the idea choice when working with images and layouts. The viewport height <code>(vh)</code> and viewport width <code>(vw)</code> units reflect an equal percentage of their respective viewport dimensions. Use the <code>vh</code> units on the height property to create full-screen sections. The <code>vmin</code> and <code>vmax</code> unit represents the percentage of viewport height or width, for whichever is smaller or larger. When <code>vmin</code> is used on an elements height and width, all aspects of that element will be viewable within the viewport. The <code>calc()</code> function provides a calculation that formulates responsiveness on the element of which it is applied, allowing font-size to scale depending on the device screen size. A <code>vw</code> can be added to this function to implement fluid typography.
+          Relative units that build responsiveness include em, rem, vh, vw, vmin, vmax and calc(). Both <code>em</code> and <code>rem</code> units focus on styling font-size with the exception being that the former is relative to its parent while the latter is relative to the root element. Viewport units are relative measurements that provide percentage-based calculations for responsive design, making these the idea choice when working with images and layouts. The viewport height <code>(vh)</code> and viewport width <code>(vw)</code> units reflect an equal percentage of their respective viewport dimensions. Use the <code>vh</code> units on the height property to create full-screen sections. The <code>vmin</code> and <code>vmax</code> unit represents the percentage of viewport height or width, for whichever is smaller or larger. When <code>vmin</code> is used on an elements height and width, all aspects of that element will be viewable within the viewport. Viewport units are particularly helpful for designing responsive layouts! The <code>calc()</code> function provides a calculation that formulates responsiveness on the element of which it is applied, allowing font-size to scale depending on the device screen size. A <code>vw</code> can be added to this function to implement fluid typography.
         </p>
         <aside class="declarations">
           <div><code>{prop: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
@@ -252,12 +257,14 @@ include ("../inc/journalHeader.php");
           <div><span>// Calculator</span></div>
         </aside>
         <br>  
-        <!-- -->
+
         <h5>Dimensional and Time Units</h5> 
         <p>
-          Not all values are created equal so when designing animations out from the abyss of time and space, it is helpful to be aware of dimensional and time measurement units. Enter the <code>rotate()</code> function, which is used to calculate a transformation on a specified element. This function helps ascertain movement using the <i>degree</i> <code>(deg)</code> and <i>turns</i> <code>(turn)</code> units, which are used to rotate or turn an object with the only distinction being that one turn reflects a full 360 degree whereas one degree equals just that.
+          Not all values are created equal so when designing animations out from the abyss of time and space, it is helpful to be aware of dimensional and time measurement units. Time units are easy to remember: <i>seconds</i> <cdoe>(s)</cdoe> and <i>milliseconds</i> <code>(ms)</code>. Working with dimensions can be tricky. The <code>rotate()</code> function is used to calculate a transformation on a specified element. This function helps ascertain movement using the <i>degree</i> <code>(deg)</code> and <i>turns</i> <code>(turn)</code> units, which are used to rotate or turn an object with the only distinction being that one turn reflects a full 360 degree whereas one degree equals just that.
         </p>
         <aside class="declarations">
+          <div><code>&#123;transition-duration: 4400ms;&#125;</code></div> 
+          <div><span>// 4.4 seconds</span></div>
           <div><code>{transform: rotate&#40;720deg&#41;;}</code></div>
           <div><span>// 2 Rotations</span></div>
           <div><code>{transform: rotate&#40;1turn&#41;;}</code></div>
@@ -265,7 +272,7 @@ include ("../inc/journalHeader.php");
         </aside>
         <br>
         <p>
-          Other math functions that are used when designing animations:
+          Although outside of the scope, there are other math functions that are used when designing animations.
         </p>
         <aside class="declarations">
           <div><code>{transform: perspective();}</code></div> 
@@ -279,177 +286,123 @@ include ("../inc/journalHeader.php");
           <div><code>{transform: translate&#40;x, y&#41;;}</code></div>
           <div><span>// Translates Element</span></div>
         </aside>
-        <br>
+        <br>  
         <p>
-          The only time units worth mentioning are values for <i>seconds</i> (s) and milliseconds (ms). Outside of the scope at the moment, this is a topic to revisit.
+          That was a good bit on numeric values all of which will be utilized throughout a typical style sheet. With a solid foundation of how values work, designers can focus on developing their property memory bank, and the best properties to jumpstart this initiative focus on layout.
         </p>
-        <aside class="declarations">
-          <div><code>element &#123;transition-duration: 4400ms;&#125;</code></div> 
-          <div><span>// 4.4 seconds</span></div>
-        </aside>
-        <!-- -->
-        <br>  
-        <!-- -->
-        <h5></h5>
-           
-        <!-- -->
-        <br>  
-        <!-- -->
-        <h5></h5>   
-        <!-- -->
-        <br>  
-        <!-- -->
-      </section>
-      
-    </article>
-  </section>
 
-  <hr>
-  
-  <!-- Declaration Examples -->
-  <section>
-    <h4>Part 3: Making Declarations</h4>
-    <p>There are a lot of properties available for modifying <code>&#60;html&#62;</code> elements: no project regardless of size will utilize all of them. The list provided below denotes a usage case using the most basic of properties based on visual layout, text and fonts, background and borders, colors, content and list-style <small>??add Animation, Transition + Transform??</small>. </p>
+      </article>
     
-    <h5>Visual Layout</h5>
-    <p>
-      The <i>display</i> property <em>manages precisely how an element behaves</em> insofar as its layout is concerned. Available keywords for this prop are based on the elements function. The keyword <code>inline</code> is the default value for elements <em>that wraps text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. This prop can also be used to <em>hide elements</em> using the keyword <code>none</code>.
-    </p>
-    <aside class="declarations">
-      <div><code>{display: ;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: inline;}</code></div>
-      <div><span>// Horizontal Line Alignment</span></div>
-      <div><code>{&nbsp;: block;}</code></div>
-      <div><span>// Vertical Block Alignment</span></div>
-      <div><code>{&nbsp;: none;}</code></div>
-      <div><span>// Hides Element</span></div>
-    </aside>
-    <br>
-    <p>
-      The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
-    </p>
-    <aside class="declarations">
-      <div><code>{display: flex;}</code></div>
-      <div><span>// Flexible Element Layout</span></div>
-      <div><code>{flex-direction: row/column;}</code></div>
-      <div><span>// Cross-Axis Alignment</span></div>
-      <div><code>{flex-wrap: nowrap/wrap;}</code></div>
-      <div><span>// Single-Line/Multi-Line</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>justify-content</i> sub-prop <em>manages item alignment along the main horizontal axis</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{justify-content: ;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: flex-start;}</code></div>
-      <div><span>// Default Value (Left)</span></div>
-      <div><code>{&nbsp;: flex-end;}</code></div>
-      <div><span>// Aligns Items to Right</span></div>
-      <div><code>{&nbsp;: center;}</code></div>
-      <div><span>// Center Aligns Items</span></div>
-      <div><code>{&nbsp;: space-between;}</code></div>
-      <div><span>// Equal Space Between Items</span></div>
-      <div><code>{&nbsp;: space-evenly;}</code></div>
-      <div><span>// Equal Space Around Items</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{align-items: ;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: flex-start;}</code></div>
-      <div><span>// Default Value (Top)</span></div>
-      <div><code>{&nbsp;: flex-end;}</code></div>
-      <div><span>// Aligns Items to Bottom</span></div>
-      <div><code>{&nbsp;: center;}</code></div>
-      <div><span>// Center Aligns Items</span></div>
-      <div><code>{&nbsp;: stretch;}</code></div>
-      <div><span>// Fills Container</span></div>
-    </aside>
-    <br>
-    <p>
-      The <code>grid</code> keyword acts like flexbox, but is more powerful in <em>creating a grid container</em>. Grid is similar to flexbox in that it justifies content and aligns items. The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{display: Grid; }</code></div>
-      <div><span><b>// Grid Structured Layout</b></span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>justify-items</i> sub-prop <em>aligns grid items horizontally</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{justify-items: &nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: stretch; }</code></div>
-      <div><span>// Default - Fills Width of Cell</span></div>
-      <div><code>{&nbsp;: start; }</code></div>
-      <div><span>// Aligns Items to Left</span></div>
-      <div><code>{&nbsp;: end; }</code></div>
-      <div><span>// Aligns Items to Right</span></div>
-      <div><code>{&nbsp;: center; }</code></div>
-      <div><span>// Center Aligns Items</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>align-items</i> sub-prop <em>aligns grid items vertically</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{align-items: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: stretch; }</code></div>
-      <div><span>// Default - Fills Width of Cell</span></div>
-      <div><code>{&nbsp;: start; }</code></div>
-      <div><span>// Aligns Items to Left</span></div>
-      <div><code>{&nbsp;: end; }</code></div>
-      <div><span>// Aligns Items to Right</span></div>
-      <div><code>{&nbsp;: center; }</code></div>
-      <div><span>// Center Aligns Items</span></div>
-    </aside>
-    <br>
-    <p>
-      Use the <i>justify-content</i> and <i>align-content</i> sub-props <em>whenever the total size of the grid/item is less than the size of its container</em> to set the alignment of the grid/item within the container.
-    </p>
-    <aside class="declarations">
-      <div><code>{justify-content: ;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: start;}</code></div>
-      <div><span>// Default Value (Left)</span></div>
-      <div><code>{&nbsp;: end; }</code></div>
-      <div><span>// Aligns Items to Right</span></div>
-      <div><code>{&nbsp;: center;}</code></div>
-      <div><span>// Center Aligns Items</span></div>
-      <div><code>{&nbsp;: space-between;}</code></div>
-      <div><span>// Equal Space Between Items</span></div>
-      <div><code>{&nbsp;: space-around;}</code></div>
-      <div><span>// Equal Space Around Items</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>grid-template-columns</i> and <i>grid-template-rows</i> sub-props <em>outlines grid container columns and rows</em>, respectively. Add margins between the columns and rows by using the  <i>grid-column-gap</i> and <i>grid-row-gap</i> sub-props: <i>grid-gap</i> is the shorthand.
-    </p>
-    <aside class="declarations">
-      <div><code>{g-t-c: unit/value;}</code></div>
-      <div><span>// Vertical Container</span></div>
-      <div><code>{g-t-r: unit/value;}</code></div>
-      <div><span>// Horizontal Container</span></div>
-      <div><code>{g-c-g: unit/value;}</code></div>
-      <div><span>// Vertical Gutter</span></div>
-      <div><code>{g-r-g: unit/value;}</code></div>
-      <div><span>// Horizontal Gutter</span></div>
-      <div><code>{grid-gap: unit/value;}</code></div>
-      <div><span>// Gutters</span></div>
-    </aside>
-    <br>
-    <p>
-      The documentation on flexbox and grid is extensive. There is much more that can be done to control the layout of elements using these keywords with the display property. Useful units and length values:
-    </p>
-    <aside class="declarations">
+  </section>
+  <!-- ************************************************** -->
+  <hr>
+  <!-- ************************************************** -->
+  <!-- Part 3: Making Declarations -->
+  <section>
+    <!-- Project Plan/Intro -->
+    <article>
+      <h4>Part 3: Making Declarations</h4>
+      <p>
+        There are a lot of properties available for styling a document: no project regardless of size will utilize all of them. Using the <code>&#60;html&#62;</code> document from the <a href="">HTML Markup</a> lesson, lets begin making declarations using common scenarios a designer could expect to encounter when designing an aesthetically pleasing, yet, fully responsive website for a restaurant. This project features a flexible-grid layout, a manageable global navigation system, images and lists to illustrate and explain food products, respectively, combined with a call-to-action that would pursue a user to make a purchase.
+      </p>
+      <!-- ??add Animation, Transition + Transform??-->
+    </article>
+    
+    <!-- Layout Structure -->
+    <article>
+      <h5>Visual Layout</h5>
+      <p>
+        When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration <em>eliminates spacing concerns</em> by setting a foundation for layout and positional properties used thereafter. From there, the first property designers reach for is that of <i>display</i>, which <em>determines how an element is displayed</em>. The main goal of this property emphasizes horizontal and vertical element alignment. 
+      </p>
+      <blockquote><code>{display: inline / block / none;}</code></blockquote>
+      <p>
+        These keywords are old hat in that they were used from the start to emphasize horizontal and vertical alignment, but their value has waned over time.
+        The keyword <code>inline</code> is the default value for elements <em>that wraps text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. Use the <code>none</code> keyword to <em>hide elements</em>.
+      </p>
+      <p>
+        It can be a cumbersome task to use the aforementioned keywords to style a large website, but designers did it this way for eons basing elements as either a row or column. Nowadays, layout techniques are implemented using the keywords flex and grid, and although nearly the same, both are used in distinct ways. <code>flex</code> is one-dimensional and is best used to arrange individual items in a single row or column whereas <code>grid</code> is two-dimensional and is best used to establish containers by arranging items in multiple rows or columns. Thus, what distinguishes these keywords is that grid defines a parent element while flexbox defines child elements.  With that in mind, lets first focus on structuring a container. 
+      </p>
+      
+      <h6>The Grid</h6>
+      <!-- Grid -->
+      <p>
+        The <code>grid</code> keyword acts like flexbox, but is more powerful in <em>creating a grid container</em>. Grid is similar to flexbox in that it justifies content and aligns items. The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{display: Grid; }</code></div>
+        <div><span><b>// Grid Structured Layout</b></span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>justify-items</i> sub-prop <em>aligns grid items horizontally</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{justify-items: &nbsp;&nbsp;; }</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: stretch; }</code></div>
+        <div><span>// Default - Fills Width of Cell</span></div>
+        <div><code>{&nbsp;: start; }</code></div>
+        <div><span>// Aligns Items to Left</span></div>
+        <div><code>{&nbsp;: end; }</code></div>
+        <div><span>// Aligns Items to Right</span></div>
+        <div><code>{&nbsp;: center; }</code></div>
+        <div><span>// Center Aligns Items</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>align-items</i> sub-prop <em>aligns grid items vertically</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{align-items: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: stretch; }</code></div>
+        <div><span>// Default - Fills Width of Cell</span></div>
+        <div><code>{&nbsp;: start; }</code></div>
+        <div><span>// Aligns Items to Left</span></div>
+        <div><code>{&nbsp;: end; }</code></div>
+        <div><span>// Aligns Items to Right</span></div>
+        <div><code>{&nbsp;: center; }</code></div>
+        <div><span>// Center Aligns Items</span></div>
+      </aside>
+      <br>
+      <p>
+        Use the <i>justify-content</i> and <i>align-content</i> sub-props <em>whenever the total size of the grid/item is less than the size of its container</em> to set the alignment of the grid/item within the container.
+      </p>
+      <aside class="declarations">
+        <div><code>{justify-content: ;}</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: start;}</code></div>
+        <div><span>// Default Value (Left)</span></div>
+        <div><code>{&nbsp;: end; }</code></div>
+        <div><span>// Aligns Items to Right</span></div>
+        <div><code>{&nbsp;: center;}</code></div>
+        <div><span>// Center Aligns Items</span></div>
+        <div><code>{&nbsp;: space-between;}</code></div>
+        <div><span>// Equal Space Between Items</span></div>
+        <div><code>{&nbsp;: space-around;}</code></div>
+        <div><span>// Equal Space Around Items</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>grid-template-columns</i> and <i>grid-template-rows</i> sub-props <em>outlines grid container columns and rows</em>, respectively. Add margins between the columns and rows by using the  <i>grid-column-gap</i> and <i>grid-row-gap</i> sub-props: <i>grid-gap</i> is the shorthand.
+      </p>
+      <aside class="declarations">
+        <div><code>{g-t-c: unit/value;}</code></div>
+        <div><span>// Vertical Container</span></div>
+        <div><code>{g-t-r: unit/value;}</code></div>
+        <div><span>// Horizontal Container</span></div>
+        <div><code>{g-c-g: unit/value;}</code></div>
+        <div><span>// Vertical Gutter</span></div>
+        <div><code>{g-r-g: unit/value;}</code></div>
+        <div><span>// Horizontal Gutter</span></div>
+        <div><code>{grid-gap: unit/value;}</code></div>
+        <div><span>// Gutters</span></div>
+      </aside>
+      <br>
+      <p>
+        The documentation on flexbox and grid is extensive. There is much more that can be done to control the layout of elements using these keywords with the display property. Useful units and length values:
+      </p>
+      <aside class="declarations">
       <div><code>{&nbsp;: repeat(3, 1fr);}</code></div>
       <div><span></span></div>
       <div><code>{&nbsp;: minmax(200px, 1fr);}</code></div>
@@ -468,373 +421,440 @@ include ("../inc/journalHeader.php");
       <div></div>
       <div><code>{grid: auto-flow dense 100px / 1fr 2fr;}</code></div>
     </aside>
-    <br>
-    <p>
-      The <i>position</i> property can be used to re-position an element from its initial position. <i>positional properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
-    </p>
-    <aside class="declarations">
-      <div><code>{position: &nbsp;;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: static;}</code></div>
-      <div><span>// Default Setting</span></div>
-      <div><code>{&nbsp;: relative;}</code></div>
-      <div><span>// Implements Positional Properties</span></div>
-      <div><code>{&nbsp;: absolute;}</code></div>
-      <div><span>// Ignores Children + Implements PP</span></div>
-      <div><code>{&nbsp;: fixed;}</code></div>
-      <div><span>// Element Does not Scroll</span></div>
-      <div><code>{&nbsp;: sticky;}</code></div>
-      <div><span>// Scroll to a Fixed Position</span></div>
-    </aside>
-    <p style="margin: 1em;"></p>
-    <aside class="declarations">
-      <div><code>{top / right / bottom / right: value;}</code></div>
-    </aside>
-    <br>
-    <p>
-      The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
-    </p>
-    <aside class="declarations">
-      <div><code>{z-index: 100;}</code></div>
-      <div><span>// Stacked Above Elements</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>height</i> property is used to <em>specify content height and width</em> of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
-    </p>
-    <aside class="declarations">
-      <div><code> {height: value;}</code></div>
-      <div><span>// Specify Content Height</span></div>
-      <div><code> {min-height: value;}</code></div>
-      <div><span>// Specify Minimum Content Height</span></div>
-      <div><code> {max-height: value;}</code></div>
-      <div><span>// Specify Maximum Content Height</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>width</i> property is used to <em>specify content width</em> of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
-    </p>
-    <aside class="declarations">
-      <div><code> {width: value;}</code></div>
-      <div><span>// Specify Content Width</span></div>
-      <div><code> {min-width: value;}</code></div>
-      <div><span>// Specify Min Content Width</span></div>
-      <div><code> {max-width: value;}</code></div>
-      <div><span>// Specify Max Content Width</span></div>
-      <div><code> {fit-content: value;}</code></div>
-      <div><span>// Center Content Horizontally</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>object-fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>object-position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{object-fit: &nbsp;;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: fill;}</code></div>
-      <div><span>// Stretches Media to Fit</span></div>
-      <div><code>{&nbsp;: cover;}</code></div>
-      <div><span>// Media Crop</span></div>
-      <div><code>{&nbsp;: contain;}</code></div>
-      <div><span>// Sizes Media to Fill</span></div>
-      <div><code>{&nbsp;: scale-down;}</code></div>
-      <div><span>// Resize to Smallest Size</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>float</i> property is used to <em>wrap text around images</em> while the <i>clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: none;}</code></div>
-      <div><span>// Default Value (No Float)</span></div>
-      <div><code>{&nbsp;: left;}</code></div>
-      <div><span>// Floats Left</span></div>
-      <div><code>{&nbsp;: right;}</code></div>
-      <div><span>// Floats Right</span></div>
-      <div><code>{clear: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: both;}</code></div>
-      <div><span>// Clears X+Y-axis Floats</span></div>
-      <div><code>{&nbsp;: auto;}</code></div>
-      <div><span>// Clears Float</span></div>
-      <div><code>{overflow: &nbsp;;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: auto; }</code></div>
-      <div><span>// Hidden Scroll(s) unless Overflow</span></div>
-      <div><code>{&nbsp;: visible;}</code></div>
-      <div><span>// Default Value</span></div>
-      <div><code>{&nbsp;: hidden;}</code></div>
-      <div><span>// Hides Overflow</span></div>
-      <div><code>{&nbsp;: scroll;}</code></div>
-      <div><span>// Scroll(s) for Overflow</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>Margin</i> property <em>specifies the outside borders of an element</em>. The <i>Padding</i> property <em>specifies the inside borders of an element</em>. Both props accept a single value as a shorthand for top, right, bottom or left sides.
-    </p>
-    <aside class="declarations">
-      <div><code>{margin: 4vw; }</code></div>
-      <div><span></span></div>
-      <div><code>{padding: 8px; }</code></div>
-      <div><span></span></div>
-    </aside>
-    <br>
-    <p>
-      Eliminate concerns about spacing by adding the <i>box-sizing</i> property with a universal selector to act as a container for a webpage. This prop can also be used to cast a shadow on an element. The values represent the horizontal/vertical offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required: <code>* { box-sizing: border-box; }</code>
-    </p>
-    <aside class="declarations">
-      <div><code>{box-sizing: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Offset </b></span></div>
-      <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
-      <div><span>// Outer</span></div>
-      <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
-      <div><span>// Inner</span></div>
-      <div><code>{&nbsp;: 0 8px 6px -6px red; }</code></div>
-      <div><span>// Bottom</span></div>
-      <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
-      <div><span>// Multiple</span></div>
-    </aside>
-    <p style="margin: 2em;"></p>
+      <br>
+      <h6>Flexbox</h6>
+      <!-- Flex -->
+      <p>
+        The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
+      </p>
+      <aside class="declarations">
+        <div><code>{display: flex;}</code></div>
+        <div><span>// Flexible Element Layout</span></div>
+        <div><code>{flex-direction: row/column;}</code></div>
+        <div><span>// Cross-Axis Alignment</span></div>
+        <div><code>{flex-wrap: nowrap/wrap;}</code></div>
+        <div><span>// Single-Line/Multi-Line</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>justify-content</i> sub-prop <em>manages item alignment along the main horizontal axis</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{justify-content: ;}</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: flex-start;}</code></div>
+        <div><span>// Default Value (Left)</span></div>
+        <div><code>{&nbsp;: flex-end;}</code></div>
+        <div><span>// Aligns Items to Right</span></div>
+        <div><code>{&nbsp;: center;}</code></div>
+        <div><span>// Center Aligns Items</span></div>
+        <div><code>{&nbsp;: space-between;}</code></div>
+        <div><span>// Equal Space Between Items</span></div>
+        <div><code>{&nbsp;: space-evenly;}</code></div>
+        <div><span>// Equal Space Around Items</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{align-items: ;}</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: flex-start;}</code></div>
+        <div><span>// Default Value (Top)</span></div>
+        <div><code>{&nbsp;: flex-end;}</code></div>
+        <div><span>// Aligns Items to Bottom</span></div>
+        <div><code>{&nbsp;: center;}</code></div>
+        <div><span>// Center Aligns Items</span></div>
+        <div><code>{&nbsp;: stretch;}</code></div>
+        <div><span>// Fills Container</span></div>
+      </aside>
+      <br>
+    </article>
     
-    <h5>Colors</h5>
-    <p>
-      The <i>color</i> property accepts any color value to <em>set the color of text</em> and is combined with other properties to color backgrounds, borders and what have you.
-    </p>
-    <aside class="declarations">
-      <div><code>{color: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Value Description</b></span></div>
-      <div><code>{&nbsp;: #00FFFF; }</code></div>
-      <div><span>// Hexidecimal</span></div>
-      <div><code>{&nbsp;: #0FF; }</code></div>
-      <div><span>// Hexidecimal</span></div>
-      <div><code>{&nbsp;: red; }</code></div>
-      <div><span>// Named</span></div>
-      <div><code>{&nbsp;: rgba(0, 255, 255, .5); }</code></div>
-      <div><span>// RGBa</span></div>
-      <div><code>{&nbsp;: hsla(180, 100%, 5%, .5); }</code></div>
-      <div><span>// HSLa</span></div>
-    </aside>
+    <!-- Size and Placement -->
+    <article>
+      <h5>Sizing and Placement</h5>
+      <p>Lorem ipsum...</p>
+      <!-- -->
+      <h6>Sizing and Shaping Elements</h6>
+      <!-- Height + Width -->
+      <p>
+        The <i>height</i> property is used to <em>specify content height and width</em> of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
+      </p>
+      <aside class="declarations">
+        <div><code> {height: value;}</code></div>
+        <div><span>// Specify Content Height</span></div>
+        <div><code> {min-height: value;}</code></div>
+        <div><span>// Specify Minimum Content Height</span></div>
+        <div><code> {max-height: value;}</code></div>
+        <div><span>// Specify Maximum Content Height</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>width</i> property is used to <em>specify content width</em> of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
+      </p>
+      <aside class="declarations">
+        <div><code> {width: value;}</code></div>
+        <div><span>// Specify Content Width</span></div>
+        <div><code> {min-width: value;}</code></div>
+        <div><span>// Specify Min Content Width</span></div>
+        <div><code> {max-width: value;}</code></div>
+        <div><span>// Specify Max Content Width</span></div>
+        <div><code> {fit-content: value;}</code></div>
+        <div><span>// Center Content Horizontally</span></div>
+      </aside>
+      <br>
+      <!-- Margin + Padding -->
+      <p>
+        The <i>Margin</i> property <em>specifies the outside borders of an element</em>. The <i>Padding</i> property <em>specifies the inside borders of an element</em>. Both props accept a single value as a shorthand for top, right, bottom or left sides.
+      </p>
+      <aside class="declarations">
+        <div><code>{margin: 4vw; }</code></div>
+        <div><span></span></div>
+        <div><code>{padding: 8px; }</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>  
+      <!-- Position + top/right/bottom/right + Z-Index -->
+      <h6>Positional Placement</h6>
+      <p>
+        The <i>position</i> property can be used to re-position an element from its initial position. <i>positional properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
+      </p>
+      <aside class="declarations">
+        <div><code>{position: &nbsp;;}</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: static;}</code></div>
+        <div><span>// Default Setting</span></div>
+        <div><code>{&nbsp;: relative;}</code></div>
+        <div><span>// Implements Positional Properties</span></div>
+        <div><code>{&nbsp;: absolute;}</code></div>
+        <div><span>// Ignores Children + Implements PP</span></div>
+        <div><code>{&nbsp;: fixed;}</code></div>
+        <div><span>// Element Does not Scroll</span></div>
+        <div><code>{&nbsp;: sticky;}</code></div>
+        <div><span>// Scroll to a Fixed Position</span></div>
+      </aside>
+      <br><br>
+      <aside class="declarations">
+        <div><code>{top / right / bottom / right: value;}</code></div>
+      </aside>
+      <br>
+      <p>
+        The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
+      </p>
+      <aside class="declarations">
+        <div><code>{z-index: 100;}</code></div>
+        <div><span>// Stacked Above Elements</span></div>
+      </aside>
+      <br>
+      <!-- Float + Clear + Overflow -->
+      <p>
+        The <i>float</i> property is used to <em>wrap text around images</em> while the <i>clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: none;}</code></div>
+        <div><span>// Default Value (No Float)</span></div>
+        <div><code>{&nbsp;: left;}</code></div>
+        <div><span>// Floats Left</span></div>
+        <div><code>{&nbsp;: right;}</code></div>
+        <div><span>// Floats Right</span></div>
+        <div><code>{clear: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: both;}</code></div>
+        <div><span>// Clears X+Y-axis Floats</span></div>
+        <div><code>{&nbsp;: auto;}</code></div>
+        <div><span>// Clears Float</span></div>
+        <div><code>{overflow: &nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: auto; }</code></div>
+        <div><span>// Hidden Scroll(s) unless Overflow</span></div>
+        <div><code>{&nbsp;: visible;}</code></div>
+        <div><span>// Default Value</span></div>
+        <div><code>{&nbsp;: hidden;}</code></div>
+        <div><span>// Hides Overflow</span></div>
+        <div><code>{&nbsp;: scroll;}</code></div>
+        <div><span>// Scroll(s) for Overflow</span></div>
+      </aside>
+      <br>    
+      <!-- Object-Fit -->
+      <p>
+        The <i>object-fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>object-position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{object-fit: &nbsp;;}</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: fill;}</code></div>
+        <div><span>// Stretches Media to Fit</span></div>
+        <div><code>{&nbsp;: cover;}</code></div>
+        <div><span>// Media Crop</span></div>
+        <div><code>{&nbsp;: contain;}</code></div>
+        <div><span>// Sizes Media to Fill</span></div>
+        <div><code>{&nbsp;: scale-down;}</code></div>
+        <div><span>// Resize to Smallest Size</span></div>
+      </aside>
+    </article>
     <br>
-    <aside class="declarations">
-      <div><code>{opacity: # between 0.0 - 1; }</code></div>
-      <div><span>// Defines Transparency</span></div>
-    </aside>
-    <p style="margin: 2em;"></p>
-    
-    <h5>Backgrounds + Borders</h5>
-    <p>
-      The <i>background</i> property is used to <em>layer an image underneath content</em>. As a shorthand, it accepts sub-props that include image, position, size, repeat, attachment, origin, clip and color.
-    </p>
-    <aside class="declarations">
-      <div><code>{background: url(xyz.jpg); }</code></div>
-      <div><span></span></div>
-      <div><code>{background-position: top center; }</code></div>
-      <div><span></span></div>
-      <div><code>{background-size: cover; }</code></div>
-      <div><span></span></div>      
-      <div><code>{background-repeat: no-repeat; }</code></div>
-      <div><span></span></div>
-      <div><code>{background-attachment: fixed; }</code></div>
-      <div><span></span></div>
-      <div><code>{background-origin: border-box; }</code></div>
-      <div><span></span></div>
-      <div><code>{background-clip: content-box; }</code></div>
-      <div><span></span></div>
-      <div><code>{background-color: #3ab1fd; }</code></div>
-      <div><span></span></div>
-    </aside>
+    <!-- Colors -->
+    <article>
+      <h5>Colors</h5>
+      <p>
+        The <i>color</i> property accepts any color value to <em>set the color of text</em> and is combined with other properties to color backgrounds, borders and what have you.
+      </p>
+      <aside class="declarations">
+        <div><code>{color: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+        <div><span><b>// Value Description</b></span></div>
+        <div><code>{&nbsp;: #00FFFF; }</code></div>
+        <div><span>// Hexidecimal</span></div>
+        <div><code>{&nbsp;: #0FF; }</code></div>
+        <div><span>// Hexidecimal</span></div>
+        <div><code>{&nbsp;: red; }</code></div>
+        <div><span>// Named</span></div>
+        <div><code>{&nbsp;: rgba(0, 255, 255, .5); }</code></div>
+        <div><span>// RGBa</span></div>
+        <div><code>{&nbsp;: hsla(180, 100%, 5%, .5); }</code></div>
+        <div><span>// HSLa</span></div>
+      </aside>
+      <br><br>
+      <aside class="declarations">
+        <div><code>{opacity: # between 0.0 - 1; }</code></div>
+        <div><span>// Defines Transparency</span></div>
+      </aside>
+      <br>
+      <p>
+        Besides eliminating sizing concerns, the <i>box-sizing</i> property can also be used to cast a shadow on an element. The values represent the horizontal/vertical offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required: <code>* { box-sizing: border-box; }</code>
+      </p>
+      <aside class="declarations">
+        <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
+        <div><span>// Outer</span></div>
+        <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
+        <div><span>// Inner</span></div>
+        <div><code>{&nbsp;: 0 8px 6px -6px red; }</code></div>
+        <div><span>// Bottom</span></div>
+        <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
+        <div><span>// Multiple</span></div>
+      </aside>
+    </article>
     <br>
-    <p>
-      <i>border</i> is a property that <em>applies a border around and element</em>. As a shorthand, it accepts keywords and values for its width, style and color.
-    </p>
-    <aside class="declarations">
-      <div><code>{border: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Keyword/Value Description</b></span></div>
-      <div><code>{border-width: thin; }</code></div>
-      <div><span></span></div>
-      <div><code>{border-style: &nbsp;&nbsp;;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: none / solid; }</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: dashed / dotted; }</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: groove / ridge; &nbsp;}</code></div>
-      <div><span></span></div>
-      <div><code>{border-color: #hex; }</code></div>
-      <div><span></span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>border-radius</i> property <em>applies rounded corners</em> on elements, accepting 1, 2 or 3 values.
-    </p>
-    <aside class="declarations">
-      <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
-      <div><span>// Soft Round Corners</span></div>
-    </aside>
-    <p style="margin: 2em;"></p>
-    
-    <h5>Font + Text</h5>
-    <p>Build fuild typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
-    <p>
-      <i>font</i> is a property that is used to <em>set the style of text</em>. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
-    </p>
-    <aside class="declarations">
-      <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-      <div><span><b>// Keyword/Value Description</b></span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>-style</i> <em>is used to italicize text</em>, but is commonly only used within the shorthand.
-    </p>
-    <aside class="declarations">
-      <div><code>{font-style: normal; &nbsp;&nbsp;&nbsp;}</code></div>
-      <div><span>// Not Italicized</span></div>
-    </aside>
-    <br>
-    <p>The <i>-variant</i> <em>makes all text uppercase</em>.</p>
-    <aside class="declarations">
-      <div><code>{font-variant: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: normal; }</code></div>
-      <div><span>// Normal Letters</span></div>
-      <div><code>{&nbsp;: small-caps; }</code></div>
-      <div><span>// Small Caplital Letters</span></div>
-      <div><code>{&nbsp;: petite-caps; }</code></div>
-      <div><span>// Thin Capital Letters</span></div>
-    </aside>
-    <br>
-    <p> 
-      The <i>-weight</i> <em>sets font thickness or width</em>, but its font-family will determine how the weight is applied, if applied at all. Values for this property use an incremental numerical scale from a lot point of 100 to its peak of 900 (increments of 100).
-    </p>
-    <aside class="declarations">
-      <div><code>{font-weight: 600-900; &nbsp;}</code></div>
-      <div><span>// Font Thickness</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>-size</i> <em>specifies the size of the font using numerical values (ie em, rem + px)</em>. The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, <em>sets the space above and below inline elements</em>. 
-    </p>
-    <aside class="declarations">
-      <div><code>{font-size: unit/value;&nbsp;}</code></div>
-      <div><span>// Font Height</span></div>
-      <div><code>{line-height: % value; &nbsp;}</code></div>
-      <div><span>// Line Height</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>font-family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement. Some web-safe fonts include <code>Arial</code>, <code>Garamond</code>, <code>Tahoma</code>, <code>"Lucida Sans"</code>, <code>Georgia</code>, <code>"Palatino Linotype"</code> and <code>Verdana</code>.
-    </p>
-    <aside class="declarations">
-      <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: Arial, sans-serif;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: "Times New Roman", serif;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: monospace;}</code></div>
-      <div><span>// Computer Code</span></div>
-      <div><code>{&nbsp;: cursive;}</code></div>
-      <div><span>// Script</span></div>
-      <div><code>{&nbsp;: small-caption;}</code></div>
-      <div><span>// All Words Smll Caps</span></div>
-    </aside>
-    <br>
-    <p>
-      Although the most convenient method of adding a font to a website would be via a <code>&#60;link&#62;</code> CDN in the <code>&#60;html&#62;</code> markup, it is important to be mindful of measurement units to create responsive typography. Any relative length unit can be used: employ <code>em</code> and <code>pm</code> for the greatest control as they are dependent on parent elements and viewport dimensions. For this reason, it is a good practice to set the <code>html {font-size: 100%;}</code> to ensure the base font-size is set in the browser and to use relative units on all other elements. Other important notes include: use the <code>rem</code> unit on nested elements, avoid using <code>vh/vw</code> units on font-size and use the <code>calc()</code> function to perform math calculations.
-    </p>
-    <aside class="declarations">
-      <div><code>{font-size:  16px / 1.248em / 2rem / 100%;}</code></div>
-      <div><span></span></div>
-      <div><code>{font-size: calc( 16px + (28 - 16) );}</code></div>
-      <div><span></span></div>
-    </aside>
-    <br>
-    <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
-    <aside class="declarations">
-      <div><code>{letter-spacing: value;}</code></div>
-      <div><span>// Space between Letters</span></div>
-      <div><code>{word-spacing: keyword;}</code></div>
-      <div><span>// Space between Words</span></div>
-      <div><code>{text-align: center/justify;}</code></div>
-      <div><span>// Aligns Text</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>text-decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
-    </p>
-    <aside class="declarations">
-      <div><code>{text-decoration: &nbsp;; }</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: underline red; }</code></div>
-      <div><span>// Underline</span></div>
-      <div><code>{&nbsp;: line-through; }</code></div>
-      <div><span>// Line Through Text</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>text-transform</i> property <em>sets the text case and capitalization</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{text-transform: &nbsp;&nbsp;; }</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: uppercase; }</code></div>
-      <div><span>// Capitalizes All Letters</span></div>
-      <div><code>{&nbsp;: capitalize; }</code></div>
-      <div><span>// Capitalizes 1st Letters</span></div>
-    </aside>
-    <br>
-    <p>
-      The <i>writing-mode</i> property <em>sets the vertical and horizontal alignment of text</em>. It is useful when working with Asian languages: when doing so, be sure to implement the <i>word-break</i> property to ensure text words are not broken.
-    </p>
-    <aside class="declarations">
-      <div><code>{writing-mode: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: horizontal-tb;}</code></div>
-      <div><span>// English Style</span></div>
-      <div><code>{&nbsp;: vertical-rl;}</code></div>
-      <div><span>// Japanese Style</span></div>
-      <div><code>{word-break: keep-all;}</code></div>
-      <div><span>// Characters Stay Together</span></div>
-    </aside>
-    
-    <p style="margin: 2em;"></p>
-    <h5>List-style</h5>
-    <p>
-      <i>list-style</i> is a shorthand property that defines a type, position and image. The <i>list-style-type</i> prop <em>sets what type of bullet to use</em>. The <i>list-style-position</i> prop <em>sets the bullet inside or outside of the margin</em>. The <i>list-style-image</i> prop <em>uses a url to set the bullet as an image</em>.
-    </p>
-    <aside class="declarations">
-      <div><code>{list-style-type: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-      <div><span><b>// Keyword Description</b></span></div>
-      <div><code>{&nbsp;: none; }</code></div>
-      <div><span>// No Bullets</span></div>
-      <div><code>{&nbsp;: circle; }</code></div>
-      <div><span>// Transparent Circle</span></div>
-      <div><code>{&nbsp;: disc; }</code></div>
-      <div><span>// Black Circle</span></div>
-      <div><code>{&nbsp;: square; }</code></div>
-      <div><span>// Black Square</span></div>
-      <div><code>{&nbsp;: decimal; }</code></div>
-      <div><span>// Alpha Numbers</span></div>
-      <div><code>{&nbsp;: upper-roman; }</code></div>
-      <div><span>// Roman Numbers</span></div>
-      <div><code>{list-style-position:&nbsp;;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: inside; }</code></div>
-      <div><span>// Inside of Margin</span></div>
-      <div><code>{&nbsp;: outside; }</code></div>
-      <div><span>// Outside of Margin</span></div>
-      <div><code>{list-style-image: &nbsp;&nbsp;&nbsp;;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: url(img/smile.png);}</code></div>
-      <div><span>// URL to Image</span></div>
-    </aside>
+    <!-- Backgrounds + Borders -->
+    <article>
+      <h5>Backgrounds + Borders</h5>
+      <p>
+        The <i>background</i> property is used to <em>layer an image underneath content</em>. As a shorthand, it accepts sub-props that include image, position, size, repeat, attachment, origin, clip and color.
+      </p>
+      <aside class="declarations">
+        <div><code>{background: url(xyz.jpg); }</code></div>
+        <div><span></span></div>
+        <div><code>{background-position: top center; }</code></div>
+        <div><span></span></div>
+        <div><code>{background-size: cover; }</code></div>
+        <div><span></span></div>      
+        <div><code>{background-repeat: no-repeat; }</code></div>
+        <div><span></span></div>
+        <div><code>{background-attachment: fixed; }</code></div>
+        <div><span></span></div>
+        <div><code>{background-origin: border-box; }</code></div>
+        <div><span></span></div>
+        <div><code>{background-clip: content-box; }</code></div>
+        <div><span></span></div>
+        <div><code>{background-color: #3ab1fd; }</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>
+      <p>
+        <i>border</i> is a property that <em>applies a border around and element</em>. As a shorthand, it accepts keywords and values for its width, style and color.
+      </p>
+      <aside class="declarations">
+        <div><code>{border: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
+        <div><span><b>// Keyword/Value Description</b></span></div>
+        <div><code>{border-width: thin; }</code></div>
+        <div><span></span></div>
+        <div><code>{border-style: &nbsp;&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: none / solid; }</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: dashed / dotted; }</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: groove / ridge; &nbsp;}</code></div>
+        <div><span></span></div>
+        <div><code>{border-color: #hex; }</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>border-radius</i> property <em>applies rounded corners</em> on elements, accepting 1, 2 or 3 values.
+      </p>
+      <aside class="declarations">
+        <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
+        <div><span>// Soft Round Corners</span></div>
+      </aside>
+    </article>
+     <br> 
+    <!-- Font + Text -->
+    <article>
+      <h5>Font + Text</h5>
+      <p>Build fuild typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
+      <p>
+        <i>font</i> is a property that is used to <em>set the style of text</em>. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
+      </p>
+      <aside class="declarations">
+        <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span><b>// Keyword/Value Description</b></span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>-style</i> <em>is used to italicize text</em>, but is commonly only used within the shorthand.
+      </p>
+      <aside class="declarations">
+        <div><code>{font-style: normal; &nbsp;&nbsp;&nbsp;}</code></div>
+        <div><span>// Not Italicized</span></div>
+      </aside>
+      <br>
+      <p>The <i>-variant</i> <em>makes all text uppercase</em>.</p>
+      <aside class="declarations">
+        <div><code>{font-variant: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: normal; }</code></div>
+        <div><span>// Normal Letters</span></div>
+        <div><code>{&nbsp;: small-caps; }</code></div>
+        <div><span>// Small Caplital Letters</span></div>
+        <div><code>{&nbsp;: petite-caps; }</code></div>
+        <div><span>// Thin Capital Letters</span></div>
+      </aside>
+      <br>
+      <p> 
+        The <i>-weight</i> <em>sets font thickness or width</em>, but its font-family will determine how the weight is applied, if applied at all. Values for this property use an incremental numerical scale from a lot point of 100 to its peak of 900 (increments of 100).
+      </p>
+      <aside class="declarations">
+        <div><code>{font-weight: 600-900; &nbsp;}</code></div>
+        <div><span>// Font Thickness</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>-size</i> <em>specifies the size of the font using numerical values (ie em, rem + px)</em>. The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, <em>sets the space above and below inline elements</em>. 
+      </p>
+      <aside class="declarations">
+        <div><code>{font-size: unit/value;&nbsp;}</code></div>
+        <div><span>// Font Height</span></div>
+        <div><code>{line-height: % value; &nbsp;}</code></div>
+        <div><span>// Line Height</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>font-family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement. Some web-safe fonts include <code>Arial</code>, <code>Garamond</code>, <code>Tahoma</code>, <code>"Lucida Sans"</code>, <code>Georgia</code>, <code>"Palatino Linotype"</code> and <code>Verdana</code>.
+      </p>
+      <aside class="declarations">
+        <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: Arial, sans-serif;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: "Times New Roman", serif;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: monospace;}</code></div>
+        <div><span>// Computer Code</span></div>
+        <div><code>{&nbsp;: cursive;}</code></div>
+        <div><span>// Script</span></div>
+        <div><code>{&nbsp;: small-caption;}</code></div>
+        <div><span>// All Words Smll Caps</span></div>
+      </aside>
+      <br>
+      <p>
+        Although the most convenient method of adding a font to a website would be via a <code>&#60;link&#62;</code> CDN in the <code>&#60;html&#62;</code> markup, it is important to be mindful of measurement units to create responsive typography. Any relative length unit can be used: employ <code>em</code> and <code>pm</code> for the greatest control as they are dependent on parent elements and viewport dimensions. For this reason, it is a good practice to set the <code>html {font-size: 100%;}</code> to ensure the base font-size is set in the browser and to use relative units on all other elements. Other important notes include: use the <code>rem</code> unit on nested elements, avoid using <code>vh/vw</code> units on font-size and use the <code>calc()</code> function to perform math calculations.
+      </p>
+      <aside class="declarations">
+        <div><code>{font-size:  16px / 1.248em / 2rem / 100%;}</code></div>
+        <div><span></span></div>
+        <div><code>{font-size: calc( 16px + (28 - 16) );}</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>
+      <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
+      <aside class="declarations">
+        <div><code>{letter-spacing: value;}</code></div>
+        <div><span>// Space between Letters</span></div>
+        <div><code>{word-spacing: keyword;}</code></div>
+        <div><span>// Space between Words</span></div>
+        <div><code>{text-align: center/justify;}</code></div>
+        <div><span>// Aligns Text</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>text-decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
+      </p>
+      <aside class="declarations">
+        <div><code>{text-decoration: &nbsp;; }</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: underline red; }</code></div>
+        <div><span>// Underline</span></div>
+        <div><code>{&nbsp;: line-through; }</code></div>
+        <div><span>// Line Through Text</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>text-transform</i> property <em>sets the text case and capitalization</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{text-transform: &nbsp;&nbsp;; }</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: uppercase; }</code></div>
+        <div><span>// Capitalizes All Letters</span></div>
+        <div><code>{&nbsp;: capitalize; }</code></div>
+        <div><span>// Capitalizes 1st Letters</span></div>
+      </aside>
+      <br>
+      <p>
+        The <i>writing-mode</i> property <em>sets the vertical and horizontal alignment of text</em>. It is useful when working with Asian languages: when doing so, be sure to implement the <i>word-break</i> property to ensure text words are not broken.
+      </p>
+      <aside class="declarations">
+        <div><code>{writing-mode: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;;}</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: horizontal-tb;}</code></div>
+        <div><span>// English Style</span></div>
+        <div><code>{&nbsp;: vertical-rl;}</code></div>
+        <div><span>// Japanese Style</span></div>
+        <div><code>{word-break: keep-all;}</code></div>
+        <div><span>// Characters Stay Together</span></div>
+      </aside>
+
+      <p style="margin: 2em;"></p>
+      <h5>List-style</h5>
+      <p>
+        <i>list-style</i> is a shorthand property that defines a type, position and image. The <i>list-style-type</i> prop <em>sets what type of bullet to use</em>. The <i>list-style-position</i> prop <em>sets the bullet inside or outside of the margin</em>. The <i>list-style-image</i> prop <em>uses a url to set the bullet as an image</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{list-style-type: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{&nbsp;: none; }</code></div>
+        <div><span>// No Bullets</span></div>
+        <div><code>{&nbsp;: circle; }</code></div>
+        <div><span>// Transparent Circle</span></div>
+        <div><code>{&nbsp;: disc; }</code></div>
+        <div><span>// Black Circle</span></div>
+        <div><code>{&nbsp;: square; }</code></div>
+        <div><span>// Black Square</span></div>
+        <div><code>{&nbsp;: decimal; }</code></div>
+        <div><span>// Alpha Numbers</span></div>
+        <div><code>{&nbsp;: upper-roman; }</code></div>
+        <div><span>// Roman Numbers</span></div>
+        <div><code>{list-style-position:&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: inside; }</code></div>
+        <div><span>// Inside of Margin</span></div>
+        <div><code>{&nbsp;: outside; }</code></div>
+        <div><span>// Outside of Margin</span></div>
+        <div><code>{list-style-image: &nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: url(img/smile.png);}</code></div>
+        <div><span>// URL to Image</span></div>
+      </aside>
+    </article>
   </section>
-  
+  <!-- ************************************************** -->
   <hr>
-  
-  <!-- Structuring a Stylesheet -->
+  <!-- ************************************************** -->
+  <!-- Part 4: Structuring a Stylesheet -->
   <section>
     <h4>Part 4: Style Sheet Format and Structure</h4>
     <p>
@@ -897,10 +917,10 @@ include ("../inc/journalHeader.php");
     </blockquote>
   </section>
   <p style="margin: 2em;"></p>
-</article>   
-    
-
-
+</article> 
+  <!-- ************************************************** -->
+  <hr>
+  <!-- ************************************************** -->
 <!-- ++Debugging CSS++ 
 <div>
   <h4>Debugging CSS</h4>
