@@ -316,8 +316,8 @@ include ("../inc/journalHeader.php");
       </p>
       <blockquote><code>{display: inline / block / none;}</code></blockquote>
       <p>
-        These keywords are old hat in that they were used from the start to emphasize horizontal and vertical alignment, but their value has waned over time.
-        The keyword <code>inline</code> is the default value for elements <em>that wraps text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. Use the <code>none</code> keyword to <em>hide elements</em>.
+        These keywords are old hat in that they were used from the start to emphasize horizontal and vertical layout, but their value has waned over time.
+        The keyword <code>inline</code> is the default value for elements <em>that wrap text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. Use the <code>none</code> keyword to <em>hide elements</em>.
       </p>
       <p>
         It can be a cumbersome task to use the aforementioned keywords to style a large website, but designers did it this way for eons basing elements as either a row or column. Nowadays, layout techniques are implemented using the keywords flex and grid, and although nearly the same, both are used in distinct ways. <code>flex</code> is one-dimensional and is best used to arrange individual items in a single row or column whereas <code>grid</code> is two-dimensional and is best used to establish containers by arranging items in multiple rows or columns. Thus, what distinguishes these keywords is that grid defines a parent element while flexbox defines child elements.  With that in mind, lets first focus on structuring a container. 
@@ -326,51 +326,131 @@ include ("../inc/journalHeader.php");
       <h6>The Grid</h6>
       <!-- Grid -->
       <p>
-        The <code>grid</code> keyword acts like flexbox, but is more powerful in <em>creating a grid container</em>. Grid is similar to flexbox in that it justifies content and aligns items. The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
+        The <code>{display: grid; }</code> declaration sets up a layout pattern that allows elements to be placed in fixed or flexible positions along the cross-axis of perpendicular lines. This property has various sub-props that can be used to manipulate the layout according to specifications.
       </p>
       <aside class="declarations">
-        <div><code>{display: Grid; }</code></div>
-        <div><span><b>// Grid Structured Layout</b></span></div>
+        <div><code>{display: grid; }</code></div>
+        <div><span>// Implements Layout</span></div>
+        <div><code>{grid-template-column: value;}</code></div>
+        <div><span>// Explicit Column</span></div>
+        <div><code>{grid-template-row: value;}</code></div>
+        <div><span>// Explicit Row</span></div>
+        <div><code>{grid-template-area keyword;}</code></div>
+        <div><span>// Explicit Layout</span></div>
+        <div><code>{grid-auto-flow: keyword;}</code></div>
+        <div><span>// Implicit Layout</span></div>
+        <div><code>{grid-gap: px / em;}</code></div>
+        <div><span>// Gutters</span></div>
       </aside>
       <br>
       <p>
-        The <i>justify-items</i> sub-prop <em>aligns grid items horizontally</em>.
+        The sub-props <code>{g-t-c: val;}</code> and <code>{g-t-r: val;}</code> are used to <em>explicitly specify column and row track sizes</em>. The <code>{g-t-a: key;}</code> sub-prop is an elaborate method to accomplish this same feat, yet, is outside of the project scope. To <em>implicitly layout columns and rows</em>, invoke the auto-placement algorithm using <code>{g-a-f: key;}</code>: flow direction is determined using the keywords <code>column</code> or <code>row</code>. Additionally, the keyword <code>dense</code> can be added to the declaration in order to remove dead space between items of varying size, forcing columns or rows to flow in a natural order. In any case, use <code>{grid-gap: value;}</code> to add gutters between both columns and rows.
+      </p>
+      <p>
+        The length units previously learned can be applied to sub-properties here for customization, but the true power of <code>grid</code> is the use of a unique set of keywords, math functions and fractional units. The latter is easiest to comprehend so lets start there and work it into the other methods. 
+      </p>
+      <p>
+        A <i>fractional unit</i> <code>#fr</code> specifies that <em>an element take up a fraction of space where an allotment is available</em>: <code>1fr</code> uses one fraction of space; <code>2fr</code> uses two, so on and so forth. Fractional units consistently size elements and work well with math functions.
       </p>
       <aside class="declarations">
-        <div><code>{justify-items: &nbsp;&nbsp;; }</code></div>
-        <div><span><b>// Keyword Description</b></span></div>
+        <div><code>{g-t-c: 1fr;}</code></div>
+        <div><span>// All Columns are of Equal Width</span></div>
+        <div><code>{g-t-c: 2fr 1fr;}</code></div>
+        <div><span>// Col 1 is Twice the Size of Col 2</span></div>
+        <div><code>{g-t-r: 1fr;}</code></div>
+        <div><span>// All Rows are of Equal Height</span></div>
+      </aside>
+      <br>
+      <p>
+        The <code>minmax(x, y)</code> function simplifies calculating a formula for distributing space among elements by <em>establishing a range between a minimum <code>(x)</code> and maximum <code>(y)</code> value to explicitly set columns or rows</em>. The <code>auto</code> keyword used in the examples below <em>sets the the value at minimum or maximum.</em>
+      </p>
+      <aside class="declarations">
+        <div><code>{g-t-c: minmax(200px, auto);}</code></div>
+        <div><span>// Set MIN Value</span></div>
+        <div><code>{g-t-r: minmax(auto, 50%);}</code></div>
+        <div><span>// Set MAX Value</span></div>
+        <div><code>{g-t-c: minmax(150px, auto);}</code></div>
+        <div><span>// At least 150px Wide</span></div>
+        <div><code>{g-t-r: minmax(auto, 88px);}</code></div>
+        <div><span>// No Taller than 88px</span></div>
+        <div><code>{g-t-c: minmax(200px, 1fr);}</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>
+      <p>The <code>repeat(x, y)</code> function <em>allows the declaration to be applied repeatedly</em>.</p>
+      <aside class="declarations">
+        <div><code>{g-t-c: repeat(3, 1fr);}</code></div>
+        <div><span>// 3 Columns 1 Fraction in Width</span></div>
+      </aside>
+      <br>
+      <p>
+        The essential <code>grid</code> keywords designers need to know: <code>auto-fill</code>, <code>auto-fit</code>, <code>min-content</code> and <code>max-content</code>. 
+      </p>
+      <p>
+        Both <code>auto-fill</code> and <code>auto-fit</code> are used to <em>automatically size columns</em> <mark><small>(cannot be used to size rows)</small></mark>. Both add as many columns to the row as possible, but the difference is that the former <code>fills</code> the row with as many items as possible, while the latter will <code>fit</code> items before collapsing onto the next row. <code>min-content</code> and <code>max-content</code> represent the <em>minimum and maximum <b>width</b> allotted for content in a grid item</em>.
+      </p>
+      
+      <aside class="declarations">
+        <div><code>{g-t-c: repeat(auto-fill, minmax(x, y));}</code></div>
+        <div><span></span></div>
+        <div><code>{g-t-c: auto-fit / auto-fill;}</code></div>
+        <div><span></span></div>
+        <div><code>{g-t-c: minmax(auto, 1fr);}</code></div>
+        <div><span></span></div>
+        <div><code>{g-t-c: minmax(auto, max-content);}</code></div>
+        <div><span></span></div>
+        <div><code>{g-t-c: min-content / max-content;}</code></div>
+        <div><span></span></div>
+        <!--<div><code>{g-t-c: auto-flow dense 100px / 1fr 2fr;}</code></div>
+        <div><span></span></div>
+        <div><code>{g-a-f: column;}</code></div>
+        <div><span></span></div>
+        <div><code>{g-a-f: row dense;}</code></div>
+        <div><span></span></div>
+        <div><code>{grid: 100px 300px / auto-flow 200px;}</code></div>
+        <div></div>
+        <div><code>{grid: auto-flow dense 100px / 1fr 2fr;}</code></div>-->
+      </aside>
+      <br>
+      <p>Typical Row-Grid</p>
+      <aside class="declarations">
+        <div><code>{display: grid;}</code></div>
+        <div><span></span></div>
+        <div><code>{grid-template-rows: repeat(auto-fill, minmax(140px, 200px));}</code></div>
+        <div><span></span></div>
+        <div><code>{grid-auto-flow: column (or row);}</code></div>
+        <div><span></span></div>
+        <div><code>{height: 100%;}</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>
+      <!-- Transition to grid-items then FLEXbox -->
+      <p>
+        There are also properties used with <code>grid</code> that targets layout structure for grid-items. The <code>justify-items</code> and <code>align-items</code> properties <em>provide horizontal and vertical alignment of grid items</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{justify-items: &nbsp;;}</code></div>
+        <div><span><b>// Horizontal Alignment</b></span></div>
+        <div><code>{align-items: &nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span><b>// Vertical Alignment</b></span></div>
         <div><code>{&nbsp;: stretch; }</code></div>
         <div><span>// Default - Fills Width of Cell</span></div>
         <div><code>{&nbsp;: start; }</code></div>
-        <div><span>// Aligns Items to Left</span></div>
+        <div><span>// Aligns Items to Left / Top</span></div>
         <div><code>{&nbsp;: end; }</code></div>
-        <div><span>// Aligns Items to Right</span></div>
+        <div><span>// Aligns Items to Right / Bottom</span></div>
         <div><code>{&nbsp;: center; }</code></div>
         <div><span>// Center Aligns Items</span></div>
       </aside>
       <br>
       <p>
-        The <i>align-items</i> sub-prop <em>aligns grid items vertically</em>.
-      </p>
-      <aside class="declarations">
-        <div><code>{align-items: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
-        <div><span><b>// Keyword Description</b></span></div>
-        <div><code>{&nbsp;: stretch; }</code></div>
-        <div><span>// Default - Fills Width of Cell</span></div>
-        <div><code>{&nbsp;: start; }</code></div>
-        <div><span>// Aligns Items to Left</span></div>
-        <div><code>{&nbsp;: end; }</code></div>
-        <div><span>// Aligns Items to Right</span></div>
-        <div><code>{&nbsp;: center; }</code></div>
-        <div><span>// Center Aligns Items</span></div>
-      </aside>
-      <br>
-      <p>
-        Use the <i>justify-content</i> and <i>align-content</i> sub-props <em>whenever the total size of the grid/item is less than the size of its container</em> to set the alignment of the grid/item within the container.
+        The <code>justify-content</code> and <code>align-content</code> properties to <em>align grid-items horizontally or vertically</em> within its parent container.
       </p>
       <aside class="declarations">
         <div><code>{justify-content: ;}</code></div>
-        <div><span><b>// Keyword Description</b></span></div>
+        <div><span><b>// Horizontal Alignment</b></span></div>
+        <div><code>{align-content: ;}</code></div>
+        <div><span><b>// Vertical Alignment</b></span></div>
         <div><code>{&nbsp;: start;}</code></div>
         <div><span>// Default Value (Left)</span></div>
         <div><code>{&nbsp;: end; }</code></div>
@@ -383,47 +463,7 @@ include ("../inc/journalHeader.php");
         <div><span>// Equal Space Around Items</span></div>
       </aside>
       <br>
-      <p>
-        The <i>grid-template-columns</i> and <i>grid-template-rows</i> sub-props <em>outlines grid container columns and rows</em>, respectively. Add margins between the columns and rows by using the  <i>grid-column-gap</i> and <i>grid-row-gap</i> sub-props: <i>grid-gap</i> is the shorthand.
-      </p>
-      <aside class="declarations">
-        <div><code>{g-t-c: unit/value;}</code></div>
-        <div><span>// Vertical Container</span></div>
-        <div><code>{g-t-r: unit/value;}</code></div>
-        <div><span>// Horizontal Container</span></div>
-        <div><code>{g-c-g: unit/value;}</code></div>
-        <div><span>// Vertical Gutter</span></div>
-        <div><code>{g-r-g: unit/value;}</code></div>
-        <div><span>// Horizontal Gutter</span></div>
-        <div><code>{grid-gap: unit/value;}</code></div>
-        <div><span>// Gutters</span></div>
-      </aside>
-      <br>
-      <p>
-        The documentation on flexbox and grid is extensive. There is much more that can be done to control the layout of elements using these keywords with the display property. Useful units and length values:
-      </p>
-      <aside class="declarations">
-      <div><code>{&nbsp;: repeat(3, 1fr);}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: minmax(200px, 1fr);}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: auto-fit / auto-fill;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: repeat(auto-fill, minmax(x,y));}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: 25% 100px auto;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: min-content/max-content;}</code></div>
-      <div><span></span></div>
-      <div><code>{&nbsp;: 25% 100px auto;}</code></div>
-      <div><span></span></div>
-      <div><code>{grid: 100px 300px / auto-flow 200px;}</code></div>
-      <div></div>
-      <div><code>{grid: auto-flow dense 100px / 1fr 2fr;}</code></div>
-    </aside>
-      <br>
-      <h6>Flexbox</h6>
-      <!-- Flex -->
+      <!--<h6>Flexbox</h6>
       <p>
         The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
       </p>
@@ -469,7 +509,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: stretch;}</code></div>
         <div><span>// Fills Container</span></div>
       </aside>
-      <br>
+      <br>-->
     </article>
     
     <!-- Size and Placement -->
