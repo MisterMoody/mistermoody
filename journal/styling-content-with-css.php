@@ -662,7 +662,10 @@ include ("../inc/journalHeader.php");
     <article>
       <h5>Colors</h5>
       <p>
-        The <i>color</i> property accepts any color value to <em>set the color of text</em> and is combined with other properties to color backgrounds, borders and what have you.
+        The <i>color</i> property <em>specifies the color of a text element</em> and can be applied to text decorations and shadows. A color can be assigned using a <i>color name</i> or an <i>rgb</i> value. There is a standard list of color names that can be used and the easiest way to write and RGB value is to use hexadecimal string notation. 
+      </p>
+      <p>
+        RGB values can be invoked using a function that can be especially useful for professional artists. The <code>rgb()</code> function accepts four parameter values for red, green, blue and opaqueness (optional). The <code>hsl()</code> function is unique it that it controls the color hue, saturation and lightness. These functions are worth exploring further.
       </p>
       <aside class="declarations">
         <div><code>{color: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -685,20 +688,9 @@ include ("../inc/journalHeader.php");
       </aside>
       <br>
       <p>
-        Besides eliminating sizing concerns, the <i>box-sizing</i> property can also be used to cast a shadow on an element. The values represent the horizontal/vertical offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required: <code>* { box-sizing: border-box; }</code>
+        There are lot of cool ways to style elements using colors, but choosing the right color can be a burdensome process for multiple reasons. Designers who are not natural artists should learn concepts of <i>color theory</i>, seek out <i>palette</i> tools that assist with creating a compatible color schemes and be weary of <i>accessibility</i> concerns that could impact the ability of color-blind users to effectively navigate a web app.
       </p>
-      <aside class="declarations">
-        <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
-        <div><span>// Outer</span></div>
-        <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
-        <div><span>// Inner</span></div>
-        <div><code>{&nbsp;: 0 8px 6px -6px red; }</code></div>
-        <div><span>// Bottom</span></div>
-        <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
-        <div><span>// Multiple</span></div>
-      </aside>
     </article>
-    <br>
     <!-- Backgrounds + Borders -->
     <article>
       <h5>Backgrounds + Borders</h5>
@@ -751,12 +743,28 @@ include ("../inc/journalHeader.php");
         <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
         <div><span>// Soft Round Corners</span></div>
       </aside>
+      <br>
+      <p>
+        The <i>box-sizing</i> property can also be used to cast a shadow on an element. The values represent the horizontal/vertical offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required.
+      </p>
+      <aside class="declarations">
+        <div><code>{box-sizing: &nbsp;&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
+        <div><span>// Outer</span></div>
+        <div><code>{&nbsp;: 1px 1px 2px  rgba(0, 0, 0, 0.4); }</code></div>
+        <div><span>// Inner</span></div>
+        <div><code>{&nbsp;: 0 8px 6px -6px red; }</code></div>
+        <div><span>// Bottom</span></div>
+        <div><code>{&nbsp;: inset 5px 5px 10px #000; }</code></div>
+        <div><span>// Multiple</span></div>
+      </aside>
     </article>
      <br> 
     <!-- Font + Text -->
     <article>
       <h5>Font + Text</h5>
-      <p>Build fuild typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
+      <p>Build fluid typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
       <p>
         <i>font</i> is a property that is used to <em>set the style of text</em>. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
       </p>
