@@ -303,8 +303,9 @@ include ("../inc/journalHeader.php");
     <article>
       <h4>Part 3: Making Declarations</h4>
       <p>
-        There are a lot of properties available for styling a document: no project regardless of size will utilize all of them. Using the <code>&#60;html&#62;</code> document from the <a href="">HTML Markup</a> lesson, lets begin making declarations using common scenarios a designer could expect to encounter when designing an aesthetically pleasing, yet, fully responsive website for a restaurant. This project features a flexible-grid layout, a manageable global navigation system, images and lists to illustrate and explain food products, respectively, combined with a call-to-action that would pursue a user to make a purchase.
+        There are a lot of properties available for styling a document: no project regardless of size will utilize all of them. Using the <code>&#60;html&#62;</code> document from the <a href="">HTML Markup</a> lesson, lets begin making declarations using common scenarios a designer could expect to encounter when designing an aesthetically pleasing, yet, fully responsive website.
       </p>
+      <!--  for a restaurant. This project features a flexible-grid layout, a manageable global navigation system, images and lists to illustrate and explain food products, respectively, combined with a call-to-action that would pursue a user to make a purchase -->
       <!-- ??add Animation, Transition + Transform??-->
     </article>
     
@@ -312,7 +313,7 @@ include ("../inc/journalHeader.php");
     <article>
       <h5>Visual Layout</h5>
       <p>
-        When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration <em>eliminates spacing concerns</em> by setting a foundation for layout and positional properties used thereafter. From there, the first property designers reach for is that of <i>display</i>, which <em>determines how an element is displayed</em>. The main goal of this property emphasizes horizontal and vertical element alignment. 
+        When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration <em>eliminates spacing concerns</em> by taking into account an elements padding and border along with its width and height. Ths sets a foundation for layout and positional properties used on elements thereafter. From there, the first property designers reach for is that of <i>display</i>, which <em>determines how an element is displayed</em>. The main goal of this property emphasizes horizontal and vertical element alignment. 
       </p>
       <blockquote><code>{display: inline / block / none;}</code></blockquote>
       <p>
@@ -326,7 +327,7 @@ include ("../inc/journalHeader.php");
       <h6>The Grid</h6>
       <!-- Grid -->
       <p>
-        The <code>{display: grid; }</code> declaration sets up a layout pattern that allows elements to be placed in fixed or flexible positions along the cross-axis of perpendicular lines. This property has various sub-props that can be used to manipulate the layout according to specifications.
+        The <code>{display: grid; }</code> declaration sets up a layout pattern that allows elements to be placed in fixed or flexible positions along the cross-axis of perpendicular lines. There are sub-properties that designers should familiarize themselves with to manipulate the layout according to specifications.
       </p>
       <aside class="declarations">
         <div><code>{display: grid; }</code></div>
@@ -347,81 +348,87 @@ include ("../inc/journalHeader.php");
         The sub-props <code>{g-t-c: val;}</code> and <code>{g-t-r: val;}</code> are used to <em>explicitly specify column and row track sizes</em>. The <code>{g-t-a: key;}</code> sub-prop is an elaborate method to accomplish this same feat, yet, is outside of the project scope. To <em>implicitly layout columns and rows</em>, invoke the auto-placement algorithm using <code>{g-a-f: key;}</code>: flow direction is determined using the keywords <code>column</code> or <code>row</code>. Additionally, the keyword <code>dense</code> can be added to the declaration in order to remove dead space between items of varying size, forcing columns or rows to flow in a natural order. In any case, use <code>{grid-gap: value;}</code> to add gutters between both columns and rows.
       </p>
       <p>
-        The length units previously learned can be applied to sub-properties here for customization, but the true power of <code>grid</code> is the use of a unique set of keywords, math functions and fractional units. The latter is easiest to comprehend so lets start there and work it into the other methods. 
+        The length units previously learned can be applied to sub-properties here for customization, but the true power of <code>grid</code> is the use of a unique set of keywords, math functions and fractional units.
       </p>
+      <p>
+        The essential <code>grid</code> keywords designers need to know: <code>auto-fill</code>, <code>auto-fit</code>, <code>min-content</code> and <code>max-content</code>. Both <code>auto-fill</code> and <code>auto-fit</code> are used to <em>automatically size columns</em> <mark><small>(cannot be used to size rows)</small></mark>. Both add as many columns to the row as possible, but the difference is that the former <code>fills</code> the row with as many items as possible, while the latter will <code>fit</code> items before collapsing onto the next row. <code>min-content</code> and <code>max-content</code> represent the <em>minimum and maximum <b>width</b> allotted for content in a grid item</em>.
+      </p>
+      <aside class="declarations">
+        <div><code>{g-t-c: auto-fit / auto-fill;}</code></div>
+        <div><span></span></div>
+        <div><code>{g-t-c: min-content / max-content;}</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>
       <p>
         A <i>fractional unit</i> <code>#fr</code> specifies that <em>an element take up a fraction of space where an allotment is available</em>: <code>1fr</code> uses one fraction of space; <code>2fr</code> uses two, so on and so forth. Fractional units consistently size elements and work well with math functions.
       </p>
       <aside class="declarations">
         <div><code>{g-t-c: 1fr;}</code></div>
         <div><span>// All Columns are of Equal Width</span></div>
-        <div><code>{g-t-c: 2fr 1fr;}</code></div>
-        <div><span>// Col 1 is Twice the Size of Col 2</span></div>
-        <div><code>{g-t-r: 1fr;}</code></div>
-        <div><span>// All Rows are of Equal Height</span></div>
+        <div><code>{g-t-r: 2fr 1fr;}</code></div>
+        <div><span>// Row 1 is Twice the Size of Row 2</span></div>
       </aside>
       <br>
       <p>
-        The <code>minmax(x, y)</code> function simplifies calculating a formula for distributing space among elements by <em>establishing a range between a minimum <code>(x)</code> and maximum <code>(y)</code> value to explicitly set columns or rows</em>. The <code>auto</code> keyword used in the examples below <em>sets the the value at minimum or maximum.</em>
+        The <code>minmax(x, y)</code> function simplifies calculating a formula for distributing space among elements by <em>establishing a range between a minimum <code>(x)</code> and maximum <code>(y)</code> value to explicitly set columns or rows</em>. It accepts any of the aforementioned keywords and measurement units as a value. In the example below the <code>auto</code> keyword is used to <em>set the the value at minimum or maximum.</em>
       </p>
       <aside class="declarations">
-        <div><code>{g-t-c: minmax(200px, auto);}</code></div>
+        <div><code>{g-t- : &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: minmax(200px, auto);}</code></div>
         <div><span>// Set MIN Value</span></div>
-        <div><code>{g-t-r: minmax(auto, 50%);}</code></div>
+        <div><code>{&nbsp;: minmax(auto, 50%);}</code></div>
         <div><span>// Set MAX Value</span></div>
-        <div><code>{g-t-c: minmax(150px, auto);}</code></div>
+        <div><code>{&nbsp;: minmax(150px, auto);}</code></div>
         <div><span>// At least 150px Wide</span></div>
-        <div><code>{g-t-r: minmax(auto, 88px);}</code></div>
+        <div><code>{&nbsp;: minmax(auto, 88px);}</code></div>
         <div><span>// No Taller than 88px</span></div>
-        <div><code>{g-t-c: minmax(200px, 1fr);}</code></div>
+        <div><code>{&nbsp;: minmax(200px, 1fr);}</code></div>
+        <div><span>// Btw 200px - 1fr Wide</span></div>
+        <div><code>{&nbsp;: minmax(auto, max-content);}</code></div>
         <div><span></span></div>
       </aside>
       <br>
-      <p>The <code>repeat(x, y)</code> function <em>allows the declaration to be applied repeatedly</em>.</p>
+      <p>
+        The <code>repeat(x, y)</code> function is an awesome features that <em>allows the declaration to be applied repeatedly</em> to an element, and can be combined with all of the aforementioned keywords and values.
+      </p>
       <aside class="declarations">
-        <div><code>{g-t-c: repeat(3, 1fr);}</code></div>
+        <div><code>{&nbsp;: repeat(3, 1fr);}</code></div>
         <div><span>// 3 Columns 1 Fraction in Width</span></div>
       </aside>
       <br>
-      <p>
-        The essential <code>grid</code> keywords designers need to know: <code>auto-fill</code>, <code>auto-fit</code>, <code>min-content</code> and <code>max-content</code>. 
-      </p>
-      <p>
-        Both <code>auto-fill</code> and <code>auto-fit</code> are used to <em>automatically size columns</em> <mark><small>(cannot be used to size rows)</small></mark>. Both add as many columns to the row as possible, but the difference is that the former <code>fills</code> the row with as many items as possible, while the latter will <code>fit</code> items before collapsing onto the next row. <code>min-content</code> and <code>max-content</code> represent the <em>minimum and maximum <b>width</b> allotted for content in a grid item</em>.
-      </p>
-      
+      <p>Designer magic takes place once these powers are combined!</p>
       <aside class="declarations">
-        <div><code>{g-t-c: repeat(auto-fill, minmax(x, y));}</code></div>
+        <div><code>{&nbsp;: repeat(auto-fill, minmax(auto, max-content));}</code></div>
         <div><span></span></div>
-        <div><code>{g-t-c: auto-fit / auto-fill;}</code></div>
-        <div><span></span></div>
-        <div><code>{g-t-c: minmax(auto, 1fr);}</code></div>
-        <div><span></span></div>
-        <div><code>{g-t-c: minmax(auto, max-content);}</code></div>
-        <div><span></span></div>
-        <div><code>{g-t-c: min-content / max-content;}</code></div>
-        <div><span></span></div>
-        <!--<div><code>{g-t-c: auto-flow dense 100px / 1fr 2fr;}</code></div>
-        <div><span></span></div>
-        <div><code>{g-a-f: column;}</code></div>
-        <div><span></span></div>
-        <div><code>{g-a-f: row dense;}</code></div>
-        <div><span></span></div>
-        <div><code>{grid: 100px 300px / auto-flow 200px;}</code></div>
-        <div></div>
-        <div><code>{grid: auto-flow dense 100px / 1fr 2fr;}</code></div>-->
       </aside>
       <br>
+      <!-- GRID EXAMPLES -->
+      <h6>Grid Examples</h6>
       <p>Typical Row-Grid</p>
       <aside class="declarations">
         <div><code>{display: grid;}</code></div>
         <div><span></span></div>
-        <div><code>{grid-template-rows: repeat(auto-fill, minmax(140px, 200px));}</code></div>
+        <div><code>{g-t-r: repeat(auto-fill, minmax(140px, 200px));}</code></div>
         <div><span></span></div>
-        <div><code>{grid-auto-flow: column (or row);}</code></div>
+        <div><code>{g-a-f: column (or row);}</code></div>
         <div><span></span></div>
         <div><code>{height: 100%;}</code></div>
         <div><span></span></div>
+      </aside>
+      <br>
+      <p>Grid FLOW</p>
+      <aside class="declarations">
+        <div><code>{g-a-f: column;}</code></div>
+        <div><span></span></div>
+        <div><code>{g-a-f: row dense;}</code></div>
+        <div><span></span></div>
+        <div><code>{g-t-c: auto-flow dense 100px / 1fr 2fr;}</code></div>
+        <div><span></span></div>
+        <div><code>{grid: 100px 300px / auto-flow 200px;}</code></div>
+        <div></div>
+        <div><code>{grid: auto-flow dense 100px / 1fr 2fr;}</code></div>
       </aside>
       <br>
       <!-- Transition to grid-items then FLEXbox -->
@@ -452,9 +459,9 @@ include ("../inc/journalHeader.php");
         <div><code>{align-content: ;}</code></div>
         <div><span><b>// Vertical Alignment</b></span></div>
         <div><code>{&nbsp;: start;}</code></div>
-        <div><span>// Default Value (Left)</span></div>
+        <div><span>// Default Value - Left / Top</span></div>
         <div><code>{&nbsp;: end; }</code></div>
-        <div><span>// Aligns Items to Right</span></div>
+        <div><span>// Aligns Items to Right / Bottom</span></div>
         <div><code>{&nbsp;: center;}</code></div>
         <div><span>// Center Aligns Items</span></div>
         <div><code>{&nbsp;: space-between;}</code></div>
@@ -463,7 +470,7 @@ include ("../inc/journalHeader.php");
         <div><span>// Equal Space Around Items</span></div>
       </aside>
       <br>
-      <!--<h6>Flexbox</h6>
+      <h6>Flexbox</h6>
       <p>
         The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
       </p>
@@ -509,13 +516,13 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: stretch;}</code></div>
         <div><span>// Fills Container</span></div>
       </aside>
-      <br>-->
+      <br>
     </article>
     
     <!-- Size and Placement -->
     <article>
       <h5>Sizing and Placement</h5>
-      <p>Lorem ipsum...</p>
+      <p>There are a variety of elements that allow designers to make modifications that effect size and placement.</p>
       <!-- -->
       <h6>Sizing and Shaping Elements</h6>
       <!-- Height + Width -->
@@ -558,8 +565,38 @@ include ("../inc/journalHeader.php");
       <br>  
       <!-- Position + top/right/bottom/right + Z-Index -->
       <h6>Positional Placement</h6>
+      <p>There are several ways to position elements: techniques explained herein highlight but a few.</p>
+      <!-- Float + Overflow -->
       <p>
-        The <i>position</i> property can be used to re-position an element from its initial position. <i>positional properties</i> are used <em>in conjunction with</em> the position property to <em>set the precise placement</em> of an element when its position is either relative or absolute.
+        The <i>float</i> property is used to <em>wrap text around images</em>. This is a simple method of positioning an element, but designers should consider that a floated elements position is dependent on the position(s) of element(s) that surround it. One way to contain a floated element is to use the <i>overflow</i> property <em>to control what happens to content that breaks outside of its boundaries</em>: this declaration is applied to the parent element of the floated element..
+      </p>
+      <aside class="declarations">
+        <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: none;}</code></div>
+        <div><span>// Default Value (No Float)</span></div>
+        <div><code>{&nbsp;: left;}</code></div>
+        <div><span>// Floats Left</span></div>
+        <div><code>{&nbsp;: right;}</code></div>
+        <div><span>// Floats Right</span></div>
+        <div><code>{overflow: &nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: auto; }</code></div>
+        <div><span>// Hidden Scroll(s) unless Overflow</span></div>
+        <div><code>{&nbsp;: visible;}</code></div>
+        <div><span>// Default Value</span></div>
+        <div><code>{&nbsp;: hidden;}</code></div>
+        <div><span>// Hides Overflow</span></div>
+        <div><code>{&nbsp;: scroll;}</code></div>
+        <div><span>// Scroll(s) for Overflow</span></div>
+      </aside>
+      <br>  
+      <!-- Position + Z-Index -->
+      <p>
+        The <i>position</i> property offers greater control over how an element is positioned as it can be used <em>to re-position an element from its initial position</em>. It accepts one of five keywords to provide instructions on how and where an element is placed. By default, an element will flow in a natural order amongst fellows. 
+      </p>
+      <p>
+        The <code>relative</code> keyword specifies that <em>an element is positioned relative to other elements</em> while the <code>absolute</code> key is <em>positioned relative to its nearest ancestor</em>. The <code>fixed</code> key <em>positions elements at a specified point within the viewport</em>: a fixed element will never shift positions. The <code>sticky</code> key will <em>position an element relative to other elements until a specified viewport position is met</em>. These keys work in conjunction with <i>offset properties</i> to <em>set the precise placement</em> of an element.
       </p>
       <aside class="declarations">
         <div><code>{position: &nbsp;;}</code></div>
@@ -581,44 +618,13 @@ include ("../inc/journalHeader.php");
       </aside>
       <br>
       <p>
-        The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property impacts elements only if it has a non-static position. 
+        The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property only impacts non-static positioned elements. 
       </p>
       <aside class="declarations">
         <div><code>{z-index: 100;}</code></div>
         <div><span>// Stacked Above Elements</span></div>
       </aside>
-      <br>
-      <!-- Float + Clear + Overflow -->
-      <p>
-        The <i>float</i> property is used to <em>wrap text around images</em> while the <i>clear</i> property is amended to the adjacent element to <em>clear ambiguities</em>. To this end, the <i>overflow</i> property can be implemented as a 'clearfix hack' <em>to control what happens to content that breaks outside of its boundaries</em>.
-      </p>
-      <aside class="declarations">
-        <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-        <div><span></span></div>
-        <div><code>{&nbsp;: none;}</code></div>
-        <div><span>// Default Value (No Float)</span></div>
-        <div><code>{&nbsp;: left;}</code></div>
-        <div><span>// Floats Left</span></div>
-        <div><code>{&nbsp;: right;}</code></div>
-        <div><span>// Floats Right</span></div>
-        <div><code>{clear: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-        <div><span></span></div>
-        <div><code>{&nbsp;: both;}</code></div>
-        <div><span>// Clears X+Y-axis Floats</span></div>
-        <div><code>{&nbsp;: auto;}</code></div>
-        <div><span>// Clears Float</span></div>
-        <div><code>{overflow: &nbsp;;}</code></div>
-        <div><span></span></div>
-        <div><code>{&nbsp;: auto; }</code></div>
-        <div><span>// Hidden Scroll(s) unless Overflow</span></div>
-        <div><code>{&nbsp;: visible;}</code></div>
-        <div><span>// Default Value</span></div>
-        <div><code>{&nbsp;: hidden;}</code></div>
-        <div><span>// Hides Overflow</span></div>
-        <div><code>{&nbsp;: scroll;}</code></div>
-        <div><span>// Scroll(s) for Overflow</span></div>
-      </aside>
-      <br>    
+      <br>  
       <!-- Object-Fit -->
       <p>
         The <i>object-fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>object-position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
@@ -634,6 +640,21 @@ include ("../inc/journalHeader.php");
         <div><span>// Sizes Media to Fill</span></div>
         <div><code>{&nbsp;: scale-down;}</code></div>
         <div><span>// Resize to Smallest Size</span></div>
+      </aside>
+      <br>
+      <h6>Size and Position Examples</h6>
+      <p>Fixed Footer</p>
+      <aside class="declarations">
+        <div><code>footer {</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;&nbsp;position: fixed;</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;&nbsp;bottom: 0;</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;&nbsp;right: 0;</code></div>
+        <div><span></span></div>
+        <div><code>}</code></div>
+        <div><span></span></div>
       </aside>
     </article>
     <br>
