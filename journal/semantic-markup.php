@@ -33,17 +33,27 @@ include ("../inc/journalHeader.php");
       </ul>
       <li>Required Document Elements</li>
       <ul>
-        <li>a</li>
-        <li>b</li>
+        <li>The Root</li>
+        <li>The Head</li>
+        <li>The Body</li>
       </ul>
-      <li>3</li>
+      <li>Sectioning Content</li>
       <ul>
-        <li>c</li>
-        <li>d</li>
-        <li>e</li>
+        <li>Header &amp; Navigation</li>
+        <li>Primary Sections</li>
+        <li>Footer</li>
       </ul>
-      <li>4</li>
-      <li>5</li>
+      <li>Defining Content</li>
+      <ul>
+        <li>Lists</li>
+        <li>Headings &amp; Paragraphs</li>
+        <li>Inline Text Semantics</li>
+        <li>Unicode</li>
+        <li>Images</li>
+        <li>Forms</li>
+        <li>Interactive Elements</li>
+      </ul>
+      <li>Accessibility</li>
     </ol> 
   </section>
   <!-- ************************************************** -->
@@ -76,8 +86,9 @@ include ("../inc/journalHeader.php");
       </p>
     </article>
   </section>
+  <!-- ************************************************** -->
   <hr>
-  <!-- -->
+  <!-- ************************************************** -->
   <!-- Part 2: Required Document Elements -->
   <section>
     <article>
@@ -88,7 +99,6 @@ include ("../inc/journalHeader.php");
         <figcaption>Required structural elements for an HTML Documents</figcaption>
       </figure>
     </article>
-    
     <!-- The Main Root -->
     <article>
       <h4>The Main Root</h4>
@@ -115,7 +125,7 @@ include ("../inc/journalHeader.php");
         The <code>name&#61;&#34;viewport&#34;</code> attribute is used by the server for identifying device usage. The assigned value describes the visible area of the webpage.
       </p>
       <p>
-        The <code>content&#61;&#34;val&#34;</code> attribute is associated with the <code>name&#61;&#34;val&#34;</code> attribute, controlling the size of the viewport as well as the zoom level upon initial page load. The assigned value for <code>content&#61;&#34;...&#34;</code> does several things that enables a mobile responsive platform while maintaining its structural and stylistic integrity. The <code>width</code> property controls the size of the viewport and when assigned the special value <code>device-width</code>, will scale the full-width of the screen. The <code>initial-scale</code> property controls the zoom level when the page is first loaded and simply controls how users are allowed to zoom the page in or out.
+        The <code>content&#61;&#34;val&#34;</code> attribute is associated with the <code>name&#61;&#34;val&#34;</code> attribute, controlling the size of the viewport as well as the zoom level upon initial page load. The assigned value for <code>content&#61;&#34;...&#34;</code> does several things that enables a mobile responsive platform while maintaining its structural and stylistic integrity. The <code>width</code> property controls the size of the viewport and when assigned the special value <code>device-width</code>, will scale the full-width of the screen. The value <code>initial-scale</code> controls the zoom level when the page is first loaded and simply controls how users are allowed to zoom the page in or out.
       </p>
       <p>
         The <code>&lt;title&gt;</code> tag is the second line in this area and is simply used to document the webpage in the browser. Whatever is placed here will be visible on the browser tab. Designers should be mindful that this element plays into search engine optimization
@@ -132,23 +142,102 @@ include ("../inc/journalHeader.php");
       </p>
     </article>
   </section>
+  <!-- ************************************************** -->
   <hr>
-  <!-- -->
-  <!-- -->
+  <!-- ************************************************** -->
+  <!-- Part 3: Sectioning Content -->
   <section>
     <article>
-      <h3>Part 3</h3>
+      <h3>Part 3: Sectioning Content</h3>
+      <p>
+        HTML uses 'sections' to define the structure of a document and all sections are defined explicitly or implicitly. Explicitly defined sections lay the foundation for overall presentation while implicitly defined sections organizes content throughout their parent containers. When defining page sections, focus on using the Header, Nav, Article, Section, Main, Aside, Div and Footer elements to get started.
+      </p>
+      <figure>
+        <img src="img/section.jpg" alt="Method for Defining Page Sections" />
+        <figcaption>a Simple Template</figcaption>
+      </figure>
+    </article>
+    <!-- Header and Navigation -->
+    <article>
+      <h4>Header and Navigation</h4>
+      <p>
+        The <code>&lt;header&gt;</code> element is the first section users encounter and contains introductory information related to the website such as a logo or navigational aids. The <code>&lt;nav&gt;</code> element is used to create a navigation system for users to browse a website, providing links within the current document or to an external source. This element can be used within a <code>&lt;header&gt;</code> or independently, and should be reserved for global navigation, a table of contents, previous&#47;next links, etc.
+      </p>
+    </article>
+    <!-- Primary Section Areas -->
+    <article>
+      <h4>Primary Section Areas</h4>
+      <p>
+        The <code>&lt;main&gt;</code> element should not be used to section content as it represents content that is directly related to the central topic of a document. This element is essentially the main container within the <code>&#60;body&#62;</code> element, possessing all information outside of content that is repeated across a set of documents or document sections such as sidebars, navigation links, copyright information, site logos or search forms.
+      </p>
+      <p>
+        The <code>&lt;article&gt;</code> element represents a self-contained composition in a document that is intended to be distributable such as a forum post, a newspaper article, or a blog entry. This is 1 of 4 elements that I use to section main areas of content. The <code>&lt;section&gt;</code> element represents a standalone section contained within an HTML document. It can be nested inside of the <code>&lt;article&gt;</code> element to create distinguishable sections.
+      </p>
+      <p>
+        The <code>aside</code> element is used for content that is indirectly related to the documents main content such as sidebars, inserts, or brief explanations. These elements are frequently presented as sidebars or call-out boxes. This element can be nested within other section elements and act as an identifier container for content related to that specific section. The <code>div</code>> element is a generic block-level container used to identify large groupings and the flow of content.
+      </p>
+    </article>
+    <!-- Footer -->
+    <article>
+      <h5>Footer</h5>
+      <p>
+        The <code>footer</code> element typically contains information about the author of the section, copyright data or links to related documents. It is placed at the bottom of the section root or used at the bottom of any sectioning elements.
+      </p>
     </article>
   </section>
+  <!-- ************************************************** -->
   <hr>
-  <!-- -->
-  <!-- -->
+  <!-- ************************************************** -->
+  <!-- Part 4: Defining Content -->
   <section>
     <article>
       <h3>Part 4</h3>
     </article>
   </section>
+  <!-- ************************************************** -->
   <hr>
+  <!-- ************************************************** -->
+  <!-- Part 5: Accessibility -->
+  <section>
+    <article>
+      <h3>Part 5: Making a Page Accessible</h3>
+      <p>
+        In web design, accessibility refers to the practice of designing digital content and applications that can be used by people with vision impairments, mobility problems or cognitive issues. Besides making a site more accessible for users with limitations, research proves that doing so improves SEO, increases download speeds and has better usability. 
+      </p>
+      <p>
+        The <i>World Wide Web Consortium</i> (W3C), which is the international authority regarding internet standards, provides an outline for how to make web content accessible. Moreover, you may find that their <i>accessible rich internet applications suite</i> meets your needs in this area providing tools to make web applications and the technologies that power them more accessible. <i>A11Y Project</i> is a major advocate for web accessibility and provide guidelines and patterns for designers to help make their applications accessible.
+      </p>
+      <p>
+        Here is a short list of Accesibility Criteria that every application should include:
+      </p>
+      <ol>
+        <li>Add Contrasting Color</li>
+        <li>Design usable :Focus States</li>
+        <li>Use Lables with Form Fields &amp; Inputs</li>
+        <li>Write Alternative Text for Images</li>
+        <li>Use Proper Markup for Content</li>
+        <li>Support Keyboard Navigation</li>
+      </ol>
+      <p>
+        The <i>Color-Contrast Ration</i> between text and its background should have a ratio of at least 3/4.5 to 1 depending on the font boldness. The <i>WebAIM</i> group offers a <i>color contrast checker</i> that allows designers to calculate the score for <i>conformance levels</i> in real time. When using color as an indicator, be sure to pair it with an icon, a label or pattern. Charts and graphs are often difficult to read so using shapes and varying sizes can help enhance monochromatic vision. You can use the <i>color oracle</i> to simulate what vision impaired folk see in real-time.
+      </p>
+      <p>
+        Adding a visual cue such as an underline text style will help an element stand out. Focus Indicators help people know which element has the keyboard focus and helps with navigating a website. Elements that should be focusable are links, form fields, widgets, buttons and menu items. Be sure to create a state that is highly visible, with good contrast.
+      </p>
+      <p>
+        People who use screen readers navigate forms using the tab key and the <code>&lt;label&gt;</code> element is equipped to handle this action. Never use placeholder text for accessibility because it will be passed over during tabbing. There are plenty of resources for creating accessible forms.
+      </p>
+      <p>
+        Vision impaired users rely on screen readers to 'hear' what is being displayed and the <code>&lt;alt=""&gt;</code> attribute is used to convert text to speech. Simply describe the action.
+      </p>
+      <p>
+        Navigation is accessible only when the <code>&lt;nav&gt;</code> element is properly marked; this makes it easy to navigate a page through interactive elements that include links, buttons and input fields. Add a <code>:focus</code> state to add a visual indicator. Navigation should be intuitive, minimal and flow from left to right, top to bottom. Use the <code>tab</code> key to test.
+      </p>
+      <p>
+        When you think your code is up to par, download an <i>accessibility engine</i> web browser extension to check a websites accessibility.
+      </p>
+    </article>
+  </section>
   <!-- -->
 </article>
 
