@@ -67,13 +67,12 @@ include ("../inc/journalHeader.php");
       <p>
         <i>html</i> defines the hierarchical structure of the content on a webpage using <code>&lt;elements&gt;</code> (aka<code>&lt;tag&gt;</code>) that specify how content is displayed. Internet browsers use elements to parses the markup then displays content to the user. Elements usually have an opening <code>&lt;tag&gt;</code> and closing <code>&lt;&#47;tag&gt;</code> component, but there are some that are self-closing so keep an eye out for that.
       </p>
-      <p>
-        The content of an <code>&lt;element&gt;</code> can be modified or provided with a functionality through the use of an <i>attribute</i>, <em>an explicit value placed in the opening component of an element to adjust its behavior</em> in a manner that meets a specific criteria. 
-        An attribute is created by using a keyword followed by a delimiter and a value that is surrounded by quotations, and when used, should always be placed in the opening tag. The example below illustrates a use case for both: this is a <code>&lt;main&gt;</code> tag with a <code>class</code> attribute that has a value of <code>"layout"</code>.
-      </p>
       <blockquote>
-        <code>&lt;main class="layout"&gt;... &lt;/main&gt;</code>
+        <code>&lt;element attr="key"&gt;</code><i>content</i><code>&lt;/element&gt;</code>
       </blockquote>
+      <p>
+        In the markup above, the <i>element</i> is targeted by an attribute whose value modifies the content. The <i>attribute</i> is an explicit value placed in the opening component of an <code>&lt;element&gt;</code> to <em>adjust its behavior or provide a functionality</em> that meets certain criteria. Most attributes invoke a <code>key(word)</code> surrounded in quotes being separated by a delimiter, however, there are some important attributes that do not. 
+      </p>
       <p>
         There are 100&#43; attributes that can be used to enhance an element, depending on the objective. For simplicity sake, attributes will be introduced where appropriate: that is, as suitable elements are introduced. 
       </p>
@@ -126,6 +125,9 @@ include ("../inc/journalHeader.php");
       </p>
       <p>
         The <code>content&#61;&#34;val&#34;</code> attribute is associated with the <code>name&#61;&#34;val&#34;</code> attribute, controlling the size of the viewport as well as the zoom level upon initial page load. The assigned value for <code>content&#61;&#34;...&#34;</code> does several things that enables a mobile responsive platform while maintaining its structural and stylistic integrity. The <code>width</code> property controls the size of the viewport and when assigned the special value <code>device-width</code>, will scale the full-width of the screen. The value <code>initial-scale</code> controls the zoom level when the page is first loaded and simply controls how users are allowed to zoom the page in or out.
+      </p>
+      <p>
+        Although omitted, the <code>&lt;base&gt;</code> tag specifies the base URL to use for all relative URLs in a document.
       </p>
       <p>
         The <code>&lt;title&gt;</code> tag is the second line in this area and is simply used to document the webpage in the browser. Whatever is placed here will be visible on the browser tab. Designers should be mindful that this element plays into search engine optimization
@@ -184,6 +186,27 @@ include ("../inc/journalHeader.php");
         The <code>footer</code> element typically contains information about the author of the section, copyright data or links to related documents. It is placed at the bottom of the section root or used at the bottom of any sectioning elements.
       </p>
     </article>
+    <!-- 
+      <h5>Glossary</h5>
+      <article class="declarations">
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+      </article>
+    -->
   </section>
   <!-- ************************************************** -->
   <hr>
@@ -191,8 +214,89 @@ include ("../inc/journalHeader.php");
   <!-- Part 4: Defining Content -->
   <section>
     <article>
-      <h3>Part 4</h3>
+      <h3>Part 4: Defining Content</h3>
+      <p>
+        Content elements are used to organize sections of content and are nested within primary section areas. There are dozens of elements that can be used to markup content depending on whether you want to use a sectional heading, add text, create a form, include some sort of multimedia or script, add interactivity and much more. L
+      </p> 
     </article>
+    <!-- Lists -->
+    <article>
+      <h4>Build a Navigation System with Lists</h4>
+      <p>
+        Lets make a list: not a shopping list, but a list nonetheless. In HTML, list are used to group a set of related items in no particular order or in a specific order. The list type determines how its list-items will be displayed. 
+      </p>
+      <aside class="declarations">
+        <div><code>&lt;ul&gt;</code></div>
+        <div><span>Unordered List (non-sequential)</span></div>
+        <div><code>&lt;ol&gt;</code></div>
+        <div><span>Ordered List (sequential)</span></div>
+        <div><code>&lt;li&gt;</code></div>
+        <div><span>List Item (Individual List Content Container)</span></div>
+      </aside>
+      <br>
+      <p>
+        List are used for a lot of things: the <code>&lt;ul&gt;</code> element can be used to create a list that designers can modify to build an efficient navigation system that will allow users to seamlessly traverse the site. Two more elements are required to make this idea reality: the <code>&#60;nav&#62;</code> and <code>&#60;a&#62;</code> elements.
+      </p>
+      <figure>
+        <img src="img/navigation.JPG" alt="a standard navigation unit" />
+        <figcaption>a Simple Navigation System</figcaption>
+      </figure>
+      <p>
+        The example above outlines the structure of a simple navigation system. The <code>&lt;nav&gt;</code> tag is used as the parent container that <i>nests</i> the <i>unordered list</i> and its <i>list-items</i>, which typically render as a bulleted list. <i>anchor</i> (<code>&lt;a&gt;</code>) tags use the <code>href&#61;&#34;link&#34;</code> attribute to <em>establish a hyperlink with some kind of resource</em>. The <code>&#34;link&#34;</code> represents the resource: in this case, they consist of internal files specifying pages associated with this site users can visit.
+      </p>
+      <p>
+        The <code>&#34;link&#34;</code> resource can also send users to a location within the same page, allow a user to download a file or accept any other URL browser supported <i>protocol handler</i>.  One attribute that is helpful when dealing with external resources is <code>target&#61;&#34;&#95;blank&#34;</code>: this pairing <em>opens a browser tab</em> for the resource without closing the current page.
+      </p>
+      <details>
+        <summary>The <code>&lt;ol&gt;</code> Element</summary>
+        Another kind of list, although not suitable for building a navigation system, is the <code>&lt;ol&gt;</code> tag. Its <code>&lt;li&gt;</code> can be manipulated through use of the <code>start&#61;&#34;val&#34;</code> or <code>type&#61;&#34;val&#34;</code> attributes. The <code>start&#61;&#34;val&#34;</code> integer attribute specifies the start value for numbering individual list items. <code>&lt;ol <b>start&#61;&#34;4&#34;</b>&gt;</code>, for example, would <em>start numbering elements from the &#35;4</em> and this would mark the first <code>&#60;li&#62;</code> as such. The <code>type&#61;&#34;val&#34;</code> attribute indicates the numbering type with 'a', 'A', 'i', 'I' and '1' representing lowercase and uppercase letters, lowercase and uppercase Roman numerals; and numbers, respectively.
+      </details>
+      <details>
+        <summary>The <code>&lt;dl&gt;</code> Element</summary>
+        The <code>&lt;dl&gt;</code> can be used to group terms, using <code>&lt;dt&gt;</code> tags, along with a description, using <code>&lt;dd&gt;</code> tags.
+      </details>
+      <p>With navigation setup, focus can shift to laying out content.</p>
+    </article>
+    <!-- -->
+    <article>
+      <h4>Layout Content with Headings &amp; Paragraphs</h4>
+    </article>
+    <!-- -->
+    <article>
+      <h4>Use Inline Text Semantics to Let Content Shine</h4>
+    </article>
+    <!-- -->
+    <article>
+      <h4>Lights, Camera, Action: using Media Elements</h4>
+    </article>
+    <!-- -->
+    <article>
+      <h4>Will that complete your order? Service Forms</h4>
+    </article>
+    <!-- -->
+    <article>
+      <h4>Futuristic Interactive Elements Now</h4>
+    </article>
+    <!-- -->
+      <h5>Glossary</h5>
+      <aside class="declarations">
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+      </aside>
   </section>
   <!-- ************************************************** -->
   <hr>
