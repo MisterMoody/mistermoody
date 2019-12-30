@@ -82,7 +82,7 @@ include ("../../inc/header.php");
            </div>
           <p class="article__Item__Text">
             The Hyper Text Markup Language (HTML) is used to markup content using elements that specifies a purpose, determining how content will be displayed in a browser. Attributes can be applied within an element to modify its default functionality. &nbsp;
-            <a href="portfolio/webdesign/">Read More</a>
+            <a href="journal/semantic-markup">Read More</a>
           </p>
         </aside>
       </div>
@@ -156,6 +156,7 @@ include ("../../inc/header.php");
         </aside>
       </div>
 		</article>
+  </section>
 <!-- .....CONTENT-ENDS// --> 
 
 <!-- ************************************************** -->
