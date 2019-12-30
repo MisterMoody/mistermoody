@@ -11,23 +11,31 @@ include ("../inc/journalHeader.php");
   <!-- // Introduction -->
   <section>
     <h2 class="title">Styling Content with CSS</h2>
-      <figure>
-        <img class="mainImage" src="img/designStyle.jpg"/>
-        <figcaption>So Many Colors, So Many Style Possibilities</figcaption>
-      </figure>
+    <figure>
+      <img class="mainImage" src="img/designStyle.jpg"/>
+      <figcaption>So Many Colors, So Many Style Possibilities</figcaption>
+    </figure>
     <p>
       CSS is an acronym for Cascading Style Sheets, a style sheet language that controls the presentation of <code>&#60;html&#62;</code> elements when displayed in the browser. This article is a follow-up to <a href="journal/semantic-markup">semantic markup</a> and explores fundamental usage of CSS best practices to follow when styling content for a web applications. Topics covered include:
     </p>
     <ol>
       <li>Create and Load a Stylesheet</li>
-      <li>Understanding CSS Snytax</li>
+      <li>CSS Snytax Keynotes</li>
       <ul>
         <li>Selector Types</li>
-        <li>Declarations</li>
+        <li>Length Units</li>
+      </ul>
+      <li>Making Declarations</li>
+      <ul>
+        <li>Container Layout</li>
+        <li>Sizing and Placement</li>
+        <li>Colors</li>
+        <li>Backgrounds and Borders</li>
+        <li>Font and Text</li>
+        <!-- <li>Declaration Examples</li>-->
       </ul>
       <li>Style Sheet Format and Structure</li>
-      <li>Declaration Examples</li>
-      <!--<li>Debugging and Optimizing CSS</li>-->
+      <li>Debugging and Optimizing CSS</li>
     </ol> 
   </section>
   <hr>
@@ -59,24 +67,19 @@ include ("../inc/journalHeader.php");
   <hr>
   <!-- ************************************************** -->
   <!-- Part 2: Understanding CSS Syntax++ -->
-  <section>
-    
+  <section>    
     <!-- Selector/Declaration Overview -->
     <article>
       <h3>Part 2: Understanding CSS Syntax</h3>
       <p>
         In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a selector and a declaration. 
       </p>
-      <p>
-        This section is designed to explain syntax rules by dissecting a rule-set and its features. It begins with an explanation of how <code>&#60;html&#62;</code> elements are used as selectors and the means by which they can be manipulated. Next, measurement units are explored in an effort to understand how elements move or are shaped, creating the perfect segway into the next section highlighting use case declarations.
-      </p>
-      <h4>The Rule-Set</h4>
+      <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
       <p>
         <i>selectors</i> <em>reference <code>&#60;html&#62;</code> elements</em> targeted for styling. Its <i>declaration</i> is made of a property and a value: the <i>property</i> identifies which element feature to modify while the <i>value</i> quantifies to what extent the property is modified. 
       </p>
-      <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
       <p>
-        It is important to understand how to amalgamate selector with declarations: this can be achieved by being aware of selector types, proper measurement units and the properties that ultimately define the targeted selector or selectors!
+        This section is designed to explain syntax rules by dissecting a variety of rule-sets in common situations designers will encounter. It begins with an explanation of how <code>&#60;html&#62;</code> elements are used as selectors and the means by which they can be manipulated. Length units are then explored in an effort to understand how elements move or are shaped, creating the perfect segway into the next section highlighting use case declarations.
       </p>
     </article>
     
@@ -217,11 +220,11 @@ include ("../inc/journalHeader.php");
           </aside>
       </article>
     <br>  
-    <!-- Value Measurement Units -->
+    <!-- Length Units -->
     <article>
-        <h4>Value Measurement Units</h4>  
+        <h4>Length Units</h4>  
         <p>
-          Values provide properties with a measurement unit that quantifies the expected aesthetic quality. All properties have values and most of the time that value is a keyword which has a precise meaning for how an element should behave. Often, a numeric value is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations.
+          Properties accept a <code>keyword</code> or <i>length unit</i> as a value to qualify or quantify an expected aesthetic quality. Keywords have a precise meaning for how an element should behave. Often, a <code>unit</code> -a numeric value, is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations.
         </p>
 
         <h5>Absolute vs. Relative Units</h5>
@@ -291,8 +294,7 @@ include ("../inc/journalHeader.php");
           That was a good bit on numeric values all of which will be utilized throughout a typical style sheet. With a solid foundation of how values work, designers can focus on developing their property memory bank, and the best properties to jumpstart this initiative focus on layout.
         </p>
 
-      </article>
-    
+      </article>    
   </section>
   <!-- ************************************************** -->
   <hr>
@@ -301,17 +303,18 @@ include ("../inc/journalHeader.php");
   <section>
     <!-- Project Plan/Intro -->
     <article>
-      <h4>Part 3: Making Declarations</h4>
+      <h3>Part 3: Making Declarations</h3>
       <p>
-        There are a lot of properties available for styling a document: no project regardless of size will utilize all of them. Using the <code>&#60;html&#62;</code> document from the <a href="">HTML Markup</a> lesson, lets begin making declarations using common scenarios a designer could expect to encounter when designing an aesthetically pleasing, yet, fully responsive website.
+        There are a lot of properties available for styling a document: no project regardless of size will utilize all of them. Lets look at some scenarios a designer can expect to encounter when making declarations for an aesthetically pleasing, yet, fully responsive website.
       </p>
-      <!--  for a restaurant. This project features a flexible-grid layout, a manageable global navigation system, images and lists to illustrate and explain food products, respectively, combined with a call-to-action that would pursue a user to make a purchase -->
-      <!-- ??add Animation, Transition + Transform??-->
+      <!--  
+for a restaurant. This project features a flexible-grid layout, a manageable global navigation system, images and lists to illustrate and explain food products, respectively, combined with a call-to-action that would pursue a user to make a purchase 
+-->
     </article>
     
-    <!-- Layout Structure -->
+    <!-- Container Layout -->
     <article>
-      <h5>Visual Layout</h5>
+      <h4>Container Layout</h4>
       <p>
         When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration <em>eliminates spacing concerns</em> by taking into account an elements padding and border along with its width and height. Ths sets a foundation for layout and positional properties used on elements thereafter. From there, the first property designers reach for is that of <i>display</i>, which <em>determines how an element is displayed</em>. The main goal of this property emphasizes horizontal and vertical element alignment. 
       </p>
@@ -324,7 +327,7 @@ include ("../inc/journalHeader.php");
         It can be a cumbersome task to use the aforementioned keywords to style a large website, but designers did it this way for eons basing elements as either a row or column. Nowadays, layout techniques are implemented using the keywords flex and grid, and although nearly the same, both are used in distinct ways. <code>flex</code> is one-dimensional and is best used to arrange individual items in a single row or column whereas <code>grid</code> is two-dimensional and is best used to establish containers by arranging items in multiple rows or columns. Thus, what distinguishes these keywords is that grid defines a parent element while flexbox defines child elements.  With that in mind, lets first focus on structuring a container. 
       </p>
       
-      <h6>The Grid</h6>
+      <h5>The Grid</h5>
       <!-- Grid -->
       <p>
         The <code>{display: grid; }</code> declaration sets up a layout pattern that allows elements to be placed in fixed or flexible positions along the cross-axis of perpendicular lines. There are sub-properties that designers should familiarize themselves with to manipulate the layout according to specifications.
@@ -470,7 +473,7 @@ include ("../inc/journalHeader.php");
         <div><span>// Equal Space Around Items</span></div>
       </aside>
       <br>
-      <h6>Flexbox</h6>
+      <h5>Flexbox</h5>
       <p>
         The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
       </p>
@@ -521,10 +524,10 @@ include ("../inc/journalHeader.php");
     
     <!-- Size and Placement -->
     <article>
-      <h5>Sizing and Placement</h5>
+      <h4>Sizing and Placement</h4>
       <p>There are a variety of elements that allow designers to make modifications that effect size and placement.</p>
       <!-- -->
-      <h6>Sizing and Shaping Elements</h6>
+      <h5>Sizing and Shaping Elements</h5>
       <!-- Height + Width -->
       <p>
         The <i>height</i> property is used to <em>specify content height and width</em> of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
@@ -564,7 +567,7 @@ include ("../inc/journalHeader.php");
       </aside>
       <br>  
       <!-- Position + top/right/bottom/right + Z-Index -->
-      <h6>Positional Placement</h6>
+      <h5>Positional Placement</h5>
       <p>There are several ways to position elements: techniques explained herein highlight but a few.</p>
       <!-- Float + Overflow -->
       <p>
@@ -642,7 +645,7 @@ include ("../inc/journalHeader.php");
         <div><span>// Resize to Smallest Size</span></div>
       </aside>
       <br>
-      <h6>Size and Position Examples</h6>
+      <h5>Size and Position Examples</h5>
       <p>Fixed Footer</p>
       <aside class="declarations">
         <div><code>footer {</code></div>
@@ -660,7 +663,7 @@ include ("../inc/journalHeader.php");
     <br>
     <!-- Colors -->
     <article>
-      <h5>Colors</h5>
+      <h4>Colors</h4>
       <p>
         The <i>color</i> property <em>specifies the color of a text element</em> and can be applied to text decorations and shadows. A color can be assigned using a <i>color name</i> or an <i>rgb</i> value. There is a standard list of color names that can be used and the easiest way to write and RGB value is to use hexadecimal string notation. 
       </p>
@@ -691,9 +694,9 @@ include ("../inc/journalHeader.php");
         There are lot of cool ways to style elements using colors, but choosing the right color can be a burdensome process for multiple reasons. Designers who are not natural artists should learn concepts of <i>color theory</i>, seek out <i>palette</i> tools that assist with creating a compatible color schemes and be weary of <i>accessibility</i> concerns that could impact the ability of color-blind users to effectively navigate a web app.
       </p>
     </article>
-    <!-- Backgrounds + Borders -->
+    <!-- Backgrounds and Borders -->
     <article>
-      <h5>Backgrounds + Borders</h5>
+      <h4>Backgrounds and Borders</h4>
       <p>
         The <i>background</i> property is used to <em>layer an image underneath content</em>. As a shorthand, it accepts sub-props that include image, position, size, repeat, attachment, origin, clip and color.
       </p>
@@ -760,10 +763,10 @@ include ("../inc/journalHeader.php");
         <div><span>// Multiple</span></div>
       </aside>
     </article>
-     <br> 
-    <!-- Font + Text -->
+    <br> 
+    <!-- Font and Text -->
     <article>
-      <h5>Font + Text</h5>
+      <h4>Font and Text</h4>
       <p>Build fluid typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
       <p>
         <i>font</i> is a property that is used to <em>set the style of text</em>. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
@@ -919,11 +922,19 @@ include ("../inc/journalHeader.php");
         <div><span>// URL to Image</span></div>
       </aside>
     </article>
+    <br>
+    <article>
+      <h4>To-Do LIST:</h4>
+      <h5>Add Animation, Transition + Transform Properties</h5>
+      <h5>Add Resources / Links to Resource Page (diff Folder)</h5>
+      <h5>Edit Part 4 + 5 (Hidden->Complete->Needs Read Over)</h5>
+      <h5>Grammar Edit</h5>
+    </article>
   </section>
   <!-- ************************************************** -->
   <hr>
   <!-- ************************************************** -->
-  <!-- Part 4: Structuring a Stylesheet -->
+  <!-- Part 4: Style Sheet Format and Structure 
   <section>
     <h4>Part 4: Style Sheet Format and Structure</h4>
     <p>
@@ -986,21 +997,31 @@ include ("../inc/journalHeader.php");
     </blockquote>
   </section>
   <p style="margin: 2em;"></p>
-</article> 
-  <!-- ************************************************** -->
+  
   <hr>
-  <!-- ************************************************** -->
-<!-- ++Debugging CSS++ 
-<div>
-  <h4>Debugging CSS</h4>
-  <p>There are times when developers write declarations that are not rendered in the browser, and a simple explanation would target a syntax error as the culprit. When this happens, the browser will simply ignore the rule. If this happens, developers will have to resolve the conflict independently, and this sometimes creates headaches. Luckily, there are plenty of resources available to help <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank">debug</a></u> CSS.</p>
-  <p>Major internet browsers –Chrome, Firefox, Microsoft Edge and Safari, all offer <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-browser-based-developer-tools/" target="_blank">dev tools</a></u> to help troubleshoot CSS issues. These toolkits employ an element inspector, a styles panel and a mode for responsive debugging that allows developers to understand where styling conflicts exist. When inspecting styles, it is important to note the declarations that are crossed out or have a warning icon, for example, have been overridden or are invalid. Thus, such elements should be the focus for trying to alleviate any style concerns. Learn more about <u><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome</a></u>, <u><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox</a></u>, <u><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">Microsoft Edge</a></u> and <u><a href="https://developer.apple.com/safari/tools/" target="_blank">Safari</a></u> dev tools.</p>
-  <p>A simpler way to parse code for potential errors would be to use a <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-code-quality-tools/" target="_blank">linter</a></u>, which searches for invalid declarations, specificity, and duplicate or unused selectors in an effort to sanitize code of any unnecessary elements. The W3C group has a quality online <u><a href="https://jigsaw.w3.org/css-validator/" target="_blank">validator</a></u>.</p>
-  <p>There are additional methods that developers can take to optimize a web site and minifying files is a good first step. <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-minification-csso/" target="_blank">Minification</a></u> is the process of removing unnecessary characters from the file in order to improve the files efficiency by decreasing the size of the file.</p>
-  <p>Above all else, developers can best serve themselves by <u><a href="https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/" target="_blank">refactoring</a></u> their code. Refactoring is the process of organizing code as most efficiently as possible; enhancing readability affords faster code execution, which is the ultimate goal here. When reorganizing code, it is a good practice to subscribe to a specific style guide with criteria that concentrates on declaration order, formatting rules and use of unit-values that you want to use. Employing a Block Element Modifier &#40;BEM&#41; naming convention would provide a more consistent code structure for code sharing in front-end development. Learn more about <u><a href="http://getbem.com" target="_blank">BEM</a></u>.</p>
-</div>-->
-<!-- -->
+  
+   Part 5:  Debugging CSS 
+  <section>
+    <h4>Debugging CSS</h4>
+    <p>
+      There are times when developers write declarations that are not rendered in the browser, and a simple explanation would target a syntax error as the culprit. When this happens, the browser will simply ignore the rule. If this happens, developers will have to resolve the conflict independently, and this sometimes creates headaches. Luckily, there are plenty of resources available to help <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank">debug</a></u> CSS.
+    </p>
+    <p>
+      Major internet browsers –Chrome, Firefox, Microsoft Edge and Safari, all offer <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-browser-based-developer-tools/" target="_blank">dev tools</a></u> to help troubleshoot CSS issues. These toolkits employ an element inspector, a styles panel and a mode for responsive debugging that allows developers to understand where styling conflicts exist. When inspecting styles, it is important to note the declarations that are crossed out or have a warning icon, for example, have been overridden or are invalid. Thus, such elements should be the focus for trying to alleviate any style concerns. Learn more about <u><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome</a></u>, <u><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox</a></u>, <u><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">Microsoft Edge</a></u> and <u><a href="https://developer.apple.com/safari/tools/" target="_blank">Safari</a></u> dev tools.
+    </p>
+    <p>
+      A simpler way to parse code for potential errors would be to use a <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-code-quality-tools/" target="_blank">linter</a></u>, which searches for invalid declarations, specificity, and duplicate or unused selectors in an effort to sanitize code of any unnecessary elements. The W3C group has a quality online <u><a href="https://jigsaw.w3.org/css-validator/" target="_blank">validator</a></u>.
+    </p>
+    <p>
+      There are additional methods that developers can take to optimize a web site and minifying files is a good first step. <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-minification-csso/" target="_blank">Minification</a></u> is the process of removing unnecessary characters from the file in order to improve the files efficiency by decreasing the size of the file.
+    </p>
+    <p>
+      Above all else, developers can best serve themselves by <u><a href="https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/" target="_blank">refactoring</a></u> their code. Refactoring is the process of organizing code as most efficiently as possible; enhancing readability affords faster code execution, which is the ultimate goal here. When reorganizing code, it is a good practice to subscribe to a specific style guide with criteria that concentrates on declaration order, formatting rules and use of unit-values that you want to use. Employing a Block Element Modifier &#40;BEM&#41; naming convention would provide a more consistent code structure for code sharing in front-end development. Learn more about <u><a href="http://getbem.com" target="_blank">BEM</a></u>.
+    </p>
+  </section>-->
+</article> 
 <!-- .....CONTENT-ENDS// --> 
+
 
 <!-- ************************************************** -->
 <!-- ************************************************** -->
