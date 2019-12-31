@@ -472,16 +472,78 @@ include ("../inc/journalHeader.php");
     <!-- -->
     <article>
       <h4>Lights, Camera, Action: using Media Elements</h4>
+      <code>&lt;&gt;</code>
     </article>
     <!-- -->
     <article>
       <h4>Will that complete your order? Service Forms</h4>
+      <code>&lt;&gt;</code>
     </article>
-    <!-- -->
+    <!-- Interactive Elements -->
     <article>
       <h4>Futuristic Interactive Elements Now</h4>
+      <p>
+       The <code>&lt;details&gt;</code> element creates a disclosure widget in which information is visible only when the widget is toggled. Use the self-contained <code>open</code> attribute to programmatically keep open the widget. A summary, caption or legend can be applied to the widget by employing the <code>&lt;summary&gt;</code> element.
+      </p>
+      <p>
+        The <code>&lt;dialog&gt;</code> element is an experimental technology that represents a dialog box or other interactive component, such as an inspector or window. Dialogs are hidden by default, but can be made active and available for interaction by replacing the <code>id&#61;&#34;val&#34;</code> with the <code>open</code> attribute in the <code>&#60;dialog&#62;</code> element. <code>&#60;form&#62;</code> elements can be integrated within a dialog by specifying them with the attribute method="dialog". When such a form is submitted, the dialog is closed with a returnValue attribute set to the value of the submit button used. The <code>::backdrop</code> CSS pseudo-element &#40;experimental&#41; can be used to style behind a <code>&#60;dialog&#62;</code> element, for example to dim inaccessible content whilst a modal dialog is active. The backdrop is only drawn when the dialog element is displayed with <code>dialog.showModal()</code>. You can use a <i>polyfill</i>for browser support and learn more about <code>&lt;form&gt;</code>, <code>.close&#40;&#41;</code> and <code>.cancel&#40;&#41;</code> Events.
+      </p>
+      <aside class="block">
+        <div class="blockCard">
+          <menu>
+            <button id="openDialogText">Dialog: Enter Text</button>
+          </menu>
+          <dialog id="dialogWindow">
+            <form method="dialog">
+              <input type="text">
+              <button type="submit">Submit</button>
+            </form>
+          </dialog> 
+          <p>This dialog box will open a window with an input text area that you can enter text into. After you submit text, the information will be stored until the next usage.</p>
+        </div>
+        <div class="blockCard">
+          <menu>
+            <button id="openModalDialogText">Modal: Enter Text</button>
+          </menu>
+          <dialog id="dialogWindow">
+            <form method="dialog">
+              <menu>
+                <button type="submit">Submit</button>
+              </menu>
+              <section><input type="text"></section>
+            </form>
+          </dialog>
+          <p>This modal dialog will perform like the dialog box with the exception being a full-screen overlay will distort the background.</p>
+        </div>
+        <div class="blockCard">
+          <dialog id="openDialogChoice">
+            <form method="dialog">
+              <section>
+                <p><label for="favDrink">Favorite Drink:</label>
+                <select id="favDrink">
+                  <option></option>
+                  <option>Cocktail</option>
+                  <option>Coffee</option>
+                  <option>Coke</option>
+                </select></p>
+              </section>
+              <menu>
+                <button id="cancel" type="reset">Cancel</button>
+                <button type="submit">Confirm</button>
+              </menu>
+            </form>
+          </dialog>
+          <menu>
+            <button id="updateDetails">Dialog: Make a Choice</button>
+          </menu>
+          <p>This modal dialog box uses <code>&#60;select&#62;</code> to inject an 'options-list' of possible choices. Make a selection, then click submit and the choice is saved. Click 'cancel' to reset the choice.</p>
+        </div>
+      </aside>
+      <p>
+        The <code>&lt;script&gt;</code> element is not an interactive element. However, inclusion of this element will embed or reference executable JavaScript code which is in and of itself an interactive programming language. It requires the <code>src&#61;&#34;val&#34;</code> attribute to specify the URI of an external script. It is also good practice to include a <code>type&#61;&#34;text/javascript&#34;</code> attribute to indicate the type of script, particularly for older browsers. Use of this element is an alternative to embedding a script directly within a document.
+      </p>
     </article>
-    <!-- -->
+    <!-- 
       <h5>Glossary</h5>
       <aside class="declarations">
         <div><code></code></div>
@@ -500,7 +562,7 @@ include ("../inc/journalHeader.php");
         <div><span></span></div>
         <div><code></code></div>
         <div><span></span></div>
-      </aside>
+      </aside>-->
   </section>
   <!-- ************************************************** -->
   <hr>
@@ -552,6 +614,8 @@ include ("../inc/journalHeader.php");
 <!-- .....CONTENT-ENDS// --> 
 
 
+    <!-- <dialog> Element Example -->
+    <script src="js/dialogElement.js"></script>
 <!-- ************************************************** -->
 <!-- ************************************************** -->
 <?php
