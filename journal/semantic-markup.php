@@ -48,7 +48,7 @@ include ("../inc/journalHeader.php");
         <li>Lists</li>
         <li>Headings &amp; Paragraphs</li>
         <li>Inline Text Semantics</li>
-        <li>Images</li>
+        <li>Media</li>
         <li>Forms</li>
         <li>Interactive Elements</li>
       </ul>
@@ -469,15 +469,82 @@ include ("../inc/journalHeader.php");
         It would be a worthy venture to lear more about unicode and all symbols as you can include arrows, foreign languages, shapes and much more.
       </p>
     </article>
-    <!-- -->
+    <!-- Media -->
     <article>
       <h4>Lights, Camera, Action: using Media Elements</h4>
-      <code>&lt;&gt;</code>
+      <p>
+        The <code>&lt;img/&gt;</code> element is a self-closing tag used to embed images into a document. This element requires the <code>src&#61;&#34;val&#34;</code> and <code>alt&#61;&#34;val&#34;</code> attributes, which respectively ascertains an images' file path extension, which must be of .svg, .jpg, or .png format, and offers a physical description of the image, required for accessibility purposes. 
+      </p>
+      <p>
+        A variety of objectives can be accomplished using attributes with the <code>&lt;img /&gt;</code> tag. For example, the <code>crossorigin&#61;&#34;val&#34;</code> attribute can be added to provide security while the  <code>srcset&#61;&#34;val&#34;</code>, <code>width&#61;&#34;val&#34;</code> and <code>height&#61;&#34;val&#34;</code> attributes can be used to 'specify image dimensions.' Furthermore, the <code>&lt;img /&gt;</code> tag pairs well with a <code>&lt;figure&gt;</code> tag, which represents a self-contained container that is accompanied with the captioning <code>&lt;figcaption&gt;</code> tag. The <code>&lt;picture&gt;</code> element functions similarly and may be a more appropriate substitute for the <code>&lt;figure&gt;</code> tag depending on the objective.
+      </p>
     </article>
-    <!-- -->
+    <!-- Forms-->
     <article>
       <h4>Will that complete your order? Service Forms</h4>
-      <code>&lt;&gt;</code>
+      <p>
+        The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">&lt;form&gt;</a></code> element represents a document section that contains interactive controls for submitting information to a web server.
+      </p>
+      <figure>
+        <img src="img/form.JPG" alt="a standard html form" />
+        <figcaption>A standard HTML Form</figcaption>
+      </figure>
+      <p>
+        This element requires two attributes: <code>action&#61;&#34;val&#34;</code> and <code>method&#61;&#34;val&#34;</code>. The former is the<i>URI</i> of a program that processes the form information while the latter is the HTTP method that the browser uses to submit the form. The method attribute will accept either <code>&#34;post&#34;</code> or <code>&#34;get&#34;</code> as its value. The <code>&#34;post&#34;</code> method is favorable when asking users to send data as it is difficult to hack and information is not saved in the browser history or on web servers during submission. 
+      </p>
+      <p>
+        The <code>&lt;fieldset&gt;</code> tag is used to logically group form element controls within a web form. The <code>&lt;legend&gt;</code> tag captions its parent &#40;<code>&lt;fieldset&gt;</code>&#41; like a title for a paragraph. The <code>&lt;label&gt;</code> element shares similarities with the <code>&lt;fieldset&gt;</code> in that it also provides a caption for its parent. Its importance rests in how, when used, it links a form control to the associated descriptive text in an unambiguous way that is useful for screen readers and that this element can be applied to any item in a user interface.
+      </p>
+      <p>
+        The <code>&lt;input&gt;</code> tag fits the bill in this regard as it is used to create interactive controls for web-based forms in order to accept data from users. What is most fascinating is how the <code>&lt;label&gt;</code> and <code>&lt;input&gt;</code> elements work in unison via their associated attributes. There are two ways to associate these attributes: implicitly nest the <code>&lt;input&gt;</code> element directly inside of the <code>&lt;label&gt;</code> element or apply <code>id&#61;&#34;val&#34;</code> and <code>for&#61;&#34;val&#34;</code> attributes, both with the same value, to the <code>&lt;input&gt;</code> and <code>&lt;label&gt;</code> elements.
+      </p>
+      <p>
+        The semantics of the <code>&lt;input&gt;</code> element varies considerably depending on the <code>&lt;type&#61;&#34;val&#34;&gt;</code> value. Aside from the attributes available to use for the <code>&lt;input&gt;</code> element, the <code>type&#61;&#34;val&#34;</code> attribute itself offers 34 possible values to choose from. When this attribute is not specified it will provide a default text type.
+      </p>
+      <p>
+        Whenever the <code>type&#61;&#34;val&#34;</code> value is employed and takes the value of either <code>&#34;radio&#34;</code> or <code>&#34;checkbox&#34;</code>, the <code>value&#61;&#34;val&#34;</code> attribute is required. The <code>name&#61;&#34;val&#34;</code> attribute is the name of the control, which is submitted with the control's <code>value&#61;&#34;val&#34;</code> as part of the form data. It is required to be used with the <code>&lt;input&gt;</code>.
+      </p>
+      <details>
+        <summary>List of <code>type&#61;&#34;val&#34;</code> Values:</summary>
+      <section class="glossary">
+        <!-- Click Events-->
+        <div><code>&#34;button&#34;</code></div>
+        <div>push button with no default behavior.</div>
+        <div><code>&#34;checkbox&#34;</code></div>
+        <div>allows single values to be selected/deselected.</div>
+        <div><code>&#34;radio&#34;</code></div>
+        <div>allows single selection from multiple options.</div>
+        <div><code>&#34;file&#34;</code></div>
+        <div>control that lets the user select a file.</div>
+        <div><code>&#34;submit&#34;</code></div>
+        <div>button that submits the form.</div>
+        <div><code>&#34;reset&#34;</code></div>
+        <div>button that resets the contents of the form.</div>
+        <!-- Input Events -->
+        <div><code>&#34;email&#34;</code></div>
+        <div>field for editing an e-mail address.</div>
+        <div><code>&#34;tel:&#34;</code></div>
+        <div>control for entering a telephone number.</div>
+        <div><code>&#34;text&#34;</code></div>
+        <div>single-line text field; no line-breaks.</div>
+        <div><code>&#34;search&#34;</code></div>
+        <div>single-line text field for searching data.</div>
+        <div><code>&#34;password&#34;</code></div>
+        <div>single-line text field whose value is obscured.</div>
+        <!-- Misc. -->
+        <div><code>&#34;number&#34;</code></div>
+        <div>control for entering a number.</div>
+        <div><code>&#34;range&#34;</code></div>
+        <div>control for entering a, inconsequential number.</div>
+        <div><code>&#34;date&#34;</code></div>
+        <div>control for entering a date.</div>
+        <div><code>&#34;hidden&#34;</code></div>
+        <div>invisible control; value is submitted to the server.</div>
+      </section>
+    </details>
+    <p>
+      The <code>&lt;textarea&gt;</code> element represents a multi-line plain-text editing control, useful for users to input information to be relayed in an email or for providing a comment on a blog. There are five friendly attributes that can be applied, starting with the <code>id&#61;&#34;val&#34;</code>, which respectively associates itself with the <code>&#60;label&#62;</code> element for accessibility purposes so long as the values are identical. The <code>name&#61;&#34;val&#34;</code> attribute is used to set the name of the associated data point submitted to the server when the form is submitted. The <code>row&#61;&#34;val&#34;</code> and <code>cols&#61;&#34;val&#34;</code> attributes specify the precise size for the textarea while the <code>maxlength&#61;&#34;val&#34;</code> attribute sets the maximum number of characters that the textarea is allowed to contain. 
+    </p>
     </article>
     <!-- Interactive Elements -->
     <article>
@@ -609,6 +676,12 @@ include ("../inc/journalHeader.php");
     </article>
   </section>
   <!-- -->
+  <section>
+    <h4>To-Do LIST:</h4>
+    <h5>Edit Forms + Interactive Elements Sections (html + css)</h5>
+    <h5>Add Other Elements to Media Section</h5>
+    <br>
+  </section>
 </article>
 
 <!-- .....CONTENT-ENDS// --> 
