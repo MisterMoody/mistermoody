@@ -216,23 +216,27 @@ p {
   /* font-size: calc(0.95rem + 0.25vw);       Fluid Type: */
   line-height: 1.248; 
 }
-/**/
+/* <ol> used for 'List of Contents' */
 ol {
   font-size: 0.88em;
   margin-left: 0;
-  padding-left: 1em;
+  padding-left: 1.2em;
 }
 ol > ul {
   margin-left: 0;
-  padding-left: 1em;
+  padding-left: 1.2em;
 }
+ol.alpha {list-style-type: lower-alpha;}
 @media all and (min-width: 800px) {  
   body {margin: 0 5.3em;}
   code {font-size: 1em;}
   figure {margin: 0;}
   em {font-size: 1em;}
   p {font-size: 1.1em; margin: 0;}
-  ol {font-size: 1em;}
+  ol {
+    font-size: 1em; 
+    padding-left: 80px;
+  }
 }
 /* FLUID-TYPE   @media (min-width: 414px){
   h1 {  font-size: calc(2.25rem + (((100vw - 20rem) / (90 - 20))) * (4.75 - 2.25));  }  
@@ -277,14 +281,16 @@ h4, h5, h6 {margin-bottom: -8px;}/*4px*/
 /*   GLOSSARY GRID    */
 .glossary {
    width: 100%;
-   font-size: 0.74em;
+   /*font-size: 0.80em;*/
    margin: 0 auto;
    padding: 0;
    display: grid;
    grid-template-rows: repeat(auto, 24px);
-   grid-template-columns: 8em 1fr;
-   grid-gap: 2px;
+   grid-template-columns: 4.2em 1fr;
+   grid-gap: 8px;
  }
+.glossary div:nth-child(even) {font-size: .88em;}
+.glossary div:nth-child(odd) {font-size: 1em;}
 
 /*Unicode Character Grid*/
 .characterGrid {
@@ -338,17 +344,68 @@ dialog::backdrop {
   border: 1px solid #838487;
   text-align: center;
 }
+.block {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	
+  grid-template-columns: repeat(2, 1fr);;    
+}
 .blockCard {
   margin: 4px 6px;
   padding: 0;
   border: 1px solid #838487;
 }
 @media only screen and (min-width: 800px){
+  .block {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(24px, auto));	
+    grid-template-columns: repeat(3, 1fr);   
+    grid-gap: 2px; 
+  }
   .blockCard {
     margin: 2px 8px;
     padding: 0;
   }
 }
+
+
+/**********************/
+/*    TABLE GRIDS     */
+ /* .table, .tableEven {
+    width: 100%;
+    font-size: 0.68em;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(24px, auto));	grid-template-columns: 1fr;
+	}
+@media all and (min-width: 500px) {
+	.table {
+    width: 100%;
+    font-size: 0.74em;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: 16em 1fr;
+    grid-gap: 2px;
+  }
+	.tableEven {
+    width: 100%;
+    font-size: 0.74em;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+  }
+}*/
 /**//*******************************//**/
 /**//*******************************//**/
 
