@@ -291,7 +291,7 @@ h4, h5, h6 {margin-bottom: -8px;}/*4px*/
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(4em, auto));
   grid-template-rows: auto;
   grid-gap: 4px;
 }
@@ -307,7 +307,7 @@ h4, h5, h6 {margin-bottom: -8px;}/*4px*/
 }
 /*Unicode <div> Style*/
 .asciiItem {
-  background: grey;
+  background: #dddada;
   text-align: center;
 }
 /*Unicode 1st Row*/

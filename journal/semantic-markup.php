@@ -48,7 +48,6 @@ include ("../inc/journalHeader.php");
         <li>Lists</li>
         <li>Headings &amp; Paragraphs</li>
         <li>Inline Text Semantics</li>
-        <li>Unicode</li>
         <li>Images</li>
         <li>Forms</li>
         <li>Interactive Elements</li>
@@ -257,13 +256,218 @@ include ("../inc/journalHeader.php");
       </details>
       <p>With navigation setup, focus can shift to laying out content.</p>
     </article>
-    <!-- -->
+    <!-- Heading + Paragraphs -->
     <article>
       <h4>Layout Content with Headings &amp; Paragraphs</h4>
+      <p>
+        The first bits of content for any page will include a heading and an introductory paragraph. <code>&lt;h1-h6&gt;</code> tags are used to <em>create title-based headings</em>. Best practice mandates that the <code>&lt;h1gt;</code> be used only once per page, and to avoid skipping levels when nesting sub-sections to reflect the organization of the content of that page. One practical explanation for this is that most <em>screen readers generate an ordered list of headings for webpages</em>, which is a healthy <i>accessibility</i> method that assists users with disabilities. The <code>&lt;p&gt;</code> tag often accompanies headings as the main text-based content, creating perfectly aligned blocks of text.
+      </p>
+      <figure>
+        <img src="img/headingParagraph.JPG" alt="Headings and Paragraph Markup" />
+        <figcaption>Headings and Paragraph Markup</figcaption>
+      </figure>
     </article>
-    <!-- -->
+    <!-- Inline Text Semantics ( +Unicode )-->
     <article>
       <h4>Use Inline Text Semantics to Let Content Shine</h4>
+      <p>
+        Aside from using the <code>&#60;p&#62;</code> tag to introduce text, we may also want to define the meaning, structure, or style of any piece of text. To achieve such objectives, we can employ <i>inline text semantics</i>. 
+      </p>
+      <p>
+        The <code>&lt;b&gt;</code> / <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> / <code>&lt;i&gt;</code> and <code>&lt;u&gt;</code> tags can be used to 'style text' as <b>bold</b>, <em>italic</em> or <u>underlined</u>, respectively. The <code>&lt;mark&gt;</code> tag is used notate important text while the <code>&lt;code&gt;</code> tag can be used to style text in a monospace fashion that indicates it is a fragment of computer code.
+      </p>
+      <p>
+        The<code>&lt;small&gt;</code>, <code>&lt;sub&gt;</code> and <code>&lt;sup&gt;</code> tags are useful to control text size. Respectively, these elements will <small>decrease the text size</small>, and specify that inline text be displayed as <sub><code>subscript</code></sub> or <sup><code>superscript</code></sup>.
+      </p>
+      <p>
+        The <code>&lt;span&gt;</code> tag is an inline element mainly used to identify small groups of text within any block element. It can be especially useful for targeting a particular element, such as the <code>&lt;p&gt;</code> tag.
+      </p>
+      <p>
+        Similarly, the <code>&lt;cite&gt;</code>, <code>&lt;q&gt;</code> or <code>&lt;abbr&gt;</code> tags can be applied as inline-level elements in order to to add specificity. Respectively, these tags provide a visible text representation of a quoted source, indicates that the enclosed text is a short inline quotation and represents an abbreviation or acronym. The <code>&lt;cite&gt;</code> tag must include either the title or the URL of that work and is often accompanied by the  <code>&lt;q&gt;</code> tag, which optionally accepts a title attribute that will display a tooltip description. Lastly, try tinkering with the <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">&lt;hr&gt;</a></code> element to create a stylish line-break between sections of content.
+      </p>
+      <!-- Unicode -->
+      <h5>Unicode</h5>
+      <p>
+        It is a good practice to use <i>unicode</i> when marking <em>reserved characters</em> to avoid having a browser interpret that content as HTML code. UNICODE stands for Universal Coded Character Set &#40;UCS&#41; and is an International Standard ISO&#47;ICE 10646. Instead of typing non-alpha-numeric characters as-is, the <i>character entity</i> is referenced with a numeric character value, whose <i>syntax</i> is typed with an <i>ampersand</i> <code>(&amp;)</code>, a number sign <code>(&#35;)</code>, a numeric value <code>(nn)</code> and a semicolon <code>(&#59;)</code>.
+      </p>
+      <p>
+        Below is a list of some character references illustrating symbols and their corresponding reference code. There are many more: Google said that more than 65,000 character references existed. Go figure.
+      </p>
+            <aside class="characterGrid">
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#60;</div>
+                <div><small>&amp;&#35;<b>60</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#62;</div>
+                <div><small>&amp;&#35;<b>62</b>&#59;</small></div> 
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#40;</div>
+                <div><small>&amp;&#35;<b>40</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#41;</div>
+                <div><small>&amp;&#35;<b>41</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#91;</div>
+                <div><small>&amp;&#35;<b>91</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#93;</div>
+                <div><small>&amp;&#35;<b>93</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#123;</div>
+                <div><small>&amp;&#35;<b>123</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#125;</div>
+                <div><small>&amp;&#35;<b>125</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#63;</div>
+                <div><small>&amp;&#35;<b>63</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#33;</div>
+                <div><small>&amp;&#35;<b>33</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#92;</div>
+                <div><small>&amp;&#35;<b>92</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#47;</div>
+                <div><small>&amp;&#35;<b>47</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#34;</div>
+                <div><small>&amp;&#35;<b>34</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#39;</div>
+                <div><small>&amp;&#35;<b>39</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#46;</div>
+                <div><small>&amp;&#35;<b>46</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#44;</div>
+                <div><small>&amp;&#35;<b>44</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#58;</div>
+                <div><small>&amp;&#35;<b>58</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#59;</div>
+                <div><small>&amp;&#35;<b>59</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#61;</div>
+                <div><small>&amp;;&#35;<b>61</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#126;</div>
+                <div><small>&amp;&#35;<b>126</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#43;</div>
+                <div><small>&amp;;&#35;<b>43</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#215;</div>
+                <div><small>&amp;&#35;<b>215</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#45;</div>
+                <div><small>&amp;&#35;<b>45</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#95;</div>
+                <div><small>&amp;&#35;<b>95</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#42;</div>
+                <div><small>&amp;&#35;<b>42</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#37;</div>
+                <div><small>&amp;&#35;<b>37</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&nbsp;</div>
+                <div><small>&amp;<b>nbsp</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#94;</div>
+                <div><small>&amp;&#35;<b>94</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#8593;</div>
+                <div><small>&amp;&#35;<b>8593</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#8595;</div>
+                <div><small>&amp;&#35;<b>8595</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#8592;</div>
+                <div><small>&amp;&#35;<b>8592</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#8594;</div>
+                <div><small>&amp;&#35;<b>8594</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#8470;</div>
+                <div><small>&amp;&#35;<b>8470</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#169;</div>
+                <div><small>&amp;&#35;<b>169</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#174;</div>
+                <div><small>&amp;&#35;<b>174</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#8453;</div>
+                <div><small>&amp;&#35;<b>8453</b>&#59;</small></div>
+              </div>
+              <!-- -->
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#185;</div>
+                <div><small>&amp;&#35;<b>185</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#188;</div>
+                <div><small>&amp;&#35;<b>188</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#189;</div>
+                <div><small>&amp;&#35;<b>189</b>&#59;</small></div>
+              </div>
+              <div class="asciiItem">
+                <div class="asciiItemChar">&#190;</div>
+                <div><small>&amp;&#35;<b>190</b>&#59;</small></div>
+              </div>
+              <!-- -->
+            </aside>
+      <p>
+        It would be a worthy venture to lear more about unicode and all symbols as you can include arrows, foreign languages, shapes and much more.
+      </p>
     </article>
     <!-- -->
     <article>
