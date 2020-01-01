@@ -8,10 +8,6 @@ a  {outline: 2px dashed gold;}
 blockquote, div {outline: 1px solid purple;}*/
 h1 {background-color: ;}
 h2 {background-color: ;}
-h3 {background-color: #444; color: #444;}
-h4 {background-color: greenyellow;}
-h5 {background-color: skyblue;}
-h6 {background-color: ;}
 /* Prevent 'User CopynPaste = * {
   -webkit-user-select: none; 
   -moz-user-select: none; 
@@ -123,7 +119,6 @@ body {
   height: 100%;
   margin: 0 1em;
   padding: 0;
-  color: #444;
   /*font-size: calc(1.01em + 1.01vw); */
 	font-family: 'Raleway', sans-serif;
   letter-spacing: 0.6px;
@@ -166,6 +161,7 @@ blockquote {text-align: center;}
 code {
   background: #dddada; 
   border-radius: 5px;
+  color: #000;
   font-family: monospace;
   font-size: 0.84em;
   font-weight: bold;
@@ -180,9 +176,16 @@ figcaption {
 }
 .title {text-align: center;}
 h1, h2, h3, h4, h5, h6 {
+  color: #000;
   font-weight: bolder;
   font-variant: small-caps;
 }
+/*  *DELETE after TEST* */
+h3 {background-color: #444; color: #fff;}
+h4 {background-color: greenyellow;}
+h5 {background-color: skyblue;}
+h6 {background-color: orange;}
+/* ********* ********  */
 /* h1 {font-size: calc(1.3rem + 3.6vw);}}    Fluid Type: */
 hr {
   background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
@@ -206,18 +209,20 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
 }
 /* Highlights 'Terminology' => DO NOT EDIT ~or~ REMOVE */
 i {
-  color: #111;
+  color: #000;
   font-variant: small-caps;
   font-weight: bold;
 } 
 em {font-size: .90em;}
 p { 
+  color: #444;
   font-size: 0.90em; /*0.88em;*/
   /* font-size: calc(0.95rem + 0.25vw);       Fluid Type: */
   line-height: 1.248; 
 }
 /* <ol> used for 'List of Contents' */
 ol {
+  color: #444;
   font-size: 0.88em;
   margin-left: 0;
   padding-left: 1.2em;
@@ -256,7 +261,7 @@ ol.alpha {list-style-type: lower-alpha;}
   grid-template-columns: max-content auto;
   grid-column-gap: 0.4em;
 }
-h4, h5, h6 {margin-bottom: -8px;}/*4px*/
+h3, h4, h5, h6 {margin-bottom: -8px;}/*4px*/
 /*p {margin-bottom: 2px;}  
 .declarations {margin-bottom: -8px;}*/
 .declarations {margin:  -12px 0;}
@@ -272,7 +277,7 @@ h4, h5, h6 {margin-bottom: -8px;}/*4px*/
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2px;
   }
-  h4, h5, h6 {margin-bottom: 0;}
+ h3, h4, h5, h6 {margin-bottom: 0;}
   .declarations span {font-size: 1em;}
 }
 /* ============================================ */
@@ -338,24 +343,19 @@ dialog::backdrop {
   background: rgba(255,0,0,.25);
 }
 /**/
-.card {
-  margin: 6px;
-  padding: 8px;
-  border: 1px solid #838487;
-  text-align: center;
-}
 .block {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: grid;
   grid-template-rows: repeat(auto, minmax(24px, auto));	
-  grid-template-columns: repeat(2, 1fr);;    
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
 }
 .blockCard {
-  margin: 4px 6px;
+  margin: 2px;
   padding: 0;
-  border: 1px solid #838487;
+  border: 1px solid #444;	
 }
 @media only screen and (min-width: 800px){
   .block {

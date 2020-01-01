@@ -33,7 +33,7 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 1: Install an IDE -->
   <section>
-    <h3>Install an IDE Text-Editor</h3>
+    <h3>&nbsp;Install an IDE Text-Editor</h3>
     <p>
       An <i>Integrated Development Environment</i> (IDE) is a software application suite that combines tools required to write and test software, and is typically composed of a source code editor, build automation tools (i.e. compiler, interpreter), and a debugger. 
     </p>
@@ -56,7 +56,7 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 2: Setup a Local Host-Server -->
   <section>
-    <h3>Setup a Local Host-Server</h3>
+    <h3>&nbsp;Setup a Local Host-Server</h3>
     <p>
       A <i>Localhost Server</i> is a computer networking configuration that creates an online-like environment for developers to test applications without the need for internet access.
     </p>
@@ -79,7 +79,7 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 3: Install a Version Control System -->
   <section>
-    <h3>Install a Version Control System</h3>
+    <h3>&nbsp;Install a Version Control System</h3>
      <p>
        A <i>Version Control System</i> (VCS) is a software configuration, or source sode manager, that records changes to a file or set of files over time; it is a categorization of processes and tools designed to keep track of different versions of software, content, documents, and websites in development.
     </p>

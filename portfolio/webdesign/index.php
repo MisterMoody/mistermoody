@@ -59,8 +59,8 @@ include ("../../inc/header.php");
               </div>
             </div>
           <p class="article__Item__Text">
-            Writing compelling copy and using media that properly articulates your message is of utmost importance before structuring a layout design for a website. Producing content that provides a meaningful user experience is the goal when executing a strategy. &nbsp;
-            <a href="portfolio/webdesign/">Read More</a>
+            Writing compelling copy and using media that properly articulates your message is of utmost importance before structuring a layout design for a website. Producing content that provides a meaningful user experience is the goal when executing a strategy. <!--&nbsp;
+            <a href="portfolio/webdesign/">Read More</a>-->
           </p>
           </aside>
       </div>
@@ -126,8 +126,8 @@ include ("../../inc/header.php");
              </div>
            </div>
           <p class="article__Item__Text">
-            JavaScript + PHP are programming languages that devs use to create dynamic elements and enhance user experience. For example, where HTML + CSS are used to markup and style a form, respectively, JS + PHP collects then processes form data. &nbsp;
-            <a href="portfolio/webdesign/">Read More</a>
+            JavaScript + PHP are programming languages that devs use to create dynamic elements and enhance user experience. For example, where HTML + CSS are used to markup and style a form, respectively, JS + PHP collects then processes form data. <!--&nbsp;
+            <a href="portfolio/webdesign/">Read More</a>-->
           </p>
         </aside>
       </div>
@@ -150,8 +150,8 @@ include ("../../inc/header.php");
            </div>
           <!-- Build a Glossary for SYNTAX -->
           <p class="article__Item__Text">
-              Boilerplates. Placeholders. Syntax Formatters. Forms. Infographics. Font-Scale. Typography. Color Swatches + Palettes. Contrast Checker. Image Optimizer. Performance Testers. Icons. Accessibility (A11Y). Compressors. Validators. Tutorials. UX Inspiration. ASCII. &nbsp;
-            <a href="portfolio/webdesign/resources">Read More</a>
+              Boilerplates. Placeholders. Syntax Formatters. Forms. Infographics. Font-Scale. Typography. Color Swatches + Palettes. Contrast Checker. Image Optimizer. Performance Testers. Icons. Accessibility (A11Y). Compressors. Validators. Tutorials. UX Inspiration. ASCII. <!--&nbsp;
+            <a href="portfolio/webdesign/resources">Read More</a>-->
           </p>
         </aside>
       </div>
