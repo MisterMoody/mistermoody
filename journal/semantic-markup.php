@@ -240,7 +240,7 @@ include ("../inc/journalHeader.php");
         List are used for a lot of things: the <code>&lt;ul&gt;</code> element can be used to create a list that designers can modify to build an efficient navigation system that will allow users to seamlessly traverse the site. Two more elements are required to make this idea reality: the <code>&#60;nav&#62;</code> and <code>&#60;a&#62;</code> elements.
       </p>
       <figure>
-        <img src="img/navigation.JPG" alt="a standard navigation unit" />
+        <img src="img/navigation.jpg" alt="a standard navigation unit" />
         <figcaption>a Simple Navigation System</figcaption>
       </figure>
       <p>
@@ -604,7 +604,7 @@ include ("../inc/journalHeader.php");
             </form>
           </dialog>
           <menu>
-            <button id="updateDetails">Dialog: Make a Choice</button>
+            <button id="updateDetails">Option Dialog</button>
           </menu>
           <p>This modal dialog box uses <code>&#60;select&#62;</code> to inject an 'options-list' of possible choices. Make a selection, then click submit and the choice is saved. Click 'cancel' to reset the choice.</p>
         </div>
@@ -688,7 +688,7 @@ include ("../inc/journalHeader.php");
   </section>
 </article>
 
-<!-- .....CONTENT-ENDS// --> 
+<!-- .....CONTENT-ENDS ////////////////////////// --> 
 
 
   <!-- <dialog> Element Example -->
