@@ -8,7 +8,7 @@ a  {outline: 2px dashed gold;}
 blockquote, div {outline: 1px solid purple;}*/
 h1 {background-color: ;}
 h2 {background-color: ;}
-h3 {background-color: orange;}
+h3 {background-color: #444; color: #444;}
 h4 {background-color: greenyellow;}
 h5 {background-color: skyblue;}
 h6 {background-color: ;}
@@ -123,6 +123,7 @@ body {
   height: 100%;
   margin: 0 1em;
   padding: 0;
+  color: #444;
   /*font-size: calc(1.01em + 1.01vw); */
 	font-family: 'Raleway', sans-serif;
   letter-spacing: 0.6px;
@@ -211,7 +212,6 @@ i {
 } 
 em {font-size: .90em;}
 p { 
-  color: #444;
   font-size: 0.90em; /*0.88em;*/
   /* font-size: calc(0.95rem + 0.25vw);       Fluid Type: */
   line-height: 1.248; 

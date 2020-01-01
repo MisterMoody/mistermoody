@@ -42,7 +42,9 @@ include ("../inc/journalHeader.php");
   <!-- Part 1:  Create and Load a Stylesheet++ -->
   <section>
     <h3>Part 1: Create and Load a Stylesheet</h3>
-    <p>Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css' in the project folder.Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>&#60;html&#62;</code> document using the <code>&lt;link&gt;</code> tag. This element requires three attributes for valid implementation: <code>rel="keyword"</code>, <code>type="keyword"</code> and the <code>href="URL"</code>.
+    <p>
+      Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css' in the project folder.Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>&#60;html&#62;</code> document using the <code>&lt;link&gt;</code> tag. This element requires three attributes for valid implementation: <code>rel="keyword"</code>, <code>type="keyword"</code> and the <code>href="URL"</code>.
+      
     </p>
     <figure>
       <img alt="Linking a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">

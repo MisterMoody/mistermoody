@@ -24,7 +24,7 @@ include ("../inc/journalHeader.php");
       <figcaption>So Many Colors, So Many Style Possibilities</figcaption>
     </figure>
     <p>
-      HTML is an acronym for Hypertext Markup Language which is the language used to structure the content of a webpage document. This article explores fundamental usage of best practices to follow when marking up content for a website. Topics covered include:
+      <i>html</i> stands for Hypertext Markup Language, and it is used to structure a webpage documents' content. This article explores fundamental markup best practices. Topics covered include:
     </p>
     <ol>
       <li>What is HTML?</li>
@@ -132,7 +132,10 @@ include ("../inc/journalHeader.php");
         The <code>&lt;title&gt;</code> tag is the second line in this area and is simply used to document the webpage in the browser. Whatever is placed here will be visible on the browser tab. Designers should be mindful that this element plays into search engine optimization
       </p>
       <p>
-        The <code>&lt;link&gt;</code> tag is the third line in this area and it specifies the resources incorporated into a site. All links make use of an <code class="">href&#61;&#34;URL&#34;</code> attribute, which specifies the URL of a linked resource. For that matter, all resources must be referenced with the <code>rel&#61;&#34;val&#34;</code> attribute to establish a relationship between itself and the document. A value of <code>stylesheet</code> indicates that <em>the document is linked to a cascading style sheet</em>. The value of this attribute will function according to the linking-type applied. For example, a canonical value can be used to prevent duplicate content issues by specifying a preferred version of a page as an SEO measure. Other attributes to consider using here include the <code>type&#61;&#34;val&#34;</code> attribute, which helps clarify the content type and the <code>title&#61;&#34;val&#34;</code> attribute, which will create a visual cue for the resource known as a <code>tooltip</code> and is especially useful for embedded or linked resources. 
+        The <code>&lt;link&gt;</code> tag is the third line in this area and it specifies the resources incorporated into a site. All links make use of an <code>href&#61;&#34;URL&#34;</code> attribute, which specifies the URL of a linked resource. If the resource comes directly from the website, it is considered a <i>relative path</i>. However, if the resource points to an external source: indicated by a web address, it is considered an <i>absolute path</i>.
+      </p>
+      <p>
+        For that matter, all resources must be referenced with the <code>rel&#61;&#34;val&#34;</code> attribute to establish a relationship between itself and the document. A value of <code>stylesheet</code> indicates that <em>the document is linked to a cascading style sheet</em>. The value of this attribute will function according to the linking-type applied. For example, a canonical value can be used to prevent duplicate content issues by specifying a preferred version of a page as an SEO measure. Other attributes to consider using here include the <code>type&#61;&#34;val&#34;</code> attribute, which helps clarify the content type and the <code>title&#61;&#34;val&#34;</code> attribute, which will create a visual cue for the resource known as a <code>tooltip</code> and is especially useful for embedded or linked resources. 
       </p>
     </article>
     <!-- The Body -->
@@ -263,7 +266,7 @@ include ("../inc/journalHeader.php");
         The first bits of content for any page will include a heading and an introductory paragraph. <code>&lt;h1-h6&gt;</code> tags are used to <em>create title-based headings</em>. Best practice mandates that the <code>&lt;h1gt;</code> be used only once per page, and to avoid skipping levels when nesting sub-sections to reflect the organization of the content of that page. One practical explanation for this is that most <em>screen readers generate an ordered list of headings for webpages</em>, which is a healthy <i>accessibility</i> method that assists users with disabilities. The <code>&lt;p&gt;</code> tag often accompanies headings as the main text-based content, creating perfectly aligned blocks of text.
       </p>
       <figure>
-        <img src="img/headingParagraph.JPG" alt="Headings and Paragraph Markup" />
+        <img src="img/headingParagraph.jpg" alt="Headings and Paragraph Markup" />
         <figcaption>Headings and Paragraph Markup</figcaption>
       </figure>
     </article>
@@ -486,7 +489,7 @@ include ("../inc/journalHeader.php");
         The <code class="reference"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">&lt;form&gt;</a></code> element represents a document section that contains interactive controls for submitting information to a web server.
       </p>
       <figure>
-        <img src="img/form.JPG" alt="a standard html form" />
+        <img src="img/form.jpg" alt="a standard html form" />
         <figcaption>A standard HTML Form</figcaption>
       </figure>
       <p>
@@ -639,7 +642,7 @@ include ("../inc/journalHeader.php");
     <article>
       <h3>Part 5: Making a Page Accessible</h3>
       <p>
-        In web design, accessibility refers to the practice of designing digital content and applications that can be used by people with vision impairments, mobility problems or cognitive issues. Besides making a site more accessible for users with limitations, research proves that doing so improves SEO, increases download speeds and has better usability. 
+        In web design, accessibility refers to the practice of designing digital content and applications that can be used by people with vision impairments, mobility problems or cognitive issues. Accessibility on a static website deals a lot with semantic markup, but creating an aesthetic with CSS is equally important as it helps users with vision and motor impairments.Besides making a site more accessible for users with limitations, research proves that doing so improves SEO, increases download speeds and has better usability. The key principles involve building a semantically sound, functional application that has content users can readily interpret and use. Become aware of user concerns by being familiar with assistive technologies that validate color contrast, keyboard compatibility, text-to-speech, video captions, voice recognition, etc. The first step to making your page accessible is to deploy the <code>alt&#61;&#34;...&#34;</code> attribute on <code>&lt;images&gt;</code> so that assistive software can read the description value provided.
       </p>
       <p>
         The <i>World Wide Web Consortium</i> (W3C), which is the international authority regarding internet standards, provides an outline for how to make web content accessible. Moreover, you may find that their <i>accessible rich internet applications suite</i> meets your needs in this area providing tools to make web applications and the technologies that power them more accessible. <i>A11Y Project</i> is a major advocate for web accessibility and provide guidelines and patterns for designers to help make their applications accessible.
@@ -668,10 +671,10 @@ include ("../inc/journalHeader.php");
         Vision impaired users rely on screen readers to 'hear' what is being displayed and the <code>&lt;alt=""&gt;</code> attribute is used to convert text to speech. Simply describe the action.
       </p>
       <p>
-        Navigation is accessible only when the <code>&lt;nav&gt;</code> element is properly marked; this makes it easy to navigate a page through interactive elements that include links, buttons and input fields. Add a <code>:focus</code> state to add a visual indicator. Navigation should be intuitive, minimal and flow from left to right, top to bottom. Use the <code>tab</code> key to test.
+        Navigation is accessible only when the <code>&lt;nav&gt;</code> element is properly marked; this makes it easy to navigate a page through interactive elements that include links, buttons and input fields. Add a <code>:focus</code> state to add a visual indicator. Navigation should be intuitive, minimal and flow from left to right, top to bottom. Use the <code>tab</code> key to test. With that it mind, consider how gestures and touch screen detection play into this theme.
       </p>
       <p>
-        When you think your code is up to par, download an <i>accessibility engine</i> web browser extension to check a websites accessibility.
+        Manually test a websites accessibility by tabbing through <code>&lt;link&gt;</code> and <code>&lt;form&gt;</code> elements or use assistive technology like a <i>screen reader</i>. Major browsers offer <i>accessibility engine</i> web browser extensions to audit a websites' accessibility so that might be worth exploring.
       </p>
     </article>
   </section>
@@ -680,6 +683,7 @@ include ("../inc/journalHeader.php");
     <h4>To-Do LIST:</h4>
     <h5>Edit Forms + Interactive Elements Sections (html + css)</h5>
     <h5>Add Other Elements to Media Section</h5>
+    <!-- See MM_portfolio_webdesign =>> 3_webdesign_markup.docx -->
     <br>
   </section>
 </article>
@@ -687,8 +691,8 @@ include ("../inc/journalHeader.php");
 <!-- .....CONTENT-ENDS// --> 
 
 
-    <!-- <dialog> Element Example -->
-    <script src="js/dialogElement.js"></script>
+  <!-- <dialog> Element Example -->
+  <script src="js/dialogElement.js"></script>
 <!-- ************************************************** -->
 <!-- ************************************************** -->
 <?php
