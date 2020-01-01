@@ -38,7 +38,7 @@ include ("../../inc/header.php");
           </div>
           <p class="article__Item__Text">
             Establishing a proper developer environment requires amalgamating technologies that will facilitate a process permitting developers to write, test and manage a web application. This can be achieved with a text-editor, a version controller and a local server. &nbsp;
-            <a href="portfolio/webdesign/">Read More</a>
+            <a href="journal/setup-workstation">Read More</a>
           </p>
         </aside>
 			</div>
