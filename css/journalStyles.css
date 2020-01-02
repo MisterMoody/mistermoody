@@ -72,6 +72,22 @@ header.topnav > .active {
 fa-home {
   padding-right: 75px;
 }
+/* Back-to-Top Button*/
+.top {
+  display: inline-block;
+  background: none; 
+  margin: 0; 
+  position: fixed; 
+  bottom: 50vh; 
+  right: 0; 
+  width: 30px; 
+  height: 10px; 
+  z-index: 100; 
+  text-decoration: none; 
+  border-bottom: none;
+  color: red; 
+  /*background-color: #ff9000;*/
+}
 @media screen and (max-width: 800px) {
   .topnav a {font-size: 1em;}
   .topnav a:first-child {float: left;}
@@ -91,6 +107,10 @@ fa-home {
     display: block;
     text-align: left;
   }
+  /**/
+  /*Back to Top Button*/
+  .top {display: none;}
+  
 }
 /* ******************************************** */
 /* ****Header PERFECTLY Aligned with <body>**** */
@@ -150,6 +170,8 @@ a {
   border-bottom: #ccc 0.088em dashed;
 }
 a:hover {opacity: 0.7;}
+/*a:link {color: #f1a23c;}
+a:visited {color: #000;}*/
 address {
   margin: 0 0 0.4em 0;
   color: red;
@@ -215,14 +237,14 @@ i {
 } 
 em {font-size: .90em;}
 p { 
-  color: #444;
   font-size: 0.90em; /*0.88em;*/
   /* font-size: calc(0.95rem + 0.25vw);       Fluid Type: */
   line-height: 1.248; 
 }
+/* 'Dim' TEXT-Color Styles */
+p, ol {color: #444;}
 /* <ol> used for 'List of Contents' */
 ol {
-  color: #444;
   font-size: 0.88em;
   margin-left: 0;
   padding-left: 1.2em;
@@ -357,6 +379,12 @@ dialog::backdrop {
   padding: 0;
   border: 1px solid #444;	
 }
+.card {
+  margin: 6px;
+  padding: 8px;
+  border: 1px solid #838487;
+  text-align: center;
+}
 @media only screen and (min-width: 800px){
   .block {
     width: 100%;
@@ -375,39 +403,53 @@ dialog::backdrop {
 
 
 /**********************/
-/*    TABLE GRIDS     */
- /* .table, .tableEven {
+/* Git Mommand GRID   */
+.commands {
+  width: 100%;
+  margin:  -8px 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	
+  grid-template-columns: max-content auto;
+  grid-gap: 0.1em 0.8em;
+}
+.commands span {font-size: 0.71em;}
+@media all and (min-width: 800px) {
+	.commands {
+    margin: 0;
     width: 100%;
-    font-size: 0.68em;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto, minmax(24px, auto));	grid-template-columns: 1fr;
-	}
-@media all and (min-width: 500px) {
-	.table {
-    width: 100%;
-    font-size: 0.74em;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto, 24px);
-    grid-template-columns: 16em 1fr;
-    grid-gap: 2px;
-  }
-	.tableEven {
-    width: 100%;
-    font-size: 0.74em;
-    margin: 0 auto;
+    /*font-size: 0.74em;*/
     padding: 0;
     display: grid;
     grid-template-rows: repeat(auto, 24px);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2px;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 2px 2em;
   }
-}*/
+  .commands span {font-size: 1em;}
+}
+
+.table {margin: 2px 6px;}
+
+/*Hide on Mobile >> Display in Desktop*/
+.hideMobile, span.hideMobile {display: none;}
+.hideDesktop, span.hideDesktop {display: contents;}
+/**/
+@media only screen and (min-width: 800px) {
+  .hideMobile, span.hideMobile {display: contents;}
+  .hideDesktop, span.hideDesktop {display: none;}
+}
 /**//*******************************//**/
 /**//*******************************//**/
+
+
+/*  DETAILS */
+/*details {margin: 0 4px; font-size: 0.8em;}
+@media all and (min-width: 800px) {
+  details {margin: 0 4px; font-size: 1em;}
+  summary {font-size: 1em;}
+}
+*/
+
 
 
 /* ============================================ */
