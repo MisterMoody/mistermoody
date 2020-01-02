@@ -9,7 +9,7 @@ include ("../inc/header.php");
   <article class="">
     <section>
       <p>Assembled herein you will find a collection of items which demonstrate my knowledge to develop web applications and facilitate TEFL instruction.</p>
-      <p style="text-align: center;"><i class="fa fa-warning" aria-hidden="true"></i> &nbsp; In-Progress: Return January 2020</p>
+      <p style="text-align: center;"><i class="fa fa-warning" aria-hidden="true"></i> &nbsp; Work In-Progress</p>
     </section>
   </article>
 
