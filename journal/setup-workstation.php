@@ -7,7 +7,12 @@ include ("../inc/journalHeader.php");
 
 
 <!-- // CONTENT-BEGINS ////////////////////////// -->
-<article>
+<article id="top">
+  <!-- BACK-to-TOP BUTTON -->
+  <section class="intro">
+    <a href="#top" class="top"><i class="fa fa-angle-double-up fa-2x"></i></a>
+  </section>
+  <!-- -->
   <!-- // Introduction -->
   <section>
     <h2 class="title">Setup a Workstation</h2>
@@ -91,7 +96,7 @@ include ("../inc/journalHeader.php");
       For all intents and purposes, a VCS is an online storage repository for your code, enabling developers with the ability to manage source-code, track all file versions and coordinate a non-linear workflow in a team environment. Version control allows servers in multiple locations to run different versions on different sites, even while those versions are being updated simultaneously by a number of different developers. The importance of this feature cannot be understated as this system allows developers to compare revised files, identify differences, and merge changes prior to committing any code.
     </p>
     <p>
-      My VCS of choice is <u><a href="https://github.com" target="_blank">Github</a></u> due to its integration capabilities. This VCS is well-documented, provides options for using an extension as opposed to the console, and requires authentication when checking-in or out of a repository. Featured tenants of the Github VCS that I enjoy include files never being lost and that those files are always accessible from any location in the world. Moreover, with some tinkering, security features can be implemented using the SSH protocol to synchronously connect with a file server, enabling near instantaneous deployment online. Learn more about <u><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" target="_blank">How to Use</a></u> Github and be sure to read the list of <u><a href="management.html">Git Commands</a></u> that I am familiar with and regularly use.
+      My VCS of choice is <i><a href="https://github.com" target="_blank">Github</a></i> due to its integration capabilities. This VCS is well-documented, provides options for using an extension as opposed to the console, and requires authentication when checking-in or out of a repository. Featured tenants of the Github VCS that I enjoy include files never being lost and that those files are always accessible from any location in the world. Moreover, with some tinkering, security features can be implemented using the SSH protocol to synchronously connect with a file server, enabling near instantaneous deployment online. Learn more about <i><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" target="_blank">How to Use</a></i> Github and be sure to read the list of <i><a href="management.html">Git Commands</a></i> that I am familiar with and regularly use.
     </p>
   </section>
 
