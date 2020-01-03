@@ -174,7 +174,7 @@ include ("../inc/header.php")
             </div>
       </div>
     <div style="margin-top: 2em;">
-      <h5>Check out my <a href="portfolio/" title="Portfolio">portfolio</a> &nbsp;<i class="fa fa-angle-double-right"></i></h5>
+      <h5>Check out my <a href="portfolio/" title="Portfolio">portfolio</a></h5>
     </div>
     <!-- DOWNLOAD CV Button -->
     <!--<h3>
