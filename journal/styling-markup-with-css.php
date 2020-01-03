@@ -43,7 +43,7 @@ include ("../inc/journalHeader.php");
   <section>
     <h3>Part 1: Create and Load a Stylesheet</h3>
     <p>
-      Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css' in the project folder.Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>&#60;html&#62;</code> document using the <code>&lt;link&gt;</code> tag. This element requires three attributes for valid implementation: <code>rel="keyword"</code>, <code>type="keyword"</code> and the <code>href="URL"</code>.
+      Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css' in the project folder.Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>&#60;html&#62;</code> document using the <code>&lt;link&gt;</code> tag, its required attributes and their respective keywords to notify the browser that this is a cascading style sheet: <code>href="URL"</code>, <code>rel="stylesheet"</code> and <code>type="text/css"</code>.
       
     </p>
     <figure>
@@ -53,16 +53,7 @@ include ("../inc/journalHeader.php");
       </figcaption>
     </figure>
     <p>
-      The <code>rel="..."</code> attribute specifies the relationship of the target object with the <code>&lt;link&gt;</code> to specify its relationship with the document. The <code>type="..."</code> attribute (omitted) specifies the <i>media type</i> being used as a resource. The keywords <code>"stylesheet"</code> and <code>"text/css"</code>, respectively, are used to notify the browser that this is a cascading style sheet. The <code>href="URL"</code> attribute specifies the location of an external resource via its <i>url</i> (Uniform Resource Locator) by establishing a connection between the document and an <i>external stylsheet</i>. The examples above highlight use of <i>relative</i> URLs, which is an <i>implicit</i> reference to a resource located on the same server as the web page using a simple file path.
-    </p>
-    <p>
-      Not all resources are located on the same server. Many web apps utilize resources that are stashed throughout the webiverse: these use <i>explicitly</i> specified web address and are called <i>absolute</i> URLs. An absolute URL takes the following format:
-    </p>
-    <blockquote>
-      <code>protocol://domain/path/</code>
-    </blockquote>
-    <p>
-      Here, <i>protocol</i> specifies how the resource is to be accessed: the protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the (website) server from which data is requested. The <i>path</i> specifies the sequence of directories leading to the target. That's covered. Now, lets focus on writing CSS!
+      That's covered. Now, lets focus on writing CSS!
     </p>
   </section>
   <!-- ************************************************** -->
