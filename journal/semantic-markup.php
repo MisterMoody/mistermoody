@@ -764,6 +764,62 @@ include ("../inc/journalHeader.php");
         <div><span></span></div>
         <div><code>&lt;p&gt;</code></div>
         <div><span></span></div>
+        <div><code>&lt;b&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;em&gt;</code> / <code>&lt;i&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;u&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;code&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;mark&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;small&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;sub&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;sup&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;span&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;cite&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;q&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;abbr&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;br&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;hr&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;img&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;figure&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;figcaption&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;picture&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;audio&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;video&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;track&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
         <div><code>&lt;&gt;</code></div>
         <div><span></span></div>
         <div><code>&lt;&gt;</code></div>
@@ -790,10 +846,10 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <hr>
   <!-- ************************************************** -->
-  <section>
-    <h3>To-Do LIST:</h3>
-    <h4>Edit Forms + Interactive Elements Sections</h4>
-    <h4>Edit Media Section</h4>
+  <section style="background-color: #d46a6a; border: 1px dashed #000;">
+    <h3 style="background-color: #d46a6a;">To-Do LIST:</h3>
+    <h4 style="background-color: #d46a6a;">Edit Forms + Interactive Elements Sections</h4>
+    <h4 style="background-color: #d46a6a;">Edit Media Section</h4>
     <!-- See MM_portfolio_webdesign.docx -->
     <br>
   </section>

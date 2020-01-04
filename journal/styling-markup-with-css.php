@@ -676,7 +676,7 @@ include ("../inc/journalHeader.php");
     <article>
       <h3>Media</h3>
       <p>
-        When dealing with images, it is best to use either<code>.jpg</code> or <code>.png</code> formats.  Below are useful declarations:
+        When dealing with images, it is best to use either<code>.jpg</code> or <code>.png</code> formats. All images have an absolute height and width defined in pixels, thus, modifying these values will distort the image. Try using the <code>.webp</code> format. Below are useful declarations:
       </p>
       <aside class="declarations">
         <div><code>{display: block; }</code></div>
