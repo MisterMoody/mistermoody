@@ -620,7 +620,7 @@ include ("../inc/journalHeader.php");
       <br>  
       <!-- Object-Fit -->
       <p>
-        The <i>object-fit</i> prop approximates how embedded media elements react to the height or width of its parent. It works well with the <i>object-position</i> prop to position a media element along a X/Y axis within its parent.
+        The <i>object-fit</i> prop approximates how embedded media elements react to the height or width of its parent. It works well with the <i>object-position</i> prop to position a media element along the X/Y axis within its parent.
       </p>
       <aside class="declarations">
         <div><code>{object-fit: &nbsp;;}</code></div>
@@ -635,6 +635,26 @@ include ("../inc/journalHeader.php");
         <div><span>// Resize to Smallest Size</span></div>
       </aside>
       <br>
+      <!-- Media Query -->
+      <p>
+        Use a <i>media query</i> to optimize a website by making it responsive at varying breakpoints.
+      </p>
+      <aside class="declarations">
+        <div><code>@media screen and </code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;&nbsp; (min-width: 600px) {..}</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;&nbsp; (max-width: 900px) {..}</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;&nbsp; (max-width: 900px) and (min-width: 600px) {..}</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;&nbsp; (min-width: 800px) {..}</code></div>
+        <div><span></span></div>
+        <div><code>@media only screen and (orientation: landscape) {..}</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>
+      <!-- Size and Position Examples -->
       <h4>Size and Position Examples</h4>
       <p>Fixed Footer</p>
       <aside class="declarations">
@@ -649,8 +669,31 @@ include ("../inc/journalHeader.php");
         <div><code>}</code></div>
         <div><span></span></div>
       </aside>
+      <br>
     </article>
-    <br>
+    
+    <!-- Media -->
+    <article>
+      <h3>Media</h3>
+      <p>
+        When dealing with images, it is best to use either<code>.jpg</code> or <code>.png</code> formats.  Below are useful declarations:
+      </p>
+      <aside class="declarations">
+        <div><code>{display: block; }</code></div>
+        <div><span></span></div>
+        <div><code>{object-position: 50% 50%;}</code></div>
+        <div><span></span></div>
+        <div><code>{object-fit: cover;}</code></div>
+        <div><span></span></div>
+        <div><code>{filter: blur(5px);}</code></div>
+        <div><span></span></div>
+        <div><code>{drop-shadow: 1em 1em 1.25em #hex; }</code></div>
+        <div><span></span></div>
+        <div><code>{clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);}</code></div>
+        <div><span></span></div>
+      </aside>
+      <br>
+    </article>
     <!-- Colors -->
     <article>
       <h3>Colors</h3>
@@ -913,19 +956,17 @@ include ("../inc/journalHeader.php");
       </aside>
     </article>
     <br>
-    <article>
-      <h3>To-Do LIST:</h3>
-      <h4>Add Animation, Transition + Transform Props</h4>
-      <h4>Add Resources / Links to Resource Page</h4>
-      <h4>Edit Part 4 + 5 (Hidden->Complete)</h4>
+    <article style="background-color: #d46a6a; border: 1px dashed #000;">
+      <h3 style="background-color: #d46a6a;">To-Do LIST:</h3>
+      <h4 style="background-color: #d46a6a;">Add Animation, Transition + Transform Props</h4>
     </article>
   </section>
   <!-- ************************************************** -->
   <hr>
   <!-- ************************************************** -->
-  <!-- Part 4: Style Sheet Format and Structure 
+  <!-- Part 4: Style Sheet Format and Structure -->
   <section>
-    <h3>Part 4: Style Sheet Format and Structure</h3>
+    <h2>&nbsp;Style Sheet Format</h2>
     <p>
       Writing CSS requires a plan: no plan will result in spaghetti code. There are ways to avoid code purgatory and it all begins with using <i>comments</i> to document points-of-emphasis for each rule-set. This practice makes reading code easier and is especially important when collaborating on a team project. The example below is a single-line comment where the '...' references the comment.
     </p>
@@ -945,22 +986,12 @@ include ("../inc/journalHeader.php");
       The same is true of such an instance taking place within the same style sheet. The example below dictates that the color of the <code>.class</code> will render 'black' because of the source order determination (ie specificity) on which declaration to utilize.
     </p>
     <figure>
-      <img alt="Specificity Exemplified" src="img/specificity.jpg">
-      <figcaption>
-        Specificity Exemplified
-      </figcaption>
+      <img class="mainImage" alt="Specificity Exemplified" src="img/specificity.jpg">
+      <figcaption>Specificity Exemplified</figcaption>
     </figure>
     <p>
-      Selectors have an applicable specificity rank-order as well where rule-sets are prioritized based on their importance. Selector rank-order (highest-to-lowest) is as follow:
+      Selectors have an applicable specificity rank-order as well where rule-sets are prioritized based on their importance. Selector rank-order (highest-to-lowest) is as follow: <code>&#35;id</code>, <code>&#46;class</code>, <code>&#91;attribute &#61; &#34;val&#34;&#93;</code>, <code>&#58;pseudo-class</code>, <code>&lt;element&gt;</code> then <code>&#58;&#58;pseudo-element</code>.
     </p>
-    <blockquote>
-      <code>&#35;id</code><br> 
-      <code>&#46;class</code><br> 
-      <code>&#91;attribute &#61; &#34;val&#34;&#93;</code><br> 
-      <code>&#58;pseudo-class</code><br> 
-      <code>&lt;element&gt;</code><br> 
-      <code>&#58;&#58;pseudo-element</code>
-    </blockquote>
     <p>
       Selector combinators, the negation :pseudo-class <code>&#91; &#58;not&#40;&#41; &#93;</code> and the universal selector do not impair specificity. The <i>!important exemption</i> <code>&#91; &#33; &#93;</code> and <i>inline-style</i> can be used to override any declaration. However, the exception should be used sparingly, if at all, and it is considered bad practice to write inline-styles. 
     </p>
@@ -981,33 +1012,33 @@ include ("../inc/journalHeader.php");
     </p>
     <blockquote>
       <code>.c-block &#123; ... &#125; = an HTML component</code><br>
-      <code>.js-block &#123; ... &#125; = bout to JavaScript</code><br>
+      <code>.js-block &#123; ... &#125; = For JavaScript</code><br>
       <code>.u-block &#123; ... &#125; = Q+A Automate Tests</code>
     </blockquote>
+    <br>
   </section>
-  <p style="margin: 2em;"></p>
-  
+  <!-- ************************************************** -->
   <hr>
-  
-   Part 5:  Debugging CSS 
+  <!-- ************************************************** -->
+  <!-- Part 5:  Debugging CSS -->
   <section>
-    <h3>Debugging CSS</h3>
+    <h2>&nbsp;Debugging CSS</h2>
     <p>
-      There are times when developers write declarations that are not rendered in the browser, and a simple explanation would target a syntax error as the culprit. When this happens, the browser will simply ignore the rule. If this happens, developers will have to resolve the conflict independently, and this sometimes creates headaches. Luckily, there are plenty of resources available to help <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank">debug</a></u> CSS.
+      There are times when developers write declarations that are not rendered in the browser, and a simple explanation would target a syntax error as the culprit. When this happens, the browser will simply ignore the rule. If this happens, developers will have to resolve the conflict independently, and this sometimes creates headaches. Luckily, there are plenty of resources available to help <i><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank">debug</a></i> CSS.
     </p>
     <p>
-      Major internet browsers –Chrome, Firefox, Microsoft Edge and Safari, all offer <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-browser-based-developer-tools/" target="_blank">dev tools</a></u> to help troubleshoot CSS issues. These toolkits employ an element inspector, a styles panel and a mode for responsive debugging that allows developers to understand where styling conflicts exist. When inspecting styles, it is important to note the declarations that are crossed out or have a warning icon, for example, have been overridden or are invalid. Thus, such elements should be the focus for trying to alleviate any style concerns. Learn more about <u><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome</a></u>, <u><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox</a></u>, <u><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">Microsoft Edge</a></u> and <u><a href="https://developer.apple.com/safari/tools/" target="_blank">Safari</a></u> dev tools.
+      Major internet browsers –Chrome, Firefox, Microsoft Edge and Safari, all offer <i>developer tools</i> to help troubleshoot CSS issues. These toolkits employ an element inspector, a styles panel and a mode for responsive debugging that allows developers to understand where styling conflicts exist. When inspecting styles, it is important to note the declarations that are crossed out or have a warning icon, for example, have been overridden or are invalid. Thus, such elements should be the focus for trying to alleviate any style concerns. Learn more about <i><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome</a></i>, <i><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox</a></i>, <i><a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide" target="_blank">Microsoft Edge</a></i> and <i><a href="https://developer.apple.com/safari/tools/" target="_blank">Safari</a></i> dev tools.
     </p>
     <p>
-      A simpler way to parse code for potential errors would be to use a <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-code-quality-tools/" target="_blank">linter</a></u>, which searches for invalid declarations, specificity, and duplicate or unused selectors in an effort to sanitize code of any unnecessary elements. The W3C group has a quality online <u><a href="https://jigsaw.w3.org/css-validator/" target="_blank">validator</a></u>.
+      A simpler way to parse code for potential errors would be to use a <i><a href="https://www.sitepoint.com/css-debugging-and-optimization-code-quality-tools/" target="_blank">linter</a></i>, which searches for invalid declarations, specificity, and duplicate or unused selectors in an effort to sanitize code of any unnecessary elements. The W3C group has a quality online <i><a href="https://jigsaw.w3.org/css-validator/" target="_blank">validator</a></i>.
     </p>
     <p>
-      There are additional methods that developers can take to optimize a web site and minifying files is a good first step. <u><a href="https://www.sitepoint.com/css-debugging-and-optimization-minification-csso/" target="_blank">Minification</a></u> is the process of removing unnecessary characters from the file in order to improve the files efficiency by decreasing the size of the file.
+      There are additional methods that developers can take to optimize a web site and minifying files is a good first step. <i><a href="https://www.sitepoint.com/css-debugging-and-optimization-minification-csso/" target="_blank">Minification</a></i> is the process of removing unnecessary characters from the file in order to improve the files efficiency by decreasing the size of the file.
     </p>
     <p>
-      Above all else, developers can best serve themselves by <u><a href="https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/" target="_blank">refactoring</a></u> their code. Refactoring is the process of organizing code as most efficiently as possible; enhancing readability affords faster code execution, which is the ultimate goal here. When reorganizing code, it is a good practice to subscribe to a specific style guide with criteria that concentrates on declaration order, formatting rules and use of unit-values that you want to use. Employing a Block Element Modifier &#40;BEM&#41; naming convention would provide a more consistent code structure for code sharing in front-end development. Learn more about <u><a href="http://getbem.com" target="_blank">BEM</a></u>.
+      Above all else, developers can best serve themselves by <i><a href="https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/" target="_blank">refactoring</a></i> their code. Refactoring is the process of organizing code as most efficiently as possible; enhancing readability affords faster code execution, which is the ultimate goal here. When reorganizing code, it is a good practice to subscribe to a specific style guide with criteria that concentrates on declaration order, formatting rules and use of unit-values that you want to use. Employing a Block Element Modifier &#40;BEM&#41; naming convention would provide a more consistent code structure for code sharing in front-end development. Learn more about <i><a href="http://getbem.com" target="_blank">BEM</a></i>.
     </p>
-  </section>-->
+  </section>
 </article> 
 <!-- .....CONTENT-ENDS// --> 
 
