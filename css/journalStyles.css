@@ -140,11 +140,12 @@ body {
   height: 100%;
   margin: 0 1em;
   padding: 0;
-  /*font-size: calc(1.01em + 1.01vw); */
 	font-family: 'Raleway', sans-serif;
   letter-spacing: 0.6px;
 }
+/**/
 main {}                   /* 'PHP' Container */
+/**/
 footer  {
   margin: 4px 0;
   text-align: center;
@@ -163,7 +164,8 @@ footer  {
    /* body {display: none;}        HIDE Site on 'Desktop' */
   /*article {margin: 0 1.21em;}  Page-Alignment */
 }
-/**/
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
 a {
   text-decoration: none;
   color: #000;
@@ -171,8 +173,6 @@ a {
   border-bottom: #000 0.044em dashed;
 }
 a:hover {opacity: 0.7;}
-/*a:link {color: #f1a23c;}
-a:visited {color: #000;}*/
 address {
   margin: 0 0 0.4em 0;
   color: red;
@@ -194,6 +194,9 @@ code {
   letter-spacing: .8;
 }
 details {margin: 0 4px; font-size: 0.8em;}
+dialog::backdrop {
+  background: rgba(255,0,0,.25);
+}
 figure {margin: 0; padding: 0;}
 figcaption {
   font-size: 0.80em;
@@ -206,13 +209,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
   font-variant: small-caps;
 }
+h2, h3, h4, h5, h6 {margin-bottom: -0.44em;}
 /*  *DELETE after TEST* */
-h3 {background-color: #444; color: #fff;}
-h4 {background-color: greenyellow;}
-h5 {background-color: skyblue;}
-h6 {background-color: orange;}
+h2 {background-color: #444; color: #fff;}
+h3 {background-color: greenyellow;}
+h4 {background-color: skyblue;}
+h5 {background-color: orange;}
 /* ********* ********  */
-/* h1 {font-size: calc(1.3rem + 3.6vw);}}    Fluid Type: */
+h1 {font-size: calc(1.2rem + 2.4vw);}  
 hr {
   background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
   border: 0;
@@ -222,7 +226,7 @@ hr {
   overflow: visible;
   text-align: center;
 }
-hr:after { /*rgba(255, 0, 0, 0.8)*/
+hr:after { 
   background: rgba(192, 192, 192, 0.6);
   content: ' \00A7';
   border: 1px dotted rgba(10, 9, 9, 0.7);
@@ -263,16 +267,13 @@ ol.alpha {list-style-type: lower-alpha;}
   code {font-size: 1em;}
   figure {margin: 0;}
   em {font-size: 1em;}
+  h2, h3, h4, h5, h6 {margin-bottom: 0.2em;}
   p {font-size: 1.1em; margin: 0;}
   ol {
     font-size: 1em; 
     padding-left: 80px;
   }
 }
-/* FLUID-TYPE   @media (min-width: 414px){
-  h1 {  font-size: calc(2.25rem + (((100vw - 20rem) / (90 - 20))) * (4.75 - 2.25));  }  
-}
-*/
 /* ============================================ */
 /* ============================================ */
 
@@ -287,14 +288,13 @@ ol.alpha {list-style-type: lower-alpha;}
   grid-template-columns: max-content auto;
   grid-column-gap: 0.4em;
 }
-h3, h4, h5, h6 {margin-bottom: -8px;}/*4px*/
 /*p {margin-bottom: 2px;}  
 .declarations {margin-bottom: -8px;}*/
 .declarations {margin:  -12px 0;}
 .declarations span {font-size: 0.71em;}
 @media all and (min-width: 800px) {
 	.declarations {
-    margin: 0;
+    margin: 6px;
     width: 100%;
     /*font-size: 0.74em;*/
     padding: 0;
@@ -303,7 +303,6 @@ h3, h4, h5, h6 {margin-bottom: -8px;}/*4px*/
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2px;
   }
- h3, h4, h5, h6 {margin-bottom: 0;}
   .declarations span {font-size: 1em;}
 }
 /* ============================================ */
@@ -364,11 +363,7 @@ h3, h4, h5, h6 {margin-bottom: -8px;}/*4px*/
   details {margin: 0 4px; font-size: 0.8em;}
 }
 
-/* Cards / Interactive Tags*/
-dialog::backdrop {
-  background: rgba(255,0,0,.25);
-}
-/**/
+/* GRID: 2-COL Mobile => 3-Col Desktop */
 .block {
   width: 100%;
   margin: 0;
@@ -379,10 +374,11 @@ dialog::backdrop {
   grid-gap: 4px;
 }
 .blockCard {
-  margin: 2px;
+  margin: 0;
   padding: 0;
   border: 1px solid #444;	
 }
+.blockCard p {margin: 2px;}
 .card {
   margin: 6px;
   padding: 8px;
@@ -420,7 +416,7 @@ dialog::backdrop {
 .commands span {font-size: 0.71em;}
 @media all and (min-width: 800px) {
 	.commands {
-    margin: 0;
+    margin: 6px;
     width: 100%;
     /*font-size: 0.74em;*/
     padding: 0;
@@ -487,9 +483,9 @@ img { /* Default */
 @media all and (min-width: 800px) {
   .mainImage {  /*Center Image*/
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1em auto;
     max-height: 23.23em;
+    max-width: 32.32em;
   }
   .imgL {
     float: left;

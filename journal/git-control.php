@@ -10,7 +10,7 @@ include ("../inc/journalHeader.php");
 <article>
   <!-- // Introduction -->
   <section>
-    <h2 class="title">Version Control &amp; Using Github</h2>
+    <h1 class="title">Github Version Control</h1>
     <!--<figure>
       <img class="mainImage" src="img/......"/>
       <figcaption>Creating a Repo</figcaption>
@@ -34,7 +34,7 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 1: List of Git Commands -->
   <section>
-    <h3>&nbsp;List of Git Commands</h3>
+    <h2>&nbsp;List of Git Commands</h2>
     <br>
     <article class="commands">
       <div class="hideMobile"><b>Git Command</b></div>
@@ -75,7 +75,7 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 2: Creating a Repository -->
   <section>
-    <h3>&nbsp;Creating a Repository</h3>
+    <h2>&nbsp;Creating a Repository</h2>
     <p>
       There are two ways to create a repository: You can <i>Clone</i> a repo from another machine, or you can <i>Initialize</i> a brand new repo.
     </p>
@@ -105,7 +105,7 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 3: Staging Changes -->
   <section>
-		<h3>&nbsp; Staging Changes</h3>
+		<h2>&nbsp;Staging Changes</h2>
     <p>
       At this point, you have a repository properly configured and you simply want to save your work. Before saving your work, you run &#91;Step 1&#93; to ascertain what files are ready to be versioned.
     </p>
@@ -128,7 +128,7 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 4: Managing Committed Files -->
   <section>
-    <h3>&nbsp; Managing Committed Files</h3>
+    <h2>&nbsp; Managing Committed Files</h2>
     <p>Below are commands that may prove useful only after becoming comfortable using the console.</p>
     <article class="commands">
       <div><span>View Comparisons</span></div>
@@ -165,7 +165,7 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 4: Working with Remote Repositories -->
   <section>
-    <h3><span>Part VI:</span> Working with Remote Repositories</h3>
+    <h2>&nbsp;Working with Remote Repos</h2>
     <p>
       Using github for independent projects is slightly different when working with others. For starters, a repository that you own is <i>Local</i> whilst a one owned by another developer is known as a <i>Remote</i>. Each repo is a full copy of its original, including version history.
     </p>

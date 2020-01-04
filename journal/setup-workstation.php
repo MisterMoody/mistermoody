@@ -15,7 +15,7 @@ include ("../inc/journalHeader.php");
   <!-- -->
   <!-- // Introduction -->
   <section>
-    <h2 class="title">Setup a Workstation</h2>
+    <h1 class="title">Setup a Workstation</h1>
     <figure>
       <img class="mainImage" src="img/workstation.png"/>
       <figcaption>A Simple Workstation</figcaption>
@@ -34,12 +34,12 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 1: Install an IDE -->
   <section>
-    <h3>&nbsp;Install an IDE Text-Editor</h3>
+    <h2>&nbsp;Install an IDE Text-Editor</h2>
     <p>
       An <i>Integrated Development Environment</i> (IDE) is a software application suite that combines tools required to write and test software, and is typically composed of a source code editor, build automation tools (i.e. compiler, interpreter), and a debugger. 
     </p>
     <figure>
-      <img src="img/ide.jpg" alt="Example of Brackets Text Editor" />
+      <img class="mainImage" src="img/ide.jpg" alt="Example of Brackets Text Editor" />
       <figcaption>The Brackets IDE</figcaption>
     </figure>
     <p>
@@ -57,12 +57,12 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 2: Set up a Local Host-Server -->
   <section>
-    <h3>&nbsp;Set up a Local Host-Server</h3>
+    <h2>&nbsp;Set up a Local Host-Server</h2>
     <p>
       A <i>Localhost Server</i> is a computer networking configuration that creates an online-like environment for developers to test applications without the need for internet access.
     </p>
     <figure>
-      <img src="img/xampp.jpg" alt="Example of XAMPP Localhost Server" />
+      <img class="mainImage" src="img/xampp.jpg" alt="Example of XAMPP Localhost Server" />
       <figcaption>The XAMPP Localhost Server</figcaption>
     </figure>
     <p>
@@ -80,12 +80,12 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <!-- Part 3: Install a Version Control System -->
   <section>
-    <h3>&nbsp;Install a Version Control System</h3>
+    <h2>&nbsp;Install a Version Control System</h2>
     <p>
       A <i>Version Control System</i> (VCS) is a software configuration, or <i>source code manager</i>, that records changes to a file or set of files over time. It is a categorization of processes and tools designed to keep track of different versions of software, content, documents, and websites in development.
     </p>
     <figure>
-      <img src="img/vcs.JPG" alt="Example of the Github Version Control System"/>
+      <img class="mainImage" src="img/vcs.JPG" alt="Example of the Github Version Control System"/>
       <figcaption>The Github Version Control System</figcaption>
     </figure>
     <p>

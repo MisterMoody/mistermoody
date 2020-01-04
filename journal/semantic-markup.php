@@ -10,7 +10,7 @@ include ("../inc/journalHeader.php");
 <article>
   <!-- // Introduction -->
   <section>
-    <h2 class="title">Semantic Markup</h2>
+    <h1 class="title">Semantic Markup</h1>
     <figure>
       <img class="mainImage" src="img/html.png"/>
       <figcaption>So Many Colors, So Many Style Possibilities</figcaption>
@@ -40,7 +40,7 @@ include ("../inc/journalHeader.php");
         <li>Lists</li>
         <li>Headings &amp; Paragraphs</li>
         <li>Inline Text Semantics</li>
-        <li>Media</li>
+        <li>Media Elements</li>
         <li>Forms</li>
         <li>Interactive Elements</li>
       </ul>
@@ -54,7 +54,7 @@ include ("../inc/journalHeader.php");
   <section>
     <!-- Intro -->
     <article>
-      <h3>Part 1: What is HTML?</h3>
+      <h2>&nbsp;What is HTML?</h2>
       <p>
         <i>html</i> defines the hierarchical structure of the content on a webpage using <code>&lt;elements&gt;</code> also called <code>&lt;tag&gt;</code>, that specify how content is displayed. Internet browsers use elements to parse markup before displaying content to the user. Elements usually have an opening and closing <code>&lt;tag&gt;...&lt;&#47;tag&gt;</code> component, but there are a few self-closing tags as well.
       </p>
@@ -70,7 +70,7 @@ include ("../inc/journalHeader.php");
     </article>
     <!-- Set up HTML -->
     <article>
-      <h4>Setup Project Files</h4>
+      <h3>Setup Project Files</h3>
       <p>
         Lets open the project directory and create a new file, naming this file <code>index.html</code>, which is the universal file name for all website homepages. Lets also create two folders: one named <code>css/</code> and the other named <code>img/</code> (these folders will be used later in the project to contain style sheets and images). Enter the CSS folder and create a new file, naming this file <code>styles.css</code>. Leave the images folder empty. 
       </p>
@@ -82,16 +82,16 @@ include ("../inc/journalHeader.php");
   <!-- Part 2: Required Document Elements -->
   <section>
     <article>
-      <h3>Part 2: Required Document Elements</h3>
+      <h2>&nbsp;Required Document Elements</h2>
       <p>There are several elements required to ensure a web browser can properly render documents.</p>
       <figure>
-        <img src="img/requiredHTML.jpg" alt="an HTML Document" />
+        <img class="mainImage" src="img/requiredHTML.jpg" alt="an HTML Document" />
         <figcaption>Required structural elements for an HTML Document</figcaption>
       </figure>
     </article>
     <!-- The Main Root -->
     <article>
-      <h4>The Main Root</h4>
+      <h3>The Main Root</h3>
       <p>
         The <code>&lt;!DOCTYPE html&gt;</code> is the first line of a page and it declares that this document is indeed an HTML file by providing browsers with specifications that will ensure rendering.
       </p>
@@ -101,11 +101,11 @@ include ("../inc/journalHeader.php");
     </article>
     <!-- The Head -->
     <article>
-      <h4>The Head</h4>
+      <h3>The Head</h3>
       <p>
        The <code>&lt;head&gt;</code> element is the first child descendant of the <code>&lt;html&gt;</code> element and represents the area that contains all meta information about a particular page, its title and instructions for the browser to locate style sheets while defining relationships that the document has to others in the web site.
       </p>
-      <h5>Meta Data</h5>
+      <h4>Meta Data</h4>
       <p>
         The <code>&lt;meta&gt;</code> tag is the first line in this area and it is used to provide meta data about a webpage, its author and pertinent information that enhances search engine optimization. Attributes that can be applied to this element are as follow:
       </p>
@@ -118,7 +118,7 @@ include ("../inc/journalHeader.php");
       <p>
         The <code>content&#61;&#34;val&#34;</code> attribute is associated with the <code>name&#61;&#34;val&#34;</code> attribute, controlling the size of the viewport as well as the zoom level upon initial page load. The assigned value for <code>content&#61;&#34;...&#34;</code> does several things that enables a mobile responsive platform while maintaining its structural and stylistic integrity. The <code>width</code> property controls the size of the viewport and when assigned the special value <code>device-width</code>, will scale the full-width of the screen. The value <code>initial-scale</code> controls the zoom level when the page is first loaded and simply controls how users are allowed to zoom the page in or out.
       </p>
-      <h5>Links</h5>
+      <h4>Links</h4>
       <p>
         The <code>&lt;link&gt;</code> tag specifies a resource and accepts three attributes: <code>rel="keyword"</code>, <code>type="keyword"</code> and <code>href="URL"</code>.
       </p>
@@ -134,7 +134,7 @@ include ("../inc/journalHeader.php");
       <p>
         Here, <i>protocol</i> specifies how the resource is to be accessed: the protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the (website) server from which data is requested. The <i>path</i> specifies the sequence of directories leading to the target.
       </p>
-      <h5>Misc.</h5>
+      <h4>Misc.</h4>
       <p>
         The <code>&lt;title&gt;</code> tag is simply used to document the webpage in the browser. Whatever is placed here will be visible on the browser tab.
       </p>
@@ -145,7 +145,7 @@ include ("../inc/journalHeader.php");
     </article>
     <!-- The Body -->
     <article>
-      <h4>The Body</h4>
+      <h3>The Body</h3>
       <p>
         Once <code>&lt;head&gt;</code> specifications are declared, content layout takes center stage. Web browsers use the combination of the aforementioned data to coordinate all resources required to make the website function as it was designed. Although absolutely none of the <code>&lt;head&gt;</code> information is visible to users, the exact opposite is true of the <code >&lt;body&gt;</code> tag. As the second child descendant of the <code>&lt;html&gt;</code> tag, it represents the area of the document that contains all content that will be displayed on screen (or print media), such as headings, paragraphs, images, and so on. Lets explore!
       </p>
@@ -157,25 +157,25 @@ include ("../inc/journalHeader.php");
   <!-- Part 3: Sectioning Content -->
   <section>
     <article>
-      <h3>Part 3: Sectioning Content</h3>
+      <h2>&nbsp;Sectioning Content</h2>
       <p>
         HTML uses sections to define the structure of a document and all sections are defined explicitly or implicitly. Explicitly defined sections lay the foundation for overall presentation while implicitly defined sections organizes content throughout their parent containers. When defining page sections, focus on using the header, nav, article, section, main, aside, div and footer elements to get started.
       </p>
       <figure>
-        <img src="img/section.jpg" alt="Method for Defining Page Sections" />
+        <img class="mainImage" src="img/section.jpg" alt="Method for Defining Page Sections" />
         <figcaption>a Simple Template</figcaption>
       </figure>
     </article>
     <!-- Header and Navigation -->
     <article>
-      <h4>Header and Navigation</h4>
+      <h3>Header and Navigation</h3>
       <p>
         The <code>&lt;header&gt;</code> tag is the first section users encounter and contains introductory information related to the website such as a logo or navigational aids. The <code>&lt;nav&gt;</code> tag is used to create a navigation system for users to browse a website, providing links within the current document or to an external source. This element can be used within a <code>&lt;header&gt;</code> or independently, and should be reserved for global navigation, a table of contents, previous&#47;next links, etc.
       </p>
     </article>
     <!-- Primary Section Areas -->
     <article>
-      <h4>Primary Section Areas</h4>
+      <h3>Primary Section Areas</h3>
       <p>
         The <code>&lt;main&gt;</code> tag should not be used to section content as it represents content that is directly related to the central topic of a document. This element is essentially the main container within the <code>&#60;body&#62;</code> tag, possessing all information outside of content that is repeated across a set of documents or document sections such as navigation links, copyright information, site logos or search forms.
       </p>
@@ -188,77 +188,11 @@ include ("../inc/journalHeader.php");
     </article>
     <!-- Footer -->
     <article>
-      <h5>Footer</h5>
+      <h3>Footer</h3>
       <p>
         The <code>footer</code> element typically contains information about the author, copyright data or links to related documents. It is placed at the bottom of the section root or used at the bottom of any sectioning elements.
       </p>
     </article>
-     
-      <h5>Glossary</h5>
-    <br>
-      <article class="declarations">
-        <div><code>&lt;!DOCTYPE html&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;head&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;meta&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;title&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;link&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;body&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;header&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;nav&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;main&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;article&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;section&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;aside&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;div&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;footer&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;a&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;ul&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;ol&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;li&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;h1-h6&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;p&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-      </article>
-   
   </section>
   <!-- ************************************************** -->
   <hr>
@@ -266,14 +200,14 @@ include ("../inc/journalHeader.php");
   <!-- Part 4: Defining Content -->
   <section>
     <article>
-      <h3>Part 4: Defining Content</h3>
+      <h2>&nbsp;Defining Content</h2>
       <p>
         Content elements are used to organize sections of content and are nested within primary section areas. There are dozens of elements that can be used to markup content: sectional headings, paragraph text, forms and multimedia are but a few things that have a conventional usage of which there is a suitable tag.
       </p> 
     </article>
     <!-- Lists -->
     <article>
-      <h4>Build a Navigation System with Lists</h4>
+      <h3>Build a Navigation System with Lists</h3>
       <p>
         Lets make a list: not a shopping list, but a list nonetheless. In HTML, list are used to group a set of related items in no particular order or in a specific order. The list type determines how its list-items will be displayed. 
       </p>
@@ -290,7 +224,7 @@ include ("../inc/journalHeader.php");
         List are used for a lot of things: the <code>&lt;ul&gt;</code> tag can be used to create a list that designers can modify to build an efficient navigation system that will allow users to seamlessly traverse the a website. Both the <code>&#60;nav&#62;</code> and <code>&#60;a&#62;</code> tags are required to make this idea reality.
       </p>
       <figure>
-        <img src="img/navigation.jpg" alt="a standard navigation unit" />
+        <img class="mainImage" src="img/navigation.jpg" alt="a standard navigation unit" />
         <figcaption>a Simple Navigation System</figcaption>
       </figure>
       <p>
@@ -311,18 +245,18 @@ include ("../inc/journalHeader.php");
     </article>
     <!-- Heading + Paragraphs -->
     <article>
-      <h4>Layout Content with Headings &amp; Paragraphs</h4>
+      <h3>Headings &amp; Paragraphs</h3>
       <p>
         The first bits of content for any page will include a heading and an introductory paragraph. <code>&lt;h1-h6&gt;</code> tags are used to <em>create title-based headings</em>. Best practice mandates that the <code>&lt;h1&gt;</code> be used only once per page, and to avoid skipping levels when nesting sub-sections to reflect the organization of the content of that page. One practical explanation for this is that most <em>screen readers generate an ordered list of headings for webpages</em>, which is a healthy <i>accessibility</i> method that assists users with disabilities. The <code>&lt;p&gt;</code> tag often accompanies headings as the main text-based content, creating perfectly aligned blocks of text.
       </p>
       <figure>
-        <img src="img/headingParagraph.jpg" alt="Headings and Paragraph Markup" />
+        <img class="mainImage" src="img/headingParagraph.jpg" alt="Headings and Paragraph Markup" />
         <figcaption>Headings and Paragraph Markup</figcaption>
       </figure>
     </article>
     <!-- Inline Text Semantics ( +Unicode )-->
     <article>
-      <h4>Use Inline Text Semantics to Let Content Shine</h4>
+      <h3>Inline Text Semantics</h3>
       <p>
         Aside from using the <code>&#60;p&#62;</code> tag to introduce text, <i>inline text semantics</i> may be employed to define the meaning, structure, or style of any piece of text. 
       </p>
@@ -339,7 +273,7 @@ include ("../inc/journalHeader.php");
         Similarly, the <code>&lt;cite&gt;</code>, <code>&lt;q&gt;</code> or <code>&lt;abbr&gt;</code> tags can be applied as inline-level elements in order to add specificity. These tags provide a visible text representation of a quoted source, indicates that the enclosed text is a short inline quotation and represents an abbreviation or acronym. The <code>&lt;cite&gt;</code> tag must include either the title or the URL of that work and is often accompanied by the  <code>&lt;q&gt;</code> tag. Lastly, tinker with the <code>&lt;hr&gt;</code> tag to create a stylish line-break between sections of content.
       </p>
       <!-- Unicode -->
-      <h5>Unicode</h5>
+      <h4>Unicode</h4>
       <p>
         It is a good practice to use <i>unicode</i> when marking <em>reserved characters</em> to avoid having a browser interpret that content as HTML code. UNICODE stands for Universal Coded Character Set &#40;UCS&#41; and is an International Standard ISO&#47;ICE 10646. Instead of typing non-alpha-numeric characters as-is, the <i>character entity</i> is referenced with a numeric character value, whose <i>syntax</i> is typed with an <i>ampersand</i> <code>(&amp;)</code>, a number sign <code>(&#35;)</code>, a numeric value <code>(nn)</code> and a semicolon <code>(&#59;)</code>.
       </p>
@@ -522,7 +456,7 @@ include ("../inc/journalHeader.php");
     </article>
     <!-- Media -->
     <article>
-      <h4>Lights, Camera, Action: using Media Elements</h4>
+      <h3>Media Elements</h3>
       <p>
         The <code>&lt;img/&gt;</code> element is a self-closing tag used to embed images into a document. This element requires the <code>src&#61;&#34;val&#34;</code> and <code>alt&#61;&#34;val&#34;</code> attributes, which respectively ascertains an images' file path extension, which must be of .svg, .jpg, or .png format, and offers a physical description of the image, required for accessibility purposes. 
       </p>
@@ -532,12 +466,12 @@ include ("../inc/journalHeader.php");
     </article>
     <!-- Forms-->
     <article>
-      <h4>Will that complete your order? Service Forms</h4>
+      <h3>Service Forms</h3>
       <p>
         The <code>&lt;form&gt;</code> tag represents a document section that contains interactive controls for submitting information to a web server.
       </p>
       <figure>
-        <img src="img/form.jpg" alt="a standard html form" />
+        <img class="mainImage" src="img/form.jpg" alt="a standard html form" />
         <figcaption>A standard HTML Form</figcaption>
       </figure>
       <p>
@@ -599,7 +533,7 @@ include ("../inc/journalHeader.php");
     </article>
     <!-- Interactive Elements -->
     <article>
-      <h4>Futuristic Interactive Elements Now</h4>
+      <h3>Interactive Elements</h3>
       <p>
        The <code>&lt;details&gt;</code> tag creates a disclosure widget in which information is visible only when the widget is toggled. Use the self-contained <code>open</code> attribute to programmatically keep open the widget. A summary, caption or legend can be applied to the widget by employing the <code>&lt;summary&gt;</code> tag.
       </p>
@@ -662,7 +596,7 @@ include ("../inc/journalHeader.php");
       </p>
     </article>
     <!-- 
-      <h5>Glossary</h5>
+      <h4>Glossary</h4>
       <aside class="declarations">
         <div><code></code></div>
         <div><span></span></div>
@@ -688,7 +622,7 @@ include ("../inc/journalHeader.php");
   <!-- Part 5: Accessibility -->
   <section>
     <article>
-      <h3>Part 5: Making a Page Accessible</h3>
+      <h2>&nbsp;Making a Page Accessible</h2>
       <p>
         In web design, accessibility refers to the practice of designing digital content and applications that can be used by people with vision impairments, mobility problems or cognitive issues. Accessibility on a static website deals a lot with semantic markup, but creating an aesthetic with CSS is equally important as it helps users with vision and motor impairments. Besides making a site more accessible for users with limitations, research proves that doing so improves SEO, increases download speeds and has better usability. The key principles involve building a semantically sound, functional application that has content users can readily interpret and use. Become aware of user concerns by being familiar with assistive technologies that validate color contrast, video captions, keyboard compatibility, text-to-speech, voice recognition, etc. The first step to making your page accessible is to deploy the <code>alt&#61;&#34;...&#34;</code> attribute on <code>&lt;images&gt;</code> so that assistive software can read the description value provided.
       </p>
@@ -726,12 +660,88 @@ include ("../inc/journalHeader.php");
       </p>
     </article>
   </section>
-  <!-- -->
+  <!-- ************************************************** -->
+  <hr>
+  <!-- ************************************************** -->
+  <!-- Part 6: HTML Glossary -->
   <section>
-    <h4>To-Do LIST:</h4>
-    <h5>Edit Forms + Interactive Elements Sections (html + css)</h5>
-    <h5>Add Other Elements to Media Section</h5>
-    <!-- See MM_portfolio_webdesign =>> 3_webdesign_markup.docx -->
+    <h2>HTML Glossary</h2>
+    <br>
+    <details>
+      <summary>List of HTML Tags</summary>
+      <br>
+      <article class="declarations">
+        <div><code>&lt;!DOCTYPE html&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;head&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;meta&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;title&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;link&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;body&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;header&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;nav&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;main&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;article&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;section&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;aside&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;div&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;footer&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;a&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;ul&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;ol&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;li&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;h1-h6&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;p&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+      </article>
+    </details>
+  </section>
+  <!-- ************************************************** -->
+  <hr>
+  <!-- ************************************************** -->
+  <section>
+    <h3>To-Do LIST:</h3>
+    <h4>Edit Forms + Interactive Elements Sections</h4>
+    <h4>Edit Media Section</h4>
+    <!-- See MM_portfolio_webdesign.docx -->
     <br>
   </section>
 </article>

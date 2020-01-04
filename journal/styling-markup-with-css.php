@@ -10,7 +10,7 @@ include ("../inc/journalHeader.php");
 <article>
   <!-- // Introduction -->
   <section>
-    <h2 class="title">Styling Content with CSS</h2>
+    <h1 class="title">Styling Content with CSS</h1>
     <figure>
       <img class="mainImage" src="img/designStyle.jpg"/>
       <figcaption>So Many Colors, So Many Style Possibilities</figcaption>
@@ -41,13 +41,13 @@ include ("../inc/journalHeader.php");
   <hr>
   <!-- Part 1:  Create and Load a Stylesheet++ -->
   <section>
-    <h3>Part 1: Create and Load a Stylesheet</h3>
+    <h2>&nbsp;Create and Load a Stylesheet</h2>
     <p>
       Implementing CSS begins by creating a file that ends with the <code>.css</code> file extension and placing it into a folder titled 'css' in the project folder.Next, load the stylesheet into the <code>&lt;head&gt;</code> of the <code>&#60;html&#62;</code> document using the <code>&lt;link&gt;</code> tag, its required attributes and their respective keywords to notify the browser that this is a cascading style sheet: <code>href="URL"</code>, <code>rel="stylesheet"</code> and <code>type="text/css"</code>.
       
     </p>
     <figure>
-      <img alt="Linking a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">
+      <img class="mainImage" alt="Linking a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">
       <figcaption>
         CSS &lt;Link&gt; Strategy
       </figcaption>
@@ -63,13 +63,13 @@ include ("../inc/journalHeader.php");
   <section>    
     <!-- Selector/Declaration Overview -->
     <article>
-      <h3>Part 2: Understanding CSS Syntax</h3>
+      <h2>&nbsp;Understanding CSS Syntax</h2>
       <p>
         In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a selector and a declaration. 
       </p>
       <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
       <p>
-        <i>selectors</i> <em>reference <code>&#60;html&#62;</code> elements</em> targeted for styling. Its <i>declaration</i> is made of a property and a value: the <i>property</i> identifies which element feature to modify while the <i>value</i> quantifies to what extent the property is modified. 
+        <i>selectors</i> reference <code>&#60;html&#62;</code> elements targeted for styling. Its <i>declaration</i> is made of a property and a value: the <i>property</i> identifies which element feature to modify while the <i>value</i> quantifies to what extent the property is modified. 
       </p>
       <p>
         This section is designed to explain syntax rules by dissecting a variety of rule-sets in common situations designers will encounter. It begins with an explanation of how <code>&#60;html&#62;</code> elements are used as selectors and the means by which they can be manipulated. Length units are then explored in an effort to understand how elements move or are shaped, creating the perfect segway into the next section highlighting use case declarations.
@@ -78,14 +78,14 @@ include ("../inc/journalHeader.php");
     
     <!-- Selector Types-->
     <article>
-        <h4>Selector Types</h4>
+        <h3>Selector Types</h3>
         <p>
           All <code>&#60;html&#62;</code> elements can be used as a selector, but other things can be used as a selector as well. This first group of selectors are targeted most frequently.
         </p>
 
-        <h5>Simple Selectors</h5>
+        <h4>Simple Selectors</h4>
         <p>
-          The <i>universal</i> selector is the most powerful selector of all as it is  used to <em>render styles to all elements</em> in a document. The <i>element</i> selector <em>renders styles to that type of element</em>. The <i>.class</i> selector <em>renders styles on elements that possess a specific class attribute</em>. The <i>#id</i> selector <em>should not be used in CSS</em> because it is a unique identifier that <em>should be used exclusively</em> as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
+          The <i>universal</i> selector is the most powerful selector of all as it is  used to render styles to all elements in a document. The <i>element</i> selector renders styles to that type of element. The <i>.class</i> selector renders styles on elements that possess a specific class attribute. The <i>#id</i> selector should not be used in CSS because it is a unique identifier that should be used exclusively as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
         </p>
         <aside class="declarations">
           <div><code>* &#123; prop: val; &#125;</code></div>
@@ -100,9 +100,9 @@ include ("../inc/journalHeader.php");
 
         <br>
 
-        <h5>Combinators</h5>
+        <h4>Combinators</h4>
         <p>
-          The power of selectors can be amplified by using a <i>combinator</i>: syntax that <em>unifies the relationship between any of the selectors</em> used above that targets and applies styles to <code>&#60;html&#62;</code> elements based on a specific criteria. The <i>descendant</i> selector <em>targets elements that descend from a specific element</em>. The <i>child</i> selector <em>targets children of a specific element</em>. The <i>adjacent sibling</i> selector <em>targets immmediate siblings of a specific element</em>. The <i>general sibling</i> selector <em>targets all siblings of a specific element</em>. Selectors can also be grouped allowing <em>application of a consistent style theme</em> to grouped elements.
+          The power of selectors can be amplified by using a <i>combinator</i>: syntax that unifies the relationship between any of the selectors used above that targets and applies styles to <code>&#60;html&#62;</code> elements based on a specific criteria. The <i>descendant</i> selector targets elements that descend from a specific element. The <i>child</i> selector targets children of a specific element. The <i>adjacent sibling</i> selector targets immmediate siblings of a specific element. The <i>general sibling</i> selector targets all siblings of a specific element. Selectors can also be grouped allowing application of a consistent style theme to grouped elements.
         </p>
         <aside class="declarations">
             <div><code>Descendant</code></div>
@@ -119,7 +119,7 @@ include ("../inc/journalHeader.php");
 
         <br>  
 
-        <h5>Attribute Selector</h5>
+        <h4>Attribute Selector</h4>
         <p>
             There are also <i>attribute</i> selectors that can be utilized to target particular features within an <code>&#60;html&#62;</code> element, such as those used with the <code>&#60;form&#62;</code> element. 
           </p>
@@ -136,9 +136,9 @@ include ("../inc/journalHeader.php");
 
         <br>  
 
-        <h5>:Pseudo-Class</h5>  
+        <h4>:Pseudo-Class</h4>  
         <p>
-            There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are <em>keywords added to selectors to invoke a special 'state' during a particular instance</em>. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. This first group of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:
+            There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are keywords added to selectors to invoke a special 'state' during a particular instance. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. This first group of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:
           </p>
         <aside class="declarations">
             <div><code>&#58;active &#123;...&#125;</code></div>
@@ -160,7 +160,7 @@ include ("../inc/journalHeader.php");
           </aside>
         <br>
         <p>
-            A number of pseudo-class selectors are based on an elements position and will often <em>select an element based on a particular instance</em>.
+            A number of pseudo-class selectors are based on an elements position and will often select an element based on a particular instance.
           </p>
         <aside class="declarations">
             <div><code>&#58;first-child &#123;...&#125;</code></div>
@@ -185,9 +185,9 @@ include ("../inc/journalHeader.php");
 
         <br>  
 
-        <h5>:Pseudo-Elements</h5>
+        <h4>:Pseudo-Elements</h4>
         <p>
-            <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, <em>are used to style a specific part of a selected element</em>. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
+            <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, are used to style a specific part of a selected element. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
           </p>
         <p>
             The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements.
@@ -215,12 +215,12 @@ include ("../inc/journalHeader.php");
     <br>  
     <!-- Length Units -->
     <article>
-        <h4>Length Units</h4>  
+        <h3>Length Units</h3>  
         <p>
           Properties accept a <code>keyword</code> or <i>length unit</i> as a value to qualify or quantify an expected aesthetic quality. Keywords have a precise meaning for how an element should behave. Often, a <code>unit</code> -a numeric value, is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations.
         </p>
 
-        <h5>Absolute vs. Relative Units</h5>
+        <h4>Absolute vs. Relative Units</h4>
         <p>
           Length units are either absolute or relative in nature: <i>absolute</i> units are fixed and appear as the declared size regardless of browser/device screen size while <i>relative</i> units represents a length with the ability to scale relative to other elements on the page. With respect to responsive web design, it is obvious that relative units are a preferred choice. The <i>pixel</i> (<code>px</code>) unit is an anomoly in that it has an immutable absolute value, yet, is relative to screen resolution. Another common value is the <i>percentage</i> (<code>%</code>) relative unit: use of this is risky in that that element becomes relative to its parent. One suggestion for avoiding any risk is to add the rule-set below to the top of the style sheet then never use again, laying the foundation for a responsive design: 
         </p>
@@ -254,7 +254,7 @@ include ("../inc/journalHeader.php");
         </aside>
         <br>  
 
-        <h5>Dimensional and Time Units</h5> 
+        <h4>Dimensional and Time Units</h4> 
         <p>
           Not all values are created equal so when designing animations out from the abyss of time and space, it is helpful to be aware of dimensional and time measurement units. Time units are easy to remember: <i>seconds</i> <cdoe>(s)</cdoe> and <i>milliseconds</i> <code>(ms)</code>. Working with dimensions can be tricky. The <code>rotate()</code> function is used to calculate a transformation on a specified element. This function helps ascertain movement using the <i>degree</i> <code>(deg)</code> and <i>turns</i> <code>(turn)</code> units, which are used to rotate or turn an object with the only distinction being that one turn reflects a full 360 degree whereas one degree equals just that.
         </p>
@@ -296,31 +296,28 @@ include ("../inc/journalHeader.php");
   <section>
     <!-- Project Plan/Intro -->
     <article>
-      <h3>Part 3: Making Declarations</h3>
+      <h2>&nbsp;Making Declarations</h2>
       <p>
         There are a lot of properties available for styling a document: no project regardless of size will utilize all of them. Lets look at some scenarios a designer can expect to encounter when making declarations for an aesthetically pleasing, yet, fully responsive website.
       </p>
-      <!--  
-for a restaurant. This project features a flexible-grid layout, a manageable global navigation system, images and lists to illustrate and explain food products, respectively, combined with a call-to-action that would pursue a user to make a purchase 
--->
     </article>
     
     <!-- Container Layout -->
     <article>
-      <h4>Container Layout</h4>
+      <h3>Container Layout</h3>
       <p>
-        When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration <em>eliminates spacing concerns</em> by taking into account an elements padding and border along with its width and height. Ths sets a foundation for layout and positional properties used on elements thereafter. From there, the first property designers reach for is that of <i>display</i>, which <em>determines how an element is displayed</em>. The main goal of this property emphasizes horizontal and vertical element alignment. 
+        When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration eliminates spacing concerns by taking into account an elements padding and border along with its width and height. Ths sets a foundation for layout and positional properties used on elements thereafter. From there, the first property designers reach for is that of <i>display</i>, which determines how an element is displayed. The main goal of this property emphasizes horizontal and vertical element alignment. 
       </p>
       <blockquote><code>{display: inline / block / none;}</code></blockquote>
       <p>
         These keywords are old hat in that they were used from the start to emphasize horizontal and vertical layout, but their value has waned over time.
-        The keyword <code>inline</code> is the default value for elements <em>that wrap text along the horizontal axis</em>, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements <em>that act as containers</em>: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. Use the <code>none</code> keyword to <em>hide elements</em>.
+        The keyword <code>inline</code> is the default value for elements that wrap text along the horizontal axis, such as <code>&#60;span&#62;</code>. The keyword <code>block</code> is the default value for elements that act as containers: the <code>&#60;div&#62;</code> and <code>&#60;ul&#62;</code> elements are abvious examples, but the <code>&#60;p&#62;</code> and <code>&#60;h1&#62;</code> elements are also considered a block. Use the <code>none</code> keyword to hide elements.
       </p>
       <p>
         It can be a cumbersome task to use the aforementioned keywords to style a large website, but designers did it this way for eons basing elements as either a row or column. Nowadays, layout techniques are implemented using the keywords flex and grid, and although nearly the same, both are used in distinct ways. <code>flex</code> is one-dimensional and is best used to arrange individual items in a single row or column whereas <code>grid</code> is two-dimensional and is best used to establish containers by arranging items in multiple rows or columns. Thus, what distinguishes these keywords is that grid defines a parent element while flexbox defines child elements.  With that in mind, lets first focus on structuring a container. 
       </p>
       
-      <h5>The Grid</h5>
+      <h4>The Grid</h4>
       <!-- Grid -->
       <p>
         The <code>{display: grid; }</code> declaration sets up a layout pattern that allows elements to be placed in fixed or flexible positions along the cross-axis of perpendicular lines. There are sub-properties that designers should familiarize themselves with to manipulate the layout according to specifications.
@@ -341,13 +338,13 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The sub-props <code>{g-t-c: val;}</code> and <code>{g-t-r: val;}</code> are used to <em>explicitly specify column and row track sizes</em>. The <code>{g-t-a: key;}</code> sub-prop is an elaborate method to accomplish this same feat, yet, is outside of the project scope. To <em>implicitly layout columns and rows</em>, invoke the auto-placement algorithm using <code>{g-a-f: key;}</code>: flow direction is determined using the keywords <code>column</code> or <code>row</code>. Additionally, the keyword <code>dense</code> can be added to the declaration in order to remove dead space between items of varying size, forcing columns or rows to flow in a natural order. In any case, use <code>{grid-gap: value;}</code> to add gutters between both columns and rows.
+        The sub-props <code>{g-t-c: val;}</code> and <code>{g-t-r: val;}</code> are used to explicitly specify column and row track sizes. The <code>{g-t-a: key;}</code> sub-prop is an elaborate method to accomplish this same feat, yet, is outside of the project scope. To implicitly layout columns and rows, invoke the auto-placement algorithm using <code>{g-a-f: key;}</code>: flow direction is determined using the keywords <code>column</code> or <code>row</code>. Additionally, the keyword <code>dense</code> can be added to the declaration in order to remove dead space between items of varying size, forcing columns or rows to flow in a natural order. In any case, use <code>{grid-gap: value;}</code> to add gutters between both columns and rows.
       </p>
       <p>
         The length units previously learned can be applied to sub-properties here for customization, but the true power of <code>grid</code> is the use of a unique set of keywords, math functions and fractional units.
       </p>
       <p>
-        The essential <code>grid</code> keywords designers need to know: <code>auto-fill</code>, <code>auto-fit</code>, <code>min-content</code> and <code>max-content</code>. Both <code>auto-fill</code> and <code>auto-fit</code> are used to <em>automatically size columns</em> <mark><small>(cannot be used to size rows)</small></mark>. Both add as many columns to the row as possible, but the difference is that the former <code>fills</code> the row with as many items as possible, while the latter will <code>fit</code> items before collapsing onto the next row. <code>min-content</code> and <code>max-content</code> represent the <em>minimum and maximum <b>width</b> allotted for content in a grid item</em>.
+        The essential <code>grid</code> keywords designers need to know: <code>auto-fill</code>, <code>auto-fit</code>, <code>min-content</code> and <code>max-content</code>. Both <code>auto-fill</code> and <code>auto-fit</code> are used to automatically size columns <mark><small>(cannot be used to size rows)</small></mark>. Both add as many columns to the row as possible, but the difference is that the former <code>fills</code> the row with as many items as possible, while the latter will <code>fit</code> items before collapsing onto the next row. <code>min-content</code> and <code>max-content</code> represent the minimum and maximum <b>width</b> allotted for content in a grid item.
       </p>
       <aside class="declarations">
         <div><code>{g-t-c: auto-fit / auto-fill;}</code></div>
@@ -357,7 +354,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        A <i>fractional unit</i> <code>#fr</code> specifies that <em>an element take up a fraction of space where an allotment is available</em>: <code>1fr</code> uses one fraction of space; <code>2fr</code> uses two, so on and so forth. Fractional units consistently size elements and work well with math functions.
+        A <i>fractional unit</i> <code>#fr</code> specifies that an element take up a fraction of space where an allotment is available: <code>1fr</code> uses one fraction of space; <code>2fr</code> uses two, so on and so forth. Fractional units consistently size elements and work well with math functions.
       </p>
       <aside class="declarations">
         <div><code>{g-t-c: 1fr;}</code></div>
@@ -367,7 +364,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <code>minmax(x, y)</code> function simplifies calculating a formula for distributing space among elements by <em>establishing a range between a minimum <code>(x)</code> and maximum <code>(y)</code> value to explicitly set columns or rows</em>. It accepts any of the aforementioned keywords and measurement units as a value. In the example below the <code>auto</code> keyword is used to <em>set the the value at minimum or maximum.</em>
+        The <code>minmax(x, y)</code> function simplifies calculating a formula for distributing space among elements by establishing a range between a minimum <code>(x)</code> and maximum <code>(y)</code> value to explicitly set columns or rows. It accepts any of the aforementioned keywords and measurement units as a value. In the example below the <code>auto</code> keyword is used to set the the value at minimum or maximum.
       </p>
       <aside class="declarations">
         <div><code>{g-t- : &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
@@ -387,7 +384,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <code>repeat(x, y)</code> function is an awesome features that <em>allows the declaration to be applied repeatedly</em> to an element, and can be combined with all of the aforementioned keywords and values.
+        The <code>repeat(x, y)</code> function is an awesome features that allows the declaration to be applied repeatedly to an element, and can be combined with all of the aforementioned keywords and values.
       </p>
       <aside class="declarations">
         <div><code>{&nbsp;: repeat(3, 1fr);}</code></div>
@@ -401,7 +398,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <!-- GRID EXAMPLES -->
-      <h6>Grid Examples</h6>
+      <h4>Grid Examples</h4>
       <p>Typical Row-Grid</p>
       <aside class="declarations">
         <div><code>{display: grid;}</code></div>
@@ -429,7 +426,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       <br>
       <!-- Transition to grid-items then FLEXbox -->
       <p>
-        There are also properties used with <code>grid</code> that targets layout structure for grid-items. The <code>justify-items</code> and <code>align-items</code> properties <em>provide horizontal and vertical alignment of grid items</em>.
+        There are also properties used with <code>grid</code> that targets layout structure for grid-items. The <code>justify-items</code> and <code>align-items</code> properties provide horizontal and vertical alignment of grid items.
       </p>
       <aside class="declarations">
         <div><code>{justify-items: &nbsp;;}</code></div>
@@ -447,7 +444,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <code>justify-content</code> and <code>align-content</code> properties to <em>align grid-items horizontally or vertically</em> within its parent container.
+        The <code>justify-content</code> and <code>align-content</code> properties to align grid-items horizontally or vertically within its parent container.
       </p>
       <aside class="declarations">
         <div><code>{justify-content: ;}</code></div>
@@ -466,9 +463,9 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
         <div><span>// Equal Space Around Items</span></div>
       </aside>
       <br>
-      <h5>Flexbox</h5>
+      <h4>Flexbox</h4>
       <p>
-        The <code>flex</code> keyword is used to <em>create a container that allows its direct children to be flexible</em>. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop <em>assigns if items will flow in a column or row</em>. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to <em>wrap items to the next line</em>. Apply margin and padding to create gutters.
+        The <code>flex</code> keyword is used to create a container that allows its direct children to be flexible. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop assigns if items will flow in a column or row. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to wrap items to the next line. Apply margin and padding to create gutters.
       </p>
       <aside class="declarations">
         <div><code>{display: flex;}</code></div>
@@ -480,7 +477,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>justify-content</i> sub-prop <em>manages item alignment along the main horizontal axis</em>.
+        The <i>justify-content</i> sub-prop manages item alignment along the main horizontal axis.
       </p>
       <aside class="declarations">
         <div><code>{justify-content: ;}</code></div>
@@ -498,7 +495,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>align-items</i> sub-prop <em>manages item alignment along the cross vertical axis</em>.
+        The <i>align-items</i> sub-prop manages item alignment along the cross vertical axis.
       </p>
       <aside class="declarations">
         <div><code>{align-items: ;}</code></div>
@@ -517,13 +514,13 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
     
     <!-- Size and Placement -->
     <article>
-      <h4>Sizing and Placement</h4>
+      <h3>Sizing and Placement</h3>
       <p>There are a variety of elements that allow designers to make modifications that effect size and placement.</p>
       <!-- -->
-      <h5>Sizing and Shaping Elements</h5>
+      <h4>Sizing and Shaping Elements</h4>
       <!-- Height + Width -->
       <p>
-        The <i>height</i> property is used to <em>specify content height and width</em> of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
+        The <i>height</i> property is used to specify content height and width of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
       </p>
       <aside class="declarations">
         <div><code> {height: value;}</code></div>
@@ -535,7 +532,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>width</i> property is used to <em>specify content width</em> of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
+        The <i>width</i> property is used to specify content width of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
       </p>
       <aside class="declarations">
         <div><code> {width: value;}</code></div>
@@ -550,7 +547,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       <br>
       <!-- Margin + Padding -->
       <p>
-        The <i>Margin</i> property <em>specifies the outside borders of an element</em>. The <i>Padding</i> property <em>specifies the inside borders of an element</em>. Both props accept a single value as a shorthand for top, right, bottom or left sides.
+        The <i>Margin</i> property specifies the outside borders of an element. The <i>Padding</i> property specifies the inside borders of an element. Both props accept a single value as a shorthand for top, right, bottom or left sides.
       </p>
       <aside class="declarations">
         <div><code>{margin: 4vw; }</code></div>
@@ -560,11 +557,11 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>  
       <!-- Position + top/right/bottom/right + Z-Index -->
-      <h5>Positional Placement</h5>
+      <h4>Positional Placement</h4>
       <p>There are several ways to position elements: techniques explained herein highlight but a few.</p>
       <!-- Float + Overflow -->
       <p>
-        The <i>float</i> property is used to <em>wrap text around images</em>. This is a simple method of positioning an element, but designers should consider that a floated elements position is dependent on the position(s) of element(s) that surround it. One way to contain a floated element is to use the <i>overflow</i> property <em>to control what happens to content that breaks outside of its boundaries</em>: this declaration is applied to the parent element of the floated element..
+        The <i>float</i> property is used to wrap text around images. This is a simple method of positioning an element, but designers should consider that a floated elements position is dependent on the position(s) of element(s) that surround it. One way to contain a floated element is to use the <i>overflow</i> property to control what happens to content that breaks outside of its boundaries: this declaration is applied to the parent element of the floated element..
       </p>
       <aside class="declarations">
         <div><code>{float: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
@@ -589,10 +586,10 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       <br>  
       <!-- Position + Z-Index -->
       <p>
-        The <i>position</i> property offers greater control over how an element is positioned as it can be used <em>to re-position an element from its initial position</em>. It accepts one of five keywords to provide instructions on how and where an element is placed. By default, an element will flow in a natural order amongst fellows. 
+        The <i>position</i> property offers greater control over how an element is positioned as it can be used to re-position an element from its initial position. It accepts one of five keywords to provide instructions on how and where an element is placed. By default, an element will flow in a natural order amongst fellows. 
       </p>
       <p>
-        The <code>relative</code> keyword specifies that <em>an element is positioned relative to other elements</em> while the <code>absolute</code> key is <em>positioned relative to its nearest ancestor</em>. The <code>fixed</code> key <em>positions elements at a specified point within the viewport</em>: a fixed element will never shift positions. The <code>sticky</code> key will <em>position an element relative to other elements until a specified viewport position is met</em>. These keys work in conjunction with <i>offset properties</i> to <em>set the precise placement</em> of an element.
+        The <code>relative</code> keyword specifies that an element is positioned relative to other elements while the <code>absolute</code> key is positioned relative to its nearest ancestor. The <code>fixed</code> key positions elements at a specified point within the viewport: a fixed element will never shift positions. The <code>sticky</code> key will position an element relative to other elements until a specified viewport position is met. These keys work in conjunction with <i>offset properties</i> to set the precise placement of an element.
       </p>
       <aside class="declarations">
         <div><code>{position: &nbsp;;}</code></div>
@@ -614,7 +611,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>z-index</i> property controls the <em>vertical stacking order of elements that overlap</em>. This property only impacts non-static positioned elements. 
+        The <i>z-index</i> property controls the vertical stacking order of elements that overlap. This property only impacts non-static positioned elements. 
       </p>
       <aside class="declarations">
         <div><code>{z-index: 100;}</code></div>
@@ -623,7 +620,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       <br>  
       <!-- Object-Fit -->
       <p>
-        The <i>object-fit</i> prop <em>approximates how embedded media elements react to the height or width of its parent</em>. It works well with the <i>object-position</i> prop to <em>position a media element along a X/Y axis within its parent</em>.
+        The <i>object-fit</i> prop approximates how embedded media elements react to the height or width of its parent. It works well with the <i>object-position</i> prop to position a media element along a X/Y axis within its parent.
       </p>
       <aside class="declarations">
         <div><code>{object-fit: &nbsp;;}</code></div>
@@ -638,7 +635,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
         <div><span>// Resize to Smallest Size</span></div>
       </aside>
       <br>
-      <h5>Size and Position Examples</h5>
+      <h4>Size and Position Examples</h4>
       <p>Fixed Footer</p>
       <aside class="declarations">
         <div><code>footer {</code></div>
@@ -656,9 +653,9 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
     <br>
     <!-- Colors -->
     <article>
-      <h4>Colors</h4>
+      <h3>Colors</h3>
       <p>
-        The <i>color</i> property <em>specifies the color of a text element</em> and can be applied to text decorations and shadows. A color can be assigned using a <i>color name</i> or an <i>rgb</i> value. There is a standard list of color names that can be used and the easiest way to write and RGB value is to use hexadecimal string notation. 
+        The <i>color</i> property specifies the color of a text element and can be applied to text decorations and shadows. A color can be assigned using a <i>color name</i> or an <i>rgb</i> value. There is a standard list of color names that can be used and the easiest way to write and RGB value is to use hexadecimal string notation. 
       </p>
       <p>
         RGB values can be invoked using a function that can be especially useful for professional artists. The <code>rgb()</code> function accepts four parameter values for red, green, blue and opaqueness (optional). The <code>hsl()</code> function is unique it that it controls the color hue, saturation and lightness. These functions are worth exploring further.
@@ -689,9 +686,9 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
     </article>
     <!-- Backgrounds and Borders -->
     <article>
-      <h4>Backgrounds and Borders</h4>
+      <h3>Backgrounds and Borders</h3>
       <p>
-        The <i>background</i> property is used to <em>layer an image underneath content</em>. As a shorthand, it accepts sub-props that include image, position, size, repeat, attachment, origin, clip and color.
+        The <i>background</i> property is used to layer an image underneath content. As a shorthand, it accepts sub-props that include image, position, size, repeat, attachment, origin, clip and color.
       </p>
       <aside class="declarations">
         <div><code>{background: url(xyz.jpg); }</code></div>
@@ -713,7 +710,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        <i>border</i> is a property that <em>applies a border around and element</em>. As a shorthand, it accepts keywords and values for its width, style and color.
+        <i>border</i> is a property that applies a border around and element. As a shorthand, it accepts keywords and values for its width, style and color.
       </p>
       <aside class="declarations">
         <div><code>{border: &nbsp;&nbsp;&nbsp;&nbsp;; }</code></div>
@@ -733,7 +730,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>border-radius</i> property <em>applies rounded corners</em> on elements, accepting 1, 2 or 3 values.
+        The <i>border-radius</i> property applies rounded corners on elements, accepting 1, 2 or 3 values.
       </p>
       <aside class="declarations">
         <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
@@ -759,10 +756,10 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
     <br> 
     <!-- Font and Text -->
     <article>
-      <h4>Font and Text</h4>
+      <h3>Font and Text</h3>
       <p>Build fluid typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
       <p>
-        <i>font</i> is a property that is used to <em>set the style of text</em>. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
+        <i>font</i> is a property that is used to set the style of text. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
       </p>
       <aside class="declarations">
         <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
@@ -770,14 +767,14 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>-style</i> <em>is used to italicize text</em>, but is commonly only used within the shorthand.
+        The <i>-style</i> is used to italicize text, but is commonly only used within the shorthand.
       </p>
       <aside class="declarations">
         <div><code>{font-style: normal; &nbsp;&nbsp;&nbsp;}</code></div>
         <div><span>// Not Italicized</span></div>
       </aside>
       <br>
-      <p>The <i>-variant</i> <em>makes all text uppercase</em>.</p>
+      <p>The <i>-variant</i> makes all text uppercase.</p>
       <aside class="declarations">
         <div><code>{font-variant: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
         <div><span></span></div>
@@ -790,7 +787,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p> 
-        The <i>-weight</i> <em>sets font thickness or width</em>, but its font-family will determine how the weight is applied, if applied at all. Values for this property use an incremental numerical scale from a lot point of 100 to its peak of 900 (increments of 100).
+        The <i>-weight</i> sets font thickness or width, but its font-family will determine how the weight is applied, if applied at all. Values for this property use an incremental numerical scale from a lot point of 100 to its peak of 900 (increments of 100).
       </p>
       <aside class="declarations">
         <div><code>{font-weight: 600-900; &nbsp;}</code></div>
@@ -798,7 +795,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>-size</i> <em>specifies the size of the font using numerical values (ie em, rem + px)</em>. The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, <em>sets the space above and below inline elements</em>. 
+        The <i>-size</i> specifies the size of the font using numerical values (ie em, rem + px). The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, sets the space above and below inline elements. 
       </p>
       <aside class="declarations">
         <div><code>{font-size: unit/value;&nbsp;}</code></div>
@@ -808,7 +805,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>font-family</i> prop <em>defines the font applied to the text</em>. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement. Some web-safe fonts include <code>Arial</code>, <code>Garamond</code>, <code>Tahoma</code>, <code>"Lucida Sans"</code>, <code>Georgia</code>, <code>"Palatino Linotype"</code> and <code>Verdana</code>.
+        The <i>font-family</i> prop defines the font applied to the text. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement. Some web-safe fonts include <code>Arial</code>, <code>Garamond</code>, <code>Tahoma</code>, <code>"Lucida Sans"</code>, <code>Georgia</code>, <code>"Palatino Linotype"</code> and <code>Verdana</code>.
       </p>
       <aside class="declarations">
         <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
@@ -835,7 +832,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
         <div><span></span></div>
       </aside>
       <br>
-      <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties <em>manages the amount of space between letters and words</em>, respectively.</p>
+      <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties manages the amount of space between letters and words, respectively.</p>
       <aside class="declarations">
         <div><code>{letter-spacing: value;}</code></div>
         <div><span>// Space between Letters</span></div>
@@ -846,7 +843,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>text-decoration</i> property <em>sets a line style on text</em> and can be written in shorthand form to <em>define the line, its style and color</em> (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
+        The <i>text-decoration</i> property sets a line style on text and can be written in shorthand form to define the line, its style and color (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
       </p>
       <aside class="declarations">
         <div><code>{text-decoration: &nbsp;; }</code></div>
@@ -858,7 +855,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>text-transform</i> property <em>sets the text case and capitalization</em>.
+        The <i>text-transform</i> property sets the text case and capitalization.
       </p>
       <aside class="declarations">
         <div><code>{text-transform: &nbsp;&nbsp;; }</code></div>
@@ -870,7 +867,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
       <br>
       <p>
-        The <i>writing-mode</i> property <em>sets the vertical and horizontal alignment of text</em>. It is useful when working with Asian languages: when doing so, be sure to implement the <i>word-break</i> property to ensure text words are not broken.
+        The <i>writing-mode</i> property sets the vertical and horizontal alignment of text. It is useful when working with Asian languages: when doing so, be sure to implement the <i>word-break</i> property to ensure text words are not broken.
       </p>
       <aside class="declarations">
         <div><code>{writing-mode: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;;}</code></div>
@@ -884,9 +881,9 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
       </aside>
 
       <p style="margin: 2em;"></p>
-      <h5>List-style</h5>
+      <h4>List-style</h4>
       <p>
-        <i>list-style</i> is a shorthand property that defines a type, position and image. The <i>list-style-type</i> prop <em>sets what type of bullet to use</em>. The <i>list-style-position</i> prop <em>sets the bullet inside or outside of the margin</em>. The <i>list-style-image</i> prop <em>uses a url to set the bullet as an image</em>.
+        <i>list-style</i> is a shorthand property that defines a type, position and image. The <i>list-style-type</i> prop sets what type of bullet to use. The <i>list-style-position</i> prop sets the bullet inside or outside of the margin. The <i>list-style-image</i> prop uses a url to set the bullet as an image.
       </p>
       <aside class="declarations">
         <div><code>{list-style-type: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
@@ -917,11 +914,10 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
     </article>
     <br>
     <article>
-      <h4>To-Do LIST:</h4>
-      <h5>Add Animation, Transition + Transform Properties</h5>
-      <h5>Add Resources / Links to Resource Page (diff Folder)</h5>
-      <h5>Edit Part 4 + 5 (Hidden->Complete->Needs Read Over)</h5>
-      <h5>Grammar Edit</h5>
+      <h3>To-Do LIST:</h3>
+      <h4>Add Animation, Transition + Transform Props</h4>
+      <h4>Add Resources / Links to Resource Page</h4>
+      <h4>Edit Part 4 + 5 (Hidden->Complete)</h4>
     </article>
   </section>
   <!-- ************************************************** -->
@@ -929,9 +925,9 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
   <!-- ************************************************** -->
   <!-- Part 4: Style Sheet Format and Structure 
   <section>
-    <h4>Part 4: Style Sheet Format and Structure</h4>
+    <h3>Part 4: Style Sheet Format and Structure</h3>
     <p>
-      Writing CSS requires a plan: no plan will result in spaghetti code. There are ways to avoid code purgatory and it all begins with using <i>comments</i> to <em>document points-of-emphasis for each rule-set</em>. This practice makes reading code easier and is especially important when collaborating on a team project. The example below is a single-line comment where the '...' references the comment.
+      Writing CSS requires a plan: no plan will result in spaghetti code. There are ways to avoid code purgatory and it all begins with using <i>comments</i> to document points-of-emphasis for each rule-set. This practice makes reading code easier and is especially important when collaborating on a team project. The example below is a single-line comment where the '...' references the comment.
     </p>
     <blockquote>
       <code>/* ... */</code>
@@ -995,7 +991,7 @@ for a restaurant. This project features a flexible-grid layout, a manageable glo
   
    Part 5:  Debugging CSS 
   <section>
-    <h4>Debugging CSS</h4>
+    <h3>Debugging CSS</h3>
     <p>
       There are times when developers write declarations that are not rendered in the browser, and a simple explanation would target a syntax error as the culprit. When this happens, the browser will simply ignore the rule. If this happens, developers will have to resolve the conflict independently, and this sometimes creates headaches. Luckily, there are plenty of resources available to help <u><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank">debug</a></u> CSS.
     </p>
