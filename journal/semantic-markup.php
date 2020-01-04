@@ -247,7 +247,7 @@ include ("../inc/journalHeader.php");
     <article>
       <h3>Headings &amp; Paragraphs</h3>
       <p>
-        The first bits of content for any page will include a heading and an introductory paragraph. <code>&lt;h1-h6&gt;</code> tags are used to <em>create title-based headings</em>. Best practice mandates that the <code>&lt;h1&gt;</code> be used only once per page, and to avoid skipping levels when nesting sub-sections to reflect the organization of the content of that page. One practical explanation for this is that most <em>screen readers generate an ordered list of headings for webpages</em>, which is a healthy <i>accessibility</i> method that assists users with disabilities. The <code>&lt;p&gt;</code> tag often accompanies headings as the main text-based content, creating perfectly aligned blocks of text.
+        The first bits of content for any page will include a heading and an introductory paragraph. <code>&lt;h1-h6&gt;</code> tags are used to <em>create title-based headings</em>. Best practice mandates that the <code>&lt;h1&gt;</code> be used only once per page, and to avoid skipping levels when nesting sub-sections to reflect the organization of the content of that page. One practical explanation for this is that most <em>screen readers generate an ordered list of headings for web pages</em>, which is a healthy <i>accessibility</i> method that assists users with disabilities. The <code>&lt;p&gt;</code> tag often accompanies headings as the main text-based content, creating perfectly aligned blocks of text.
       </p>
       <figure>
         <img class="mainImage" src="img/headingParagraph.jpg" alt="Headings and Paragraph Markup" />
@@ -458,12 +458,65 @@ include ("../inc/journalHeader.php");
     <article>
       <h3>Media Elements</h3>
       <p>
-        The <code>&lt;img/&gt;</code> element is a self-closing tag used to embed images into a document. This element requires the <code>src&#61;&#34;val&#34;</code> and <code>alt&#61;&#34;val&#34;</code> attributes, which respectively ascertains an images' file path extension, which must be of .svg, .jpg, or .png format, and offers a physical description of the image, required for accessibility purposes. 
+        While text content does much to inform users, media content can be more engaging and influential.
       </p>
+      <h4>Images</h4>
+      <p>
+        The <code>&lt;img/&gt;</code> element is a self-closing tag used to embed images into a document. This element requires the <code>src&#61;&#34;val&#34;</code> and <code>alt&#61;&#34;val&#34;</code> attributes, which respectively ascertains an images' file path extension, which must be of .svg, .jpg, or .png format, and offers a physical description of the image, required for accessibility purposes. 
+      </p>     
+      <figure>
+        <img class="mainImage" src="img/imageCaption.jpg" alt="Example" />
+        <figcaption>Image Caption</figcaption>
+      </figure>
       <p>
         A variety of objectives can be accomplished using attributes with the <code>&lt;img /&gt;</code> tag. For example, the <code>crossorigin&#61;&#34;val&#34;</code> attribute can be added to provide security while the  <code>srcset&#61;&#34;val&#34;</code>, <code>width&#61;&#34;val&#34;</code> and <code>height&#61;&#34;val&#34;</code> attributes can be used to specify image dimensions. Furthermore, the <code>&lt;img /&gt;</code> tag pairs well with a <code>&lt;figure&gt;</code> tag, which represents a self-contained container that is accompanied with the captioning <code>&lt;figcaption&gt;</code> tag. The <code>&lt;picture&gt;</code> element functions similarly and may be a more appropriate substitute for the <code>&lt;figure&gt;</code> tag depending on the objective.
       </p>
-    </article>
+      <h4>Audio &amp; Video</h4>
+      <p>Embedded media provides contextual clarity for users. </p>
+      <figure>
+        <img class="mainImage" src="img/videoTag.jpg" alt="Video Controls" />
+        <figcaption>Video Controls</figcaption>
+      </figure>
+      <figure>
+        <img class="mainImage" src="img/audioTag.jpg" alt="Audio Controls" />
+        <figcaption>Audio Controls</figcaption>
+      </figure>
+      <p>
+        The <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags allow web pages to play video and audio files inline with other content. The <code>controls</code> attribute must be specified, else the default browser controls will not display. The <code>HTMLMediaElement <i>API</i></code> can be used to create custom controls, but this requires JavaScript.
+      </p>
+      <p>
+        Both elements require the <code>&lt;source&gt;</code> tag to specify media resources (it is a best practice to host media files and include a URL for easier file management) and accept the following attributes:
+      </p>
+      <aside class="declarations">
+        <div><code>type&#61;&#34;...&#34;</code></div>
+        <div><span>Video Format</span></div>
+        <div><code>controls&#61;&#34;...&#34;</code></div>
+        <div><span>Control Playback &amp; Volume</span></div>
+        <div><code>muted&#61;&#34;...&#34;</code></div>
+        <div><span>Audio Set to Silent</span></div>
+        <div><code>poster&#61;&#34;...&#34;</code></div>
+        <div><span>Image URL on Download</span></div>
+      </aside>
+      <br>
+      <p>
+         It is always a good idea to caption videos: not only for accessibility, but also because people may not comprehend what was said. Utilize the <code>&lt;track&gt;</code> tag, which specifies timed text data, then create a <a href="http://quuz.org/webtt/" target="_blank"><i>WebVTT File</i></a> to define subtitles.
+      </p>
+      <figure>
+        <img class="mainImage" src="img/trackTag.jpg" alt="Track" />
+        <figcaption></figcaption>
+      </figure>
+      <figure>
+        <img class="mainImage" src="img/videoCaption.jpg" alt="Captions" />
+        <figcaption>Video Caption</figcaption>
+      </figure>
+      <p>
+        The first line is required and followed by two line spaces. Line 4 represents the caption ordinal number. Line 5 indicates the start and end times for hour, minute, seconds and milliseconds. Line 6 is the caption content. Line 7 is optional, in the event that users be alerted to inaudible background sound.
+      </p>
+      <p>
+        Useful CSS sylesBecause of compatibility issues, designers need to remember to implement <code>{display: block;}</code> in CSS as they are typically bad for mobile devices.
+      </p>
+    </article>    
+    <br>
     <!-- Forms-->
     <article>
       <h3>Service Forms</h3>
