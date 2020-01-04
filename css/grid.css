@@ -367,7 +367,14 @@ ul.social {
   grid-row: span 2;
   }
 @media all and (min-width: 800px) {.imageGrid {display: none;}}
+/*
+Image GRID Gallery 
+Create 2x Images every 4 Elements (or replace with 3/8)
+.gallery { display: grid;  g-t-c: r(auto-fit, minmax(160px, 1fr)); g-t-r: r(6, 200px); }
+.gallery > .galImg:nth-child(4n) { g-c: span 2; g-r: span 2; } 
 
+*/
+/************************************************* /
 
 /* about/RESUME */
   /* Scroll-Snap Container */
