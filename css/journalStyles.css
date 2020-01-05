@@ -6,16 +6,7 @@ ul, ol {outline: 3px dashed purple;}
 li {outline: 1px dashed purple;}
 a  {outline: 2px dashed gold;}
 blockquote, div {outline: 1px solid purple;}*/
-h1 {background-color: ;}
-h2 {background-color: ;}
-/* Prevent 'User CopynPaste = * {
-  -webkit-user-select: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
-}
-for Safari, Firefox and IE
-*/
+
 /* ============================================ */
 /* CASCADING STYLESHEET ======================= */
 /*
@@ -72,22 +63,6 @@ header.topnav > .active {
 fa-home {
   padding-right: 75px;
 }
-/* Back-to-Top Button*/
-.top {
-  display: inline-block;
-  background: none; 
-  margin: 0; 
-  position: fixed; 
-  bottom: 50vh; 
-  right: 0; 
-  width: 30px; 
-  height: 10px; 
-  z-index: 100; 
-  text-decoration: none; 
-  border-bottom: none;
-  color: red; 
-  /*background-color: #ff9000;*/
-}
 @media screen and (max-width: 800px) {
   .topnav a {font-size: 1em;}
   .topnav a:first-child {float: left;}
@@ -108,10 +83,6 @@ fa-home {
     text-align: left;
   }
   .fa-home, .fa-bars {color: #fff;}
-  /**/
-  /*Back to Top Button*/
-  .top {display: none;}
-  
 }
 /* ******************************************** */
 /* ****Header PERFECTLY Aligned with <body>**** */
@@ -166,6 +137,13 @@ footer  {
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* Prevent 'User CopynPaste' for Safari, Firefox and IE */
+* {
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -181,10 +159,9 @@ address {
   text-align: center;
 }
 blockquote {
-  margin: 0 0;
   text-align: center;
 }
-code {
+code, p code {
   background: #dddada; 
   border-radius: 5px;
   color: #000;
@@ -210,11 +187,10 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
 }
 h2, h3, h4, h5, h6 {margin-bottom: -0.44em;}
-/*  *DELETE after TEST* */
 h2 {background-color: #444; color: #fff;}
-h3 {background-color: greenyellow;}
-h4 {background-color: skyblue;}
-h5 {background-color: orange;}
+h3 {background-color: #7b7b7b;}
+h4 {background-color: #bebdbf;}
+h5 {background-color: gold;}
 /* ********* ********  */
 h1 {font-size: calc(1.2rem + 2.4vw);}  
 hr {
@@ -243,7 +219,6 @@ i {
   font-variant: small-caps;
   font-weight: bold;
 } 
-em {font-size: calc(0.96rem + 0.02vw);}
 p, mark, summary { 
   font-size: calc(0.96rem + 0.02vw);
   line-height: 1.248; 
@@ -264,11 +239,10 @@ ol > ul {
 ol.alpha {list-style-type: lower-alpha;}
 @media all and (min-width: 800px) {  
   body {margin: 0 5.3em;}
-  code {font-size: 1em;}
+  code, p code, details {font-size: 1em;}
   figure {margin: 0;}
-  em {font-size: 1em;}
   h2, h3, h4, h5, h6 {margin-bottom: 0.2em;}
-  p {font-size: 1.1em; margin: 0;}
+  p {font-size: 1.1em; margin: 0.25em 0.55em 0.25em 0.25em;}
   ol {
     font-size: 1em; 
     padding-left: 80px;
@@ -277,24 +251,61 @@ ol.alpha {list-style-type: lower-alpha;}
 /* ============================================ */
 /* ============================================ */
 
+/* GRID: 2-COL Mobile => 3-Col PC 
+   Used for 'dialog' on 'journal/semantic-markup'
+*/
+.block {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+}
+.blockCard {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #444;	
+}
+.blockCard p {margin: 2px;}
+.card {
+  margin: 6px;
+  padding: 8px;
+  border: 1px solid #838487;
+  text-align: center;
+}
+@media only screen and (min-width: 800px){
+  .block {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(24px, auto));	
+    grid-template-columns: repeat(3, 1fr);   
+    grid-gap: 2px; 
+  }
+  .blockCard {
+    margin: 2px 8px;
+    padding: 0;
+  }
+}
+
+
 /* Lines 245 - 274 are for Styling Markup with CSS */
 .declarations {
   width: 100%;
-  /*font-size: 0.68em;*/
-  margin: 0;
+   margin: -1em 0 1em 0;
   padding: 0;
   display: grid;
   grid-template-rows: repeat(auto, minmax(24px, auto));	
   grid-template-columns: max-content auto;
   grid-column-gap: 0.4em;
 }
-/*p {margin-bottom: 2px;}  
-.declarations {margin-bottom: -8px;}*/
-.declarations {margin:  -12px 0;}
 .declarations span {font-size: 0.71em;}
 @media all and (min-width: 800px) {
 	.declarations {
-    margin: 6px;
+    margin: 0.25em 0.55em 1em 0.25em;
     width: 100%;
     /*font-size: 0.74em;*/
     padding: 0;
@@ -305,6 +316,8 @@ ol.alpha {list-style-type: lower-alpha;}
   }
   .declarations span {font-size: 1em;}
 }
+/**********************/
+
 /* ============================================ */
 /* ============================================ */
 /* Lines 276 - 352 are for 'Semantic Markup'    */
@@ -351,7 +364,7 @@ ol.alpha {list-style-type: lower-alpha;}
   font-size: 1.5em;
 }
 /**//*******************************//**/
-/**/
+/*
 @media all and (min-width: 500px) {
   address {color: red;}
   p {margin: 0.25em 0.55em 0.25em 0.25em;}
@@ -361,72 +374,10 @@ ol.alpha {list-style-type: lower-alpha;}
 @media all and (max-width: 500px) {
   figure {margin: 0; padding: 0;}
   details {margin: 0 4px; font-size: 0.8em;}
-}
-
-/* GRID: 2-COL Mobile => 3-Col Desktop */
-.block {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-rows: repeat(auto, minmax(24px, auto));	
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4px;
-}
-.blockCard {
-  margin: 0;
-  padding: 0;
-  border: 1px solid #444;	
-}
-.blockCard p {margin: 2px;}
-.card {
-  margin: 6px;
-  padding: 8px;
-  border: 1px solid #838487;
-  text-align: center;
-}
-@media only screen and (min-width: 800px){
-  .block {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto, minmax(24px, auto));	
-    grid-template-columns: repeat(3, 1fr);   
-    grid-gap: 2px; 
-  }
-  .blockCard {
-    margin: 2px 8px;
-    padding: 0;
-  }
-}
+}*/
 
 
-/**********************/
-/* Git Mommand GRID   */
-.commands {
-  width: 100%;
-  margin:  -8px 0;
-  padding: 0;
-  display: grid;
-  grid-template-rows: repeat(auto, minmax(24px, auto));	
-  grid-template-columns: max-content auto;
-  grid-gap: 0.1em 0.8em;
-}
-.commands span {font-size: 0.71em;}
-@media all and (min-width: 800px) {
-	.commands {
-    margin: 6px;
-    width: 100%;
-    /*font-size: 0.74em;*/
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto, 24px);
-    grid-template-columns: max-content 1fr;
-    grid-gap: 2px 2em;
-  }
-  .commands span {font-size: 1em;}
-}
+
 
 .table {margin: 2px 6px;}
 
@@ -441,14 +392,6 @@ ol.alpha {list-style-type: lower-alpha;}
 /**//*******************************//**/
 /**//*******************************//**/
 
-
-/*  DETAILS */
-/*details {margin: 0 4px; font-size: 0.8em;}
-@media all and (min-width: 800px) {
-  details {margin: 0 4px; font-size: 1em;}
-  summary {font-size: 1em;}
-}
-*/
 
 
 
@@ -504,9 +447,7 @@ img { /* Default */
     border-radius: 2px;
   }
 }
-/*
-**//******************************************//**
-*/
+/**//******************************************//**/
 /* Buttons w/ 'Ripple-Effect' ==== */
 .btn {
   background-position: center;
@@ -547,7 +488,5 @@ p.btn {
     height: 44px;
   }
 }
-/*
-**//******************************************//**
-*/
+/**//******************************************//**/
 
