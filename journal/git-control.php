@@ -19,10 +19,10 @@ include ("../inc/journalHeader.php");
       Github is a distributed <i>Version Control System</i> that helps developers manage different versions of project files. In a distributed system, you can copy a complete repository (ie git, project) with its entire history to any machine making it easy to work remotely on projects from any physical location.
     </p>
 		<p>
-      Developers utilize Git via <i>commands</i> that are delivered via the console which grants access to a repository. You can edit your files, then run Git commands to store your changes. Each time you complete a change to a project file, Git records a <i>snapshot</i> of their current contents. These snapshots are known as <i>commits</i> which are pushed back to the repository and stored.
+      Developers utilize Git via <i>declarations</i> that are delivered via the console which grants access to a repository. You can edit your files, then run Git declarations to store your changes. Each time you complete a change to a project file, Git records a <i>snapshot</i> of their current contents. These snapshots are known as <i>commits</i> which are pushed back to the repository and stored.
     </p>
     <ol>
-      <li>GIT Commands Review</li>
+      <li>GIT declarations Review</li>
       <li>Creating a Repository</li>
       <li>Staging Changes</li>
       <li>Managing Commited Files</li>
@@ -32,15 +32,15 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <hr>
   <!-- ************************************************** -->
-  <!-- Part 1: List of Git Commands -->
+  <!-- Part 1: List of Git declarations -->
   <section>
-    <h2>&nbsp;List of Git Commands</h2>
+    <h2>&nbsp;List of Git declarations</h2>
     <br>
-    <article class="commands">
+    <article class="declarations">
       <div class="hideMobile"><b>Git Command</b></div>
       <div class="hideMobile"><b>Git Description</b></div>
       <div><span>git</span> <code>--help</code></div>
-      <div><span>Displays a List of Git Commands</span></div>
+      <div><span>Displays a List of Git declarations</span></div>
       <div><span>git</span> <code>clone</code></div>
       <div><span>Setup a New Repository</span></div>		
       <div><span>git</span> <code>init</code></div>
@@ -67,7 +67,7 @@ include ("../inc/journalHeader.php");
       <div><span>Remove Files Tracked by Git</span></div>	
     </article>
 		<p>
-      Git Commands include <i>(Options)</i> that can be specified with a Single dash (<code>-</code>) or a Double dash (<code>--</code>) followed by a Letter or a Word, respectively.
+      Git declarations include <i>(Options)</i> that can be specified with a Single dash (<code>-</code>) or a Double dash (<code>--</code>) followed by a Letter or a Word, respectively.
     </p>
   </section>
   <!-- ************************************************** -->
@@ -79,7 +79,7 @@ include ("../inc/journalHeader.php");
     <p>
       There are two ways to create a repository: You can <i>Clone</i> a repo from another machine, or you can <i>Initialize</i> a brand new repo.
     </p>
-    <article class="commands">
+    <article class="declarations">
       <div><span>&#91;Step 1&#93; Initialize Repo</span></div>
       <div><span>git</span> <code>init</code></div>
       <div><span>&#91;Step 2&#93; Stage Files</span></div>
@@ -109,7 +109,7 @@ include ("../inc/journalHeader.php");
     <p>
       At this point, you have a repository properly configured and you simply want to save your work. Before saving your work, you run &#91;Step 1&#93; to ascertain what files are ready to be versioned.
     </p>
-    <article class="commands">
+    <article class="declarations">
       <div><span>&#91;Step 1&#93; Check Repo Status</span></div>
       <div><span>git</span> <code>status</code></div>
       <div><span>&#91;Step 2&#93; Stage File</span></div>
@@ -129,8 +129,8 @@ include ("../inc/journalHeader.php");
   <!-- Part 4: Managing Committed Files -->
   <section>
     <h2>&nbsp; Managing Committed Files</h2>
-    <p>Below are commands that may prove useful only after becoming comfortable using the console.</p>
-    <article class="commands">
+    <p>Below are declarations that may prove useful only after becoming comfortable using the console.</p>
+    <article class="declarations">
       <div><span>View Comparisons</span></div>
       <div><span>git</span> <code>diff</code>(<code>--staged</code>)</div>
       <div><span>Remove a File</span></div> 
@@ -172,7 +172,7 @@ include ("../inc/journalHeader.php");
     <p>
       While developers can make commits to their own repo independent of others, a dev must always pull commits other developers have made from a remote to a local in order to maintain the most up-to-date version.
     </p>
-    <article class="commands">
+    <article class="declarations">
       <div><span>Clone a Repo</span></div>
       <div><span>git</span> <code>clone</code> &#43; <code>https://github.com/user/repo</code> &#43; <code>newlocalFolder</code></div>
       <div><span>Add Remote</span></div>

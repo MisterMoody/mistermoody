@@ -219,7 +219,6 @@ include ("../inc/journalHeader.php");
         <div><code>&lt;li&gt;</code></div>
         <div><span>List Item (Individual List Content Container)</span></div>
       </aside>
-      <br>
       <p>
         List are used for a lot of things: the <code>&lt;ul&gt;</code> tag can be used to create a list that designers can modify to build an efficient navigation system that will allow users to seamlessly traverse the a website. Both the <code>&#60;nav&#62;</code> and <code>&#60;a&#62;</code> tags are required to make this idea reality.
       </p>
@@ -497,7 +496,6 @@ include ("../inc/journalHeader.php");
         <div><code>poster&#61;&#34;...&#34;</code></div>
         <div><span>Image URL on Download</span></div>
       </aside>
-      <br>
       <p>
          It is always a good idea to caption videos: not only for accessibility, but also because people may not comprehend what was said. Utilize the <code>&lt;track&gt;</code> tag, which specifies timed text data, then create a <a href="http://quuz.org/webtt/" target="_blank"><i>WebVTT File</i></a> to define subtitles.
       </p>
@@ -515,8 +513,7 @@ include ("../inc/journalHeader.php");
       <p>
         Useful CSS sylesBecause of compatibility issues, designers need to remember to implement <code>{display: block;}</code> in CSS as they are typically bad for mobile devices.
       </p>
-    </article>    
-    <br>
+    </article> 
     <!-- Forms-->
     <article>
       <h3>Service Forms</h3>
@@ -846,8 +843,8 @@ include ("../inc/journalHeader.php");
   <!-- ************************************************** -->
   <hr>
   <!-- ************************************************** -->
-  <section style="background-color: #d46a6a; border: 1px dashed #000;">
-    <h3 style="background-color: #d46a6a;">To-Do LIST:</h3>
+  <section>
+    <h3>To-Do LIST:</h3>
     <h4 style="background-color: #d46a6a;">Edit Forms + Interactive Elements Sections</h4>
     <h4 style="background-color: #d46a6a;">Edit Media Section</h4>
     <!-- See MM_portfolio_webdesign.docx -->

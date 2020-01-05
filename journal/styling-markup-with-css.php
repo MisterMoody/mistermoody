@@ -53,7 +53,7 @@ include ("../inc/journalHeader.php");
       </figcaption>
     </figure>
     <p>
-      That's covered. Now, lets focus on writing CSS!
+      Now, lets focus on writing CSS!
     </p>
   </section>
   <!-- ************************************************** -->
@@ -67,7 +67,9 @@ include ("../inc/journalHeader.php");
       <p>
         In life, there are rules: when you follow the rules, you are rewarded and when you break a rule, well, all hell breaks loose. Same analogy applies to CSS: there are rules for writing CSS to instruct a document how to display content. CSS is created by employing a <i>rule-set</i>, which is a block of code that consists of a selector and a declaration. 
       </p>
-      <blockquote><code>selector &#123; property: keyword/value; &#125;</code></blockquote>
+      <blockquote>
+        <code>selector &#123; property: keyword/value; &#125;</code>
+      </blockquote>
       <p>
         <i>selectors</i> reference <code>&#60;html&#62;</code> elements targeted for styling. Its <i>declaration</i> is made of a property and a value: the <i>property</i> identifies which element feature to modify while the <i>value</i> quantifies to what extent the property is modified. 
       </p>
@@ -78,11 +80,10 @@ include ("../inc/journalHeader.php");
     
     <!-- Selector Types-->
     <article>
-        <h3>Selector Types</h3>
+      <h3>Selector Types</h3>
         <p>
           All <code>&#60;html&#62;</code> elements can be used as a selector, but other things can be used as a selector as well. This first group of selectors are targeted most frequently.
         </p>
-
         <h4>Simple Selectors</h4>
         <p>
           The <i>universal</i> selector is the most powerful selector of all as it is  used to render styles to all elements in a document. The <i>element</i> selector renders styles to that type of element. The <i>.class</i> selector renders styles on elements that possess a specific class attribute. The <i>#id</i> selector should not be used in CSS because it is a unique identifier that should be used exclusively as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
@@ -97,9 +98,7 @@ include ("../inc/journalHeader.php");
           <div><code>#id &#123; prop: val; &#125;</code></div>
           <div><span>// Avoid Usage</span></div>
         </aside>
-
-        <br>
-
+        
         <h4>Combinators</h4>
         <p>
           The power of selectors can be amplified by using a <i>combinator</i>: syntax that unifies the relationship between any of the selectors used above that targets and applies styles to <code>&#60;html&#62;</code> elements based on a specific criteria. The <i>descendant</i> selector targets elements that descend from a specific element. The <i>child</i> selector targets children of a specific element. The <i>adjacent sibling</i> selector targets immmediate siblings of a specific element. The <i>general sibling</i> selector targets all siblings of a specific element. Selectors can also be grouped allowing application of a consistent style theme to grouped elements.
@@ -116,9 +115,7 @@ include ("../inc/journalHeader.php");
             <div><code>Selector Group</code></div>
             <div><span>A, B&nbsp; = All A &amp; B Elements Targeted</span></div>
           </aside>
-
-        <br>  
-
+          
         <h4>Attribute Selector</h4>
         <p>
             There are also <i>attribute</i> selectors that can be utilized to target particular features within an <code>&#60;html&#62;</code> element, such as those used with the <code>&#60;form&#62;</code> element. 
@@ -132,10 +129,8 @@ include ("../inc/journalHeader.php");
             <div><span>Targts Attr. &amp; Specific Value</span></div>
             <div><code>[attribute<sup>*</sup>="fee"]</code></div>
             <div><span>Targts ALL"fee"</span></div> 
-          </aside>        
-
-        <br>  
-
+          </aside>  
+          
         <h4>:Pseudo-Class</h4>  
         <p>
             There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are keywords added to selectors to invoke a special 'state' during a particular instance. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. This first group of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:
@@ -158,10 +153,10 @@ include ("../inc/journalHeader.php");
             <div><code>&#58;visited &#123;...&#125;</code></div>
             <div><span>// Already Visited Page</span></div> 
           </aside>
-        <br>
+        
         <p>
-            A number of pseudo-class selectors are based on an elements position and will often select an element based on a particular instance.
-          </p>
+          A number of pseudo-class selectors are based on an elements position and will often select an element based on a particular instance.
+        </p>
         <aside class="declarations">
             <div><code>&#58;first-child &#123;...&#125;</code></div>
             <div><span>// First Element in Parent</span></div> 
@@ -181,10 +176,8 @@ include ("../inc/journalHeader.php");
             <div><span>// Matches <code>:root</code> Element</span></div>
             <div><code>&#58;valid &#123;...&#125;</code></div>
             <div><span>// Indicates <code>&#60;input&#62;</code> Validation</span></div> 
-          </aside>     
-
-        <br>  
-
+          </aside> 
+          
         <h4>:Pseudo-Elements</h4>
         <p>
             <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, are used to style a specific part of a selected element. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
@@ -193,8 +186,8 @@ include ("../inc/journalHeader.php");
             The <code>&#58;&#58;first-letter</code> and <code>&#58;&#58;first-line</code> pseudo-elements apply styles to the first letter or first line of text, respectively, but they can only be applied to <i>block-level</i> elements.
           </p>
         <p>
-            The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code>content&#58; &#34;&#34;&#59;</code> property in order to work. This is useful when you want to include an icon or background image: something tangible. <i>&#58;&#58;cue</i> can be used to style media captions or  <i>&#58;&#58;placeholder</i> Represent <code>&#60;input&#62;</code> Placeholder Text, respectively.
-          </p>
+          The <code>&#58;&#58;before</code> and <code>&#58;&#58;after</code> pseudo-elements are used to add content before or after an element. The key to these selectors is that they require the <code>content&#58; &#34;&#34;&#59;</code> property in order to work whereas the content is an icon or background image. Use <code>&#58;&#58;cue</code> to style media captions and <code>&#58;&#58;placeholder</code> to highlight <code>&#60;input&#62;</code> text instructions.
+        </p>
         <aside class="declarations">    
             <div><code>&#58;&#58;after &#123;...&#125;</code></div>
             <div><span>// Adds Content After Element</span></div>   
@@ -212,51 +205,53 @@ include ("../inc/journalHeader.php");
             <div><span>// Represent <code>&#60;input&#62;</code> Placeholder Text</span></div> 
           </aside>
       </article>
-    <br>  
+     
     <!-- Length Units -->
     <article>
-        <h3>Length Units</h3>  
-        <p>
-          Properties accept a <code>keyword</code> or <i>length unit</i> as a value to qualify or quantify an expected aesthetic quality. Keywords have a precise meaning for how an element should behave. Often, a <code>unit</code> -a numeric value, is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations.
-        </p>
+      <h3>Length Units</h3>  
+      <p>
+        Properties accept a <code>keyword</code> or <i>length unit</i> as a value to qualify or quantify an expected aesthetic quality. Keywords have a precise meaning for how an element should behave. Often, a <code>unit</code> -a numeric value, is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations.
+      </p>
 
-        <h4>Absolute vs. Relative Units</h4>
-        <p>
-          Length units are either absolute or relative in nature: <i>absolute</i> units are fixed and appear as the declared size regardless of browser/device screen size while <i>relative</i> units represents a length with the ability to scale relative to other elements on the page. With respect to responsive web design, it is obvious that relative units are a preferred choice. The <i>pixel</i> (<code>px</code>) unit is an anomoly in that it has an immutable absolute value, yet, is relative to screen resolution. Another common value is the <i>percentage</i> (<code>%</code>) relative unit: use of this is risky in that that element becomes relative to its parent. One suggestion for avoiding any risk is to add the rule-set below to the top of the style sheet then never use again, laying the foundation for a responsive design: 
+      <h4>Absolute vs. Relative Units</h4>
+      <p>
+          Length units are either absolute or relative in nature: <i>absolute</i> units are fixed and appear as the declared size regardless of screen size while <i>relative</i> units represents a length with the ability to scale relative to other elements on the page. With respect to responsive web design, it is obvious that relative units are a preferred choice. The <i>pixel</i> (<code>px</code>) unit is an anomoly in that it has an immutable absolute value, yet, is relative to screen resolution. Another common value is the <i>percentage</i> (<code>%</code>) relative unit: use of this is risky in that that element becomes relative to its parent. One suggestion for avoiding any risk is to add the rule-set below to the top of the style sheet then never use again, laying the foundation for a responsive design: 
         </p>
-        <blockquote>
-          <code>html &#123; font-size: 100%; &#125;</code>
-        </blockquote>
-        <p>
-          Relative units that build responsiveness include em, rem, vh, vw, vmin, vmax and calc(). Both <code>em</code> and <code>rem</code> units focus on styling font-size with the exception being that the former is relative to its parent while the latter is relative to the root element. Viewport units are relative measurements that provide percentage-based calculations for responsive design, making these the idea choice when working with images and layouts. The viewport height <code>(vh)</code> and viewport width <code>(vw)</code> units reflect an equal percentage of their respective viewport dimensions. Use the <code>vh</code> units on the height property to create full-screen sections. The <code>vmin</code> and <code>vmax</code> unit represents the percentage of viewport height or width, for whichever is smaller or larger. When <code>vmin</code> is used on an elements height and width, all aspects of that element will be viewable within the viewport. Viewport units are particularly helpful for designing responsive layouts! The <code>calc()</code> function provides a calculation that formulates responsiveness on the element of which it is applied, allowing font-size to scale depending on the device screen size. A <code>vw</code> can be added to this function to implement fluid typography.
-        </p>
-        <aside class="declarations">
-          <div><code>{prop: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
-          <div><span><b>// Value Purpose</b></span></div>
-          <div><code>{prop: #px;}</code></div> 
-          <div><span>// Precisness</span></div>
-          <div><code>{prop: #%;}</code></div>
-          <div><span>// Base</span></div>
-          <div><code>{prop: #em;}</code></div>
-          <div><span>// Font</span></div>
-          <div><code>{prop: #rem;}</code></div>
-          <div><span>// Font</span></div>
-          <div><code>{prop: #vh;}</code></div>
-          <div><span>// Layout</span></div>
-          <div><code>{prop: #vw;}</code></div>
-          <div><span>// Layout | Font</span></div>
-          <div><code>{prop: #vmin;}</code></div>
-          <div><span>// Layout | Sizing</span></div>
-          <div><code>{prop: #vmax;}</code></div>
-          <div><span>// Layout | Sizing</span></div>
-          <div><code>{prop: calc(#);}</code></div>
-          <div><span>// Calculator</span></div>
-        </aside>
-        <br>  
+      <blockquote>
+        <code>html &#123; font-size: 100%; &#125;</code>
+      </blockquote>
+      <p>
+        Relative units that build responsiveness include em, rem, vh, vw, vmin, vmax and calc(). Both <code>em</code> and <code>rem</code> units focus on styling font-size with the exception being that the former is relative to its parent while the latter is relative to the root element. Viewport units are relative measurements that provide percentage-based calculations for responsive design, making these the idea choice when working with images and layouts.
+      </p>
+      <p>
+        The viewport height <code>(vh)</code> and viewport width <code>(vw)</code> units reflect an equal percentage of their respective viewport dimensions. Use the <code>vh</code> units on the height property to create full-screen sections. The <code>vmin</code> and <code>vmax</code> unit represents the percentage of viewport height or width, for whichever is smaller or larger. When <code>vmin</code> is used on an elements height and width, all aspects of that element will be viewable within the viewport. Viewport units are particularly helpful for designing responsive layouts! The <code>calc()</code> function provides a calculation that formulates responsiveness on the element of which it is applied, allowing font-size to scale depending on the device screen size. A <code>vw</code> can be added to this function to implement fluid typography.
+      </p>
+      <aside class="declarations">
+        <div><code>{prop: &nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
+        <div><span><b>// Value Purpose</b></span></div>
+        <div><code>{prop: #px;}</code></div> 
+        <div><span>// Precisness</span></div>
+        <div><code>{prop: #%;}</code></div>
+        <div><span>// Base</span></div>
+        <div><code>{prop: #em;}</code></div>
+        <div><span>// Font</span></div>
+        <div><code>{prop: #rem;}</code></div>
+        <div><span>// Font</span></div>
+        <div><code>{prop: #vh;}</code></div>
+        <div><span>// Layout</span></div>
+        <div><code>{prop: #vw;}</code></div>
+        <div><span>// Layout | Font</span></div>
+        <div><code>{prop: #vmin;}</code></div>
+        <div><span>// Layout | Sizing</span></div>
+        <div><code>{prop: #vmax;}</code></div>
+        <div><span>// Layout | Sizing</span></div>
+        <div><code>{prop: calc(#);}</code></div>
+        <div><span>// Calculator</span></div>
+      </aside> 
 
         <h4>Dimensional and Time Units</h4> 
         <p>
-          Not all values are created equal so when designing animations out from the abyss of time and space, it is helpful to be aware of dimensional and time measurement units. Time units are easy to remember: <i>seconds</i> <cdoe>(s)</cdoe> and <i>milliseconds</i> <code>(ms)</code>. Working with dimensions can be tricky. The <code>rotate()</code> function is used to calculate a transformation on a specified element. This function helps ascertain movement using the <i>degree</i> <code>(deg)</code> and <i>turns</i> <code>(turn)</code> units, which are used to rotate or turn an object with the only distinction being that one turn reflects a full 360 degree whereas one degree equals just that.
+          Not all values are created equal so when designing animations out from the abyss of time and space, it is helpful to be aware of dimensional and time measurement units. Time units are easy to remember: <i>seconds</i> <cdoe>(s)</cdoe> and <i>milliseconds</i> <code>(ms)</code>. Using dimensions, not so much. The <code>rotate()</code> function is used to calculate a transformation on a specified element. This function works in conjunction with the <i>degree</i> <code>(deg)</code> and <i>turns</i> <code>(turn)</code> units, which are used to rotate or turn an object with the only distinction being that one turn reflects a full 360 degree whereas one degree equals just that.
         </p>
         <aside class="declarations">
           <div><code>&#123;transition-duration: 4400ms;&#125;</code></div> 
@@ -266,7 +261,6 @@ include ("../inc/journalHeader.php");
           <div><code>{transform: rotate&#40;1turn&#41;;}</code></div>
           <div><span>// 1 Rotation</span></div>
         </aside>
-        <br>
         <p>
           Although outside of the scope, there are other math functions that are used when designing animations.
         </p>
@@ -281,8 +275,7 @@ include ("../inc/journalHeader.php");
           <div><span>// Skews Element</span></div>
           <div><code>{transform: translate&#40;x, y&#41;;}</code></div>
           <div><span>// Translates Element</span></div>
-        </aside>
-        <br>  
+        </aside>  
         <p>
           That was a good bit on numeric values all of which will be utilized throughout a typical style sheet. With a solid foundation of how values work, designers can focus on developing their property memory bank, and the best properties to jumpstart this initiative focus on layout.
         </p>
@@ -306,7 +299,7 @@ include ("../inc/journalHeader.php");
     <article>
       <h3>Container Layout</h3>
       <p>
-        When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration eliminates spacing concerns by taking into account an elements padding and border along with its width and height. Ths sets a foundation for layout and positional properties used on elements thereafter. From there, the first property designers reach for is that of <i>display</i>, which determines how an element is displayed. The main goal of this property emphasizes horizontal and vertical element alignment. 
+        When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration eliminates spacing concerns by taking into account an elements padding and border along with its width and height. Ths sets a foundation for layout and positional properties used on elements thereafter. From there, the first property designers reach for is that of <i>display</i>, which determines how an element is displayed. The main goal of this property emphasizes element alignment. 
       </p>
       <blockquote><code>{display: inline / block / none;}</code></blockquote>
       <p>
@@ -336,7 +329,7 @@ include ("../inc/journalHeader.php");
         <div><code>{grid-gap: px / em;}</code></div>
         <div><span>// Gutters</span></div>
       </aside>
-      <br>
+      
       <p>
         The sub-props <code>{g-t-c: val;}</code> and <code>{g-t-r: val;}</code> are used to explicitly specify column and row track sizes. The <code>{g-t-a: key;}</code> sub-prop is an elaborate method to accomplish this same feat, yet, is outside of the project scope. To implicitly layout columns and rows, invoke the auto-placement algorithm using <code>{g-a-f: key;}</code>: flow direction is determined using the keywords <code>column</code> or <code>row</code>. Additionally, the keyword <code>dense</code> can be added to the declaration in order to remove dead space between items of varying size, forcing columns or rows to flow in a natural order. In any case, use <code>{grid-gap: value;}</code> to add gutters between both columns and rows.
       </p>
@@ -352,7 +345,7 @@ include ("../inc/journalHeader.php");
         <div><code>{g-t-c: min-content / max-content;}</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
       <p>
         A <i>fractional unit</i> <code>#fr</code> specifies that an element take up a fraction of space where an allotment is available: <code>1fr</code> uses one fraction of space; <code>2fr</code> uses two, so on and so forth. Fractional units consistently size elements and work well with math functions.
       </p>
@@ -362,7 +355,7 @@ include ("../inc/journalHeader.php");
         <div><code>{g-t-r: 2fr 1fr;}</code></div>
         <div><span>// Row 1 is Twice the Size of Row 2</span></div>
       </aside>
-      <br>
+      
       <p>
         The <code>minmax(x, y)</code> function simplifies calculating a formula for distributing space among elements by establishing a range between a minimum <code>(x)</code> and maximum <code>(y)</code> value to explicitly set columns or rows. It accepts any of the aforementioned keywords and measurement units as a value. In the example below the <code>auto</code> keyword is used to set the the value at minimum or maximum.
       </p>
@@ -382,7 +375,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: minmax(auto, max-content);}</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
       <p>
         The <code>repeat(x, y)</code> function is an awesome features that allows the declaration to be applied repeatedly to an element, and can be combined with all of the aforementioned keywords and values.
       </p>
@@ -390,13 +383,13 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: repeat(3, 1fr);}</code></div>
         <div><span>// 3 Columns 1 Fraction in Width</span></div>
       </aside>
-      <br>
+      
       <p>Designer magic takes place once these powers are combined!</p>
       <aside class="declarations">
         <div><code>{&nbsp;: repeat(auto-fill, minmax(auto, max-content));}</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
       <!-- GRID EXAMPLES -->
       <h4>Grid Examples</h4>
       <p>Typical Row-Grid</p>
@@ -410,7 +403,7 @@ include ("../inc/journalHeader.php");
         <div><code>{height: 100%;}</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
       <p>Grid FLOW</p>
       <aside class="declarations">
         <div><code>{g-a-f: column;}</code></div>
@@ -423,7 +416,7 @@ include ("../inc/journalHeader.php");
         <div></div>
         <div><code>{grid: auto-flow dense 100px / 1fr 2fr;}</code></div>
       </aside>
-      <br>
+      
       <!-- Transition to grid-items then FLEXbox -->
       <p>
         There are also properties used with <code>grid</code> that targets layout structure for grid-items. The <code>justify-items</code> and <code>align-items</code> properties provide horizontal and vertical alignment of grid items.
@@ -442,7 +435,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: center; }</code></div>
         <div><span>// Center Aligns Items</span></div>
       </aside>
-      <br>
+      
       <p>
         The <code>justify-content</code> and <code>align-content</code> properties to align grid-items horizontally or vertically within its parent container.
       </p>
@@ -462,7 +455,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: space-around;}</code></div>
         <div><span>// Equal Space Around Items</span></div>
       </aside>
-      <br>
+      
       <h4>Flexbox</h4>
       <p>
         The <code>flex</code> keyword is used to create a container that allows its direct children to be flexible. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop assigns if items will flow in a column or row. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to wrap items to the next line. Apply margin and padding to create gutters.
@@ -475,7 +468,7 @@ include ("../inc/journalHeader.php");
         <div><code>{flex-wrap: nowrap/wrap;}</code></div>
         <div><span>// Single-Line/Multi-Line</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>justify-content</i> sub-prop manages item alignment along the main horizontal axis.
       </p>
@@ -493,7 +486,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: space-evenly;}</code></div>
         <div><span>// Equal Space Around Items</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>align-items</i> sub-prop manages item alignment along the cross vertical axis.
       </p>
@@ -509,7 +502,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: stretch;}</code></div>
         <div><span>// Fills Container</span></div>
       </aside>
-      <br>
+      
     </article>
     
     <!-- Size and Placement -->
@@ -530,7 +523,7 @@ include ("../inc/journalHeader.php");
         <div><code> {max-height: value;}</code></div>
         <div><span>// Specify Maximum Content Height</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>width</i> property is used to specify content width of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
       </p>
@@ -544,7 +537,7 @@ include ("../inc/journalHeader.php");
         <div><code> {fit-content: value;}</code></div>
         <div><span>// Center Content Horizontally</span></div>
       </aside>
-      <br>
+      
       <!-- Margin + Padding -->
       <p>
         The <i>Margin</i> property specifies the outside borders of an element. The <i>Padding</i> property specifies the inside borders of an element. Both props accept a single value as a shorthand for top, right, bottom or left sides.
@@ -555,7 +548,7 @@ include ("../inc/journalHeader.php");
         <div><code>{padding: 8px; }</code></div>
         <div><span></span></div>
       </aside>
-      <br>  
+        
       <!-- Position + top/right/bottom/right + Z-Index -->
       <h4>Positional Placement</h4>
       <p>There are several ways to position elements: techniques explained herein highlight but a few.</p>
@@ -583,7 +576,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: scroll;}</code></div>
         <div><span>// Scroll(s) for Overflow</span></div>
       </aside>
-      <br>  
+        
       <!-- Position + Z-Index -->
       <p>
         The <i>position</i> property offers greater control over how an element is positioned as it can be used to re-position an element from its initial position. It accepts one of five keywords to provide instructions on how and where an element is placed. By default, an element will flow in a natural order amongst fellows. 
@@ -605,11 +598,11 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: sticky;}</code></div>
         <div><span>// Scroll to a Fixed Position</span></div>
       </aside>
-      <br><br>
+      
       <aside class="declarations">
         <div><code>{top / right / bottom / right: value;}</code></div>
       </aside>
-      <br>
+      
       <p>
         The <i>z-index</i> property controls the vertical stacking order of elements that overlap. This property only impacts non-static positioned elements. 
       </p>
@@ -617,7 +610,7 @@ include ("../inc/journalHeader.php");
         <div><code>{z-index: 100;}</code></div>
         <div><span>// Stacked Above Elements</span></div>
       </aside>
-      <br>  
+        
       <!-- Object-Fit -->
       <p>
         The <i>object-fit</i> prop approximates how embedded media elements react to the height or width of its parent. It works well with the <i>object-position</i> prop to position a media element along the X/Y axis within its parent.
@@ -634,7 +627,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: scale-down;}</code></div>
         <div><span>// Resize to Smallest Size</span></div>
       </aside>
-      <br>
+      
       <!-- Media Query -->
       <p>
         Use a <i>media query</i> to optimize a website by making it responsive at varying breakpoints.
@@ -653,7 +646,7 @@ include ("../inc/journalHeader.php");
         <div><code>@media only screen and (orientation: landscape) {..}</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
       <!-- Size and Position Examples -->
       <h4>Size and Position Examples</h4>
       <p>Fixed Footer</p>
@@ -669,7 +662,7 @@ include ("../inc/journalHeader.php");
         <div><code>}</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
     </article>
     
     <!-- Media -->
@@ -692,7 +685,7 @@ include ("../inc/journalHeader.php");
         <div><code>{clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);}</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
     </article>
     <!-- Colors -->
     <article>
@@ -717,12 +710,12 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: hsla(180, 100%, 5%, .5); }</code></div>
         <div><span>// HSLa</span></div>
       </aside>
-      <br><br>
+      
       <aside class="declarations">
         <div><code>{opacity: # between 0.0 - 1; }</code></div>
         <div><span>// Defines Transparency</span></div>
       </aside>
-      <br>
+      
       <p>
         There are lot of cool ways to style elements using colors, but choosing the right color can be a burdensome process for multiple reasons. Designers who are not natural artists should learn concepts of <i>color theory</i>, seek out <i>palette</i> tools that assist with creating a compatible color schemes and be weary of <i>accessibility</i> concerns that could impact the ability of color-blind users to effectively navigate a web app.
       </p>
@@ -751,7 +744,7 @@ include ("../inc/journalHeader.php");
         <div><code>{background-color: #3ab1fd; }</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
       <p>
         <i>border</i> is a property that applies a border around and element. As a shorthand, it accepts keywords and values for its width, style and color.
       </p>
@@ -771,7 +764,7 @@ include ("../inc/journalHeader.php");
         <div><code>{border-color: #hex; }</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>border-radius</i> property applies rounded corners on elements, accepting 1, 2 or 3 values.
       </p>
@@ -779,7 +772,7 @@ include ("../inc/journalHeader.php");
         <div><code>{border-radius: 4px&nbsp;&nbsp;;}</code></div>
         <div><span>// Soft Round Corners</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>box-sizing</i> property can also be used to cast a shadow on an element. The values represent the horizontal/vertical offset, blur radius, spread radius and color assigned to the offset. All but the spread radius are required.
       </p>
@@ -796,7 +789,7 @@ include ("../inc/journalHeader.php");
         <div><span>// Multiple</span></div>
       </aside>
     </article>
-    <br> 
+     
     <!-- Font and Text -->
     <article>
       <h3>Font and Text</h3>
@@ -808,7 +801,7 @@ include ("../inc/journalHeader.php");
         <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
         <div><span><b>// Keyword/Value Description</b></span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>-style</i> is used to italicize text, but is commonly only used within the shorthand.
       </p>
@@ -816,7 +809,7 @@ include ("../inc/journalHeader.php");
         <div><code>{font-style: normal; &nbsp;&nbsp;&nbsp;}</code></div>
         <div><span>// Not Italicized</span></div>
       </aside>
-      <br>
+      
       <p>The <i>-variant</i> makes all text uppercase.</p>
       <aside class="declarations">
         <div><code>{font-variant: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
@@ -828,7 +821,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: petite-caps; }</code></div>
         <div><span>// Thin Capital Letters</span></div>
       </aside>
-      <br>
+      
       <p> 
         The <i>-weight</i> sets font thickness or width, but its font-family will determine how the weight is applied, if applied at all. Values for this property use an incremental numerical scale from a lot point of 100 to its peak of 900 (increments of 100).
       </p>
@@ -836,7 +829,7 @@ include ("../inc/journalHeader.php");
         <div><code>{font-weight: 600-900; &nbsp;}</code></div>
         <div><span>// Font Thickness</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>-size</i> specifies the size of the font using numerical values (ie em, rem + px). The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, sets the space above and below inline elements. 
       </p>
@@ -846,7 +839,7 @@ include ("../inc/journalHeader.php");
         <div><code>{line-height: % value; &nbsp;}</code></div>
         <div><span>// Line Height</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>font-family</i> prop defines the font applied to the text. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement. Some web-safe fonts include <code>Arial</code>, <code>Garamond</code>, <code>Tahoma</code>, <code>"Lucida Sans"</code>, <code>Georgia</code>, <code>"Palatino Linotype"</code> and <code>Verdana</code>.
       </p>
@@ -864,7 +857,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: small-caption;}</code></div>
         <div><span>// All Words Smll Caps</span></div>
       </aside>
-      <br>
+      
       <p>
         Although the most convenient method of adding a font to a website would be via a <code>&#60;link&#62;</code> CDN in the <code>&#60;html&#62;</code> markup, it is important to be mindful of measurement units to create responsive typography. Any relative length unit can be used: employ <code>em</code> and <code>pm</code> for the greatest control as they are dependent on parent elements and viewport dimensions. For this reason, it is a good practice to set the <code>html {font-size: 100%;}</code> to ensure the base font-size is set in the browser and to use relative units on all other elements. Other important notes include: use the <code>rem</code> unit on nested elements, avoid using <code>vh/vw</code> units on font-size and use the <code>calc()</code> function to perform math calculations.
       </p>
@@ -874,7 +867,7 @@ include ("../inc/journalHeader.php");
         <div><code>{font-size: calc( 16px + (28 - 16) );}</code></div>
         <div><span></span></div>
       </aside>
-      <br>
+      
       <p>The <i>letter-spacing</i> and <i>word-spacing</i> properties manages the amount of space between letters and words, respectively.</p>
       <aside class="declarations">
         <div><code>{letter-spacing: value;}</code></div>
@@ -884,7 +877,7 @@ include ("../inc/journalHeader.php");
         <div><code>{text-align: center/justify;}</code></div>
         <div><span>// Aligns Text</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>text-decoration</i> property sets a line style on text and can be written in shorthand form to define the line, its style and color (in that order). The <i>text-decoration-style</i> prop will accept values of <code>solid</code>, <code>double</code>, <code>dotted</code>, <code>dashed</code> and <code>wavy</code>.
       </p>
@@ -896,7 +889,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: line-through; }</code></div>
         <div><span>// Line Through Text</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>text-transform</i> property sets the text case and capitalization.
       </p>
@@ -908,7 +901,7 @@ include ("../inc/journalHeader.php");
         <div><code>{&nbsp;: capitalize; }</code></div>
         <div><span>// Capitalizes 1st Letters</span></div>
       </aside>
-      <br>
+      
       <p>
         The <i>writing-mode</i> property sets the vertical and horizontal alignment of text. It is useful when working with Asian languages: when doing so, be sure to implement the <i>word-break</i> property to ensure text words are not broken.
       </p>
@@ -955,9 +948,9 @@ include ("../inc/journalHeader.php");
         <div><span>// URL to Image</span></div>
       </aside>
     </article>
-    <br>
-    <article style="background-color: #d46a6a; border: 1px dashed #000;">
-      <h3 style="background-color: #d46a6a;">To-Do LIST:</h3>
+    
+    <article>
+      <h3>To-Do LIST:</h3>
       <h4 style="background-color: #d46a6a;">Add Animation, Transition + Transform Props</h4>
     </article>
   </section>
@@ -1015,7 +1008,7 @@ include ("../inc/journalHeader.php");
       <code>.js-block &#123; ... &#125; = For JavaScript</code><br>
       <code>.u-block &#123; ... &#125; = Q+A Automate Tests</code>
     </blockquote>
-    <br>
+    
   </section>
   <!-- ************************************************** -->
   <hr>

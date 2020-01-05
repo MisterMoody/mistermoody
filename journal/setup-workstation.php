@@ -8,11 +8,6 @@ include ("../inc/journalHeader.php");
 
 <!-- // CONTENT-BEGINS ////////////////////////// -->
 <article id="top">
-  <!-- BACK-to-TOP BUTTON -->
-  <section class="intro">
-    <a href="#top" class="top"><i class="fa fa-angle-double-up fa-2x"></i></a>
-  </section>
-  <!-- -->
   <!-- // Introduction -->
   <section>
     <h1 class="title">Setup a Workstation</h1>
