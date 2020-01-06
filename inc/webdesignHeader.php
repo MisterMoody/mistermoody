@@ -10,10 +10,10 @@
     <meta name="description" content="Web Design Portfolio">
     <meta name="keywords" content="Mister Moody, ESL, Teacher, Web Design, Web Developer, Louisville, Kentucky">
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
-    <!-- [Req. to Add <links> to Subdirectory Files] 
-    <base href="http://localhost:8012/mistermoody/">--> 
-    <!--  Use this <link> to *GO-LIVE* -->   
-    <base href="https://mistermoody.com">
+    <!-- [Req. to Add <links> to Subdirectory Files] -->
+    <base href="http://localhost:8012/mistermoody/"> 
+    <!--  Use this <link> to *GO-LIVE*    
+    <base href="https://mistermoody.com"> -->
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->
