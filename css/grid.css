@@ -622,11 +622,18 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   }
 }
 
-
-
 /**/
 /**/
-/* portfolio/WEBDESIGN */
+/* ============================================ */
+
+
+
+
+
+/* ============================================ */
+/* 3. WEBDESIGN/ ============================== */
+/* ============================================ */
+/* WEBDESIGN/index MAIN-STYLES */
 .chapter__Book {
   background-color: transparent;
   display: grid;
@@ -663,8 +670,6 @@ div.chapter__Date_Tag {
   grid-template-columns: 25vw repeat(auto-fill, minmax(44px, 170px));
   justify-content: space-between;
 }
-
-
 .chapter__Tags {      /* Article 'Headline' TAGS */
   margin: 0;
   display: grid;
@@ -680,7 +685,7 @@ div.chapter__Date_Tag {
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px  rgba(255,255,255,0.8);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .chapter__Book {
     display: grid;
     grid-template-rows: auto;
@@ -709,7 +714,6 @@ div.chapter__Date_Tag {
     grid-template-columns: 24vw repeat(auto-fill, minmax(44px, 200px));
     justify-content: space-between;
   }
-  
   .chapter__Tags {     
     margin: 0;
     display: grid;
@@ -723,59 +727,11 @@ div.chapter__Date_Tag {
     font-size: 0.8em;
   }
 }
+
+/* ============================================ */
 /* ============================================ */
 
 
-/* portfolio/WebDesign/RESOURCES */
-.resSyntax {grid-area: syntax;}
-.resContent {grid-area: contentRes;}
-.resLayout {grid-area: layout;}
-.resStyles {grid-area: styles;}
-.resSnippets {grid-area: snippets;}
-.resHelp {grid-area: helpRes;}
-.resManage {grid-area: manage;}
-.resTools {grid-area: tools;}
-.resourceGrid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(20px, auto);
-  grid-template-areas:
-    "syntax contentRes"
-    "layout styles"
-    "snippets helpRes"
-    "manage tools";
-  grid-gap: 1em;
-}
-.resourceLink {
-  margin-bottom: 1em; 
-  display: grid;
-  grid-template-columns: 1fr;
-  font-size: 0.84em;
-  grid-gap: 0.48em;
-}
-/* Alternate Background-Scheme */
-.resourceLink > span:nth-child(4n+1),
-.resourceLink > span:nth-child(4n+3) {
-  background-color:#838487;
-}
-@media only screen and (min-width: 800px) {
-  .resourceGrid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-      "syntax contentRes layout styles"
-      "snippets helpRes manage tools";
-  }  
-  .resourceLink {
-    font-size: 0.9em;
-  grid-gap: 0.84em;
-  }
-}
-/* ============================================ */
-/* ============================================ */
 
 
 /* ============================================ */

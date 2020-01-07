@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "A Curated List of Front-End Web Development Resources by Ray Moody";
 $page = "Resources";
-include ("../inc/header.php");
+include ("../inc/webdesignHeader.php");
 ?>
 <!-- ************************************************** -->
 <!-- ************ <<WEB DESIGN KNOWLEDGE>> ************ -->
@@ -36,13 +36,13 @@ include ("../inc/header.php");
     
     <div class="resourceGrid">
       <div class="resSyntax">
-        <h5>Syntax</h5>
+        <h4>Syntax</h4>
         <div class="resourceLink">
           <span><a target="_blank" href="https://html5boilerplate.com/">HTML Boilerplate</a></span>
           
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements</a></span>
           
-          <span><a target="_blank" href="https://htmlhead.dev">Guide to &#60;head&#62; Elements</a></span>
+          <span><a target="_blank" href="https://htmlhead.dev">&#60;head&#62; Elements</a></span>
           
           <span><a target="_blank" href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a></span>
           
@@ -72,7 +72,7 @@ include ("../inc/header.php");
         </div>
       </div>
       <div class="resContent">
-        <h5>Content</h5>
+        <h4>Content</h4>
         <div class="resourceLink">
           <span><a target="_blank" href="https://www.checklist.design/">Design Checklist</a></span>
                 
@@ -104,7 +104,7 @@ include ("../inc/header.php");
         </div>
       </div>
       <div class="resLayout">
-        <h5>Layout</h5>
+        <h4>Layout</h4>
         <div class="resourceLink">
           <span><a target="_blank" href="https://stitches.hyperyolo.com/">HTML Generator</a></span>
           
@@ -134,7 +134,7 @@ include ("../inc/header.php");
         </div>
       </div>
       <div class="resStyles">
-        <h5>Styles</h5>
+        <h4>Styles</h4>
         <div class="resourceLink">          
           <span><a target="_blank" href="https://colordesigner.io/">Color Swatches</a></span>
                 
@@ -172,7 +172,7 @@ include ("../inc/header.php");
         </div>
       </div>
       <div class="resSnippets">
-        <h5>Snippets</h5>
+        <h4>Snippets</h4>
         <div class="resourceLink">
           <span><a target="_blank" href="https://css-tricks.com/snippets/css/">CSS-Tricks</a></span>
 
@@ -200,7 +200,7 @@ include ("../inc/header.php");
         </div>
       </div>
       <div class="resHelp">
-        <h5>Help</h5>
+        <h4>Help</h4>
         <div class="resourceLink">
 
           <span><a target="_blank" href="https://w3.org">W3.org</a></span>
@@ -231,7 +231,7 @@ include ("../inc/header.php");
         </div>
       </div>
       <div class="resManage">
-        <h5>Manage</h5>
+        <h4>Manage</h4>
         <div class="resourceLink">
           <span><a target="_blank" href="https://frontendchecklist.io/">Front-End Checklist</a></span>
                 
@@ -257,7 +257,7 @@ include ("../inc/header.php");
         </div>
       </div>
       <div class="resTools">
-        <h5>Tools</h5>
+        <h4>Tools</h4>
         <div class="resourceLink">
           <span><a target="_blank" href="https://lisacatalano.github.io/brackets_course/pc.html">Brackets IDE Cheatsheet</a></span>
           
