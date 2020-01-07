@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Setting Up a Developers Workstation by Ray Moody";
+$page = "Workstation Setup";
 include ("../inc/webdesignHeader.php");
 ?>
 <!-- ************************************************** -->
@@ -93,6 +94,10 @@ include ("../inc/webdesignHeader.php");
       Learn more about <i><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" target="_blank">How to Use</a></i> Github and check out this list of <i><a href="journal/git-control">Git Commands</a></i>.
     </p>
   </section>
+  <!-- ************************************************** -->
+  <!--          ********** PAGINATION **********          -->
+  <?php include ("../inc/pagination.php"); ?>
+  <!-- ************************************************** -->
 
 </article>
 <!-- .....CONTENT-ENDS ////////////////////////// --> 

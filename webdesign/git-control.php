@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Version Control with Git by Ray Moody";
+$page = "Git Control";
 include ("../inc/webdesignHeader.php");
 ?>
 <!-- ************************************************** -->
@@ -186,6 +187,10 @@ include ("../inc/webdesignHeader.php");
       Collaborators typically use a declared central repository and gain acces via cloning into their local machine. This allows developers to work on different components that can be added to the central repo by pushing commits. Simply add the repo by name to the folder on your local machine.
     </p>
   </section>
+  <!-- ************************************************** -->
+  <!--          ********** PAGINATION **********          -->
+  <?php include ("../inc/pagination.php"); ?>
+  <!-- ************************************************** -->
 </article>
 
 

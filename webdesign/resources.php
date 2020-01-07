@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "A Curated List of Front-End Web Development Resources by Ray Moody";
+$page = "Resources";
 include ("../inc/header.php");
 ?>
 <!-- ************************************************** -->
@@ -288,7 +289,10 @@ include ("../inc/header.php");
         </div>
       </div>
     </div>
-    <h5><a href="webdesign/">Go Back</a></h5>
+  <!-- ************************************************** -->
+  <!--          ********** PAGINATION **********          -->
+  <?php include ("../inc/pagination.php"); ?>
+  <!-- ************************************************** -->
   </article>
     <!-- Link to mistermoody.github.io
     <div>

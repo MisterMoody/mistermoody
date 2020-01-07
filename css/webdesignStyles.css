@@ -25,7 +25,7 @@ blockquote, div {outline: 1px solid purple;}*/
 
 
 /* ============================================ */
-/* 1. Global NAVIGATION ======================= */
+/* 1a. Global NAVIGATION ====================== */
 /* ============================================ */
   /* Page ALIGNMENT */
 .topnav {
@@ -87,10 +87,40 @@ fa-home {
 /* ******************************************** */
 /* ****Header PERFECTLY Aligned with <body>**** */
 /* ============================================ */
+/* 1b. PAGINATION ============================= */
+/*.pagination {
+  width: 100%;
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 32px);
+  grid-column-gap: 10px;
+  justify-items: end;
+  justify-content: center;
+}*/
+section.caseCenter {
+  text-align: center;
+  margin: 0.8em 0 1em 0;
+}
+.caseCenter ul {
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li.active {color: red; background-color: #ddd;}
+ul.pagination {text-align: center;}
+ul.pagination li {
+  display: inline-block;
+  text-align: center;
+}
 
-
-
-
+ul.pagination li a {
+  color: #000;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+}
 /* ============================================ */
 /* 2. UNIVERSAL BASE STYLES =================== */
 /* ============================================ */

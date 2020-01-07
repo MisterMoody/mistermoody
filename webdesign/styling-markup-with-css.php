@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Styling Markup with CSS by Ray Moody";
+$page = "Styling Markup";
 include ("../inc/webdesignHeader.php");
 ?>
 <!-- ************************************************** -->
@@ -1032,6 +1033,10 @@ include ("../inc/webdesignHeader.php");
       Above all else, developers can best serve themselves by <i><a href="https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/" target="_blank">refactoring</a></i> their code. Refactoring is the process of organizing code as most efficiently as possible; enhancing readability affords faster code execution, which is the ultimate goal here. When reorganizing code, it is a good practice to subscribe to a specific style guide with criteria that concentrates on declaration order, formatting rules and use of unit-values that you want to use. Employing a Block Element Modifier &#40;BEM&#41; naming convention would provide a more consistent code structure for code sharing in front-end development. Learn more about <i><a href="http://getbem.com" target="_blank">BEM</a></i>.
     </p>
   </section>
+  <!-- ************************************************** -->
+  <!--          ********** PAGINATION **********          -->
+  <?php include ("../inc/pagination.php"); ?>
+  <!-- ************************************************** -->
 </article> 
 <!-- .....CONTENT-ENDS// --> 
 

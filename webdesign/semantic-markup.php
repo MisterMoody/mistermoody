@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Semantic Markup by Ray Moody";
+$page = "Semantic Markup";
 include ("../inc/webdesignHeader.php");
 ?>
 <!-- ************************************************** -->
@@ -850,6 +851,10 @@ include ("../inc/webdesignHeader.php");
     <!-- See MM_portfolio_webdesign.docx -->
     <br>
   </section>
+  <!-- ************************************************** -->
+  <!--          ********** PAGINATION **********          -->
+  <?php include ("../inc/pagination.php"); ?>
+  <!-- ************************************************** -->
 </article>
 
 <!-- .....CONTENT-ENDS ////////////////////////// --> 
