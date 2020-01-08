@@ -88,15 +88,6 @@ fa-home {
 /* ****Header PERFECTLY Aligned with <body>**** */
 /* ============================================ */
 /* 1b. PAGINATION ============================= */
-/*.pagination {
-  width: 100%;
-  margin: 1em 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 32px);
-  grid-column-gap: 10px;
-  justify-items: end;
-  justify-content: center;
-}*/
 section.caseCenter {
   text-align: center;
   margin: 0.8em 0 1em 0;
@@ -107,20 +98,19 @@ section.caseCenter {
   margin: 0;
   padding: 0;
 }
-li.active {color: red; background-color: #ddd;}
 ul.pagination {text-align: center;}
 ul.pagination li {
   display: inline-block;
   text-align: center;
 }
-
 ul.pagination li a {
   color: #000;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
-  padding: 12px;
+  padding: 0 16px;
 }
+ul.pagination li.active {background-color: #ddd;}
 /* ============================================ */
 /* 2. UNIVERSAL BASE STYLES =================== */
 /* ============================================ */
@@ -407,41 +397,48 @@ ol.alpha {list-style-type: lower-alpha;}
 .resManage {grid-area: manage;}
 .resTools {grid-area: tools;}
 .resourceGrid {
+  margin: 0;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(20px, auto);
+  grid-template-rows: minmax(22px, auto);
   grid-template-areas:
     "syntax contentRes"
     "layout styles"
     "snippets helpRes"
     "manage tools";
-  grid-gap: 1em;
+  grid-gap: 0 1em;
+}
+.resourceGrid div h4 { 
+  margin-bottom: 0;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
 }
 .resourceLink {
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   display: grid;
   grid-template-columns: 1fr;
   font-size: 0.84em;
   grid-gap: 0.48em;
 }
-/* Alternate Background-Scheme */
+/* Alternatiing Grey/White Background-Color
 .resourceLink > span:nth-child(4n+1),
 .resourceLink > span:nth-child(4n+3) {
   background-color:#838487;
-}
+}*/
 @media only screen and (min-width: 800px) {
   .resourceGrid {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto, 20px);
+    grid-template-rows: repeat(auto, 22px);
     grid-template-areas:
       "syntax contentRes layout styles"
       "snippets helpRes manage tools";
+  grid-gap: 1em;
   }  
   .resourceLink {
-    font-size: 0.9em;
   grid-gap: 0.84em;
   }
 }
