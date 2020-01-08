@@ -11,6 +11,7 @@ blockquote, div {outline: 1px solid purple;}*/
 /* CASCADING STYLESHEET ======================= */
 /*
       1.  Global NAVIGATION
+          + Pagination
       2.  UNIVERSAL Styles
       3.                
       4.  
@@ -112,6 +113,10 @@ ul.pagination li a {
 }
 ul.pagination li.active {background-color: #ddd;}
 /* ============================================ */
+/* ============================================ */
+
+
+/* ============================================ */
 /* 2. UNIVERSAL BASE STYLES =================== */
 /* ============================================ */
 
@@ -119,6 +124,14 @@ ul.pagination li.active {background-color: #ddd;}
 html {box-sizing: border-box;} 
 /*  html { font-size: min(max(16px, 4vw), 22px); }    Fluid-Type*/
 *:before, *:after {box-sizing: inherit;} 
+/* Prevent 'User CopynPaste' for Safari, Firefox and IE */
+* {
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+/**/
 /* Smooth Scroll Effect + Remove Browser Scroll */
 html {
   font-smoothing: antialiased;
@@ -135,7 +148,7 @@ body {
   letter-spacing: 0.6px;
 }
 /**/
-main {}                   /* 'PHP' Container */
+main {}                      /* 'PHP' Container */
 /**/
 footer  {
   margin: 4px 0;
@@ -152,18 +165,11 @@ footer  {
 }
 @media all and (min-width: 800px){
   main {margin: 0 4em;}
-   /* body {display: none;}        HIDE Site on 'Desktop' */
+  /* body {display: none;}    HIDE Site on 'PC' */
   /*article {margin: 0 1.21em;}  Page-Alignment */
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-/* Prevent 'User CopynPaste' for Safari, Firefox and IE */
-* {
-  -webkit-user-select: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none;
-}
 a {
   text-decoration: none;
   color: #000;
@@ -178,9 +184,7 @@ address {
   font-family: cursive;
   text-align: center;
 }
-blockquote {
-  text-align: center;
-}
+blockquote {text-align: center;}
 code, p code {
   background: #dddada; 
   border-radius: 5px;
@@ -242,7 +246,6 @@ i {
 p, mark, summary { 
   font-size: calc(0.96rem + 0.02vw);
   line-height: 1.248; 
-  /*text-align: justify;*/
 }
 /* 'Dim' TEXT-Color Styles */
 p, ol {color: #444;}
@@ -272,8 +275,7 @@ ol.alpha {list-style-type: lower-alpha;}
 /* ============================================ */
 
 /* GRID: 2-COL Mobile => 3-Col PC 
-   Used for 'dialog' on 'journal/semantic-markup'
-*/
+   Used for 'dialog' on 'webdesign/semantic-markup'*/
 .block {
   width: 100%;
   margin: 0;
@@ -310,12 +312,13 @@ ol.alpha {list-style-type: lower-alpha;}
     padding: 0;
   }
 }
+/**//****************************************//**/
 
 
 /* GRID: 2-COL Variable-Responsive-Row */
 .declarations {
   width: 100%;
-   margin: -1em 0 1em 0;
+  margin: -1em 0 1em 0;
   padding: 0;
   display: grid;
   grid-template-rows: repeat(auto, minmax(24px, auto));	
@@ -336,9 +339,9 @@ ol.alpha {list-style-type: lower-alpha;}
   }
   .declarations span {font-size: 1em;}
 }
-/**********************/
+/**//****************************************//**/
 
-/*Unicode Character Grid*/
+/*Unicode Character Grid Multi-SM-Col*/
 .characterGrid {
   margin: 0;
   padding: 0;
@@ -366,28 +369,12 @@ ol.alpha {list-style-type: lower-alpha;}
 .asciiItemChar {
   font-size: 1.5em;
 }
-/**//*******************************//**/
+/**//****************************************//**/
 
 
 /* ============================================ */
 /* ============================================ */
-/* webdesign/resources'    */
-/*   GLOSSARY GRID  (currently in semantic markup)  */
-.glossary {
-   width: 100%;
-   /*font-size: 0.80em;*/
-   margin: 0 auto;
-   padding: 0;
-   display: grid;
-   grid-template-rows: repeat(auto, 24px);
-   grid-template-columns: 4.2em 1fr;
-   grid-gap: 8px;
- }
-.glossary div:nth-child(even) {font-size: .88em;}
-.glossary div:nth-child(odd) {font-size: 1em;}
-
-
-/* portfolio/WebDesign/RESOURCES */
+/* WebDesign/RESOURCES GRID */
 .resSyntax {grid-area: syntax;}
 .resContent {grid-area: contentRes;}
 .resLayout {grid-area: layout;}
@@ -397,7 +384,7 @@ ol.alpha {list-style-type: lower-alpha;}
 .resManage {grid-area: manage;}
 .resTools {grid-area: tools;}
 .resourceGrid {
-  margin: 0;
+  margin: -1em 0 0 0;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
@@ -422,11 +409,6 @@ ol.alpha {list-style-type: lower-alpha;}
   font-size: 0.84em;
   grid-gap: 0.48em;
 }
-/* Alternatiing Grey/White Background-Color
-.resourceLink > span:nth-child(4n+1),
-.resourceLink > span:nth-child(4n+3) {
-  background-color:#838487;
-}*/
 @media only screen and (min-width: 800px) {
   .resourceGrid {
     display: grid;
@@ -438,27 +420,22 @@ ol.alpha {list-style-type: lower-alpha;}
       "snippets helpRes manage tools";
   grid-gap: 1em;
   }  
-  .resourceLink {
-  grid-gap: 0.84em;
-  }
+  .resourceLink {grid-gap: 0.84em;}
 }
+/* WebDesign/ */
+/* Glossary GRID (currently in semantic markup) */
+.glossary {
+   width: 100%;
+   margin: 0 auto;
+   padding: 0;
+   display: grid;
+   grid-template-rows: repeat(auto, 24px);
+   grid-template-columns: 4.2em 1fr;
+   grid-gap: 8px;
+ }
+.glossary div code {font-size: 1em;}
 /* ============================================ */
 /* ============================================ */
-
-
-.table {margin: 2px 6px;}
-/*Hide on Mobile >> Display in Desktop*/
-.hideMobile, span.hideMobile {display: none;}
-.hideDesktop, span.hideDesktop {display: contents;}
-/**/
-@media only screen and (min-width: 800px) {
-  .hideMobile, span.hideMobile {display: contents;}
-  .hideDesktop, span.hideDesktop {display: none;}
-}
-/**//*******************************//**/
-/**//*******************************//**/
-
-
 
 
 /* ============================================ */
@@ -553,6 +530,15 @@ p.btn {
     max-width: 250px;
     height: 44px;
   }
+}
+/**//******************************************//**/
+/*Hide on Mobile >> Display in Desktop*/
+.hideMobile, span.hideMobile {display: none;}
+.hideDesktop, span.hideDesktop {display: contents;}
+/**/
+@media only screen and (min-width: 800px) {
+  .hideMobile, span.hideMobile {display: contents;}
+  .hideDesktop, span.hideDesktop {display: none;}
 }
 /**//******************************************//**/
 
