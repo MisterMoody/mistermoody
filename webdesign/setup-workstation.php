@@ -91,7 +91,7 @@ include ("../inc/webdesignHeader.php");
       <i><a href="https://github.com" target="_blank">Github</a></i> is a well-documented VCS with many integration capabilities. Required user authentication and SSH protocol are two features that make repositories easy to secure while enabling near instantaneous deployment online. 
     </p>
     <p>
-      Learn more about <i><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" target="_blank">How to Use</a></i> Github and check out this list of <i><a href="journal/git-control">Git Commands</a></i>.
+      Learn more about <i><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" target="_blank">How to Use</a></i> Github and check out this list of <i><a href="webdesign/git-control">Git Commands</a></i>.
     </p>
   </section>
   <!-- ************************************************** -->

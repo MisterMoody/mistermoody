@@ -721,7 +721,7 @@ include ("../inc/webdesignHeader.php");
     <details>
       <summary>List of HTML Tags</summary>
       <br>
-      <article class="declarations">
+      <article class="glossary">
         <div><code>&lt;!DOCTYPE html&gt;</code></div>
         <div><span></span></div>
         <div><code>&lt;head&gt;</code></div>
@@ -764,7 +764,7 @@ include ("../inc/webdesignHeader.php");
         <div><span></span></div>
         <div><code>&lt;b&gt;</code></div>
         <div><span></span></div>
-        <div><code>&lt;em&gt;</code> / <code>&lt;i&gt;</code></div>
+        <div><code>&lt;em&gt;|&lt;i&gt;</code></div>
         <div><span></span></div>
         <div><code>&lt;u&gt;</code></div>
         <div><span></span></div>
@@ -840,16 +840,6 @@ include ("../inc/webdesignHeader.php");
         <div><span></span></div>
       </article>
     </details>
-  </section>
-  <!-- ************************************************** -->
-  <hr>
-  <!-- ************************************************** -->
-  <section>
-    <h3>To-Do LIST:</h3>
-    <h4 style="background-color: #d46a6a;">Edit Forms + Interactive Elements Sections</h4>
-    <h4 style="background-color: #d46a6a;">Edit Media Section</h4>
-    <!-- See MM_portfolio_webdesign.docx -->
-    <br>
   </section>
   <!-- ************************************************** -->
   <!--          ********** PAGINATION **********          -->

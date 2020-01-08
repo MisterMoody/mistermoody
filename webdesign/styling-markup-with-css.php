@@ -295,7 +295,6 @@ include ("../inc/webdesignHeader.php");
         There are a lot of properties available for styling a document: no project regardless of size will utilize all of them. Lets look at some scenarios a designer can expect to encounter when making declarations for an aesthetically pleasing, yet, fully responsive website.
       </p>
     </article>
-    
     <!-- Container Layout -->
     <article>
       <h3>Container Layout</h3>
@@ -505,7 +504,6 @@ include ("../inc/webdesignHeader.php");
       </aside>
       
     </article>
-    
     <!-- Size and Placement -->
     <article>
       <h3>Sizing and Placement</h3>
@@ -665,7 +663,6 @@ include ("../inc/webdesignHeader.php");
       </aside>
       
     </article>
-    
     <!-- Media -->
     <article>
       <h3>Media</h3>
@@ -948,11 +945,6 @@ include ("../inc/webdesignHeader.php");
         <div><code>{&nbsp;: url(img/smile.png);}</code></div>
         <div><span>// URL to Image</span></div>
       </aside>
-    </article>
-    
-    <article>
-      <h3>To-Do LIST:</h3>
-      <h4 style="background-color: #d46a6a;">Add Animation, Transition + Transform Props</h4>
     </article>
   </section>
   <!-- ************************************************** -->
