@@ -1,9 +1,9 @@
-/* GRID-LINES for TESTING 'ONLY' */
+/* GRID-LINES for TESTING 'ONLY'
 section {outline: 1px solid red;}
 h1, h2, h3, h4, h5, h6  {outline: 4px solid black;}
 p {outline: 2px solid green;}
 article {outline: 3px dashed purple;}
-a  {outline: 2px dashed gold;}
+a  {outline: 2px dashed gold;} */
 
 /* ============================================ */
 /* 2. UNIVERSAL BASE STYLES =================== */
@@ -60,6 +60,7 @@ article {margin: 0.5em 0;}
 /* ****HERO Opener**** */
 .hero {
   margin: 0;
+  padding: 0;
   display: grid;
   grid-template-rows: 1fr min-content;
   /*opacity: 0.6;
@@ -87,10 +88,10 @@ article {margin: 0.5em 0;}
   text-align: center;
 }
 .content p { margin: 0.2em 0 0;letter-spacing: 0.8px;}
-
 /* B.Butler Introduction */
 .bButlerIntro {
   margin: 0;
+  padding: 0;
   display: grid;
   grid-auto-flow: row;
 }
@@ -121,14 +122,18 @@ article {margin: 0.5em 0;}
   h1 {font-size: 2em;}
   /******************/
   .bButlerIntro {
+    margin: 0 0.8em;
+    padding: 0;
     display: grid;
-    grid-template-columns: 44vw auto;
+    grid-template-columns: 48vw auto;
     grid-column-gap: 1em;
   }
-  .blair {}
+  .blair {
+  height: 100%;
+  width: 100%;}
   .butler {
     margin: 0;
-    font-size: 0.96em; 
+    font-size: 0.94em; 
     text-align: justify;
   }
 }
@@ -300,11 +305,11 @@ img { /* Default */
   margin: 0;
 }
 @media all and (min-width: 800px) {
-  img { /*Center Image*/
+  /*img { 
     display: block;
     margin: 0 auto;
     max-height: 23.23em;
     max-width: 32.32em;
-  }
+  }*/
 }
 
