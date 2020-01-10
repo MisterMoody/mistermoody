@@ -14,8 +14,8 @@ include ("../../inc/npolandingpageHeader.php");
       </picture>
     </article>
     <article class="content">
-      <h1>Lovie's House Incorporated</h1>
-      <p>Providing disenfranchised young men with nurturing opportunities that facilitate their well-being while encouraging them to become productive members of our community.</p>
+      <h1 class="info__title">Lovie's House Incorporated</h1>
+      <p>Providing disenfranchised young men with nurturing opportunities that facilitate their well-being while encouraging them to be productive community members.</p>
     </article>
   </section>
 <br>
@@ -93,7 +93,27 @@ include ("../../inc/npolandingpageHeader.php");
   </article>
 </section>
 <br>
-<!-- MISC -->
+<!-- -->
+<section>
+  <article class="donation">
+    <button class="donate__btn">Make a Change</button>
+    <div class="donation__amount">
+      <button>$10</button>
+      <button>$25</button>
+      <button>$50</button>
+      <button>$100</button>
+      <button>$250</button>
+      <button>$500</button>
+    </div>
+    <h4 class="info__title">Select Payment Method</h4>
+    <div class="donation__payment">
+      <button><i class="fa fa-cc-visa fa-3x"></i></button>
+      <button><i class="fa fa-paypal fa-3x"></i></button>
+    </div>
+  </article>
+</section>
+<br>
+<!-- MISC 
 <section class="infoRow">
   <article class="wrapper">
     <h2 class="info__title">Misc</h2>
@@ -166,8 +186,8 @@ include ("../../inc/npolandingpageHeader.php");
       </article>
     </div>
   </article>
-</section>
-<!-- -->
+</section>-->
+<!-- Logo Project -->
 <section>
       <picture>
         <img src="img/projectImages/logo.jpg">

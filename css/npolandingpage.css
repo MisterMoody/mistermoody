@@ -54,14 +54,14 @@ footer  {
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-section {margin: 1em 0;}
-article {0.5em 0;}
+section {margin: 0;}
+article {margin: 0.5em 0;}
 
 /* ****HERO Opener**** */
 .hero {
   margin: 0;
   display: grid;
-  grid-template-rows: 36vh 35vh ;
+  grid-template-rows: 1fr min-content;
   /*opacity: 0.6;
   background: #1a1a1a;
   background: radial-gradient(circle at top, #CC774D, #1a1a1a);*/
@@ -70,6 +70,7 @@ article {0.5em 0;}
   margin: 0;
   max-width: 100%;
   padding: 1em;
+  color: #8d1a1d;
   text-align: center;
   z-index: 1;
 }
@@ -77,18 +78,15 @@ article {0.5em 0;}
   text-align: left; 
   margin-bottom: 0;
 }
-h1 {
+.content h1 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.34em;
   font-weight: bolder;
-  font-variant: small-caps;
   letter-spacing: 2px;
   line-height: 1.125;
   text-align: center;
 }
-p {
-  letter-spacing: 0.8px;
-}
+.content p { margin: 0.2em 0 0;letter-spacing: 0.8px;}
 
 /* B.Butler Introduction */
 .bButlerIntro {
@@ -104,8 +102,7 @@ p {
   background-position: top;
   background-repeat: no-repeat;
 }
-.butler {margin: 0;}
-
+.butler {margin: -1em 0.4em 0;}
 @media all and (min-width: 800px){
   .hero {
     margin: 0;
@@ -119,7 +116,6 @@ p {
     top: 28%;*/
     margin: 0;
     padding: 0;
-    color: #8d1a1d;
   }
   .specialMSG {text-align: center;}
   h1 {font-size: 2em;}
@@ -129,11 +125,14 @@ p {
     grid-template-columns: 44vw auto;
     grid-column-gap: 1em;
   }
+  .blair {}
   .butler {
-  font-size: 0.94em; 
+    margin: 0;
+    font-size: 0.96em; 
     text-align: justify;
   }
 }
+
 /* Vision Image Gallery */
 .visionImageGrid { 
   margin: 0;
@@ -172,7 +171,66 @@ p {
 }
   
   
+/***********************/
+/* *Donation Section*  */
+.donate {
+  margin: 1em 0;
+  display: grid;
+  grid-auto-flow: row dense;
+}
+.donate__btn {
+  padding: 0 10vw;
+  width: 100%;
+  background-color: #8d1a1d;
+  color: #a89ea4;
+  font-size: 2em;
+  font-variant: small-caps;
+  text-align: center;
   
+}
+.donation__amount {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(53px, max-content));
+  grid-template-rows: 2em;
+  grid-gap: 0.4em;
+  justify-content: center;
+}
+.donation__payment {
+  margin: 0.50;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 100px));
+  grid-template-rows: 16vh;
+  grid-column-gap: 2em;
+  justify-content: center;
+}
+.donation__amount button, 
+.donation__payment button {
+  background-color: #fff;
+  color: #8d1a1d;
+  font-weight: 700;
+  border: 2px solid #8d1a1d;
+  border-radius: 4px;
+}
+.donation__amount button:hover{
+  background-color: #8d1a1d;
+  color: #fff;
+  border: 2px solid #a89ea4;
+}
+.donation__amount button:focus{
+  background-color: #a89ea4;
+  color: #8d1a1d;
+  outline: none;
+}
+.donation__payment button {
+  height: 80px; width: 80px;
+  border-radius: 50%;
+}
+/* Button Select */
+.donation__amount button {}
+
+
+
 /***********************/
 /* INFORMATIONAL Row */
 .wrapper {
@@ -183,10 +241,11 @@ p {
 
 /*.infoRow {padding: 1em 0;}*/
 .info__title {
-  text-align: center;
+  color: #8d1a1d;
   font-family: "Montserrat", sans-serif;
   font-variant: small-caps;
-  margin: 14px 0;
+  margin: 8px 0;
+  text-align: center;
 }
 .infoRow__intro {
   display: block;
