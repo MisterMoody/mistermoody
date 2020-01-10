@@ -176,11 +176,13 @@ include ("../inc/webdesignHeader.php");
 
           <span><a target="_blank" href="https://www.w3schools.com/howto/	">W3Schools</a></span>
 
-          <span><a target="_blank" href="https://30-seconds.github.io/30-seconds-of-css/">30secs of CSS</a></span>
-
           <span><a target="_blank" href="https://www.checklist.design/">Design Assets</a></span>
           
           <span><a target="_blank" href="https://michalsnik.github.io/aos/">Animate Scroll</a></span>
+          
+          <span><a target="_blank" href="https://codepen.io/collection/nMpBQm/?grid_type=list">Guide to Animation</a></span>
+          
+          <span><a target="_blank" href="https://animista.net/">Animation Generator</a></span>
 
           <span><a target="_blank" href="https://codemyui.com/">Code My UI</a></span>
 
@@ -235,6 +237,8 @@ include ("../inc/webdesignHeader.php");
           
           <span><a target="_blank" href="https://2019.stateofjs.com/">The State of JS 2019</a></span>
           
+          <span><a target="_blank" href="https://www.checklist.design/">UI/UX Checklist.design</a></span>
+          
           <span><a target="_blank" href="https://frontendchecklist.io/">Front-End Checklist</a></span>
                 
           <span><a target="_blank" href="https://designagency.io/">Project CO$T</a></span>
@@ -284,6 +288,8 @@ include ("../inc/webdesignHeader.php");
           <span><a target="_blank" href="http://jsonlint.com/">JSON Linter</a></span>
 
           <span><a target="_blank" href="https://jsonplaceholder.typicode.com/">JSON Placeholder</a></span>
+          
+          <span><a target="_blank" href="https://liveweave.com/">Async Online IDE</a></span>
           
           <span><a target="_blank" href="https://stackedit.io/">Markdown Editor</a></span>
           
