@@ -10,7 +10,7 @@ include ("../../inc/npolandingpageHeader.php");
   <section class="hero">
     <article class="heroImage">
       <picture>
-        <img src="img/projectImages/logo2.jpg">
+        <img src="img/projectImages/logo.jpg">
       </picture>
     </article>
     <article class="content">
@@ -38,7 +38,7 @@ include ("../../inc/npolandingpageHeader.php");
   <article class="wrapper">
     <h2 class="info__title">Troubling Facts</h2>
     <p class="infoRow__intro">
-      Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur porttitor.
+      The cycle of poverty is real and will only worsen unless community memebers bands together to lift the souls and spiritis of all our neighbors.
     </p>
     <div class="info__grid">
       <article class="infoBox">
@@ -66,20 +66,7 @@ include ("../../inc/npolandingpageHeader.php");
   </article>
 </section>
 <br>
-<!-- Vision Statement -->
-<section>
-  <article class="content">
-    <h2>Vision Statement</h2>
-      <p class="specialMSG"><i>Our mission is to break the cycle of poverty for all young men.</i></p>
-  </article>
-  <article>
-  <picture>
-    <img src="img/projectImages/visionStatement.jpg">
-  </picture>
-  </article>
-</section>
-<br>
-<!-- // Vision Image Grid-->
+<!-- // Facility Image Grid-->
 <section>
   <article class="visionImageGrid">
     <img src="img/projectImages/firstFloor.jpg">
@@ -93,7 +80,16 @@ include ("../../inc/npolandingpageHeader.php");
   </article>
 </section>
 <br>
-<!-- -->
+<!-- Vision -->
+<section>
+  <article>
+  <picture>
+    <img src="img/projectImages/visionStatement.jpg">
+  </picture>
+  </article>
+</section>
+<br>
+<!-- Make a Donation -->
 <section>
   <article class="donation">
     <button class="donate__btn">Make a Change</button>
@@ -189,9 +185,25 @@ include ("../../inc/npolandingpageHeader.php");
 </section>-->
 <!-- Logo Project -->
 <section>
-      <picture>
-        <img src="img/projectImages/logo.jpg">
-      </picture></section>
+  <article>
+    <h3 class="info__title">Logo Options</h3>
+    <picture>
+      <img src="img/projectImages/logo4.jpg">
+    </picture>
+    <picture>
+      <img src="img/projectImages/logoRedBG.jpg">
+    </picture>
+    <picture>
+      <img src="img/projectImages/logo2.jpg">
+    </picture>
+    <picture>
+      <img src="img/projectImages/logo3.jpg">
+    </picture>
+    <picture>
+      <img src="img/projectImages/logoGreyBG.jpg">
+    </picture>
+  </article>
+</section>
 <!-- -->
 <footer>2020 Lovie's House Inc.</footer>
 <!-- ** // End of CONTENT ***** --> 
