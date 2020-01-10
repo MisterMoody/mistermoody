@@ -26,11 +26,17 @@ include ("../inc/webdesignHeader.php");
           
           <span><a target="_blank" href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a></span>
           
+          <span><a target="_blank" href="https://www.w3.org/Style/CSS">W3C Styles Docs</a></span>
+          
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors">CSS Selector</a></span>
           
-          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Property</a></span>
+          <span><a target="_blank" href="https://css-tricks.com/almanac/properties/">CSS Properties</a></span>
+          
+          <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties ">Shorthand Properties</a></span>
           
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units">CSS Values</a></span>
+          
+          <span><a target="_blank" href="https://cssspecificity.com/">CSS </a><a target="_blank" href="https://jonassebastianohlsson.com/specificity-graph/">Specificity</a></span>
 
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">Animatable Properties</a></span>
 
@@ -51,6 +57,8 @@ include ("../inc/webdesignHeader.php");
           <span><a target="_blank" href="https://moritzgiessmann.de/accessibility-cheatsheet/">A11Y Cheat Sheet</a></span>
           
           <span><a target="_blank" href="https://styleguide.mailchimp.com/voice-and-tone/">Voice + Tone Style Guide</a></span>
+          
+          <span><a target="_blank" href="https://styleguide.io">500+ Style Guides</a></span>
           
           <span><a target="_blank" href="https://www.deque.com/axe/">Accessibility Tester</a></span>
           
@@ -146,7 +154,11 @@ include ("../inc/webdesignHeader.php");
 
           <span><a target="_blank" href="https://fonts.google.com/">Fonts by Google</a></span>
 
+          <span><a target="_blank" href="https://fontjoy.com/">Font-Pairing</a></span>
+
           <span><a target="_blank" href="https://type-scale.com/">Font-Scale</a></span>
+
+          <span><a target="_blank" href="https://modularscale.com/">Modular </a><a target="_blank" href="<a target="_blank" href="https://modularscale.com/">Modular Scaling-Scale</a>">Modular Scaling-Scale</a></span>
 
           <span><a target="_blank" href="https://mixfont.com/">Font Generator</a></span>
 
@@ -300,6 +312,11 @@ include ("../inc/webdesignHeader.php");
           <span><a target="_blank" href="https://keyframes.app/editor/">@keyframes Editor</a></span>
 
           <span><a target="_blank" href="https://tailwindcss.com/">Tailwind.css</a></span>
+
+          <span><a target="_blank" href="https://tachyons.io/">Tachyons.io UI</a></span>
+          
+
+          <span><a target="_blank" href="https://turretcss.com/">Turret.css</a></span>
 
           <span><a target="_blank" href="https://materializecss.com/">Materialize.css</a></span>
 
