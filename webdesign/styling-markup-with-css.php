@@ -1026,6 +1026,72 @@ include ("../inc/webdesignHeader.php");
     </p>
   </section>
   <!-- ************************************************** -->
+  <hr>
+  <!-- ************************************************** -->
+  <!-- Part 6: HTML Glossary -->
+  <section>
+    <h2>CSS Terminology</h2>
+    <br>
+    <details>
+      <summary>Useful Terms and Definitions</summary>
+      <br>
+      <article class="glossary">
+        <div><code>At-Rule</code></div>
+        <div><span>an instruction for a CSS document</span></div>
+        <div><code>Comment</code></div>
+        <div><span>Non-displayed code that provides an instruction for declarations</span></div>
+        <div><code>Rule Set</code></div>
+        <div><span>An independent section of CSS</span></div>
+        <div><code>Statement</code></div>
+        <div><span>any At-Rule or Rule Set</span></div>
+        <div><code>Selector</code></div>
+        <div><span>Assigns element to target</span></div>
+        <div><code>Declaration</code></div>
+        <div><span>an elements' property / value pair</span></div>
+        <div><code>Property</code></div>
+        <div><span>first part of a declaration</span></div>
+        <div><code>Keyword</code></div>
+        <div><span>second part of a declaration: a word</span></div>
+        <div><code>Value</code></div>
+        <div><span>second part of a declaration: a number</span></div>
+        <div><code>Notation</code></div>
+        <div><span>a value specified as a function <code>()</code></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+      </article>
+    </details>
+  </section>
+  <!-- ************************************************** -->
   <!--          ********** PAGINATION **********          -->
   <?php include ("../inc/pagination.php"); ?>
   <!-- ************************************************** -->
