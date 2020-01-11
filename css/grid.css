@@ -1,7 +1,5 @@
-/*    UNDER CONSTRUCTION STYLES 
-* Ultimate Construction Grid Highlighter => * {outline: 1px solid red;}
+/* Ultimate Construction Highlighter => * {outline: 1px solid red;}
 */
-
 /* ============================================ */
 /* CASCADING STYLESHEET ======================= */
 /*
@@ -17,7 +15,6 @@
 /* ============================================ */
 /* ========== UNIVERSAL BASE STYLES =========== */
 /* ============================================ */
-
 /* Universal Layout Containment */
 html {box-sizing: border-box;} 
 *:before, *:after {box-sizing: inherit;} 
@@ -627,9 +624,6 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
 /* ============================================ */
 
 
-
-
-
 /* ============================================ */
 /* 3. WEBDESIGN/ ============================== */
 /* ============================================ */
@@ -732,8 +726,6 @@ div.chapter__Date_Tag {
 /* ============================================ */
 
 
-
-
 /* ============================================ */
 /* #. CONTACT FORM ============================ */
 .contactGrid {
@@ -797,8 +789,6 @@ label.required:after {
 /* ============================================ */
 
 /* Animation, Transition + Transforms */
-
-/**/
 .fadeIn {  animation: fadeIn ease 8.8s;}
 @keyframes fadeIn {
   0% {opacity: 0;}
@@ -806,11 +796,13 @@ label.required:after {
 }
 
 
+/**//******************************************//**/
 /*Hide on Mobile >> Display in Desktop*/
 .hideMobile, span.hideMobile {display: none;}
 .hideDesktop, span.hideDesktop {display: contents;}
 /**/
 @media only screen and (min-width: 800px) {
-  .hideMobile, span.hideMobile {display: contents; text-align: center;}
+  .hideMobile, span.hideMobile {display: contents;}
   .hideDesktop, span.hideDesktop {display: none;}
 }
+/**//******************************************//**/

@@ -122,10 +122,9 @@ ul.pagination li.active {background-color: #ddd;}
 
 /* Universal Layout Containment */
 html {box-sizing: border-box;} 
-/*  html { font-size: min(max(16px, 4vw), 22px); }    Fluid-Type*/
 *:before, *:after {box-sizing: inherit;} 
-/* Prevent 'User CopynPaste' for Safari, Firefox and IE */
-* {
+/* Prevent 'User CopynPaste' */
+main {
   -webkit-user-select: none; 
   -moz-user-select: none; 
   -ms-user-select: none; 
@@ -147,8 +146,6 @@ body {
 	font-family: 'Raleway', sans-serif;
   letter-spacing: 0.6px;
 }
-/**/
-main {}                      /* 'PHP' Container */
 /**/
 footer  {
   margin: 4px 0;
@@ -215,6 +212,7 @@ h2 {background-color: #444; color: #fff;}
 h3 {background-color: #7b7b7b;}
 h4 {background-color: #bebdbf;}
 h5 {background-color: gold;}
+.addMarginTop {margin-bottom: 1.5em;}
 /* ********* ********  */
 h1 {font-size: calc(1.2rem + 2.4vw);}  
 hr {
@@ -263,8 +261,10 @@ ol.alpha {list-style-type: lower-alpha;}
 @media all and (min-width: 800px) {  
   body {margin: 0 5.3em;}
   code, p code, details {font-size: 1em;}
+  details{font-size: 1.2em;}
   figure {margin: 0;}
   h2, h3, h4, h5, h6 {margin-bottom: 0.2em;}
+  .addMarginTop {margin-bottom: 0.8em;}
   p {font-size: 1.1em; margin: 0.25em 0.55em 0.25em 0.25em;}
   ol {
     font-size: 1em; 
@@ -273,7 +273,6 @@ ol.alpha {list-style-type: lower-alpha;}
 }
 /* ============================================ */
 /* ============================================ */
-
 /* GRID: 2-COL Mobile => 3-Col PC 
    Used for 'dialog' on 'webdesign/semantic-markup'*/
 .block {
@@ -313,8 +312,7 @@ ol.alpha {list-style-type: lower-alpha;}
   }
 }
 /**//****************************************//**/
-
-
+/**/
 /* GRID: 2-COL Variable-Responsive-Row */
 .declarations {
   width: 100%;
@@ -340,7 +338,7 @@ ol.alpha {list-style-type: lower-alpha;}
   .declarations span {font-size: 1em;}
 }
 /**//****************************************//**/
-
+/**/
 /*Unicode Character Grid Multi-SM-Col*/
 .characterGrid {
   margin: 0;
@@ -430,10 +428,18 @@ ol.alpha {list-style-type: lower-alpha;}
    padding: 0;
    display: grid;
    grid-template-rows: repeat(auto, 24px);
-   grid-template-columns: 4.2em 1fr;
+   grid-template-columns: auto 1fr; /* auto was 6.2em*/
    grid-gap: 8px;
  }
 .glossary div code {font-size: 1em;}
+@media only screen and (min-width: 800px) {
+  .glossary {
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: 8em 1fr;
+    grid-gap: 0.4em;    
+  }
+}
 /* ============================================ */
 /* ============================================ */
 
