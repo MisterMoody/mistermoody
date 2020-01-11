@@ -331,6 +331,62 @@ include ("../inc/webdesignHeader.php");
       </div>
     </section>
   <!-- ******************************************** -->
+  <!-- Web Dev Glossary -->
+  <section>
+    <h2>Web Dev Glossary</h2>
+    <br>
+    <details>
+      <summary>Useful Terms and Definitions</summary>
+      <br><!--<a href="https://dev.to/valentinogagliardi/21-web-development-terms-you-should-absolutely-know-about-368j">Explaination</a>-->
+      <article class="glossary">
+        <div><code>ECMAScript</code></div>
+        <div><span>official JavaScript (ES5/ES6)</span></div>
+        <div><code>JS Engine</code></div>
+        <div><span>compiles + interprets JavaScript</span></div>
+        <div><code>Transpiler</code></div>
+        <div><span>ES4-to-ES6 syntax converter</span></div>
+        <div><code>Specification</code></div>
+        <div><span>JavaScript language documentation</span></div>
+        <div><code>API</code></div>
+        <div><span>application programming interface</span></div>
+        <div><code>Native API</code></div>
+        <div><span>default built-in tool</span></div>
+        <div><code>Browser API</code></div>
+        <div><span>built-in browser tool</span></div>
+        <div><code>REST API</code></div>
+        <div><span>web service connects data via request</span></div>
+        <div><code>Fetch API</code></div>
+        <div><span>native API to make HTTP request</span></div>
+        <div><code>HTTP Request</code></div>
+        <div><span>browser request to fetch/save data</span></div>
+        <div><code>HTTP Error</code></div>
+        <div><span>response something is not working</span></div>
+        <div><code>XMLHttpRequest</code></div>
+        <div><span>native object makes HTTP requests</span></div>
+        <div><code>CORS</code></div>
+        <div><span>cross-origin resource sharing</span></div>
+        <div><code>WebSocket</code></div>
+        <div><span>internet communication protocol</span></div>
+        <div><code>AJAX</code></div>
+        <div><span>fetches data without page refresh</span></div>
+        <div><code>JSON</code></div>
+        <div><span>a formated exchange of data</span></div>
+        <div><code>SQL</code></div>
+        <div><span>structured query language</span></div>
+        <div><code>GraphQL</code></div>
+        <div><span>interactive data query language</span></div>
+        <div><code>Console</code></div>
+        <div><span>a developer toolkit</span></div>
+        <div><code>Debugger</code></div>
+        <div><span>tool to fix code issues</span></div>
+        <div><code>Node.js</code></div>
+        <div><span>server-side environ for JavaScript</span></div>
+        <div><code>npm</code></div>
+        <div><span>node package manager</span></div>
+      </article>
+    </details>
+  </section>
+  <!-- ************************************************** -->
   <!--     ************* PAGINATION ************    -->
   <?php include ("../inc/pagination.php"); ?>
   <!-- ******************************************** -->
