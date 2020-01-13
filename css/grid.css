@@ -127,8 +127,8 @@ margin: 2.4em auto;
 .imgL {
   float: left;
   margin: 4px 16px 0 0;
-  width: 35%;
-  height: auto;
+  width: 9.375em; /*150px*/
+  height: 200px;
   border-radius: 8px;
 }  
 .imgR {
@@ -166,7 +166,6 @@ address {
     margin: 5px 20px 0 0;
     width: 35%;
     height: auto; 
-    /*border: 2px solid #c41e3a;*/
     border-radius: 2px;
   }
   .imgR {
@@ -312,13 +311,28 @@ fa-home {
   height: 32em;
   display: grid;
   grid-template-rows: 2.4em 18em repeat(3, 2.8em);
-  grid-gap: 0.5em;
+  grid-row-gap: 1em;
 } 
+.homepage__Image {
+  /*max-width: 62vw;
+  height: 250px;*/
+  width: 100%;
+  max-height: 100%;
+display: block;
+margin: 2em auto;
+  /*border-radius: 4px;
+  filter: drop-shadow(4px 4px 4px #cccccc);*/
+}
 @media screen and (min-width: 800px){
   .homepage { 
     height: 35.53em;
     margin: 0.4em 8em;
     grid-template-rows: 2em 20em repeat(3, 2.8em);
+  }
+  .homepage__Image {
+    width: 44vw;
+    height: 100%;
+    max-height: 62vh; 
   }
 }
   /* Social Media */
@@ -347,11 +361,31 @@ ul.social {
 /* ============================================ */
 
 /* about/INDEX */
+/*Text Styles*/
+.about__Intro {
+  margin: 0.4422em;
+  height: 100%;
+  display: grid;
+}
+.about__Intro-Paragraph {
+  font-size: 1.042em; 
+  letter-spacing: 0.4; 
+  line-height: 1.5;
+}
+.about__Intro-Image {
+  float: left;
+  margin: 6px 16px -2px 0;
+  width: 9.371em; /*150px*/
+  height: 200px;
+  border-radius: 8px;
+}  
   /* About Me 'Image Gallery' */
 .imageGrid { 
+  margin: 0;
   padding-bottom: 0.612em;    /* Offset top-margin */
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto, 1fr);
 /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
   grid-gap: 4px;
   align-items: start;
@@ -372,7 +406,14 @@ ul.social {
   grid-column: span 1;
   grid-row: span 2;
   }
-@media all and (min-width: 800px) {.imageGrid {display: none;}}
+@media all and (min-width: 800px) {
+  /*.imageGrid {display: none;}*/
+  .about__Intro-Paragraph {
+    font-size: 1.4em; 
+    letter-spacing: 0.8; 
+    line-height: 1.5;
+  }
+}
 /*
 Image GRID Gallery 
 Create 2x Images every 4 Elements (or replace with 3/8)

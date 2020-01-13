@@ -9,7 +9,63 @@ include ("../inc/header.php")
 <!-- ** // Start of CONTENT *** -->
   <section>
     <!-- // Introduction -->
+    <!-- 
+    *Get point across in 1st Sentence
+    *<link> to Personal Projects as points are expressed
+    Mission Statement: Express Values & Goals + How I Can Help
+       [ Infuse 'Personality' to 'Forge a Connection'
+                                 'Inspire Trust'  ]
+    Credentials
+       [ Certifications + Work Photos/Social Proof + Testimonials ]
+    Call-to-Action 
+       [ Invitation to 'Follow' on Twitter 
+                       'Subscribe' to Newsletter
+                       'Donate' to Cause   ]
+    -->
+    <article class="about__Intro">
+      <p class="about__Intro-Paragraph">
+        <img class="about__Intro-Image" src="img/me.jpg">My career as an educator began while studying political science as an undergraduate and simultaneously employed as a supervisor for an at-risk youth community center: I was 19 years old. Shortly after graduation, I embarked on a sojourn abroad to teach English as a second language. What was supposed to have been a gap year before enrolling in law school turned into a life altering experience that made me an educator. 
+      </p>
+      <h2>I make learning fun!</h2>
+    </article>
+    
     <article>
+      <aside class="imageGrid">
+        <!--Row of 4 -->
+        <img src="img/3yrjpn.jpg">
+        <img src="img/yungn.jpg" style="height: 100%;">
+        <img src="img/cnID.jpg" style="height: 100%;">
+        <!--Dbl-Row of 2+1 -->
+        <img src="img/jpnstamp.jpg" style="height: 100%;">
+        <img src="img/brandeisES.jpg">
+
+        <img src="img/westernMS.jpg" style="height: 100%;">
+        <img src="img/ChienShieung.jpg" style="height: 100%;">
+        <img src="img/GH-Shyrock.jpg">
+
+        <img src="img/jpnyahata.jpg" style="height: 100%;">        
+        <img src="img/coleridgeES.jpg">
+        <img src="img/jdhs.jpg" style="height: 100%;">
+      </aside>
+    </article>
+    
+    <article>
+      <p>
+        Life as an emigrant was challenging, yet as a life-learner and pseudo-polyglot, I could empathize with language acquisition struggles learners encounter and I believe this helped me thrive in assisting learners from China, Japan and South Korea improve their language fluency. Some of the agencies that have enabled me to practice my craft include Sogang Uni., Oxford Seminars, Joongdong High School, YBM International Academy, Tongxiang Middle School and Jiaxing College.
+      </p>
+      <p>
+        I am currently employed with Jefferson County Public Schools  (KY) in a substitute role that allows me to work at multiple schools while serving the needs of learners from Kindergarten through grade 12.
+      </p>
+      <p>
+        <!-- <img src="img/startupWKND.jpg"> -->
+      </p>
+      <!--<p class="aboutPara">
+        Along my journey, I have staggered, struggled and stumbled miserably, but I never stopped chasing the dream. 
+      </p>-->
+      <h5>Check out my <a href="about/resume">resume</a></h5>
+    </article>
+    <!-- Long-Version BIO -->
+    <!--<article>
       <p>
         I was born in Louisville, Kentucky and raised in a single-parent household. The relationship between my father and I had severed at age seven, and his absence could best explain the behavioral and emotional rollercoaster that I would endure throughout my youth. Environmental and financial woes frequently displaced my family, but we were able to cope with scarce provisions.
       </p>
@@ -22,15 +78,7 @@ include ("../inc/header.php")
       <p>
         Basketball was always more than a game for me: it was an outlet for expression and a means to achieve the American dream. Being an athlete allowed me to become a scholar. Being a scholar led me to study multiple disciplines at seven colleges and universities in three countries. Through education I altered the trajectory of my future and in the process I became an educator.
       </p>
-      <!--<p>
-        My career as an educator began when I was an undergraduate employed as a supervisor for an at-risk youth community center. Shortly after graduating university, I embarked on a sojourn abroad to teach English as a second language. 
-      </p>
-      <p>
-        What was supposed to have been a gap year turned into a life altering experience in which my life was immersed in foreign culture.  Being a pseudo-polyglot allowed me to empathize with language acquisition struggles learners encounter and I believe this helped me thrive in assisting learners from China, Japan, South Korea and the United States improve their language fluency. Some of the agencies that have enabled me to practice my craft include Sogang Uni., Oxford Seminars, Joongdong High School, YBM International Academy, Tongxiang Middle School, Jiaxing College and Jefferson County Public Schools (Kentucky). 
-      </p>-->
-      <p>Along my journey, I have staggered, struggled and stumbled miserably, but I never stopped chasing the dream. </p>
-      <h5>Check out my <a href="about/resume">resume</a></h5>
-    </article>
+    </article>-->
     
     <!-- FULL-SCREEN <image> GALLERY -->    
     <!--<aside class="imageGrid">
