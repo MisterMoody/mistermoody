@@ -10,23 +10,19 @@ include ("inc/homepage.php");
 
 <!--  **********************************  -->
 <article class="homepage fadeIn">
-  <div>
-    <h1>Hi. I'm Ray.</h1>
-  </div>
-  <!-- -->
-  <div>
+  <picture>
     <img class="homepage__Image" src="img/guttermuthES.jpg" />
-  </div>
+  </picture>
   <!-- -->
-  <div>
-    <h4>I build web apps and teach language art skills.</h4>
-  </div>
+  <h1>Hi. I'm Ray.</h1>
+  <!-- -->
+  <h4>I build web apps and teach language art skills.</h4>
   <!-- Quick Nav -->
   <h4>
-      <a href="about/">About</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp;
-      <a href="portfolio/">Portfolio</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp; 
-      <a href="contact">Contact</a>
-    </h4>
+    <a href="about/">About</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp;
+    <a href="portfolio/">Portfolio</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp; 
+    <a href="contact">Contact</a>
+  </h4>
   <!-- #Contact + Social Media -->
   <ul class="social">
     <li>
