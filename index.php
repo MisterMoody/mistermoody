@@ -15,7 +15,7 @@ include ("inc/homepage.php");
   </div>
   <!-- -->
   <div>
-    <img class="mainImage" src="img/me.jpg" />
+    <img class="homepage__Image" src="img/guttermuthES.jpg" />
   </div>
   <!-- -->
   <div>
