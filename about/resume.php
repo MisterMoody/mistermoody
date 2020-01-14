@@ -24,7 +24,7 @@ include ("../inc/header.php")
           <ol class="fa-ul">
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques</li>
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Complete professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
-            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Awarded 93 assignments at 40 schools; facilitated courses for more than 2,500 learners</li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Awarded 97 assignments at 41 schools; facilitated courses for more than 2,700 learners</li>
           </ol>
         </div>
       </div>

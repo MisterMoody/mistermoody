@@ -8,27 +8,46 @@ include ("../inc/header.php")
 
 <!-- ** // Start of CONTENT *** -->
   <section>
-    <!-- // Introduction -->
-    <!-- 
-    *Get point across in 1st Sentence
-    *<link> to Personal Projects as points are expressed
-    Mission Statement: Express Values & Goals + How I Can Help
-       [ Infuse 'Personality' to 'Forge a Connection'
-                                 'Inspire Trust'  ]
-    Credentials
-       [ Certifications + Work Photos/Social Proof + Testimonials ]
-    Call-to-Action 
-       [ Invitation to 'Follow' on Twitter 
-                       'Subscribe' to Newsletter
-                       'Donate' to Cause   ]
-    -->
-    <article class="about__Intro">
+    <!-- // Introduction (Replace after Fix 'Profile Card' -->
+    <article>
       <p class="about__Intro-Paragraph">
-        <img class="about__Intro-Image" src="img/me.jpg">My career as an educator began while studying political science as an undergraduate and simultaneously employed as a supervisor for an at-risk youth community center: I was 19 years old. Shortly after graduation, I embarked on a sojourn abroad to teach English as a second language. What was supposed to have been a gap year before enrolling in law school turned into a life altering experience that made me an educator. 
+        <img class="about__Intro-Image" src="img/me.jpg">I am currently employed with Jefferson County Public Schools  (KY) in a substitute role that allows me to work at multiple schools to serve the needs of learners kindergarten through grade 12. Since <code>January 2018</code>, I have been awarded <code>97</code> assignments at <code>41</code> schools where I was responsible for facilitating lesssons to more than <code>2,700</code> students.
       </p>
-      <h2>I make learning fun!</h2>
+      <button class="cta"><a href="contact">Need a Tutor?</a></button>
     </article>
-    
+    <!-- Profile Card + Call-to-Action (Broken)
+    <article>
+      <aside class="profile__card--Grid">
+        <div class="profile__card">
+        <div class="profile__info">
+          <div class="rings">
+            <div class="outer__ring"></div>
+            <div class="inner__ring"></div>
+            <img src="img/workVanilla.jpg">
+          </div>
+          <div class="profile__description">
+            <h2>Ray Moody</h2>
+            <div class="profile__can">
+              <div>Age:</div>
+              <div>40</div>
+              <div>Hometown:</div>
+              <div>Louisville, KY</div>
+              <div>Languages:</div>
+              <div>English, 中文</div>
+              <div>Availability:</div>
+              <div>Accepting Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="profile__card--Paragraph">
+        I am currently employed with Jefferson County Public Schools  (KY) in a substitute role that allows me to work at multiple schools to serve the needs of learners from kindergarten through grade 12.
+        <br>Since <code>1 / 2018</code>, I have been awarded <code>97</code> assignments at <code>41</code> schools where I was responsible for facilitating lesssons to more than <code>2,700</code> students.
+      </p>
+      </aside>
+      <button class="cta"><a href="contact">Need a Tutor?</a></button>
+    </article> -->
+    <!-- Social Proof: Image Gallery -->
     <article>
       <aside class="imageGrid">
         <!--Row of 4 -->
@@ -48,21 +67,50 @@ include ("../inc/header.php")
         <img src="img/jdhs.jpg" style="height: 100%;">
       </aside>
     </article>
+    <!-- Career Experience -->       
+    <article class="about__Intro">
+      <p class="about__Intro-Paragraph">
+        <!--<img class="about__Intro-Image" src="img/me.jpg">-->My career as an educator began while studying political science as an undergraduate and simultaneously employed as a supervisor for an at-risk youth community center: I was 19 years old. Shortly after graduation, I embarked on a sojourn abroad to teach English as a second language. What was supposed to have been a gap year before enrolling in law school turned into a life altering experience that made me an educator. 
+      </p>
+    </article>
+    <!-- -->
+    <!-- 
+    Highlight 'Web Dev' Aspirations
+    <p><img src="img/startupWKND.jpg"></p>    // StartupWKND 
+
+    *<link> to Personal Projects as points are expressed
+    Mission Statement: Express Values & Goals + How I Can Help
+       [ Infuse 'Personality' to 'Forge a Connection'
+                                 'Inspire Trust'  ]
+    Credentials
+       [ Certifications + Work Photos/Social Proof + Testimonials ]
+    Call-to-Action 
+       [ Invitation to 'Follow' on Twitter 
+                       'Subscribe' to Newsletter
+                       'Donate' to Cause   ]
+
+    -->
+    <!-- -->
+    <article>
+      <p class="about__Intro-Paragraph">
+        Life as an emigrant was challenging, yet as a life-learner and pseudo-polyglot, I empathize well with language acquisition struggles learners encounter. My affinity with foreign culture and language began in my youth watching Chinese kung fu movies. This sparked a curiosity that would lead me to study French, Spanish, Hangul, Nihongo and Putonghua.
+      </p>
+      <p class="about__Intro-Paragraph">
+        That same inquisitiveness led me to travel abroad, beyond the wilderness of imagination and into the depths of a holistic cultural immersion from which I emerged an ardent spirit of humanity. Throughout China, Japan and South Korea, I thrived in supporting learners improve their language fluency. Some of the agencies that have enabled me to practice my craft include Sogang University, Oxford Seminars, Joongdong High School, YBM International Academy, Chien-Shiung Institute of Technology, Tongxiang Middle School, Shanghai Ocean University and Jiaxing College.
+      </p>
+    </article>
     
     <article>
-      <p>
-        Life as an emigrant was challenging, yet as a life-learner and pseudo-polyglot, I could empathize with language acquisition struggles learners encounter and I believe this helped me thrive in assisting learners from China, Japan and South Korea improve their language fluency. Some of the agencies that have enabled me to practice my craft include Sogang Uni., Oxford Seminars, Joongdong High School, YBM International Academy, Tongxiang Middle School and Jiaxing College.
-      </p>
-      <p>
-        I am currently employed with Jefferson County Public Schools  (KY) in a substitute role that allows me to work at multiple schools while serving the needs of learners from Kindergarten through grade 12.
-      </p>
-      <p>
-        <!-- <img src="img/startupWKND.jpg"> -->
-      </p>
-      <!--<p class="aboutPara">
-        Along my journey, I have staggered, struggled and stumbled miserably, but I never stopped chasing the dream. 
-      </p>-->
-      <h5>Check out my <a href="about/resume">resume</a></h5>
+      <h2>I make learning fun!</h2>
+      <aside class="imageGrid">
+        <!--Row of 4 -->
+        <img src="img/clES2.jpg" style="height: 100%;">
+        <img src="img/cleSTEMLab.png">
+        <img src="img/clES1.jpg" style="height: 100%;">
+      </aside>
+      <button class="cta"><a href="about/resume">Check out my Resume</a></button> 
+    </article>   
+    <article>
     </article>
     <!-- Long-Version BIO -->
     <!--<article>
