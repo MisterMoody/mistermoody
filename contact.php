@@ -10,7 +10,8 @@ include ("inc/header.php");
 <section>
   <article>
     <h4>Get In Touch!</h4>
-    <p>Thank you for taking the time to review my portfolio. If you have a question about anything that you read or are interested in collaborating on a project, let me know. </p>
+    <!--<p>Thank you for taking the time to review my portfolio. If you have a question about anything that you read or are interested in collaborating on a project, let me know. </p>-->
+    <p>Taking on new students for after school and weekend assistance. Get in touch with me now to assess your learning needs and how I may be of assistance to you.</p>
     
     <?php
     if(isset($_POST["submit"])) {

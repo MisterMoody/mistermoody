@@ -7,13 +7,25 @@ include ("../inc/header.php")
 <!-- ******************** <<HOMEPAGE>>  *************** -->
 
 <!-- ** // Start of CONTENT *** -->
-  <section>
-    <!-- // Introduction (Replace after Fix 'Profile Card' -->
+<section class="hideMobile">
+  <h1 style="height: 28vh; margin: 5em auto">Apologies for the inconvenince. If you would like to view this website, use a mobile device. Thank you.</h1>
+</section>
+  <section class="hideDesktop">
+    <!-- // Introduction + C-T-A (Replace after Fix 'Profile Card') -->
     <article>
       <p class="about__Intro-Paragraph">
-        <img class="about__Intro-Image" src="img/me.jpg">I am currently employed with Jefferson County Public Schools  (KY) in a substitute role that allows me to work at multiple schools to serve the needs of learners kindergarten through grade 12. Since <code>January 2018</code>, I have been awarded <code>97</code> assignments at <code>41</code> schools where I was responsible for facilitating lesssons to more than <code>2,700</code> students.
+        <img class="about__Intro-Image" src="img/me.jpg">I am employed with <a href="http://jefferson.kyschools.us" target="_blank">J.C.P.S.</a> (KY) in a substitute teacher role serving needs and raising expectations of students kindergarten through grade 12. Since <code>January 2018</code>, I have been awarded <code>97</code> assignments at <code>41</code> schools where I was responsible for facilitating lesssons to more than <code>2,700</code> students.
       </p>
+      <!--<h2>I make learning fun!</h2>-->
+      <aside class="imageGrid">
+        <img src="img/clES2.jpg" style="height: 100%;">
+        <img src="img/cleSTEMLab.png">
+        <img src="img/clES1.jpg" style="height: 100%;">
+      </aside>
+      <div class="temp__btn-hold">
       <button class="cta"><a href="contact">Need a Tutor?</a></button>
+      <button class="cta"><a href="about/resume">Check out my Resume</a></button> 
+      </div>
     </article>
     <!-- Profile Card + Call-to-Action (Broken)
     <article>
@@ -47,32 +59,12 @@ include ("../inc/header.php")
       </aside>
       <button class="cta"><a href="contact">Need a Tutor?</a></button>
     </article> -->
-    <!-- Social Proof: Image Gallery -->
-    <article>
-      <aside class="imageGrid">
-        <!--Row of 4 -->
-        <img src="img/3yrjpn.jpg">
-        <img src="img/yungn.jpg" style="height: 100%;">
-        <img src="img/cnID.jpg" style="height: 100%;">
-        <!--Dbl-Row of 2+1 -->
-        <img src="img/jpnstamp.jpg" style="height: 100%;">
-        <img src="img/brandeisES.jpg">
-
-        <img src="img/westernMS.jpg" style="height: 100%;">
-        <img src="img/ChienShieung.jpg" style="height: 100%;">
-        <img src="img/GH-Shyrock.jpg">
-
-        <img src="img/jpnyahata.jpg" style="height: 100%;">        
-        <img src="img/coleridgeES.jpg">
-        <img src="img/jdhs.jpg" style="height: 100%;">
-      </aside>
-    </article>
     <!-- Career Experience -->       
-    <article class="about__Intro">
+    <!--<article class="about__Intro">
       <p class="about__Intro-Paragraph">
-        <!--<img class="about__Intro-Image" src="img/me.jpg">-->My career as an educator began while studying political science as an undergraduate and simultaneously employed as a supervisor for an at-risk youth community center: I was 19 years old. Shortly after graduation, I embarked on a sojourn abroad to teach English as a second language. What was supposed to have been a gap year before enrolling in law school turned into a life altering experience that made me an educator. 
+        <img class="about__Intro-Image" src="img/me.jpg">My career as an educator began while studying political science as an undergraduate and simultaneously employed as a supervisor for an at-risk youth community center: I was 19 years old. Shortly after graduation, I embarked on a sojourn abroad to teach English as a second language. What was supposed to have been a gap year before enrolling in law school turned into a life altering experience that made me an educator. 
       </p>
-    </article>
+    </article>-->
     <!-- -->
     <!-- 
     Highlight 'Web Dev' Aspirations
@@ -89,29 +81,39 @@ include ("../inc/header.php")
                        'Subscribe' to Newsletter
                        'Donate' to Cause   ]
 
-    -->
-    <!-- -->
-    <article>
+    -->    
+    <!-- Social Proof: Image Gallery -->
+    <!--<article>
+      <aside class="imageGrid">
+        <img src="img/3yrjpn.jpg">
+        <img src="img/yungn.jpg" style="height: 100%;">
+        <img src="img/cnID.jpg" style="height: 100%;">
+        
+        <img src="img/jpnstamp.jpg" style="height: 100%;">
+        <img src="img/brandeisES.jpg">
+
+        <img src="img/westernMS.jpg" style="height: 100%;">
+        <img src="img/ChienShieung.jpg" style="height: 100%;">
+        <img src="img/GH-Shyrock.jpg">
+
+        <img src="img/jpnyahata.jpg" style="height: 100%;">        
+        <img src="img/coleridgeES.jpg">
+        <img src="img/jdhs.jpg" style="height: 100%;">
+      </aside>
+    </article>-->
+    <!-- Career Experience -->
+    <!--<article>
       <p class="about__Intro-Paragraph">
         Life as an emigrant was challenging, yet as a life-learner and pseudo-polyglot, I empathize well with language acquisition struggles learners encounter. My affinity with foreign culture and language began in my youth watching Chinese kung fu movies. This sparked a curiosity that would lead me to study French, Spanish, Hangul, Nihongo and Putonghua.
       </p>
       <p class="about__Intro-Paragraph">
         That same inquisitiveness led me to travel abroad, beyond the wilderness of imagination and into the depths of a holistic cultural immersion from which I emerged an ardent spirit of humanity. Throughout China, Japan and South Korea, I thrived in supporting learners improve their language fluency. Some of the agencies that have enabled me to practice my craft include Sogang University, Oxford Seminars, Joongdong High School, YBM International Academy, Chien-Shiung Institute of Technology, Tongxiang Middle School, Shanghai Ocean University and Jiaxing College.
       </p>
-    </article>
-    
-    <article>
-      <h2>I make learning fun!</h2>
-      <aside class="imageGrid">
-        <!--Row of 4 -->
-        <img src="img/clES2.jpg" style="height: 100%;">
-        <img src="img/cleSTEMLab.png">
-        <img src="img/clES1.jpg" style="height: 100%;">
-      </aside>
+    </article>-->
+    <!-- <Link> to Resume -->
+    <!--<article>
       <button class="cta"><a href="about/resume">Check out my Resume</a></button> 
-    </article>   
-    <article>
-    </article>
+    </article>--> 
     <!-- Long-Version BIO -->
     <!--<article>
       <p>
