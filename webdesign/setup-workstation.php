@@ -70,30 +70,34 @@ include ("../inc/webdesignHeader.php");
     <p>
       <small><em>Note: A localhost should not be confused with a Web host, which is a service required in order to publish a website online. The Web host stores and makes files available to computers connected to the Internet website pages.</em></small>
     </p>
-    <p>Installation can be problematic, but this <a href="https://www.youtube.com/watch?v=ouBh1xdk5GY">tutorial</a> can help mitigate issues. Simply follow these instructions:</p>
+    <p>
+      Installation can be problematic, but this <a href="https://www.youtube.com/watch?v=ouBh1xdk5GY">tutorial</a> can help mitigate issues. Simply follow these instructions:
+    </p>
     <aside class="declarations">
-      <div><code>1</code></div>
+      <div><code>1st</code></div>
       <div><span>Access PC Directory >> Management</span></div>
-      <div><code>2</code></div>
+      <div><code>2nd</code></div>
       <div><span>Services and Applications >> Services</span></div>
-      <div><code>3</code></div>
+      <div><code>3rd</code></div>
       <div><span>World Wide Web Publishing Services  </span></div>
-      <div><code>4</code></div>
+      <div><code>4th</code></div>
       <div><span>Properties >> STOP</span></div>
-      <div><code>5</code></div>
+      <div><code>5th</code></div>
       <div><span>Startup Type:  Disabled >> Apply >> OK</span></div>
-      <div><code>6</code></div>
+      <div><code>6th</code></div>
       <div><span>Return to XAMPP >> Select: Start</span></div>
     </aside>
     <p>
-      Once installed, start APACHE from the XAMPP Control panel and type <code>http://localhost/</code>or <code>http://127.0.0.1/</code> into the Browser.  This will open at the directory <code>:root</code>, which is the place where all projects reside: <code>C:\xampp\htdocs\</code>.
+      Once installed, start APACHE from the XAMPP Control panel and type <code>http://localhost/</code> or <code>http://127.0.0.1/</code> into the Browser.  This will open at the directory <code>:root</code>, which is the place where all projects reside: <code>C:\xampp\htdocs\</code>.
     </p>
-    <p>With the local server setup, use the <i>Console</i> to manage files in unison with a version control system. The console is a text-based interface for your pc, which allows you to interface with files, folders and programs using text commands instead of windows, buttons and menus. Devs use this tool to interact directly with servers over a remote connection using SSH protocol. Running commands from the console allows devs to see how options and arguments can be used to specify the behavior of the command specified. <i>Traverse</i> a directory using:</p>
+    <p>
+      With the local server setup, use the <i>Console</i> to manage files in unison with a version control system. The console is a text-based interface for your pc, which allows you to interface with files, folders and programs using text commands instead of windows, buttons and menus. Devs use this tool to interact directly with servers over a remote connection using SSH protocol. Running commands from the console allows devs to see how options and arguments can be used to specify the behavior of the command specified. <i>Traverse</i> a directory using:
+    </p>
     <aside class="declarations">
-      <div><code>cd..</code></div>
       <div><span>Move Down 1 Directory Folder</span></div>
-      <div><code>cd xampp\htdocs\mistermoody</code></div>
+      <div><code>cd..</code></div>
       <div><span>Move to Folder</span></div>
+      <div><code>cd xampp\htdocs\mistermoody</code></div>
     </aside>
   </section>
   <!-- ************************************************** -->
