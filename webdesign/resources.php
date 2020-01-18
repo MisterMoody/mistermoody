@@ -87,6 +87,8 @@ include ("../inc/webdesignHeader.php");
           <span><a target="_blank" href="https://online.photoscissors.com/">Remove Image BKGD</a></span>
 
           <span><a target="_blank" href="https://www.tineye.com/">Image Search</a></span>
+          
+          <span><a target="_blank" href="http://quuz.org/webtt/">WebVTT Captioning</a></span>
 
           <span><a target="_blank" href="https://fonts.google.com/">Google Fonts</a></span>
 

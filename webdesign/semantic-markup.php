@@ -142,7 +142,9 @@ include ("../inc/webdesignHeader.php");
       <p>
         Although omitted, the <code>&lt;base&gt;</code> tag specifies the base URL to use for all relative URLs in a document.
       </p>
-      <p>Use this <a href="https://htmlhead.dev/" target="_blank">tool</a> to ensure a good head experience!</p>
+      <p>
+        Use this <a href="https://htmlhead.dev/" target="_blank">tool</a> to ensure a good &#60;head&#62; experience and when you are not certain, consult with the leading authority on all matter <code>code</code>, the world wide web consortium, better known as <a href="https:/w3.org/" target="_blank">W3C</a> !
+      </p>
     </article>
     <!-- The Body -->
     <article>
