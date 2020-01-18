@@ -143,7 +143,7 @@ include ("../inc/webdesignHeader.php");
         Although omitted, the <code>&lt;base&gt;</code> tag specifies the base URL to use for all relative URLs in a document.
       </p>
       <p>
-        Use this <a href="https://htmlhead.dev/" target="_blank">tool</a> to ensure a good &#60;head&#62; experience and when you are not certain, consult with the leading authority on all matter <code>code</code>, the world wide web consortium, better known as <a href="https:/w3.org/" target="_blank">W3C</a> !
+        Use this <a href="https://htmlhead.dev/" target="_blank">tool</a> for a good &#60;head&#62; experience and when you are not certain, consult documentation with the leading authority on all matters: the world wide web consortium, better known as <a href="https:/w3.org/" target="_blank">W3C</a> !
       </p>
     </article>
     <!-- The Body -->
@@ -521,29 +521,26 @@ include ("../inc/webdesignHeader.php");
     <article>
       <h3>Service Forms</h3>
       <p>
-        The <code>&lt;form&gt;</code> tag represents a document section that contains interactive controls for submitting information to a web server.
+        Forms are an essential part of the Internet, as they provide a way for websites to capture information from users and to process requests, and they offer controls for nearly every imaginable use of an application. Through controls or fields, forms can request information that allows users to perform search queries, access email via username and password authentication and much more. The <code>&lt;form&gt;</code> tag represents a document section that acts as a container for interactive controls users use to submit information to a web server.
       </p>
       <figure>
         <img class="mainImage" src="img/form.jpg" alt="a standard html form" />
         <figcaption>A standard HTML Form</figcaption>
       </figure>
       <p>
-        This element requires two attributes: <code>action&#61;&#34;val&#34;</code> and <code>method&#61;&#34;val&#34;</code>. The former is the <i>uri</i> of a program that processes the form information while the latter is the HTTP method that the browser uses to submit the form. The method attribute will accept either <code>&#34;post&#34;</code> or <code>&#34;get&#34;</code> as its value. The <code>&#34;post&#34;</code> method is favorable when asking users to send data as it is difficult to hack and information is not saved in the browser history or on web servers during submission. 
+        This element requires two attributes: <code>action&#61;&#34;key&#34;</code> and <code>method&#61;&#34;key&#34;</code>. The former is the <i>uri</i> of a program that processes the form information while the latter is the HTTP method that the browser uses to submit the form. The method attribute will accept the keywords <code>&#34;post&#34;</code> or <code>&#34;get&#34;</code>. The <code>&#34;post&#34;</code> method is favorable when asking users to send data as it is difficult to hack and information is not saved in the browser history or on web servers during submission. Both attributes are utilized for the submission and processing of data, however, this is implemented on the server-side.
       </p>
       <p>
-        The <code>&lt;fieldset&gt;</code> tag is used to logically group form element controls within a web form. The <code>&lt;legend&gt;</code> tag captions its parent &#40;<code>&lt;fieldset&gt;</code>&#41; like a title for a paragraph. The <code>&lt;label&gt;</code> tag shares similarities with the <code>&lt;fieldset&gt;</code> in that it also provides a caption for its parent. Its importance rests in how, when used, it links a form control to the associated descriptive text in an unambiguous way that is useful for screen readers and that this element can be applied to any item in a user interface.
+        The <code>&lt;input&gt;</code> tag fits the bill in this regard as it is used to create interactive controls for web-based forms in order to accept data from users.
       </p>
       <p>
-        The <code>&lt;input&gt;</code> tag fits the bill in this regard as it is used to create interactive controls for web-based forms in order to accept data from users. What is most fascinating is how the <code>&lt;label&gt;</code> and <code>&lt;input&gt;</code> tags work in unison via their associated attributes. There are two ways to associate these attributes: implicitly nest the <code>&lt;input&gt;</code> tag directly inside of the <code>&lt;label&gt;</code> tag or apply <code>id&#61;&#34;val&#34;</code> and <code>for&#61;&#34;val&#34;</code> attributes, both with the same value, to the <code>&lt;input&gt;</code> and <code>&lt;label&gt;</code> tags.
+        The <code>name&#61;&#34;key&#34;</code> attribute is used to set the name of the associated data point submitted to the server when the form is submitted. It is submitted with the control's <code>value&#61;&#34;key&#34;</code> as part of the form data. 
       </p>
       <p>
-        The semantics of the <code>&lt;input&gt;</code> tag varies considerably depending on the <code>&lt;type&#61;&#34;val&#34;&gt;</code> value. Aside from the attributes available to use for the <code>&lt;input&gt;</code> tag, the <code>type&#61;&#34;val&#34;</code> attribute itself offers 34 possible values to choose from. When this attribute is not specified it will provide a default text type.
-      </p>
-      <p>
-        Whenever the <code>type&#61;&#34;val&#34;</code> value is employed and takes the value of either <code>&#34;radio&#34;</code> or <code>&#34;checkbox&#34;</code>, the <code>value&#61;&#34;val&#34;</code> attribute is required. The <code>name&#61;&#34;val&#34;</code> attribute is the name of the control, which is submitted with the control's <code>value&#61;&#34;val&#34;</code> as part of the form data. It is required to be used with the <code>&lt;input&gt;</code>.
+        The semantics of the <code>&lt;input&gt;</code> tag varies considerably depending on the <code>&lt;type&#61;&#34;key&#34;&gt;</code> attribute, which specifies what kind of form control should be rendered, such as text, email, checkbox, etc. There are 34 possible keywords to choose from. When this attribute is not specified it will provide a default text type.
       </p>
       <details>
-        <summary>List of <code>type&#61;&#34;val&#34;</code> Values:</summary>
+        <summary>List of <code>type&#61;&#34;keyword&#34;</code> Values:</summary>
       <section class="glossary">
         <!-- Click Events-->
         <div><code>&#34;button&#34;</code></div>
@@ -581,7 +578,49 @@ include ("../inc/webdesignHeader.php");
       </section>
     </details>
       <p>
-        The <code>&lt;textarea&gt;</code> tag represents a multi-line plain-text editing control, useful for users to input information to be relayed in an email or for providing a comment on a blog. There are five friendly attributes that can be applied, starting with the <code>id&#61;&#34;val&#34;</code>, which respectively associates itself with the <code>&#60;label&#62;</code> element for accessibility purposes so long as the values are identical. The <code>name&#61;&#34;val&#34;</code> attribute is used to set the name of the associated data point submitted to the server when the form is submitted. The <code>row&#61;&#34;val&#34;</code> and <code>cols&#61;&#34;val&#34;</code> attributes specify the precise size for the textarea while the <code>maxlength&#61;&#34;val&#34;</code> attribute sets the maximum number of characters that the textarea is allowed to contain. 
+        The <code>&lt;label&gt;</code> tag provides captions or headings for <code>&lt;form&gt;</code> controls, unambiguously tying them together in an effort to inform users of expected data while be accessible for assistive technologies. They include text that describes the <code>&lt;input&gt;</code> or controls they pertain to, and may include a <code>for</code> attribute which is set equal to the <code>#id</code> attribute. An example is illustrated below. 
+      </p>
+      <blockquote>
+        <div>
+          <code>&lt;label for&#61;&#34;username&#34;&gt;Username&lt;/label&gt;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br><code>&lt;input type&#61;&#34;text&#34; name&#61;&#34;username&#34; id&#61;&#34;username&#34;&gt;</code>
+        </div>
+        <br>
+        <div>
+          <label for="username">Username</label>&nbsp;&nbsp;
+          <input type="text" name="username" id="username">
+        </div>
+      </blockquote>
+      <p>
+         The <code>for&#61;&#34;key&#34;</code> attribute is placed before any tag that requires it, and associates itself with the <code>#id</code> creating functionality on the form.
+      </p>
+      <p>
+        The <code>&lt;fieldset&gt;</code> tag is used to logically group form element controls within a web form. The <code>&lt;legend&gt;</code> tag captions the content of its parent &#40;<code>&lt;fieldset&gt;</code>&#41; like a title for a paragraph. These tages are most useful for organizing large-chunks of data. 
+      </p>
+      <p>
+        The <code>&lt;datalist&gt;</code>, <code>&lt;optgroup&gt;</code> and <code>&lt;option&gt;</code> tags are used to group controls, create a groupof options or create an independent controller amongst options. They will often be used with the <code>&lt;select&gt;</code> tag, which wraps all individual menu <code>&lt;option&gt;</code> tags.
+        The <code>name&#61;&#34;key&#34;</code> attribute resides on the <code>&lt;select&gt;</code> element, and the value attribute resides in the nested <code>&lt;option&gt;</code> elements. The <code>value&#61;&#34;key&#34;</code> attribute on each <code>&lt;option&gt;</code> element then corresponds to the <code>name&#61;&#34;key&#34;</code> attribute on the <code>&lt;select&gt;</code> element. Each <code>&lt;option&gt;</code> element wraps the text of an individual option within the list. Enable multiple selection by adding the boolean attribute <code>multiple</code> to the <code>&lt;select&gt;</code> tag
+      </p>
+      <p>
+        The <code>&lt;textarea&gt;</code> tag represents a multi-line plain-text editing control, useful for users to input information to be relayed in an email or for providing a comment on a blog. The <code>row&#61;&#34;val&#34;</code> and <code>cols&#61;&#34;val&#34;</code> attributes specify the precise size for the textarea while the <code>maxlength&#61;&#34;val&#34;</code> attribute sets the maximum number of characters that the textarea is allowed to contain. 
+      </p>
+      <p>
+        Forms are submitted via a <code>&lt;button&gt;</code>, which must use the <code>name&#61;&#34;submit&#34;</code> attribute.
+      </p>
+      <p>
+        All <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code> tags can accept the boolean attribute <i>placeholder</i> to provide users with a hint of what kind of data is expected: this text will disappear once the control gains focus. The example below illustrates an <code>&lt;input&gt;</code> designed for an email:
+      </p>
+      <blockquote>
+        <div>
+          <code>&lt;input type&#61;&#34;text&#34; placeholder&#61;&#34;name@domain.com&#34;&gt;</code>
+        </div>
+        <br>
+        <div>
+          <input type="text" name="username" id="username" placeholder="name@domain.com">
+        </div>
+      </blockquote>
+      <p>
+        The <i>required</i> boolean attribute requires that a tag include the <code>value&#61;&#34;key&#34;</code> attribute when being submitted to the server. There are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form " target="_blank">attributes</a> that can be applied to form controls. To that end, here are a couple of <a href="https://htmlreference.io/forms/" target="_blank">form</a> <a href="http://htmldog.com/guides/html/beginner/forms/" target="_blank">tutorials</a> to help you out.
       </p>
     </article>
     <!-- Interactive Elements -->
@@ -677,7 +716,13 @@ include ("../inc/webdesignHeader.php");
     <article>
       <h2>&nbsp;Making a Page Accessible</h2>
       <p>
-        In web design, accessibility refers to the practice of designing digital content and applications that can be used by people with vision impairments, mobility problems or cognitive issues. Accessibility on a static website deals a lot with semantic markup, but creating an aesthetic with CSS is equally important as it helps users with vision and motor impairments. Besides making a site more accessible for users with limitations, research proves that doing so improves SEO, increases download speeds and has better usability. The key principles involve building a semantically sound, functional application that has content users can readily interpret and use. Become aware of user concerns by being familiar with assistive technologies that validate color contrast, video captions, keyboard compatibility, text-to-speech, voice recognition, etc. The first step to making your page accessible is to deploy the <code>alt&#61;&#34;...&#34;</code> attribute on <code>&lt;images&gt;</code> so that assistive software can read the description value provided.
+        In web design, accessibility refers to the practice of designing digital content and applications that can be used by people with vision impairments, mobility problems or cognitive issues. Accessibility on a static website deals a lot with semantic markup, but creating an aesthetic with CSS is equally important as it helps users with vision and motor impairments. 
+      </p>
+      <p>
+        Besides making a site more accessible for users with limitations, research proves that doing so improves SEO, increases download speeds and has better usability. The key principles involve building a semantically sound, functional application that has content users can readily interpret and use. Become aware of user concerns by being familiar with assistive technologies that validate color contrast, video captions, keyboard compatibility, text-to-speech, voice recognition, etc.
+      </p>
+      <p>
+        The good folks at W3C provide <i>WAI-ARIA</i> design <a href="https://w3.org/WAI/gettingstarted/tips/" target="_blank">tips</a> to apply when setting up a website. The acronym stands for web accessibility initiaitve - accessible rich internet applications. This is the tool to use to filter <a href="https://w3.org/WAI/standards-guidelines/" target="_blank">guidelines</a> to establish a <a href="https://w3.org/WAI/eval/preliminary.html" target="_blank">preliminary</a> <a href="https://w3.org/WAI/WCAG20/quickref" target="_blank">checklist</a>. There is no shortage of <a href="https://a11yproject.com" target="_blank">resources</a> to <a href="https://axe-core.org" target="_blank">test</a> <a href="https://checker.html5.org" target="_blank">website</a> <a href=" https://addyosmani.com/a11y/" target="_blank">accessibility</a> including for <a href="https://colororacle.org" target="_blank">vision</a> <a href="https://colorsafe.co" target="_blank">impairment</a> and the <a href="https://iso.org.home.html" target="_blank">list</a> <a href="https://www.section508.gov" target="_blank">goes</a> on.
       </p>
       <p>
         The <i>World Wide Web Consortium</i> (W3C), which is the international authority regarding internet standards, provides an outline for how to make web content accessible. Moreover, you may find that their <i>accessible rich internet applications suite</i> meets your needs in this area providing tools to make web applications and the technologies that power them more accessible. <i>A11Y Project</i> is a major advocate for web accessibility and provide guidelines and patterns for designers to help make their applications accessible.
@@ -700,23 +745,23 @@ include ("../inc/webdesignHeader.php");
         Adding a visual cue such as an underline text style will help an element stand out. Focus Indicators help people know which element has the keyboard focus and helps with navigating a website. Elements that should be focusable are links, form fields, widgets, buttons and menu items. Be sure to create a state that is highly visible, with good contrast.
       </p>
       <p>
-        People who use screen readers navigate forms using the tab key and the <code>&lt;label&gt;</code> element is equipped to handle this action. Never use placeholder text for accessibility because it will be passed over during tabbing. There are plenty of resources for creating accessible forms.
+        People who use screen readers navigate forms using the <code>tab</code> key and the <code>&lt;input&gt;</code> tag is equipped to handle this action: simply add the attribute / keyword pairing of <code>type="tabindex"</code> to an <code>&lt;input&gt;</code> tag to indicate that it can be focused for screen readers. <a href="https://webaim.org/techniques/forms/" target="_blank"> WebAIM</a> offers <a href="https://webaim.org/techniques/keyboard/tabindex" target="_blank"> techniques</a> that can be used to make forms accessible via keyboard navigation. In this regard, the <code>aria-label="key"</code> attribute should be applied to tooltips, collapsibles', tabbed interface, dialog box, widget and drop-down nav elements. Look over these aria <a href="https://heydonworks.com/practical_aria_examples/" target="_blank">examples</a> for practice. And for good measure, manually test a websites accessibility by tabbing through <code>&lt;link&gt;</code> and <code>&lt;form&gt;</code> elements or use assistive technology like a screen reader. Major browsers offer accessibility engine web browser extensions to audit a websites' accessibility so that might be worth exploring.
       </p>
       <p>
-        Vision impaired users rely on screen readers to 'hear' what is being displayed and the <code>&lt;alt=""&gt;</code> attribute is used to convert text to speech. Simply describe the action.
+        The newest means to make elements accessible involves using ARIA <i>roles</i> to categorize the item and distinguish its functionality. Common roles include <code>="banner"</code>, <code>="navigation"</code>, <code>="main"</code>, <code>="contentinfo"</code> and <code>="search"</code>.
       </p>
       <p>
-        Navigation is accessible only when the <code>&lt;nav&gt;</code> element is properly marked; this makes it easy to navigate a page through interactive elements that include links, buttons and input fields. Add a <code>:focus</code> state to add a visual indicator. Navigation should be intuitive, minimal and flow from left to right, top to bottom. Use the <code>tab</code> key to test. With that it mind, consider how gestures and touch screen detection play into this theme.
+        Vision impaired users rely on screen readers to 'hear' what is being displayed and the <code>alt=""</code> attribute is used to convert text to speech. Apply this to all <code>&lt;img&gt;</code> and media elements.
       </p>
       <p>
-        Manually test a websites accessibility by tabbing through <code>&lt;link&gt;</code> and <code>&lt;form&gt;</code> elements or use assistive technology like a screen reader. Major browsers offer accessibility engine web browser extensions to audit a websites' accessibility so that might be worth exploring.
+        Navigation is accessible only when the <code>&lt;nav&gt;</code> element is properly marked; this makes it easy to navigate a page through interactive elements that include links, buttons and input fields. Add a <code>:focus</code> state to add a visual indicator. Navigation should be intuitive, minimal and flow from left to right, top to bottom. Consider how gestures and touch screen detection play into this theme.
       </p>
     </article>
   </section>
   <!-- ************************************************** -->
   <hr>
   <!-- ************************************************** -->
-  <!-- Part 6: HTML Glossary -->
+  <!-- Part 6: HTML Glossary 
   <section>
     <h2>HTML Glossary</h2>
     <br>
@@ -842,7 +887,7 @@ include ("../inc/webdesignHeader.php");
         <div><span></span></div>
       </article>
     </details>
-  </section>
+  </section>-->
   <!-- ************************************************** -->
   <!--          ********** PAGINATION **********          -->
   <?php include ("../inc/pagination.php"); ?>
