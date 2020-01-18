@@ -8,15 +8,41 @@ include ("../inc/header.php")
 
 <!-- ** // Start of CONTENT *** -->
 <section class="hideMobile">
-  <h1 style="height: 28vh; margin: 5em auto">Apologies for the inconvenince. If you would like to view this website, use a mobile device. Thank you.</h1>
+  <h1 style="height: 28vh; margin: 5em auto">Apologies for the inconvenince. If you would like to view this web page, use a mobile device. Thank you.</h1>
 </section>
   <section class="hideDesktop">
-    <!-- // Introduction + C-T-A (Replace after Fix 'Profile Card') -->
+    <!-- Profile Card + Call-to-Action (Broken)-->
     <article>
-      <p class="about__Intro-Paragraph">
-        <img class="about__Intro-Image" src="img/me.jpg">I am employed with <a href="http://jefferson.kyschools.us" target="_blank">J.C.P.S.</a> (KY) in a substitute teacher role serving needs and raising expectations of students kindergarten through grade 12. Since <code>January 2018</code>, I have been awarded <code>97</code> assignments at <code>41</code> schools where I was responsible for facilitating lesssons to more than <code>2,700</code> students.
-      </p>
-      <!--<h2>I make learning fun!</h2>-->
+      <aside class="profile__card--Grid">
+        <div class="profile__card">
+        <div class="profile__info">
+          <div class="rings">
+            <div class="outer__ring"></div>
+            <div class="inner__ring"></div>
+            <img src="img/me.jpg">
+          </div>
+          <div class="profile__description">
+            <h2>Ray Moody</h2>
+            <div class="profile__can">
+              <div>Age:</div>
+              <div>40</div>
+              <div>Height:</div>
+              <div>182cm</div>
+              <div>Hometown:</div>
+              <div>Louisville, KY</div>
+              <div>Languages:</div>
+              <div>English, 中文</div>
+              <div>Status:</div>
+              <div>Seeking Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <p class="profile__card--Paragraph">
+          I am a substitute teacher with <a href="http://jefferson.kyschools.us" target="_blank">J.C.P.S.</a> (KY) serving the needs of students kindergarten through 12th grade. Since <code>January 2018</code>, I have been awarded <code>97</code> assignments at <code>41</code> schools being responsible for facilitating lesssons to more than <code>2,700</code> students.
+        </p>
+      </aside>
+      <h2 style="font-variant: small-caps;">I make learning fun!</h2>
       <aside class="imageGrid">
         <img src="img/clES2.jpg" style="height: 100%;">
         <img src="img/cleSTEMLab.png">
@@ -27,38 +53,6 @@ include ("../inc/header.php")
       <button class="cta"><a href="about/resume">Check out my Resume</a></button> 
       </div>
     </article>
-    <!-- Profile Card + Call-to-Action (Broken)
-    <article>
-      <aside class="profile__card--Grid">
-        <div class="profile__card">
-        <div class="profile__info">
-          <div class="rings">
-            <div class="outer__ring"></div>
-            <div class="inner__ring"></div>
-            <img src="img/workVanilla.jpg">
-          </div>
-          <div class="profile__description">
-            <h2>Ray Moody</h2>
-            <div class="profile__can">
-              <div>Age:</div>
-              <div>40</div>
-              <div>Hometown:</div>
-              <div>Louisville, KY</div>
-              <div>Languages:</div>
-              <div>English, 中文</div>
-              <div>Availability:</div>
-              <div>Accepting Work</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="profile__card--Paragraph">
-        I am currently employed with Jefferson County Public Schools  (KY) in a substitute role that allows me to work at multiple schools to serve the needs of learners from kindergarten through grade 12.
-        <br>Since <code>1 / 2018</code>, I have been awarded <code>97</code> assignments at <code>41</code> schools where I was responsible for facilitating lesssons to more than <code>2,700</code> students.
-      </p>
-      </aside>
-      <button class="cta"><a href="contact">Need a Tutor?</a></button>
-    </article> -->
     <!-- Career Experience -->       
     <!--<article class="about__Intro">
       <p class="about__Intro-Paragraph">
