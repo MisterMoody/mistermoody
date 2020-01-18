@@ -337,9 +337,174 @@ include ("../inc/webdesignHeader.php");
       </div>
     </section>
   <!-- ******************************************** -->
+  <!-- HTML Glossary -->
+  <section>
+    <h2>HTML Glossary</h2>
+    <br>
+    <details>
+      <summary>Useful Terms and Definitions</summary>
+      <br>
+      <article class="glossary">
+        <div><code>&lt;!DOCTYPE html&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;head&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;meta&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;title&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;link&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;body&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;header&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;nav&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;main&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;article&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;section&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;aside&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;div&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;footer&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;a&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;ul&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;ol&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;li&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;h1-h6&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;p&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;b&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;em&gt;|&lt;i&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;u&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;code&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;mark&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;small&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;sub&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;sup&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;span&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;cite&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;q&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;abbr&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;br&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;hr&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;img&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;figure&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;figcaption&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;picture&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;audio&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;video&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;track&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+        <div><code>&lt;&gt;</code></div>
+        <div><span></span></div>
+      </article>
+    </details>
+  </section>  
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- CSS Glossary -->
+  <section>
+    <h2>CSS Terminology</h2>
+    <br>
+    <details>
+      <summary>Useful Terms and Definitions</summary>
+      <br>
+      <article class="glossary">
+        <div><code>At-Rule</code></div>
+        <div><span>an instruction for a CSS document</span></div>
+        <div><code>Comment</code></div>
+        <div><span>Non-displayed code that provides an instruction for declarations</span></div>
+        <div><code>Rule Set</code></div>
+        <div><span>An independent section of CSS</span></div>
+        <div><code>Statement</code></div>
+        <div><span>any At-Rule or Rule Set</span></div>
+        <div><code>Selector</code></div>
+        <div><span>Assigns element to target</span></div>
+        <div><code>Declaration</code></div>
+        <div><span>an elements' property / value pair</span></div>
+        <div><code>Property</code></div>
+        <div><span>first part of a declaration</span></div>
+        <div><code>Keyword</code></div>
+        <div><span>second part of a declaration: a word</span></div>
+        <div><code>Value</code></div>
+        <div><span>second part of a declaration: a number</span></div>
+        <div><code>Notation</code></div>
+        <div><span>a value specified as a function <code>()</code></span></div>
+        <div><code></code></div>
+        <div><span></span></div>
+      </article>
+    </details>
+  </section>
+  <!-- ******************************************** -->  
+  <!-- ******************************************** -->  
+  <!-- ******************************************** -->
   <!-- Web Dev Glossary -->
   <section>
-    <h2>Web Dev Glossary</h2>
+    <h2>&nbsp;Web Dev Glossary</h2>
     <br>
     <details>
       <summary>Useful Terms and Definitions</summary>
