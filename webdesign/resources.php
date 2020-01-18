@@ -52,15 +52,15 @@ include ("../inc/webdesignHeader.php");
           
           <span><a target="_blank" href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C WAI</a></span>
           
-          <span><a target="_blank" href="https://a11y-style-guide.com/style-guide/">A11Y Style Guide</a></span>
+          <span><a target="_blank" href="https://a11yproject.com">A11Y</a> <a target="_blank" href="https://a11y-style-guide.com/style-guide/">Style Guide</a></span>
 
-          <span><a target="_blank" href="https://moritzgiessmann.de/accessibility-cheatsheet/">A11Y Cheat Sheet</a></span>
+          <span><a target="_blank" href="https://moritzgiessmann.de/accessibility-cheatsheet/">Accessibility Cheat Sheet</a></span>
           
           <span><a target="_blank" href="https://styleguide.mailchimp.com/voice-and-tone/">Voice + Tone Style Guide</a></span>
           
           <span><a target="_blank" href="https://styleguide.io">500+ Style Guides</a></span>
           
-          <span><a target="_blank" href="https://www.deque.com/axe/">Accessibility Tester</a></span>
+          <span><a target="_blank" href="https://addyosmani.com/a11y/ ">Accessibility Tester</a></span>
           
           <span><a target="_blank" href="https://wave.webaim.org/">Accessibility Evaluator</a></span>
         </div>
@@ -160,7 +160,7 @@ include ("../inc/webdesignHeader.php");
 
           <span><a target="_blank" href="https://type-scale.com/">Font-Scale</a></span>
 
-          <span><a target="_blank" href="https://modularscale.com/">Modular </a><a target="_blank" href="<a target="_blank" href="https://modularscale.com/">Modular Scaling-Scale</a>">Modular Scaling-Scale</a></span>
+          <span><a target="_blank" href="https://modularscale.com/">Modular </a></span>
 
           <span><a target="_blank" href="https://mixfont.com/">Font Generator</a></span>
 
@@ -297,11 +297,13 @@ include ("../inc/webdesignHeader.php");
 
           <span><a target="_blank" href="http://csscompressor.com/">CSS Compressor</a></span>
 
-          <span><a target="_blank" href="https://javascript-compressor.com/">JavaScript Validator</a></span>
+          <span><a target="_blank" href="http://jshint.com/">JavaScript</a> <a target="_blank" href="https://javascript-compressor.com/"> Validator</a></span>
 
           <span><a target="_blank" href="http://jsonlint.com/">JSON Linter</a></span>
 
           <span><a target="_blank" href="https://jsonplaceholder.typicode.com/">JSON Placeholder</a></span>
+
+          <span><a target="_blank" href="http://phpcodechecker.com/">PHP</a> <a target="_blank" href="http://phptester.net/">Validator</a></span>
           
           <span><a target="_blank" href="https://liveweave.com/">Async Online IDE</a></span>
           
