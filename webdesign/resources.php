@@ -309,9 +309,11 @@ include ("../inc/webdesignHeader.php");
           
           <span><a target="_blank" href="https://stackedit.io/">Markdown Editor</a></span>
           
-          <span><a target="_blank" href="https://github.com/">Github VCS</a></span>
+          <span><a target="_blank" href="https://github.com/">Github</a> <a target="_blank" href="https://lab.github.com/">VCS</a></span>
+          
+          <span><a target="_blank" href="https://learngitbranching.js.org/">Git Branching</a></span>
 
-          <span><a target="_blank" href="https://gist.github.com/BolajiAyodeji/d5393b90650c49ba9ef81493bfca9cda">Git Cheat Sheet</a></span>
+          <span><a target="_blank" href="https://gist.github.com/BolajiAyodeji/d5393b90650c49ba9ef81493bfca9cda">Git</a> <a target="_blank" href="http://git-scm.com/docs ">Cheat Sheet</a></span>
           
           <span><a target="_blank" href="https://keyframes.app/editor/">@keyframes Editor</a></span>
 
