@@ -43,18 +43,18 @@ include ("../inc/webdesignHeader.php");
       <div><span>git</span> <code>--help</code></div>
       <div><span>Displays a List of Git declarations</span></div>
       <div><span>git</span> <code>clone</code></div>
-      <div><span>Setup a New Repository</span></div>		
+      <div><span>Download Existing Repository</span></div>		
       <div><span>git</span> <code>init</code></div>
       <div><span>Setup a New Repository</span></div>
       <div><span>git</span> <code>status</code></div>
       <div><span>Displays a List of File Status</span></div>	
       <div><span>git</span> <code>log </code>(<code>-p</code>)</div>
-      <div><span>Displays a List of Old Commits</span></div>	
+      <div><span>Displays Commit History</span></div>	
       <div></div>
       <div style="margin-top: -0.4em;"><span>(Show Lines Added to each File)</span></div>
       <div><span>git</span> <code>ls</code></div>
       <div><span>Displays a List of all Repo Files</span></div>
-      <div><span>git</span> <code>add </code>(<code>.</code>) <code>filename.ext</code></div>
+      <div><span>git</span> <code>add </code>(<code>.</code>) <code>file</code></div>
       <div><span>Stage a File (All Files)</span></div>		
       <div><span>git</span> <code>commit -m</code> (<code>-a</code>)</div>
       <div><span>Commit a File (All Files)</span></div>	
@@ -67,9 +67,9 @@ include ("../inc/webdesignHeader.php");
       <div><span>Unmodify a File</span></div>	
       
       <div><span>git</span> <code>push</code></div>
-      <div><span>Synchronize Commits w/ Master Repo</span></div>		
+      <div><span>Sync Commits w/ Master Repo</span></div>		
       <div><span>git</span> <code>pull</code></div>
-      <div><span>Synchronize Commits w/ Team Repo</span></div>
+      <div><span>Sync Commits w/ Team Repo</span></div>
       <div><span>git</span> <code>mv</code></div>
       <div><span>Move Files Tracked by Git</span></div>
       <div><span>git</span> <code>rm</code></div>
@@ -88,8 +88,6 @@ include ("../inc/webdesignHeader.php");
       <div><span>View Configurations</span></div>	
       <div><span>git</span> <code>cat .git/HEAD</code></div>
       <div><span>View HEAD File Status</span></div>
-      <div><span>git</span> <code>cat .git/refs/heads/testing</code></div>
-      <div><span>View Recent Branch Commits</span></div>
     </article>
 		<p>
       Git declarations include <i>(Options)</i> that can be specified with a Single dash (<code>-</code>) or a Double dash (<code>--</code>) followed by a Letter or a Word, respectively.
@@ -102,8 +100,13 @@ include ("../inc/webdesignHeader.php");
   <section>
     <h2>&nbsp;Creating a Repository</h2>
     <p>
-      There are two ways to create a repository: You can <i>Clone</i> a repo from another machine, or you can <i>Initialize</i> a brand new repo.
+      There are two ways to create a repository: You can <i>Clone</i> a repo from another machine, or you can <i>Initialize</i> a brand new repo. The process begins in the local host root directory.
     </p>
+    <p>Cloning an existing machine is really simple using the command line:</p>
+    <article class="declarations">
+      <div><code>git clone &#60;https://name-of-the-repository-link&#62;</code></div>
+    </article>
+    <p>Initializing a repo is a more delicate process, but the demonstration below will suffice.</p>
     <article class="declarations">
       <div><span>&#91;Step 1&#93; Initialize Repo</span></div>
       <div><span>git</span> <code>init</code></div>
@@ -142,7 +145,7 @@ include ("../inc/webdesignHeader.php");
       <div><span>git</span> <code>push -u origin master</code></div>
     </article>
     <p>
-      When writting commits, have fun including <i><a href="https://emoji.muan.co" target="_blank">Emojis</a></i>!
+      Include <i><a href="https://emoji.muan.co" target="_blank">emojis</a></i> when writing commits!
     </p>
     <p>
       After performing these four steps, you will be promted to enter your credentials unless you use advanced features that allow you to configure your dev environment.
@@ -169,9 +172,7 @@ include ("../inc/webdesignHeader.php");
       <div><span>Discard Recent Changes</span></div> 
       <div><span>git</span> <code>--checkout <em>filename.ext</em></code></div> 
       <div><span>Undo Commited Changes</span></div> 
-      <div><span>git</span> <code>log</code></div> 
-      <div></div> 
-      <div><span>git</span> <code>revert SHA ID#</code></div> 
+      <div><span>git</span> <code>log</code> &#43; <span>git</span> <code>revert SHA ID#</code></div> 
       <div></div> 
       <div><span>(Copy &amp; Paste the SHA ID# >> The first 5 Numbers are Required!)</span></div> 
     </article>
@@ -179,7 +180,7 @@ include ("../inc/webdesignHeader.php");
       When using the <code>git diff</code>(<code>--staged</code>) command, files that have been modified will display <code>&#45;</code> while files that have been removed will display <code>&#43;</code>. 
     </p>
     <p>
-      The <code>git log</code> command produces a list of Commits along with their <i>Simple Hashing Algorithm</i> (SHM) identification number, which is <em>a checksum of all changes in that commit</em>. The <i>checksum</i> is the result of combining all the changes in the commit and feeding them to an algorithm that generates these 40-character strings. When you need to select a commit from your history, you can use these SHA-1 checksums, or "SHAs" for short, to identify which commit you want.
+      The <code>git log</code> command produces a list of Commits along with their <i>Simple Hashing Algorithm</i> (SHA) identification number, which is <em>a checksum of all changes in that commit</em>. The <i>checksum</i> is the result of combining all the changes in the commit and feeding them to an algorithm that generates these 40-character strings. When you need to select a commit from your history, you can use these SHA-1 checksums, or "SHAs" for short, to identify which commit you want.
     </p>
     <p>
       Fixing errors or mistakes can be a pain in the arse so it benefits developers to explore further: perhaps understanding <code>resets</code> would be beneficial.
@@ -221,13 +222,17 @@ include ("../inc/webdesignHeader.php");
     </p>
     <article class="declarations">
       <div><span>View All Branches</span></div>
-      <div><span>git</span> <code>branch -v</code></div>
+      <div><span>git</span> <code>branch (--list)</code></div>
       <div><span>Create a Branch</span></div>
       <div><span>git</span> <code>branch</code> &#43; <code>branch_feature</code></div>
+      <div><span>Push to Remote Repo</span></div>
+      <div><span>git</span> <code>push -u</code> &#43; <code>remote</code> &#43; <code>branch_feature</code></div>
       <div><span>Switch to Feature Branch</span></div>
       <div><span>git</span> <code>checkout</code> &#43; <code>branch_feature</code></div>
       <div><span>Switch to Master Branch</span></div>
       <div><span>git</span> <code>checkout</code> &#43; <code>master</code></div>
+      <div><span>Update Master Branch</span></div>
+      <div><span>git</span> <code>fetch (origin)</code></div>
       <div><span>Merge Feature Branch</span></div>
       <div><span>git</span> <code>merge</code> &#43; <code>branch_feature</code></div>
       <div><span>Resolve Merge Conflicts</span></div>
@@ -254,29 +259,7 @@ include ("../inc/webdesignHeader.php");
       <figcaption>Committed Feature Branch</figcaption>
     </figure>
     <p>
-      A <i>Remote Branch</i> is like a local branch, but it points to the commit that a branch in a remote repo is at. You can update a local branch with commits from a remote repository by merging a remote branch into a local branch.
-    </p>
-    <article class="declarations">
-      <div><span>Update Local-Master Branch</span></div>
-      <div><span>git</span> <code>fetch origin</code></div>
-      <div><span></span></div>
-      <div><span>git</span> <code>status</code></div>
-      <div><span></span></div>
-      <div><span>git</span> <code>merge origin/master</code></div>
-      <div><span>Delete Remote Branch</span></div>
-      <div><span>git</span> <code>push origin</code> &#43; <code>--delete</code> &#43; <code>branch__feature</code></div>
-      <div><span></span></div>
-      <div><span>git</span> <code>merge</code> &#43; <code>branch_feature</code></div>
-      <div><span></span></div>
-      <div><span>git</span> <code>merge</code> &#43; <code>-abort</code></div>
-      <div><span>Delete Feature Branch</span></div>
-      <div><span>git</span> <code>branch -d</code> &#43; <code>branch_feature</code></div>
-    </article>
-    <p>
-      The process can get complicated quickly: using a <a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">Git</a> <a href="https://github.com/nvie/gitflow" target="_blank"> Flow</a> would be wise!
-    </p>
-    <p>
-      Learn more about git <a href="https://learngitbranching.js.org/" target="_blank">branching</a> with this interactive tool.
+      A <i>Remote Branch</i> is like a local branch, but it points to the commit that a branch in a remote repo is at. You can update a local branch with commits from a remote repository by merging a remote branch into a local branch. The process can get complicated quickly: using a <a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">Git</a> <a href="https://github.com/nvie/gitflow" target="_blank"> Flow</a> would be wise! Learn more about git <a href="https://learngitbranching.js.org/" target="_blank">branching</a> with this interactive tool.
     </p>
     <p>
       Git has the ability to <i>Tag</i> specific points in history as being important and developers typically use this functionality to mark release points. A <i>Lightweight Tag</i> is a branch that doesn't change as it points to a specific commit, but <i>Annotated Tags</i> are stored as full objects in the Git database.
@@ -287,11 +270,11 @@ include ("../inc/webdesignHeader.php");
       <div><span>Create Annotated Tag</span></div>
       <div><span>git</span> <code>tag</code>  &#43; <code>-a -m</code> &#43; <code>"msg"</code></div>
       <div><span>Share Tag</span></div>
-      <div><span>git</span> <code>push </code> &#43; <code>origin</code> &#43;  <code>[tagname]</code></div>
+      <div><span>git</span> <code>push </code> &#43; <code>origin</code> &#43;  <code>tag</code></div>
       <div><span>Share Multiple Tags</span></div>
       <div><span>git</span> <code>push</code> &#43; <code>origin</code> &#43; <code>--tags</code></div>
-      <div><span>Check Out Tags</span></div>
-      <div><span>git</span> <code>checkout -b</code> &#43; <code>[branchname]</code> &#43; <code>tagname</code></div>
+      <div><span>Checkout Tags</span></div>
+      <div><span>git</span> <code>checkout -b</code> &#43; <code>branch</code> &#43; <code>tag</code></div>
     </article>
     <p>
       A <i>Tracking Branch</i> is a local branch with a direct relationship to a remote branch.
@@ -304,29 +287,9 @@ include ("../inc/webdesignHeader.php");
       <div><span>Specifiy Branch to Track</span></div>
       <div><span>git</span> <code>chekout --track </code> &#43; <code>origin</code> &#43; <code>tracking-branch</code></div>
       <div><span></span></div>
-      <div><span>git</span> <code>push</code> &#43; <code>origin</code> &#43; <code>--tags</code></div>
-      <div><span>Checkout</span></div>
-      <div><span>git</span> <code>checkout -b</code> &#43; <code>[branchname]</code> &#43; <code>tagname</code></div>
     </article>
     <p>
       The advantage to establishing an association between a local tracking branch with a remote branch is that we can use a simple command when that tracking branch is checked out. This process is similar to fetch and merge commits from a remote repo. Just keep in mind that <code>git pull</code> should be used for commits when working independently, but <code>git fetch</code> and <code>git merge</code> should be used when working on remote repositories or merging different remote branches into your local branch.
-    </p>
-    <article class="declarations">
-      <div><span>View List of Branches</span></div>
-      <div><span>git</span> <code>branch -a</code></div>
-      <div><span>Create Track Branch</span></div>
-      <div><span>git</span> <code>checkout -b</code>  &#43; <code>local-branch</code> &#43; <code>origin</code> &#43; <code>tracking-branch</code></div>
-      <div><span>Specifiy Branch to Track</span></div>
-      <div><span>git</span> <code>chekout --track </code> &#43; <code>origin</code> &#43; <code>tracking-branch</code></div>
-      <div><span></span></div>
-      <div><span>git</span> <code>push</code> &#43; <code>origin</code> &#43; <code>--tags</code></div>
-      <div><span>Checkout</span></div>
-      <div><span>git</span> <code>checkout -b</code> &#43; <code>[branchname]</code> &#43; <code>tagname</code></div>
-    </article>
-    <p>
-      When collaborating on a project, a <code>pull request</code> is made to inform all devs that changes have been made, signaling the need for review before merging int othe master branch.
-      <br>
-      <mark>git fetch >> git checkout branch-name >> git diff master >> li >> git checkout pull-request-topic-branch-name >> git checkout master >> git pull >> git merge branch-name >> git push</mark>
     </p>
   </section>
   <!-- ************************************************** -->
