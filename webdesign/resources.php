@@ -276,6 +276,10 @@ include ("../inc/webdesignHeader.php");
           <span><a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Benchmark</a></span>
           
           <span><a target="_blank" href="http://app.xrespond.com/">Mobile Testing</a></span>
+          
+          <span><a target="_blank" href="https://ready.mobi/">Mobile Testing</a></span>
+          
+          <span><a target="_blank" href="https://www.jsdelivr.com/">Content Delivery Network</a></span>
         </div>
       </div>
       <div class="resTools">
@@ -554,6 +558,8 @@ include ("../inc/webdesignHeader.php");
         <div><span>server-side environ for JavaScript</span></div>
         <div><code>npm</code></div>
         <div><span>node package manager</span></div>
+        <div><code>Latency</code></div>
+        <div><span>the amount of time to transfer data</span></div>
       </article>
     </details>
   </section>

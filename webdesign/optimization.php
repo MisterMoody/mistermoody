@@ -26,9 +26,9 @@ include ("../inc/webdesignHeader.php");
       <li>Measuring Performance</li>
     </ol> 
   </section>
-  <!-- ************************************************** -->
+  <!-- ************************************************ -->
   <hr>
-  <!-- ************************************************** -->
+  <!-- ************************************************ -->
   <!-- Part 1: What is Optimization? -->
   <section>
     <h2>&nbsp;What is Optimization?</h2>
@@ -36,8 +36,8 @@ include ("../inc/webdesignHeader.php");
       One of the main purposes of optimizing a site is the impact it has on user perception. People want to use websites that load quickly, and every second counts. Ideally, a website should have a first meaningful paint that quickly leads to a users first available interaction within with a website 2 seconds. If a site takes more than 3 seconds to load, you can lose 40% of your audience. Every additional second in page response can result in a 7% reduction in conversions. The total time it takes for users to perform an action will affect perception of a site, whether users return to the site and even the ranking in search engines. It is obvious that slow load times cause more than user frustration: it will result in losing potential customers! 
     </p>
   </section>
-  <!-- ************************************************** -->
-  <!-- ************************************************** -->
+  <!-- ************************************************ -->
+  <!-- ************************************************ -->
   <!-- Part 2: Setting a Performance Budget -->
   <section>
     <h2>&nbsp;Setting a Performance Budget</h2>
@@ -49,8 +49,8 @@ include ("../inc/webdesignHeader.php");
       <div><span>123</span> <code>456</code></div>
     </aside>
   </section>
-  <!-- ************************************************** -->
-  <!-- ************************************************** -->
+  <!-- ************************************************ -->
+  <!-- ************************************************ -->
   <!-- Part 3:Optimization and Asset Delivery -->
   <section>
     <h2>&nbsp;Optimization and Asset Delivery</h2>
@@ -85,24 +85,20 @@ include ("../inc/webdesignHeader.php");
       Using images on websites is an imperative, but modifying images through stylesheets can lead to distortion. Load times are increased with the addition of any image so sizing images prior to usage is a must! The first action to take is to <a href="https://tinypng.com" target="_blank">compress</a> all images. Heck, you can <a href="https://www.npmjs.com/package/gulp-tinypng" target="_blank">automate</a> image compression! The <code>.jpg</code> file extension is the best file format not named <code>.webp</code>: try <a href="https://webp-converter.com/" target="_blank">converting</a> the files once all browsers <a href="http://www.stucox.com/blog/using-webp-with-modernizr/" target="_blank">support it</a>.
     </p>
   </section>
-  <!-- ************************************************** -->
-  <!-- ************************************************** -->
+  <!-- ************************************************ -->
+  <!-- ************************************************ -->
   <!-- Part 4: Measuring Performance -->
   <section>
     <h2>&nbsp;Measuring Performance</h2>
     <p>
-      Understanding how a website performs requires a bit of work that begins with benchmarking current site speed and acquiring a good <i>Emulator</i> to replicate device conditions during testing.
+      Understanding how a website performs requires a bit of work that begins with benchmarking current site speed and acquiring a good <i>Emulator</i> to replicate device conditions during testing. Having a <a href="https://www.smashingmagazine.com/2020/01/front-end-performance-checklist-2020-pdf-pages/" target="_blank">checklist</a> will help. The key is to obtain a good <i>Perpceptual Speed Index</i> (PSI) and mobile friendliness score. Use browser <a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">dev</a> <a href="" target="_blank">tools</a> to quickly diagnose problems and the specific selector issues taking place.
     </p>
-    <!--<aside class="declarations">
-      <div><span>xyz</span></div>
-      <div><span>123</span> <code>456</code></div>
-    </aside>-->
-  </section><a href="" target="_blank"></a>
-  <!-- ************************************************** -->
-  <!-- ************************************************** -->
-  <!--          ********** PAGINATION **********          -->
+  </section>
+  <!-- ************************************************ -->
+  <!-- ************************************************ -->
+  <!--          ******** PAGINATION **********          -->
   <?php include ("../inc/pagination.php"); ?>
-  <!-- ************************************************** -->
+  <!-- ************************************************ -->
 </article>
 <!-- .....CONTENT-ENDS ////////////////////////// --> 
 <script src="js/swFile.min.js"></script>

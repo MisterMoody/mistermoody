@@ -33,10 +33,11 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <hr>
   <!-- ************************************************** -->
-  <!-- Part 1: List of Git declarations -->
+  <!-- Part 1: List of Git Commands -->
   <section>
-    <h2>&nbsp;List of Git declarations</h2>
-    <div class="addMarginTop"></div>
+    <h2>&nbsp;List of Git Commands</h2>
+    <!--<div class="addMarginTop"></div>-->
+    <p>A list of common git commands.</p>
     <article class="declarations">
       <div class="hideMobile"><b>Git Command</b></div>
       <div class="hideMobile"><b>Git Description</b></div>
