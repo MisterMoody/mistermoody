@@ -787,7 +787,6 @@ include ("../inc/webdesignHeader.php");
         <div><span>// Multiple</span></div>
       </aside>
     </article>
-     
     <!-- Font and Text -->
     <article>
       <h3>Font and Text</h3>
@@ -945,6 +944,90 @@ include ("../inc/webdesignHeader.php");
         <div><code>{&nbsp;: url(img/smile.png);}</code></div>
         <div><span>// URL to Image</span></div>
       </aside>
+    </article>
+    <!-- Animating Things -->
+    <article>
+      <h3>Animating Things</h3>
+      <p>
+        Certain properties applied to HTML elements can be <a href="http://leaverou.github.io/animatable/" target="_blank">animated</a> via transition and transforms properties. Best practices encourage smooth, fluid experiences delivered at 60 frames per second (fps). Animating properties that affect browser layout, such as borders, will lower the FPS and impair the overall performance of the website.
+      </p>
+      <p>
+        <i>Transitions</i> (<code>transitions-</code>)modify property values over a specified amount of time. Transitioning an element is a relatively simple process: use <code>-property</code> to target the property to transition then set the duration of the transition with the <code>-duration</code> property. Optionally, use <code>-delay</code> and <code>-timing-function</code> to create multiple transitions by setting delays or to the control the transitions overall speed. Timing is the most important when creating animations in order to get a desired effect. The <i><a href="http://cubiz-bezier.com" target="_blank">cubic-bezier</a></i> function is useful to customize transition time intervals for the overall animation of an element. Use an <a href="https://easings.net/en" target="_blank">easing</a> functions tool to make this process less stressful. For reasons related to accessibility, it is important to keep transitions between <code>0.2s</code> and <code>2s</code>.
+      </p>
+      <aside class="declarations">
+        <div><span>.btn</span><code>{&nbsp;</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;transition-property: background;</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;transition-duration: 2s;</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;transition-delay: 0.3s;</code></div>
+        <div></div>
+        <div><code>&#125;</code></div>
+      </aside>
+      <aside class="declarations">
+        <div><span>.btn</span><code>:hover{&nbsp;</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;background: rgba(74, 137, 202, 1);</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;opacity: 0.8</code></div>
+        <div><span></span></div>
+        <div><code>&#125;</code></div>
+      </aside>
+      <p>
+        Transition properties can be combined to create a shorthand, saving lines of code while improving performance bit by bit.
+      </p>
+      <aside class="declarations">
+        <div><span>.btn</span><code>{&nbsp;</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;transition: opacity 0.2s ease-out, background 0.4s ease-in;</code></div>
+        <div></div>
+        <div><code>&#125;</code></div>
+      </aside>
+      <p>
+        <i>Transforms</i> modify an elements position and shape using special value functions that rotate, scale, skew and move elements in 2D or 3D space. Dynamic animations can be made using these values individually or in combination with each other. 
+      </p>
+      <p>
+        The <code>rotate()</code> function rotates an element 0 to 360 degrees and accepts angle unit arguments of <code>#deg</code> or <code>#turn</code>. The numerical value assigned to the argument represents a percentage of or a complete rotation, respectively. Maintain a rotating variance between 180 degrees.
+      </p>
+      <p>
+        The <code>skew()</code> function slants an element horizontally or vertically. The <code>scale()</code> function increases or decreases the size of elements: use two values to scale an element evenly along both axis. 
+      </p>
+      <p>
+        The <code>translate()</code> functions move elements side-to-side or up-and-down along its axis without affecting the position of other elements.
+      </p>
+      <aside class="declarations">
+        <div><span>img</span> <code>{transition: transform 0.5s;}</code></div>
+        <div><span></span></div>
+      </aside>
+      <aside class="declarations">
+        <div><span>img</span><code>:hover {</code></div>
+        <div><span></span></div>
+        <div><code>&nbsp;rotate(-5deg)</code></div>
+        <div><span>// Rotate -5 Degrees on <code>:hover</code> for .5s</span></div>
+        <div><code>&nbsp;rotate(2turn)</code></div>
+        <div><span>// Rotates 2 Full Rotationson <code>:hover</code> for .5s</span></div>
+        <div><code>&nbsp;skewX(10deg); </code></div>
+        <div><span>// Tilts Image 10deg Horizontally</span></div>
+        <div><code>&nbsp;skewY(-10deg); </code></div>
+        <div><span>// Tilts Image -10deg Vertically</span></div>
+        <div><code>&nbsp;scale(2); </code></div>
+        <div><span>// Increases Image Size x2</span></div>
+        <div><code>&nbsp;scale(1, 2); </code></div>
+        <div><span>// Scaled Width: 1 and Scaled Height: 2</span></div>
+        <div><code>&nbsp;translateX()</code></div>
+        <div><span>// Move Element Horizontally</span></div>
+        <div><code>&nbsp;translateY()</code></div>
+        <div><span>// Move Element Vertically</span></div>
+        <div><code>&nbsp;translate(40px, 100px)</code></div>
+        <div><span>Move Element 40px Left, 100px Down</span></div>
+      </aside>
+      <p>
+        Tidbits: use {<code>animation-play-state: paused;}</code> on hover to pause an animation and use <code>font-variation</code> properties to animate typography with variable fonts. Tinker with these animation <a href="https://codepen.io/mistermoody/pen/LYEXMoL" target="_blank">examples</a>.
+      </p>
+      <p>
+        <code>@keyframes</code> is used to define precise styles and intervals to create an animation. It requires a name to connect it with a selector. These are how the best fades are made!
+      </p>
     </article>
   </section>
   <!-- ************************************************ -->
