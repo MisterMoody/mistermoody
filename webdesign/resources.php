@@ -174,6 +174,10 @@ include ("../inc/webdesignHeader.php");
 
           <span><a target="_blank" href="http://animista.net/">Animista Animations</a></span>
 
+          <span><a target="_blank" href="http://cubiz-bezier.com ">Cubic-Bezier</a></span>
+
+          <span><a target="_blank" href="https://easings.net/en">Easing Functions</a></span>
+
           <span><a target="_blank" href="https://nivo.rocks/">Nivo Data Components</a></span>
 
           <span><a target="_blank" href="https://bl.ocks.org/">Bl.ocks Infographics</a></span>
