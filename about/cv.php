@@ -5,9 +5,61 @@ include ("../inc/header.php");
 <!-- ******************************************************* -->
 <!-- ************** << Chinese RESUME.php >>  ************** -->
 
+<!-- PRACTICE -->
+<section>
+
+    <!-- Profile Card + Call-to-Action (Broken)-->
+    <article>
+      <aside class="profile__card--Grid">
+        <div class="profile__card">
+        <div class="profile__info">
+          <div class="rings">
+            <div class="outer__ring"></div>
+            <div class="inner__ring"></div>
+            <img src="img/me.jpg">
+          </div>
+          <div class="profile__description">
+            <h2>Ray Moody</h2>
+            <div class="profile__can">
+              <div>Age:</div>
+              <div>40</div>
+              <div>Height:</div>
+              <div>182cm</div>
+              <div>Health:</div>
+              <div>Good &amp; Fit</div>
+              <div>Hometown:</div>
+              <div>Louisville, KY</div>
+              <div>Languages:</div>
+              <div>English, 中文</div>
+              <div>Status:</div>
+              <div>Seeking Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="profile__card--Paragraph">
+        I am employed with <a href="http://jefferson.kyschools.us" target="_blank">J.C.P.S.</a> (KY) in a substitute teacher role serving the needs of students age kindergarten through grade 12. Since <code>January 2018</code>, I have been awarded <code>97</code> assignments at <code>41</code> schools where I was responsible for facilitating lesssons to more than <code>2,700</code> students.
+      </p>
+      </aside>
+      <h2>I make learning fun!</h2>
+    </article>
+    <!-- // Introduction + C-T-A (Replace after Fix 'Profile Card') -->
+    <article>
+      <!--<h2>I make learning fun!</h2>-->
+      <aside class="imageGrid">
+        <img src="img/clES2.jpg" style="height: 100%;">
+        <img src="img/cleSTEMLab.png">
+        <img src="img/clES1.jpg" style="height: 100%;">
+      </aside>
+      <div class="temp__btn-hold">
+      <button class="cta"><a href="contact">Need a Tutor?</a></button>
+      <button class="cta"><a href="about/resume">Check out my Resume</a></button> 
+      </div>
+    </article>
+</section>
 
   <!-- ** Chinese RESUME *********************** -->
-  <article>
+  <article style="display: none;">
     <section>
         <img class="mainImage" src="img/knowledge.jpg" alt="Image of Mister Moody">
         <h1>我是谁?</h1>

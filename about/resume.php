@@ -24,7 +24,7 @@ include ("../inc/header.php")
           <ol class="fa-ul">
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Responsible for maintaining class routines, keeping learners on task, creating a positive learning environment and encouraging cooperative learning techniques</li>
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Complete professional development activities related to instructional strategies and accommodating the diverse needs of students as well as behavioral intervention and restraint</li>
-            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Awarded 97 assignments at 41 schools; facilitated courses for more than 2,700 learners</li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Awarded 100+ assignments at 42 schools; facilitated courses for more than 2,700 learners</li>
           </ol>
         </div>
       </div>
@@ -104,6 +104,7 @@ include ("../inc/header.php")
         <div class="res__work__Responsibilities">
           <ol class="fa-ul">
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Business Co-Op with The Econ Village Group</li>
+            <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> General Counsels Office with DCWASA</li>
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Office of Budget Review Intern with the Kentucky Legislative Research Commission</li>
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Elected chapter President of Pi Sigma Alpha (Political Science Honors Society)</li>
             <li><i class="fa-li fa fa-check-square-o" aria-hidden="true"></i> Student Assistant for Office of the President</li>
