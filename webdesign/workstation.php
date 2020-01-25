@@ -116,7 +116,7 @@ include ("../inc/webdesignHeader.php");
     <p>
       For all intents and purposes, a VCS is an online storage repository for your code, enabling developers with the ability to manage source-code, track all file versions and coordinate a non-linear workflow in a team environment. Version control allows servers in multiple locations to run different versions on different sites, even while those versions are being updated simultaneously by a number of different developers. The importance of this feature cannot be understated as this system allows developers to compare revised files, identify differences, and merge changes prior to committing any code. <i><a href="https://github.com" target="_blank">Github</a></i> is a well-documented VCS with many integration capabilities.
     </p>
-    <h3>Deployment</h3>
+    <h3>&nbsp;Deployment</h3>
     <p>
       One of the unique features Git offers is the ability to securely authenticate remote servers using <i>Ssh Protocol</i> by which Git provides <code>keys</code> to an <code>agent</code> in order to upload project files directly to the internet. The agent is a <i>Ftp/Sftp</i> client (server) that, if configured properly, provides Git universal remote access to its servers by communicating file transfers. Two useful FTP clients are <a href="http://filezilla-project.org" target="_blank">FileZilla</a> and <a href="http://cyberduck.ch" target="_blank">CyberDuck</a>.
     </p>
