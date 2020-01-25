@@ -43,7 +43,8 @@ include ("../inc/header.php");
           </div>
         </aside>
 			</div>
-      <!--<div class="chapter">
+      <!-- -->
+      <div class="chapter">
         <figure>
           <img class="chapter__Img" src="img/puzzle2.jpg">
           <figcaption>There Will Be Challenges</figcaption>
@@ -51,7 +52,8 @@ include ("../inc/header.php");
         <aside class="">
           <h3 class="chapter__Headline">Content Strategy</h3>
           <p class="chapter__Text">
-            Writing compelling copy and using media that properly articulates your message is of utmost importance before structuring a layout design for a website. Producing content that provides a meaningful user experience is the goal when executing a strategy. 
+            Writing compelling copy and using media that properly articulates your message is of utmost importance before structuring a layout design for a website. Producing content that provides a meaningful user experience is the goal when executing a strategy.  &nbsp;
+            <a href="webdesign/strategy">Read On</a>
           </p>
           <div class="chapter__Date_Tag">
             <div>
@@ -64,7 +66,8 @@ include ("../inc/header.php");
             </div>
           </div>
         </aside>
-      </div>-->
+      </div>
+      <!-- -->
       <div class="chapter">
         <figure>
           <img class="chapter__Img" src="img/html.png">
