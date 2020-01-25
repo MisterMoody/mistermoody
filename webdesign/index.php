@@ -26,10 +26,10 @@ include ("../inc/header.php");
           <figcaption class="">A Simple Workstation</figcaption>
         </figure>
         <aside class="">
-          <h3 class="chapter__Headline">Workstation Set Up</h3>
+          <h3 class="chapter__Headline">Workstation</h3>
           <p class="chapter__Text">
-            Establishing a proper developer environment requires amalgamating technologies that will facilitate a process permitting developers to write, test and manage a web application. This can be achieved with a text-editor, a version controller and a local server. &nbsp;
-            <a href="webdesign/setup-workstation">Read On</a>
+            Establishing a proper developer environment requires amalgamating technologies that will facilitate a process permitting developers to write, test and manage a web application. This can be achieved with a text-editor, a version controller and two servers. &nbsp;
+            <a href="webdesign/workstation">Read On</a>
           </p>
           <div class="chapter__Date_Tag">
             <div>
@@ -87,6 +87,7 @@ include ("../inc/header.php");
            </div>
         </aside>
       </div>
+      <!-- -->
       <div class="chapter">
         <figure>
           <img class="chapter__Img" src="img/designStyle.jpg" style="max-width: 100%;">
