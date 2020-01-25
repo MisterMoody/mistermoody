@@ -319,6 +319,12 @@ include ("../inc/webdesignHeader.php");
           
           <span><a target="_blank" href="https://github.com/">Github</a> <a target="_blank" href="https://lab.github.com/">VCS</a></span>
           
+          <span><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key" target="_blank">Generate SSH Keys</a></span>
+          
+          <span><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server" target="_blank">Set up Git Server</a></span>
+          
+          <span><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Third-Party-Hosted-Options" target="_blank">Git 3rd Party</a> <a href="https://git.wiki.kernel.org/index.php/GitHosting" target="_blank">Hosting</a></span>
+          
           <span><a target="_blank" href="https://learngitbranching.js.org/">Git Branching</a></span>
 
           <span><a target="_blank" href="https://gist.github.com/BolajiAyodeji/d5393b90650c49ba9ef81493bfca9cda">Git</a> <a target="_blank" href="http://git-scm.com/docs ">Cheat Sheet</a></span>
