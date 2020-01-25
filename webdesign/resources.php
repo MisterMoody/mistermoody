@@ -58,7 +58,7 @@ include ("../inc/webdesignHeader.php");
           
           <span><a target="_blank" href="https://styleguide.mailchimp.com/voice-and-tone/">Voice + Tone Style Guide</a></span>
           
-          <span><a target="_blank" href="https://styleguide.io">500+ Style Guides</a></span>
+          <span><a target="_blank" href="https://styleguides.io">500+ Style</a> <a target="_blank" href="https://cssguidelin.es/">Guides</a></span>
           
           <span><a target="_blank" href="https://addyosmani.com/a11y/ ">Accessibility Tester</a></span>
           
