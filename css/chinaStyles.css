@@ -1,0 +1,254 @@
+/* GRID-LINES for TESTING 'ONLY' */
+/** {outline: 1px solid red;}
+h1, h2, h3, h4, h5, h6  {outline: 4px solid black;}
+p {outline: 2px solid green;}
+ul, ol {outline: 3px dashed purple;}
+li {outline: 1px dashed purple;}
+a  {outline: 2px dashed gold;}
+blockquote, div {outline: 1px solid purple;}*/
+
+/* ============================================ */
+/* CASCADING STYLESHEET ======================= */
+/*
+      1.  Global NAVIGATION
+          + Pagination
+      2.  UNIVERSAL Styles
+      3.                
+      4.  
+      5.  
+      6.  
+      7.  
+      8.  
+      9.  
+      10.                             */
+/* ============================================ */
+
+
+
+/* ============================================ */
+/* 1a. Global NAVIGATION ====================== */
+/* ============================================ */
+  /* Page ALIGNMENT */
+.topnav {overflow: hidden;}
+.topnav a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin: 8px 0;
+  padding: 0 0.2em;
+  text-decoration: none;
+  font-size: 1.5em;
+  border-bottom: none;
+}
+.topnav a:first-child {float: right;}
+.topnav a:hover {
+  /*background-color: red;
+  color: black;*/
+	transition-duration: 0.8s;
+}
+header {
+  margin: 0;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  z-index: 100;
+}
+header.topnav > .active {
+  color: white;
+  /*margin-right: 7.58em;*/  /* Fixed to <body> 'margin' @ min-width 800px */
+}
+.topnav .icon {display: none;}
+fa-home {padding-right: 75px;}
+@media screen and (max-width: 800px) {
+  .topnav a {font-size: 1em;}
+  .topnav a:first-child {float: left;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .fa-home, .fa-bars {color: #fff;}
+}
+/* ******************************************** */
+/* ****Header PERFECTLY Aligned with <body>**** */
+/* ============================================ */
+
+/* ============================================ */
+/* 2. UNIVERSAL BASE STYLES =================== */
+/* ============================================ */
+
+/* Universal Layout Containment */
+html {box-sizing: border-box;} 
+*:before, *:after {box-sizing: inherit;} 
+/* Prevent 'User CopynPaste' */
+main {
+  margin: 0 1em;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+/**/
+/* Smooth Scroll Effect + Remove Browser Scroll */
+html {
+  font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/**/
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+	font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.6px;
+}
+/**/
+footer  {
+  margin: 4px 0;
+  text-align: center;
+  font-size: 14px;   
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: #fff;
+  /*Sticky
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  text-align: center;*/
+}
+@media all and (min-width: 800px){main {margin: 0 4em;}}
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+a {
+  text-decoration: none;
+  color: #000;
+  /*  Text-Decoration Color + Underline Offset + TD Thickness*/
+  border-bottom: #000 0.044em dashed;
+}
+a:hover {opacity: 0.7;}
+details {margin: 0 4px; font-size: 0.8em;}
+dialog::backdrop {
+  background: rgba(255,0,0,.25);
+}
+figure {margin: 0; padding: 0;}
+figcaption {
+  font-size: 0.80em;
+  font-style: italic;
+  text-align: center;
+}
+.title {text-align: center;}
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+h2, h3, h4, h5, h6 {margin-bottom: -0.44em;}
+h2 {background-color: #444; color: #fff;}
+h3 {background-color: #7b7b7b;}
+h4 {background-color: #bebdbf;}
+h5 {background-color: gold;}
+/* ********* ********  */
+h1 {font-size: calc(1.2rem + 2.4vw);}  
+hr {
+  background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
+  border: 0;
+  height: 1px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  overflow: visible;
+  text-align: center;
+}
+hr:after { 
+  background: rgba(192, 192, 192, 0.6);
+  content: ' \00A7';
+  border: 1px dotted rgba(10, 9, 9, 0.7);
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0 0.6em;
+  position: relative;
+  top: -0.7em;
+}
+/* Highlights 'Terminology' => DO NOT EDIT ~or~ REMOVE */
+i {
+  color: #000;
+  font-variant: small-caps;
+  font-weight: bold;
+} 
+p, mark, summary { 
+  font-size: calc(0.96rem + 0.02vw);
+  line-height: 1.248; 
+}
+/* 'Dim' TEXT-Color Styles */
+p, ol {color: #444;}
+/* <ol> used for 'List of Contents' */
+ol {
+  font-size: 0.88em;
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+ol > ul {
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+ol.alpha {list-style-type: lower-alpha;}
+@media all and (min-width: 800px) {  
+  main {margin: 0 5.3em;}
+  code, p code, details {font-size: 1em;}
+  details{font-size: 1.2em;}
+  figure {margin: 0;}
+  h2, h3, h4, h5, h6 {margin-bottom: 0.2em;}
+  .addMarginTop {margin-bottom: 0.8em;}
+  p {font-size: 1.1em; margin: 0.25em 0.55em 0.25em 0.25em;}
+  ol {
+    font-size: 1em; 
+    padding-left: 80px;
+  }
+}
+
+
+/**//****************************************//**/
+/**/
+/*Vocab Character Grid Multi-SM-Col*/
+.vocabGrid {
+  margin: 0.8em 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, auto));
+  grid-template-rows: auto;
+  grid-gap: 0.5em;
+}
+@media only screen and (min-width: 800px) {
+  .vocabGrid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+  }
+}
+.pinyin {
+  font-size: 1.24em;
+}
+.hanzi {
+  font-size: 2em;
+}
+.translation {
+  font-size: 1em;
+}
+/*Unicode <div> Style*/
+.word {
+  background: #dddada;
+  text-align: center;
+}
+/**//****************************************//**/
