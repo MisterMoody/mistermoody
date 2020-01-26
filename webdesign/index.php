@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Ray Moody Proficiencies as a Web Developer";
+$pageTitle = "Web Dev Toolkit";
 include ("../inc/header.php");
 ?>
 <!-- ************************************************** -->

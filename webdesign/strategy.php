@@ -49,18 +49,13 @@ include ("../inc/webdesignHeader.php");
     <p>
       Implementing content requires anticipating user needs and using a blend of visuals and text to support users.  Use short descriptions and create a consistent theme based on the personality. There is an abundance of resources related to <a href="http://styleguides.io/" target="_blank">style guides</a> and <a href="https://cssguidelin.es/" target="_blank">guideliness</a> for setting the <a href="http://styleguides.io/	https://blog.gathercontent.com/tone-of-voice-guide/" target="_blank">tone</a> of the content.
     </p>
-    <!-- -->
-    <h3>&nbsp;Style Guide</h3>
-    <p>
-      
-    </p>
     <!-- UX Content -->
     <article>
       <h3>&nbsp;UX Content</h3>
       <p>
         UX content is a collection of information that establishes a tone for your project, communicating brand personality, values and identity in order to build trust by revealing ones agency (mission statement). Content should be descriptive, providing details to help users to facilitate their goals. Helpful content keeps users engaged, and this can be accomplished by localizing language, including video tutorials and instructional content as well as creating an interactive series of clickable questions and answers that guides a user down logical pathways toward a solution. It should inspire and support users during their visit, creating a memorable experience. In fact, creating a positive user experience by building emotional connections leads will produce future business. Use proof (ie testimonials) to encourage users to value product. Do this by developing a Brand Personality, which is the way you communicate who you are and what your value as a brand is.  All website personalities are premised on one of the following brand archtypes:
       </p>
-      <aside class="declarations">
+      <aside class="block">
         <div><code>King:</code><span> Assertive</span></div>
         <div><code>Wise:</code><span> Authority</span></div>
         <div><code>Hero:</code><span> Adventure</span></div>
