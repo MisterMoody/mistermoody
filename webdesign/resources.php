@@ -260,7 +260,17 @@ include ("../inc/webdesignHeader.php");
           <span><a target="_blank" href="https://frontendchecklist.io/">Front-End Checklist</a></span>
                 
           <span><a target="_blank" href="https://designagency.io/">Project CO$T</a></span>
-
+          
+          <span><a href="http://www.pdinfo.com/" target="_blank">Public</a> <a href="http://www.freesound.org/ " target="_blank">Domain</a> <a href="http://freemusicarchive.org/" target="_blank">Media</a> <a href="www.gettyimages.com" target="_blank">Assets</a></span>
+          
+          <span><a href="http://semrush.com/" target="_blank">SEO Keyword</a></span>
+          
+          <span><a href="http://www.uspto.gov/trademarks " target="_blank">Secure Trademark</a></span>
+          
+          <span><a href="http://www.copyright.gov/eco/ " target="_blank">US Copyright Office</a></span>
+          
+          <span><a href="http://creativecommons.org/" target="_blank">Creative Commons</a></span>
+          
           <span><a target="_blank" href="https://www.gloomaps.com/">Visual Sitemap</a></span>
 
           <span><a target="_blank" href="https://www.freeprivacypolicy.com">Privacy Policy</a></span>
