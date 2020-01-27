@@ -689,6 +689,7 @@ include ("../inc/webdesignHeader.php");
       <p>
         All <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code> tags can accept the boolean attribute <i>placeholder</i> to provide users with a hint of what kind of data is expected: this text will disappear once the control gains focus. The example below illustrates an <code>&lt;input&gt;</code> designed for an email:
       </p>
+      <p></p>
       <blockquote>
         <div>
           <code>&lt;input type&#61;&#34;text&#34; placeholder&#61;&#34;name@domain.com&#34;&gt;</code>

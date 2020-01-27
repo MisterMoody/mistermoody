@@ -36,7 +36,6 @@ include ("../inc/webdesignHeader.php");
   <!-- Part 1: List of Git Commands -->
   <section>
     <h2>&nbsp;List of Git Commands</h2>
-    <!--<div class="addMarginTop"></div>-->
     <p>A list of common git commands.</p>
     <article class="declarations">
       <div class="hideMobile"><b>Git Command</b></div>
