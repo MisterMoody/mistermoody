@@ -417,7 +417,102 @@ include ("../inc/webdesignHeader.php");
           <div class="asciiItemChar">&#8594;</div>
           <div><small>&amp;&#35;<b>8594</b>&#59;</small></div>
         </div>
-        <!-- -->
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#188;</div>
+          <div><small>&amp;&#35;<b>188</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#189;</div>
+          <div><small>&amp;&#35;<b>189</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#190;</div>
+          <div><small>&amp;&#35;<b>190</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#257;</div>
+          <div><small>&amp;&#35;<b>257</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#225;</div>
+          <div><small>&amp;&#35;<b>225</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#462;</div>
+          <div><small>&amp;&#35;<b>xx</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#224;</div>
+          <div><small>&amp;&#35;<b>224</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#275;</div>
+          <div><small>&amp;&#35;<b>275</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#233;</div>
+          <div><small>&amp;&#35;<b>233</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#283;</div>
+          <div><small>&amp;&#35;<b>283</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#232;</div>
+          <div><small>&amp;&#35;<b>232</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#299;</div>
+          <div><small>&amp;&#35;<b>299</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#237;</div>
+          <div><small>&amp;&#35;<b>237</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#464;</div>
+          <div><small>&amp;&#35;<b>464</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#236;</div>
+          <div><small>&amp;&#35;<b>236</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#333;</div>
+          <div><small>&amp;&#35;<b>333</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#243;</div>
+          <div><small>&amp;&#35;<b>243</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#466;</div>
+          <div><small>&amp;&#35;<b>466</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#242;</div>
+          <div><small>&amp;&#35;<b>242</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#363;</div>
+          <div><small>&amp;&#35;<b>363</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#250;</div>
+          <div><small>&amp;&#35;<b>250</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#468;</div>
+          <div><small>&amp;&#35;<b>468</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#249;</div>
+          <div><small>&amp;&#35;<b>249</b>&#59;</small></div>
+        </div>
+        <div class="asciiItem">
+          <div class="asciiItemChar">&#474;</div>
+          <div><small>&amp;&#35;<b>474</b>&#59;</small></div>
+        </div>
         <div class="asciiItem">
           <div class="asciiItemChar">&#8470;</div>
           <div><small>&amp;&#35;<b>8470</b>&#59;</small></div>
@@ -435,22 +530,6 @@ include ("../inc/webdesignHeader.php");
           <div><small>&amp;&#35;<b>8453</b>&#59;</small></div>
         </div>
         <!-- -->
-        <div class="asciiItem">
-          <div class="asciiItemChar">&#185;</div>
-          <div><small>&amp;&#35;<b>185</b>&#59;</small></div>
-        </div>
-        <div class="asciiItem">
-          <div class="asciiItemChar">&#188;</div>
-          <div><small>&amp;&#35;<b>188</b>&#59;</small></div>
-        </div>
-        <div class="asciiItem">
-          <div class="asciiItemChar">&#189;</div>
-          <div><small>&amp;&#35;<b>189</b>&#59;</small></div>
-        </div>
-        <div class="asciiItem">
-          <div class="asciiItemChar">&#190;</div>
-          <div><small>&amp;&#35;<b>190</b>&#59;</small></div>
-        </div>
       </aside>
       <p>
         It would be a worthy venture to learn more about unicode and all symbols as you can include arrows, foreign languages, shapes and much more.
