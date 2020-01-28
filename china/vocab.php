@@ -868,7 +868,7 @@ include ("../inc/chinaHeader.php");
           </div>
         </aside>
       </div>
-      
+      <!-- Length Units + Numbers -->
       <input type="radio" name="tabs" id="numbers">
       <label for="numbers">&nbsp;连词 + 数字</label>
       <div class="tab">
@@ -877,26 +877,195 @@ include ("../inc/chinaHeader.php");
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <aside class="vocabGrid">
-
           <div class="word">
-            <div class="pinyin">&#224;111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">ling</div>
+            <div class="hanzi">零</div>
+            <div class="translation">0</div>
           </div>
           <div class="word">
-            <div class="pinyin">&#224;111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">yi</div>
+            <div class="hanzi">一</div>
+            <div class="translation">1</div>
           </div>
           <div class="word">
-            <div class="pinyin">&#224;111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">er</div>
+            <div class="hanzi">二</div>
+            <div class="translation">2</div>
           </div>
           <div class="word">
-            <div class="pinyin">&#224;111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">san</div>
+            <div class="hanzi">三</div>
+            <div class="translation">3</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">si</div>
+            <div class="hanzi">四</div>
+            <div class="translation">4</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">wu</div>
+            <div class="hanzi">五</div>
+            <div class="translation">5</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">liu</div>
+            <div class="hanzi">六</div>
+            <div class="translation">6</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">qi</div>
+            <div class="hanzi">七</div>
+            <div class="translation">7</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">ba</div>
+            <div class="hanzi">八</div>
+            <div class="translation">8</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;jiu</div>
+            <div class="hanzi">九</div>
+            <div class="translation">9</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;shi</div>
+            <div class="hanzi">十</div>
+            <div class="translation">10</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;bai</div>
+            <div class="hanzi">百</div>
+            <div class="translation">100</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">qian</div>
+            <div class="hanzi">千</div>
+            <div class="translation">1,000</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">wan</div>
+            <div class="hanzi">万</div>
+            <div class="translation">10,000</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">diyi</div>
+            <div class="hanzi">第一</div>
+            <div class="translation">First</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">dier</div>
+            <div class="hanzi">第二</div>
+            <div class="translation">Second</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">disan</div>
+            <div class="hanzi">第三</div>
+            <div class="translation">Third</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">hao</div>
+            <div class="hanzi">号</div>
+            <div class="translation">(Address)</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">ben</div>
+            <div class="hanzi">本</div>
+            <div class="translation">~books</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">ci</div>
+            <div class="hanzi">次</div>
+            <div class="translation">(time)</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">dian</div>
+            <div class="hanzi">点</div>
+            <div class="translation">~o'clock</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">fenzhong</div>
+            <div class="hanzi">分钟</div>
+            <div class="translation">minute</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">ge</div>
+            <div class="hanzi">个</div>
+            <div class="translation">(any object)</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">gongjin</div>
+            <div class="hanzi">公斤</div>
+            <div class="translation">kilogram</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">ke</div>
+            <div class="hanzi">刻</div>
+            <div class="translation">one-quarter</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">~liang</div>
+            <div class="hanzi">22辆2</div>
+            <div class="translation">vehicles</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">~mi</div>
+            <div class="hanzi">米</div>
+            <div class="translation">meter</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">nian</div>
+            <div class="hanzi">年</div>
+            <div class="translation">year</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">shuang</div>
+            <div class="hanzi">双</div>
+            <div class="translation">a pair of</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">~sui</div>
+            <div class="hanzi">岁</div>
+            <div class="translation">~years old</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">~tiao</div>
+            <div class="hanzi">条</div>
+            <div class="translation">narrow obj</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">~wei</div>
+            <div class="hanzi">位</div>
+            <div class="translation">people</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">xie</div>
+            <div class="hanzi">些</div>
+            <div class="translation">some</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">zhong</div>
+            <div class="hanzi">种</div>
+            <div class="translation">a kind of</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">~jian</div>
+            <div class="hanzi">件</div>
+            <div class="translation">piece(s)</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">~zhang</div>
+            <div class="hanzi">张</div>
+            <div class="translation">piece(s)</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">kuai</div>
+            <div class="hanzi">块</div>
+            <div class="translation">money</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">yuan</div>
+            <div class="hanzi">元</div>
+            <div class="translation">money</div>
           </div>
         </aside>
       </div>
