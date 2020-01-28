@@ -406,7 +406,6 @@ ol.alpha {list-style-type: lower-alpha;}
    grid-template-columns: auto 1fr; /* auto was 6.2em*/
    grid-gap: 8px;
  }
-.glossary div code {font-size: 1.2em;}
 @media only screen and (min-width: 800px) {
   .glossary {
     display: grid;

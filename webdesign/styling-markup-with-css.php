@@ -81,11 +81,11 @@ include ("../inc/webdesignHeader.php");
     
     <!-- Selector Types-->
     <article>
-      <h3>Selector Types</h3>
+      <h3>&nbsp;Selector Types</h3>
         <p>
           All <code>&#60;html&#62;</code> elements can be used as a selector, but other things can be used as a selector as well. This first group of selectors are targeted most frequently.
         </p>
-        <h4>Simple Selectors</h4>
+        <h4>&nbsp;Simple Selectors</h4>
         <p>
           The <i>universal</i> selector is the most powerful selector of all as it is  used to render styles to all elements in a document. The <i>element</i> selector renders styles to that type of element. The <i>.class</i> selector renders styles on elements that possess a specific class attribute. The <i>#id</i> selector should not be used in CSS because it is a unique identifier that should be used exclusively as a 'hook' for <code>&#60;html&#62;</code> and <code>JavaScript</code> implementations.
         </p>
@@ -100,7 +100,7 @@ include ("../inc/webdesignHeader.php");
           <div><span>// Avoid Usage</span></div>
         </aside>
         
-        <h4>Combinators</h4>
+        <h4>&nbsp;Combinators</h4>
         <p>
           The power of selectors can be amplified by using a <i>combinator</i>: syntax that unifies the relationship between any of the selectors used above that targets and applies styles to <code>&#60;html&#62;</code> elements based on a specific criteria. The <i>descendant</i> selector targets elements that descend from a specific element. The <i>child</i> selector targets children of a specific element. The <i>adjacent sibling</i> selector targets immmediate siblings of a specific element. The <i>general sibling</i> selector targets all siblings of a specific element. Selectors can also be grouped allowing application of a consistent style theme to grouped elements.
         </p>
@@ -117,7 +117,7 @@ include ("../inc/webdesignHeader.php");
             <div><span>A, B&nbsp; = All A &amp; B Elements Targeted</span></div>
           </aside>
           
-        <h4>Attribute Selector</h4>
+        <h4>&nbsp;Attribute Selector</h4>
         <p>
             There are also <i>attribute</i> selectors that can be utilized to target particular features within an <code>&#60;html&#62;</code> element, such as those used with the <code>&#60;form&#62;</code> element. 
           </p>
@@ -132,7 +132,7 @@ include ("../inc/webdesignHeader.php");
             <div><span>Targts ALL"fee"</span></div> 
           </aside>  
           
-        <h4>:Pseudo-Class</h4>  
+        <h4>&nbsp;:Pseudo-Class</h4>  
         <p>
             There are also selectors that have selectors! <i>&#58;pseudo-class</i> selectors are keywords added to selectors to invoke a special 'state' during a particular instance. The examples below dictates how <code>&#60;a&#62;</code> elements can be modified based on a particular instance. The keywords below are grouped categorically to highlight usage cases. This first group of selectors are useful for <code>&#60;form&#62;</code> and <code>&#60;link&#62;</code> elements:
           </p>
@@ -179,7 +179,7 @@ include ("../inc/webdesignHeader.php");
             <div><span>// Indicates <code>&#60;input&#62;</code> Validation</span></div> 
           </aside> 
           
-        <h4>:Pseudo-Elements</h4>
+        <h4>&nbsp;:Pseudo-Elements</h4>
         <p>
             <i>&#58;&#58;pseudo-element</i> selectors, on the other hand, are used to style a specific part of a selected element. The difference between the two is in the number of colons. Ther following selectors add depth to elements that possess text.
           </p>
@@ -209,12 +209,12 @@ include ("../inc/webdesignHeader.php");
      
     <!-- Length Units -->
     <article>
-      <h3>Length Units</h3>  
+      <h3>&nbsp;Length Units</h3>  
       <p>
         Properties accept a <code>keyword</code> or <i>length unit</i> as a value to qualify or quantify an expected aesthetic quality. Keywords have a precise meaning for how an element should behave. Often, a <code>unit</code> -a numeric value, is required, and in such an instance, such value will be one of three data types: dimension, integer/number or a percentage. Learning keywords for the several hundred properties will take some time, but quickly grasping length units is imperative for outputting the simplest of style declarations.
       </p>
 
-      <h4>Absolute vs. Relative Units</h4>
+      <h4>&nbsp;Absolute vs. Relative Units</h4>
       <p>
           Length units are either absolute or relative in nature: <i>absolute</i> units are fixed and appear as the declared size regardless of screen size while <i>relative</i> units represents a length with the ability to scale relative to other elements on the page. With respect to responsive web design, it is obvious that relative units are a preferred choice. The <i>pixel</i> (<code>px</code>) unit is an anomoly in that it has an immutable absolute value, yet, is relative to screen resolution. Another common value is the <i>percentage</i> (<code>%</code>) relative unit: use of this is risky in that that element becomes relative to its parent. One suggestion for avoiding any risk is to add the rule-set below to the top of the style sheet then never use again, laying the foundation for a responsive design: 
         </p>
@@ -250,7 +250,7 @@ include ("../inc/webdesignHeader.php");
         <div><span>// Calculator</span></div>
       </aside> 
 
-        <h4>Dimensional and Time Units</h4> 
+        <h4>&nbsp;Dimensional and Time Units</h4> 
         <p>
           Not all values are created equal so when designing animations out from the abyss of time and space, it is helpful to be aware of dimensional and time measurement units. Time units are easy to remember: <i>seconds</i> <cdoe>(s)</cdoe> and <i>milliseconds</i> <code>(ms)</code>. Using dimensions, not so much. The <code>rotate()</code> function is used to calculate a transformation on a specified element. This function works in conjunction with the <i>degree</i> <code>(deg)</code> and <i>turns</i> <code>(turn)</code> units, which are used to rotate or turn an object with the only distinction being that one turn reflects a full 360 degree whereas one degree equals just that.
         </p>
@@ -297,7 +297,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Container Layout -->
     <article>
-      <h3>Container Layout</h3>
+      <h3>&nbsp;Container Layout</h3>
       <p>
         When structuring a layout, it is a best practice to invoke <code>{box-sizing: border-box;}</code> at the top of a style sheet. This declaration eliminates spacing concerns by taking into account an elements padding and border along with its width and height. Ths sets a foundation for layout and positional properties used on elements thereafter. From there, the first property designers reach for is that of <i>display</i>, which determines how an element is displayed. The main goal of this property emphasizes element alignment. 
       </p>
@@ -310,7 +310,7 @@ include ("../inc/webdesignHeader.php");
         It can be a cumbersome task to use the aforementioned keywords to style a large website, but designers did it this way for eons basing elements as either a row or column. Nowadays, layout techniques are implemented using the keywords flex and grid, and although nearly the same, both are used in distinct ways. <code>flex</code> is one-dimensional and is best used to arrange individual items in a single row or column whereas <code>grid</code> is two-dimensional and is best used to establish containers by arranging items in multiple rows or columns. Thus, what distinguishes these keywords is that grid defines a parent element while flexbox defines child elements.  With that in mind, lets first focus on structuring a container. 
       </p>
       
-      <h4>The Grid</h4>
+      <h4>&nbsp;The Grid</h4>
       <!-- Grid -->
       <p>
         The <code>{display: grid; }</code> declaration sets up a layout pattern that allows elements to be placed in fixed or flexible positions along the cross-axis of perpendicular lines. There are sub-properties that designers should familiarize themselves with to manipulate the layout according to specifications.
@@ -391,7 +391,7 @@ include ("../inc/webdesignHeader.php");
       </aside>
       
       <!-- GRID EXAMPLES -->
-      <h4>Grid Examples</h4>
+      <h4>&nbsp;Grid Examples</h4>
       <p>Typical Row-Grid</p>
       <aside class="declarations">
         <div><code>{display: grid;}</code></div>
@@ -456,7 +456,7 @@ include ("../inc/webdesignHeader.php");
         <div><span>// Equal Space Around Items</span></div>
       </aside>
       
-      <h4>Flexbox</h4>
+      <h4>&nbsp;Flexbox</h4>
       <p>
         The <code>flex</code> keyword is used to create a container that allows its direct children to be flexible. The children are called items and their layout structure is defined by a set of sub-properties that work only when the display has been set to work. The <i>flex-direction</i> sub-prop assigns if items will flow in a column or row. Because all items will try to fit onto the same line, the <i>flex-wrap</i> prop can be used to wrap items to the next line. Apply margin and padding to create gutters.
       </p>
@@ -506,10 +506,10 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Size and Placement -->
     <article>
-      <h3>Sizing and Placement</h3>
+      <h3>&nbsp;Sizing and Placement</h3>
       <p>There are a variety of elements that allow designers to make modifications that effect size and placement.</p>
       <!-- -->
-      <h4>Sizing and Shaping Elements</h4>
+      <h4>&nbsp;Sizing and Shaping Elements</h4>
       <!-- Height + Width -->
       <p>
         The <i>height</i> property is used to specify content height and width of boxes. The <i>min/max-height</i> properties can be added to an element that has a height of <code>100%</code> to create a minimum and maximum element container height.
@@ -549,7 +549,7 @@ include ("../inc/webdesignHeader.php");
       </aside>
         
       <!-- Position + top/right/bottom/right + Z-Index -->
-      <h4>Positional Placement</h4>
+      <h4>&nbsp;Positional Placement</h4>
       <p>There are several ways to position elements: techniques explained herein highlight but a few.</p>
       <!-- Float + Overflow -->
       <p>
@@ -647,7 +647,7 @@ include ("../inc/webdesignHeader.php");
       </aside>
       
       <!-- Size and Position Examples -->
-      <h4>Size and Position Examples</h4>
+      <h4>&nbsp;Size and Position Examples</h4>
       <p>Fixed Footer</p>
       <aside class="declarations">
         <div><code>footer {</code></div>
@@ -665,7 +665,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Media -->
     <article>
-      <h3>Media</h3>
+      <h3>&nbsp;Media</h3>
       <p>
         When dealing with images, it is best to use either<code>.jpg</code> or <code>.png</code> formats. All images have an absolute height and width defined in pixels, thus, modifying these values will distort the image. Try using the <code>.webp</code> format. Below are useful declarations:
       </p>
@@ -687,7 +687,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Colors -->
     <article>
-      <h3>Colors</h3>
+      <h3>&nbsp;Colors</h3>
       <p>
         The <i>color</i> property specifies the color of a text element and can be applied to text decorations and shadows. A color can be assigned using a <i>color name</i> or an <i>rgb</i> value. There is a standard list of color names that can be used and the easiest way to write and RGB value is to use hexadecimal string notation. 
       </p>
@@ -720,7 +720,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Backgrounds and Borders -->
     <article>
-      <h3>Backgrounds and Borders</h3>
+      <h3>&nbsp;Backgrounds and Borders</h3>
       <p>
         The <i>background</i> property is used to layer an image underneath content. As a shorthand, it accepts sub-props that include image, position, size, repeat, attachment, origin, clip and color.
       </p>
@@ -789,7 +789,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Font and Text -->
     <article>
-      <h3>Font and Text</h3>
+      <h3>&nbsp;Font and Text</h3>
       <p>Build fluid typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
       <p>
         <i>font</i> is a property that is used to set the style of text. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
@@ -914,7 +914,7 @@ include ("../inc/webdesignHeader.php");
       </aside>
 
       <p style="margin: 2em;"></p>
-      <h4>List-style</h4>
+      <h4>&nbsp;List-style</h4>
       <p>
         <i>list-style</i> is a shorthand property that defines a type, position and image. The <i>list-style-type</i> prop sets what type of bullet to use. The <i>list-style-position</i> prop sets the bullet inside or outside of the margin. The <i>list-style-image</i> prop uses a url to set the bullet as an image.
       </p>
@@ -947,7 +947,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Animating Things -->
     <article>
-      <h3>Animating Things</h3>
+      <h3>&nbsp;Animating Things</h3>
       <p>
         Certain properties applied to HTML elements can be <a href="http://leaverou.github.io/animatable/" target="_blank">animated</a> via transition and transforms properties. Best practices encourage smooth, fluid experiences delivered at 60 frames per second (fps). Animating properties that affect browser layout, such as borders, will lower the FPS and impair the overall performance of the website.
       </p>

@@ -71,7 +71,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Set up HTML -->
     <article>
-      <h3>Setup Project Files</h3>
+      <h3>&nbsp;Setup Project Files</h3>
       <p>
         Lets open the project directory and create a new file, naming this file <code>index.html</code>, which is the universal file name for all website homepages. Lets also create two folders: one named <code>css/</code> and the other named <code>img/</code> (these folders will be used later in the project to contain style sheets and images). Enter the CSS folder and create a new file, naming this file <code>styles.css</code>. Leave the images folder empty. 
       </p>
@@ -92,7 +92,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- The Main Root -->
     <article>
-      <h3>The Main Root</h3>
+      <h3>&nbsp;The Main Root</h3>
       <p>
         The <code>&lt;!DOCTYPE html&gt;</code> is the first line of a page and it declares that this document is indeed an HTML file by providing browsers with specifications that will ensure rendering.
       </p>
@@ -102,11 +102,11 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- The Head -->
     <article>
-      <h3>The Head</h3>
+      <h3>&nbsp;The Head</h3>
       <p>
        The <code>&lt;head&gt;</code> element is the first child descendant of the <code>&lt;html&gt;</code> element and represents the area that contains all meta information about a particular page, its title and instructions for the browser to locate style sheets while defining relationships that the document has to others in the web site.
       </p>
-      <h4>Meta Data</h4>
+      <h4>&nbsp;Meta Data</h4>
       <p>
         The <code>&lt;meta&gt;</code> tag is the first line in this area and it is used to provide meta data about a webpage, its author and pertinent information that enhances search engine optimization. Attributes that can be applied to this element are as follow:
       </p>
@@ -119,7 +119,7 @@ include ("../inc/webdesignHeader.php");
       <p>
         The <code>content&#61;&#34;val&#34;</code> attribute is associated with the <code>name&#61;&#34;val&#34;</code> attribute, controlling the size of the viewport as well as the zoom level upon initial page load. The assigned value for <code>content&#61;&#34;...&#34;</code> does several things that enables a mobile responsive platform while maintaining its structural and stylistic integrity. The <code>width</code> property controls the size of the viewport and when assigned the special value <code>device-width</code>, will scale the full-width of the screen. The value <code>initial-scale</code> controls the zoom level when the page is first loaded and simply controls how users are allowed to zoom the page in or out.
       </p>
-      <h4>Links</h4>
+      <h4>&nbsp;Links</h4>
       <p>
         The <code>&lt;link&gt;</code> tag specifies a resource and accepts three attributes: <code>rel="keyword"</code>, <code>type="keyword"</code> and <code>href="URL"</code>.
       </p>
@@ -135,7 +135,7 @@ include ("../inc/webdesignHeader.php");
       <p>
         Here, <i>protocol</i> specifies how the resource is to be accessed: the protocol identifier uses either <code>http://</code> or <code>https://</code> as a method for transferring data between computer networks while the domain is the (website) server from which data is requested. The <i>path</i> specifies the sequence of directories leading to the target.
       </p>
-      <h4>Misc.</h4>
+      <h4>&nbsp;Misc.</h4>
       <p>
         The <code>&lt;title&gt;</code> tag is simply used to document the webpage in the browser. Whatever is placed here will be visible on the browser tab.
       </p>
@@ -148,7 +148,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- The Body -->
     <article>
-      <h3>The Body</h3>
+      <h3>&nbsp;The Body</h3>
       <p>
         Once <code>&lt;head&gt;</code> specifications are declared, content layout takes center stage. Web browsers use the combination of the aforementioned data to coordinate all resources required to make the website function as it was designed. Although absolutely none of the <code>&lt;head&gt;</code> information is visible to users, the exact opposite is true of the <code >&lt;body&gt;</code> tag. As the second child descendant of the <code>&lt;html&gt;</code> tag, it represents the area of the document that contains all content that will be displayed on screen (or print media), such as headings, paragraphs, images, and so on. Lets explore!
       </p>
@@ -171,14 +171,14 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Header and Navigation -->
     <article>
-      <h3>Header and Navigation</h3>
+      <h3>&nbsp;Header and Navigation</h3>
       <p>
         The <code>&lt;header&gt;</code> tag is the first section users encounter and contains introductory information related to the website such as a logo or navigational aids. The <code>&lt;nav&gt;</code> tag is used to create a navigation system for users to browse a website, providing links within the current document or to an external source. This element can be used within a <code>&lt;header&gt;</code> or independently, and should be reserved for global navigation, a table of contents, previous&#47;next links, etc.
       </p>
     </article>
     <!-- Primary Section Areas -->
     <article>
-      <h3>Primary Section Areas</h3>
+      <h3>&nbsp;Primary Section Areas</h3>
       <p>
         The <code>&lt;main&gt;</code> tag should not be used to section content as it represents content that is directly related to the central topic of a document. This element is essentially the main container within the <code>&#60;body&#62;</code> tag, possessing all information outside of content that is repeated across a set of documents or document sections such as navigation links, copyright information, site logos or search forms.
       </p>
@@ -191,7 +191,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Footer -->
     <article>
-      <h3>Footer</h3>
+      <h3>&nbsp;Footer</h3>
       <p>
         The <code>footer</code> element typically contains information about the author, copyright data or links to related documents. It is placed at the bottom of the section root or used at the bottom of any sectioning elements.
       </p>
@@ -210,7 +210,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Lists -->
     <article>
-      <h3>Build a Navigation System with Lists</h3>
+      <h3>&nbsp;Build a Navigation System with Lists</h3>
       <p>
         Lets make a list: not a shopping list, but a list nonetheless. In HTML, list are used to group a set of related items in no particular order or in a specific order. The list type determines how its list-items will be displayed. 
       </p>
@@ -247,7 +247,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Heading + Paragraphs -->
     <article>
-      <h3>Headings &amp; Paragraphs</h3>
+      <h3>&nbsp;Headings &amp; Paragraphs</h3>
       <p>
         The first bits of content for any page will include a heading and an introductory paragraph. <code>&lt;h1-h6&gt;</code> tags are used to <em>create title-based headings</em>. Best practice mandates that the <code>&lt;h1&gt;</code> be used only once per page, and to avoid skipping levels when nesting sub-sections to reflect the organization of the content of that page. One practical explanation for this is that most <em>screen readers generate an ordered list of headings for web pages</em>, which is a healthy <i>accessibility</i> method that assists users with disabilities. The <code>&lt;p&gt;</code> tag often accompanies headings as the main text-based content, creating perfectly aligned blocks of text.
       </p>
@@ -258,7 +258,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Inline Text Semantics ( +Unicode )-->
     <article>
-      <h3>Inline Text Semantics</h3>
+      <h3>&nbsp;Inline Text Semantics</h3>
       <p>
         Aside from using the <code>&#60;p&#62;</code> tag to introduce text, <i>inline text semantics</i> may be employed to define the meaning, structure, or style of any piece of text. 
       </p>
@@ -275,7 +275,7 @@ include ("../inc/webdesignHeader.php");
         Similarly, the <code>&lt;cite&gt;</code>, <code>&lt;q&gt;</code> or <code>&lt;abbr&gt;</code> tags can be applied as inline-level elements in order to add specificity. These tags provide a visible text representation of a quoted source, indicates that the enclosed text is a short inline quotation and represents an abbreviation or acronym. The <code>&lt;cite&gt;</code> tag must include either the title or the URL of that work and is often accompanied by the  <code>&lt;q&gt;</code> tag. Lastly, tinker with the <code>&lt;hr&gt;</code> tag to create a stylish line-break between sections of content.
       </p>
       <!-- Unicode -->
-      <h4>Unicode</h4>
+      <h4>&nbsp;Unicode</h4>
       <p>
         It is a good practice to use <i>unicode</i> when marking <em>reserved characters</em> to avoid having a browser interpret that content as HTML code. UNICODE stands for Universal Coded Character Set &#40;UCS&#41; and is an International Standard ISO&#47;ICE 10646. Instead of typing non-alpha-numeric characters as-is, the <i>character entity</i> is referenced with a numeric character value, whose <i>syntax</i> is typed with an <i>ampersand</i> <code>(&amp;)</code>, a number sign <code>(&#35;)</code>, a numeric value <code>(nn)</code> and a semicolon <code>(&#59;)</code>.
       </p>
@@ -537,11 +537,11 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Media -->
     <article>
-      <h3>Media Elements</h3>
+      <h3>&nbsp;Media Elements</h3>
       <p>
         While text content does much to inform users, media content can be more engaging and influential.
       </p>
-      <h4>Images</h4>
+      <h4>&nbsp;Images</h4>
       <p>
         The <code>&lt;img/&gt;</code> element is a self-closing tag used to embed images into a document. This element requires the <code>src&#61;&#34;val&#34;</code> and <code>alt&#61;&#34;val&#34;</code> attributes, which respectively ascertains an images' file path extension, which must be of .svg, .jpg, or .png format, and offers a physical description of the image, required for accessibility purposes. 
       </p>     
@@ -552,7 +552,7 @@ include ("../inc/webdesignHeader.php");
       <p>
         A variety of objectives can be accomplished using attributes with the <code>&lt;img /&gt;</code> tag. For example, the <code>crossorigin&#61;&#34;val&#34;</code> attribute can be added to provide security while the  <code>srcset&#61;&#34;val&#34;</code>, <code>width&#61;&#34;val&#34;</code> and <code>height&#61;&#34;val&#34;</code> attributes can be used to specify image dimensions. Furthermore, the <code>&lt;img /&gt;</code> tag pairs well with a <code>&lt;figure&gt;</code> tag, which represents a self-contained container that is accompanied with the captioning <code>&lt;figcaption&gt;</code> tag. The <code>&lt;picture&gt;</code> element functions similarly and may be a more appropriate substitute for the <code>&lt;figure&gt;</code> tag depending on the objective.
       </p>
-      <h4>Audio &amp; Video</h4>
+      <h4>&nbsp;Audio &amp; Video</h4>
       <p>Embedded media provides contextual clarity for users. </p>
       <figure>
         <img class="mainImage" src="img/videoTag.jpg" alt="Video Controls" />
@@ -598,7 +598,7 @@ include ("../inc/webdesignHeader.php");
     </article> 
     <!-- Forms-->
     <article>
-      <h3>Service Forms</h3>
+      <h3>&nbsp;Service Forms</h3>
       <p>
         Forms are an essential part of the Internet, as they provide a way for websites to capture information from users and to process requests, and they offer controls for nearly every imaginable use of an application. Through controls or fields, forms can request information that allows users to perform search queries, access email via username and password authentication and much more. The <code>&lt;form&gt;</code> tag represents a document section that acts as a container for interactive controls users use to submit information to a web server.
       </p>
@@ -661,12 +661,12 @@ include ("../inc/webdesignHeader.php");
       </p>
       <blockquote>
         <div>
-          <code>&lt;label for&#61;&#34;username&#34;&gt;Username&lt;/label&gt;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <code>&lt;label for&#61;&#34;username&#34;&gt;Username&lt;/label&gt;</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <br><code>&lt;input type&#61;&#34;text&#34; name&#61;&#34;username&#34; id&#61;&#34;username&#34;&gt;</code>
         </div>
         <br>
         <div>
-          <label for="username">Username</label>&nbsp;&nbsp;
+          <label for="username">Username</label>&nbsp;
           <input type="text" name="username" id="username">
         </div>
       </blockquote>
@@ -705,7 +705,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Interactive Elements -->
     <article>
-      <h3>Interactive Elements</h3>
+      <h3>&nbsp;Interactive Elements</h3>
       <p>
        The <code>&lt;details&gt;</code> tag creates a disclosure widget in which information is visible only when the widget is toggled. Use the self-contained <code>open</code> attribute to programmatically keep open the widget. A summary, caption or legend can be applied to the widget by employing the <code>&lt;summary&gt;</code> tag.
       </p>
@@ -768,7 +768,7 @@ include ("../inc/webdesignHeader.php");
       </p>
     </article>
     <!-- 
-      <h4>Glossary</h4>
+      <h4>&nbsp;Glossary</h4>
       <aside class="declarations">
         <div><code></code></div>
         <div><span></span></div>

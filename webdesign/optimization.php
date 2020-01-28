@@ -80,7 +80,7 @@ include ("../inc/webdesignHeader.php");
     <p>
       Optimizing critical CSS begins with well structured declarations, using a limited number of selectors, employing shorthands whenever possible and using media queries for progressive enhancement. After doing that,  <a href="https://github.com/jakubpawlowicz/clean-css" target="_blank">cleanup</a>, <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">validate</a> and <a href="http://csscompressor.com/" target="_blank">minify</a> all stylesheets. Use an <a href="https://github.com/mrcoles/cssunminifier" target="_blank">unminify</a> tool to work with CSS that has already been minified.
     </p>
-    <h4>Optimizing Images</h4>
+    <h4>&nbsp;Optimizing Images</h4>
     <p>
       Using images on websites is an imperative, but modifying images through stylesheets can lead to distortion. Load times are increased with the addition of any image so sizing images prior to usage is a must! The first action to take is to <a href="https://tinypng.com" target="_blank">compress</a> all images. Heck, you can <a href="https://www.npmjs.com/package/gulp-tinypng" target="_blank">automate</a> image compression! The <code>.jpg</code> file extension is the best file format not named <code>.webp</code>: try <a href="https://webp-converter.com/" target="_blank">converting</a> the files once all browsers <a href="http://www.stucox.com/blog/using-webp-with-modernizr/" target="_blank">support it</a>.
     </p>
@@ -101,7 +101,6 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************ -->
 </article>
 <!-- .....CONTENT-ENDS ////////////////////////// --> 
-<script src="js/swFile.min.js"></script>
 <!-- ************************************************** -->
 <!-- ************************************************** -->
 <?php
