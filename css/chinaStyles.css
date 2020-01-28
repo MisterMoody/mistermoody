@@ -115,7 +115,8 @@ body {
 }
 /**/
 footer  {
-  margin: 4px 0;
+  margin: 0.8em 0 0 0;
+  padding: 8px 0;
   text-align: center;
   font-size: 14px;   
   background-image: linear-gradient(to right, #434343 0%, black 100%);
@@ -251,4 +252,49 @@ ol.alpha {list-style-type: lower-alpha;}
     grid-template-rows: auto;
   }
 }
+/**//****************************************//**/
+
+
+/**//****************************************//**/
+/* Tabbed Interface to Mobile Accordion */
+/* https://codepen.io/mikestreety/pen/yVNNNm*/
+/* Interface Container*/
+.tabs {
+	display: flex;
+	flex-wrap: wrap; 
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 0.8rem 2em;
+	margin-right: 0.22rem;
+	cursor: pointer;
+  background: #444;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  background: #fff;
+}
+.tabs input[type="radio"] {display: none;}
+.tabs input[type="radio"]:checked + label {background: #fff; color: #444;}
+.tabs input[type="radio"]:checked + label + .tab {display: block;}
+.tab h2 {margin-top: -0.44em; background: #ccc; color: #000;}
+@media (max-width: 45em) {
+  .tabs .tab, .tabs label {order: initial;}
+  .tabs label {
+    width: 100%;
+	  padding: 0.8rem 0;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+
 /**//****************************************//**/

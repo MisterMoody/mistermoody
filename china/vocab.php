@@ -26,8 +26,7 @@ include ("../inc/chinaHeader.php");
     <!--<p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>-->
-    <br>
-    <h2>&nbsp;Verbs 动词</h2>
+    <h2>&nbsp;动词 Verbs</h2>
       <aside class="vocabGrid">
         <!--  'A'  -->
         <div class="word">
@@ -729,6 +728,179 @@ include ("../inc/chinaHeader.php");
         </div>
         -->
       </aside>
+    
+    <!--<h2>&nbsp;</h2>
+      <aside class="vocabGrid">
+        
+        <div class="word">
+          <div class="pinyin">&#224;i</div>
+          <div class="hanzi">爱</div>
+          <div class="translation">Love</div>
+        </div>
+      </aside>-->
+  </section>
+  <section>
+    <div class="tabs">
+      <input type="radio" name="tabs" id="verbs" checked="checked">
+      <label for="verbs">&nbsp;动词</label>
+      <div class="tab">
+        <h2>&nbsp;Verbs</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <aside class="vocabGrid">
+
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+        </aside>
+      </div>
+
+      <input type="radio" name="tabs" id="nouns">
+      <label for="nouns">&nbsp;名词</label>
+      <div class="tab">
+        <h2>&nbsp;Nouns</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <aside class="vocabGrid">
+
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+        </aside>
+      </div>
+      
+      <input type="radio" name="tabs" id="adverbs">
+      <label for="adverbs">&nbsp;副词 + 形容词 + 连词</label>
+      <div class="tab">
+        <h2>&nbsp;Adverbs + Adjectives + Conjunctions</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <aside class="vocabGrid">
+
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+        </aside>
+      </div>
+
+      <input type="radio" name="tabs" id="parPrepPron">
+      <label for="parPrepPron">&nbsp;粒子 + 介词 + 代词</label>
+      <div class="tab">
+        <h2>&nbsp;Particles + Prepositions + Pronouns</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <aside class="vocabGrid">
+
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+        </aside>
+      </div>
+      
+      <input type="radio" name="tabs" id="numbers">
+      <label for="numbers">&nbsp;连词 + 数字</label>
+      <div class="tab">
+        <h2>&nbsp;Length Units + Numbers</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <aside class="vocabGrid">
+
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+          <div class="word">
+            <div class="pinyin">&#224;111</div>
+            <div class="hanzi">222</div>
+            <div class="translation">333</div>
+          </div>
+        </aside>
+      </div>
+    </div>
   </section>
   <!-- ************************************************** -->
   <!-- ************************************************** -->
