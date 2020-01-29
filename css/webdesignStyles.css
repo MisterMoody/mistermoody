@@ -13,36 +13,15 @@
 /* ============================================ */
 /* 1a. Global NAVIGATION ====================== */
 /* ============================================ */
-
 header {
-  margin: 0; padding: 0 5em;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  margin: 0; 
+  padding: 0 5em;   /* Aligns with <article> Containers */
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); 
   z-index: 100;
-}
-header.topnav > .active {
-  color: white;
-  /*margin-right: 7.58em;*/  /* Fixed to <body> 'margin' @ min-width 800px */
-}
-fa-home {padding-right: 75px;}
-@media screen and (max-width: 800px) {
-  header {padding: 0 1em;}
-  .fa-home, .fa-bars {color: #fff;}
-}
-
-header {
-  margin: 0;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  z-index: 100;
-}
-header.topnav > .active {
-  color: white;
-  /*margin-right: 7.58em;*/  /* Fixed to <body> 'margin' @ min-width 800px */
-}
-fa-home {
-  padding-right: 75px;
 }
 .fa-home, .fa-bars {color: #fff;}
-@media screen and (max-width: 800px) {}
+@media screen and (max-width: 800px) {header {padding: 0 1em;}}
+/**/
 /* breakpoint in pixels for responsive */
 /* dropdown Menu core scss */
 nav ul {
@@ -60,7 +39,10 @@ nav ul li {
 }
 nav ul li:hover > ul {display: inherit;}
 nav ul li:hover > ul li {display: list-item;}
-nav ul li a {display: block;}
+nav ul li a {
+  display: block; 
+  border-bottom: none;
+}
 nav ul li ul {
   display: none;
   position: absolute;
@@ -73,10 +55,35 @@ nav ul li ul ul {
   left: 100%;
   top: 0;
 }
-
+/* Menu Link Styles */
+/*nav {background: linear-gradient(to right, #434343 0%, black 100%);}*/
+nav ul li:hover {background-color: #888;}
+nav ul li:first-child:hover {background-color: transparent;}
+nav ul li a {
+  color: #fff;
+  font-size: 1.4em;
+  font-variant: small-caps;
+  text-decoration: none;
+  margin: 0;
+  padding: 0.8em; 
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.2); 
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li > a:after {
+  content: ' +';
+  margin-left: 0.124em;
+}
+nav ul li > a:only-child:after {content: '';}
+nav ul li ul li a {
+  font-size: 1em; 
+  padding: 8px 0 8px 1em;
+}
 /* Mobile Responsive */
 @media (max-width: 980px) {
-  nav ul {display: inherit;}
+  nav ul {display: inherit; padding: 0;}
   nav ul:first-child:before {
     font-family: "FontAwesome";
     content: "\f0c9";
@@ -105,48 +112,36 @@ nav ul li ul ul {
   }
   nav ul li ul li ul {left: 0;}
 }
-/* ------------- optional styles ------------ */
-nav {background: linear-gradient(to right, #434343 0%, black 100%);}
-nav ul li:hover {background-color: #888;}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px;
-}
-a:hover {background-color: rgba(0, 0, 0, 0.2);}
-li > a:after {
-  content: ' +';
-  float: right;
-  margin-left: 5px;
-}
-li > a:only-child:after {content: '';}
 /* ******************************************** */
 /* ****Header PERFECTLY Aligned with <body>**** */
+/* ============================================ */
+
+
 /* ============================================ */
 /* 1b. PAGINATION ============================= */
 section.caseCenter {
   text-align: center;
   margin: 0.8em 0 1em 0;
 }
-.caseCenter ul {
+section.caseCenter ul {
   overflow: hidden;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-ul.pagination {text-align: center;}
-ul.pagination li {
+section.caseCenter ul.pagination {text-align: center;}
+section.caseCenter ul.pagination li {
   display: inline-block;
   text-align: center;
 }
-ul.pagination li a {
+section.caseCenter ul.pagination li a {
   color: #000;
   font-weight: 800;
   text-align: center;
   text-decoration: none;
   padding: 0 16px;
 }
-ul.pagination li.active {background-color: #ddd;}
+section.caseCenter ul.pagination li.active {background-color: #ddd;}
 /* ============================================ */
 /* ============================================ */
 
@@ -176,17 +171,26 @@ html {
 /**/
 body {
   height: 100%;
+  margin: 0;
   padding: 0;
 	font-family: 'Raleway', sans-serif;
   letter-spacing: 0.6px;
 }
-article {margin: 0 1em;}
+/**/
+main {}                   /* 'PHP' Container */
+/* Page-Alignment => REQUIRED for Full-Width Images
+   Images 'MUST' be placed 'Outside of Section or Article' */
+section {}                /* 'HTML' Containers */
+aside {}                  /* Container for Full-Width <img>*/
+article {margin: 0 0.4em}   /* Container for 'Content' */
 /**/
 footer  {
-  margin: 4px 0;
+  margin: 0.8em 0 0 0;
+  padding: 8px 0;
   text-align: center;
-  font-size: 14px; 
-  /*color: #838487;*/
+  font-size: 14px;   
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); 
+  color: #fff;
   /*Sticky
   position: fixed;
   left: 0;
@@ -195,11 +199,7 @@ footer  {
   height: 20px;
   text-align: center;*/
 }
-@media all and (min-width: 800px){
-  main {margin: 0 4em;}
-  /* body {display: none;}    HIDE Site on 'PC' */
-  /*article {margin: 0 1.21em;}  Page-Alignment */
-}
+@media all and (min-width: 800px){main {margin: 0 4em;}}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 a {
@@ -289,7 +289,7 @@ ol > ul {
 }
 ol.alpha {list-style-type: lower-alpha;}
 @media all and (min-width: 800px) {  
-  body {margin: 0 5.3em;}
+  main {margin: 0 5.3em;}
   code, p code, details {font-size: 1em;}
   details{font-size: 1.2em;}
   figure {margin: 0;}
