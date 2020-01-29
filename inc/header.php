@@ -28,14 +28,64 @@
   </head>
   <body>
     <!-- ********************************* -->    
-    <!-- // HEADER + Global NAVIGATION *** -->
-    <header class="topnav" id="myTopnav">
-      <a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a>
-      <a href="about">About</a>
-      <a href="portfolio">Portfolio</a>
-      <a href="contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars responsive"></i></a>
-    </header>
+    <!-- // HEADER + Global NAVIGATION *** -->    
+    <header> 
+      <nav>
+        <ul>
+          <li><a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a></li>
+          <!-- About -->
+          <li><a href="about">About</a></li>
+          <!-- Portfolio Folder -->
+          <li><a href="portfolio">Portfolio</a>
+            <ul>
+              <li><a href="webdesign">Web Dev</a>
+                <!--<ul>
+                  <li><a href="">Entry 1</a></li>
+                  <li><a href="">Entry 2</a>
+                    <ul>
+                      <li><a href="">Sub Entry 1</a></li>
+                      <li><a href="">Sub Entry 2</a></li>
+
+                    </ul>
+                  </li>
+                </ul>-->
+              </li>
+              <li><a href="">ESL / TEFL</a></li>
+              <li><a href="china/vocab">中文</a></li>
+            </ul>
+          </li>      
+          <!-- Contact Form -->
+          <li><a href="contact">Contact</a>
+            <!--<ul>
+                <li><a href="">Item 1</a></li>
+              </ul>-->
+          </li>
+          <!-- Extra Folder Container -->
+          <!-- 
+
+        <li><a href="">Articles</a>
+          <ul>
+            <li><a href="">CSS</a></li>
+            <li><a href="">WooCommerce</a></li>
+            <li><a href="">WordPress</a>
+              <ul>
+                <li><a href="">Entry 1</a></li>
+                <li><a href="">Entry 2</a>
+                  <ul>
+                    <li><a href="">Sub Entry 1</a></li>
+                    <li><a href="">Sub Entry 2</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="">PHP</a></li>
+          </ul>
+        </li>
+        -->  
+        </ul>
+      </nav>
+    </header> 
     <!-- ********************************* -->
     <!-- ** // Start of GRID CONTAINER *** -->
     <main>

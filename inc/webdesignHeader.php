@@ -8,12 +8,21 @@
     <meta name="author" content="Ray Moody">
     <meta name="twitter:title" content="Mister_Moody">     
     <meta name="description" content="Web Design Portfolio">
-    <meta name="keywords" content="Mister Moody, ESL, Teacher, Web Design, Web Developer, Louisville, Kentucky">
+    <meta name="keywords" content="Mister Moody, ESL, Teacher, Web Designer, Louisville, Kentucky">
+    <!--  WeChat Formatted MSG
+    <meta itemprop="name" content="share title">
+    <meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
+    <meta name="description" itemprop="description" content="share content">
+    Tutorial: http://open.mobile.qq.com/api/mqq/index#api:setShareInfo
+
+    <!-- Document will be displayed in "application mode" (fullscreen, etc.)
+    <meta name="x5-page-mode" content="app">
+    -->
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
     <!-- [Req. to Add <links> to Subdirectory Files] -->
     <base href="http://localhost:8012/mistermoody/"> 
     <!--  Use this <link> to *GO-LIVE*    
-    <base href="https://mistermoody.com"> -->
+    <base href="https://mistermoody.com">
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->
@@ -25,15 +34,64 @@
   </head>
   <body>
     <!-- ********************************* -->    
-    <!-- // HEADER + Global NAVIGATION *** -->
-    <header class="topnav" id="myTopnav">
-      <a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a>
-      <a href="about">About</a>
-      <a href="portfolio">Portfolio</a>
-      <a href="contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars responsive"></i></a>
-    </header>
+    <!-- // HEADER + Global NAVIGATION *** -->    
+    <header> 
+      <nav>
+        <ul>
+          <li><a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a></li>
+          <!-- About -->
+          <li><a href="about">About</a></li>
+          <!-- Portfolio Folder -->
+          <li><a href="portfolio">Portfolio</a>
+            <ul>
+              <li><a href="webdesign">Web Dev</a>
+                <!--<ul>
+                  <li><a href="">Entry 1</a></li>
+                  <li><a href="">Entry 2</a>
+                    <ul>
+                      <li><a href="">Sub Entry 1</a></li>
+                      <li><a href="">Sub Entry 2</a></li>
+
+                    </ul>
+                  </li>
+                </ul>-->
+              </li>
+              <li><a href="">ESL / TEFL</a></li>
+              <li><a href="china/vocab">中文</a></li>
+            </ul>
+          </li>      
+          <!-- Contact Form -->
+          <li><a href="contact">Contact</a>
+            <!--<ul>
+                <li><a href="">Item 1</a></li>
+              </ul>-->
+          </li>
+          <!-- Extra Folder Container -->
+          <!-- 
+
+        <li><a href="">Articles</a>
+          <ul>
+            <li><a href="">CSS</a></li>
+            <li><a href="">WooCommerce</a></li>
+            <li><a href="">WordPress</a>
+              <ul>
+                <li><a href="">Entry 1</a></li>
+                <li><a href="">Entry 2</a>
+                  <ul>
+                    <li><a href="">Sub Entry 1</a></li>
+                    <li><a href="">Sub Entry 2</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="">PHP</a></li>
+          </ul>
+        </li>
+        -->  
+        </ul>
+      </nav>
+    </header> 
     <!-- ********************************* -->
     <!-- ** // Start of GRID CONTAINER *** -->
     <main>
-
