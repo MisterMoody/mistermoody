@@ -23,8 +23,6 @@
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway">
     <!-- Custom CSS Styles -->   
     <link rel="stylesheet" href="css/grid.css">
-    <!-- Flickity Carousel CDN -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   </head>
   <body>
     <!-- ********************************* -->    
@@ -41,16 +39,10 @@
               <li><a href="webdesign">Web Dev</a>
                 <!--<ul>
                   <li><a href="">Entry 1</a></li>
-                  <li><a href="">Entry 2</a>
-                    <ul>
-                      <li><a href="">Sub Entry 1</a></li>
-                      <li><a href="">Sub Entry 2</a></li>
-
-                    </ul>
-                  </li>
+                  <li><a href="">Entry 2</a></li>
                 </ul>-->
               </li>
-              <li><a href="">ESL / TEFL</a></li>
+              <li><a href="portfolio">ESL / TEFL</a></li>
               <li><a href="china/vocab">中文</a></li>
             </ul>
           </li>      
@@ -60,29 +52,6 @@
                 <li><a href="">Item 1</a></li>
               </ul>-->
           </li>
-          <!-- Extra Folder Container -->
-          <!-- 
-
-        <li><a href="">Articles</a>
-          <ul>
-            <li><a href="">CSS</a></li>
-            <li><a href="">WooCommerce</a></li>
-            <li><a href="">WordPress</a>
-              <ul>
-                <li><a href="">Entry 1</a></li>
-                <li><a href="">Entry 2</a>
-                  <ul>
-                    <li><a href="">Sub Entry 1</a></li>
-                    <li><a href="">Sub Entry 2</a></li>
-
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="">PHP</a></li>
-          </ul>
-        </li>
-        -->  
         </ul>
       </nav>
     </header> 
