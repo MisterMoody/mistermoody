@@ -238,73 +238,118 @@ p.btn {
 /* ============================================ */
 /* 2. TOP-NAVIGATION ========================== */
 /* ============================================ */
-  /* Page ALIGNMENT */
-.topnav {
-  overflow: hidden;
-}
-.topnav a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  margin: 8px 0;
-  padding: 0 0.2em;
-  text-decoration: none;
-  font-size: 1.5em;
-  border-bottom: none;
-}
-.topnav a:first-child {float: right;}
-.topnav a:hover {
-  /*background-color: red;
-  color: black;*/
-	transition-duration: 0.8s;
-}
+
 header {
-  margin: 0 8px;
+  margin: 0; padding: 0;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   z-index: 100;
 }
 header.topnav > .active {
   color: white;
-  margin-right: 7.58em;  /* Fixed to <body> 'margin' @ min-width 800px */
+  /*margin-right: 7.58em;*/  /* Fixed to <body> 'margin' @ min-width 800px */
 }
-.topnav .icon {
-  display: none;
+fa-home {padding-right: 75px;}
+@media screen and (max-width: 800px) {
+  header {padding: 0 1em;}
+  .fa-home, .fa-bars {color: #fff;}
+}
+
+header {
+  margin: 0;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  z-index: 100;
+}
+header.topnav > .active {
+  color: white;
+  /*margin-right: 7.58em;*/  /* Fixed to <body> 'margin' @ min-width 800px */
 }
 fa-home {
   padding-right: 75px;
 }
-@media screen and (max-width: 800px) {
-  .topnav a {font-size: 1em;}
-  .topnav a:first-child {float: left;}
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.fa-home, .fa-bars {color: #fff;}
+@media screen and (max-width: 800px) {}
+/* breakpoint in pixels for responsive */
+/* dropdown Menu core scss */
+nav ul {
+  display: grid;
+  grid-template-columns: 44vw repeat(3, 12.41vw);
+  grid-column-gap: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
 }
-/*Settings for 'FIXED-Header/Nav' on 'Desktop = REQ'*/
-@media screen and (min-width: 800px) {
-  header {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    z-index: 1;
-  }
-  /*Space between Nav and Content */
-  main {margin-top: 3.5em;}
+nav ul li {
+  position: relative;
+  display: inline-block;
 }
-/* ============================================ */
+nav ul li:hover > ul {display: inherit;}
+nav ul li:hover > ul li {display: list-item;}
+nav ul li a {
+  display: block; 
+  border-bottom: none; 
+  font-size: 1.24em;
+}
+nav ul li ul {
+  display: none;
+  position: absolute;
+  /* optional: submenu is same width than parent entry width */
+  min-width: 100%;
+  /* optional: submenu background color */
+  background-color: #aaa; 
+}
+nav ul li ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 980px) {
+  nav ul {display: inherit;}
+  nav ul:first-child:before {
+    font-family: "FontAwesome";
+    content: "\f0c9";
+    font-size: 1.5em;
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-align: right;
+  }
+  nav ul:active li, ul:focus li, ul:hover li {display: list-item;}
+  nav ul li {
+    display: none;
+    background-color: #aaa;
+  }
+  nav ul li ul {
+    position: relative;
+    min-width: auto;
+    display: inherit;
+    border-top: 2px solid #999;
+  }
+  nav ul li ul li {display: block;}
+  nav ul li ul li a {position: relative;}
+  nav ul li ul li a:before {
+    content: '';
+    padding-left: 1.5%;
+  }
+  nav ul li ul li ul {left: 0;}
+}
+/* ------------- optional styles ------------ */
+nav {background: linear-gradient(to right, #434343 0%, black 100%);}
+nav ul li:hover {background-color: #888;}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+}
+a:hover {background-color: rgba(0, 0, 0, 0.2);}
+li > a:after {
+  content: ' +';
+  float: right;
+  margin-left: 5px;
+}
+li > a:only-child:after {content: '';}
+/* ******************************************** */
 
 
 /* ============================================ */
@@ -473,6 +518,7 @@ ul.social {
 /**/
 
 
+
 /* CALL-to-ACTION */
 button.cta {
   display: block;
@@ -487,10 +533,11 @@ button.cta {
   background: #fffff0;
   border: 2px solid #00000f;
   color: #00000f; 
+  transition: background 0.8s;
 }
 button.cta a {border: none;}
 button.cta:hover {
-  background: #00000f;
+  background: #222 radial-gradient(circle, transparent 1%, #111 1%);
   border: 2px solid #fffff0;
   color: #7f7e7e; 
   transition: background 0.4s;
