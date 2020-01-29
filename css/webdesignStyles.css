@@ -82,7 +82,7 @@ nav ul li ul ul {
     content: "\f0c9";
     font-size: 1.5em;
     display: block;
-    padding: 1rem;
+    padding: 0.2em 0;
     color: #fff;
     text-align: right;
   }
@@ -176,11 +176,11 @@ html {
 /**/
 body {
   height: 100%;
-  margin: 0 1em;
   padding: 0;
 	font-family: 'Raleway', sans-serif;
   letter-spacing: 0.6px;
 }
+article {margin: 0 1em;}
 /**/
 footer  {
   margin: 4px 0;
