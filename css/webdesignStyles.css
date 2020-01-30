@@ -21,9 +21,7 @@ header {
 }
 .fa-home, .fa-bars {color: #fff;}
 @media screen and (max-width: 800px) {header {padding: 0 1em;}}
-/**/
-/* breakpoint in pixels for responsive */
-/* dropdown Menu core scss */
+/* Desktop <nav> */
 nav ul {
   display: grid;
   grid-template-columns: 44vw repeat(3, 12.41vw);
@@ -93,11 +91,13 @@ nav ul li ul li a {
     color: #fff;
     text-align: right;
   }
+  nav ul li:first-child:hover {background-color: #888;}
   nav ul:active li, ul:focus li, ul:hover li {display: list-item;}
   nav ul li {
     display: none;
     background-color: #aaa;
   }
+  nav ul li a {padding: 0.2em 0.5em;}
   nav ul li ul {
     position: relative;
     min-width: auto;
@@ -209,7 +209,7 @@ a {
   border-bottom: #000 0.044em dashed;
 }
 a:hover {opacity: 0.7;}
-blockquote {text-align: center;}
+blockquote {margin: -1em 0 1em 0; text-align: center;}
 blockquote code {font-size: 1em;}   /*<code> for Blockquote's*/
 code, p code {
   background: #dddada; 
@@ -305,7 +305,7 @@ ol.alpha {list-style-type: lower-alpha;}
 /* Mobile 2-COL Grid (3-Col on PC) */
 .block {
   width: 100%;
-  margin: 0;
+  margin: -1em 0 1em 0;
   padding: 0;
   display: grid;
   grid-template-rows: repeat(auto, minmax(24px, auto));	

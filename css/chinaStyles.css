@@ -22,9 +22,7 @@ header {
 }
 .fa-home, .fa-bars {color: #fff;}
 @media screen and (max-width: 800px) {header {padding: 0 1em;}}
-/**/
-/* breakpoint in pixels for responsive */
-/* dropdown Menu core scss */
+/* Desktop <nav> */
 nav ul {
   display: grid;
   grid-template-columns: 44vw repeat(3, 12.41vw);
@@ -59,7 +57,6 @@ nav ul li ul ul {
 /* Menu Link Styles */
 /*nav {background: linear-gradient(to right, #434343 0%, black 100%);}*/
 nav ul li:hover {background-color: #888;}
-nav ul li:first-child:hover {background-color: transparent;}
 nav ul li a {
   color: #fff;
   font-size: 1.4em;
@@ -78,14 +75,13 @@ nav ul li > a:after {
   margin-left: 0.124em;
 }
 nav ul li > a:only-child:after {content: '';}
-/*-----*/
 nav ul li ul li a {
   font-size: 1em; 
   padding: 8px 0 8px 1em;
 }
 /* Mobile Responsive */
 @media (max-width: 980px) {
-  nav ul {display: inherit;}
+  nav ul {display: inherit; padding: 0;}
   nav ul:first-child:before {
     font-family: "FontAwesome";
     content: "\f0c9";
@@ -95,11 +91,14 @@ nav ul li ul li a {
     color: #fff;
     text-align: right;
   }
+  nav ul li:first-child:hover {background-color: #888;}
   nav ul:active li, ul:focus li, ul:hover li {display: list-item;}
   nav ul li {
     display: none;
-    background-color: #aaa;
+    background-color: #000; 
+    opacity: 0.8;
   }
+  nav ul li a {padding: 0.2em 0.5em;}
   nav ul li ul {
     position: relative;
     min-width: auto;
@@ -122,8 +121,7 @@ nav ul li ul li a {
 /* ============================================ */
 /* 2. UNIVERSAL BASE STYLES =================== */
 /* ============================================ */
-
-/* Universal Layout Containment */
+/* Layout Containment */
 html {box-sizing: border-box;} 
 *:before, *:after {box-sizing: inherit;} 
 /* Prevent 'User CopynPaste' */
@@ -305,13 +303,13 @@ ol.alpha {list-style-type: lower-alpha;}
 /* Interface Container*/
 .tabs {
 	display: flex;
-	flex-wrap: wrap; 
+	flex-wrap: wrap; justify-content: flex-start;
 }
 .tabs label {
 	order: 1; 
 	display: block;
-	padding: 0.8rem 2em;
-	margin-right: 0.22rem;
+	padding: 0.8rem 1.40em;
+	margin-right: 0.2em;
 	cursor: pointer;
   background: #444;
   color: #fff;
