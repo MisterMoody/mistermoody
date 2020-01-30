@@ -12,9 +12,27 @@ include ("../inc/header.php")
 </section>
   <section class="hideDesktop">
     <article>
-      <!-- Profile Card: Techie + Teacher -->
+      <!-- Social Proof: @ School -->
+      <aside class="imageGrid">
+        <img src="img/westernMS.jpg">
+        <img src="img/cnID.jpg" style="height: 100%;">
+        <img src="img/yungn.jpg" style="height: 100%;">
+        
+        <img src="img/jpnstamp.jpg" style="height: 100%;">
+        <img src="img/brandeisES.jpg">
+
+        <img src="img/clES2.jpg">
+        <img src="img/cleSTEMLab.png">
+        <img src="img/coleridgeES.jpg">
+        
+        <img src="img/jdhs.jpg" style="height: 100%;">
+        <img src="img/GH-Shyrock.jpg">
+        <img src="img/jpnyahata.jpg" style="height: 100%;">
+      </aside>
+      <br>
+      <!-- Profile Card: Hidden b/c BROKE on Mobile <nav> -->
       <aside class="profile__card--Grid">
-        <div class="profile__card">
+        <!--<div class="profile__card">
           <div class="profile__info">
           <div class="rings">
             <div class="outer__ring"></div>
@@ -41,40 +59,21 @@ include ("../inc/header.php")
             </div>
           </div>
         </div>
-        </div>
+        </div>-->
         <p class="profile__card--Paragraph">
           I am currently a substitute teacher with <a href="http://jefferson.kyschools.us" target="_blank">J.C.P.S.</a> KY serving the needs of youth kindergarten through grade 12. Employed since <code>January 2018</code>, I have been awarded <code>100+</code> assignments at <code>42</code> schools where I have facilitated lessons to more than <code>2,700</code> students.
         </p>
         <p class="about__Intro-Paragraph">
-          My career as an educator began while studying at the University of Louisville where I earned a degree in political science. It was here I gained leadership experience through a plethora of opportunities, but it was my role as supervisor serving at-risk youth for a <a href="https://www.cabbagepatch.org/" target="_blank">non-profit</a> that convinced me of my calling: I was 19 years old. 
+          My career as an educator began while studying at the University of Louisville where I earned a degree in political science. It was here I gained leadership experience through a plethora of opportunities, but it was my role serving at-risk youth for a <a href="https://www.cabbagepatch.org/" target="_blank">non-profit</a> that convinced me of my calling: I was 19. 
+        </p>
+        <!-- Career Experience --> 
+        <p class="profile__card--Paragraph">
+          Shortly after graduation, I embarked on a sojourn abroad to teach English as a second language. What was supposed to have been a gap year before enrolling in law school turned into a life altering foreign cultural immersive experience.
+        </p>
+        <p class="profile__card--Paragraph">
+          Life as an emigrant was challenging, yet, as a life-learner having formally studied Francais, Espanol, Hangul, Nihongo and Putonghua, I empathize well with language acquisition struggles learners encounter. Some of the agencies that enabled me to practice my craft include Sogang University, Oxford Seminars, Joongdong High School, YBM Academy, Chien-Shiung Institute of Technology, Tongxiang Middle School, Shanghai Ocean University and Jiaxing College.
         </p>
       </aside>
-      <!-- Social Proof: @ School -->
-      <br>
-      <aside class="imageGrid">
-        <img src="img/westernMS.jpg">
-        <img src="img/cnID.jpg" style="height: 100%;">
-        <img src="img/yungn.jpg" style="height: 100%;">
-        
-        <img src="img/jpnstamp.jpg" style="height: 100%;">
-        <img src="img/brandeisES.jpg">
-
-        <img src="img/clES2.jpg">
-        <img src="img/cleSTEMLab.png">
-        <img src="img/coleridgeES.jpg">
-        
-        <img src="img/jdhs.jpg" style="height: 100%;">
-        <img src="img/GH-Shyrock.jpg">
-        <img src="img/jpnyahata.jpg" style="height: 100%;">
-      </aside>
-      <br>
-      <!-- Career Experience --> 
-      <p class="profile__card--Paragraph">
-        Shortly after graduation, I embarked on a sojourn abroad to teach English as a second language. What was supposed to have been a gap year before enrolling in law school turned into a life altering foreign cultural immersive experience.
-      </p>
-      <p class="profile__card--Paragraph">
-        Life as an emigrant was challenging, yet, as a life-learner having formally studied Francais, Espanol, Hangul, Nihongo and Putonghua, I empathize well with language acquisition struggles learners encounter. Some of the agencies that enabled me to practice my craft include Sogang University, Oxford Seminars, Joongdong High School, YBM Academy, Chien-Shiung Institute of Technology, Tongxiang Middle School, Shanghai Ocean University and Jiaxing College.
-      </p>
       <!-- Social Proof: @ Asia -->
       <br>
       <aside class="imageGrid">
@@ -91,7 +90,7 @@ include ("../inc/header.php")
       </aside>
       <br>      
       <p class="profile__card--Paragraph">
-        My interest in web technologies stems from my participation in <a href="https://codelouisville.org" target="_blank">&#60;code&#62; Louisville</a>, a web dev platform introduces best practices and concepts related to front-end web development. To this end, I can design, develop and deploy a website to specification. Currently doing my part to build the ecosystem, most recently helping organize a local <a href="https://startupweekendlouisville.com/" target="_blank">startup event</a>. Working on an <a href="webdesign/">e-book</a> for folks interested in learning the craft.
+        My interest in web technologies stems from my participation in <a href="https://codelouisville.org" target="_blank">&#60;code&#62; Louisville</a>, a web dev platform that introduces best practices and concepts related to front-end web development. To this end, I can design, develop and deploy a website to specification. Currently doing my part to build the ecosystem, most recently helping organize a local <a href="https://startupweekendlouisville.com/" target="_blank">startup event</a>. Working on an <a href="webdesign/">e-book</a> for folks interested in learning the craft.
       </p>
       <br>
       <figure><img class="mainImage" src="img/startupWKND.jpg"></figure>

@@ -522,7 +522,6 @@ include ("../inc/webdesignHeader.php");
         <div><code> {max-height: value;}</code></div>
         <div><span>// Specify Maximum Content Height</span></div>
       </aside>
-      
       <p>
         The <i>width</i> property is used to specify content width of boxes. <i>min/max-width</i> properties can be applied in the same fashion as that of the height property. The <code>fit-content</code> and <code>min-content</code> keywords can be used to center child elements.
       </p>
@@ -536,18 +535,38 @@ include ("../inc/webdesignHeader.php");
         <div><code> {fit-content: value;}</code></div>
         <div><span>// Center Content Horizontally</span></div>
       </aside>
-      
       <!-- Margin + Padding -->
       <p>
         The <i>Margin</i> property specifies the outside borders of an element. The <i>Padding</i> property specifies the inside borders of an element. Both props accept a single value as a shorthand for top, right, bottom or left sides.
       </p>
-      <aside class="declarations">
+      <aside class="block">
         <div><code>{margin: 4vw; }</code></div>
-        <div><span></span></div>
         <div><code>{padding: 8px; }</code></div>
-        <div><span></span></div>
       </aside>
-        
+      <!-- Clip Path -->
+      <p>
+        The <i>clip-path</i> property can be used to create shapes that display specific areas of an areas content. It is mostly used with images, but can be applied to text elements as well. 
+      </p>
+      <blockquote>
+        <div><code>clip-path: polygon();</code></div>
+      </blockquote>
+      <p>
+        All shapes are formed using different values and points of reference.  Use this clip-path <a href="https://bennettfeely.com/clippy/" target="_blank">maker</a> to create common shapes and to tinker with. 
+      </p>
+      <aside class="declarations">
+        <div><code> {clip-path: inset(5% 20% 15% 10%);}</code></div>
+        <div><span>// Inset</span></div>
+        <div><code> {clip-path: polygon(50% 0%, 0% 100%, 100% 100%);}</code></div>
+        <div><span>// Triangle</span></div>
+        <div><code> {clip-path: circle(50% at 50% 50%);}</code></div>
+        <div><span>// Circle</span></div>
+        <div><code> {clip-path: ellipse(25% 40% at 50% 50%);
+}</code></div>
+        <div><span>// Ellipse</span></div>
+      </aside>
+      <p>
+        All values represent basic-shape values to effectively create shapes. The <code>inset()</code> marks the top, left, bottom and right points to form lines that can shape rectangles and squares, or create a roundness on a shape. The <code>polygon()</code> value can be modified to create extravagant shapes. 
+      </p>
       <!-- Position + top/right/bottom/right + Z-Index -->
       <h4>&nbsp;Positional Placement</h4>
       <p>There are several ways to position elements: techniques explained herein highlight but a few.</p>
@@ -578,10 +597,13 @@ include ("../inc/webdesignHeader.php");
         
       <!-- Position + Z-Index -->
       <p>
-        The <i>position</i> property offers greater control over how an element is positioned as it can be used to re-position an element from its initial position. It accepts one of five keywords to provide instructions on how and where an element is placed. By default, an element will flow in a natural order amongst fellows. 
+        The <i>position</i> property offers greater control over how and where an element is positioned as it can be used to re-position an element from its initial position. It accepts one of five keywords to provide instructions on how and where an element is placed. By default, an element will flow in a natural order amongst fellows. 
       </p>
       <p>
-        The <code>relative</code> keyword specifies that an element is positioned relative to other elements while the <code>absolute</code> key is positioned relative to its nearest ancestor. The <code>fixed</code> key positions elements at a specified point within the viewport: a fixed element will never shift positions. The <code>sticky</code> key will position an element relative to other elements until a specified viewport position is met. These keys work in conjunction with <i>offset properties</i> to set the precise placement of an element.
+        The <code>relative</code> keyword specifies that an element is positioned relative to other elements while the <code>absolute</code> key is positioned relative to its nearest ancestor. For example, to position an element #px below its parent, apply <code>{position: relative;}</code> with <code>{top: #px;}</code>. Position an element flush to the bottom using <code> {position: absolute;}</code> with <code> {bottom: 0px;}</code> and <code> {right: 0px;}</code>.
+      </p>
+      <p>
+        The <code>fixed</code> key positions elements at a specified point within the viewport: a fixed element will never shift positions. The <code>sticky</code> key will position an element relative to other elements until a specified viewport position is met. These keys work in conjunction with <i>offset properties</i> to set the precise placement of an element.
       </p>
       <aside class="declarations">
         <div><code>{position: &nbsp;;}</code></div>
@@ -597,11 +619,9 @@ include ("../inc/webdesignHeader.php");
         <div><code>{&nbsp;: sticky;}</code></div>
         <div><span>// Scroll to a Fixed Position</span></div>
       </aside>
-      
       <aside class="declarations">
         <div><code>{top / right / bottom / right: value;}</code></div>
       </aside>
-      
       <p>
         The <i>z-index</i> property controls the vertical stacking order of elements that overlap. This property only impacts non-static positioned elements. 
       </p>

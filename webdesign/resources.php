@@ -137,6 +137,8 @@ include ("../inc/webdesignHeader.php");
           <span><a target="_blank" href="http://tabulator.info/">Table Generator</a></span>
 
           <span><a target="_blank" href="https://htmlstrip.com/html-div-table-generator/">Table Generator</a></span>
+
+          <span><a target="_blank" href="https://bennettfeely.com/clippy/">Clip-Path Maker</a></span>
         </div>
       </div>
       <div class="resStyles">

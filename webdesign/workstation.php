@@ -8,7 +8,7 @@ include ("../inc/webdesignHeader.php");
 
 
 <!-- // CONTENT-BEGINS ////////////////////////// -->
-<article id="top">
+<article>
   <!-- // Introduction -->
   <section>
     <h1 class="title">Workstation</h1>
