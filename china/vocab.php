@@ -938,364 +938,304 @@ include ("../inc/chinaHeader.php");
         <!-- Adjectives -->
         <aside class="vocabGrid">
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
-          </div>
-          <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">ai</div>
+            <div class="hanzi">矮</div>
+            <div class="translation">short</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">anjing</div>
+            <div class="hanzi">安静</div>
+            <div class="translation">quiet</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">bai</div>
+            <div class="hanzi">白</div>
+            <div class="translation">white</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">bao</div>
+            <div class="hanzi">包</div>
+            <div class="translation">full</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">chang</div>
+            <div class="hanzi">长</div>
+            <div class="translation">long</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">cuo</div>
+            <div class="hanzi">错</div>
+            <div class="translation">wrong</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">cha</div>
+            <div class="hanzi">差</div>
+            <div class="translation">bad</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
+            <div class="pinyin">congming</div>
             <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="translation">intelligent</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">da</div>
+            <div class="hanzi">大</div>
+            <div class="translation">big</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">duan</div>
+            <div class="hanzi">短</div>
+            <div class="translation">short</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">e</div>
+            <div class="hanzi">饿</div>
+            <div class="translation">hungry</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">fangbian</div>
+            <div class="hanzi">方便</div>
+            <div class="translation">convenient</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">gao(xing)</div>
+            <div class="hanzi">高(兴)</div>
+            <div class="translation">tall (happy)</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">gui</div>
+            <div class="hanzi">贵</div>
+            <div class="translation">expensive</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">ganjing</div>
+            <div class="hanzi">干净</div>
+            <div class="translation">clean</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">hao</div>
+            <div class="hanzi">好</div>
+            <div class="translation">good</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">hei</div>
+            <div class="hanzi">黑</div>
+            <div class="translation">black</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">hong</div>
+            <div class="hanzi">红</div>
+            <div class="translation">red</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">huai</div>
+            <div class="hanzi">坏</div>
+            <div class="translation">bad</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">huang</div>
+            <div class="hanzi">黄</div>
+            <div class="translation">yellow</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">jin</div>
+            <div class="hanzi">近</div>
+            <div class="translation">nearby</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">jiandan</div>
+            <div class="hanzi">简单</div>
+            <div class="translation">simple</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">jiankang</div>
+            <div class="hanzi">健康</div>
+            <div class="translation">healthy</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">jiu</div>
+            <div class="hanzi">久</div>
+            <div class="translation">a long time</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">jiu</div>
+            <div class="hanzi">旧</div>
+            <div class="translation">old, used</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">kuai(le)</div>
+            <div class="hanzi">快(乐)</div>
+            <div class="translation">fast (happy)</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">ke</div>
+            <div class="hanzi">渴</div>
+            <div class="translation">thirsty</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">leng</div>
+            <div class="hanzi">冷</div>
+            <div class="translation">cold</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">lei</div>
+            <div class="hanzi">累</div>
+            <div class="translation">tired</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">lan</div>
+            <div class="hanzi">蓝</div>
+            <div class="translation">blue</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">lao</div>
+            <div class="hanzi">老</div>
+            <div class="translation">old age</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">lv</div>
+            <div class="hanzi">绿</div>
+            <div class="translation">green</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">man</div>
+            <div class="hanzi">慢</div>
+            <div class="translation">slow</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">mang</div>
+            <div class="hanzi">忙</div>
+            <div class="translation">manyi</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">nan</div>
+            <div class="hanzi">难</div>
+            <div class="translation">difficult</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">nanguo</div>
+            <div class="hanzi">难过</div>
+            <div class="translation">sad</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">nianqing</div>
+            <div class="hanzi">年轻</div>
+            <div class="translation">young</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">piaoliang</div>
+            <div class="hanzi">漂亮</div>
+            <div class="translation">beautiful</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">pianyi</div>
+            <div class="hanzi">便宜</div>
+            <div class="translation">cheap</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">pang</div>
+            <div class="hanzi">胖</div>
+            <div class="translation">fat</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">qing</div>
+            <div class="hanzi">晴</div>
+            <div class="translation">sunny</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">qiguai</div>
+            <div class="hanzi">奇怪</div>
+            <div class="translation">strange</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">qingchu</div>
+            <div class="hanzi">清楚</div>
+            <div class="translation">clear</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">re</div>
+            <div class="hanzi">热</div>
+            <div class="translation">hot</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">renzheng</div>
+            <div class="hanzi">认证</div>
+            <div class="translation">serious</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">rongyi</div>
+            <div class="hanzi">容易</div>
+            <div class="translation">easy</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">shao</div>
+            <div class="hanzi">少</div>
+            <div class="translation">few, little</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">shou</div>
+            <div class="hanzi">瘦</div>
+            <div class="translation">thin</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">shufu</div>
+            <div class="hanzi">舒服</div>
+            <div class="translation">comfortable</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">teng</div>
+            <div class="hanzi">疼</div>
+            <div class="translation">pain</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">tian</div>
+            <div class="hanzi">甜</div>
+            <div class="translation">sweet</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">turan</div>
+            <div class="hanzi">突然</div>
+            <div class="translation">sudden</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">xiao</div>
+            <div class="hanzi">小</div>
+            <div class="translation">small, little</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">xin(xian)</div>
+            <div class="hanzi">新(鲜)</div>
+            <div class="translation">new (fresh)</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">xiangtong</div>
+            <div class="hanzi">相同</div>
+            <div class="translation">same</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">yin</div>
+            <div class="hanzi">阴</div>
+            <div class="translation">cloudy</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">yuan</div>
+            <div class="hanzi">远</div>
+            <div class="translation">far</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">yiyang</div>
+            <div class="hanzi">一样</div>
+            <div class="translation">same</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">yiban</div>
+            <div class="hanzi">一般</div>
+            <div class="translation">generally</div>
           </div>
           <div class="word">
-            <div class="pinyin">111</div>
-            <div class="hanzi">222</div>
-            <div class="translation">333</div>
+            <div class="pinyin">youming</div>
+            <div class="hanzi">有名</div>
+            <div class="translation">well-known</div>
           </div>
         </aside>
       </div>
