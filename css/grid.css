@@ -5,19 +5,16 @@
 /*
       1.  Global NAVIGATION + Pagination
       2.  UNIVERSAL Styles
-      3.  Grids              
-      4.  Images + Buttons                      */
+      3.  Grids                                 */
 /* ============================================ */
 
 
 /* ============================================ */
 /* 1a. Global NAVIGATION ====================== */
-/* ============================================ */
-
 header {
   margin: 0; 
   padding: 0 5em;   /* Aligns with <article> Containers */
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); 
   z-index: 100;
 }
 .fa-home, .fa-bars {color: #fff;}
@@ -42,6 +39,7 @@ nav ul li a {
   display: block;
   border-bottom: none;
 }
+/* Sub-Menu */
 nav ul li ul {
   display: none;
   position: absolute;
@@ -55,7 +53,6 @@ nav ul li ul ul {
 /* Menu Link Styles */
 /*nav {background: linear-gradient(to right, #434343 0%, black 100%);}*/
 nav ul li:hover {background-color: #888;}
-nav ul li:first-child:hover {background-color: transparent;}
 nav ul li a {
   color: #fff;
   font-size: 1.4em;
@@ -80,7 +77,7 @@ nav ul li ul li a {
 }
 /* Mobile Responsive */
 @media (max-width: 980px) {
-  nav ul {display: inherit;}
+  nav ul {display: inherit; padding: 0;}
   nav ul:first-child:before {
     font-family: "FontAwesome";
     content: "\f0c9";
@@ -112,9 +109,9 @@ nav ul li ul li a {
   }
   nav ul li ul li ul {left: 0;}
 }
-/* ******************************************** */
 /* ****Header PERFECTLY Aligned with <body>**** */
 /* ============================================ */
+
 
 /* ============================================ */
 /* ========== UNIVERSAL BASE STYLES =========== */
@@ -141,11 +138,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #282828;
 	font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.6px;
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-  /* Premium Dark:   background: linear-gradient(to right, #434343 0%, black 100%);}*/
+  letter-spacing: 0.6;
 }
 /**/
 main {}                   /* 'PHP' Container */
@@ -153,14 +148,14 @@ main {}                   /* 'PHP' Container */
    Images 'MUST' be placed 'Outside of Section or Article' */
 section {}                /* 'HTML' Containers */
 aside {}                  /* Container for Full-Width <img>*/
-article {margin: 0 1em}   /* Container for 'Content' */
+article {margin: 0 1em}   /* Try {0 0.4em} Container for 'Content' */
 /**/
 footer  {
   margin: 0.8em 0 0 0;
   padding: 8px 0;
   text-align: center;
   font-size: 14px;   
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); 
   color: #fff;
   /*Sticky
   position: fixed;
@@ -173,24 +168,92 @@ footer  {
 @media all and (min-width: 800px){main {margin: 0 4em;}}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-h1, h2, h3, h4, h5, h6 {text-align: center;}
-p { 
-  font-size: 0.94em; /*0.88em;*/
-  line-height: 1.4;
-}
+/* Link + BTN Styles*/
 a {
   text-decoration: none;
   color: inherit;
   /*  Text-Decoration Color + Underline Offset + TD Thickness*/
-  border-bottom: #ccc 0.088em dashed;
+  border-bottom: #424242 0.088em dashed;
 }
 a:hover {opacity: 0.7;}
-code {color: #7f7e7e;}
-ul {
-  list-style-type: none; 
-  /*margin: 0; 
-  padding: 0;*/
+  /* Ripple-Effect */
+a.btn {
+  border: none;
+  border-radius: 2px;
+  margin: 0.4em 0; 
+  padding: 0.44em 0.88em;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  color: #222000;
+  background-color: #000;
+  box-shadow: 0 0 4px #ddd;
+  outline: none;
 }
+.btn {
+  background-position: center;
+  transition: background 0.8s;
+}
+.btn:hover {
+  background: #222 radial-gradient(circle, transparent 1%, #111 1%) center/15000%;
+}
+.btn:active {
+  background-color: #333;
+  background-size: 100%;
+  transition: background 0s;
+}
+p.btn {
+  height: 100%;
+  text-align: center;
+  border: 2px solid #000;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+address {
+  margin: 0 0 0.4em 0;
+  color: red;
+  font-size: 0.6em;
+  font-family: cursive;
+  text-align: center;
+}
+blockquote {margin: -1em 0 1em 0; text-align: center;}
+blockquote code {font-size: 1em;}   /*<code> for Blockquote's*/
+code, p code {
+  background: #ddd; 
+  border-radius: 5px;
+  color: #222000; /* Try #7f7e7e; */
+  font-family: monospace;
+  font-size: 0.84em;
+  font-weight: 600;
+  letter-spacing: .8;
+}
+.glossary div code {font-size: 1.2em;}  /*<code> for Resources Page*/
+details {margin: 0 4px; font-size: 0.8em;}
+dialog::backdrop {
+  background: rgba(255,0,0,.25);
+}
+figure {margin: 0; padding: 0;}
+figcaption {
+  font-size: 0.80em;
+  font-style: italic;
+  text-align: center;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+h1 {
+  font-size: calc(1.2rem + 2.4vw);
+} 
+.title {text-align: center;}
+h1, h2, h3, h4, h5, h6 {
+  color: #222000;
+  font-weight: bolder;
+  font-variant: small-caps;
+  text-align: center;
+  text-shadow: 0 2px #fff;    /* Etched Titles */
+}
+h2, h3, h4, h5, h6 {background-color: #ddd; margin-bottom: -0.44em;}
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
 hr {
   background-image: linear-gradient(to right, rgba(10, 9, 9, 0.0), rgba(10, 9, 9, 0.5), rgba(10, 9, 9, 0.0));
   border: 0;
@@ -200,7 +263,7 @@ hr {
   overflow: visible;
   text-align: center;
 }
-hr:after { /*rgba(255, 0, 0, 0.8)*/
+hr:after { 
   background: rgba(192, 192, 192, 0.6);
   content: ' \00A7';
   border: 1px dotted rgba(10, 9, 9, 0.7);
@@ -211,22 +274,71 @@ hr:after { /*rgba(255, 0, 0, 0.8)*/
   position: relative;
   top: -0.7em;
 }
+i {
+  color: #222000;
+  font-variant: small-caps;
+  font-weight: bold;
+}   /* Highlights 'Terminology' */
+p, i, mark, summary { 
+  font-size: calc(0.96rem + 0.02vw);  /* Try 0.94em or 0.88em */
+  line-height: 1.248; /* Try 1.4*/
+}  
+p, ol {color: #444;}    /* 'Dim' TEXT-Color Styles */
+ol {
+  font-size: 0.88em;
+  margin-left: 0;
+  padding-left: 1.2em;
+} /* <ol> used for 'List of Contents' */
+ol > ul {
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+ol.alpha {list-style-type: lower-alpha;}
+ul {
+  list-style-type: none; 
+  /*margin: 0; 
+  padding: 0;*/
+}
 @media all and (min-width: 800px) {  
   main {margin: 0 5.3em;}
-  p {font-size: 1.1em;}
+  /**/  
+  address {
+    margin: 0 0 2em 0;
+    font-size: 0.6em;
+    font-family: cursive;
+    text-align: center;
+  }
+  .btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 250px;
+    height: 44px;
+  }
+  code, p code, details {font-size: 1em;}
+  details{font-size: 1.2em;}
+  figure {margin: 0;}
+  h2, h3, h4, h5, h6 {margin-bottom: 0.2em;}
+  p {font-size: 1.1em; margin: 0.25em 0.55em 0.25em 0.25em;}
+  ol {
+    font-size: 1em; 
+    padding-left: 80px;
+  }
 }
-/**/
-/**/
-/* Images ==== */
-/*img {
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/*  'Un-Hide' this code IF webdesign/ Article Images Look Bad
+img {
   display: block;
   max-width: 100%;
-}*/
+}
+*/
 /* Custom */
 .mainImage {
   max-width: 100%;
   width: 100%;
   height: auto;
+  /* Try margin: 0; */
   /*max-width: 62vw;
   max-height: 100%;
   display: block;
@@ -258,19 +370,21 @@ figcaption {
   text-align: center;
 }
 /**/
-address {
-  margin: 0 0 0.4em 0;
-  color: red;
-  font-size: 0.6em;
-  font-family: cursive;
-  text-align: center;
-}
 @media all and (min-width: 800px) { 
-  .mainImage {
+  .mainImage {  /*Center Image*/
     width: 35vw;
     height: 100%;
     max-height: 62vh; 
   }
+  /*
+  Use these Styles if .mainImage Do NOT Look Good for webdesign/ Articles
+    .mainImage { 
+    display: block;
+    margin: 1em auto;
+    max-height: 23.23em;
+    max-width: 32.32em;
+  }
+  */
   .imgL {
     float: left;
     margin: 5px 20px 0 0;
@@ -286,64 +400,13 @@ address {
     /*border: 2px solid #c41e3a;*/
     border-radius: 2px;
   }
-  /**/
-  address {
-    margin: 0 0 2em 0;
-    color: red;
-    font-size: 0.6em;
-    font-family: cursive;
-    text-align: center;
-  }
 }
-/**/
-/**/
-/* Buttons ==== */
-/* 'Ripple-Effect' Button */
-.btn {
-  background-position: center;
-  transition: background 0.8s;
-}
-.btn:hover {
-  background: #222 radial-gradient(circle, transparent 1%, #111 1%) center/15000%;
-}
-.btn:active {
-  background-color: #333;
-  background-size: 100%;
-  transition: background 0s;
-}
-a.btn {
-  border: none;
-  border-radius: 2px;
-  margin: 0.4em 0; 
-  padding: 0.44em 0.88em;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-  color: white;
-  background-color: #000;
-  box-shadow: 0 0 4px #fff;
-  outline: none;
-}
-p.btn {
-  height: 100%;
-  text-align: center;
-  border: 2px solid #000;
-}
-@media only screen and (min-width: 800px) {
-  .btn {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 250px;
-    height: 44px;
-  }
-}
-/* ============================================ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 /* ============================================ */
-/* 3. INDEX.php =============================== */
-/* ============================================ */
+/* mistermoody/INDEX.php ====================== */
   /*Layout Grid*/
 .homepage {
   margin: 0; 
@@ -351,6 +414,7 @@ p.btn {
   display: grid;
   grid-template-rows: 20.20em 3em repeat(3, 2.8em);
   grid-row-gap: 0.4em;
+  text-align: center;
 } 
   /* IMG: Teaching a Class */
 .homepage__Image {
@@ -389,10 +453,8 @@ ul.social {
 
 
 /* ============================================ */
-/* 4. ABOUT/ ================================== */
-/* ============================================ */
-
-/* about/INDEX */
+/* mistermoody/ABOUT/ ========================= */
+  /* about/INDEX */
 .profile__card--Grid {
   display: grid;
   grid-template-rows: min-content max-content;
@@ -411,7 +473,7 @@ ul.social {
   border: 1px solid #444;
   margin: 0;
   padding: 1em;
-  box-shadow: 0px 0px 3px 1px #00000f, inset 0px 0px 3px 1px #fffff0;
+  box-shadow: 0px 0px 3px 1px #00000f, inset 0px 0px 3px 1px green;
 }
 .profile__info {display: flex;}
 .profile__info .rings {
@@ -458,7 +520,6 @@ ul.social {
   from {transform: rotate(0deg);}
   to {transform: rotate(-360deg);}
 }
-/**/
 .profile__info .rings img {
   width: 125px; 
   height: 125px;
@@ -470,7 +531,7 @@ ul.social {
 /**/
 .profile__info .profile__description {
   flex-basis: 68%;
-  color: #fff;
+  color: green;
   letter-spacing: 1px;
   font-variant: small-caps;
 }
@@ -488,7 +549,6 @@ ul.social {
   letter-spacing: 0.4; 
   line-height: 1.5;
 }
-
 @media all and (min-width: 1200px) {
   .profile__card--Grid {
     display: grid;
@@ -504,59 +564,8 @@ ul.social {
   }
   .profile__can {font-size: 1.2em;}
 }
-/**/
-
-
-
-/* CALL-to-ACTION */
-button.cta {
-  display: block;
-  margin: 0.63em auto;
-  max-width: 100%;
-  height: 44px;
-  background-position: center;
-  border-radius: 4px;
-  font-weight: 800;
-  font-size: 1.2em;
-  font-variant:  small-caps;
-  background: #fffff0;
-  border: 2px solid #00000f;
-  color: #00000f; 
-  transition: background 0.8s;
-}
-button.cta a {border: none;}
-button.cta:hover {
-  background: #222 radial-gradient(circle, transparent 1%, #111 1%);
-  border: 2px solid #fffff0;
-  color: #7f7e7e; 
-  transition: background 0.4s;
-}
-button.cta a:hover {
-  text-decoration: none;
-  color: #7f7e7e;
-  outline: none;  
-}
-button.cta:active {
-  background-color: #333;
-  background-size: 100%;
-  transition: background 0s;
-}
-.temp__btn-hold {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: max-content auto;
-  grid-column-gap: 1em;
-  justify-content: space-around;
-}
-@media all and (min-width: 1200px) {
-  button.cta {
-    width: 400px;
-    height: 53px;
-    font-weight: 800;
-    font-size: 1.6em;
-  }
-}
-
+/*
+*/
 /*Text Styles = Check to See if IN-USE */
 .about__Intro {
   margin: 0.4422em;
@@ -618,9 +627,11 @@ Create 2x Images every 4 Elements (or replace with 3/8)
 .gallery > .galImg:nth-child(4n) { g-c: span 2; g-r: span 2; } 
 
 */
+/* ============================================ */
+
 /************************************************* /
 
-/* about/RESUME */
+  /* about/RESUME */
   /* Scroll-Snap Container */
 article.wrapper {
   /*margin: 0;
@@ -661,8 +672,6 @@ article.wrapper {
   flex-direction: column;
 /* min-height: 100%; */
 }
-/**/
-/**/
   /* Resume Grid */
 .resumeGrid {
   width: 100%;
@@ -746,7 +755,7 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   float: left;
   position: absolute;
   text-shadow: none;
-  color: #fff;
+  color: #222000;
   font-weight: 700;
 }
 .PercentText {
@@ -754,7 +763,7 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   padding-right: 15px;
   float: right;
   text-shadow: none;
-  color: #fff;
+  color: #222000;
 }
 .Skill-Area, .PercentText {margin-top: -0.1em;}
 .skillSpecs {
@@ -836,8 +845,8 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   align-content: center;
   justify-content: center;
   font-variant: small-caps;
-  box-shadow: 0px 0px 1px white;  
-  color: white;
+  box-shadow: 0px 0px 1px green;  
+  color: green;
 }
 .cur__TopicStyle h3 i {opacity: 0.4;}
 .cur__TopicStyle p {text-align: center;}
@@ -913,7 +922,7 @@ div.chapter__Date_Tag {
 }
 .chapter__Tags div {
   font-size: 0.8em;
-  border: 1px solid #fff;
+  border: 1px solid #424242;
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px  rgba(255,255,255,0.8);
 }
@@ -959,13 +968,14 @@ div.chapter__Date_Tag {
     font-size: 0.8em;
   }
 }
-
 /* ============================================ */
 /* ============================================ */
 
 
-/* ============================================ */
-/* #. CONTACT FORM ============================ */
+/**//******************************************//**/
+/*                  COMPONENTS                    */
+/**//******************************************//**/
+/* #. CONTACT FORM ============================== */
 .contactGrid {
   margin-top: -1em;
   margin-bottom: auto;
@@ -985,15 +995,15 @@ input, textarea{
   font-size: 1em;
 	border-radius: 4px;
   color: #444;
-	border: solid 1px #fff;
+	border: solid 1px #424242;
 	border-radius: 4px;
   padding: 1vmax 0;
 }
 textarea {height: 33.55vh;}
 #submit_button {
 	border-radius: 4px;
-  background-color: #3a3a3a;
-  color: #fff;
+  background-color: #ddd;
+  color: #424242;
 	font-weight: bold;
   font-size: 1em;
   transition-duration: .5s;
@@ -1004,8 +1014,9 @@ textarea {height: 33.55vh;}
 }
 #submit_button:hover {
   background-color: #1a1a1a;
-  border: 1px solid #fff;
+  border: 1px solid #424242;
   box-shadow: 2px 2px 20px #000;
+  color: #fff;
   transition-duration: .5s;  
 }
 label.required:after {
@@ -1024,16 +1035,65 @@ label.required:after {
     margin: 16px 30%;
   }
 }
-/* ============================================ */
-
+/**//******************************************//**/
+/**//******************************************//**/
+/* CALL-to-ACTION */
+button.cta {
+  display: block;
+  margin: 0.63em auto;
+  max-width: 100%;
+  height: 44px;
+  background-position: center;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 1.2em;
+  font-variant:  small-caps;
+  background: #ddd;
+  border: 2px solid #00000f;
+  color: #00000f; 
+  transition: background 0.8s;
+}
+button.cta a {border: none;}
+button.cta:hover {
+  background: #222 radial-gradient(circle, transparent 1%, #111 1%);
+  border: 2px solid #424242;
+  color: #7f7e7e; 
+  transition: background 0.4s;
+}
+button.cta a:hover {
+  text-decoration: none;
+  color: #7f7e7e;
+  outline: none;  
+}
+button.cta:active {
+  background-color: #333;
+  background-size: 100%;
+  transition: background 0s;
+}
+.temp__btn-hold {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: max-content auto;
+  grid-column-gap: 1em;
+  justify-content: space-around;
+}
+@media all and (min-width: 1200px) {
+  button.cta {
+    width: 400px;
+    height: 53px;
+    font-weight: 800;
+    font-size: 1.6em;
+  }
+}
+/**//******************************************//**/
+/**//******************************************//**/
 /* Animation, Transition + Transforms */
 .fadeIn {  animation: fadeIn ease 8.8s;}
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
-
+/**//******************************************//**/
 /**//******************************************//**/
 /*Hide on Mobile >> Display in Desktop*/
 .hideMobile, span.hideMobile {display: none;}

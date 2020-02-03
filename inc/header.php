@@ -9,6 +9,8 @@
     <meta name="twitter:title" content="Mister_Moody">     <!-- Link to Twitter -->
     <meta name="description" content="Official Site for Mister Moody">
     <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
+    <!-- Status Bar Theme -->
+    <meta name="theme-color" content="#000">
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
     <!-- [Req. to Add <links> to Subdirectory Files] -->
     <base href="http://localhost:8012/mistermoody/">

@@ -9,6 +9,8 @@
     <meta name="twitter:title" content="Mister_Moody">     <!-- Link to Twitter -->
     <meta name="description" content="Official Site for Mister Moody">
     <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
+    <!-- Status Bar Theme -->
+    <meta name="theme-color" content="#000">
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
     <!-- [Req. to Add <links> to Subdirectory Files] -->
     <base href="http://localhost:8012/mistermoody/">
@@ -23,6 +25,36 @@
     <link rel="stylesheet" href="css/grid.css">
   </head>
   <body>
+    <!-- ********************************* -->    
+    <!-- // HEADER + Global NAVIGATION *** -->     
+    <header> 
+      <nav>
+        <ul>
+          <li><a href="index" class="active"><i class="fa fa-home"></i> Mister Moody</a></li>
+          <!-- About -->
+          <li><a href="about">About</a></li>
+          <!-- Portfolio Folder -->
+          <li><a href="portfolio">Portfolio</a>
+            <ul>
+              <li><a href="webdesign">Web Dev</a>
+                <!--<ul>
+                  <li><a href="">Entry 1</a></li>
+                  <li><a href="">Entry 2</a></li>
+                </ul>-->
+              </li>
+              <li><a href="portfolio">esl / tefl</a></li>
+              <li><a href="china/vocab">中文</a></li>
+            </ul>
+          </li>      
+          <!-- Contact Form -->
+          <li><a href="contact">Contact</a>
+            <!--<ul>
+                <li><a href="">Item 1</a></li>
+              </ul>-->
+          </li>
+        </ul>
+      </nav>
+    </header> 
     <!-- ********************************* -->
     <!-- ** // Start of GRID CONTAINER *** -->
     <main>
