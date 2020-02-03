@@ -80,14 +80,13 @@ nav ul li ul li a {
 }
 /* Mobile Responsive */
 @media (max-width: 980px) {
-  header {height: 2.4em;}
   nav ul {display: inherit;}
   nav ul:first-child:before {
     font-family: "FontAwesome";
     content: "\f0c9";
     font-size: 1.5em;
     display: block;
-    padding: 0;
+    padding: 0.4884em 0;
     color: #fff;
     text-align: right;
   }

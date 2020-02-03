@@ -87,7 +87,7 @@ nav ul li ul li a {
     content: "\f0c9";
     font-size: 1.5em;
     display: block;
-    padding: 0.2em 0;
+    padding: 0.4884em 0;
     color: #fff;
     text-align: right;
   }
@@ -191,7 +191,7 @@ figcaption {
   font-style: italic;
   text-align: center;
 }
-.title {text-align: center;}
+.title {text-align: center; margin-bottom: -0.44em;}
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-weight: bolder;
@@ -303,13 +303,13 @@ ol.alpha {list-style-type: lower-alpha;}
 /* Interface Container*/
 .tabs {
 	display: flex;
-	flex-wrap: wrap; justify-content: flex-start;
+	flex-wrap: wrap; 
 }
 .tabs label {
 	order: 1; 
 	display: block;
-	padding: 0.8rem 1.40em;
-	margin-right: 0.2em;
+	padding: 0.8rem 1.8em;
+	margin: 0 0.3em 0.3em 0;
 	cursor: pointer;
   background: #444;
   color: #fff;
