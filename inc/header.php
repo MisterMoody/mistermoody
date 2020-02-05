@@ -11,10 +11,20 @@
     <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
     <!-- Status Bar Theme -->
     <meta name="theme-color" content="#000">
+    <!--  WeChat Formatted MSG
+    <meta itemprop="name" content="share title">
+    <meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
+    <meta name="description" itemprop="description" content="share content">
+    Tutorial: http://open.mobile.qq.com/api/mqq/index#api:setShareInfo
+
+    <!-- Document will be displayed in "application mode" (fullscreen, etc.)
+    <meta name="x5-page-mode" content="app">
+    -->
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
-    <!-- [Req. to Add <links> to Subdirectory Files] -->
-    <base href="http://localhost:8012/mistermoody/">
-    <!--  Use this <link> to *GO-LIVE*  <base href="https://mistermoody.com">--> 
+    <!-- [Req. to Add <links> to Subdirectory Files] 
+    <base href="http://localhost:8012/mistermoody/"> --> 
+    <!--  Use this <link> to *GO-LIVE* -->  
+    <base href="https://mistermoody.com"> 
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->
