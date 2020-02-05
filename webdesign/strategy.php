@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Content Strategy by Ray Moody";
 $page = "Strategy";
-include ("../inc/webdesignHeader.php");
+include ("../inc/header.php");
 ?>
 <!-- ************************************************** -->
 <!-- ******************* <<STRATEGY>> ***************** -->
@@ -10,7 +10,7 @@ include ("../inc/webdesignHeader.php");
 <article>
   <!-- // Introduction -->
   <section>
-    <h1 class="title">Content Strategy</h1>
+    <h1>Content Strategy</h1>
     <figure>
       <img class="mainImage" src="img/puzzle2.jpg"/>
       <figcaption>There will be Challenges</figcaption>
@@ -29,7 +29,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 1: Brainstorm -->
   <section>
-    <h2>&nbsp;Brainstorm</h2>
+    <h2 class="title">&nbsp;Brainstorm</h2>
     <p>
       Every website or application ever built was designed based on an idea that will ultimately determine a devs approach. Plan accordingly.
     </p>
@@ -39,7 +39,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 2: Content Basics -->
   <section>
-    <h2>&nbsp;Content Basics</h2>
+    <h2 class="title">&nbsp;Content Basics</h2>
     <p>
       The efforts that go into planning a project will ultimately be the deciding factor in the projects outcome.  Developing a workflow is the first plan of order and this requires listing tasks that need to be accomplished along with expected deliverable due dates. A schedule of procedures should be defined not only for the completion of the project, but also for website maintenance.
     </p>
@@ -51,7 +51,7 @@ include ("../inc/webdesignHeader.php");
     </p>
     <!--  'Branding'  -->
     <article>
-      <h3>&nbsp;Branding</h3>
+      <h3 class="title">&nbsp;Branding</h3>
       <p>
         For all intents and purposes, a website reflects a personal brand: it represents aspirations, ideas and dreams beyond imagination. Accordingly, how content is communicated can shape how users view a sites brand, for better or worse. Enter PR: public relations, after all, that is what a website does! Active engagement with online communities will boost brand reputation and aid in protecting the brand. Moroever, social networks will extend the reach of marketing beyond the website and generate traffic back to it!
       </p>
@@ -61,7 +61,7 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!--  'UX Content'  -->
     <article>
-      <h3>&nbsp;UX Content</h3>
+      <h3 class="title">&nbsp;UX Content</h3>
       <p>
         UX content is a collection of information that establishes a tone for your project, communicating brand personality, values and identity in order to build trust by revealing ones agency (mission statement). Content should be descriptive, providing details to help users to facilitate their goals. Helpful content keeps users engaged, and this can be accomplished by localizing language, including video tutorials and instructional content as well as creating an interactive series of clickable questions and answers that guides a user down logical pathways toward a solution. It should inspire and support users during their visit, creating a memorable experience. In fact, creating a positive user experience by building emotional connections leads will produce future business. Use proof (ie testimonials) to encourage users to value product. Do this by developing a Brand Personality, which is the way you communicate who you are and what your value as a brand is.  All website personalities are premised on one of the following brand archtypes:
       </p>
@@ -80,14 +80,14 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!-- Wireframes -->
     <article>
-      <h3>&nbsp;Wireframes</h3>
+      <h3 class="title">&nbsp;Wireframes</h3>
       <p>
         When planning how content will be displayed, devs create wireframes that arrange elements in an aesthetically pleasing order that effectively communicates information to the user. This process typically begins by outlining sectional containers to group content then arranging content with the containers, creating sub-containers when necessary.
       </p>
     </article>
     <!-- Color -->
     <article>
-      <h3>&nbsp;Color</h3>
+      <h3 class="title">&nbsp;Color</h3>
       <p>
         Website color selection should align with brand values. Knowing ones demographic and how they respond to colors is imperative for cultivating a following. 
       </p>
@@ -107,26 +107,26 @@ include ("../inc/webdesignHeader.php");
     </article>
     <!--  'Copyright and Fair Use'  -->
     <article>
-      <h3>&nbsp;Legalities</h3>
+      <h3 class="title">&nbsp;Legalities</h3>
       <p>
         All content is proteceted with some sort of usage rights applied to it. Some content is made available, for free whereas some content is not made avaiable, or can be accessed for a fee. Regardless, the basics of copyright law is important for creatives to understand in the planning of web content. 
       </p>
-      <h4>&nbsp;Copyright</h4>
+      <h4 class="title">&nbsp;Copyright</h4>
       <p>
         <i>Copyright</i> (&#169;) is a legal protection that an author has after creating content. When someone pays an author to produce a piece of work, that person or company owns the copyrights to that content. Art, media, mobile apps, original text, websites and anything that is not fidxed to a tangible form of expression can be copyrighted (cr) . Protections are applied once the work has been created, and are applicable for 75 years(?). Copyright is not the same as a <i><a href="http://www.uspto.gov/trademarks " target="_blank">Trademark</a></i>, which is a law that protets the brand logo of a company.
       </p>
-      <h4>&nbsp;Fair Use</h4>
+      <h4 class="title">&nbsp;Fair Use</h4>
       <p>
         <i>Fair Use</i> is an exception to copyright protections in that it allows other people to make use of copyrighted work without permission. The caveat is that such works are not used for financial gain. This is especially useful for educators to use up-to-date information and media reporters to provide facts that support stories they propogate.
       </p>
       <p>
         To be clear, fair use is <em>(a) the purpose / character in use is for nonprofit educational purposes, (b) the nature of the cr work, (c) the amount used in relation to the cr work as a whole, and (d) the effect of the use upon the potential market for or value of the cr work</em>. When used for educational purposes or the greater good of humanity or to provide details about an event that someone else has previously noted, it is acceptable to use cr work. The amount of an original work being used is a factor in determining fair use: it is not fair use if usage impedes on the authors ability to earn money from their work.
       </p>
-      <h4>&nbsp;Public Domain</h4>
+      <h4 class="title">&nbsp;Public Domain</h4>
       <p>
         When a copyright expires, that work belongs to the <i>Public Domain</i>, allowing anyone to use it for whatever purpose. Whereas <a href="www.gettyimages.com" target="_blank">images</a> and <a href="http://en.wikipedia.org/wiki/List_of_films_in_the_public_domain_in_the_United_States " target="_blank">movies</a> are fair game, <a href="http://www.pdinfo.com/ " target="_blank">music</a> and <a href="http://www.freesound.org/" target="_blank">sound</a> <a href="http://freemusicarchive.org/" target="_blank">effects</a>, on the other hand, once they enter the public domain, still have applicable copyrights. <a href="http://publicdomainreview.org/guide-to-finding-interesting-public-domain-works-online/ " target="_blank">Read more</a> about the public domain.
       </p>
-      <h4>&nbsp;Licensing</h4>
+      <h4 class="title">&nbsp;Licensing</h4>
       <p>
         <i>Licensing</i> is a contract that grants persmission to use cr works. For example, an <i>End User License Agreement</i> gives others the right to use cr work. <mark><em>It is important that YOU make the effort to protect content that you create.</em></mark> Although not a requirement, it would be beneficial to <a href="http://www.copyright.gov/eco/" target="_blank">register</a> your work with the government in the unlikely event that you find yourself in court due to someone using your product for profit. Registering a website or web app is a simple as uploading a zip file: expect to pay a fee.
       </p>
@@ -148,7 +148,7 @@ include ("../inc/webdesignHeader.php");
       <p>
         It is a best practices to create a <i>Privacy <a href="https://www.freeprivacypolicy.com/" target="_blank">Policy</a></i> that explains to users not only how the website collects, stores and possibly uses their information, but also how content can be redistributed, if at all. It must include a physical address for the business with an opt-out clause.
       </p>
-      <h4>&nbsp;SEO</h4>
+      <h4 class="title">&nbsp;SEO</h4>
       <p>
         <i>Search Engine Optimization</i> (SEO) is vital for websites to attract business. Understanding how search engine algorithms use a collection of words to determine ranking order in the search index will improve the value of your site and help get it found. There are keyword research <a href="http://semrush.com/" target="_blank">tools</a> that can be used to analyze content in an effort to identify the best keywords to use for this purpose.
       </p>
@@ -167,7 +167,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 3: Information Architecture -->
   <section>
-    <h2>&nbsp;Information Architecture</h2>
+    <h2 class="title">&nbsp;Information Architecture</h2>
     <p>
       <a href="https://www.usability.gov/what-and-why/information-architecture.html" target="_blank">Information Architecture</a> is the way information is organized, labeled and interconnected within a website. References are made in how links make a navigation system, how sections are named and how categories are assigned. Good IA makes locating and understanding collections of information easy and this is done through proper naming and linking.
     </p>
@@ -176,7 +176,7 @@ include ("../inc/webdesignHeader.php");
     </p>
     <!-- IA Tenants -->
     <article>
-      <h3>&nbsp;Main Tenants of IA</h3>
+      <h3 class="title">&nbsp;Main Tenants of IA</h3>
       <p>
         The Morville/Rosenfield IA approach defines information as an ecological relationship between content, users and context. At the intersection of a venn-diagram, devs must understand purpose of content, what users care about and how it helps complete a goal. Thus, devs should adhere to four primary components. 
       </p>
@@ -194,12 +194,12 @@ include ("../inc/webdesignHeader.php");
       </p>
     </article>
     <!-- -->
-    <h3>&nbsp;Evaluating IA</h3>
+    <h3 class="title">&nbsp;Evaluating IA</h3>
     <p>
       Such interactivity requires evaluating website analytics in order to understand users and how they utilize information. Analytics refers to popular content, information paths, link referrals and search terms, all of which can help organize information Low traffic to categories, low conversions, high bounce rates, low entrance rates and a high value of search properties help explain these analytics further. Sources of user data include analytics, search data, social media and surveys.
     </p>
     <!-- -->
-    <h3>&nbsp;Applying IA</h3>
+    <h3 class="title">&nbsp;Applying IA</h3>
     <p>
        It is important to test usability to ensure everything works as intended, or at minimum that users do not become frustrated. A general <i>Usability Test</i> will have users speak out loud while completing common tasks while the dev quietly observes. The results should indicate how the average user makes decisions and interpret how the user accessess the information and interface. The key is to pinpoint user engagement using metrics that will help qualify modifications that should be made.
     </p>

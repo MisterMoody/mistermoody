@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "A Curated List of Front-End Web Development Resources by Ray Moody";
 $page = "Resources";
-include ("../inc/webdesignHeader.php");
+include ("../inc/header.php");
 ?>
 <!-- ********************************************** -->
 <!-- ************ <<WEB DESIGN KNOWLEDGE>> ******** -->
@@ -9,14 +9,14 @@ include ("../inc/webdesignHeader.php");
 <!-- //CONTENT-BEGINS..... -->
   <article>
     <section>
-      <h2>Web Dev Resources</h2>
+      <h1>Web Dev Resources</h1>
       <p>
         This curated list of resources offers useful documentaion, DIY guides and tools familiar to front-end web developers for the basic creation of a website.
       </p>
     </section>
     <section class="resourceGrid">
       <div class="resSyntax">
-        <h3>Syntax</h3>
+        <h3 class="title">Syntax</h3>
         <div class="resourceLink">
           <span><a target="_blank" href="https://html5boilerplate.com/">HTML Boilerplate</a></span>
           
@@ -66,7 +66,7 @@ include ("../inc/webdesignHeader.php");
         </div>
       </div>
       <div class="resContent">
-        <h3>Content</h3>
+        <h3 class="title">Content</h3>
         <div class="resourceLink">
           <span><a target="_blank" href="https://www.checklist.design/">Design Checklist</a></span>
                 
@@ -110,7 +110,7 @@ include ("../inc/webdesignHeader.php");
         </div>
       </div>
       <div class="resLayout">
-        <h3>Layout</h3>
+        <h3 class="title">Layout</h3>
         <div class="resourceLink">
           <span><a target="_blank" href="https://stitches.hyperyolo.com/">HTML Generator</a></span>
           
@@ -142,7 +142,7 @@ include ("../inc/webdesignHeader.php");
         </div>
       </div>
       <div class="resStyles">
-        <h3>Styles</h3>
+        <h3 class="title">Styles</h3>
         <div class="resourceLink">          
           <span><a target="_blank" href="https://colordesigner.io/">Color Swatches</a></span>
                 
@@ -188,7 +188,7 @@ include ("../inc/webdesignHeader.php");
         </div>
       </div>
       <div class="resSnippets">
-        <h3>Snippets</h3>
+        <h3 class="title">Snippets</h3>
         <div class="resourceLink">
           <span><a target="_blank" href="https://getflywheel.com/layout/category/design/">FlyWheel Inspiration</a></span>
           
@@ -220,7 +220,7 @@ include ("../inc/webdesignHeader.php");
         </div>
       </div>
       <div class="resHelp">
-        <h3>Help</h3>
+        <h3 class="title">Help</h3>
         <div class="resourceLink">
 
           <span><a target="_blank" href="https://w3.org">W3.org</a></span>
@@ -251,7 +251,7 @@ include ("../inc/webdesignHeader.php");
         </div>
       </div>
       <div class="resManage">
-        <h3>Manage</h3>
+        <h3 class="title">Manage</h3>
         <div class="resourceLink">
           <span><a target="_blank" href="https://www.smashingmagazine.com/2020/01/front-end-performance-checklist-2020-pdf-pages/">Performance Checklist</a></span>
           
@@ -299,7 +299,7 @@ include ("../inc/webdesignHeader.php");
         </div>
       </div>
       <div class="resTools">
-        <h3>Tools</h3>
+        <h3 class="title">Tools</h3>
         <div class="resourceLink">
           <span><a target="_blank" href="https://lisacatalano.github.io/brackets_course/pc.html">Brackets IDE Cheatsheet</a></span>
           
@@ -365,8 +365,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ******************************************** -->
   <!-- HTML Glossary -->
   <section>
-    <h2>HTML Glossary</h2>
-    <br>
+    <h2 class="title">HTML Glossary</h2>
     <details>
       <summary>Useful Terms and Definitions</summary>
       <br>
@@ -489,13 +488,13 @@ include ("../inc/webdesignHeader.php");
         <div><span></span></div>
       </article>
     </details>
+    <br>
   </section>  
   <!-- ******************************************** -->
   <!-- ******************************************** -->
   <!-- CSS Glossary -->
   <section>
-    <h2>CSS Terminology</h2>
-    <br>
+    <h2 class="title">CSS Terminology</h2>
     <details>
       <summary>Useful Terms and Definitions</summary>
       <br>
@@ -524,14 +523,14 @@ include ("../inc/webdesignHeader.php");
         <div><span></span></div>
       </article>
     </details>
+    <br>
   </section>
   <!-- ******************************************** -->  
   <!-- ******************************************** -->  
   <!-- ******************************************** -->
   <!-- Web Dev Glossary -->
   <section>
-    <h2>&nbsp;Web Dev Glossary</h2>
-    <br>
+    <h2 class="title">&nbsp;Web Dev Glossary</h2>
     <details>
       <summary>Useful Terms and Definitions</summary>
       <br><!--<a href="https://dev.to/valentinogagliardi/21-web-development-terms-you-should-absolutely-know-about-368j">Explaination</a>-->

@@ -1,16 +1,19 @@
 /* GRID-LINES for TESTING 'ONLY' ==> {outline: 1px solid red;}*/
 
-/* ============================================ */
-/* CASCADING STYLESHEET ======================= */
+/* ================================================================ */
+/* CASCADING STYLESHEET =========================================== */
 /*
       1.  Global NAVIGATION + Pagination
-      2.  UNIVERSAL Styles
-      3.  Grids                                 */
-/* ============================================ */
+      2.  UNIVERSAL Base Styles
+      3.  General Styles: mistermoody/ (about + portfolio + contact)
+      4.  General Styles: mistermoody/webdesign [for Articles/Blog]
+      5.              */
+/* ================================================================ */
 
 
-/* ============================================ */
-/* 1a. Global NAVIGATION ====================== */
+/* ================================================================ */
+/* 1a. Global NAVIGATION ========================================== */
+/* ================================================================ */
 header {
   margin: 0; 
   padding: 0 5em;   /* Aligns with <article> Containers */
@@ -110,12 +113,74 @@ nav ul li ul li a {
   nav ul li ul li ul {left: 0;}
 }
 /* ****Header PERFECTLY Aligned with <body>**** */
-/* ============================================ */
+
+/* ================================================================ */
+/* 1b. PAGINATION ================================================= */
+/* ================================================================ */
+ul.pagination {
+  margin: 1em 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}
+ul.pagination li.active {
+  color: #fff;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%); 
+  border-bottom: none;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #000;
+  filter: drop-shadow(4px 4px 4px #424242);
+}
+ul.pagination li.active a {color: #fff;}
+ul.pagination li a {
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 16px;
+}
+ul.pagination li a:not(.active) {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+ul.pagination li:hover, ul.pagination li a:hover {
+  color: #000;
+  background-color: #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #fff;
+}
+/* Original Pagination 'Broke' during Refactor  >> Revisit */
+/*
+section.caseCenter {
+  text-align: center;
+  margin: 0.8em 0 1em 0;
+}
+section.caseCenter ul {
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+section.caseCenter ul.pagination {text-align: center;}
+section.caseCenter ul.pagination li {
+  display: inline-block;
+  text-align: center;
+}
+section.caseCenter ul.pagination li a {
+  color: #000;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 16px;
+}
+section.caseCenter ul.pagination li.active {background-color: #ddd;}*/
+/* ================================================================ */
+/* ================================================================ */
 
 
-/* ============================================ */
-/* ========== UNIVERSAL BASE STYLES =========== */
-/* ============================================ */
+/* ================================================================ */
+/* ========== UNIVERSAL BASE STYLES =============================== */
+/* ================================================================ */
 /* Universal Layout Containment */
 html {box-sizing: border-box;} 
 *:before, *:after {box-sizing: inherit;} 
@@ -207,6 +272,41 @@ p.btn {
   text-align: center;
   border: 2px solid #000;
 }
+/* CTA Buttons */
+button.cta {
+  display: block;
+  margin: 0.63em auto;
+  max-width: 100%;
+  height: 44px;
+  background-position: center;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 1.2em;
+  font-variant:  small-caps;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  border: 2px solid #424242;
+  color: #fff; 
+  transition: background 0.8s;
+}
+button.cta a {border: none;}
+button.cta:hover {
+  background: #fff;
+  border: 2px solid #222000;
+  color: #000; 
+  transition: background 0.4s;
+}
+button.cta a:hover {
+  text-decoration: none;
+  color: #000;
+  outline: none;  
+}
+.temp__btn-hold {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: max-content auto;
+  grid-column-gap: 1em;
+  justify-content: space-around;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 address {
@@ -232,26 +332,21 @@ details {margin: 0 4px; font-size: 0.8em;}
 dialog::backdrop {
   background: rgba(255,0,0,.25);
 }
-figure {margin: 0; padding: 0;}
-figcaption {
-  font-size: 0.80em;
-  font-style: italic;
-  text-align: center;
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-h1 {
-  font-size: calc(1.2rem + 2.4vw);
-} 
-.title {text-align: center;}
+h1 {font-size: 2em;text-align: center;} 
+h2 {font-size: 1.75em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.25em;}
+h5 {font-size: 1em;}
+h6 {font-size: 0.9em;}
 h1, h2, h3, h4, h5, h6 {
   color: #222000;
   font-weight: bolder;
   font-variant: small-caps;
-  text-align: center;
   text-shadow: 0 2px #fff;    /* Etched Titles */
 }
-h2, h3, h4, h5, h6 {background-color: #ddd; margin-bottom: -0.44em;}
+h2.title, h3.title, h4.title, h5.title, h6.title {background-color: #ddd;}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 hr {
@@ -278,7 +373,7 @@ i {
   color: #222000;
   font-variant: small-caps;
   font-weight: bold;
-}   /* Highlights 'Terminology' */
+}   /* Emphasizes 'Terminology' */
 p, i, mark, summary { 
   font-size: calc(0.96rem + 0.02vw);  /* Try 0.94em or 0.88em */
   line-height: 1.248; /* Try 1.4*/
@@ -314,6 +409,12 @@ ul {
     width: 100%;
     max-width: 250px;
     height: 44px;
+  }
+  button.cta {
+    width: 400px;
+    height: 53px;
+    font-weight: 800;
+    font-size: 1.6em;
   }
   code, p code, details {font-size: 1em;}
   details{font-size: 1.2em;}
@@ -365,26 +466,21 @@ figure {
   padding: 0;
 }
 figcaption {
-  font-size: 0.68em;
+  font-size: 0.80em;
   font-style: italic;
   text-align: center;
 }
 /**/
+/*Hide on Mobile >> Display in Desktop*/
+.hideMobile, span.hideMobile {display: none;}
+.hideDesktop, span.hideDesktop {display: contents;}
 @media all and (min-width: 800px) { 
-  .mainImage {  /*Center Image*/
-    width: 35vw;
-    height: 100%;
-    max-height: 62vh; 
-  }
-  /*
-  Use these Styles if .mainImage Do NOT Look Good for webdesign/ Articles
-    .mainImage { 
+  .mainImage { 
     display: block;
     margin: 1em auto;
     max-height: 23.23em;
     max-width: 32.32em;
   }
-  */
   .imgL {
     float: left;
     margin: 5px 20px 0 0;
@@ -400,22 +496,33 @@ figcaption {
     /*border: 2px solid #c41e3a;*/
     border-radius: 2px;
   }
+  /**/
+  .hideMobile, span.hideMobile {display: contents;}
+  .hideDesktop, span.hideDesktop {display: none;}
 }
-/* ++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ================================================================ */
+/* ================================================================ */
 
 
-/* ============================================ */
-/* mistermoody/INDEX.php ====================== */
+/* ================================================================ */
+/* ================== mistermoody/ General Styles ================= */
+/* ================================================================ */
+  /* mistermoody/INDEX.php */
   /*Layout Grid*/
 .homepage {
   margin: 0; 
-  height: 34.53em;
+  /*height: 34.53em;*/
   display: grid;
-  grid-template-rows: 20.20em 3em repeat(3, 2.8em);
-  grid-row-gap: 0.4em;
+  grid-template-rows: 20.20em  repeat(4, 3em);
+  grid-row-gap: 1em;
   text-align: center;
 } 
+/* 'FadeIn'Transition Effect */
+.fadeIn {animation: fadeIn ease 8.8s;}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
   /* IMG: Teaching a Class */
 .homepage__Image {
   width: 100%;
@@ -449,12 +556,9 @@ ul.social {
   }
   ul.social {margin: 1em 8em;}
 }
-/* ============================================ */
-
-
-/* ============================================ */
-/* mistermoody/ABOUT/ ========================= */
-  /* about/INDEX */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+  /* mistermoody/ABOUT/ + INDEX */
 .profile__card--Grid {
   display: grid;
   grid-template-rows: min-content max-content;
@@ -600,8 +704,8 @@ ul.social {
   max-width: 100%;
   }
 .imageGrid img {
-  border: 1px solid rgba(0,0,0,0.3);
-  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+  /*border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);*/
   max-width: 100%;
 }
 .imageGrid img:nth-child(5) {
@@ -627,11 +731,9 @@ Create 2x Images every 4 Elements (or replace with 3/8)
 .gallery > .galImg:nth-child(4n) { g-c: span 2; g-r: span 2; } 
 
 */
-/* ============================================ */
-
-/************************************************* /
-
-  /* about/RESUME */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+  /* mistermoody/ABOUT/ + RESUME */
   /* Scroll-Snap Container */
 article.wrapper {
   /*margin: 0;
@@ -730,8 +832,6 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   text-align: center;
   font-variant: small-caps;
 }
-/**/
-/**/
 /* TALENT Skill Bars */
 .SkillBar {
   font-size: 0.94em;
@@ -817,15 +917,9 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   #Skill-Interpersonal, 
   .SkillBar, .Skill-Area, .PercentText {height: 1.21em;}  
 } 
-/* ============================================ */
-/* ============================================ */
-
-
-/* ============================================ */
-/* 5. PORTFOLIO =============================== */
-/* ============================================ */
-
-/* portfolio/INDEX */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+  /* mistermoody/PORTFOLIO/ */
   /* Temp WARNING Sign Style*/
 .fa-warning {color: #ffcc00;}
   /* 'Grid' Styles */
@@ -845,10 +939,10 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   align-content: center;
   justify-content: center;
   font-variant: small-caps;
-  box-shadow: 0px 0px 1px green;  
-  color: green;
+  box-shadow: 0px 0px 1px #000;  
+  color: #282828;
 }
-.cur__TopicStyle h3 i {opacity: 0.4;}
+/* Font-Icon Styles   .cur__TopicStyle h3 i {opacity: 0.8;}*/
 .cur__TopicStyle p {text-align: center;}
 @media only screen and (min-width: 800px) {
   .cur__TopicGrid {
@@ -865,16 +959,76 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
     padding: 0;
   }
 }
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+  /* mistermoody/CONTACT/ */
+.contactGrid {
+  margin-top: -1em;
+  margin-bottom: auto;
+  display: grid;
+  grid-template-rows: 2.44em 2.44em 35vh 4em;
+  grid-gap: 0.5em;
+}
+.contactForm {
+  margin: 0;
+  color: #000;
+  font-weight: bold; 
+  height: 100%; /*80vh;*/
+}
+input, textarea{
+  width: 100%;
+  margin: 0;
+  font-size: 1em;
+	border-radius: 4px;
+  color: #444;
+	border: solid 1px #424242;
+	border-radius: 4px;
+  padding: 1vmax 0;
+}
+textarea {height: 33.55vh;}
+#submit_button {
+	border-radius: 4px;
+  background-color: #ddd;
+  color: #424242;
+	font-weight: bold;
+  font-size: 1em;
+  transition-duration: .5s;
+  cursor: pointer;
+  padding: 0.4vmax;
+  width: 40%; 
+  margin: 24px 30%;
+}
+#submit_button:hover {
+  background-color: #1a1a1a;
+  border: 1px solid #424242;
+  box-shadow: 2px 2px 20px #000;
+  color: #fff;
+  transition-duration: .5s;  
+}
+label.required:after {
+  content:'*';
+  color:red;
+}
+@media only screen and (min-width: 500px) {
+  .contactForm {
+    margin: 4px auto; 
+    height: 71vh;
+  }
+  input, textarea {width: 100%; }
+  #submit_button {
+    padding: 1vmax;
+    width: 35%;
+    margin: 16px 30%;
+  }
+}
+/* ================================================================ */
+/* ================================================================ */
 
-/**/
-/**/
-/* ============================================ */
 
-
-/* ============================================ */
-/* 3. WEBDESIGN/ ============================== */
-/* ============================================ */
-/* WEBDESIGN/index MAIN-STYLES */
+/* ================================================================ */
+/* ================== mistermoody/WEBDESIGN Styles ================ */
+/* ================================================================ */
+/* webdesign/INDEX */
 .chapter__Book {
   background-color: transparent;
   display: grid;
@@ -968,139 +1122,172 @@ div.chapter__Date_Tag {
     font-size: 0.8em;
   }
 }
-/* ============================================ */
-/* ============================================ */
 
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
 
-/**//******************************************//**/
-/*                  COMPONENTS                    */
-/**//******************************************//**/
-/* #. CONTACT FORM ============================== */
-.contactGrid {
-  margin-top: -1em;
-  margin-bottom: auto;
-  display: grid;
-  grid-template-rows: 2.44em 2.44em 35vh 4em;
-  grid-gap: 0.5em;
-}
-.contactForm {
-  margin: 0;
-  color: #000;
-  font-weight: bold; 
-  height: 100%; /*80vh;*/
-}
-input, textarea{
+/* Mobile 2-COL Grid (3-Col on PC) */
+aside.block {
   width: 100%;
-  margin: 0;
-  font-size: 1em;
-	border-radius: 4px;
-  color: #444;
-	border: solid 1px #424242;
-	border-radius: 4px;
-  padding: 1vmax 0;
-}
-textarea {height: 33.55vh;}
-#submit_button {
-	border-radius: 4px;
-  background-color: #ddd;
-  color: #424242;
-	font-weight: bold;
-  font-size: 1em;
-  transition-duration: .5s;
-  cursor: pointer;
-  padding: 0.4vmax;
-  width: 40%; 
-  margin: 24px 30%;
-}
-#submit_button:hover {
-  background-color: #1a1a1a;
-  border: 1px solid #424242;
-  box-shadow: 2px 2px 20px #000;
-  color: #fff;
-  transition-duration: .5s;  
-}
-label.required:after {
-  content:'*';
-  color:red;
-}
-@media only screen and (min-width: 500px) {
-  .contactForm {
-    margin: 4px auto; 
-    height: 71vh;
-  }
-  input, textarea {width: 100%; }
-  #submit_button {
-    padding: 1vmax;
-    width: 35%;
-    margin: 16px 30%;
-  }
-}
-/**//******************************************//**/
-/**//******************************************//**/
-/* CALL-to-ACTION */
-button.cta {
-  display: block;
-  margin: 0.63em auto;
-  max-width: 100%;
-  height: 44px;
-  background-position: center;
-  border-radius: 4px;
-  font-weight: 800;
-  font-size: 1.2em;
-  font-variant:  small-caps;
-  background: #ddd;
-  border: 2px solid #00000f;
-  color: #00000f; 
-  transition: background 0.8s;
-}
-button.cta a {border: none;}
-button.cta:hover {
-  background: #222 radial-gradient(circle, transparent 1%, #111 1%);
-  border: 2px solid #424242;
-  color: #7f7e7e; 
-  transition: background 0.4s;
-}
-button.cta a:hover {
-  text-decoration: none;
-  color: #7f7e7e;
-  outline: none;  
-}
-button.cta:active {
-  background-color: #333;
-  background-size: 100%;
-  transition: background 0s;
-}
-.temp__btn-hold {
+  margin: -1em 0 1em 0;
+  padding: 0;
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: max-content auto;
-  grid-column-gap: 1em;
-  justify-content: space-around;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
 }
-@media all and (min-width: 1200px) {
-  button.cta {
-    width: 400px;
-    height: 53px;
-    font-weight: 800;
-    font-size: 1.6em;
+.block span {font-size: 0.88em;}
+div.blockCard {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #444;	
+}
+.blockCard p {margin: 2px;}
+.card {
+  margin: 6px;
+  padding: 8px;
+  border: 1px solid #838487;
+  text-align: center;
+}
+@media only screen and (min-width: 800px){
+  aside.block {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(24px, auto));	
+    grid-template-columns: repeat(3, 1fr);   
+    grid-gap: 2px; 
+  }
+  div.blockCard {
+    margin: 2px 8px;
+    padding: 0;
   }
 }
-/**//******************************************//**/
-/**//******************************************//**/
-/* Animation, Transition + Transforms */
-.fadeIn {  animation: fadeIn ease 8.8s;}
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-/**//******************************************//**/
-/**//******************************************//**/
-/*Hide on Mobile >> Display in Desktop*/
-.hideMobile, span.hideMobile {display: none;}
-.hideDesktop, span.hideDesktop {display: contents;}
+/**//****************************************//**/
 /**/
-@media only screen and (min-width: 800px) {
-  .hideMobile, span.hideMobile {display: contents;}
-  .hideDesktop, span.hideDesktop {display: none;}
+/* 2-COL Variable-Responsive 2-COL Grid */
+.declarations {
+  width: 100%;
+  margin: -1em 0 1em 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(auto, minmax(24px, auto));	
+  grid-template-columns: max-content auto;
+  grid-column-gap: 0.4em;
 }
-/**//******************************************//**/
+.declarations span {font-size: 0.71em;}
+@media all and (min-width: 800px) {
+	.declarations {
+    margin: 0.25em 0.55em 1em 0.25em;
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: minmax(300px, max-content) auto;
+    grid-gap: 0 1em;
+  }
+  .declarations span {font-size: 1em;}
+}
+/**//****************************************//**/
+/**/
+/* Multi-COL Unicode Character Grid */
+.characterGrid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4em, auto));
+  grid-template-rows: auto;
+  grid-gap: 4px;
+}
+/*Unicode <div> Style*/
+.asciiItem {
+  background: #dddada;
+  text-align: center;
+}
+/*Unicode 1st Row*/
+.asciiItemChar {font-size: 1.5em;}
+@media only screen and (min-width: 800px) {
+  .characterGrid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 8px;
+  }
+}
+/**//****************************************//**/
+
+
+/* ============================================ */
+/* ============================================ */
+/* RESOURCES GRID */
+.resSyntax {grid-area: syntax;}
+.resContent {grid-area: contentRes;}
+.resLayout {grid-area: layout;}
+.resStyles {grid-area: styles;}
+.resSnippets {grid-area: snippets;}
+.resHelp {grid-area: helpRes;}
+.resManage {grid-area: manage;}
+.resTools {grid-area: tools;}
+.resourceGrid {
+  margin: 1em 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(22px, auto);
+  grid-template-areas:
+    "syntax contentRes"
+    "layout styles"
+    "snippets helpRes"
+    "manage tools";
+  grid-gap: 0 1em;
+}
+.resourceGrid div h3 {margin-bottom: 0.4em;}
+.resourceLink {
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 0.84em;
+  grid-gap: 0.48em;
+}
+@media only screen and (min-width: 800px) {
+  .resourceGrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 22px);
+    grid-template-areas:
+      "syntax contentRes layout styles"
+      "snippets helpRes manage tools";
+  grid-gap: 1em;
+  }  
+  .resourceLink {grid-gap: 0.84em;}
+}
+/* WebDesign/resources 'Glossary GRID' */
+.glossary {
+   width: 100%;
+   margin: 0 auto;
+   padding: 0;
+   display: grid;
+   grid-template-rows: repeat(auto, 24px);
+   grid-template-columns: auto 1fr; /* auto was 6.2em*/
+   grid-gap: 8px;
+ }
+@media only screen and (min-width: 800px) {
+  .glossary {
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: 8em 1fr;
+    grid-gap: 0.4em;    
+  }
+}
+/* ============================================ */
+/* ============================================ */
+
+
+
+/* ============================================ */
+/* ============================================ */
+

@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Version Control with Git by Ray Moody";
 $page = "Git Control";
-include ("../inc/webdesignHeader.php");
+include ("../inc/header.php");
 ?>
 <!-- ************************************************** -->
 <!-- ************** <<SETUP WORKSTATION>> ************* -->
@@ -11,7 +11,7 @@ include ("../inc/webdesignHeader.php");
 <article>
   <!-- // Introduction -->
   <section>
-    <h1 class="title">Github Version Control</h1>
+    <h1>Github Version Control</h1>
     <!--<figure>
       <img class="mainImage" src="img/......"/>
       <figcaption>Creating a Repo</figcaption>
@@ -35,7 +35,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 1: List of Git Commands -->
   <section>
-    <h2>&nbsp;List of Git Commands</h2>
+    <h2 class="title">&nbsp;List of Git Commands</h2>
     <p>A list of common git commands.</p>
     <article class="declarations">
       <div class="hideMobile"><b>Git Command</b></div>
@@ -98,7 +98,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 2: Creating a Repository -->
   <section>
-    <h2>&nbsp;Creating a Repository</h2>
+    <h2 class="title">&nbsp;Creating a Repository</h2>
     <p>
       There are two ways to create a repository: You can <i>Clone</i> a repo from another machine, or you can <i>Initialize</i> a brand new repo. The process begins in the local host root directory.
     </p>
@@ -130,7 +130,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 3: Staging Changes -->
   <section>
-		<h2>&nbsp;Staging Changes</h2>
+		<h2 class="title">&nbsp;Staging Changes</h2>
     <p>
       At this point, you have a repository properly configured and you simply want to save your work. Before saving your work, you run &#91;Step 1&#93; to ascertain what files are ready to be versioned.
     </p>
@@ -156,7 +156,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 4: Managing Committed Files -->
   <section>
-    <h2>&nbsp; Managing Committed Files</h2>
+    <h2 class="title">&nbsp; Managing Committed Files</h2>
     <p>Below are declarations that may prove useful only after becoming comfortable using the console.</p>
     <article class="declarations">
       <div><span>View Comparisons</span></div>
@@ -191,7 +191,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 5: Working with Remote Repositories -->
   <section>
-    <h2>&nbsp;Working with Remote Repos</h2>
+    <h2 class="title">&nbsp;Working with Remote Repos</h2>
     <p>
       Using github for independent projects is slightly different when working with others. For starters, a repository that you own is <i>Local</i> whilst a one owned by another developer is known as a <i>Remote</i>.  Each repo is a full copy of its original, including version history.
     </p>
@@ -213,7 +213,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 6: Branching -->
   <section>
-    <h2>&nbsp;Branching</h2>
+    <h2 class="title">&nbsp;Branching</h2>
     <p>
       Collaborators typically use a declared central repository and gain access via cloning into their local machine. This allows developers to work on different components that can be added to the central repo by pushing commits. Simply add the repo by name to the folder on your local machine. In this regard, it is a best practice to conduct work outside of the master branch: enter, branching. This is the act of creating a temporary branch when creating a new web app feature. Then adding that feature to the master branch only after the code has been vetted. Keep in mind
     </p>

@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Setting Up a Developers Workstation by Ray Moody";
 $page = "Workstation";
-include ("../inc/webdesignHeader.php");
+include ("../inc/header.php");
 ?>
 <!-- ************************************************** -->
 <!-- ************** <<SETUP WORKSTATION>> ************* -->
@@ -11,7 +11,7 @@ include ("../inc/webdesignHeader.php");
 <article>
   <!-- // Introduction -->
   <section>
-    <h1 class="title">Workstation</h1>
+    <h1>Workstation</h1>
     <figure>
       <img class="mainImage" src="img/workstation.png"/>
       <figcaption>A Simple Workstation</figcaption>
@@ -30,7 +30,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 1: Install an IDE -->
   <section>
-    <h2>&nbsp;Install an IDE Text-Editor</h2>
+    <h2 class="title">&nbsp;Install an IDE Text-Editor</h2>
     <p>
       An <i>Integrated Development Environment</i> (IDE) is a software application suite that combines tools required to write and test software, and is typically composed of a source code editor, build automation tools (i.e. compiler, interpreter), and a debugger. 
     </p>
@@ -53,7 +53,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 2: Set up a Local Host-Server -->
   <section>
-    <h2>&nbsp;Set up a Local Host-Server</h2>
+    <h2 class="title">&nbsp;Set up a Local Host-Server</h2>
     <p>
       A <i>Localhost Server</i> is a computer networking configuration that creates an online-like environment for developers to test applications without the need for internet access.
     </p>
@@ -105,7 +105,7 @@ include ("../inc/webdesignHeader.php");
   <!-- ************************************************** -->
   <!-- Part 3: Install a Version Control System -->
   <section>
-    <h2>&nbsp;Install a Version Control System</h2>
+    <h2 class="title">&nbsp;Install a Version Control System</h2>
     <p>
       A <i>Version Control System</i> (VCS) is a software configuration, or <i>source code manager</i>, that records changes to a file or set of files over time. It is a categorization of processes and tools designed to keep track of different versions of software, content, documents, and websites in development. It is in effect a remote server that allows use of SSH to encrypt traffic to another server.
     </p>
@@ -116,7 +116,7 @@ include ("../inc/webdesignHeader.php");
     <p>
       For all intents and purposes, a VCS is an online storage repository for your code, enabling developers with the ability to manage source-code, track all file versions and coordinate a non-linear workflow in a team environment. Version control allows servers in multiple locations to run different versions on different sites, even while those versions are being updated simultaneously by a number of different developers. The importance of this feature cannot be understated as this system allows developers to compare revised files, identify differences, and merge changes prior to committing any code. <i><a href="https://github.com" target="_blank">Github</a></i> is a well-documented VCS with many integration capabilities.
     </p>
-    <h3>&nbsp;Deployment</h3>
+    <h3 class="title">&nbsp;Deployment</h3>
     <p>
       One of the unique features Git offers is the ability to securely authenticate remote servers using <i>Ssh Protocol</i> by which Git provides <code>keys</code> to an <code>agent</code> in order to upload project files directly to the internet. The agent is a <i>Ftp/Sftp</i> client (server) that, if configured properly, provides Git universal remote access to its servers by communicating file transfers. Two useful FTP clients are <a href="http://filezilla-project.org" target="_blank">FileZilla</a> and <a href="http://cyberduck.ch" target="_blank">CyberDuck</a>.
     </p>
