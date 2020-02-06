@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Official Homepage of Mister Moody";
-include ("inc/homepage.php"); 
+include ("inc/header.php"); 
 //Contains 'metadata' and '<navigation> element'
 ?>
 <!-- ************************************************** -->
@@ -17,15 +17,15 @@ include ("inc/homepage.php");
       <img class="homepage__Image" src="img/guttermuthES.jpg" />
     </picture>
     <!-- -->
-    <span style="font-size: 1.4em; font-weight: 700;">Hi. I'm Ray.</span>
+    <h2 style="font-weight: 700;">Hi. I'm Ray.</h2>
     <!-- -->
-    <span style="font-size: 1.2em;">I build web apps and teach language art skills.</span>
+    <h4>I build web apps and teach language art skills.</h4>
     <!-- Quick Nav -->
-    <span>
+    <div>
       <a href="about/">About</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp;
       <a href="portfolio/">Portfolio</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp; 
       <a href="contact">Contact</a>
-    </span>
+    </div>
     <!-- #Contact + Social Media -->
     <ul class="social">
       <li>
