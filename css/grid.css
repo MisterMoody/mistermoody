@@ -207,12 +207,12 @@ body {
   letter-spacing: 0.6;
 }
 /**/
-main {}                   /* 'PHP' Container */
+main {margin: 0 1em;}     /* 'PHP' Container Try {0 0.4em}  */
 /* Page-Alignment => REQUIRED for Full-Width Images
    Images 'MUST' be placed 'Outside of Section or Article' */
 section {}                /* 'HTML' Containers */
 aside {}                  /* Container for Full-Width <img>*/
-article {margin: 0 1em}   /* Try {0 0.4em} Container for 'Content' */
+article {}   /* Try {0 0.4em} Container for 'Content' */
 /**/
 footer  {
   margin: 0.8em 0 0 0;
@@ -999,35 +999,35 @@ label.required:after {
 }
 .chapter {
   margin: 1em 0;
+  padding: 0 0.20em;
   display: grid;
-  grid-template-columns: 25vw auto;
-  grid-gap: 0 0.5em;
+  grid-template-rows: auto;
+  border-radius: 4px;
 }
-.chapter__Img {   /* Article Images */
-  margin: 6px 0;
-  width: 100%; 
-  height: 100px;
+.chapter:nth-child(odd) {background-color: #ddd;}
+div.chapter__Date_Tag {
+  font-size: 0.88em; 
+  margin-top: -0.2em;
+  padding: 0.20em 0;
 }
-div.chapter__Date_Tag {font-size: 0.8em;}
 .chapter__Date_Tag {
-  margin: 0.8em 0 1em 0;
+  margin: 0;
   padding: 0;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 25vw repeat(auto-fill, minmax(44px, 170px));
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 .chapter__Tags {      /* Article 'Headline' TAGS */
-  margin: 0;
+  margin: 2px 0 0 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25px, auto));
-  grid-auto-rows: 1em;  
-  grid-auto-flow: dense;
+  grid-auto-rows: 1.4em;  
   grid-gap: 0.4em;
   text-align: center; 
 }
 .chapter__Tags div {
-  font-size: 0.8em;
+  font-size: 0.88em;
   border: 1px solid #424242;
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px  rgba(255,255,255,0.8);
@@ -1038,19 +1038,9 @@ div.chapter__Date_Tag {font-size: 0.8em;}
     grid-template-rows: auto;
   }
   .chapter {
-    margin: 1em 0;
-    display: grid;
-    grid-template-columns: 24vw auto;
-    grid-gap: 2em 1em;
+    grid-gap: 0.2em;
   }
-  .chapter__Img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 152px;
-  }
-  div.chapter__Date_Tag {font-size: 0.88em;}
+  div.chapter__Date_Tag {font-size: 0.88em; margin-top: 0.5em;}
   .chapter__Date_Tag {
     margin: 0.8em 0 1.2em 0;
     padding: 0;

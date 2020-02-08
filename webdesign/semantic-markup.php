@@ -26,23 +26,18 @@ include ("../inc/header.php");
       </ul>
       <li>Required Document Elements</li>
       <ul>
-        <li>The Root</li>
-        <li>The Head</li>
-        <li>The Body</li>
+        <li>The Root, the Head &amp; the Body</li>
       </ul>
       <li>Sectioning Content</li>
       <ul>
         <li>Header &amp; Navigation</li>
-        <li>Primary Sections</li>
-        <li>Footer</li>
+        <li>Primary Sections &amp; the Footer</li>
       </ul>
       <li>Defining Content</li>
       <ul>
-        <li>Lists</li>
-        <li>Headings &amp; Paragraphs</li>
+        <li>Lists, Headings &amp; Paragraphs</li>
         <li>Inline Text Semantics</li>
-        <li>Media Elements</li>
-        <li>Forms</li>
+        <li>Media Elements &amp; Forms</li>
         <!-- 'BROKEN' <li>Interactive Elements</li> -->
       </ul>
       <li>Accessibility</li>
