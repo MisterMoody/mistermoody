@@ -21,10 +21,9 @@
     <meta name="x5-page-mode" content="app">
     -->
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
-    <!-- [Req. to Add <links> to Subdirectory Files] 
-    <base href="http://localhost:8012/mistermoody/"> --> 
-    <!--  Use this <link> to *GO-LIVE* -->  
-    <base href="https://mistermoody.com"> 
+    <base href="http://localhost:8012/mistermoody/">
+    <!--  Use this <link> to *GO-LIVE* 
+    <base href="https://mistermoody.com"> -->
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->
@@ -48,13 +47,13 @@
           <!-- Portfolio Folder -->
           <li><a href="portfolio">Portfolio</a>
             <ul>
-              <li><a href="webdesign">Web Dev</a>
+              <li><a href="webdev">Web Dev</a>
                 <!--<ul>
                   <li><a href="">Entry 1</a></li>
                   <li><a href="">Entry 2</a></li>
                 </ul>-->
               </li>
-              <li><a href="portfolio">ESL / TEFL</a></li>
+              <li><a href="portfolio">esl / tefl</a></li>
               <li><a href="china/vocab">中文</a></li>
             </ul>
           </li>      

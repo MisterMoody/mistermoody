@@ -190,13 +190,13 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
-/* Prevent 'User CopynPaste' */
+/* Prevent 'User CopynPaste' 
 main {
   -webkit-user-select: none; 
   -moz-user-select: none; 
   -ms-user-select: none; 
   user-select: none;
-}
+}*/
 /**/
 body {
   height: 100%;
@@ -991,7 +991,7 @@ label.required:after {
 /* ================================================================ */
 /* ================== mistermoody/WEBDESIGN Styles ================ */
 /* ================================================================ */
-  /* webdesign/INDEX */
+  /* webdesign/ 'Article Grid' */
 .chapter__Book {
   background-color: transparent;
   display: grid;
@@ -1005,24 +1005,24 @@ label.required:after {
   border-radius: 4px;
 }
 .chapter:nth-child(odd) {background-color: #ddd;}
+.chapter:nth-child(even) {border: 1px solid #ddd;}
+.chapter__Headline {margin-bottom: 0;}
 div.chapter__Date_Tag {
   font-size: 0.88em; 
   margin-top: -0.2em;
   padding: 0.20em 0;
 }
 .chapter__Date_Tag {
-  margin: 0;
+  margin: 0.4em 0.2em 0.2em 0;
   padding: 0;
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 25vw repeat(auto-fill, minmax(44px, 170px));
-  /*justify-content: space-between;*/
+  grid-template-columns: 25vw repeat(auto-fit, minmax(44px, 12.4rem));
+  justify-content: space-between;
 }
-.chapter__Tags {      /* Article 'Headline' TAGS */
+.chapter__Tags { 
   margin: 2px 0 0 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25px, auto));
-  grid-auto-rows: 1.4em;  
   grid-gap: 0.4em;
   text-align: center; 
 }
@@ -1037,27 +1037,20 @@ div.chapter__Date_Tag {
     display: grid;
     grid-template-rows: auto;
   }
-  .chapter {
-    grid-gap: 0.2em;
-  }
-  div.chapter__Date_Tag {font-size: 0.88em; margin-top: 0.5em;}
+  .chapter {grid-gap: 0.2em;}
+  .chapter__Headline {margin-left: 0.2em;}
+  div.chapter__Date_Tag {font-size: 1em; margin-top: 0.5em;}
   .chapter__Date_Tag {
-    margin: 0.8em 0 1.2em 0;
-    padding: 0;
+    margin: 0.8em 0 0 0.2em;
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 24vw repeat(auto-fill, minmax(44px, 200px));
-    justify-content: space-between;
+    grid-template-columns: 24vw repeat(auto-fit, minmax(44px, 16rem));
   }
   .chapter__Tags {     
-    margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, auto));
-    grid-auto-rows: 20px;  
-    grid-auto-flow: dense;
-    grid-gap: 0.4em;
-    text-align: center; 
+    grid-auto-rows: 1.6em; 
   }
+  .chapter__Tags div {font-size: 1em;}
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
