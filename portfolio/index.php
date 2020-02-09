@@ -8,22 +8,23 @@ include ("../inc/header.php");
   <!-- CURRICULUM "TOPICS"  -->
   <article class="">
     <section>
-      <p style="text-align: center;"><i class="fa fa-warning" aria-hidden="true"></i> &nbsp; Work In-Progress</p>
+      <h1>Portfolio</h1>
+      <h3 style="text-align: center; margin: 1em 0;"><i class="fa fa-warning" aria-hidden="true"></i>&nbsp; a Work In-Progress</h3>
     </section>
   </article>
 
   <article class="cur__TopicGrid">
     <section class="cur__TopicStyle">
-      <div class="language">
-        <h3><i class="fa fa-language fa-2x" aria-hidden="true"></i> Language Arts</h3> 
-      </div>
-      <p><a href="portfolio/">Coming Soon</a></p>
+      <div><h3>中文</h3></div>
+      <p><a href="china/vocab">Enter</a></p>
     </section>
     <section class="cur__TopicStyle">
-      <div class="code">
-        <h3><i class="fa fa-code fa-2x" aria-hidden="true"></i> Web Implementations</h3> 
-      </div>
+      <div><h3>Web Development</h3></div>
       <p><a href="webdev/">Enter</a></p>
+    </section>
+    <section class="cur__TopicStyle">
+      <div><h3>Language Arts</h3></div>
+      <p><a href="portfolio/">N / A</a></p>
     </section>
   </article>
 <!-- ******************************************************* -->

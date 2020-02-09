@@ -20,10 +20,10 @@
     <!-- Document will be displayed in "application mode" (fullscreen, etc.)
     <meta name="x5-page-mode" content="app">
     -->
-    <!-- Absolute URL Reference '.htaccess URL Rewrite -->
-    <base href="http://localhost:8012/mistermoody/">
-    <!--  Use this <link> to *GO-LIVE* 
-    <base href="https://mistermoody.com"> -->
+   <!-- Absolute URL Reference '.htaccess URL Rewrite 
+    <base href="http://localhost:8012/mistermoody/">-->
+    <!--  Use this <link> to *GO-LIVE* -->
+    <base href="https://mistermoody.com"> 
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->

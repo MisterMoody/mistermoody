@@ -12,7 +12,7 @@ include ("../inc/header.php");
     <article>
       <h1>Web Development</h1>
       <p>
-      This collection of articles represents distinct skill-sets related to web development. It is a toolkit of sorts which demonstrate my proficiencies to design, develop and deploy a website. 
+      This collection of articles represents distinct skill-sets related to web development. It is a toolkit of sorts to demonstrate my proficiencies to design, develop and deploy a website. 
       </p>
     </article>
   </section> 
@@ -120,7 +120,7 @@ include ("../inc/header.php");
       <aside class="chapter">
         <h3 class="chapter__Headline">Resources</h3>
         <p>
-          Boilerplates. Placeholders. Performance Testers. Formatters. Forms. Infographics. Font-Scale. Typography. Color Swatches + Palettes. Contrast Checker. Image Optimizer. Icons. Accessibility (A11Y). Compressors. Validators. Tutorials. UX Inspiration. ASCII. &nbsp;
+          Boilerplates. Placeholders. Performance Testers. Formatters. Forms. Font-Scale. Typography. Color Swatches + Palettes. Contrast Checker. Infographics. Image Optimizer. Icons. Accessibility (A11Y). Compressors. Validators. Tutorials. UX Inspiration. ASCII. &nbsp;
           <a href="webdev/resources">Read</a>
         </p>
         <div class="chapter__Date_Tag">

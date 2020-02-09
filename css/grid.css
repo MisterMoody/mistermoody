@@ -890,14 +890,14 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   /* 'Grid' Styles */
 .cur__TopicGrid {
   margin-bottom: 0.8em;
-  display: grid; 
-  height: 100%;
-  grid-template-rows: repeat(2, 30vh);
+  display: grid;
+  grid-auto-flow: row;
   grid-gap: 0.4em;
 }
 .cur__TopicStyle {
   margin: 0;
   padding: 0;
+  height: 20.20vh;
   display: grid;
   grid-gap: 0.4em;
   grid-auto-flow: row;
@@ -914,15 +914,11 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
     margin: 0; padding: 0;
     display: grid; 
     max-height: 90vh;
-    grid-template-columns: repeat(2, 50%);
-    /*grid-auto-rows: 44vh; */
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto-fit, 62vh);
     grid-gap: 0.4em;
   }
-  .cur__TopicStyle {
-    margin: 0;
-    padding: 0;
-  }
+  .cur__TopicStyle {height: 100%;}
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
