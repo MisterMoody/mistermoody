@@ -19,7 +19,7 @@ include ("inc/header.php");
     <!-- -->
     <h2 style="font-weight: 700;">Hi. I'm Ray.</h2>
     <!-- -->
-    <h4>I build web apps and teach language art skills.</h4>
+    <h5>I build web apps and teach language art skills.</h5>
     <!-- Quick Nav -->
     <div>
       <a href="about/">About</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp;

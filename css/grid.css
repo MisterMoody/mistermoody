@@ -372,7 +372,7 @@ i {
   font-weight: bold;
 }   /* Emphasizes 'Terminology' */
 p, i, mark, summary { 
-  font-size: calc(0.96rem + 0.02vw);  /* Try 0.94em or 0.88em */
+  font-size: 1em;  /* calc(0.96rem + 0.02vw) */
   line-height: 1.248; /* Try 1.4*/
 }  
 p, ol {color: #444;}    /* 'Dim' TEXT-Color Styles */
@@ -386,11 +386,7 @@ ol > ul {
   padding-left: 1.2em;
 }
 ol.alpha {list-style-type: lower-alpha;}
-ul {
-  list-style-type: none; 
-  /*margin: 0; 
-  padding: 0;*/
-}
+ul {list-style-type: none;}
 @media all and (min-width: 800px) {  
   main {margin: 0 5.3em;}
   /**/  
@@ -460,7 +456,7 @@ figure {
   padding: 0;
 }
 figcaption {
-  font-size: 0.80em;
+  font-size: 0.88em;
   font-style: italic;
   text-align: center;
 }
@@ -554,115 +550,6 @@ ul.social {
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
   /* mistermoody/ABOUT/ + INDEX */
-.profile__card--Grid {
-  display: grid;
-  grid-template-rows: min-content max-content;
-  grid-gap: 0.4em;
-}
-.id-card-wrapper {
-  height: 50vh;
-  width:100%;
-  /*background-color: #091214;*/
-  display: flex;
-}
-/**/
-.profile__card {
-  flex-basis: 100%;
-  max-width: 100%;
-  border: 1px solid #444;
-  margin: 0;
-  padding: 1em;
-  box-shadow: 0px 0px 3px 1px #00000f, inset 0px 0px 3px 1px green;
-}
-.profile__info {display: flex;}
-.profile__info .rings {
-  flex-basis: 32%;
-  position: relative;
-  margin: 0 16px 0 0;
-  align-self: center;
-}
-.profile__info .rings .inner__ring {
-  position: absolute;
-  width: 125px;
-  height: 125px;
-  border: 6px solid transparent;
-  border-top-color: #4f4e4e;
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-
-  animation-duration: 2s;
-  animation-name: rotate-clock;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-@keyframes rotate-clock {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-.profile__info .rings .outer__ring {
-  position: absolute;
-  width: 145px;
-  height: 145px;
-  border: 6px solid transparent;
-  border-bottom-color: #ccc;
-  border-radius: 50%;
-  top: -10px;
-  left: -10px;
-
-  animation-duration: 2s;
-  animation-name: rotate-anticlock;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-@keyframes rotate-anticlock {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(-360deg);}
-}
-.profile__info .rings img {
-  width: 125px; 
-  height: 125px;
-  border-radius: 50%;
-  display: block;
-  top: -8px;
-  left: -8px;
-}
-/**/
-.profile__info .profile__description {
-  flex-basis: 68%;
-  color: green;
-  letter-spacing: 1px;
-  font-variant: small-caps;
-}
-.profile__info .profile__description h2 {text-align: left;}
-.profile__can {
-  display: grid;
-  grid-template-columns: min-content auto;
-  grid-column-gap: 0.8em;
-  font-family: monospace;
-  font-size: 1.153em;
-}
-.profile__card--Paragraph {
-  margin: 0;
-  font-size: 1em; 
-  letter-spacing: 0.4; 
-  line-height: 1.5;
-}
-@media all and (min-width: 1200px) {
-  .profile__card--Grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 1em;
-  }
-  .profile__card {width: 100%;}
-  .profile__card--Paragraph {
-    margin: 0;
-    font-size: 1.35em; 
-    letter-spacing: 0.4; 
-    line-height: 1.5;
-  }
-  .profile__can {font-size: 1.2em;}
-}
   /* About Me 'Image Gallery' */
 .imageGrid { 
   margin: 1em 0;
@@ -689,16 +576,9 @@ ul.social {
   grid-column: span 1;
   grid-row: span 2;
   }
-/*
-Image GRID Gallery 
-Create 2x Images every 4 Elements (or replace with 3/8)
-.gallery { display: grid;  g-t-c: r(auto-fit, minmax(160px, 1fr)); g-t-r: r(6, 200px); }
-.gallery > .galImg:nth-child(4n) { g-c: span 2; g-r: span 2; } 
-
-*/
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-  /* mistermoody/ABOUT/ + RESUME */
+  /* mistermoody/ABOUT/RESUME */
   /* Scroll-Snap Container */
 article.wrapper {
   /*margin: 0;
@@ -891,21 +771,19 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
 .cur__TopicGrid {
   margin-bottom: 0.8em;
   display: grid;
-  grid-auto-flow: row;
+  grid-template-rows: repeat(3, 20.20vh);
   grid-gap: 0.4em;
 }
 .cur__TopicStyle {
   margin: 0;
   padding: 0;
-  height: 20.20vh;
-  display: grid;
-  grid-gap: 0.4em;
-  grid-auto-flow: row;
-  align-content: center;
-  justify-content: center;
   font-variant: small-caps;
   box-shadow: 0px 0px 1px #000;  
-  color: #282828;
+  color: #282828; 
+  /* Center Text */
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 /* Font-Icon Styles   .cur__TopicStyle h3 i {opacity: 0.8;}*/
 .cur__TopicStyle p {text-align: center;}
