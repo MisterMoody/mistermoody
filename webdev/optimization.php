@@ -12,10 +12,6 @@ include ("../inc/header.php");
   <!-- // Introduction -->
   <section>
     <h1>Performance Optimization</h1>
-    <!--<figure>
-      <img class="mainImage" src="img/......"/>
-      <figcaption>Creating a Repo</figcaption>
-    </figure>-->
     <p>
       In front-end web development, performance optimization is the modification of <i>html</i>, <i>css</i> and <i>javascript</i> to enhance page load times. There are multiple factors that can cause a website to react slowly: a large number of header requests from the client to the server, for example, may require one request to wait for another request to be completed before it can start. Thus, the downloading of large or multiple assets will make for poor latency.
     </p>
@@ -27,7 +23,6 @@ include ("../inc/header.php");
     </ol> 
   </section>
   <!-- ************************************************ -->
-  <hr>
   <!-- ************************************************ -->
   <!-- Part 1: What is Optimization? -->
   <section>
@@ -44,10 +39,6 @@ include ("../inc/header.php");
     <p>
       A <i>Performance Budget</i> is a plan that calculates the total weight for pages in a site to ascertain load times and what have you. Much of this planning targets that which is <i>Above the Fold</i>: anything that is within the <code>&#60;head&#62;...&#60;/head&#62;</code> and is essential to the initial load of the site within the constraint of the first meaningful paint.
     </p>
-    <aside class="declarations">
-      <div><span>xyz</span></div>
-      <div><span>123</span> <code>456</code></div>
-    </aside>
   </section>
   <!-- ************************************************ -->
   <!-- ************************************************ -->

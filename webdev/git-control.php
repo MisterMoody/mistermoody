@@ -12,89 +12,19 @@ include ("../inc/header.php");
   <!-- // Introduction -->
   <section>
     <h1>Github Version Control</h1>
-    <!--<figure>
-      <img class="mainImage" src="img/......"/>
-      <figcaption>Creating a Repo</figcaption>
-    </figure>-->
     <p>
-      Github is a distributed <i>Version Control System</i> that helps developers manage different versions of project files. In a distributed system, you can copy a complete repository (ie git, project) with its entire history to any machine making it easy to work remotely on projects from any physical location.
+      Github is a distributed <i>Version Control System</i> that helps developers manage different versions of project files. In a distributed system, you can copy a complete repository (ie git, project) with its entire history to any machine making it easy to work remotely on projects from any physical location. Learn <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" target="_blank">how to use</a> Github and check out this <a href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet/">cheat sheet</a>.
     </p>
 		<p>
       Developers utilize Git via <i>declarations</i> that are delivered via the console which grants access to a repository. You can edit your files, then run Git declarations to store your changes. Each time you complete a change to a project file, Git records a <i>snapshot</i> of their current contents. These snapshots are known as <i>commits</i> which are pushed back to the repository and stored.
     </p>
     <ol>
-      <li>GIT declarations Review</li>
       <li>Creating a Repository</li>
       <li>Staging Changes</li>
       <li>Managing Commited Files</li>
       <li>Working with Remote Repositories</li>
     </ol> 
   </section>
-  <!-- ************************************************** -->
-  <hr>
-  <!-- ************************************************** -->
-  <!-- Part 1: List of Git Commands -->
-  <section>
-    <h2 class="title">&nbsp;List of Git Commands</h2>
-    <p>A list of common git commands.</p>
-    <article class="declarations">
-      <div class="hideMobile"><b>Git Command</b></div>
-      <div class="hideMobile"><b>Git Description</b></div>
-      <div><span>git</span> <code>--help</code></div>
-      <div><span>Displays a List of Git declarations</span></div>
-      <div><span>git</span> <code>clone</code></div>
-      <div><span>Download Existing Repository</span></div>		
-      <div><span>git</span> <code>init</code></div>
-      <div><span>Setup a New Repository</span></div>
-      <div><span>git</span> <code>status</code></div>
-      <div><span>Displays a List of File Status</span></div>	
-      <div><span>git</span> <code>log </code>(<code>-p</code>)</div>
-      <div><span>Displays Commit History</span></div>	
-      <div></div>
-      <div style="margin-top: -0.4em;"><span>(Show Lines Added to each File)</span></div>
-      <div><span>git</span> <code>ls</code></div>
-      <div><span>Displays a List of all Repo Files</span></div>
-      <div><span>git</span> <code>add </code>(<code>.</code>) <code>file</code></div>
-      <div><span>Stage a File (All Files)</span></div>		
-      <div><span>git</span> <code>commit -m</code> (<code>-a</code>)</div>
-      <div><span>Commit a File (All Files)</span></div>	
-      <div><span>git</span> <code>revert (SHA id#)</code></div>
-      <div><span>Undo Remote Branch Commits</span></div>		
-      
-      <div><span>git</span> <code>reset HEAD &lt;file&gt;</code></div>
-      <div><span>Unstage a File</span></div>	
-      <div><span>git</span> <code>checkout &lt;file&gt;</code></div>
-      <div><span>Unmodify a File</span></div>	
-      
-      <div><span>git</span> <code>push</code></div>
-      <div><span>Sync Commits w/ Master Repo</span></div>		
-      <div><span>git</span> <code>pull</code></div>
-      <div><span>Sync Commits w/ Team Repo</span></div>
-      <div><span>git</span> <code>mv</code></div>
-      <div><span>Move Files Tracked by Git</span></div>
-      <div><span>git</span> <code>rm</code></div>
-      <div><span>Remove Files Tracked by Git</span></div>	
-      <div><span>git</span> <code>diff</code></div>
-      <div><span>See All File Changes</span></div>	
-      <div><span>git</span> <code>blame</code></div>
-      <div><span>Remove Files Tracked by Git</span></div>	
-      <div><span>git</span> <code>reflog</code></div>
-      <div><span>*Find Lost Work in the HEAD</span></div>	
-      <div><span>git</span> <code>clean -f</code></div>
-      <div><span>Delete Untracked Files</span></div>	
-      <div><span>git</span> <code>--version</code></div>
-      <div><span>Check Git Version</span></div>	
-      <div><span>git</span> <code>config --list</code></div>
-      <div><span>View Configurations</span></div>	
-      <div><span>git</span> <code>cat .git/HEAD</code></div>
-      <div><span>View HEAD File Status</span></div>
-    </article>
-		<p>
-      Git declarations include <i>(Options)</i> that can be specified with a Single dash (<code>-</code>) or a Double dash (<code>--</code>) followed by a Letter or a Word, respectively.
-    </p>
-  </section>
-  <!-- ************************************************** -->
-  <hr>
   <!-- ************************************************** -->
   <!-- Part 2: Creating a Repository -->
   <section>
@@ -126,8 +56,6 @@ include ("../inc/header.php");
     </p>
   </section>
   <!-- ************************************************** -->
-  <hr>
-  <!-- ************************************************** -->
   <!-- Part 3: Staging Changes -->
   <section>
 		<h2 class="title">&nbsp;Staging Changes</h2>
@@ -151,8 +79,6 @@ include ("../inc/header.php");
       After performing these four steps, you will be promted to enter your credentials unless you use advanced features that allow you to configure your dev environment.
     </p>
   </section>
-  <!-- ************************************************** -->
-  <hr>
   <!-- ************************************************** -->
   <!-- Part 4: Managing Committed Files -->
   <section>
@@ -187,8 +113,6 @@ include ("../inc/header.php");
     </p>
   </section>
   <!-- ************************************************** -->
-  <hr>
-  <!-- ************************************************** -->
   <!-- Part 5: Working with Remote Repositories -->
   <section>
     <h2 class="title">&nbsp;Working with Remote Repos</h2>
@@ -209,7 +133,6 @@ include ("../inc/header.php");
       <div><span>git</span> <code>pull origin</code> <span>(Add Updated Files to Directory)</span></div>
     </article>
   </section>
-  <hr>
   <!-- ************************************************** -->
   <!-- Part 6: Branching -->
   <section>
@@ -289,7 +212,7 @@ include ("../inc/header.php");
       <div><span></span></div>
     </article>
     <p>
-      The advantage to establishing an association between a local tracking branch with a remote branch is that we can use a simple command when that tracking branch is checked out. This process is similar to fetch and merge commits from a remote repo. Just keep in mind that <code>git pull</code> should be used for commits when working independently, but <code>git fetch</code> and <code>git merge</code> should be used when working on remote repositories or merging different remote branches into your local branch.
+      The advantage to establishing an association between a local tracking branch with a remote branch is that we can use a simple command when that tracking branch is checked out. This process is similar to fetch and merge commits from a remote repo. Just keep in mind that <code>git pull</code> should be used for commits when working independently, but <code>git fetch</code> and <code>git merge</code> should be used when working on remote repositories or merging different remote branches into your local branch. Use this interactive tool to <a href="https://learngitbranching.js.org/" target="_blank">learn git branching</a>.
     </p>
   </section>
   <!-- ************************************************** -->

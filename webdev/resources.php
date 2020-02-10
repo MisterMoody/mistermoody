@@ -329,7 +329,7 @@ include ("../inc/header.php");
           
           <span><a target="_blank" href="https://stackedit.io/">Markdown Editor</a></span>
           
-          <span><a target="_blank" href="https://github.com/">Github</a> <a target="_blank" href="https://lab.github.com/">VCS</a></span>
+          <span><a target="_blank" href="https://github.com/">Github</a> <a target="_blank" href="https://lab.github.com/">VCS</a> <a target="_blank" href="https://guides.github.com/introduction/git-handbook/">Handbook</a></span>
           
           <span><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key" target="_blank">Generate SSH Keys</a></span>
           
@@ -339,7 +339,7 @@ include ("../inc/header.php");
           
           <span><a target="_blank" href="https://learngitbranching.js.org/">Git Branching</a></span>
 
-          <span><a target="_blank" href="https://gist.github.com/BolajiAyodeji/d5393b90650c49ba9ef81493bfca9cda">Git</a> <a target="_blank" href="http://git-scm.com/docs ">Cheat Sheet</a></span>
+          <span><a target="_blank" href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet/">Cheat Sheet</a></span>
           
           <span><a target="_blank" href="https://keyframes.app/editor/">@keyframes Editor</a></span>
 
@@ -364,8 +364,8 @@ include ("../inc/header.php");
     </section>
   <!-- ******************************************** -->
   <!-- HTML Glossary -->
-  <section>
-    <h2 class="title">HTML Glossary</h2>
+  <aside>
+    <h2 class="title">&nbsp;HTML Glossary</h2>
     <details>
       <summary>Useful Terms and Definitions</summary>
       <br>
@@ -489,12 +489,12 @@ include ("../inc/header.php");
       </article>
     </details>
     <br>
-  </section>  
+  </aside>  
   <!-- ******************************************** -->
   <!-- ******************************************** -->
   <!-- CSS Glossary -->
-  <section>
-    <h2 class="title">CSS Terminology</h2>
+  <aside>
+    <h2 class="title">&nbsp;CSS Terminology</h2>
     <details>
       <summary>Useful Terms and Definitions</summary>
       <br>
@@ -524,16 +524,15 @@ include ("../inc/header.php");
       </article>
     </details>
     <br>
-  </section>
-  <!-- ******************************************** -->  
+  </aside>
   <!-- ******************************************** -->  
   <!-- ******************************************** -->
   <!-- Web Dev Glossary -->
-  <section>
+  <aside>
     <h2 class="title">&nbsp;Web Dev Glossary</h2>
     <details>
       <summary>Useful Terms and Definitions</summary>
-      <br><!--<a href="https://dev.to/valentinogagliardi/21-web-development-terms-you-should-absolutely-know-about-368j">Explaination</a>-->
+      <br>
       <article class="glossary">
         <div><code>ECMAScript</code></div>
         <div><span>official JavaScript (ES5/ES6)</span></div>
@@ -583,8 +582,70 @@ include ("../inc/header.php");
         <div><span>the amount of time to transfer data</span></div>
       </article>
     </details>
-  </section>
-  <!-- ************************************************** -->
+    <br>
+  </aside>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- List of Git Commands -->
+  <aside>
+    <h2 class="title">&nbsp;Git Commands</h2>
+    <details>
+      <summary>List of Git Commands</summary>
+      <br>
+    <article class="glossary">
+      <div class="hideMobile"><b>Git Command</b></div>
+      <div class="hideMobile"><b>Git Description</b></div>
+      <div><span>git</span> <code>--help</code></div>
+      <div><span>Displays a List of Git declarations</span></div>
+      <div><span>git</span> <code>clone</code></div>
+      <div><span>Download Existing Repository</span></div>		
+      <div><span>git</span> <code>init</code></div>
+      <div><span>Setup a New Repository</span></div>
+      <div><span>git</span> <code>status</code></div>
+      <div><span>Displays a List of File Status</span></div>	
+      <div><span>git</span> <code>log </code>(<code>-p</code>)</div>
+      <div><span>Displays Commit History</span></div>	
+      <div></div>
+      <div style="margin-top: -0.4em;"><span>(Show Lines Added to each File)</span></div>
+      <div><span>git</span> <code>ls</code></div>
+      <div><span>Displays a List of all Repo Files</span></div>
+      <div><span>git</span> <code>add </code>(<code>.</code>) <code>file</code></div>
+      <div><span>Stage a File (All Files)</span></div>		
+      <div><span>git</span> <code>commit -m</code> (<code>-a</code>)</div>
+      <div><span>Commit a File (All Files)</span></div>	
+      <div><span>git</span> <code>revert (SHA id#)</code></div>
+      <div><span>Undo Remote Branch Commits</span></div>		
+      
+      <div><span>git</span> <code>reset HEAD &lt;file&gt;</code></div>
+      <div><span>Unstage a File</span></div>	
+      <div><span>git</span> <code>checkout &lt;file&gt;</code></div>
+      <div><span>Unmodify a File</span></div>	
+      
+      <div><span>git</span> <code>push</code></div>
+      <div><span>Sync Commits w/ Master Repo</span></div>		
+      <div><span>git</span> <code>pull</code></div>
+      <div><span>Sync Commits w/ Team Repo</span></div>
+      <div><span>git</span> <code>mv</code></div>
+      <div><span>Move Files Tracked by Git</span></div>
+      <div><span>git</span> <code>rm</code></div>
+      <div><span>Remove Files Tracked by Git</span></div>	
+      <div><span>git</span> <code>diff</code></div>
+      <div><span>See All File Changes</span></div>	
+      <div><span>git</span> <code>blame</code></div>
+      <div><span>Remove Files Tracked by Git</span></div>	
+      <div><span>git</span> <code>reflog</code></div>
+      <div><span>*Find Lost Work in the HEAD</span></div>	
+      <div><span>git</span> <code>clean -f</code></div>
+      <div><span>Delete Untracked Files</span></div>	
+      <div><span>git</span> <code>--version</code></div>
+      <div><span>Check Git Version</span></div>	
+      <div><span>git</span> <code>config --list</code></div>
+      <div><span>View Configurations</span></div>	
+      <div><span>git</span> <code>cat .git/HEAD</code></div>
+      <div><span>View HEAD File Status</span></div>
+    </article>
+    </details>
+    </aside>
   <!--     ************* PAGINATION ************    -->
   <?php include ("../inc/pagination.php"); ?>
   <!-- ******************************************** -->

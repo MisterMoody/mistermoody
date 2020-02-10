@@ -207,7 +207,7 @@ body {
 }
 /**/
 main {margin: 0 1em;}     /* 'PHP' Container Try {0 0.4em}  */
-main section, main article {margin-top: 0.44em;}
+main section, section h2.title, article h2.title {margin-top: 0.44em;}
 /* Page-Alignment => REQUIRED for Full-Width Images
    Images 'MUST' be placed 'Outside of Section or Article' */
 section {}                /* 'HTML' Containers */
@@ -318,7 +318,7 @@ address {
   text-align: center;
 }
 blockquote {margin: -0.8em 0 0.5em 0; text-align: center;}
-blockquote code, .glossary div code {font-size: 1em;}   /*<code> for Blockquote + Resource Glossary*/
+blockquote code, .glossary div code, .miniBlock div code {font-size: 1em;}   /*<code> for Blockquote + Resource Glossary*/
 code, p code {
   background: #ddd; 
   border-radius: 5px;
@@ -346,10 +346,9 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
   text-shadow: 0 2px #fff;    /* Etched Titles */
 }
-h2.title {
-  background-color: #ddd;
-  margin: 1.8em 0 0.44em 0;
-}
+h2.title {background-color: #ddd;}          /* <Site> Titles */
+article h2.title {margin: 1.8em 0 0.44em; } /* <Site> Titles */
+aside h2.title {margin: 0; }                /* Resource Titles*/
 h3.title, h4.title, h5.title, h6.title {
   background-color: #ddd;
   margin: 1em 0 0.44em 0;
@@ -416,7 +415,7 @@ ul {list-style-type: none;}
     font-weight: 800;
     font-size: 1.6em;
   }
-  code, p code, details {font-size: 1.2em;}
+  code, p code, details, .miniBlock div code {font-size: 1.2em;}
   details{font-size: 1.2em;}
   figure {margin: 0;}
   h2, h3, h4, h5, h6 {margin-bottom: 0.2em;}
@@ -426,7 +425,7 @@ ul {list-style-type: none;}
     letter-spacing: 0.048em;
   }
   ol {
-    font-size: 1em; 
+    font-size: 1.08em; 
     padding-left: 80px;
   }
 }
@@ -915,30 +914,40 @@ div.chapter__Date_Tag {
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px  rgba(255,255,255,0.8);
 }
-@media only screen and (min-width: 800px) {
-  .chapter__Book {
-    display: grid;
-    grid-template-rows: auto;
-  }
-  .chapter {grid-gap: 0.2em;}
-  .chapter__Headline {margin-left: 0.2em;}
-  div.chapter__Date_Tag {font-size: 1em; margin-top: 0.5em;}
-  .chapter__Date_Tag {
-    margin: 0.8em 0 0 0.2em;
-    display: grid;
-    grid-template-columns: 24vw repeat(auto-fit, minmax(44px, 16rem));
-  }
-  .chapter__Tags {     
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25px, auto));
-    grid-auto-rows: 1.6em; 
-  }
-  .chapter__Tags div {font-size: 1em;}
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+  /* webdesign/RESOURCES GRID*/
+.resSyntax {grid-area: syntax;}
+.resContent {grid-area: contentRes;}
+.resLayout {grid-area: layout;}
+.resStyles {grid-area: styles;}
+.resSnippets {grid-area: snippets;}
+.resHelp {grid-area: helpRes;}
+.resManage {grid-area: manage;}
+.resTools {grid-area: tools;}
+.resourceGrid {
+  margin: 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(22px, auto);
+  grid-template-areas:
+    "syntax contentRes"
+    "layout styles"
+    "snippets helpRes"
+    "manage tools";
+  grid-gap: 0 1em;
+}
+.resourceGrid div h3 {margin-bottom: 0.4em;}
+.resourceLink {
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.48em;
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-  /* webdesign/~ */
-/* Mobile Single-COL =/= Desktop 2-COL */
+/* 1-COLUMN =/= Desktop 2-COL */
 aside.block {
   width: 100%;
   margin: 0;
@@ -960,20 +969,23 @@ div.blockCard {
   border: 1px solid #838487;
   text-align: center;
 }*/
-@media only screen and (min-width: 800px){
-  aside.block {
-    display: grid;
-    grid-template-rows: repeat(auto, minmax(24px, auto));	
-    grid-template-columns: repeat(2, 1fr); 
-  }
-  /*div.blockCard {
-    margin: 2px 8px;
-    padding: 0;
-  }*/
+/* 2-COLUMN =/= 'ALWAYS' */
+.miniBlock {
+  margin: -0.8em 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
 }
-/* ++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++ */
-/* 2-COL Variable-Responsive 2-COL Grid */
+/* 2-COLUMN Variable-Responsive LIST-Grid */
+.glossary {
+   width: 100%;
+   margin: 0 auto;
+   padding: 0;
+   display: grid;
+   grid-template-rows: repeat(auto, 20px);
+   grid-template-columns: auto 1fr; /* auto was 6.2em*/
+   grid-gap: 2px;
+ }
+/* 2-COLUMN Variable-Responsive LIST-Grid */
 .declarations {
   width: 100%;
   margin: -1em 0 0.5em 0;
@@ -984,21 +996,9 @@ div.blockCard {
   grid-column-gap: 0.4em;
 }
 .declarations span {font-size: 0.80em;}
-@media all and (min-width: 800px) {
-	.declarations {
-    margin: 0.25em 0.55em 0.5em 0.25em;
-    width: 100%;
-    padding: 0;
-    display: grid;
-    grid-template-rows: repeat(auto, 24px);
-    grid-template-columns: minmax(300px, max-content) auto;
-    grid-gap: 0 1em;
-  }
-  .declarations span {font-size: 1.18em;}
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-/* Multi-COL Unicode Character Grid */
+/* Multi-COL CHARACTER-CHART-Grid */
 .characterGrid {
   margin: 0;
   padding: 0;
@@ -1007,59 +1007,41 @@ div.blockCard {
   grid-template-rows: auto;
   grid-gap: 4px;
 }
-/*Unicode <div> Style*/
 .asciiItem {
   background: #dddada;
   text-align: center;
-}
-/*Unicode 1st Row*/
-.asciiItemChar {font-size: 1.5em;}
-@media only screen and (min-width: 800px) {
-  .characterGrid {
-    margin: 0;
-    padding: 0;
+}                  /*Unicode <div> Style*/
+.asciiItemChar {font-size: 1.5em;}  /*Unicode 1st Row*/
+@media all and (min-width: 800px) {  
+  .chapter__Book {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
-    grid-gap: 8px;
   }
-}
-/**//****************************************//**/
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++ */
-/* ++++++++++++++++++++++++++++++++++++++++++++ */
-
-  /* webdesign/RESOURCES */
-.resSyntax {grid-area: syntax;}
-.resContent {grid-area: contentRes;}
-.resLayout {grid-area: layout;}
-.resStyles {grid-area: styles;}
-.resSnippets {grid-area: snippets;}
-.resHelp {grid-area: helpRes;}
-.resManage {grid-area: manage;}
-.resTools {grid-area: tools;}
-.resourceGrid {
-  margin: 1em 0;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(22px, auto);
-  grid-template-areas:
-    "syntax contentRes"
-    "layout styles"
-    "snippets helpRes"
-    "manage tools";
-  grid-gap: 0 1em;
-}
-.resourceGrid div h3 {margin-bottom: 0.4em;}
-.resourceLink {
-  margin-bottom: 1em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0.48em;
-}
-@media only screen and (min-width: 800px) {
+  .chapter {grid-gap: 0.2em;}
+  .chapter__Headline {margin-left: 0.2em;}
+  div.chapter__Date_Tag {font-size: 1em; margin-top: 0.5em;}
+  .chapter__Date_Tag {
+    margin: 0.8em 0 0 0.2em;
+    display: grid;
+    grid-template-columns: 24vw repeat(auto-fit, minmax(44px, 16rem));
+  }
+  .chapter__Tags {     
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, auto));
+    grid-auto-rows: 1.6em; 
+  }
+  .chapter__Tags div {font-size: 1em;}
+  /**/
+  aside.block {
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(24px, auto));	
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  /*div.blockCard {
+    margin: 2px 8px;
+    padding: 0;
+  }*/
+  /**/
   .resourceGrid {
     display: grid;
     width: 100%;
@@ -1071,29 +1053,33 @@ div.blockCard {
   grid-gap: 1em;
   }  
   .resourceLink {grid-gap: 0.84em;}
-}
-/* WebDesign/resources 'Glossary GRID' */
-.glossary {
-   width: 100%;
-   margin: 0 auto;
-   padding: 0;
-   display: grid;
-   grid-template-rows: repeat(auto, 20px);
-   grid-template-columns: auto 1fr; /* auto was 6.2em*/
-   grid-gap: 2px;
- }
-@media only screen and (min-width: 800px) {
+  /**/
   .glossary {
     display: grid;
     grid-template-rows: repeat(auto, 24px);
     grid-template-columns: 10em 1fr;
   }
+  /**/
+	.declarations {
+    margin: 0.25em 0.55em 0.5em 0.25em;
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(auto, 24px);
+    grid-template-columns: minmax(300px, max-content) auto;
+    grid-gap: 0 1em;
+  }
+  .declarations span {font-size: 1.18em;}
+  /**/
+  .characterGrid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 8px;
+  }
 }
-/* ============================================ */
-/* ============================================ */
-
-
-
 /* ============================================ */
 /* ============================================ */
 

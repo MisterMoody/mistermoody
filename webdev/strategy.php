@@ -8,6 +8,7 @@ include ("../inc/header.php");
 
 <!-- // CONTENT-BEGINS ////////////////////////// -->
 <article>
+  <!-- ************************************************** -->
   <!-- // Introduction -->
   <section>
     <h1>Content Strategy</h1>
@@ -25,8 +26,6 @@ include ("../inc/header.php");
     </ol> 
   </section>
   <!-- ************************************************** -->
-  <hr>
-  <!-- ************************************************** -->
   <!-- Part 1: Brainstorm -->
   <section>
     <h2 class="title">&nbsp;Brainstorm</h2>
@@ -34,8 +33,6 @@ include ("../inc/header.php");
       Every website or application ever built was designed based on an idea that will ultimately determine a devs approach. Plan accordingly.
     </p>
   </section>
-  <!-- ************************************************** -->
-  <hr>
   <!-- ************************************************** -->
   <!-- Part 2: Content Basics -->
   <section>
@@ -65,17 +62,21 @@ include ("../inc/header.php");
       <p>
         UX content is a collection of information that establishes a tone for your project, communicating brand personality, values and identity in order to build trust by revealing ones agency (mission statement). Content should be descriptive, providing details to help users to facilitate their goals. Helpful content keeps users engaged, and this can be accomplished by localizing language, including video tutorials and instructional content as well as creating an interactive series of clickable questions and answers that guides a user down logical pathways toward a solution. It should inspire and support users during their visit, creating a memorable experience. In fact, creating a positive user experience by building emotional connections leads will produce future business. Use proof (ie testimonials) to encourage users to value product. Do this by developing a Brand Personality, which is the way you communicate who you are and what your value as a brand is.  All website personalities are premised on one of the following brand archtypes:
       </p>
-      <aside class="block">
-        <div><code>King:</code><span> Assertive</span></div>
-        <div><code>Wise:</code><span> Authority</span></div>
-        <div><code>Hero:</code><span> Adventure</span></div>
-        <div><code>Rebel:</code><span> Controvery</span></div>
-        <div><code>Seductress:</code><span> Desirable</span></div>
-        <div><code>Joker:</code><span> Playful</span></div>
-        <div><code>Dreamer:</code><span> Creative</span></div>
-        <div><code>Maiden:</code><span> Innocent</span></div>
-        <div><code>Friend:</code><span> Friendly</span></div>
-        <div><code>Mother:</code><span> Caring</span></div>
+      <aside class="miniBlock">
+        <div class="glossary">
+          <div><code>King:</code></div><div><span> Assertive</span></div>
+          <div><code>Wise:</code></div><div><span> Authority</span></div>
+          <div><code>Hero:</code></div><div><span> Adventure</span></div>
+          <div><code>Rebel:</code></div><div><span> Controvery</span></div>
+          <div><code>Seductress:</code></div><div><span> Desirable</span>     </div>
+        </div>
+        <div class="glossary">
+          <div><code>Joker:</code></div><div><span> Playful</span></div>
+          <div><code>Dreamer:</code></div><div><span> Creative</span></div>
+          <div><code>Maiden:</code></div><div><span> Innocent</span></div>
+          <div><code>Friend:</code></div><div><span> Friendly</span></div>
+          <div><code>Mother:</code></div><div><span> Caring</span></div>
+        </div>
       </aside>
     </article>
     <!-- Wireframes -->
@@ -124,7 +125,7 @@ include ("../inc/header.php");
       </p>
       <h4 class="title">&nbsp;Public Domain</h4>
       <p>
-        When a copyright expires, that work belongs to the <i>Public Domain</i>, allowing anyone to use it for whatever purpose. Whereas <a href="www.gettyimages.com" target="_blank">images</a> and <a href="http://en.wikipedia.org/wiki/List_of_films_in_the_public_domain_in_the_United_States " target="_blank">movies</a> are fair game, <a href="http://www.pdinfo.com/ " target="_blank">music</a> and <a href="http://www.freesound.org/" target="_blank">sound</a> <a href="http://freemusicarchive.org/" target="_blank">effects</a>, on the other hand, once they enter the public domain, still have applicable copyrights. <a href="http://publicdomainreview.org/guide-to-finding-interesting-public-domain-works-online/ " target="_blank">Read more</a> about the public domain.
+        When a copyright expires, that work belongs to the <i>public domain</i>, allowing anyone to use it for whatever purpose. Whereas <a href="www.gettyimages.com" target="_blank">images</a> and <a href="http://en.wikipedia.org/wiki/List_of_films_in_the_public_domain_in_the_United_States " target="_blank">movies</a> are fair game, <a href="http://www.pdinfo.com/ " target="_blank">music</a> and <a href="http://www.freesound.org/" target="_blank">sound</a> <a href="http://freemusicarchive.org/" target="_blank">effects</a>, on the other hand, once they enter the public domain, still have applicable copyrights. <a href="http://publicdomainreview.org/guide-to-finding-interesting-public-domain-works-online/ " target="_blank">Read more</a> about the public domain.
       </p>
       <h4 class="title">&nbsp;Licensing</h4>
       <p>
@@ -146,7 +147,7 @@ include ("../inc/header.php");
       <span>"I have a good faith belief that use of the copyrighted materials described above as allegedly infringing is not authorized by the copyright owner, its agent, or the law. I swear, under penalty of perjury, that the information in the notification is accurate and that I am the copyright owner or am authorized an act on behalf of the owner of an exclusive right that is allegedly infringed."</span>
     </blockquote>
       <p>
-        It is a best practices to create a <i>Privacy <a href="https://www.freeprivacypolicy.com/" target="_blank">Policy</a></i> that explains to users not only how the website collects, stores and possibly uses their information, but also how content can be redistributed, if at all. It must include a physical address for the business with an opt-out clause.
+        It is a best practices to create a <i>privacy <a href="https://www.freeprivacypolicy.com/" target="_blank">policy</a></i> that explains to users not only how the website collects, stores and possibly uses their information, but also how content can be redistributed, if at all. It must include a physical address for the business with an opt-out clause.
       </p>
       <h4 class="title">&nbsp;SEO</h4>
       <p>
@@ -155,21 +156,11 @@ include ("../inc/header.php");
     </article>
   </section>
   <!-- ************************************************** -->
-  <!--
-    <figure>
-      <img class="mainImage" alt="Linking a CSS File with an HTML Document" src="img/cssLinkStrategy.jpg">
-      <figcaption>
-        CSS &lt;Link&gt; Strategy
-      </figcaption>
-    </figure>
-    -->
-  <hr>
-  <!-- ************************************************** -->
   <!-- Part 3: Information Architecture -->
   <section>
     <h2 class="title">&nbsp;Information Architecture</h2>
     <p>
-      <a href="https://www.usability.gov/what-and-why/information-architecture.html" target="_blank">Information Architecture</a> is the way information is organized, labeled and interconnected within a website. References are made in how links make a navigation system, how sections are named and how categories are assigned. Good IA makes locating and understanding collections of information easy and this is done through proper naming and linking.
+      <a href="https://www.usability.gov/what-and-why/information-architecture.html" target="_blank">Information architecture</a> is the way information is organized, labeled and interconnected within a website. References are made in how links make a navigation system, how sections are named and how categories are assigned. Good IA makes locating and understanding collections of information easy and this is done through proper naming and linking.
     </p>
     <p>
       A major focus of IA is the ability to adapt or scale a website in anticipation of environmental changes. Use of web analytics, user feedback and research to evaluate change is a required skill. Scheduling reminders to monitor data sources and automating processes to run random site tests are tactics that will make the process less frustrating.
@@ -204,23 +195,18 @@ include ("../inc/header.php");
        It is important to test usability to ensure everything works as intended, or at minimum that users do not become frustrated. A general <i>Usability Test</i> will have users speak out loud while completing common tasks while the dev quietly observes. The results should indicate how the average user makes decisions and interpret how the user accessess the information and interface. The key is to pinpoint user engagement using metrics that will help qualify modifications that should be made.
     </p>
     <p>
-      There are various means by which devs can test IA, a good starting point of which would be to create then review a <i><a href="https://www.gloomaps.com/" target="_blank">Sitemap</a></i> of the websites. A sitemap is a visual representation of website pages and sections with links that illustrate their connection. Ascertain the quality of IA organization by performing a <i>Tree Test</i>: a text-based sitemap given to a user who is asked to follow links to select the spot where they think they would find relevant information. <i><a href="https://www.optimalworkshop.com/101/card-sorting" target="_blank">Card Sorting</a></i> is another testing method that devs use to understand user perspectives related to how the user would organize the information and name categories. After testing users, it is helpful to provide a <a href="https://www.mockplus.com/blog/post/user-experience-survey-questions" target="_blank">survey</a> to receive feedback.
+      There are various means by which devs can test IA, a good starting point of which would be to create then review a <i><a href="https://www.gloomaps.com/" target="_blank">sitemap</a></i> of the websites. A sitemap is a visual representation of website pages and sections with links that illustrate their connection. Ascertain the quality of IA organization by performing a <i>Tree Test</i>: a text-based sitemap given to a user who is asked to follow links to select the spot where they think they would find relevant information. <i><a href="https://www.optimalworkshop.com/101/card-sorting" target="_blank">Card sorting</a></i> is another testing method that devs use to understand user perspectives related to how the user would organize the information and name categories. After testing users, it is helpful to provide a <a href="https://www.mockplus.com/blog/post/user-experience-survey-questions" target="_blank">survey</a> to receive feedback.
     </p>
     <p>
       
     </p>
   </section>
   <!-- ************************************************** -->
-
-
-  <!-- ************************************************** -->
   <!--          ********** PAGINATION **********          -->
   <?php include ("../inc/pagination.php"); ?>
   <!-- ************************************************** -->
-
 </article>
 <!-- .....CONTENT-ENDS ////////////////////////// --> 
-
 
 <!-- ************************************************** -->
 <!-- ************************************************** -->

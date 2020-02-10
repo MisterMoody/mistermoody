@@ -9,6 +9,7 @@ include ("../inc/header.php");
 
 <!-- // CONTENT-BEGINS ////////////////////////// -->
 <article>
+  <!-- ************************************************** -->
   <!-- // Introduction -->
   <section>
     <h1>Styling Content with CSS</h1>
@@ -23,23 +24,19 @@ include ("../inc/header.php");
       <li>Create and Load a Stylesheet</li>
       <li>CSS Snytax Keynotes</li>
       <ul>
-        <li>Selector Types</li>
-        <li>Length Units</li>
+        <li>Selector Types &amp; Length Units</li>
       </ul>
       <li>Making Declarations</li>
       <ul>
-        <li>Container Layout</li>
-        <li>Sizing and Placement</li>
-        <li>Colors</li>
-        <li>Backgrounds and Borders</li>
-        <li>Font and Text</li>
+        <li>Container Layout, Placement &amp; Sizing</li>
+        <li>Backgrounds, Borders, Colors, Font &amp; Text</li>
         <!-- <li>Declaration Examples</li>-->
       </ul>
       <li>Style Sheet Format and Structure</li>
       <li>Debugging and Optimizing CSS</li>
     </ol> 
   </section>
-  <hr>
+  <!-- ************************************************** -->
   <!-- Part 1:  Create and Load a Stylesheet++ -->
   <section>
     <h2 class="title">&nbsp;Create and Load a Stylesheet</h2>
@@ -57,8 +54,6 @@ include ("../inc/header.php");
       Now, lets focus on writing CSS!
     </p>
   </section>
-  <!-- ************************************************** -->
-  <hr>
   <!-- ************************************************** -->
   <!-- Part 2: Understanding CSS Syntax++ -->
   <section>    
@@ -284,8 +279,6 @@ include ("../inc/header.php");
       </article>    
   </section>
   <!-- ************************************************** -->
-  <hr>
-  <!-- ************************************************** -->
   <!-- Part 3: Making Declarations -->
   <section>
     <!-- Project Plan/Intro -->
@@ -392,6 +385,8 @@ include ("../inc/header.php");
       
       <!-- GRID EXAMPLES -->
       <h4 class="title">&nbsp;Grid Examples</h4>
+      <aside class="block">
+      <div>
       <p>Typical Row-Grid</p>
       <aside class="declarations">
         <div><code>{display: grid;}</code></div>
@@ -403,7 +398,8 @@ include ("../inc/header.php");
         <div><code>{height: 100%;}</code></div>
         <div><span></span></div>
       </aside>
-      
+      </div>
+      <div>
       <p>Grid FLOW</p>
       <aside class="declarations">
         <div><code>{g-a-f: column;}</code></div>
@@ -416,7 +412,8 @@ include ("../inc/header.php");
         <div></div>
         <div><code>{grid: auto-flow dense 100px / 1fr 2fr;}</code></div>
       </aside>
-      
+      </div>
+      </aside>
       <!-- Transition to grid-items then FLEXbox -->
       <p>
         There are also properties used with <code>grid</code> that targets layout structure for grid-items. The <code>justify-items</code> and <code>align-items</code> properties provide horizontal and vertical alignment of grid items.
@@ -1024,9 +1021,9 @@ include ("../inc/header.php");
         <div><span>img</span><code>:hover {</code></div>
         <div><span></span></div>
         <div><code>&nbsp;rotate(-5deg)</code></div>
-        <div><span>// Rotate -5 Degrees on <code>:hover</code> for .5s</span></div>
+        <div><span>// Rotate -5 Degrees on <code>:hover</code></span></div>
         <div><code>&nbsp;rotate(2turn)</code></div>
-        <div><span>// Rotates 2 Full Rotationson <code>:hover</code> for .5s</span></div>
+        <div><span>// Rotates 2 Full Rotations on <code>:hover</code></span></div>
         <div><code>&nbsp;skewX(10deg); </code></div>
         <div><span>// Tilts Image 10deg Horizontally</span></div>
         <div><code>&nbsp;skewY(-10deg); </code></div>
@@ -1034,13 +1031,13 @@ include ("../inc/header.php");
         <div><code>&nbsp;scale(2); </code></div>
         <div><span>// Increases Image Size x2</span></div>
         <div><code>&nbsp;scale(1, 2); </code></div>
-        <div><span>// Scaled Width: 1 and Scaled Height: 2</span></div>
+        <div><span>// Scaled Width: 1 and Height: 2</span></div>
         <div><code>&nbsp;translateX()</code></div>
         <div><span>// Move Element Horizontally</span></div>
         <div><code>&nbsp;translateY()</code></div>
         <div><span>// Move Element Vertically</span></div>
         <div><code>&nbsp;translate(40px, 100px)</code></div>
-        <div><span>Move Element 40px Left, 100px Down</span></div>
+        <div><span>Move 40px Left, 100px Down</span></div>
       </aside>
       <p>
         Tidbits: use {<code>animation-play-state: paused;}</code> on hover to pause an animation and use <code>font-variation</code> properties to animate typography with variable fonts. Tinker with these animation <a href="https://codepen.io/mistermoody/pen/LYEXMoL" target="_blank">examples</a>.
@@ -1050,8 +1047,6 @@ include ("../inc/header.php");
       </p>
     </article>
   </section>
-  <!-- ************************************************ -->
-  <hr>
   <!-- ************************************************ -->
   <!-- Part 4: Style Sheet Format and Structure         -->
   <section>
@@ -1106,8 +1101,6 @@ include ("../inc/header.php");
     </blockquote>
     
   </section>
-  <!-- ************************************************ -->
-  <hr>
   <!-- ************************************************ -->
   <!-- Part 5:  Debugging CSS -->
   <section>
