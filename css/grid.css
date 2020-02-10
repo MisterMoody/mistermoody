@@ -204,10 +204,10 @@ body {
   padding: 0;
   color: #282828;
 	font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.6;
 }
 /**/
 main {margin: 0 1em;}     /* 'PHP' Container Try {0 0.4em}  */
+main section, main article {margin-top: 0.44em;}
 /* Page-Alignment => REQUIRED for Full-Width Images
    Images 'MUST' be placed 'Outside of Section or Article' */
 section {}                /* 'HTML' Containers */
@@ -228,7 +228,10 @@ footer  {
   height: 20px;
   text-align: center;*/
 }
-@media all and (min-width: 800px){main {margin: 0 4em;}}
+@media all and (min-width: 800px){
+  main {margin: 0 4em;}
+  section {margin: 1em 0;}
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* Link + BTN Styles*/
@@ -279,7 +282,7 @@ button.cta {
   background-position: center;
   border-radius: 4px;
   font-weight: 800;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-variant:  small-caps;
   background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
   border: 2px solid #424242;
@@ -310,12 +313,12 @@ button.cta a:hover {
 address {
   margin: 0 0 0.4em 0;
   color: red;
-  font-size: 0.6em;
+  font-size: 1em;
   font-family: cursive;
   text-align: center;
 }
-blockquote {margin: -1em 0 1em 0; text-align: center;}
-blockquote code {font-size: 1em;}   /*<code> for Blockquote's*/
+blockquote {margin: -0.8em 0 0.5em 0; text-align: center;}
+blockquote code, .glossary div code {font-size: 1em;}   /*<code> for Blockquote + Resource Glossary*/
 code, p code {
   background: #ddd; 
   border-radius: 5px;
@@ -325,14 +328,13 @@ code, p code {
   font-weight: 600;
   letter-spacing: .8;
 }
-.glossary div code {font-size: 1.2em;}  /*<code> for Resources Page*/
-details {margin: 0 4px; font-size: 0.8em;}
+details {margin: 0 4px; font-size: 0.88em;}
 dialog::backdrop {
   background: rgba(255,0,0,.25);
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-h1 {font-size: 2em;text-align: center;} 
+h1 {font-size: 2em; text-align: center;} 
 h2 {font-size: 1.75em;}
 h3 {font-size: 1.5em;}
 h4 {font-size: 1.25em;}
@@ -344,7 +346,14 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
   text-shadow: 0 2px #fff;    /* Etched Titles */
 }
-h2.title, h3.title, h4.title, h5.title, h6.title {background-color: #ddd;}
+h2.title {
+  background-color: #ddd;
+  margin: 1.8em 0 0.44em 0;
+}
+h3.title, h4.title, h5.title, h6.title {
+  background-color: #ddd;
+  margin: 1em 0 0.44em 0;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 hr {
@@ -373,8 +382,10 @@ i {
 }   /* Emphasizes 'Terminology' */
 p, i, mark, summary { 
   font-size: 1em;  /* calc(0.96rem + 0.02vw) */
-  line-height: 1.248; /* Try 1.4*/
+  line-height: 1.4; 
+  letter-spacing: 0.024em;;
 }  
+p {font-size: calc(1.048em + 0.02vw);}
 p, ol {color: #444;}    /* 'Dim' TEXT-Color Styles */
 ol {
   font-size: 0.88em;
@@ -390,9 +401,8 @@ ul {list-style-type: none;}
 @media all and (min-width: 800px) {  
   main {margin: 0 5.3em;}
   /**/  
-  address {
-    margin: 0 0 2em 0;
-  }
+  address {margin: 0 0 2em 0;}
+  blockquote {font-size: 1.48em; margin: -0.2em 0 0.5em 0;}
   .btn {
     margin: 0;
     padding: 0;
@@ -406,11 +416,15 @@ ul {list-style-type: none;}
     font-weight: 800;
     font-size: 1.6em;
   }
-  code, p code, details {font-size: 1em;}
+  code, p code, details {font-size: 1.2em;}
   details{font-size: 1.2em;}
   figure {margin: 0;}
   h2, h3, h4, h5, h6 {margin-bottom: 0.2em;}
-  p {font-size: 1.1em; margin: 0.25em 0.55em 0.25em 0.25em;}
+  p, i, mark, summary  {
+    font-size: 1.2em; 
+    line-height: 1.8; 
+    letter-spacing: 0.048em;
+  }
   ol {
     font-size: 1em; 
     padding-left: 80px;
@@ -452,7 +466,7 @@ img {
   border-radius: 8px;
 } 
 figure {
-  margin: 0; 
+  margin: 0.4em 0; 
   padding: 0;
 }
 figcaption {
@@ -552,8 +566,7 @@ ul.social {
   /* mistermoody/ABOUT/ + INDEX */
   /* About Me 'Image Gallery' */
 .imageGrid { 
-  margin: 1em 0;
-  /* padding-bottom: 0.612em;    Offset top-margin */
+   padding-bottom: 0.8em;
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
   grid-template-rows: repeat(auto, 1fr);
@@ -563,11 +576,7 @@ ul.social {
   justify-items: center;
   max-width: 100%;
   }
-.imageGrid img {
-  /*border: 1px solid rgba(0,0,0,0.3);
-  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);*/
-  max-width: 100%;
-}
+.imageGrid img {max-width: 100%;}
 .imageGrid img:nth-child(5) {
   grid-column: span 2;
   grid-row: span 2;
@@ -863,9 +872,9 @@ label.required:after {
 
 
 /* ================================================================ */
-/* ================== mistermoody/WEBDESIGN Styles ================ */
+/* ================== mistermoody/WEBDEV Styles =================== */
 /* ================================================================ */
-  /* webdesign/ 'Article Grid' */
+  /* webdev/ 'Article Grid' */
 .chapter__Book {
   background-color: transparent;
   display: grid;
@@ -928,19 +937,17 @@ div.chapter__Date_Tag {
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-  /* webdesign/ */
-
-/* Mobile 2-COL Grid (3-Col on PC) */
+  /* webdesign/~ */
+/* Mobile Single-COL =/= Desktop 2-COL */
 aside.block {
   width: 100%;
-  margin: -1em 0 1em 0;
+  margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: repeat(auto, minmax(24px, auto));	
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
   grid-gap: 4px;
 }
-.block span {font-size: 0.88em;}
+/*.block span {font-size: 0.88em;}
 div.blockCard {
   margin: 0;
   padding: 0;
@@ -952,28 +959,24 @@ div.blockCard {
   padding: 8px;
   border: 1px solid #838487;
   text-align: center;
-}
+}*/
 @media only screen and (min-width: 800px){
   aside.block {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
     display: grid;
     grid-template-rows: repeat(auto, minmax(24px, auto));	
-    grid-template-columns: repeat(3, 1fr);   
-    grid-gap: 2px; 
+    grid-template-columns: repeat(2, 1fr); 
   }
-  div.blockCard {
+  /*div.blockCard {
     margin: 2px 8px;
     padding: 0;
-  }
+  }*/
 }
-/**//****************************************//**/
-/**/
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* 2-COL Variable-Responsive 2-COL Grid */
 .declarations {
   width: 100%;
-  margin: -1em 0 1em 0;
+  margin: -1em 0 0.5em 0;
   padding: 0;
   display: grid;
   grid-template-rows: repeat(auto, minmax(24px, auto));	
@@ -983,7 +986,7 @@ div.blockCard {
 .declarations span {font-size: 0.80em;}
 @media all and (min-width: 800px) {
 	.declarations {
-    margin: 0.25em 0.55em 1em 0.25em;
+    margin: 0.25em 0.55em 0.5em 0.25em;
     width: 100%;
     padding: 0;
     display: grid;
@@ -991,10 +994,10 @@ div.blockCard {
     grid-template-columns: minmax(300px, max-content) auto;
     grid-gap: 0 1em;
   }
-  .declarations span {font-size: 1em;}
+  .declarations span {font-size: 1.18em;}
 }
-/**//****************************************//**/
-/**/
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* Multi-COL Unicode Character Grid */
 .characterGrid {
   margin: 0;
@@ -1054,7 +1057,6 @@ div.blockCard {
   margin-bottom: 1em;
   display: grid;
   grid-template-columns: 1fr;
-  font-size: 0.88em;
   grid-gap: 0.48em;
 }
 @media only screen and (min-width: 800px) {
@@ -1076,16 +1078,15 @@ div.blockCard {
    margin: 0 auto;
    padding: 0;
    display: grid;
-   grid-template-rows: repeat(auto, 24px);
+   grid-template-rows: repeat(auto, 20px);
    grid-template-columns: auto 1fr; /* auto was 6.2em*/
-   grid-gap: 8px;
+   grid-gap: 2px;
  }
 @media only screen and (min-width: 800px) {
   .glossary {
     display: grid;
     grid-template-rows: repeat(auto, 24px);
-    grid-template-columns: 8em 1fr;
-    grid-gap: 0.4em;    
+    grid-template-columns: 10em 1fr;
   }
 }
 /* ============================================ */
