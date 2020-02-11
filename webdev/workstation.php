@@ -45,6 +45,9 @@ include ("../inc/header.php");
     <p>
       <a href="http://brackets.io/" target="_blank">Brackets</a> is an open-source IDE software that primarily focuses on web development. It includes a variety of built-in features such as inline editing, live code preview, split pane views, an extensions manager and multiple file format support: comprehends 38 languages! Learn more about <a href="https://github.com/adobe/brackets/wiki/How-to-Use-Brackets" target="_blank">using Brackets</a>.
     </p>
+    <p>
+      These days a developer can code a site using a <a href="https://repl.it/" target="_blank">cloud-based IDE</a> to build and collaborate on projects. 
+    </p>
   </section>
   <!-- ************************************************** -->
   <!-- Part 2: Set up a Local Host-Server -->
@@ -90,7 +93,7 @@ include ("../inc/header.php");
     </p>
     <h3 class="title">&nbsp;Deployment</h3>
     <p>
-      One of the unique features Git offers is the ability to securely authenticate remote servers using <i>Ssh Protocol</i> by which Git provides <code>keys</code> to an <code>agent</code> in order to upload project files directly to the internet. The agent is a <i>Ftp/Sftp</i> client (server) that, if configured properly, provides Git universal remote access to its servers by communicating file transfers. Two useful FTP clients are <a href="http://filezilla-project.org" target="_blank">FileZilla</a> and <a href="http://cyberduck.ch" target="_blank">CyberDuck</a>.
+      One of the unique features Git offers is the ability to implement continuous integration by using <i>Ssh Protocol</i> to securely authenticate remote servers. Git does this by providing <code>keys</code> to an <code>agent</code> in order to upload project files directly to the internet. The agent is a <i>Ftp/Sftp</i> client (server) that, if configured properly, provides Git universal remote access to its servers. Thus, devs are able to simultaneously manage and ship code. Using an FTP client can be simple process: <a href="http://filezilla-project.org" target="_blank">FileZilla</a> and <a href="http://cyberduck.ch" target="_blank">CyberDuck</a> are suitable.
     </p>
     <p>
       The amalgamation process begins with <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key" target="_blank">generating</a> SSH Keys in order to <a href="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh" target="_blank">connect</a> with Github. Next, <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server#_git_on_the_server" target="_blank">get</a> git on and <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server" target="_blank">set up</a> the server. There are <a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Third-Party-Hosted-Options" target="_blank">3rd party</a> options for <a href="https://git.wiki.kernel.org/index.php/GitHosting" target="_blank">hosting</a> Git projects on a dedicated site

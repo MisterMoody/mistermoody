@@ -325,7 +325,7 @@ include ("../inc/header.php");
 
           <span><a target="_blank" href="http://phpcodechecker.com/">PHP</a> <a target="_blank" href="http://phptester.net/">Validator</a></span>
           
-          <span><a target="_blank" href="https://liveweave.com/">Async Online IDE</a></span>
+          <span><a target="_blank" href="https://liveweave.com/">Online</a> <a target="_blank" href="https://repl.it/">IDE</a></span>
           
           <span><a target="_blank" href="https://stackedit.io/">Markdown Editor</a></span>
           
@@ -338,6 +338,8 @@ include ("../inc/header.php");
           <span><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Third-Party-Hosted-Options" target="_blank">Git 3rd Party</a> <a href="https://git.wiki.kernel.org/index.php/GitHosting" target="_blank">Hosting</a></span>
           
           <span><a target="_blank" href="https://learngitbranching.js.org/">Git Branching</a></span>
+          
+          <span><a target="_blank" href="http://git-school.github.io/visualizing-git/">Visualizing Git</a></span>
 
           <span><a target="_blank" href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet/">Cheat Sheet</a></span>
           
