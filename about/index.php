@@ -7,16 +7,13 @@ include ("../inc/header.php")
 <!-- ******************** <<HOMEPAGE>>  *************** -->
 
 <!-- ** // Start of CONTENT *** -->
-<section class="hideMobile">
-  <h1 style="height: 28vh; margin: 5em auto">Apologies for the inconvenince. If you would like to view this web page, use a mobile device. Thank you.</h1>
-</section>
-  <section class="hideDesktop">
+
     <article>
       <!-- TEACHING Exp. + Social Proof: @ School -->
+      <h1 style="text-align: center; margin: 0.44em 0;">I Make Learning Fun!</h1>
       <p>
         I am a substitute teacher with  <a href="http://jefferson.kyschools.us" target="_blank">J.C.P.S.</a> where I provide learning services to youth of all ages. I have held this position since <code>January 2018</code> and have been awarded <code>100+</code> assignments at <code>42</code> schools where I have facilitated lessons to more than <code>2,700</code> students.
       </p>
-      <h2 style="text-align: center;">I Make Learning Fun!</h2>
       <aside class="imageGrid">
         <img src="img/westernMS.jpg" style="height: 100%;">
         <img src="img/guttermuthES.jpg">
@@ -48,7 +45,7 @@ include ("../inc/header.php")
       <p>
         Life as an emigrant was challenging, yet, as a life-learner having formally studied Francais, Espanol, Hangul, Nihongo and Putonghua, I empathize well with language acquisition struggles learners encounter. Some of the agencies that enabled me to practice my craft include Sogang University, Oxford Seminars, Joongdong High School, YBM Academy, Chien-Shiung Institute of Technology, Tongxiang Middle School, Shanghai Ocean University and Jiaxing College.
       </p>
-      <!-- WebDev INTEREST -->
+      <!-- WebDev INTEREST 'Hidden' -->
       <!--<p>
         My interest in web technologies stems from my participation in <a href="https://codelouisville.org" target="_blank">&#60;code&#62; Louisville</a>, a web dev platform that introduces best practices and concepts related to front-end web development. To this end, I can design, develop and deploy a website to specification. Currently doing my part to build the ecosystem, most recently helping organize a local <a href="https://startupweekendlouisville.com/" target="_blank">startup event</a>. Working on an <a href="webdesign/">e-book</a> for folks interested in learning the craft.
       </p>
@@ -58,10 +55,10 @@ include ("../inc/header.php")
       </figure>-->
       <!-- Call-to-Action BTN -->
       <aside>
-        <button class="cta"><a href="portfolio/" alt="link to portfolio">Check out my Portfolio</a></button> 
+        <button class="cta"><a href="about/resume" alt="link to portfolio">Review Resume</a></button> 
       </aside>
     </article>
-  </section>  
+  
 <!-- ** // End of CONTENT ***** --> 
 
 <!-- ************************************************** -->

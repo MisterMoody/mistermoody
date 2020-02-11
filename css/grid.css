@@ -190,13 +190,13 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
-/* Prevent 'User CopynPaste' 
+/* Prevent 'User CopynPaste'
 main {
   -webkit-user-select: none; 
   -moz-user-select: none; 
   -ms-user-select: none; 
   user-select: none;
-}*/
+} */
 /**/
 body {
   height: 100%;
@@ -207,6 +207,7 @@ body {
 }
 /**/
 main {margin: 0 1em;}     /* 'PHP' Container Try {0 0.4em}  */
+/* Content 'Title'*/
 main section, section h2.title, article h2.title {margin-top: 0.44em;}
 /* Page-Alignment => REQUIRED for Full-Width Images
    Images 'MUST' be placed 'Outside of Section or Article' */
@@ -516,7 +517,7 @@ figcaption {
   margin: 0; 
   height: 31em;
   display: grid;
-  grid-template-rows: 20.20em  repeat(4, 2em);
+  grid-template-rows: 20.20em 8.2em;
   grid-row-gap: 0.4422em;
   text-align: center;
 } 
@@ -548,17 +549,25 @@ ul.social {
 .social a {border-bottom: none;}  
 @media screen and (min-width: 800px){
   .homepage { 
-    margin: 1.8em 8em;
-    height: auto;
-    grid-row-gap: 0.8em;
+    margin: 1.6em 6.2em -0.8em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 8px;
+    justify-content: space-between;
+    grid-gap: 1.48em;
   }
   .homepage__Image {
-    width: 50vw;
-    height: 100%; 
+    max-height: 100%; 
     display: block;
     margin: 0.2em auto;
   }
-  ul.social {margin: 1em 8em;}
+  .homepage__Stats {
+    margin: 1em 0;
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .homepage__Stats h2 {font-size: 2em;}
+  .homepage__Stats h5 {font-size: 1.48em;}
+  ul.social {grid-gap: 1em;}
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
@@ -587,47 +596,6 @@ ul.social {
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
   /* mistermoody/ABOUT/RESUME */
-  /* Scroll-Snap Container */
-article.wrapper {
-  /*margin: 0;
-  padding: 0;*/
-  height: 100vh;
-  max-width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-.scrSnap {
-  height: 100%;
-  width: 100%;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
-}
-  /* Hide Scroll-Snap Scrollbar */
-.scrSnap::-webkit-scrollbar {width: 0px; !important;}
-.scroll {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  scroll-snap-align: start;
-}
-.item {
-  display: flex;
-  flex: 1;
- /* overflow: auto;*/
-  scroll-snap-align: start;
-}
-.scroll .item {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  -webkit-overflow-scrolling: touch;
-  display: flex;
-  flex-direction: column;
-/* min-height: 100%; */
-}
-  /* Resume Grid */
 .resumeGrid {
   width: 100%;
   max-width: 99vw;
@@ -642,8 +610,7 @@ article.wrapper {
   font-variant: small-caps;
 } /* Section 'Title' Styles */
 h2.res__sectionTitle + div {margin-bottom: 0.4em;}
-.resume__sectionIntro {font-size: 0.92em;}
-.resume__Card {margin: 0.4em 0;}
+/*.resume__Card {margin: 0.4em 0;}*/
 .res__work__jobTitle {grid-area: jTitle;}
 .res__work__jobEmployer {grid-area: jEmployer;}
 .res__work__jobDate {grid-area: jDate;}
@@ -654,27 +621,23 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   border-bottom: 1px solid #434343;
   display: grid;
   grid-template-rows: repeat(auto-fit, 1em);
-  grid-template-columns: 62vw 1fr;
+  grid-template-columns: 1fr auto;
   grid-template-areas: 
     "jTitle jDate"
     "jEmployer jLocation";
-  justify-content: space-between;
+    grid-gap: 0.2em;
 }
-.res__work__jobTitle {
-  font-size: 0.84em;
-  font-weight: 600;
-}
+.res__work__jobTitle {font-weight: 600;}
 .res__work__jobEmployer {font-style: italic;}
 .res__work__jobEmployer, 
 .res__work__jobLocation, 
-.res__work__jobDate {font-size: 0.82em;}
+.res__work__jobDate {font-size: 0.98em;}
 .res__work__Responsibilities {
-  margin-left: -0.4884em;
-  /*margin: -0.8em 0 0 -2em;
-  list-style-type: disc;*/
-  font-size: 0.80em;
+  margin-left: -0.44em;
+  font-size: 0.94em;
   line-height: 1.4;
 }
+.res__work__Responsibilities ol li {color: #282828;}
 /* Resume 'Skills' */
 .resume__skills  {
   display: grid;
@@ -687,9 +650,9 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
 }
 /* TALENT Skill Bars */
 .SkillBar {
-  font-size: 0.94em;
+  font-size: 1em;
   width: 100%;
-  height: 1.2em;
+  height: 1.4em;
   position: relative;
   background: #838487;
 }
@@ -700,45 +663,38 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
 #Skill-Design, 
 #Skill-Develop, 
 #Skill-Deploy {
-  height: 1.2em; 
+  height: 1.4em; 
   position: absolute;  
   background-color: #434343;
 }
 .Skill-Area {
+  margin: 0 0 0 0.2em;
   float: left;
   position: absolute;
   text-shadow: none;
-  color: #222000;
+  color: #ddd;
   font-weight: 700;
+  letter-spacing: 0.08em;
 }
 .PercentText {
   position: relative;
   padding-right: 15px;
   float: right;
   text-shadow: none;
-  color: #222000;
+  color: #ddd;
 }
 .Skill-Area, .PercentText {margin-top: -0.1em;}
 .skillSpecs {
-  font-size: 0.82em;
-  margin: 0 0 0.6em;
+  font-size: 0.88em;
+  margin: 0 0 0 0.4em;
 }
 /* Individual Skill Bar 'width' */
-#Skill-Pedagogical {width: 82%;}
-#Skill-Copy {width: 85%;}
-#Skill-Interpersonal {width: 90%;}
-#Skill-Design {width: 77%;}
+#Skill-Pedagogical {width: 91%;}
+#Skill-Copy {width: 90%;}
+#Skill-Interpersonal {width: 82%;}
+#Skill-Design {width: 84%;}
 #Skill-Deploy {width: 74%;}
-@media only screen and (min-width: 500px) and (max-width: 799px){
-  .res__work__Employment {
-    display: grid;
-    grid-template-columns: 71% 1fr;
-    grid-template-areas: 
-      "jTitle jDate"
-      "jEmployer jLocation";
-  }
-}
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px){
   .resumeGrid {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(62px, 1fr)); /* replace 1fr w/ min-content */
@@ -746,29 +702,37 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
     grid-gap: 10px;
   }
   .res__sectionTitle {
-    margin: 12px 0 -8px 0;
+    margin: 12px 0 -8px 0.2em;
     font-weight: 800;
   }
   .resume__background {margin: 0.80em 0;}
   .res__work__Responsibilities {
-    max-width: 68vw;
-    margin: -0.4em 4px 0 -1em;
+    margin: 0.2em;
   }
   .res__work__jobTitle, 
   .res__work__jobLocation, 
   .res__work__jobDate,
-  .res__work__Responsibilities {font-size: 1em;}
-  .res__work__jobEmployer {font-size: 1.1em;}
+  .res__work__Responsibilities, 
+  .res__work__jobEmployer {font-size: 1.24em;}
+  .res__work__Employment {
+    margin: 0.5em;
+    display: grid;
+    grid-gap: 0.4em;
+  }
   /**/
   /**/
   .PercentText {margin: 0 auto;}
-  div.skillSpecs {font-size: 0.95em;}
+  .SkillBar, span.PercentText, span.SkillArea, div.skillSpecs {font-size: 1.24em;}
+  .SkillBar,
+  #Skill-Pedagogical,
+  #Skill-Copy, 
+  #Skill-Interpersonal,
   #Skill-Design, 
   #Skill-Develop, 
-  #Skill-Deploy, 
-  #Skill-Copy, 
-  #Skill-Interpersonal, 
-  .SkillBar, .Skill-Area, .PercentText {height: 1.21em;}  
+  #Skill-Deploy {height: 1.6em;} 
+  .Skill-Area { margin: 0.1em 0 0 0.4em;}  
+  .PercentText {margin-top: -0.1em;}
+  .skillSpecs {margin-bottom: 0.8em;}
 } 
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
@@ -1036,6 +1000,7 @@ div.blockCard {
     display: grid;
     grid-template-rows: repeat(auto, minmax(24px, auto));	
     grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 1em;
   }
   /*div.blockCard {
     margin: 2px 8px;
