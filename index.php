@@ -15,11 +15,11 @@ include ("inc/header.php");
     <aside class="homepage__Stats">
       <h2 style="font-weight: 700;">Hi. I'm Ray.</h2>
       <!-- -->
-      <h5>I build web apps and teach language art skills.</h5>
+      <h4>I build web apps &amp; teach language skills.</h4>
       <!-- Quick Nav -->
       <div>
         <a href="about/">About</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp;
-        <a href="portfolio/">Portfolio</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp; 
+        <a href="briefcase/">Briefcase</a> &nbsp;&nbsp; &#124; &nbsp;&nbsp; 
         <a href="contact">Contact</a>
       </div>
       <!-- #Contact + Social Media -->

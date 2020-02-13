@@ -10,7 +10,7 @@
     <meta name="description" content="Official Site for Mister Moody">
     <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
     <!-- Status Bar Theme -->
-    <meta name="theme-color" content="#000">
+    <meta name="theme-color" content="linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);">
     <!--  WeChat Formatted MSG
     <meta itemprop="name" content="share title">
     <meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
@@ -20,10 +20,10 @@
     <!-- Document will be displayed in "application mode" (fullscreen, etc.)
     <meta name="x5-page-mode" content="app">
     -->
-   <!-- Absolute URL Reference '.htaccess URL Rewrite 
-    <base href="http://localhost:8012/mistermoody/">-->
-    <!--  Use this <link> to *GO-LIVE* -->
-    <base href="https://mistermoody.com"> 
+    <!-- Absolute URL Reference '.htaccess URL Rewrite -->
+    <base href="http://localhost:8012/mistermoody/">
+    <!--  Use this <link> to *GO-LIVE* 
+    <base href="https://mistermoody.com"> -->
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->
@@ -45,16 +45,17 @@
           <!-- About -->
           <li><a href="about">About</a></li>
           <!-- Portfolio Folder -->
-          <li><a href="portfolio">Portfolio</a>
+          <li><a href="briefcase">Briefcase</a>
             <ul>
+              <li><a href="china/vocab">中文</a></li>
               <li><a href="webdev">Web Dev</a>
                 <!--<ul>
                   <li><a href="">Entry 1</a></li>
                   <li><a href="">Entry 2</a></li>
                 </ul>-->
               </li>
-              <li><a href="portfolio">esl / tefl</a></li>
-              <li><a href="china/vocab">中文</a></li>
+              <li><a href="briefcase">Language Arts</a></li>
+              <li><a href="briefcase">Politics</a></li>
             </ul>
           </li>      
           <!-- Contact Form -->

@@ -190,7 +190,7 @@ include ("../inc/header.php")
       </aside>
       <!-- Call-to-Action BTN -->
       <aside>
-        <button class="cta"><a href="portfolio" alt="link to portfolio">Review Portfolio</a></button> 
+        <button class="cta"><a href="briefcase/" alt="link to portfolio">Review Briefs</a></button> 
       </aside>
     <!-- DOWNLOAD CV Button -->
     <!--<h3>
