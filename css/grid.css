@@ -515,12 +515,15 @@ figcaption {
   /*Layout Grid*/
 .homepage {
   margin: 0; 
-  height: 31em;
   display: grid;
-  grid-template-rows: 20.20em 8.2em;
+  grid-template-rows: 20.20em auto;
   grid-row-gap: 0.4422em;
   text-align: center;
 } 
+.homepage__Stats {
+  display: grid;
+  grid-template-rows: 2.8em 2.4em 2.4em 2.8em;
+}
 /* 'FadeIn'Transition Effect */
 .fadeIn {animation: fadeIn ease 8.8s;}
 @keyframes fadeIn {
@@ -531,6 +534,7 @@ figcaption {
 .homepage__Image {
   width: 100%;
   max-height: 100%;
+  border-radius: 2px;
 }
   /* Social Media */
 .github {grid-area: github;}
@@ -573,7 +577,7 @@ ul.social {
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
   /* mistermoody/ABOUT/ + INDEX */
   /* About Me 'Image Gallery' */
-.imageGrid { 
+.imageGrid, .imageGrid2 { 
    padding-bottom: 0.8em;
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -584,12 +588,20 @@ ul.social {
   justify-items: center;
   max-width: 100%;
   }
-.imageGrid img {max-width: 100%;}
+.imageGrid img, .imageGrid2 img {max-width: 100%;}
 .imageGrid img:nth-child(5) {
   grid-column: span 2;
   grid-row: span 2;
   }
 .imageGrid img:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 2;
+  }
+.imageGrid2 img:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+  }
+.imageGrid2 img:nth-child(5) {
   grid-column: span 1;
   grid-row: span 2;
   }
@@ -674,7 +686,7 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   text-shadow: none;
   color: #ddd;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.024em;
 }
 .PercentText {
   position: relative;
@@ -686,7 +698,7 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
 .Skill-Area, .PercentText {margin-top: -0.1em;}
 .skillSpecs {
   font-size: 0.88em;
-  margin: 0 0 0 0.4em;
+  margin: 0 0 0 0.2em;
 }
 /* Individual Skill Bar 'width' */
 #Skill-Pedagogical {width: 91%;}

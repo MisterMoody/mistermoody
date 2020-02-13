@@ -9,11 +9,12 @@ include ("../inc/header.php")
 <!-- ** // Start of CONTENT *** -->
 
     <article>
-      <!-- TEACHING Exp. + Social Proof: @ School -->
+      <!-- 'Teacher' Introduction -->
       <h1 style="text-align: center; margin: 0.44em 0;">I Make Learning Fun!</h1>
       <p>
-        I am a substitute teacher with  <a href="http://jefferson.kyschools.us" target="_blank">J.C.P.S.</a> where I provide learning services to youth of all ages. I have held this position since <code>January 2018</code> and have been awarded <code>100+</code> assignments at <code>42</code> schools where I have facilitated lessons to more than <code>2,700</code> students.
+        I am a substitute teacher with  <a href="http://jefferson.kyschools.us" target="_blank">J.C.P.S.</a> where I provide learning services to youth of all ages. I have held this position since <code>January 2018</code> and have been awarded <code>100+</code> assignments at <code>42</code> schools where I have facilitated lessons to more than <code>2,800</code> students.
       </p>
+      <!-- Social Proof: @ JCPS -->
       <aside class="imageGrid">
         <img src="img/westernMS.jpg" style="height: 100%;">
         <img src="img/guttermuthES.jpg">
@@ -22,37 +23,34 @@ include ("../inc/header.php")
         <img src="img/coleridgeES.jpg" style="height: 100%;">
         <img src="img/brandeisES.jpg">
       </aside>
-      <!-- Career Experience --> 
+      <!-- Teacher Interest --> 
       <p>
-        My career as an educator began while studying at the University of Louisville where I earned a degree in political science. It was here I gained leadership experience through a plethora of opportunities, but it was my role serving at-risk youth for a <a href="https://www.cabbagepatch.org/" target="_blank">non-profit</a> that convinced me of my calling: I was 19. 
+        I first ventured into the field of education as a student at the University of Louisville where I earned a degree in political science. I gained invaluable leadership experience through a plethora of opportunities afforded to me. Yet, my role serving at-risk youth for a <a href="https://www.cabbagepatch.org/" target="_blank">non-profit</a> convinced me of my calling: I was 19. 
       </p>
       <p>
-        Shortly after graduation, I embarked on a sojourn abroad to teach English as a second language. What was supposed to have been a gap year before enrolling in law school turned into a life altering foreign cultural immersive experience.
+        Shortly after graduation, I embarked on a sojourn abroad: what should have been a gap year before enrolling in law school turned into a life altering culturally immersive experience. <!--My job as an ESL instructor was exceptionally rewarding as my experience having formally studied Francais, Espanol, Hangul, Nihongo and Putonghua helped me empathize with language acquisition struggles my learners encountered.--> 
       </p>
-      <!-- Social Proof: @ Asia -->
-      <aside class="imageGrid">
+      <!-- Social Proof: @ ESL -->
+      <aside class="imageGrid2">
+        <img src="img/tailorVanilla.jpg" style="height: 100%;">
+        <img src="img/cnID.jpg">
         <img src="img/oceanuniv.jpg">
-        <img src="img/workVanilla.jpg" style="height: 100%;">
-        <img src="img/yungn.jpg" style="height: 100%;">
         
-        <img src="img/jpnstamp.jpg" style="height: 100%;">
-        <img src="img/tailorVanilla.jpg">
-
         <img src="img/jpnyahata.jpg" style="height: 100%;">
-        <img src="img/cnID.jpg" style="height: 100%;">
+        <img src="img/jpnstamp.jpg" style="height: 100%;">
+        <img src="img/yungn.jpg">
         <img src="img/jdhs.jpg">
+        <img src="img/workVanilla.jpg" style="height: 100%;">
+        
       </aside>
+      <!-- 'Web Developer' Introduction -->
       <p>
-        Life as an emigrant was challenging, yet, as a life-learner having formally studied Francais, Espanol, Hangul, Nihongo and Putonghua, I empathize well with language acquisition struggles learners encounter. Some of the agencies that enabled me to practice my craft include Sogang University, Oxford Seminars, Joongdong High School, YBM Academy, Chien-Shiung Institute of Technology, Tongxiang Middle School, Shanghai Ocean University and Jiaxing College.
-      </p>
-      <!-- WebDev INTEREST 'Hidden' -->
-      <!--<p>
-        My interest in web technologies stems from my participation in <a href="https://codelouisville.org" target="_blank">&#60;code&#62; Louisville</a>, a web dev platform that introduces best practices and concepts related to front-end web development. To this end, I can design, develop and deploy a website to specification. Currently doing my part to build the ecosystem, most recently helping organize a local <a href="https://startupweekendlouisville.com/" target="_blank">startup event</a>. Working on an <a href="webdesign/">e-book</a> for folks interested in learning the craft.
+        In my free time, I tinker with web technologies and am currently developing a portfolio to illustrate my proficiencies as a web developer, an interest that stems from my participation in a pseudo-<a href="https://codelouisville.org" target="_blank">boot camp</a> that introduces web dev best practices and concepts. To this end, I can design, develop and deploy a website to spec. Explore my <a href="webdev/">toolkit</a> to ascertain my knowledge.
       </p>
       <figure>
         <img class="mainImage" src="img/startupWKND.jpg">
       <figcaption>JCPS students attend Startup Weekend</figcaption>
-      </figure>-->
+      </figure>
       <!-- Call-to-Action BTN -->
       <aside>
         <button class="cta"><a href="about/resume" alt="link to portfolio">Review Resume</a></button> 
