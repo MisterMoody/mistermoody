@@ -13,25 +13,6 @@ include ("../inc/header.php");
     </section>
   </article>
 
-  <article class="cur__TopicGrid">
-    <section class="cur__TopicStyle">
-      <div><h3>中文</h3></div>
-      <p><a href="china/vocab">N / A</a></p>
-    </section>
-    <section class="cur__TopicStyle">
-      <div><h3>Web Development</h3></div>
-      <p><a href="webdev/">Enter</a></p>
-    </section>
-    <section class="cur__TopicStyle">
-      <div><h3>Language Arts</h3></div>
-      <p><a href="briefcase/">N / A</a></p>
-    </section>
-    <section class="cur__TopicStyle">
-      <div><h3>Politics</h3></div>
-      <p><a href="briefcase/">N / A</a></p>
-    </section>
-  </article>
-
   <!-- Proper Layout for Articles from Diff Categories -->
   <!-- Add 'Content Filter' Container (see Treehouse Workspaces) -->
   <article>
@@ -166,6 +147,25 @@ include ("../inc/header.php");
            </div>
          </div>
       </aside>-->
+    </section>
+  </article>
+
+  <article class="cur__TopicGrid">
+    <section class="cur__TopicStyle">
+      <div><h3>中文</h3></div>
+      <p><a href="china/vocab">N / A</a></p>
+    </section>
+    <section class="cur__TopicStyle">
+      <div><h3>Web Development</h3></div>
+      <p><a href="webdev/">Enter</a></p>
+    </section>
+    <section class="cur__TopicStyle">
+      <div><h3>Language Arts</h3></div>
+      <p><a href="briefcase/">N / A</a></p>
+    </section>
+    <section class="cur__TopicStyle">
+      <div><h3>Politics</h3></div>
+      <p><a href="briefcase/">N / A</a></p>
     </section>
   </article>
 <!-- ******************************************************* -->
