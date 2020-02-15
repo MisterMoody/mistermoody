@@ -383,7 +383,7 @@ i {
 p, i, mark, summary { 
   font-size: 1em;  /* calc(0.96rem + 0.02vw) */
   line-height: 1.4; 
-  letter-spacing: 0.024em;;
+  letter-spacing: 0.024em;
 }  
 p {font-size: calc(1.048em + 0.02vw);}
 p, ol {color: #444;}    /* 'Dim' TEXT-Color Styles */
@@ -748,7 +748,7 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
 } 
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-  /* mistermoody/PORTFOLIO/ */
+  /* mistermoody/BRIEFCASE/ */
   /* Temp WARNING Sign Style*/
 .fa-warning {color: #ffcc00;}
   /* 'Grid' Styles */
@@ -891,6 +891,79 @@ div.chapter__Date_Tag {
   border: 1px solid #424242;
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px  rgba(255,255,255,0.8);
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++ */
+  /* Table of Contents */
+
+aside.toc {
+  margin: 0.48em 0;
+  padding: 1em -2.48em;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.024em;
+}
+.toc ul {list-style: none;}
+.toc__Title {
+  font-variant: small-caps; 
+  font-size: 1.248em;
+}
+.toc ul li ul li {font-variant: normal;}
+.toc li:before {
+  background: #f9f9f9;
+  border-radius: 2px;
+  color: #aaa;
+  font-weight: bold;
+  padding: 4px;
+  vertical-align: middle;
+}
+.toc a {
+  border-bottom: 1px dashed #ddd;
+  color: #888;
+  font-style: italic;
+  font-weight: normal;
+  margin-left: 8px;
+  text-decoration: none;
+  transition: all 0.2s linear 0s;
+}
+.toc a:hover {
+  border-bottom: 1px dashed #888;
+  color: #222000;
+  font-weight: 600; 
+  border-bottom-width: 2px;
+}
+/* ToC Enumeration */
+.toc ul {counter-reset: one two three four;}
+.toc ul ul {counter-reset: two three four;}
+.toc ul ul ul {counter-reset: three four;}
+.toc ul ul ul ul {counter-reset: four;}
+.toc li:before {
+  counter-increment: one;
+  content: counter(one) ".";
+}
+.toc li li:before {
+  counter-increment: two;
+  content: counter(one) "." counter(two);
+}
+.toc li li li:before {
+  counter-increment: three;
+  content: counter(one) "." counter(two) "." counter(three);
+}
+.toc li li li li:before {
+  counter-increment: four;
+  content: counter(one) "." counter(two) "." counter(three) "." counter(four);
+}
+@media all and (min-width: 800px) { 
+  .toc {
+    margin: 2em 0;
+    padding: 1em 20.20%;
+    letter-spacing: 0.048em;
+  }
+  /* Font-Size Deviation from Universal Styles */
+  .toc__Title {font-size: 1.624em;}
+  .toc ul li ul li {font-size: 1.248em;}
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
