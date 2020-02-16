@@ -45,7 +45,7 @@ include ("../inc/header.php")
       </aside>
       <!-- 'Web Developer' Introduction -->
       <p>
-        In my free time, I tinker with web technologies and am currently developing a portfolio to illustrate my proficiencies as a web developer, an interest that stems from my participation in a pseudo-<a href="https://codelouisville.org" target="_blank">boot camp</a> that introduces web dev best practices and concepts. To this end, I can design, develop and deploy a website to spec. Explore my <a href="webdev/">toolkit</a> to ascertain my knowledge.
+        In my free time, I tinker with web technologies and am currently developing a portfolio to illustrate my proficiencies as a web developer, an interest that stems from my participation in a pseudo-<a href="https://codelouisville.org" target="_blank">boot camp</a> that introduces web dev best practices and concepts. To this end, I can design, develop and deploy a website to spec. Explore my <a href="webdev/toolkit">toolkit</a> to ascertain my knowledge.
       </p>
       <figure>
         <img class="mainImage" src="img/startupWKND.jpg">

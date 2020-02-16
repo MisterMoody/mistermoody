@@ -23,8 +23,9 @@ include ("../inc/header.php");
       <aside class="chapter">
         <h3 class="chapter__Headline">Website Toolkit</h3>
         <p>
-          Articles, examples and resources for building fully functional websites. [Regularly Updated] &nbsp;
-            <a href="webdev/toolkit/">Read</a>
+          Articles, examples and resources for building fully functional websites. [Regularly Updated]
+          <br>
+          <span><a href="webdev/toolkit/">Read</a></span>
           </p>
         <div class="chapter__Date_Tag">
           <div>
@@ -152,6 +153,8 @@ include ("../inc/header.php");
       </aside> -->
     </section>
   </article>
+<!-- Temp Container Holder: Full Screen View -->
+  <article style="height: 36.5vh;"></article>
 <!-- .....CONTENT-ENDS// --> 
 
 <!-- ************************************************** -->
