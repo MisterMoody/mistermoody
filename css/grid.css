@@ -553,9 +553,9 @@ ul.social {
 .social a {border-bottom: none;}  
 @media screen and (min-width: 800px){
   .homepage { 
-    margin: 1.6em 6.2em -0.8em;
+    margin: 4em 6.2em;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 8px;
+    grid-template-rows: 62vh 8px;
     justify-content: space-between;
     grid-gap: 1.48em;
   }
@@ -567,7 +567,7 @@ ul.social {
   .homepage__Stats {
     margin: 1em 0;
     display: grid;
-    grid-auto-flow: row;
+    grid-template-rows: repeat(4, 15vh);
   }
   .homepage__Stats h2 {font-size: 2em;}
   .homepage__Stats h5 {font-size: 1.48em;}
@@ -756,7 +756,7 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   margin-bottom: 0.8em; height: 100%;
   display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 35vh);
+    grid-template-rows: repeat(2, 25vh);
   /*grid-template-rows: repeat(3, 20.20vh);*/
   grid-gap: 0.4em;
 }
@@ -898,33 +898,37 @@ div.chapter__Date_Tag {
 
 aside.toc {
   margin: 0.48em 0;
-  padding: 1em -2.48em;
   width: 100%;
   background: #fff;
   border-radius: 2px;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
-    letter-spacing: 0.024em;
+  letter-spacing: 0.024em;
 }
-.toc ul {list-style: none;}
-.toc__Title {
+.toc ul {
+  list-style: none; 
+  margin-left: -1.48em;
+}
+li a.toc__Title {
+  margin-left: 0;
   font-variant: small-caps; 
   font-size: 1.248em;
 }
-.toc ul li ul li {font-variant: normal;}
+.toc ul li ul li {
+  font-variant: normal; 
+  font-size: 0.88em;
+}
 .toc li:before {
-  background: #f9f9f9;
   border-radius: 2px;
   color: #aaa;
   font-weight: bold;
   padding: 4px;
-  vertical-align: middle;
 }
 .toc a {
   border-bottom: 1px dashed #ddd;
   color: #888;
   font-style: italic;
   font-weight: normal;
-  margin-left: 8px;
+  margin-left: 0.248em;
   text-decoration: none;
   transition: all 0.2s linear 0s;
 }
@@ -961,41 +965,23 @@ aside.toc {
     padding: 1em 20.20%;
     letter-spacing: 0.048em;
   }
+  .toc ul {margin-left: 0;}
   /* Font-Size Deviation from Universal Styles */
-  .toc__Title {font-size: 1.624em;}
-  .toc ul li ul li {font-size: 1.248em;}
+  .toc__Title {font-size: 1.68em;}
+  .toc ul li ul li {font-size: 1.2em;}
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
-  /* webdesign/RESOURCES GRID*/
-.resSyntax {grid-area: syntax;}
-.resContent {grid-area: contentRes;}
-.resLayout {grid-area: layout;}
-.resStyles {grid-area: styles;}
-.resSnippets {grid-area: snippets;}
-.resHelp {grid-area: helpRes;}
-.resManage {grid-area: manage;}
-.resTools {grid-area: tools;}
+  /* webdesign/RESOURCES GRID */
 .resourceGrid {
   margin: 0;
+  padding: 0;
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: minmax(22px, auto);
-  grid-template-areas:
-    "syntax contentRes"
-    "layout styles"
-    "snippets helpRes"
-    "manage tools";
-  grid-gap: 0 1em;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  grid-gap: 4px;
 }
-.resourceGrid div h3 {margin-bottom: 0.4em;}
-.resourceLink {
-  margin-bottom: 1em;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0.48em;
-}
+.resourceGrid span {margin-bottom: 0.48em;}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* 1-COLUMN =/= Desktop 2-COL */
@@ -1095,16 +1081,13 @@ div.blockCard {
   }*/
   /**/
   .resourceGrid {
+    margin: 0;
+    padding: 0; font-size: 1.1em;
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto, 22px);
-    grid-template-areas:
-      "syntax contentRes layout styles"
-      "snippets helpRes manage tools";
-  grid-gap: 1em;
-  }  
-  .resourceLink {grid-gap: 0.84em;}
+    grid-template-columns: repeat(5, minmax(20%, auto));
+    grid-template-rows: auto;
+    grid-gap: 4px;
+  }
   /**/
   .glossary {
     display: grid;

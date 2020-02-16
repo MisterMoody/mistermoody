@@ -14,10 +14,9 @@ include ("../../inc/header.php");
         This curated list of resources offers useful documentaion, DIY guides and tools familiar to front-end web developers for the basic creation of a website.
       </p>
     </section>
-    <section class="resourceGrid">
-      <div class="resSyntax">
-        <h3 class="title">Syntax</h3>
-        <div class="resourceLink">
+    <section> 
+        <h2 class="title">Syntax</h2>
+        <aside class="resourceGrid">
           <span><a target="_blank" href="https://html5boilerplate.com/">HTML Boilerplate</a></span>
           
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements</a></span>
@@ -29,6 +28,8 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://www.w3.org/Style/CSS">W3C Styles Docs</a></span>
           
           <span><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors">CSS Selector</a></span>
+          
+          <span><a target="_blank" href="https://flukeout.github.io/">Selector Practice</a></span>
           
           <span><a target="_blank" href="https://css-tricks.com/almanac/properties/">CSS Properties</a></span>
           
@@ -63,11 +64,9 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://addyosmani.com/a11y/ ">Accessibility Tester</a></span>
           
           <span><a target="_blank" href="https://wave.webaim.org/">Accessibility Evaluator</a></span>
-        </div>
-      </div>
-      <div class="resContent">
-        <h3 class="title">Content</h3>
-        <div class="resourceLink">
+        </aside> 
+        <h2 class="title">Content</h2>
+        <aside class="resourceGrid">
           <span><a target="_blank" href="https://www.checklist.design/">Design Checklist</a></span>
                 
           <span><a target="_blank" href="https://lawsofux.com/">Laws of UX</a></span>
@@ -107,11 +106,9 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://mailtolink.me/">Mail-to-Link</a></span>
           
           <span><a target="_blank" href="https://inputtypes.com/">Form Input Sandbox</a></span>
-        </div>
-      </div>
-      <div class="resLayout">
-        <h3 class="title">Layout</h3>
-        <div class="resourceLink">
+        </aside>
+        <h2 class="title">Layout</h2>
+        <aside class="resourceGrid">
           <span><a target="_blank" href="https://stitches.hyperyolo.com/">HTML Generator</a></span>
           
           <span><a target="_blank" href="https://getpublii.com/">HTML CMS</a></span>
@@ -139,11 +136,10 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://htmlstrip.com/html-div-table-generator/">Table Generator</a></span>
 
           <span><a target="_blank" href="https://bennettfeely.com/clippy/">Clip-Path Maker</a></span>
-        </div>
-      </div>
-      <div class="resStyles">
-        <h3 class="title">Styles</h3>
-        <div class="resourceLink">          
+        </aside> 
+        <h2 class="title">Styles</h2>
+        <aside class="resourceGrid">        
+          <span><a target="_blank" href="https://contrastchecker.com/">Contrast Checker</a></span>  
           <span><a target="_blank" href="https://colordesigner.io/">Color Swatches</a></span>
                 
           <span><a target="_blank" href="https://htmlcolorcodes.com/">Color Codes</a></span>
@@ -154,7 +150,7 @@ include ("../../inc/header.php");
 
           <span><a target="_blank" href="https://trianglify.io/">Pattern Generator</a></span>
 
-          <span><a target="_blank" href="https://contrastchecker.com/">Contrast Checker</a></span>
+          <span><a target="_blank" href="https://neumorphism.io/">Box-Shadow Generator</a></span>
 
           <span><a target="_blank" href="https://fonts.google.com/">Fonts by Google</a></span>
 
@@ -185,11 +181,9 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://bl.ocks.org/">Bl.ocks Infographics</a></span>
 
           <span><a target="_blank" href="https://www.easel.ly/home">Easel.ly Infographics</a></span>
-        </div>
-      </div>
-      <div class="resSnippets">
-        <h3 class="title">Snippets</h3>
-        <div class="resourceLink">
+        </aside>
+        <h2 class="title">Snippets</h2>
+        <aside class="resourceGrid">
           <span><a target="_blank" href="https://getflywheel.com/layout/category/design/">FlyWheel Inspiration</a></span>
           
           <span><a target="_blank" href="https://css-tricks.com/snippets/css/">CSS-Tricks</a></span>
@@ -217,11 +211,9 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://www.webcomponents.org/introduction">Web Components</a></span>
 
           <span><a target="_blank" href="https://www.polymer-project.org">Polymer WC</a></span>
-        </div>
-      </div>
-      <div class="resHelp">
-        <h3 class="title">Help</h3>
-        <div class="resourceLink">
+        </aside> 
+        <h2 class="title">Help</h2>
+        <aside class="resourceGrid">
 
           <span><a target="_blank" href="https://w3.org">W3.org</a></span>
           
@@ -238,6 +230,8 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://teamtreehouse">Treehouse</a></span>
 
           <span><a target="_blank" href="https://devdocs.io">DevDocs</a></span>
+
+          <span><a target="_blank" href="https://www.ibrahima-ndaw.com/">Learn w/ Ibrahima</a></span>
           
           <span><a target="_blank" href="https://learn.shayhowe.com/advanced-html-css/">Learn w/ ShayHowe</a></span>
 
@@ -245,14 +239,20 @@ include ("../../inc/header.php");
 
           <span><a target="_blank" href="https://html-css-js.com/">HTML-CSS-JS</a></span>
           
-          <span><a target="_blank" href="https://learn-html.org">LearnHTML</a></span>
+          <span><a target="_blank" href="https://learn-html.org">Learn HTML</a></span>
+          
+          <span><a target="_blank" href="https://lab.reaal.me/jsrobot/">Learn JS Interactively</a></span>
+          
+          <span><a target="_blank" href="https://cssinjs.org/">Learn CSS-in-JS</a></span>
+          
+          <span><a target="_blank" href="https://dom.spec.whatwg.org/">JS DOM Standard</a></span>
+          
+          <span><a target="_blank" href="https://jshint.com/">JavaScript Practice</a></span>
           
           <span><a target="_blank" href="https://github.com/kamranahmedse/developer-roadmap">Dev Roadmap</a></span>
-        </div>
-      </div>
-      <div class="resManage">
-        <h3 class="title">Manage</h3>
-        <div class="resourceLink">
+        </aside>
+        <h2 class="title">Manage</h2>
+        <aside class="resourceGrid">
           <span><a target="_blank" href="https://www.smashingmagazine.com/2020/01/front-end-performance-checklist-2020-pdf-pages/">Performance Checklist</a></span>
           
           <span><a target="_blank" href="https://2019.stateofjs.com/">The State of JS 2019</a></span>
@@ -296,11 +296,9 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://ready.mobi/">Mobile Testing</a></span>
           
           <span><a target="_blank" href="https://www.jsdelivr.com/">Content Delivery Network</a></span>
-        </div>
-      </div>
-      <div class="resTools">
-        <h3 class="title">Tools</h3>
-        <div class="resourceLink">
+        </aside>
+        <h2 class="title">Tools</h2>
+        <aside class="resourceGrid">
           <span><a target="_blank" href="https://lisacatalano.github.io/brackets_course/pc.html">Brackets IDE Cheatsheet</a></span>
           
           <span><a target="_blank" href="http://www.dirtymarkup.com/">Code Formatter</a></span>
@@ -348,7 +346,6 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://tailwindcss.com/">Tailwind.css</a></span>
 
           <span><a target="_blank" href="https://tachyons.io/">Tachyons.io UI</a></span>
-          
 
           <span><a target="_blank" href="https://turretcss.com/">Turret.css</a></span>
 
@@ -356,13 +353,14 @@ include ("../../inc/header.php");
 
           <span><a target="_blank" href="https://purecss.io/">Pure.css</a></span>
 
+          <span><a target="_blank" href="https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview">Twitter API</a></span>
+
           <span><a target="_blank" href="https://ionicframework.com/docs/intro/">Ionic UI Toolkit</a></span>
           
           <span><a target="_blank" href="https://svelte.dev/tutorial/basics">Svelte UI Docs</a> <a target="_blank" href="https://dev.to/karkranikhil/build-responsive-website-using-svelte-in-30-minutes-l9">(Tutorial)</a></span>
           
           <span><a target="_blank" href="https://ilkeryilmaz.github.io/timelinejs/?utm_source=bypeople">Timeline.js</a></span>
-        </div>
-      </div>
+        </aside>
     </section>
   <!-- ******************************************** -->
   <!-- HTML Glossary -->
