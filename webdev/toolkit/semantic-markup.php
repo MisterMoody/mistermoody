@@ -754,26 +754,6 @@ include ("../../inc/header.php");
         The <code>&lt;script&gt;</code> tag is not an interactive element. However, inclusion of this element will embed or reference executable JavaScript code which is in and of itself an interactive programming language. It requires the <code>src&#61;&#34;val&#34;</code> attribute to specify the URI of an external script. It is also good practice to include a <code>type&#61;&#34;text/javascript&#34;</code> attribute to notify the browser. Use of this element is an alternative to embedding a script directly within a document.
       </p>
     </article>-->
-    <!-- 
-      <h4 class="title">&nbsp;Glossary</h4>
-      <aside class="declarations">
-        <div><code></code></div>
-        <div><span></span></div>
-        <div><code></code></div>
-        <div><span></span></div>
-        <div><code></code></div>
-        <div><span></span></div>
-        <div><code></code></div>
-        <div><span></span></div>
-        <div><code></code></div>
-        <div><span></span></div>
-        <div><code></code></div>
-        <div><span></span></div>
-        <div><code></code></div>
-        <div><span></span></div>
-        <div><code></code></div>
-        <div><span></span></div>
-      </aside>-->
   </section>
   <!-- ************************************************** -->
   <!-- Part 5: Accessibility -->

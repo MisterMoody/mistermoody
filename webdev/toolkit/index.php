@@ -7,12 +7,12 @@ include ("../../inc/header.php");
 <!-- ************* << WEB DEV 'TOOLKIT' >> ************ -->
 
 <!-- //CONTENT-BEGINS..... -->
-  <!-- Table of Contents -->
   <article>
     <h1>Web Dev Toolkit</h1>
     <p>
-      This collection of articles is a reference for my future self to ensure that I stay up-to-date with front-end web development best practices: ample examples and resources are provided. Project will be regularly updated so feel free to learn the craft and build your own website. 
+      This collection of articles is a reference for my future self to ensure that I stay up-to-date with front-end web development best practices. Project examples and resources provided will be regularly updated so feel free to learn the craft and build your own website. 
     </p>
+    <!-- Table of Contents -->
     <aside class="toc">
       <ul>
         <li><a href="webdev/toolkit/workstation" class="toc__Title">Workstation</a>
@@ -96,7 +96,14 @@ include ("../../inc/header.php");
           </ul>
         </li>
         <br>
-        <li><a href="webdev/toolkit/resources" class="toc__Title">Resources</a></li>
+        <li><a href="webdev/toolkit/resources" class="toc__Title">Resources</a>
+          <ul>
+            <li><a href="webdev/toolkit/">HTML Content &amp; Layout Syntax</a></li>
+            <li><a href="webdev/toolkit/">CSS Snippets</a></li>
+            <li><a href="webdev/toolkit/">Project Management</a></li>
+            <li><a href="webdev/toolkit/">Helpful Tools</a></li>
+          </ul>
+        </li>
       </ul>    
     </aside>
   </article> 

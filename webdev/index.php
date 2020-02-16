@@ -12,7 +12,7 @@ include ("../inc/header.php");
     <article>
       <h1>Web Development</h1>
       <p>
-      This collection of articles represents distinct skill-sets related to web development. It is a toolkit of sorts to demonstrate my proficiencies to design, develop and deploy a website. 
+      This collection of articles represents distinct skill-sets related to web technologies. 
       </p>
     </article>
   </section> 
