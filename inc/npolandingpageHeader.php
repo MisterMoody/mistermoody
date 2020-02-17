@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no;">
     <title>Lovie's House Landing Page</title>
     <meta name="author" content="Ray Moody">
     <meta name="facebook:title" content="Mister_Moody">     <!-- Link to Twitter -->
@@ -11,9 +11,10 @@
     <meta name="subject" content="Capital Campaign Landing Page for Lovie's House">
     <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
-    <!-- [Req. to Add <links> to Subdirectory Files] -->
-    <base href="http://localhost:8012/mistermoody/">
-    <!--  Use this <link> to *GO-LIVE*  <base href="https://mistermoody.com">--> 
+    <!-- [Req. to Add <links> to Subdirectory Files] 
+    <base href="http://localhost:8012/mistermoody/">-->
+    <!--  Use this <link> to *GO-LIVE* -->
+    <base href="https://mistermoody.com"> 
     <!--  Facebook 'Open-Graph'
     <meta property="fb:app_id" content="123456789">
     <meta property="og:url" content="https://example.com/page.html">
@@ -37,10 +38,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS Font Stylesheet -->       
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway">
-    <!-- Custom CSS Styles -->   
+    <!-- Custom CSS Styles   -->
     <link rel="stylesheet" href="css/npolandingpage.css">
+    <!-- Normalize CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Bootstrap CSS --> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> 
   </head>
-  <body>
+  <body data-offset="100" data-spy="scroll" data-target=".navbar" id="home">
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <!-- <NAV> Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand order-1 mr-0" href="#" target="_blank">Lovie's House</a> <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavAltMarkup" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a> <a class="nav-item nav-link" href="#about">About</a> <a class="nav-item nav-link" href="#facts">Troubling Facts</a> <!--<a class="nav-item nav-link" href="#abc">abc</a>-->
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- ********************************* -->
     <!-- ** // Start of GRID CONTAINER *** -->
     <main>
