@@ -27,9 +27,9 @@ include ("../../inc/npolandingpageHeader.php");
             <img src="img/projectImages/logo.jpg">
         </div>
         <div class="col-sm-12 col-lg-4 order-lg-1 pt-6">
-          <h2>About Blair Butler</h2>
+          <h3>About Blair Butler</h3>
           <img src="https://hips.hearstapps.com/vidthumb/f08b86a5-1f08-4b22-b9cd-ab26259a059b/f08b86a5-1f08-4b22-b9cd-ab26259a059b_image.jpg;">
-          <p class="lead">
+          <p>
             <b>Blair</b> is a retired Jefferson County Public Schools Educator and <!--Assistant Principal with more than 25 years experience developing the minds of youth in Louisville, Kentucky. He is--> a CommUNITY Champion on a mission to create pathways to success programs for young men transitioning out of foster care.
           </p>
         </div>

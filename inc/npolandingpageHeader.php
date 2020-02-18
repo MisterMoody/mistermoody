@@ -11,10 +11,10 @@
     <meta name="subject" content="Capital Campaign Landing Page for Lovie's House">
     <meta name="keywords" content="Mister Moody, TEFL, ESL, Web Developer, Copy Writer, Teacher, Louisville, Kentucky">
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
-    <!-- [Req. to Add <links> to Subdirectory Files] 
-    <base href="http://localhost:8012/mistermoody/">-->
-    <!--  Use this <link> to *GO-LIVE* -->
-    <base href="https://mistermoody.com"> 
+    <!-- [Req. to Add <links> to Subdirectory Files] -->
+    <base href="http://localhost:8012/mistermoody/">
+    <!--  Use this <link> to *GO-LIVE*  
+<base href="https://mistermoody.com">--> 
     <!--  Facebook 'Open-Graph'
     <meta property="fb:app_id" content="123456789">
     <meta property="og:url" content="https://example.com/page.html">
