@@ -21,10 +21,9 @@ include ("../inc/header.php");
       <aside class="chapter">
         <h3 class="chapter__Headline">Website Toolkit</h3>
         <p>
-          Articles, examples and resources for building fully functional websites. [Regularly Updated] &nbsp;
-          <br>
-          <span><a href="webdev/toolkit/">Read</a></span>
-          </p>
+          Articles, examples and resources for building fully functional websites. [Regularly Updated]
+        </p>
+        <p style="margin-top: -1em;"><a href="webdev/toolkit/">Read</a></p>
         <div class="chapter__Date_Tag">
           <div>
             <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
