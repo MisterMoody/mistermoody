@@ -329,7 +329,7 @@ code, p code {
   font-weight: 600;
   letter-spacing: .8;
 }
-details {margin: 0 4px; font-size: 0.88em;}
+details {font-size: 0.88em;}
 dialog::backdrop {
   background: rgba(255,0,0,.25);
 }
@@ -417,7 +417,8 @@ ul {list-style-type: none;}
     font-size: 1.6em;
   }
   code, p code, details, .miniBlock div code {font-size: 1.2em;}
-  details{font-size: 1.2em;}
+  details {font-size: 1.2em;}
+  details .resourceGrid {font-size: 1em;}
   figure {margin: 0;}
   h2, h3, h4, h5, h6 {margin-bottom: 0.2em;}
   p, i, mark, summary  {
@@ -425,6 +426,7 @@ ul {list-style-type: none;}
     line-height: 1.8; 
     letter-spacing: 0.048em;
   }
+  summary {font-size: 1em;}
   ol {
     font-size: 1.08em; 
     padding-left: 80px;
@@ -973,6 +975,7 @@ li a.toc__Title {
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
   /* webdesign/RESOURCES GRID */
+.resourceContainer {margin-bottom: 0.5em;}
 .resourceGrid {
   margin: 0;
   padding: 0;

@@ -4,7 +4,7 @@ $page = "Resources";
 include ("../../inc/header.php");
 ?>
 <!-- ********************************************** -->
-<!-- ************ <<WEB DESIGN KNOWLEDGE>> ******** -->
+<!-- ************ <<WEB DESIGN RESOURCES>> ******** -->
 
 <!-- //CONTENT-BEGINS..... -->
   <article>
@@ -14,8 +14,14 @@ include ("../../inc/header.php");
         This curated list of resources offers useful documentaion, DIY guides and tools familiar to front-end web developers for the basic creation of a website.
       </p>
     </section>
-    <section> 
-        <h2 class="title">Syntax</h2>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- SYNTAX -->
+    <aside style="margin-bottom: 0.5em;">
+      <h2 class="title">Syntax</h2>
+      <details>
+        <summary>HTML Elements &amp; CSS Properties</summary>
+        <br>
         <aside class="resourceGrid">
           <span><a target="_blank" href="https://html5boilerplate.com/">HTML Boilerplate</a></span>
           
@@ -65,7 +71,16 @@ include ("../../inc/header.php");
           
           <span><a target="_blank" href="https://wave.webaim.org/">Accessibility Evaluator</a></span>
         </aside> 
-        <h2 class="title">Content</h2>
+      </details>
+    </aside>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- CONTENT -->
+    <aside class="resourceContainer">
+      <h2 class="title">Content</h2>
+      <details>
+        <summary>Form, Icon, Image and Multi-media Patterns</summary>
+        <br>
         <aside class="resourceGrid">
           <span><a target="_blank" href="https://www.checklist.design/">Design Checklist</a></span>
                 
@@ -107,7 +122,16 @@ include ("../../inc/header.php");
           
           <span><a target="_blank" href="https://inputtypes.com/">Form Input Sandbox</a></span>
         </aside>
-        <h2 class="title">Layout</h2>
+      </details>
+    </aside>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- LAYOUT -->
+    <aside class="resourceContainer">
+      <h2 class="title">Layout</h2>
+      <details>
+        <summary>Boilerplate for Grid, Flexbox &amp; Table Patterns</summary>
+        <br>
         <aside class="resourceGrid">
           <span><a target="_blank" href="https://stitches.hyperyolo.com/">HTML Generator</a></span>
           
@@ -137,7 +161,16 @@ include ("../../inc/header.php");
 
           <span><a target="_blank" href="https://bennettfeely.com/clippy/">Clip-Path Maker</a></span>
         </aside> 
-        <h2 class="title">Styles</h2>
+      </details>
+    </aside>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- STYLES -->
+    <aside class="resourceContainer">
+      <h2 class="title">Styles</h2>
+      <details>
+        <summary>Color Palette, Font Size, Typography, &amp; CSS Generators</summary>
+        <br>
         <aside class="resourceGrid">        
           <span><a target="_blank" href="https://contrastchecker.com/">Contrast Checker</a></span>  
           <span><a target="_blank" href="https://colordesigner.io/">Color Swatches</a></span>
@@ -182,7 +215,16 @@ include ("../../inc/header.php");
 
           <span><a target="_blank" href="https://www.easel.ly/home">Easel.ly Infographics</a></span>
         </aside>
-        <h2 class="title">Snippets</h2>
+      </details>
+    </aside>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- SNIPPETS -->
+    <aside class="resourceContainer">
+      <h2 class="title">Snippets</h2>
+      <details>
+        <summary>Inspirational Code to quickly build Components</summary>
+        <br>
         <aside class="resourceGrid">
           <span><a target="_blank" href="https://getflywheel.com/layout/category/design/">FlyWheel Inspiration</a></span>
           
@@ -208,11 +250,32 @@ include ("../../inc/header.php");
 
           <span><a target="_blank" href="https://freefrontend.com/">Free FrontEnd!</a></span>
 
+          <span><a target="_blank" href="https://tachyons.io/">Tachyons.io UI</a></span>
+          
+          <span><a target="_blank" href="https://keyframes.app/editor/">@keyframes Editor</a></span>
+
+          <span><a target="_blank" href="https://tailwindcss.com/">Tailwind.css</a></span>
+
+          <span><a target="_blank" href="https://turretcss.com/">Turret.css</a></span>
+
+          <span><a target="_blank" href="https://materializecss.com/">Materialize.css</a></span>
+
+          <span><a target="_blank" href="https://purecss.io/">Pure.css</a></span>
+
           <span><a target="_blank" href="https://www.webcomponents.org/introduction">Web Components</a></span>
 
           <span><a target="_blank" href="https://www.polymer-project.org">Polymer WC</a></span>
         </aside> 
-        <h2 class="title">Help</h2>
+      </details>
+    </aside>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- HELP -->
+    <aside class="resourceContainer">
+      <h2 class="title">Help</h2>
+      <details>
+        <summary>Continued Learning &amp; Immediate Assistance</summary>
+        <br>
         <aside class="resourceGrid">
 
           <span><a target="_blank" href="https://w3.org">W3.org</a></span>
@@ -251,7 +314,16 @@ include ("../../inc/header.php");
           
           <span><a target="_blank" href="https://github.com/kamranahmedse/developer-roadmap">Dev Roadmap</a></span>
         </aside>
-        <h2 class="title">Manage</h2>
+      </details>
+    </aside>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- MANAGE -->
+    <aside class="resourceContainer">
+      <h2 class="title">Manage</h2>
+      <details>
+        <summary>Performance Checklist</summary>
+        <br>
         <aside class="resourceGrid">
           <span><a target="_blank" href="https://www.smashingmagazine.com/2020/01/front-end-performance-checklist-2020-pdf-pages/">Performance Checklist</a></span>
           
@@ -297,7 +369,16 @@ include ("../../inc/header.php");
           
           <span><a target="_blank" href="https://www.jsdelivr.com/">Content Delivery Network</a></span>
         </aside>
-        <h2 class="title">Tools</h2>
+      </details>
+    </aside>
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- TOOLS -->
+    <aside class="resourceContainer">
+      <h2 class="title">Tools</h2>
+      <details>
+        <summary>Validator, Minifier &amp; Deployment Testing Tools</summary>
+        <br>
         <aside class="resourceGrid">
           <span><a target="_blank" href="https://lisacatalano.github.io/brackets_course/pc.html">Brackets IDE Cheatsheet</a></span>
           
@@ -339,162 +420,112 @@ include ("../../inc/header.php");
           
           <span><a target="_blank" href="http://git-school.github.io/visualizing-git/">Visualizing Git</a></span>
 
-          <span><a target="_blank" href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet/">Cheat Sheet</a></span>
-          
-          <span><a target="_blank" href="https://keyframes.app/editor/">@keyframes Editor</a></span>
-
-          <span><a target="_blank" href="https://tailwindcss.com/">Tailwind.css</a></span>
-
-          <span><a target="_blank" href="https://tachyons.io/">Tachyons.io UI</a></span>
-
-          <span><a target="_blank" href="https://turretcss.com/">Turret.css</a></span>
-
-          <span><a target="_blank" href="https://materializecss.com/">Materialize.css</a></span>
-
-          <span><a target="_blank" href="https://purecss.io/">Pure.css</a></span>
-
-          <span><a target="_blank" href="https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview">Twitter API</a></span>
+          <span><a target="_blank" href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet/">Git Cheat Sheet</a></span>
 
           <span><a target="_blank" href="https://ionicframework.com/docs/intro/">Ionic UI Toolkit</a></span>
           
           <span><a target="_blank" href="https://svelte.dev/tutorial/basics">Svelte UI Docs</a> <a target="_blank" href="https://dev.to/karkranikhil/build-responsive-website-using-svelte-in-30-minutes-l9">(Tutorial)</a></span>
           
           <span><a target="_blank" href="https://ilkeryilmaz.github.io/timelinejs/?utm_source=bypeople">Timeline.js</a></span>
+
+          <span><a target="_blank" href="https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview">Twitter API</a></span>
         </aside>
-    </section>
+      </details>
+    </aside>
   <!-- ******************************************** -->
   <!-- HTML Glossary -->
-  <aside>
-    <h2 class="title">&nbsp;HTML Glossary</h2>
+  <aside class="resourceContainer">
+    <h2 class="title">HTML Glossary</h2>
     <details>
-      <summary>Useful Terms and Definitions</summary>
+      <summary>Description of HTML Elements</summary>
       <br>
       <article class="glossary">
         <div><code>&lt;!DOCTYPE html&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Required: </span></div>
         <div><code>&lt;head&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Required: </span></div>
         <div><code>&lt;meta&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Required: </span></div>
         <div><code>&lt;title&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Required: Browser Tab Title</span></div>
         <div><code>&lt;link&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Required: Link to a Resource</span></div>
         <div><code>&lt;body&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Required: Website Container</span></div>
         <div><code>&lt;header&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create Content Section (Navigation)</span></div>
         <div><code>&lt;nav&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a Navigation System</span></div>
         <div><code>&lt;main&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create Content Sections</span></div>
         <div><code>&lt;article&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create Content Sections</span></div>
         <div><code>&lt;section&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create Content Sections</span></div>
         <div><code>&lt;aside&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create Content Sections</span></div>
         <div><code>&lt;div&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create Content Sections (Generic)</span></div>
         <div><code>&lt;footer&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create Content Sections (footer)</span></div>
         <div><code>&lt;a&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a Link to a Resource</span></div>
         <div><code>&lt;ul&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a List</span></div>
         <div><code>&lt;ol&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a List</span></div>
         <div><code>&lt;li&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create an Item for a List</span></div>
         <div><code>&lt;h1-h6&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a Section Heading</span></div>
         <div><code>&lt;p&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a Paragraph</span></div>
         <div><code>&lt;b&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Bold Text</span></div>
         <div><code>&lt;em&gt;|&lt;i&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Emphasized Text</span></div>
         <div><code>&lt;u&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Underlined Text</span></div>
         <div><code>&lt;code&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Markup for Code</span></div>
         <div><code>&lt;mark&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Highlight Text</span></div>
         <div><code>&lt;small&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Small Inline Text</span></div>
         <div><code>&lt;sub&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Subscript Text</span></div>
         <div><code>&lt;sup&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Superscript Text</span></div>
         <div><code>&lt;span&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;cite&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Split Inline Text (for Styling)</span></div>
         <div><code>&lt;q&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a Quote</span></div>
         <div><code>&lt;abbr&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create an Abbreviation</span></div>
         <div><code>&lt;br&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create an Empty Line-Break</span></div>
         <div><code>&lt;hr&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a Horizontal Line-Break</span></div>
         <div><code>&lt;img&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create an Image Element</span></div>
         <div><code>&lt;figure&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Frame a Media Element</span></div>
         <div><code>&lt;figcaption&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Caption a Media Element</span></div>
         <div><code>&lt;picture&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Frame an Image Element</span></div>
         <div><code>&lt;audio&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create an Audio Element</span></div>
         <div><code>&lt;video&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;track&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
-        <div><code>&lt;&gt;</code></div>
-        <div><span></span></div>
+        <div><span>Create a Video Element</span></div>
       </article>
     </details>
-    <br>
   </aside>  
   <!-- ******************************************** -->
   <!-- ******************************************** -->
   <!-- CSS Glossary -->
-  <aside>
-    <h2 class="title">&nbsp;CSS Terminology</h2>
+  <aside class="resourceContainer">
+    <h2 class="title">CSS Terminology</h2>
     <details>
       <summary>Useful Terms and Definitions</summary>
       <br>
@@ -523,13 +554,12 @@ include ("../../inc/header.php");
         <div><span></span></div>
       </article>
     </details>
-    <br>
   </aside>
   <!-- ******************************************** -->  
   <!-- ******************************************** -->
   <!-- Web Dev Glossary -->
-  <aside>
-    <h2 class="title">&nbsp;Web Dev Glossary</h2>
+  <aside class="resourceContainer">
+    <h2 class="title">Web Dev Glossary</h2>
     <details>
       <summary>Useful Terms and Definitions</summary>
       <br>
@@ -582,13 +612,12 @@ include ("../../inc/header.php");
         <div><span>the amount of time to transfer data</span></div>
       </article>
     </details>
-    <br>
   </aside>
   <!-- ******************************************** -->
   <!-- ******************************************** -->
   <!-- List of Git Commands -->
-  <aside>
-    <h2 class="title">&nbsp;Git Commands</h2>
+  <aside class="resourceContainer">
+    <h2 class="title">Git Commands</h2>
     <details>
       <summary>List of Git Commands</summary>
       <br>
@@ -645,7 +674,7 @@ include ("../../inc/header.php");
       <div><span>View HEAD File Status</span></div>
     </article>
     </details>
-    </aside>
+  </aside>
   <!--     ************* PAGINATION ************    -->
   <?php include ("../../inc/pagination.php"); ?>
   <!-- ******************************************** -->
