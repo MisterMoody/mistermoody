@@ -37,7 +37,7 @@ include ("../../inc/header.php");
   <section>
     <h2 class="title">&nbsp;Setting a Performance Budget</h2>
     <p>
-      A <i>Performance Budget</i> is a plan that calculates the total weight for pages in a site to ascertain load times and what have you. Much of this planning targets that which is <i>Above the Fold</i>: anything that is within the <code>&#60;head&#62;...&#60;/head&#62;</code> and is essential to the initial load of the site within the constraint of the first meaningful paint.
+      A <i>Performance Budget</i> is a plan that calculates the total weight for pages in a site to ascertain load times and what have you. Much of this planning targets that which is <i>Above the Fold</i>: anything that is within the <code>&#60;head&#62;...&#60;/head&#62;</code> and is imperative to the initial load of the site within the constraint of the first meaningful paint.
     </p>
   </section>
   <!-- ************************************************ -->
@@ -64,9 +64,12 @@ include ("../../inc/header.php");
     <p>
       This method assigns informs a server that a particiular stylesheet should be loaded first: this is especially useful for mobile devices.
     </p>
-    <aside class="declarations">
-      <div><span>&#60;link </span><code>rel="preload" </code><span>href="css/mobile.css"&#62;</span></div>
-    </aside>
+    <blockquote>
+      <span>&#60;link </span><code>rel="preload" </code><span>href="css/mobile.css"&#62;</span>
+    </blockquote>
+    <p>
+     Moreover, in-lining essential CSS will improve load times and increase perceived performance: such CSS consists of global navigation, typography and footer styles. To do this, employ a <code>style="..."</code> attribute within the aforementioned section tags.
+    </p>
     <h4 class="title">&nbsp;Minification</h4>
     <p>
       Optimizing critical CSS begins with well structured declarations, using a limited number of selectors, employing shorthands whenever possible and using media queries for progressive enhancement. After doing that,  <a href="https://github.com/jakubpawlowicz/clean-css" target="_blank">cleanup</a>, <a href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank">validate</a> and <a href="http://csscompressor.com/" target="_blank">minify</a> all stylesheets. Use an <a href="https://github.com/mrcoles/cssunminifier" target="_blank">unminify</a> tool to work with CSS that has already been minified.

@@ -89,6 +89,10 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="https://htmlcheatsheet.com/">HTML Cheat Sheet</a></span>
           
           <span><a target="_blank" href="https://loremipsum.io/">Text Placeholder</a></span>
+          
+          <span><a target="_blank" href="https://basehold.it/">Baseline Placeholder</a></span>
+          
+          <span><a target="_blank" href="https://charcounter.com/en/">Character Counter</a></span>
 
           <span><a target="_blank" href="https://placeholder.com/">Image Placeholder</a></span>
 
@@ -105,6 +109,10 @@ include ("../../inc/header.php");
           <span><a target="_blank" href="http://quuz.org/webtt/">WebVTT Captioning</a></span>
 
           <span><a target="_blank" href="https://fonts.google.com/">Google Fonts</a></span>
+
+          <span><a target="_blank" href="https://www.cssfontstack.com/">Font</a>-<a target="_blank" href="https://www.fontsquirrel.com/">Stack</a></span>
+
+          <span><a target="_blank" href="https://type-scale.com/">Visual Type</a>-<a target="_blank" href="https://www.modularscale.com/">Scales</a></span>
 
           <span><a target="_blank" href="https://https://fontsarena.com/">FontsArena Fonts</a></span>
 
@@ -437,7 +445,7 @@ include ("../../inc/header.php");
   <aside class="resourceContainer">
     <h2 class="title">HTML Glossary</h2>
     <details>
-      <summary>Description of HTML Elements</summary>
+      <summary>Description of HTML Instructions</summary>
       <br>
       <article class="glossary">
         <div><code>&lt;!DOCTYPE html&gt;</code></div>
@@ -525,9 +533,9 @@ include ("../../inc/header.php");
   <!-- ******************************************** -->
   <!-- CSS Glossary -->
   <aside class="resourceContainer">
-    <h2 class="title">CSS Terminology</h2>
+    <h2 class="title">CSS Glossary</h2>
     <details>
-      <summary>Useful Terms and Definitions</summary>
+      <summary>Description of CSS Instructions</summary>
       <br>
       <article class="glossary">
         <div><code>At-Rule</code></div>
@@ -561,7 +569,7 @@ include ("../../inc/header.php");
   <aside class="resourceContainer">
     <h2 class="title">Web Dev Glossary</h2>
     <details>
-      <summary>Useful Terms and Definitions</summary>
+      <summary>Useful Terms &amp; Definitions related to the Webiverse</summary>
       <br>
       <article class="glossary">
         <div><code>ECMAScript</code></div>

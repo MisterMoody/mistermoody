@@ -269,7 +269,11 @@ include ("../../inc/header.php");
       <p>
         Below is a list of some character references illustrating symbols and their corresponding reference code. There are many more: Google counted more than 65,000 character references. Go figure.
       </p>
-      <aside class="characterGrid">
+      <section class="resourceContainer">
+      <details>
+        <summary>Brief List of Unicode Characters</summary>
+        <br>
+        <aside class="characterGrid">
         <div class="asciiItem">
           <div class="asciiItemChar">&#60;</div>
           <div><small>&amp;&#35;<b>60</b>&#59;</small></div>
@@ -518,9 +522,8 @@ include ("../../inc/header.php");
         </div>
         <!-- -->
       </aside>
-      <p>
-        It would be a worthy venture to learn more about unicode and all symbols as you can include arrows, foreign languages, shapes and much more.
-      </p>
+      </details>
+      </section>
     </article>
     <!-- Media -->
     <article>

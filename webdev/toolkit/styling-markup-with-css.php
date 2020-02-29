@@ -29,7 +29,7 @@ include ("../../inc/header.php");
       <li>Making Declarations</li>
       <ul>
         <li>Container Layout, Placement &amp; Sizing</li>
-        <li>Backgrounds, Borders, Colors, Font &amp; Text</li>
+        <li>Backgrounds, Borders, Colors &amp; Typography</li>
         <!-- <li>Declaration Examples</li>-->
       </ul>
       <li>Style Sheet Format and Structure</li>
@@ -804,17 +804,50 @@ include ("../../inc/header.php");
         <div><span>// Multiple</span></div>
       </aside>
     </article>
-    <!-- Font and Text -->
+    <!-- Typography -->
     <article>
-      <h3 class="title">&nbsp;Font and Text</h3>
-      <p>Build fluid typography using <a href="https://www.modularscale.com/">modular scale</a>: check out the <a href="https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g ">tutorial</a>.</p>
+      <h3 class="title">&nbsp;Typography</h3>
       <p>
-        <i>font</i> is a property that is used to set the style of text. The shorthand form consists of font-style, font-variant, font-weight, font-size, line-height and font-family: when used, these properties must be included in this order (line-height is optional). 
+        <i>Typography</i> encapsulates the visual component of the written word and is a critical branding variable. Text should be presented in a way that is useful, legible  and provokes an emotional connection. While <i>typeface</i> is the design of a collection of characters, <i>Fonts</i> embody a particular style of a typeface.
+      </p>
+      <p>
+        There are three genre types that developers should be familiar with: serif, sans-serif and scripts. <i>Serif</i> font types are fonts that have a diagonal stress at the end/tip of a letter and are typically calligraphic. <i>Sans-Serif</i> font types are fonts that do not have serif endings and these are ideal fonts to use throughout a project. <i>Script</i> font types are either formal or casual. Aside from this, web browsers use different system fonts and this could lead to issues: workaround such nuances by installing a <i>Font-Stack</i> that instructs browsers how to display font. 
+      </p>
+      <p>
+        This process involves choosing a <a href="https://www.cssfontstack.com/">font</a>-<a href="https://www.fontsquirrel.com/">stack</a> that has a range of weights, italic styles, numerical figures and language support. After collecting a half-dozen or so font types, evaluate how those fonts will display using <a href="https://type-scale.com/">visual type</a> <a href="https://www.modularscale.com/">scales</a>. Preferred fonts include Bodoni, Bookman, Helvetica, Palitino, Rockwell and Tahoma. Some web-safe fonts include Arial, Garamond, Tahoma, "Lucida Sans", Georgia, "Palatino Linotype" and Verdana. 
+      </p>
+      <p>
+        These tools will be especially useful to visualize <i>typographic hierarchy</i> which is a practice of maintaining spacing and alignment in a way that helps users understand contextual importance. Using <em>small-caps</em> for headline titles, subdued colors for sub-titles, <em>horizontal rules</em> to emphasize text and the <em>em</em> relative length unit for responsiveness are means by which developers can implement a uniform type scheme.
+      </p>
+      <p>
+      
+      </p>
+      <p>
+        Use the <i>font-family</i> property to define the font that should be applied to text. Font names are separated by a comma";" names that have two or more words should be enclosed in quotation marks. Including a genre type as a fallback is a requirement. 
+      </p>
+      <aside class="declarations">
+        <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: Arial, sans-serif;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: "Times New Roman", serif;}</code></div>
+        <div><span></span></div>
+        <div><code>{&nbsp;: monospace;}</code></div>
+        <div><span>// Computer Code</span></div>
+        <div><code>{&nbsp;: cursive;}</code></div>
+        <div><span>// Script</span></div>
+        <div><code>{&nbsp;: small-caption;}</code></div>
+        <div><span>// All Words Small Caps</span></div>
+      </aside>
+      
+      <p>
+        <i>font</i> is an all-purpose property that is used to set the style of text and can be used as shorthand to amalgamate font-style, font-variant, font-weight, font-size, line-height and font-family (when used, these properties must be included in this order; line-height is optional). 
       </p>
       <aside class="declarations">
         <div><code>{font: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;}</code></div>
         <div><span><b>// Keyword/Value Description</b></span></div>
       </aside>
+      
       
       <p>
         The <i>-style</i> is used to italicize text, but is commonly only used within the shorthand.
@@ -845,32 +878,20 @@ include ("../../inc/header.php");
       </aside>
       
       <p>
-        The <i>-size</i> specifies the size of the font using numerical values (ie em, rem + px). The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, sets the space above and below inline elements. 
+        The <i>-size</i> specifies the size of the font using numerical values (ie em, rem + px). The <code>px</code> value is an industry standard static value as it is used for pixel accuracy. The <code>em</code> unit is a responsive type. Calculate the em equivalent for any px value by dividing the desired element px value by its parent element font-size in pixels. The rem value is an alternative to the em unit in that it does not compound as it is relative to the root html element. Its counterpart, the <i>line-height</i>, sets the space above and below inline elements and is useful for evenly spacing lines. 
       </p>
       <aside class="declarations">
         <div><code>{font-size: unit/value;&nbsp;}</code></div>
         <div><span>// Font Height</span></div>
         <div><code>{line-height: % value; &nbsp;}</code></div>
         <div><span>// Line Height</span></div>
+        <div><code>{font: 1.24em/1.5</code></div>
+        <div><span>// Size / Line-height Combo</span></div>
       </aside>
       
       <p>
-        The <i>font-family</i> prop defines the font applied to the text. Font names are separated by a comma; names that have two or more words should be enclosed in quotation marks. Including a generic name as a fallback is a requirement. Some web-safe fonts include <code>Arial</code>, <code>Garamond</code>, <code>Tahoma</code>, <code>"Lucida Sans"</code>, <code>Georgia</code>, <code>"Palatino Linotype"</code> and <code>Verdana</code>.
+        With type, horizontal and vertical spacing are controlled through character per line restrictions and metric tracking. <i>Kerning</i> ratios are imperative here: creating an equal amount of space between a specific character pair (ie AW) adds aesthetic value. Here are a few tools that help visualize the <a target="_blank" href="https://basehold.it/">baseline</a>, align-text using the <a target="_blank" href="http://thinkingwithtype.com/grid/">golden section</a> and counting <a href="https://charcounter.com/en/" target="_blank">characters</a>, letters and words. It is also important to consider how text contrast with its background color as body text should have a color contrast-ratio of 4.5:1. Learn more about the <a target="_blank" href="http://typedia.com/learn/only/anatomy-of-a-typeface/ ">anatomy</a> of <a target="_blank" href="https://www.fontshop.com/glossary/">typography</a>.
       </p>
-      <aside class="declarations">
-        <div><code>{font-family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;;}</code></div>
-        <div><span></span></div>
-        <div><code>{&nbsp;: Arial, sans-serif;}</code></div>
-        <div><span></span></div>
-        <div><code>{&nbsp;: "Times New Roman", serif;}</code></div>
-        <div><span></span></div>
-        <div><code>{&nbsp;: monospace;}</code></div>
-        <div><span>// Computer Code</span></div>
-        <div><code>{&nbsp;: cursive;}</code></div>
-        <div><span>// Script</span></div>
-        <div><code>{&nbsp;: small-caption;}</code></div>
-        <div><span>// All Words Smll Caps</span></div>
-      </aside>
       
       <p>
         Although the most convenient method of adding a font to a website would be via a <code>&#60;link&#62;</code> CDN in the <code>&#60;html&#62;</code> markup, it is important to be mindful of measurement units to create responsive typography. Any relative length unit can be used: employ <code>em</code> and <code>pm</code> for the greatest control as they are dependent on parent elements and viewport dimensions. For this reason, it is a good practice to set the <code>html {font-size: 100%;}</code> to ensure the base font-size is set in the browser and to use relative units on all other elements. Other important notes include: use the <code>rem</code> unit on nested elements, avoid using <code>vh/vw</code> units on font-size and use the <code>calc()</code> function to perform math calculations.

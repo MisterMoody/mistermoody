@@ -190,13 +190,13 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
-/* Prevent 'User CopynPaste'
+/* Prevent 'User CopynPaste' */
 main {
   -webkit-user-select: none; 
   -moz-user-select: none; 
   -ms-user-select: none; 
   user-select: none;
-} */
+} 
 /**/
 body {
   height: 100%;
@@ -1028,7 +1028,7 @@ div.blockCard {
 /* 2-COLUMN Variable-Responsive LIST-Grid */
 .declarations {
   width: 100%;
-  margin: -1em 0 0.5em 0;
+  margin: -1em 0 1em 0;
   padding: 0;
   display: grid;
   grid-template-rows: repeat(auto, minmax(24px, auto));	
@@ -1099,7 +1099,6 @@ div.blockCard {
   }
   /**/
 	.declarations {
-    margin: 0.25em 0.55em 0.5em 0.25em;
     width: 100%;
     padding: 0;
     display: grid;
