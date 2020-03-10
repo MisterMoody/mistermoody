@@ -1,5 +1,6 @@
 <?php
-$pageTitle = "Mister Moodys PORTFOLIO";
+$pageTitle = "Mister Moodys Portfolio";
+$page = "Portfolio";
 include ("../inc/header.php");
 ?>
 <!-- ******************************************************* -->
@@ -19,11 +20,24 @@ include ("../inc/header.php");
     
     <section class="chapter__book">
       <aside class="chapter">
+        <h3 class="chapter__Headline">The Data Analysis Process</h3>
+        <p>
+          A general overview of using Microsoft Excel to collect, analyze and visualize data. <a href="data/the-data-analysis-process">Read</a>
+        </p>
+        <div class="chapter__Date_Tag">
+          <div>
+            <i class="fa fa-clock-o" aria-hidden="true"></i> March 2020
+          </div>
+          <div class="chapter__Tags">
+            <div>Data Analysis</div>
+          </div>
+        </div>
+      </aside>
+      <aside class="chapter">
         <h3 class="chapter__Headline">Website Toolkit</h3>
         <p>
-          Articles, examples and resources for building fully functional websites. [Regularly Updated]
+          Articles, examples and resources for building fully functional websites. <a href="webdev/toolkit/">Read</a>
         </p>
-        <p style="margin-top: -1em;"><a href="webdev/toolkit/">Read</a></p>
         <div class="chapter__Date_Tag">
           <div>
             <i class="fa fa-clock-o" aria-hidden="true"></i> January 2020
@@ -156,6 +170,10 @@ include ("../inc/header.php");
       <p><a href="china/vocab">N / A</a></p>
     </section>
     <section class="cur__TopicStyle">
+      <div><h3>Data Analysis</h3></div>
+      <p><a href="data/">Enter</a></p>
+    </section>
+    <section class="cur__TopicStyle">
       <div><h3>Web Development</h3></div>
       <p><a href="webdev/">Enter</a></p>
     </section>
@@ -163,10 +181,10 @@ include ("../inc/header.php");
       <div><h3>Language Arts</h3></div>
       <p><a href="briefcase/">N / A</a></p>
     </section>
-    <section class="cur__TopicStyle">
+    <!--<section class="cur__TopicStyle">
       <div><h3>Politics</h3></div>
       <p><a href="briefcase/">N / A</a></p>
-    </section>
+    </section>-->
   </article>
 <!-- ******************************************************* -->
 <!-- ******************************************************* -->
