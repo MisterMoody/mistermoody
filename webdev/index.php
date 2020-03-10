@@ -1,5 +1,6 @@
 <?php
-$pageTitle = "Web Dev Toolkit";
+$pageTitle = "Web Development";
+$page = "Web Development";
 include ("../inc/header.php");
 ?>
 <!-- ************************************************** -->
@@ -154,7 +155,7 @@ include ("../inc/header.php");
     </section>
   </article>
 <!-- Temp Container Holder: Full Screen View -->
-  <article style="height: 36.5vh;"></article>
+  <article style="height: 32vh;"></article>
 <!-- .....CONTENT-ENDS// --> 
 
 <!-- ************************************************** -->
