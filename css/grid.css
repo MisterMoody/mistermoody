@@ -1132,8 +1132,25 @@ div.blockCard {
   font-stretch: ultra-condensed;
   font-weight: 100;
 }
+.func__block {
+  margin: -0.8em 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 0.4em;
+}
+.excel__func {
+  background: #dddada; 
+  padding-left: 0.2em;
+}
 @media all and (min-width: 800px) { 
   .dataAnalysis__Styles p {
     font-size: 1.2em;
   }
+  .func__block {
+    margin: -0.8em 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 0.4em;
+  }
+  .excel__func div code{font-size: 1em;}
 }

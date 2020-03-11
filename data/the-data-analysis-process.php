@@ -189,14 +189,18 @@ include ("../inc/header.php");
       <div><span>CTRL-SHIFT-Arrows</span></div>
       <div><b>Absolute Reference</b></div>
       <div><span>Select Cell >> F4</span></div>
-      <div><b>Duplicate a Formula</b></div>
+      <div><b>Convert a Value</b></div>
       <div><span>Select <code>123</code> Button >> Choose Value</span></div>
       <div><b>Sort Data</b></div>
       <div><span>Select All Data >> Data >> Sort</span></div>
       <div><b>Filter Data</b></div>
       <div><span>Select Header Rows >> Data >> Filter >> Choose Categories to Ignore</span></div>
-        <div><b>Restore Data</b></div>
+      <div><b>Restore Data</b></div>
       <div><span>Edit >> Select All</span></div>
+      <div><b>Duplicate a Formula</b></div>
+      <div><span>Dbl-click/Drag Fill-Handle</span></div>
+      <div><b>Add Intervals</b></div>
+      <div><span>Cell1: Base # >> Cell2: Base + # >> Drag Cells</span></div>
     </aside>
     
     <h4>Using Functions</h4>
@@ -209,71 +213,69 @@ include ("../inc/header.php");
     <p>
       There are a plethora of formulas and functions that can be used to modify, summarize and validate data depending on the problem at hand. Common functions analyst need to be comfotable with include: 
     </p>
-    <aside class="miniBlock">
-      <div class="asciiItem">
-        <div class=""><code title="Returns Lowest Value">=MIN(Cell:Range)</code></div>
+    <aside class="func__block">
+      <div class="excel__func">
+        <div class=""><code title="Returns Lowest Value">=MIN(<small>Cell:Range</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Highest Value">=MAX(C1,C2,C3...)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Highest Value">=MAX(<small>C1,C2,C3...</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="">=MAX-MIN</code></div>
+      <div class="excel__func">
+        <div class=""><code>=MAX-MIN</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Mean Value">=AVERAGE(Cell:Range)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Mean Value">=AVERAGE(<small>Cell:Range</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Middle Value">=MEDIAN(Cell:Range)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Middle Value">=MEDIAN(<small>Cell:Range</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Most Frequent Value">=MODE(Cell:Range)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Most Frequent Value">=MODE(<small>Cell:Range</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Total Sum of Values">=SUM(Cell:Range)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Total Sum of Values">=SUM(<small>Cell:Range</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Total Sum of Values based on Conditions">=SUMIF(range,criteria,sum_r)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Total Sum of Values based on Conditions">=SUMIF(<small>range,criteria,sum_range</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Number of Selected Cells that have Numbers as Values">=COUNT(Cell:Range)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Number of Selected Cells that have Numbers as Values">=COUNT(<small>Cell:Range</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Count of Cells that Meet One or More Criteria">=COUNTIF(range1,criteria1)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Count of Cells that Meet One or More Criteria">=COUNTIF(<small>range1,criteria1,...</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns the Standard Deviation">=STDEV(xxx)</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns the Standard Deviation">=STDEV(<small>range,condition</small>)</code></div>
       </div>
-      <div class="asciiItem">
+      <div class="excel__func">
         <div class=""><code title="Returns the Normal Distribution Grade">=SKEW(xxx)</code></div>
       </div>
-      <div class="asciiItem">
+      <div class="excel__func">
         <div class=""><code title="Add Column Data from one Worksheet to another">=VLOOKUP(xxx)</code></div>
       </div>
-      <div class="asciiItem">
+      <div class="excel__func">
         <div class=""><code title="Add Row Data from one Worksheet to another">=HLOOKUP(xxx)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns True if the value is text; false otherwise">ISTEXT()</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns True if the value is text; false otherwise">ISTEXT(<small>Cell#</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns True if the value is numeric; false otherwise">ISNUMBER()</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns True if the value is numeric; false otherwise">ISNUMBER(<small>Cell#</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns a Rounded-down Integer (removes decimals)">INT()</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns a Rounded-down Integer (removes decimals)">INT(<small>Cell#</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns a Number of Characters in a Text-String
-*Split Text or Abbreviate Words
-">=LEN()</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns a Number of Characters in a Text-String *Split Text or Abbreviate Words">=LEN(<small>Text-String</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Combined Text from Different Cells">=CONCATENATE()</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Combined Text from Different Cells">=CONCATENATE(<small>Cell#,"text",Cell#</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Combined Text from Diff Cells">=TRIM()</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Combined Text from Diff Cells">=TRIM(<small>Cell #</small>)</code></div>
       </div>
-      <div class="asciiItem">
-        <div class=""><code title="Returns Prediction of a Future Value based on Existing Values">=FORECAST()</code></div>
+      <div class="excel__func">
+        <div class=""><code title="Returns Prediction of a Future Value based on Existing Values">=FORECAST(<small>x-val,y_vals,x_vals</small>)</code></div>
       </div>
     </aside>
     <p>
@@ -285,11 +287,12 @@ include ("../inc/header.php");
       <i>Lookup()</i> functions provide a conditional search to get data from a column or row in one worksheet then adding it to the column or row in another worksheet using VLOOKUP() or HLOOKUP(), respectively. When using these functions it is important to delete empty rows or columns and check that the same data type is being used in the 1st column of the range.
     </p>
     <aside class="declarations">
-      <div><b>Func</b></div>
+      <div><b>Process to Implement VLOOKUP() Function</b></div>
+      <div><span></span></div>
       <div><span>Formulas >> Lookup &amp; Reference >> VLOOKUP >> Input Args</span></div>
     </aside>
     <p>
-      This function takes four arguments: a lookup_value, a table_array, a column_index_number and a range_lookup value. The lookup_value is the cell of data to match.: it must be in the farthest left column. The table_array is the range of cells to search wherein the headers represent columns of data to retrieve: must absolutely reference cells to use entire column data!. The col_ind_num represents the header column number for the column of data to retrieve: the argument is always a number. The range_lookup is an optional value: use false to return an exact-match or true to return an approximate match. It is a best practice to use false when working with unique identifiers, and to sort data in ascending order otherwise.
+      This function takes four arguments: a lookup_value, a table_array, a column_index_number and a range_lookup value. The lookup_value is the cell of data to match: it must be in the farthest left column. The table_array is the range of cells to search wherein the headers represent columns of data to retrieve: must absolutely reference cells to use entire column data!. The col_ind_num represents the header column number for the column of data to retrieve: the argument is always a number. The range_lookup is an optional value: use false to return an exact-match or true to return an approximate match. It is a best practice to use false when working with unique identifiers, and to sort data in ascending order otherwise.
     </p>    
     <blockquote>
       <code>=VLOOKUP&#40;</code><span>A2,'worksheet - dataset'!$A:$C, 3, false</span><code>&#41;</code>
@@ -300,8 +303,66 @@ include ("../inc/header.php");
     
     <h4>Identifying Patterns</h4>
     <p>
-      Because data is not always distributed purposefully, it is important to know ways by which to measure the spread of data: the <i>Standard Deviation</i> is a function that can do ust that. 
+      Because data is not always distributed purposefully, it is important to know ways by which to measure the spread of data: the <i>Standard Deviation</i> (&sigma;) is a function that can do just that. 
     </p>
+    <blockquote>
+      <code>=STDEV&#40;</code><span>range, [condition]</span><code>&#41;</code>
+    </blockquote>
+    <p>
+      This function easily calculates the distance between values and the mean value. For example, a group of numbers that are the same would have no deviation. To calculate the standard deviation by hand:
+    </p>
+    <ol>
+      <li>Subtract All Values by the Average</li>
+      <li>Square All Values, then Add Total Sum</li>
+      <li>Divide the Total Sum by # of Values <br>(This result is the Variance)</li>
+      <li>Apply Square Root to Variance</li>
+    </ol>
+    <p>
+      When combining data of different sample sizes, the returned metrics may have skewed results. Data is considered to have <i>Normal Distribution</i> whenever it does not skew. One property of normal distribution is how often values occur within a given standard deviation, where distribution is graded.
+    </p>
+    <aside class="characterGrid">
+      <div class="asciiItem">
+        <div>&#60;&#61;68%</div>
+        <div><small><b>Grade-1</b></small></div>
+      </div>
+      <div class="asciiItem">
+        <div>&#60;&#61;95%</div>
+        <div><small><b>Grade-2</b></small></div>
+      </div>
+      <div class="asciiItem">
+        <div>&#62;&#61;99.7%</div>
+        <div><small><b>Grade-3</b></small></div>
+      </div>
+    </aside>
+    <p>
+      There are two functions that can be used to ascertain how data is distributed, <i>Skew()</i> and <i>Countifs()</i>:
+    </p>
+    <blockquote>
+      <code>=SKEW&#40;</code><small>'Range'</small><code>&#41;</code>
+      <br>
+      <code>=COUNTIFS&#40;</code><small>'Range', "&#62;"&amp;Cell2-Cell3, 'Range', "&#60;"&amp;Cell2+Cell3)/Cell1</small><code>&#41;</code>
+    </blockquote>
+    <p>
+      The first condition checks if the value is greater than the mean minus one standard deviation. The second condition checks if the value is less than the mean plus one standard deviation. The function is then divided by the total sum of values to determine the distribution. In the example below, the first condition checks if the range <code>'2017'!S2:S50</code> is <code>&#62;</code> the mean <b>minus</b> one standard deviation <code>&amp;B6-B10</code> and the second condition checks if the range is <code>&#60;</code>  the mean <b>plus</b> one standard deviation. This is then divided by the total sum of values <code>B1</code>.
+    </p>
+    <blockquote>
+      <code>=COUNTIFS&#40;</code><small>'2017'!S2:S50, "&#62;"&amp;B6-B10, '2017'!S2:S50, "&#60;"&amp;B6+B10)/B1</small><code>&#41;</code>
+    </blockquote>
+    <p>
+      Ascertain distribution at grade-2 or -3 by absolutely referencing the range and multiplying the standard deviation by 2 or 3, respectively.
+    </p>
+    <blockquote>
+      <code>=COUNTIFS&#40;</code><small>'2017'!<b>$</b>S<b>$</b>2:<b>$</b>S<b>$</b>50, "&#62;"&amp;B6-B10<b>&#215;2</b>, '2017'!<b>$</b>S<b>$</b>2:<b>$</b>S<b>$</b>50, "&#60;"&amp;B6+B10<b>&#215;2</b>)/B1</small><code>&#41;</code>
+      <br>
+      
+      <code>=COUNTIFS&#40;</code><small>'2017'!<b>$</b>S<b>$</b>2:<b>$</b>S<b>$</b>50, "&#62;"&amp;B6-B10<b>&#215;3</b>, '2017'!<b>$</b>S<b>$</b>2:<b>$</b>S<b>$</b>50, "&#60;"&amp;B6+B10<b>&#215;3</b>)/B1</small><code>&#41;</code>
+    </blockquote>
+    <p>
+      The COUNTIFS() function can also be used to calculate the number of values within a specified interval, which can be useful when charting large datasets. In the example below <code>A1</code> represents the base number interval and <code>A2</code> is the interval baseline.
+    </p>
+    <blockquote>
+      <code>=COUNTIFS&#40;</code><small>'2017'!<b>$</b>S<b>$</b>2:<b>$</b>S<b>$</b>50, "&#62;"&amp;A1, '2017'!<b>$</b>S<b>$</b>2:<b>$</b>S<b>$</b>50, "&#60;"&amp;A2</small><code>&#41;</code>
+    </blockquote>
   </section>
   
   <section>
