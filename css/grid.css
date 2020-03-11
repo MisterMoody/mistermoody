@@ -319,7 +319,9 @@ address {
   text-align: center;
 }
 blockquote {margin: -0.8em 0 0.5em 0; text-align: center;}
-blockquote code, .glossary div code, .miniBlock div code {font-size: 1em;}   /*<code> for Blockquote + Resource Glossary*/
+blockquote code, .glossary div code, .miniBlock div code {font-size: 1em;}   
+blockquote span {font-size: 0.88em;}
+/*<code> for Blockquote + Resource Glossary*/
 code, p code {
   background: #ddd; 
   border-radius: 5px;
@@ -403,6 +405,7 @@ ul {list-style-type: none;}
   /**/  
   address {margin: 0 0 2em 0;}
   blockquote {font-size: 1.48em; margin: -0.2em 0 0.5em 0;}
+  blockquote span {font-size: 1em}
   .btn {
     margin: 0;
     padding: 0;
@@ -921,13 +924,13 @@ li a.toc__Title {
 }
 .toc li:before {
   border-radius: 2px;
-  color: #aaa;
+  color: #777;
   font-weight: bold;
   padding: 4px;
 }
 .toc a {
   border-bottom: 1px dashed #ddd;
-  color: #888;
+  color: #555;
   font-style: italic;
   font-weight: normal;
   margin-left: 0.248em;
@@ -1014,6 +1017,7 @@ div.blockCard {
   margin: -0.8em 0 0 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 0.4em;
 }
 /* 2-COLUMN Variable-Responsive LIST-Grid */
 .glossary {
@@ -1120,3 +1124,16 @@ div.blockCard {
 /* ============================================ */
 /* ============================================ */
 
+/* 'data/the-data-analysis-process */
+.dataAnalysis__Styles p {
+  font-size: calc(1em - 0.24vw);
+  line-height: 1.71; 
+  letter-spacing: 0.032em;
+  font-stretch: ultra-condensed;
+  font-weight: 100;
+}
+@media all and (min-width: 800px) { 
+  .dataAnalysis__Styles p {
+    font-size: 1.2em;
+  }
+}
