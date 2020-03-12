@@ -1146,6 +1146,9 @@ div.blockCard {
   .dataAnalysis__Styles p {
     font-size: 1.2em;
   }
+  .dataAnalysis__Styles i, .dataAnalysis__Styles span {
+    font-size: 1em; 
+  }
   .func__block {
     margin: -0.8em 0 0 0;
     display: grid;
