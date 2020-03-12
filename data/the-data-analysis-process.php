@@ -77,7 +77,7 @@ include ("../inc/header.php");
         </li>
         <br>
         <li>
-          <a class="toc__Title" href="data/the-data-analysis-processoptimization">Visualize Data</a>
+          <a class="toc__Title" href="data/the-data-analysis-process">Visualize Data</a>
           <ul>
             <li>
               <a href="data/the-data-analysis-process">Chart Types and Selection</a>
@@ -95,6 +95,9 @@ include ("../inc/header.php");
               <a href="data/the-data-analysis-process">Conditional Formatting</a>
             </li>
           </ul>
+        </li>
+        <li>
+          <a class="toc__Title" href="data/the-data-analysis-process#dataVizExamples">Basic Visualized Examples</a>
         </li>
       </ul>
     </aside>
@@ -436,16 +439,13 @@ include ("../inc/header.php");
 Great to illustrate trends in data at equally specified time intervals such as months, quarters or years; particularly useful to understand seasonality or cannibalization in business. 
     </p>
     <p>
-      <i>100% Stacked Area</i> charts are used similarly as line charts: to compare values over a continuous period of time. Great to demonstrate trends and to understand seasonality in business. Use a 100% Stacked Area chart to illustrate trends as a percentage. 
-    </p>
-    <p>
       <i>Scatter</i> charts are used to <em>identify correlations between two sets of scientific data</em>, specifically, to ascertain if a relationship exists between two variables. Such charts are used to compare numeric values and/or perform statistical analysis only: to determine relationships that help make future predictions. A linear line demonstrates a correlation, which is the measurement of the interdependence of variable quantities expressed in a range between -1 (negative), 0 (none), 0.5 (low) and 1 (positive). The <i>Correll</i> function is used in unison with this chart to <em>calculate correlations between two data-series</em>.
     </p>
     <p>
-      <i>Combo </i> charts can be created using the aforementioned chart types and the line chart works well in this regard. There are strategies that can be implemented to create a range of charts: use a <a target="_blank" href=""><i>Speedometer</i></a> to capture a value of one data-series within a range, show progress with a <a target="_blank" href="https://www.excel-easy.com/examples/thermometer-chart.html"><i>Thermometer</i></a>, track schedule efficiency with a <a target="_blank" href="https://www.excel-easy.com/examples/gantt-chart.html"><i>Gantt</i></a> chart or use the <a target="_blank" href="https://www.excel-easy.com/examples/pareto-chart.html"><i>Pareto</i></a> method to describe how 80% of an events effects derive from 20% of the causes. More elaborate schemes can be used to create <i>Maps</i>, reflect <i>Stock</i> prices or qualify values using a <i>Radar</i>.
+      <a target="_blank" href="https://www.excel-easy.com/examples/area-chart.html"><i>100% Stacked Area</i></a> charts are used in similar fashion as line charts and is great to illustrate trends as a percentage. <i>Combo </i> charts can be created using the aforementioned chart types and the line chart works well in this regard. There are strategies that can be implemented to create a range of charts: use a <a target="_blank" href=""><i>Speedometer</i></a> to capture a value of one data-series within a range, show progress with a <a target="_blank" href="https://www.excel-easy.com/examples/thermometer-chart.html"><i>Thermometer</i></a>, track schedule efficiency with a <a target="_blank" href="https://www.excel-easy.com/examples/gantt-chart.html"><i>Gantt</i></a> chart or use the <a target="_blank" href="https://www.excel-easy.com/examples/pareto-chart.html"><i>Pareto</i></a> method to describe how 80% of an events effects derive from 20% of the causes. More elaborate schemes can be used to create <i>Maps</i> and reflect <i>Stock</i> prices.
     </p>
     <p>
-      With a clear idea of how to visualize a problem, analyst can be confident in their chart selection and proceed to implement. Creating charts is a relatively simple process: view chart <a target="_blank" href="https://exceljet.net/chart-types">types</a> and usage <a target="_blank" href="https://exceljet.net/chart-examples">cases</a> to learn more.
+      With a clear idea of how to visualize a problem, analyst can be confident in their chart selection and proceed to implement. Creating charts is a relatively simple process: 
     </p>
     <aside class="declarations">
       <div><b>Create a Chart</b></div>
@@ -463,6 +463,9 @@ Great to illustrate trends in data at equally specified time intervals such as m
       <div><b>Change Type</b></div>
       <div><span>Right-click <b>&#62;&#62;</b> Change Chart Type</span></div>
     </aside>
+    <p>
+      Chart <a href="data/the-data-analysis-process#dataVizExamples">examples</a> are provided below along with tools to learn more about chart <a target="_blank" href="https://exceljet.net/chart-types">types</a> and usage <a target="_blank" href="https://exceljet.net/chart-examples">cases</a>.
+    </p>
     
     <h4 class="title">PivotTable</h4>
     <p>
@@ -519,6 +522,96 @@ Great to illustrate trends in data at equally specified time intervals such as m
     <p>
       The <i>Color Scales</i> feature is awesome: use it to make a <a target="_blank" href="https://www.excel-easy.com/examples/heat-map.html">Heat Map</a> as it is used to <em>distinguish values along a color spectrum.</em> To this end, <i>Icon Sets</i> are similar to color scales with additional context in the form of arrows, shapes and ratings to clearly demonstrate fixed points along that data-series values' spectrum. All of these features are formatting <i>rules</i>: analyst have the ability to manage these rules, reset all data rules and create rules for a specific purpose. For example, the spectrum uses a default ration of <span style="color: green;">&#62;68</span>-<span style="color: yellow; background: black;">&#60;67</span>-<span style="color: red;">&#60;33</span>, but these numbers can be modified to fit the needs of a scenario.
     </p>
+  </section>
+  
+  <section>
+    <h2 class="title" id="dataVizExamples">Basic Visualized Examples</h2>
+    <p>
+      Presented below are elaborate examples and explanations for how I visualize data.
+    </p>
+    <aside class="block">
+      <div>
+        <p>
+          This <i>Bar Chart</i> highlights the <em>total sum of email signatures collected by ten teams</em> of volunteers while raising awareness about youth homelessness. Before inserting a chart, I <u>sorted</u> values along the vertical axis to reflect the rank order by highest value instead of by team name. Recognizing that all values fall between the range of 40 and 90, I modified the horizontal axis' <u>bounds and units</u> to eliminate whitespace outside the range, then added <u>data labels</u> to the outside end of each value for clarity. 
+        </p>
+      </div>
+      <figure>
+        <img class="chartEx" alt="Bar Chart Example" src="img/data/dap/barEx.png">
+        <figcaption>Bar Chart Example</figcaption>
+      </figure>
+    </aside>
+    <!-- -->
+    <aside class="block">
+      <div>
+        <p>
+          This <i>Pie Chart</i> <em>compares total donations earned among five groups and compares them to each other as a proportional percentage</em>. The groups used here are made up of colleagues from different departments at a non-profit organization that provides home-based no-cost after-school tutoring services to low-income youth, while operating solely on donations. I used the <code>design</code> tab setting to set each group as a certain color, employed a <u>legend</u> and formatted the <u>data labels</u> to match groups with their respecitive piece of the pie, by which each slice reflects a specific dollar amount and the percentage of all donations each group contributed. 
+        </p>
+      </div>
+      <figure>
+        <img class="chartEx" alt="Pie Chart Example" src="img/data/dap/pieEx.png">
+        <figcaption>Pie Chart Example</figcaption>
+      </figure>
+    </aside>
+     
+    <aside class="block">
+      <div>
+        <p>
+          This <i>Line Chart</i> <em>compares membership data for seven regional health club franchises</em>. In contrast with the bar and pie charts, line charts are used to compare the values of multiple variables simultaneously: the data used to create this chart included franchises location and their membership numbers by month over the course of the year. I used a <u>legend</u> to make it easy to match each group with their slice of the pie. I formatted the <u>data series</u> and used <u>line markers</u> to highlight the membership count at each franchise for each month.
+        </p>
+      </div>
+      <figure>
+        <img class="chartEx" alt="Line Chart Example" src="img/data/dap/lineEx.png">
+        <figcaption>Line Chart Example</figcaption>
+      </figure>
+    </aside>
+    
+    <aside class="block">
+      <figure>
+        <img class="chartEx" alt="Column Chart Example" src="img/data/dap/columnEx.png">
+        <figcaption>Column Chart Example</figcaption>
+      </figure>
+      <div>
+        <p>
+          This <i>Column Chart</i> <em>compares Business Expenditures over a Three-Year period</em> wherein the expenditures are based on four categories: raw materials, tools, labor and facilities. After inserting a chart, I realized that the header titles were misplaced, so I <u>transposed</u> the column and row headers and this had an immediate impact on the chart. Then, I added <u>gridlines</u> and centered <u>data labels</u> before tossing the <u>legend</u> directly beneath the title to make it easy to interpret the expenditures of each category during each year under review. For good measure, I formatted the bounds and units on the <u>vertical axis</u>.
+        </p>
+      </div>
+    </aside>
+    <!--
+    <aside class="block">
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/barEx.png">
+        <figcaption> Chart Example</figcaption>
+      </figure>
+      <div>
+        <p>
+          The <i> Chart</i> highlights the <em>xxx</em> of volunteers while raising awareness about youth homelessness. Before inserting a chart, I .... Recognizing that .... 
+        </p>
+      </div>
+    </aside>
+    
+    <aside class="block">
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/barEx.png">
+        <figcaption> Chart Example</figcaption>
+      </figure>
+      <div>
+        <p>
+          The <i> Chart</i> highlights the <em>xxx</em> of volunteers while raising awareness about youth homelessness. Before inserting a chart, I .... Recognizing that .... 
+        </p>
+      </div>
+    </aside>
+    
+    <aside class="block">
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/barEx.png">
+        <figcaption> Chart Example</figcaption>
+      </figure>
+      <div>
+        <p>
+          The <i> Chart</i> highlights the <em>xxx</em> of volunteers while raising awareness about youth homelessness. Before inserting a chart, I .... Recognizing that .... 
+        </p>
+      </div>
+    </aside>-->
   </section>
 </article>
 <!-- .....CONTENT-ENDS// --> 

@@ -1142,6 +1142,13 @@ div.blockCard {
   background: #dddada; 
   padding-left: 0.2em;
 }
+
+.chartEx {margin: 0;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(4px 4px 4px #ddd);
+}
 @media all and (min-width: 800px) { 
   .dataAnalysis__Styles p {
     font-size: 1.2em;
@@ -1155,5 +1162,13 @@ div.blockCard {
     grid-template-columns: repeat(4, 1fr); 
     grid-gap: 0.4em;
   }
-  .excel__func div code{font-size: 1em;}
+  .excel__func div code{font-size: 1em;} 
+  .chartEx { 
+    display: block;
+    margin: 0 auto;
+    /*max-height: 23.23em;
+    max-width: 32.32em;*/
+  }
+  .dataAnalysis__Styles .block {margin: 1em 0;}
+  .dataAnalysis__Styles .block:nth-of-type(odd){background-color: #dddada;}
 }
