@@ -1132,6 +1132,7 @@ div.blockCard {
   font-stretch: ultra-condensed;
   font-weight: 100;
 }
+  .dataAnalysis__Styles figure { margin: -0.8em 0 0.5em 0;}
 .func__block {
   margin: -0.8em 0 0 0;
   display: grid;
@@ -1157,7 +1158,7 @@ div.blockCard {
     font-size: 1em; 
   }
   .func__block {
-    margin: -0.8em 0 0 0;
+    margin: -0.5em 0 0 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-gap: 0.4em;
@@ -1170,5 +1171,5 @@ div.blockCard {
     max-width: 32.32em;*/
   }
   .dataAnalysis__Styles .block {margin: 1em 0;}
-  .dataAnalysis__Styles .block:nth-of-type(odd){background-color: #dddada;}
+  .dataAnalysis__Styles .block:nth-of-type(even){background-color: #dddada;}
 }

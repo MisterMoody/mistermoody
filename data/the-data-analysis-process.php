@@ -96,6 +96,7 @@ include ("../inc/header.php");
             </li>
           </ul>
         </li>
+        <br>
         <li>
           <a class="toc__Title" href="data/the-data-analysis-process#dataVizExamples">Basic Visualized Examples</a>
         </li>
@@ -540,7 +541,7 @@ Great to illustrate trends in data at equally specified time intervals such as m
         <figcaption>Bar Chart Example</figcaption>
       </figure>
     </aside>
-    <!-- -->
+    
     <aside class="block">
       <div>
         <p>
@@ -566,29 +567,38 @@ Great to illustrate trends in data at equally specified time intervals such as m
     </aside>
     
     <aside class="block">
-      <figure>
-        <img class="chartEx" alt="Column Chart Example" src="img/data/dap/columnEx.png">
-        <figcaption>Column Chart Example</figcaption>
-      </figure>
       <div>
         <p>
           This <i>Column Chart</i> <em>compares Business Expenditures over a Three-Year period</em> wherein the expenditures are based on four categories: raw materials, tools, labor and facilities. After inserting a chart, I realized that the header titles were misplaced, so I <u>transposed</u> the column and row headers and this had an immediate impact on the chart. Then, I added <u>gridlines</u> and centered <u>data labels</u> before tossing the <u>legend</u> directly beneath the title to make it easy to interpret the expenditures of each category during each year under review. For good measure, I formatted the bounds and units on the <u>vertical axis</u>.
         </p>
       </div>
-    </aside>
-    <!--
-    <aside class="block">
       <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/barEx.png">
-        <figcaption> Chart Example</figcaption>
+        <img class="chartEx" alt="Column Chart Example" src="img/data/dap/columnEx.png">
+        <figcaption>Column Chart Example</figcaption>
       </figure>
-      <div>
-        <p>
-          The <i> Chart</i> highlights the <em>xxx</em> of volunteers while raising awareness about youth homelessness. Before inserting a chart, I .... Recognizing that .... 
-        </p>
+    </aside>
+    
+    <aside>
+      <p>These <i>Scatter Plot</i> charts were made to <em>identify correlations of statistical results of the top NBA scorers during the 2018-2019 playoffs</em>. The data for this chart consisted of two dozen statistical categories for the top 50 scorers. I used two statistical pairings (points / field goal percentage and points / minutes) to illustrate a negative and mid level correlation among the stats. The points / minutes pairing showed a positive correlation within the test parameters, but it would still be considered a weak correlation in general. Formatted the <u>axis titles</u>, <u>bound and units</u>, and added a <u>trend line</u>.</p>
+      <div class="miniBlock">
+        <figure>
+          <img class="chartEx" alt=" Chart Example" src="img/data/dap/scatter1Ex.png">
+          <figcaption>Negative Correlation</figcaption>
+        </figure>
+        <figure>
+          <img class="chartEx" alt=" Chart Example" src="img/data/dap/scatter2Ex.png">
+          <figcaption>Positive Correlation</figcaption>
+        </figure>
       </div>
     </aside>
     
+    <hr>
+    
+    <h4 class="title">Use Cases</h4>
+    <p>
+      The examples above demonstrate how to quickly create a visualization using a handful of measurables. The following use cases demonstrate how I think through a problem when creating a picture for my story.
+    </p>
+    <!--
     <aside class="block">
       <figure>
         <img class="chartEx" alt=" Chart Example" src="img/data/dap/barEx.png">
