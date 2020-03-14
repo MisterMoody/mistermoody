@@ -630,30 +630,36 @@ Great to illustrate trends in data at equally specified time intervals such as m
         With the fun part out of the way, I begin my assessment of the data that I have and determine how to visualize it. With so much data, I expect there will be a need for a few charts, but which ones!?!
       </p>
       <p>
-        I used a PIE chart to illustrate total yearly sales by franchise and sales share as a percentage of the overall retail sales. It is a simple chart that indicates that the Downtown franchise is the most profitable: that was obvious. I used a COLUMN chart to expound on the total monthly sales by franchise: it tells a story of how sales fared month-over-month by franchise, but even with a data-table and trend lines, not much is discoverable here. So I added a LINE chart to clarify: it visually changed how to look at the same information in the column chart, but more could be done. At last, I found confidence in the 100% STACKED AREA chart with a data-table: it shows total monthly sales and the proportional share of each franchise among chain retailers.
+        I used a PIE chart to illustrate total yearly sales by franchise and sales share as a percentage of the overall retail sales. It is a simple chart that indicates that the Downtown franchise is the most profitable: that was obvious. I used a COLUMN chart to expound on the total monthly sales by franchise: it tells a story of how sales fared month-over-month by franchise, but even with a data-table and trend lines, not much is discoverable here. So I added a LINE chart to clarify: no new perspectives here. At last, I found confidence in the 100% STACKED AREA chart with a data-table: it shows total monthly sales and the proportional share of each franchise among chain retailers.
       </p>
       <div class="multiChartEx">
-      <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_PieChart.png">
-        <figcaption>Yearly Sales - Pie Chart</figcaption>
-      </figure>
-      <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_ColumnChart.png">
-        <figcaption>Montly Sales - Column Chart</figcaption>
-      </figure>
-      <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_LineChart.png">
-        <figcaption>Monthly Sales - Line Chart</figcaption>
-      </figure>
-      <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_AreaChart.png">
-        <figcaption>Monthly Sales - Area Chart</figcaption>
-      </figure>      
+        <figure>
+          <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_PieChart.png">
+          <figcaption>Yearly Sales - Pie Chart</figcaption>
+        </figure>
+        <figure>
+          <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_ColumnChart.png">
+          <figcaption>Montly Sales - Column Chart</figcaption>
+        </figure>
+        <figure>
+          <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_LineChart.png">
+          <figcaption>Monthly Sales - Line Chart</figcaption>
+        </figure>
+        <figure>
+          <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_AreaChart.png">
+          <figcaption>Monthly Sales - Area Chart</figcaption>
+        </figure>      
       </div>
       <p>
-        But wait, there's more. Lets calculate <a target="_blank"  href="https://efinancemanagement.com/financial-analysis/month-over-month">month-over-month</a> + add conditional formatting to the dataset to see what more can be learned from the data!
+        After a short break, I returned to review these charts and felt like something was missing: month-over-month details. The math behind this evaluation is quite basic: I used total monthly sales to compare month-over-month changes in overall sales, then I subtracted FEB total sales from JAN total sales to return a $ value for revenue profit or loss by month. The integer values are informative, indicating a perspective that is better understood with percentages. Subtracting FEB sales from JAN, multiplied by 100 then divided by JAN sales provides a percentage value and makes it easier to comprehend data spread variance. The negative values causes pause when adding a chart: my preference in this situation is to use conditional formatting.
       </p>
-        <h3>~to be continued...</h3>
+      <figure>
+        <img class="chartEx" alt="Conditional Format Example" src="img/data/dap/Case1_monthovermonthFormat.png">
+        <figcaption>Month-over-Month Sales $ and %</figcaption>
+      </figure>
+      <p>
+         I explored including color scales and icon sets, but settled on highlighting values based on where that value fell in a range of 0 to 100. Months in which sales produced profits greater than 33% are colored green: yellow marked minor sales decline with cell values between -5% - 32% and red marked months the chain experienced revenue loss. With this formatting, I can explore seasonality changes and investigate ways to improve sales.   
+      </p>
     </aside>
     
     <!--
