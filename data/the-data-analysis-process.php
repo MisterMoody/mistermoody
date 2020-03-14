@@ -527,7 +527,7 @@ Great to illustrate trends in data at equally specified time intervals such as m
   
   <section>
     <h2 class="title" id="dataVizExamples">Basic Visualized Examples</h2>
-    <p>
+    <p style="margin-bottom: -1em;">
       Presented below are elaborate examples and explanations for how I visualize data.
     </p>
     <aside class="block">
@@ -545,7 +545,7 @@ Great to illustrate trends in data at equally specified time intervals such as m
     <aside class="block">
       <div>
         <p>
-          This <i>Pie Chart</i> <em>compares total donations earned among five groups and compares them to each other as a proportional percentage</em>. The groups used here are made up of colleagues from different departments at a non-profit organization that provides home-based no-cost after-school tutoring services to low-income youth, while operating solely on donations. I used the <code>design</code> tab setting to set each group as a certain color, employed a <u>legend</u> and formatted the <u>data labels</u> to match groups with their respecitive piece of the pie, by which each slice reflects a specific dollar amount and the percentage of all donations each group contributed. 
+          This <i>Pie Chart</i> <em>compares total donations earned among five groups and compares them to each other as a proportional percentage</em>. The groups used here are made up of colleagues from different departments at a non-profit organization that provides home-based no-cost after-school tutoring services to low-income youth, while operating solely on donations. I used the <code>design</code> tab setting to set each group as a certain color, employed a <u>legend</u> and formatted the <u>data labels</u> to match groups with their respective  piece of the pie, by which each slice reflects a specific dollar amount and the percentage of all donations each group contributed. 
         </p>
       </div>
       <figure>
@@ -579,8 +579,8 @@ Great to illustrate trends in data at equally specified time intervals such as m
     </aside>
     
     <aside>
-      <p>These <i>Scatter Plot</i> charts were made to <em>identify correlations of statistical results of the top NBA scorers during the 2018-2019 playoffs</em>. The data for this chart consisted of two dozen statistical categories for the top 50 scorers. I used two statistical pairings (points / field goal percentage and points / minutes) to illustrate a negative and mid level correlation among the stats. The points / minutes pairing showed a positive correlation within the test parameters, but it would still be considered a weak correlation in general. Formatted the <u>axis titles</u>, <u>bound and units</u>, and added a <u>trend line</u>.</p>
-      <div class="miniBlock">
+      <p>These <i>Scatter Plot</i> charts were made to <em>identify correlations of statistical results of the top NBA scorers during the 2018-2019 playoffs</em>. The data for this chart consisted of two dozen statistical categories for the top 50 scorers. I used two statistical pairings (points / field goal percentage and points / minutes) to illustrate a negative and mid-level correlation among the stats. The points / minutes pairing showed a positive correlation within the test parameters, but it would still be considered a weak correlation in general. Formatted the <u>axis titles</u>, <u>bound and units</u>, and added a <u>trend line</u>.</p>
+      <div class="multiChartEx">
         <figure>
           <img class="chartEx" alt=" Chart Example" src="img/data/dap/scatter1Ex.png">
           <figcaption>Negative Correlation</figcaption>
@@ -594,23 +594,69 @@ Great to illustrate trends in data at equally specified time intervals such as m
     
     <hr>
     
-    <h4 class="title">Use Cases</h4>
-    <p>
-      The examples above demonstrate how to quickly create a visualization using a handful of measurables. The following use cases demonstrate how I think through a problem when creating a picture for my story.
-    </p>
-    <!--
-    <aside class="block">
+    <aside>
+      <h4 class="title">Case: Total Sales (Sum Values)</h4>
+      <p>
+        The examples above demonstrate how to quickly create a visualization. The following use cases demonstrate how I think through a problem when creating a picture for my story. Personal Note: it is at this point in the story that I learn about the <i>Quick Analysis Tool</i>: a nifty shortcut <code>CTRL-Q</code> to utilize a built-in feature that provides recommendations for how to analyze and chart selected data.
+      </p>
+      <p>
+        For this case, I have a small dataset related to <i>Total Product Sales</i> for a retail chain with three franchises in a mid-size city: the goal is to present this data in a variety of ways to illustrate different happenings. The data outlines all products, products sold at each franchise and total product sales by month. Recognizing data is in good order, I abbreviated month names and adjusted column width for aesthetic purposes. 
+      </p>
       <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/barEx.png">
-        <figcaption> Chart Example</figcaption>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/datasetCase1.png">
+        <figcaption>Dataset for Retail Chain</figcaption>
       </figure>
-      <div>
-        <p>
-          The <i> Chart</i> highlights the <em>xxx</em> of volunteers while raising awareness about youth homelessness. Before inserting a chart, I .... Recognizing that .... 
-        </p>
+      <p>
+        Based on the data structure, I chose to perform calculations to generate <i>total sum</i> figures that can simplify the analysis process. The steps that I took involved finding the (a) total yearly sales for each franchise including the grand total for the chain, (b) total monthly sales for each franchise including monthly grand totals and (c) total yearly sales for individual products. I considered calculating total monthly sales for individual products as well, but that might be overkill. The calculations produced the following results:
+      </p>
+      
+      <p>
+        To find the yearly sales for each franchise, I invoked the =SUM() function and used all values for that franchise only. The function, <code>=Sum&#40;</code><span>B2:M5</span><code>&#41;</code>, targets values of cells between columns B - M and rows 2 - 5. I repeated the process for other franchises then tallied total sales for the entire chain. I checked the results by performing the same calculation using values from all locations. 
+      </p>
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/tysFranchiseDataCase1.png">
+        <figcaption>Sales Data for Downtown Franchise / Chain</figcaption>
+      </figure>   
+      
+      <p>
+        Calculating monthly sales for each franchise took some time, but was completed by adding monthly sales for a franchise then dragging that formula across cells to fill in values for each month. I then used the function and added franchise values for each month to return the monthly sales for the chain as a whole. Here, <code>=Sum&#40;</code><span>B2:B5</span><code>&#41;</code> targets all row values within the JAN column. I avoided repeating this process for every month as I remember that I could drag the formula across the row to populate values based on the column it resides. Finally, I tallied total sales for individual products for the year. I was able to run the aforementioned check to ascertain the grand total. 
+      </p>
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/tmsFranchisetysProductDataCase1.png">
+        <figcaption>Monthly Sales by Franchise / Yearly Sales by Product</figcaption>
+      </figure>
+    
+      <p>
+        With the fun part out of the way, I begin my assessment of the data that I have and determine how to visualize it. With so much data, I expect there will be a need for a few charts, but which ones!?!
+      </p>
+      <p>
+        I used a PIE chart to illustrate total yearly sales by franchise and sales share as a percentage of the overall retail sales. It is a simple chart that indicates that the Downtown franchise is the most profitable: that was obvious. I used a COLUMN chart to expound on the total monthly sales by franchise: it tells a story of how sales fared month-over-month by franchise, but even with a data-table and trend lines, not much is discoverable here. So I added a LINE chart to clarify: it visually changed how to look at the same information in the column chart, but more could be done. At last, I found confidence in the 100% STACKED AREA chart with a data-table: it shows total monthly sales and the proportional share of each franchise among chain retailers.
+      </p>
+      <div class="multiChartEx">
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_PieChart.png">
+        <figcaption>Yearly Sales - Pie Chart</figcaption>
+      </figure>
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_ColumnChart.png">
+        <figcaption>Montly Sales - Column Chart</figcaption>
+      </figure>
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_LineChart.png">
+        <figcaption>Monthly Sales - Line Chart</figcaption>
+      </figure>
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_AreaChart.png">
+        <figcaption>Monthly Sales - Area Chart</figcaption>
+      </figure>      
       </div>
+      <p>
+        But wait, there's more. Lets calculate <a target="_blank"  href="https://efinancemanagement.com/financial-analysis/month-over-month">month-over-month</a> + add conditional formatting to the dataset to see what more can be learned from the data!
+      </p>
+        <h3>~to be continued...</h3>
     </aside>
     
+    <!--
     <aside class="block">
       <figure>
         <img class="chartEx" alt=" Chart Example" src="img/data/dap/barEx.png">

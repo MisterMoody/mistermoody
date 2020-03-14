@@ -1125,6 +1125,7 @@ div.blockCard {
 /* ============================================ */
 
 /* 'data/the-data-analysis-process */
+/*  Article <p> Styles  */
 .dataAnalysis__Styles p {
   font-size: calc(1em - 0.24vw);
   line-height: 1.71; 
@@ -1132,31 +1133,38 @@ div.blockCard {
   font-stretch: ultra-condensed;
   font-weight: 100;
 }
-  .dataAnalysis__Styles figure { margin: -0.8em 0 0.5em 0;}
-.func__block {
+/*  Function List: Grid + Function Styles  */
+.dataAnalysis__Styles .func__block {
   margin: -0.8em 0 0 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  grid-gap: 0.4em;
+  grid-gap: 0.4em; 
 }
-.excel__func {
+.dataAnalysis__Styles .excel__func {
   background: #dddada; 
   padding-left: 0.2em;
 }
+/*  Chart Examples: Grid + <figure> Chart Example +  */
+.dataAnalysis__Styles .block {margin: 2em 0;}
+.dataAnalysis__Styles figure { margin: -0.8em 0 0.5em 0;}
+.dataAnalysis__Styles .multiChartEx figure { margin: 0.8em 0 0.5em 0;}
+/*  */
 
-.chartEx {margin: 0;
+img.chartEx {
+  margin: 0;
   max-width: 100%;
   width: 100%;
   height: auto;
   filter: drop-shadow(4px 4px 4px #ddd);
 }
+.multiChartEx {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 0.4em;
+}
 @media all and (min-width: 800px) { 
-  .dataAnalysis__Styles p {
-    font-size: 1.2em;
-  }
-  .dataAnalysis__Styles i, .dataAnalysis__Styles span {
-    font-size: 1em; 
-  }
+  .dataAnalysis__Styles p {font-size: 1.2em;}
+  .dataAnalysis__Styles i, .dataAnalysis__Styles span {font-size: 1em;}
   .func__block {
     margin: -0.5em 0 0 0;
     display: grid;
@@ -1166,10 +1174,11 @@ div.blockCard {
   .excel__func div code{font-size: 1em;} 
   .chartEx { 
     display: block;
-    margin: 0 auto;
+    margin: 0.71em 0 0 0;
     /*max-height: 23.23em;
     max-width: 32.32em;*/
   }
-  .dataAnalysis__Styles .block {margin: 1em 0;}
+  .dataAnalysis__Styles .block {margin: 2.48em 0;}
   .dataAnalysis__Styles .block:nth-of-type(even){background-color: #dddada;}
+  .dataAnalysis__Styles figure { margin: 0 0 0.5em 0; 
 }
