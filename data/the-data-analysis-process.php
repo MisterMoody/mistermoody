@@ -4,7 +4,7 @@ $page = "The Data Analysis Process";
 include ("../inc/header.php");
 ?>
 <!-- ************************************************** -->
-<!-- ************* << WEB DEV 'TOOLKIT' <b>&#62;&#62;</b> ************ -->
+<!-- ************************************************** -->
 
 <!-- //CONTENT-BEGINS..... -->
 <article class="dataAnalysis__Styles">
@@ -47,10 +47,10 @@ include ("../inc/header.php");
         </li>
         <br>
         <li>
-          <a class="toc__Title" href="data/the-data-analysis-process">Summarize Data to Test a Hypothesis</a>
+          <a class="toc__Title" href="data/the-data-analysis-process">Summarize Data</a>
           <ul>
             <li>
-              <a href="data/the-data-analysis-process">Implement a Function</a>
+              <a href="data/the-data-analysis-process#implement-function">Implement a Function</a>
             </li>
             <li>
               <a href="data/the-data-analysis-process">Add Data between Worksheets</a>
@@ -107,8 +107,7 @@ include ("../inc/header.php");
   <section>
     <h2 class="title">What is Data Analysis?</h2>
     <p>
-      <i>Data Analysis</i> is a process of aggregating data by performing conditional and statistical evaluation of data to help professionals from all walks of like make well informed decisions and improve business and organizational efficiency. Advancements in technology has allowed this craft to flourish in ways that meaningfully impact everyday life and it can become an ideal niche for a transitioning web developer interested in <a target="_blank" href="https://towardsdatascience.com">data science</a>! <code>#dataviz</code>
-
+      <i>Data Analysis</i> is a process of aggregating data by performing conditional and statistical evaluation of data to help professionals from all walks of like make well informed decisions and improve business and organizational efficiency. Advancements in technology has allowed this craft to flourish in ways that meaningfully impact everyday life and it can become an ideal niche for a transitioning web developer interested in <a target="_blank" href="https://towardsdatascience.com">data science</a>! 
     </p>
     <p>
       There are multiple facets related to the analysis process as a whole: data is first collected then formatted. This involves confirming the accuracy of data by checking for anomalies, duplicate values or empty cells and ensuring column and row headers are titled. With data in clear view, outline strategic goals designed to produce a specific insight by defining questions that qualify potential solutions or results and quantify how to measure it. This seems like simple math: spread sheets offer functions that calculate data to confirm totals, identify relationships and generally answer initial questions.
@@ -183,9 +182,9 @@ include ("../inc/header.php");
   </section>
   
   <section>
-    <h2 class="title">Summarize Data to Test a Hypothesis</h2>
+    <h2 class="title">Summarize Data</h2>
     <p>
-      Spread sheets have features that make handling data a cinch. Most of the heavy lifting is conducted via formulas and functions. While a <i>formula</i> is a math expression made up of cell addresses and arithmetic operators, a <i>function</i> is a built-in formula that enables analysts to perform calculations using values based on a specified condition. Excel Easy offers high-quality <a target="_blank" href="https://www.excel-easy.com/examples.html">examples</a> to aid when using Microsoft Excel spread sheets. Before diving into what these tools can do, it is useful to know how to reference data and duplicate formulas for other calculations.
+      Spread sheets have features that make handling data a cinch. Most of the heavy lifting is conducted via formulas and functions, which are used during the summarizing phase to test a hypothesis. While a <i>formula</i> is a math expression made up of cell addresses and arithmetic operators, a <i>function</i> is a built-in formula that enables analysts to perform calculations using values based on a specified condition. Excel Easy offers high-quality <a target="_blank" href="https://www.excel-easy.com/examples.html">examples</a> to aid when using Microsoft Excel spread sheets. Before diving into what these tools can do, it is useful to know how to reference data and duplicate formulas for other calculations.
     </p>
     <p>
       Functions use all values from a single column: these values are known as a <i>range</i> / <i>variable</i> and can be applied to other functions to expound upon initial calculations. Although using mean is most accurate, using median produces more realistic numbers. When using a variable / range to measure something, it turns into a metric that can be used for additional calculations. <i>Metrics</i> are aggregated values stored in cells, thus, how they are referenced is vital to the integrity of data being analyzed. At its initial state, all cells are <i>relative</i>, identified by a column and row number. Individual cells can be referenced by separating such cells with commas; reference cell groups by separating the first and last cells with a colon. Cells can be referenced <i>absolutely</i> (terms defined) so that the value in that cell can be used to calculate the value in another cell: such data never updates and is useful when performing multiple calculations using the same dataset. In cases were an absolute reference is implemented, that range of data can be <i>duplicated</i> for usage in another cell to perform an entirely separate calculation. Keep an eye on absolutely referenced cells and how they are referenced as either the column, row or both can be referenced. In the event of either/or, data may be updated resulting in poor analysis.
@@ -209,7 +208,7 @@ include ("../inc/header.php");
       <div><span>Cell1: Base # <b>&#62;&#62;</b> Cell2: Base + # <b>&#62;&#62;</b> Drag Cells</span></div>
     </aside>
     
-    <h4 class="title">Using Functions</h4>
+    <h4 class="title" id="implement-function">Implement a Function</h4>
     <p>
       The aforementioned tactics are imperative for working with formulas and functions, which are the stimulus behind summarizing data. All functions begin with an equal sign (=) followed by its function name in all caps; parenthesis enclose the parameters which is the calculation to be performed on referenced cells. 
     </p>
@@ -217,45 +216,9 @@ include ("../inc/header.php");
       <code>=FUNCTION_Name&#40;</code>cell_reference, condition<code>&#41;</code>
     </blockquote>
     <p>
-      There are a plethora of formulas and functions that can be used to modify, summarize and validate data depending on the problem at hand. Common functions analyst need to be comfortable with include: 
+      There are a plethora of formulas and <a class="toc__Title" href="https://exceljet.net/excel-functions">functions</a> that can be used to modify, summarize and validate data depending on the problem at hand. These are a few of the first functions that I have learned and prove to be useful: 
     </p>
     <aside class="func__block">
-      <div class="excel__func">
-        <div class=""><code title="Returns Lowest Value">=MIN(<small>Cell:Range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Highest Value">=MAX(<small>C1,C2,C3...</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code>=MAX-MIN</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Mean Value">=AVERAGE(<small>Cell:Range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Middle Value">=MEDIAN(<small>Cell:Range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Most Frequent Value">=MODE(<small>Cell:Range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Total Sum of Values">=SUM(<small>Cell:Range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Total Sum of Values based on Conditions">=SUMIF(<small>range,criteria,sum_range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Number of Selected Cells that have Numbers as Values">=COUNT(<small>Cell:Range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Count of Cells that Meet One or More Criteria">=COUNTIF(<small>range1,criteria1,...</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns the Standard Deviation">=STDEV(<small>range,condition</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns the Normal Distribution Grade">=SKEW(xxx)</code></div>
-      </div>
       <div class="excel__func">
         <div class=""><code title="Add Column Data from one Worksheet to another">=VLOOKUP(xxx)</code></div>
       </div>
@@ -263,35 +226,26 @@ include ("../inc/header.php");
         <div class=""><code title="Add Row Data from one Worksheet to another">=HLOOKUP(xxx)</code></div>
       </div>
       <div class="excel__func">
-        <div class=""><code title="Returns True if the value is text; false otherwise">ISTEXT(<small>Cell#</small>)</code></div>
+        <div class=""><code title="Returns Total Sum of Values">=SUM(<small>Cell:Range</small>)</code></div>
       </div>
       <div class="excel__func">
-        <div class=""><code title="Returns True if the value is numeric; false otherwise">ISNUMBER(<small>Cell#</small>)</code></div>
+        <div class=""><code title="Returns Count of Cells that Meet One or More Criteria">=COUNTIF(<small>range1,criteria1,...</small>)</code></div>
       </div>
       <div class="excel__func">
-        <div class=""><code title="Returns a Rounded-down Integer (removes decimals)">INT(<small>Cell#</small>)</code></div>
+        <div class=""><code title="Returns Middle Value">=MEDIAN(<small>Cell:Range</small>)</code></div>
       </div>
       <div class="excel__func">
-        <div class=""><code title="Returns a Number of Characters in a Text-String *Split Text or Abbreviate Words">=LEN(<small>Text-String</small>)</code></div>
+        <div class=""><code title="Returns the Standard Deviation">=STDEV(<small>range,condition</small>)</code></div>
       </div>
       <div class="excel__func">
         <div class=""><code title="Returns Combined Text from Different Cells">=CONCATENATE(<small>Cell#,"text",Cell#</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Truncates a Number to a Specified Number of Decimal Places.">=TRUNC(<small>Cell#, [digits]</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Combined Text from Diff Cells">=TRIM(<small>Cell #</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Prediction of a Future Value based on Existing Values">=FORECAST(<small>x-val,y_vals,x_vals</small>)</code></div>
       </div>
       <div class="excel__func">
         <div class=""><code title="Returns a Rounded-down Integer (removes decimals)">=CORRELL(<small>Column-A, Column-B</small>)</code></div>
       </div>
     </aside>
     <p>
-      These functions work well with one another to produce an assortment of results. There are standard procedures analyst can perform in order to ascertain feedback quality.  
+      These functions work well with one another to produce an assortment of results. There are standard procedures analyst can perform in order to ascertain feedback quality. Check out these <a target="_blank" href="data/excel-formula-concepts">concepts</a> for best practices using formulas and functions.
     </p>
     
     <h4 class="title">Adding Data between Worksheets</h4>
@@ -530,7 +484,7 @@ Great to illustrate trends in data at equally specified time intervals such as m
     <p style="margin-bottom: -1em;">
       Presented below are elaborate examples and explanations for how I visualize data.
     </p>
-    <aside class="block">
+    <aside class="block hedge">
       <div>
         <p>
           This <i>Bar Chart</i> highlights the <em>total sum of email signatures collected by ten teams</em> of volunteers while raising awareness about youth homelessness. Before inserting a chart, I <u>sorted</u> values along the vertical axis to reflect the rank order by highest value instead of by team name. Recognizing that all values fall between the range of 40 and 90, I modified the horizontal axis' <u>bounds and units</u> to eliminate whitespace outside the range, then added <u>data labels</u> to the outside end of each value for clarity. 
@@ -542,7 +496,7 @@ Great to illustrate trends in data at equally specified time intervals such as m
       </figure>
     </aside>
     
-    <aside class="block">
+    <aside class="block hedge">
       <div>
         <p>
           This <i>Pie Chart</i> <em>compares total donations earned among five groups and compares them to each other as a proportional percentage</em>. The groups used here are made up of colleagues from different departments at a non-profit organization that provides home-based no-cost after-school tutoring services to low-income youth, while operating solely on donations. I used the <code>design</code> tab setting to set each group as a certain color, employed a <u>legend</u> and formatted the <u>data labels</u> to match groups with their respective  piece of the pie, by which each slice reflects a specific dollar amount and the percentage of all donations each group contributed. 
@@ -554,7 +508,7 @@ Great to illustrate trends in data at equally specified time intervals such as m
       </figure>
     </aside>
      
-    <aside class="block">
+    <aside class="block hedge">
       <div>
         <p>
           This <i>Line Chart</i> <em>compares membership data for seven regional health club franchises</em>. In contrast with the bar and pie charts, line charts are used to compare the values of multiple variables simultaneously: the data used to create this chart included franchises location and their membership numbers by month over the course of the year. I used a <u>legend</u> to make it easy to match each group with their slice of the pie. I formatted the <u>data series</u> and used <u>line markers</u> to highlight the membership count at each franchise for each month.
@@ -566,7 +520,7 @@ Great to illustrate trends in data at equally specified time intervals such as m
       </figure>
     </aside>
     
-    <aside class="block">
+    <aside class="block hedge">
       <div>
         <p>
           This <i>Column Chart</i> <em>compares Business Expenditures over a Three-Year period</em> wherein the expenditures are based on four categories: raw materials, tools, labor and facilities. After inserting a chart, I realized that the header titles were misplaced, so I <u>transposed</u> the column and row headers and this had an immediate impact on the chart. Then, I added <u>gridlines</u> and centered <u>data labels</u> before tossing the <u>legend</u> directly beneath the title to make it easy to interpret the expenditures of each category during each year under review. For good measure, I formatted the bounds and units on the <u>vertical axis</u>.
@@ -578,7 +532,7 @@ Great to illustrate trends in data at equally specified time intervals such as m
       </figure>
     </aside>
     
-    <aside>
+    <aside class="hedge">
       <p>These <i>Scatter Plot</i> charts were made to <em>identify correlations of statistical results of the top NBA scorers during the 2018-2019 playoffs</em>. The data for this chart consisted of two dozen statistical categories for the top 50 scorers. I used two statistical pairings (points / field goal percentage and points / minutes) to illustrate a negative and mid-level correlation among the stats. The points / minutes pairing showed a positive correlation within the test parameters, but it would still be considered a weak correlation in general. Formatted the <u>axis titles</u>, <u>bound and units</u>, and added a <u>trend line</u>.</p>
       <div class="multiChartEx">
         <figure>
@@ -592,75 +546,6 @@ Great to illustrate trends in data at equally specified time intervals such as m
       </div>
     </aside>
     
-    <hr>
-    
-    <aside>
-      <h4 class="title">Case: Total Sales (Sum Values)</h4>
-      <p>
-        The examples above demonstrate how to quickly create a visualization. The following use cases demonstrate how I think through a problem when creating a picture for my story. Personal Note: it is at this point in the story that I learn about the <i>Quick Analysis Tool</i>: a nifty shortcut <code>CTRL-Q</code> to utilize a built-in feature that provides recommendations for how to analyze and chart selected data.
-      </p>
-      <p>
-        For this case, I have a small dataset related to <i>Total Product Sales</i> for a retail chain with three franchises in a mid-size city: the goal is to present this data in a variety of ways to illustrate different happenings. The data outlines all products, products sold at each franchise and total product sales by month. Recognizing data is in good order, I abbreviated month names and adjusted column width for aesthetic purposes. 
-      </p>
-      <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/datasetCase1.png">
-        <figcaption>Dataset for Retail Chain</figcaption>
-      </figure>
-      <p>
-        Based on the data structure, I chose to perform calculations to generate <i>total sum</i> figures that can simplify the analysis process. The steps that I took involved finding the (a) total yearly sales for each franchise including the grand total for the chain, (b) total monthly sales for each franchise including monthly grand totals and (c) total yearly sales for individual products. I considered calculating total monthly sales for individual products as well, but that might be overkill. The calculations produced the following results:
-      </p>
-      
-      <p>
-        To find the yearly sales for each franchise, I invoked the =SUM() function and used all values for that franchise only. The function, <code>=Sum&#40;</code><span>B2:M5</span><code>&#41;</code>, targets values of cells between columns B - M and rows 2 - 5. I repeated the process for other franchises then tallied total sales for the entire chain. I checked the results by performing the same calculation using values from all locations. 
-      </p>
-      <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/tysFranchiseDataCase1.png">
-        <figcaption>Sales Data for Downtown Franchise / Chain</figcaption>
-      </figure>   
-      
-      <p>
-        Calculating monthly sales for each franchise took some time, but was completed by adding monthly sales for a franchise then dragging that formula across cells to fill in values for each month. I then used the function and added franchise values for each month to return the monthly sales for the chain as a whole. Here, <code>=Sum&#40;</code><span>B2:B5</span><code>&#41;</code> targets all row values within the JAN column. I avoided repeating this process for every month as I remember that I could drag the formula across the row to populate values based on the column it resides. Finally, I tallied total sales for individual products for the year. I was able to run the aforementioned check to ascertain the grand total. 
-      </p>
-      <figure>
-        <img class="chartEx" alt=" Chart Example" src="img/data/dap/tmsFranchisetysProductDataCase1.png">
-        <figcaption>Monthly Sales by Franchise / Yearly Sales by Product</figcaption>
-      </figure>
-    
-      <p>
-        With the fun part out of the way, I begin my assessment of the data that I have and determine how to visualize it. With so much data, I expect there will be a need for a few charts, but which ones!?!
-      </p>
-      <p>
-        I used a PIE chart to illustrate total yearly sales by franchise and sales share as a percentage of the overall retail sales. It is a simple chart that indicates that the Downtown franchise is the most profitable: that was obvious. I used a COLUMN chart to expound on the total monthly sales by franchise: it tells a story of how sales fared month-over-month by franchise, but even with a data-table and trend lines, not much is discoverable here. So I added a LINE chart to clarify: no new perspectives here. At last, I found confidence in the 100% STACKED AREA chart with a data-table: it shows total monthly sales and the proportional share of each franchise among chain retailers.
-      </p>
-      <div class="multiChartEx">
-        <figure>
-          <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_PieChart.png">
-          <figcaption>Yearly Sales - Pie Chart</figcaption>
-        </figure>
-        <figure>
-          <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_ColumnChart.png">
-          <figcaption>Montly Sales - Column Chart</figcaption>
-        </figure>
-        <figure>
-          <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_LineChart.png">
-          <figcaption>Monthly Sales - Line Chart</figcaption>
-        </figure>
-        <figure>
-          <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_AreaChart.png">
-          <figcaption>Monthly Sales - Area Chart</figcaption>
-        </figure>      
-      </div>
-      <p>
-        After a short break, I returned to review these charts and felt like something was missing: month-over-month details. The math behind this evaluation is quite basic: I used total monthly sales to compare month-over-month changes in overall sales, then I subtracted FEB total sales from JAN total sales to return a $ value for revenue profit or loss by month. The integer values are informative, indicating a perspective that is better understood with percentages. Subtracting FEB sales from JAN, multiplied by 100 then divided by JAN sales provides a percentage value and makes it easier to comprehend data spread variance. The negative values causes pause when adding a chart: my preference in this situation is to use conditional formatting.
-      </p>
-      <figure>
-        <img class="chartEx" alt="Conditional Format Example" src="img/data/dap/Case1_monthovermonthFormat.png">
-        <figcaption>Month-over-Month Sales $ and %</figcaption>
-      </figure>
-      <p>
-         I explored including color scales and icon sets, but settled on highlighting values based on where that value fell in a range of 0 to 100. Months in which sales produced profits greater than 33% are colored green: yellow marked minor sales decline with cell values between -5% - 32% and red marked months the chain experienced revenue loss. With this formatting, I can explore seasonality changes and investigate ways to improve sales.   
-      </p>
-    </aside>
     
     <!--
     <aside class="block">
@@ -674,6 +559,74 @@ Great to illustrate trends in data at equally specified time intervals such as m
         </p>
       </div>
     </aside>-->
+  </section>
+  
+  <section>
+    <h2 class="title">Case: Total Sales (Sum Values)</h2>
+    <p>
+      The examples above demonstrate how to quickly create a visualization. The following use cases demonstrate how I think through a problem when creating a picture for my story. Personal Note: it is at this point in the story that I learn about the <i>Quick Analysis Tool</i>: a nifty shortcut <code>CTRL-Q</code> to utilize a built-in feature that provides recommendations for how to analyze and chart selected data.
+    </p>
+    <p>
+      For this case, I have a small dataset related to <i>Total Product Sales</i> for a retail chain with three franchises in a mid-size city: the goal is to present this data in a variety of ways to illustrate different happenings. The data outlines all products, products sold at each franchise and total product sales by month. Recognizing data is in good order, I abbreviated month names and adjusted column width for aesthetic purposes. 
+    </p>
+    <figure>
+      <img class="chartEx" alt=" Chart Example" src="img/data/dap/datasetCase1.png">
+      <figcaption>Dataset for Retail Chain</figcaption>
+    </figure>
+    <p>
+      Based on the data structure, I chose to perform calculations to generate <i>total sum</i> figures that can simplify the analysis process. The steps that I took involved finding the (a) total yearly sales for each franchise including the grand total for the chain, (b) total monthly sales for each franchise including monthly grand totals and (c) total yearly sales for individual products. I considered calculating total monthly sales for individual products as well, but that might be overkill. The calculations produced the following results:
+    </p>
+      
+    <p>
+      To find the yearly sales for each franchise, I invoked the =SUM() function and used all values for that franchise only. The function, <code>=Sum&#40;</code><span>B2:M5</span><code>&#41;</code>, targets values of cells between columns B - M and rows 2 - 5. I repeated the process for other franchises then tallied total sales for the entire chain. I checked the results by performing the same calculation using values from all locations. 
+    </p>
+    <figure>
+      <img class="chartEx" alt=" Chart Example" src="img/data/dap/tysFranchiseDataCase1.png">
+      <figcaption>Sales Data for Downtown Franchise / Chain</figcaption>
+    </figure>   
+      
+    <p>
+      Calculating monthly sales for each franchise took some time, but was completed by adding monthly sales for a franchise then dragging that formula across cells to fill in values for each month. I then used the function and added franchise values for each month to return the monthly sales for the chain as a whole. Here, <code>=Sum&#40;</code><span>B2:B5</span><code>&#41;</code> targets all row values within the JAN column. I avoided repeating this process for every month as I remember that I could drag the formula across the row to populate values based on the column it resides. Finally, I tallied total sales for individual products for the year. I was able to run the aforementioned check to ascertain the grand total. 
+    </p>
+    <figure>
+      <img class="chartEx" alt=" Chart Example" src="img/data/dap/tmsFranchisetysProductDataCase1.png">
+      <figcaption>Monthly Sales by Franchise / Yearly Sales by Product</figcaption>
+    </figure>
+    
+    <p>
+      With the fun part out of the way, I begin my assessment of the data that I have and determine how to visualize it. With so much data, I expect there will be a need for a few charts, but which ones!?!
+    </p>
+    <p>
+      I used a PIE chart to illustrate total yearly sales by franchise and sales share as a percentage of the overall retail sales. It is a simple chart that indicates that the Downtown franchise is the most profitable: that was obvious. I used a COLUMN chart to expound on the total monthly sales by franchise: it tells a story of how sales fared month-over-month by franchise, but even with a data-table and trend lines, not much is discoverable here. So I added a LINE chart to clarify: no new perspectives here. At last, I found confidence in the 100% STACKED AREA chart with a data-table: it shows total monthly sales and the proportional share of each franchise among chain retailers.
+    </p>
+    <div class="multiChartEx">
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_PieChart.png">
+        <figcaption>Yearly Sales - Pie Chart</figcaption>
+      </figure>
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_ColumnChart.png">
+        <figcaption>Montly Sales - Column Chart</figcaption>
+      </figure>
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_LineChart.png">
+        <figcaption>Monthly Sales - Line Chart</figcaption>
+      </figure>
+      <figure>
+        <img class="chartEx" alt=" Chart Example" src="img/data/dap/Case1_AreaChart.png">
+        <figcaption>Monthly Sales - Area Chart</figcaption>
+      </figure>      
+    </div>
+    <p>
+      After a short break, I returned to review these charts and felt like something was missing: month-over-month details. The math behind this evaluation is quite basic: I used total monthly sales to compare month-over-month changes in overall sales, then I subtracted FEB total sales from JAN total sales to return a $ value for revenue profit or loss by month. The integer values are informative, indicating a perspective that is better understood with percentages. Subtracting FEB sales from JAN, multiplied by 100 then divided by JAN sales provides a percentage value and makes it easier to comprehend data spread variance. The negative values causes pause when adding a chart: my preference in this situation is to use conditional formatting.
+    </p>
+    <figure>
+      <img class="chartEx" alt="Conditional Format Example" src="img/data/dap/Case1_monthovermonthFormat.png">
+      <figcaption>Month-over-Month Sales $ and %</figcaption>
+    </figure>
+    <p>
+       I explored including color scales and icon sets, but settled on highlighting values based on where that value fell in a range of 0 to 100. Months in which sales produced profits greater than 33% are colored green: yellow marked minor sales decline with cell values between -5% - 32% and red marked months the chain experienced revenue loss. With this formatting, I can explore seasonality changes and investigate ways to improve sales.   
+    </p>
   </section>
 </article>
 <!-- .....CONTENT-ENDS// --> 
