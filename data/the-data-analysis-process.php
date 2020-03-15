@@ -96,10 +96,6 @@ include ("../inc/header.php");
             </li>
           </ul>
         </li>
-        <br>
-        <li>
-          <a class="toc__Title" href="data/the-data-analysis-process#dataVizExamples">Basic Visualized Examples</a>
-        </li>
       </ul>
     </aside>
   </section>
@@ -216,36 +212,7 @@ include ("../inc/header.php");
       <code>=FUNCTION_Name&#40;</code>cell_reference, condition<code>&#41;</code>
     </blockquote>
     <p>
-      There are a plethora of formulas and <a class="toc__Title" href="https://exceljet.net/excel-functions">functions</a> that can be used to modify, summarize and validate data depending on the problem at hand. These are a few of the first functions that I have learned and prove to be useful: 
-    </p>
-    <aside class="func__block">
-      <div class="excel__func">
-        <div class=""><code title="Add Column Data from one Worksheet to another">=VLOOKUP(xxx)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Add Row Data from one Worksheet to another">=HLOOKUP(xxx)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Total Sum of Values">=SUM(<small>Cell:Range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Count of Cells that Meet One or More Criteria">=COUNTIF(<small>range1,criteria1,...</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Middle Value">=MEDIAN(<small>Cell:Range</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns the Standard Deviation">=STDEV(<small>range,condition</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns Combined Text from Different Cells">=CONCATENATE(<small>Cell#,"text",Cell#</small>)</code></div>
-      </div>
-      <div class="excel__func">
-        <div class=""><code title="Returns a Rounded-down Integer (removes decimals)">=CORRELL(<small>Column-A, Column-B</small>)</code></div>
-      </div>
-    </aside>
-    <p>
-      These functions work well with one another to produce an assortment of results. There are standard procedures analyst can perform in order to ascertain feedback quality. Check out these <a target="_blank" href="data/excel-formula-concepts">concepts</a> for best practices using formulas and functions.
+      There are a plethora of <a target="_blank" href="https://exceljet.net/formulas">formulas</a> and <a target="_blank" href="https://www.excel-easy.com/functions.html">functions</a> that can be used to modify, summarize and validate data depending on the problem at hand.  Implementing formulas and functions requires a bit of practice for which I created an article to demonstrate <a target="_blank" href="data/excel-formula-concepts">conceptual</a> usage.
     </p>
     
     <h4 class="title">Adding Data between Worksheets</h4>

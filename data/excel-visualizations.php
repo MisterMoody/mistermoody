@@ -17,7 +17,7 @@ include ("../inc/header.php");
   </section>
   
   <section>
-    <h2 class="title">Case: Total Sales (Sum Values)</h2>
+    <h4 class="title">Case: Total Sales (Sum Values)</h4>
     <p>
       The examples above demonstrate how to quickly create a visualization. The following use cases demonstrate how I think through a problem when creating a picture for my story. Personal Note: it is at this point in the story that I learn about the <i>Quick Analysis Tool</i>: a nifty shortcut <code>CTRL-Q</code> to utilize a built-in feature that provides recommendations for how to analyze and chart selected data.
     </p>
@@ -77,7 +77,7 @@ include ("../inc/header.php");
     </p>
     <figure>
       <img class="chartEx" alt="Conditional Format Example" src="img/data/dap/Case1_monthovermonthFormat.png">
-      <figcaption>Month-over-Month Sales $ and %</figcaption>
+      <figcaption>Month-over-Month Sales Change $ and %</figcaption>
     </figure>
     <p>
        I explored including color scales and icon sets, but settled on highlighting values based on where that value fell in a range of 0 to 100. Months in which sales produced profits greater than 33% are colored green: yellow marked minor sales decline with cell values between -5% - 32% and red marked months the chain experienced revenue loss. With this formatting, I can explore seasonality changes and investigate ways to improve sales.   
@@ -94,6 +94,7 @@ include ("../inc/header.php");
         <figcaption> Chart Example</figcaption>
       </figure>
     </aside>-->
+    <h5>~more cases to come...</h5>
   </section>
   
 </article>

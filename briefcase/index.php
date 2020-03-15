@@ -23,7 +23,7 @@ include ("../inc/header.php");
       <aside class="chapter">
         <h3 class="chapter__Headline">Excel Visualizations</h3>
         <p>
-          Basic examples of data visualizations using Microsoft Excel. <a href="data/excel-visualizations">Read</a>
+          Basic examples of data visualizations using Excel. <a href="data/excel-visualizations">Read</a>
         </p>
         <div class="chapter__Date_Tag">
           <div>
@@ -37,7 +37,7 @@ include ("../inc/header.php");
       <aside class="chapter">
         <h3 class="chapter__Headline">Excel Formula Concepts</h3>
         <p>
-          A general overview of how to collect, analyze and visualize data using Microsoft Excel. <a href="data/excel-formula-concepts">Read</a>
+          A general overview of how to collect, analyze and visualize data using Excel. <a href="data/excel-formula-concepts">Read</a>
         </p>
         <div class="chapter__Date_Tag">
           <div>
@@ -51,7 +51,7 @@ include ("../inc/header.php");
       <aside class="chapter">
         <h3 class="chapter__Headline">The Data Analysis Process</h3>
         <p>
-          A general overview of how to collect, analyze and visualize data using Microsoft Excel. <a href="data/the-data-analysis-process">Read</a>
+          An brief on how I collect, analyze and visualize data using Microsoft Excel. <a href="data/the-data-analysis-process">Read</a>
         </p>
         <div class="chapter__Date_Tag">
           <div>

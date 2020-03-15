@@ -190,13 +190,13 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
-/* Prevent 'User CopynPaste' */
+/* Prevent 'User CopynPaste' 
 main {
   -webkit-user-select: none; 
   -moz-user-select: none; 
   -ms-user-select: none; 
   user-select: none;
-} 
+} */
 /**/
 body {
   height: 100%;
@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 2px #fff;    /* Etched Titles */
 }
 h2.title {background-color: #ddd;}          /* <Site> Titles */
-article h2.title {margin: 1.8em 0 0.44em; } /* <Site> Titles */
+article h2.title {margin: 1.2em 0 0.44em; } /* <Site> Titles */
 aside h2.title {margin: 0; }                /* Resource Titles*/
 h3.title, h4.title, h5.title, h6.title {
   background-color: #ddd;
@@ -1162,6 +1162,7 @@ img.chartEx {
   grid-template-columns: repeat(2, 1fr); 
   grid-gap: 0.4em;
 }
+.dataAnalysis__Styles blockquote {margin: -0.8em 0 0.5em 0; text-align: left;}
 @media all and (min-width: 800px) { 
   .dataAnalysis__Styles p {font-size: 1.2em;}
   .dataAnalysis__Styles i, .dataAnalysis__Styles span {font-size: 1em;}
@@ -1179,6 +1180,13 @@ img.chartEx {
     max-width: 32.32em;*/
   }
   .dataAnalysis__Styles .block {margin: 2.48em 0;}
-  .dataAnalysis__Styles .block:nth-of-type(even){background-color: #dddada;}
+  .dataAnalysis__Styles .hedge {
+    padding-left: 4px; 
+    border:1px solid #dddada;
+    border-style: inset;
+    border-radius: 2px;
+    border-right: none; border-bottom: none;
+  }
+  .dataAnalysis__Styles .block:nth-of-type(even){}
   .dataAnalysis__Styles figure { margin: 0 0 0.5em 0; 
 }
