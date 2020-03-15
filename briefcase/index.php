@@ -20,6 +20,20 @@ include ("../inc/header.php");
     
     <section class="chapter__book">
       <aside class="chapter">
+        <h3 class="chapter__Headline">Excel Formula Concepts</h3>
+        <p>
+          A general overview of using Microsoft Excel to collect, analyze and visualize data. <a href="data/excel-formula-concepts">Read</a>
+        </p>
+        <div class="chapter__Date_Tag">
+          <div>
+            <i class="fa fa-clock-o" aria-hidden="true"></i> March 2020
+          </div>
+          <div class="chapter__Tags">
+            <div>Data Analysis</div>
+          </div>
+        </div>
+      </aside>
+      <aside class="chapter">
         <h3 class="chapter__Headline">The Data Analysis Process</h3>
         <p>
           A general overview of using Microsoft Excel to collect, analyze and visualize data. <a href="data/the-data-analysis-process">Read</a>
