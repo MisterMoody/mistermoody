@@ -4,11 +4,10 @@ $page = "Data Analysis";
 include ("../inc/header.php");
 ?>
 <!-- ************************************************** -->
-<!-- ************ <<WEB DESIGN KNOWLEDGE>> ************ -->
+<!-- ******************************************************* -->
 
 
 <!-- //CONTENT-BEGINS..... -->
-  <!-- HTML -->
   <section>
     <article>
       <h1>Data Analysis</h1>
@@ -19,8 +18,21 @@ include ("../inc/header.php");
   </section> 
   <!-- -->
   <article>
-    <h1></h1>
     <section class="chapter__book">
+      <aside class="chapter">
+        <h3 class="chapter__Headline">Excel Visualizations</h3>
+        <p>
+          Basic examples of data visualizations using Microsoft Excel. <a href="data/excel-visualizations">Read</a>
+        </p>
+        <div class="chapter__Date_Tag">
+          <div>
+            <i class="fa fa-clock-o" aria-hidden="true"></i> March 2020
+          </div>
+          <!--<div class="chapter__Tags">
+            <div>Data Analysis</div>
+          </div>-->
+        </div>
+      </aside>
       <aside class="chapter">
         <h3 class="chapter__Headline">Excel Function Concepts</h3>
         <p>
@@ -35,12 +47,6 @@ include ("../inc/header.php");
           </div>-->
         </div>
       </aside>
-    </section>
-  </article>
-  <!-- -->
-  <article>
-    <h1></h1>
-    <section class="chapter__book">
       <aside class="chapter">
         <h3 class="chapter__Headline">The Data Analysis Process</h3>
         <p>
