@@ -89,7 +89,6 @@ nav ul li ul li a {
     display: block;
     padding: 0.4884em 0;
     color: #fff;
-    text-align: right;
   }
   nav ul li:first-child:hover {background-color: #888;}
   nav ul:active li, ul:focus li, ul:hover li {display: list-item;}

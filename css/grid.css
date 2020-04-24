@@ -756,39 +756,6 @@ h2.res__sectionTitle + div {margin-bottom: 0.4em;}
   /* mistermoody/BRIEFCASE/ */
   /* Temp WARNING Sign Style*/
 .fa-warning {color: #ffcc00;}
-  /* 'Grid' Styles */
-.cur__TopicGrid {
-  margin-bottom: 0.8em; height: 100%;
-  display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 25vh);
-  /*grid-template-rows: repeat(3, 20.20vh);*/
-  grid-gap: 0.4em;
-}
-.cur__TopicStyle {
-  margin: 0;
-  padding: 0;
-  font-variant: small-caps;
-  box-shadow: 0px 0px 1px #000;  
-  color: #282828; 
-  /* Center Text */
-  display: grid;
-  justify-content: center;
-  align-content: center;
-}
-.cur__TopicStyle p {text-align: center;}
-@media only screen and (min-width: 800px) {
-  /*.cur__TopicGrid {
-    margin: 0; padding: 0;
-    display: grid; 
-    max-height: 90vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, 62vh);
-    grid-gap: 0.4em;
-  }*/
-  .cur__TopicStyle {height: 100%;}
-  .cur__TopicStyle h3 {font-size: 1.8em;}
-}
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
   /* mistermoody/CONTACT/ */
@@ -893,9 +860,23 @@ div.chapter__Date_Tag {
 }
 .chapter__Tags div {
   font-size: 0.88em;
+  font-variant:  small-caps;
+  transition: background 0.8s;
   border: 1px solid #424242;
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px  rgba(255,255,255,0.8);
+}
+.chapter__Tags div a {border: none;}
+.chapter__Tags div:hover {
+  background: #fff;
+  border: 1px solid #222000;
+  color: #000; 
+  transition: background 0.4s;
+}
+.chapter__Tags div a:hover {
+  text-decoration: none;
+  color: #000;
+  outline: none;  
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++ */
