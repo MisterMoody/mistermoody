@@ -7,8 +7,8 @@
     <title>Mister Moody</title>
     <meta name="author" content="Ray Moody">
     <meta name="twitter:title" content="Mister_Moody">     
-    <meta name="description" content="中国 Stuff">
-    <meta name="keywords" content="Mister Moody, ESL Teacher, Web Designer, Louisville, Kentucky">
+    <meta name="description" content="中国">
+    <meta name="keywords" content="Mister Moody, ESL Teacher, Web Designer, Web Developer, Kentucky">
     <!--  WeChat Formatted MSG
     <meta itemprop="name" content="share title">
     <meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
@@ -21,7 +21,7 @@
     <!-- Absolute URL Reference .htaccess URL Rewrite -->
     <base href="http://localhost:8012/mistermoody/"> 
     <!--  Use this <link> to *GO-LIVE*    
-    <base href="https://mistermoody.com">
+    <base href="https://mistermoody.com"> -->
     <!-- Browser Tab Icon -->
     <link rel="shortcut icon" href="img/me.jpg" type="img/m" class="rounded">    
     <!-- FontAwesome ICON Fonts -->
@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- ********************************* -->    
-    <!-- // HEADER + Global NAVIGATION *** -->     
+    <!-- // HEADER + Global NAVIGATION *** -->  
     <header> 
       <nav>
         <ul>
@@ -41,17 +41,19 @@
           <!-- About -->
           <li><a href="about">About</a></li>
           <!-- Portfolio Folder -->
-          <li><a href="portfolio">Portfolio</a>
-            <ul>
+          <li><a href="briefcase">Briefcase</a>
+            <!--<ul>
+              <li><a href="china/vocab">中文</a></li>
+              <li><a href="data">Data Analysis</a>
               <li><a href="webdev">Web Dev</a>
-                <!--<ul>
+                <ul>
                   <li><a href="">Entry 1</a></li>
                   <li><a href="">Entry 2</a></li>
-                </ul>-->
+                </ul>
               </li>
-              <li><a href="portfolio">esl / tefl</a></li>
-              <li><a href="china/vocab">中文</a></li>
-            </ul>
+              <li><a href="briefcase">Language Arts</a></li>
+              <li><a href="briefcase">Politics</a></li>
+            </ul>-->
           </li>      
           <!-- Contact Form -->
           <li><a href="contact">Contact</a>
@@ -61,7 +63,7 @@
           </li>
         </ul>
       </nav>
-    </header> 
+    </header>
     <!-- ********************************* -->
     <!-- ** // Start of GRID CONTAINER *** -->
     <main>

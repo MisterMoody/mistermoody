@@ -9,18 +9,9 @@
     <meta name="twitter:title" content="Mister_Moody">     
     <!-- Link to Twitter -->
     <meta name="description" content="Official Site for Mister Moody">
-    <meta name="keywords" content="Ray Moody, Data Analyst, TEFL, Teachers, Trainer, Web Developer, Louisville">
+    <meta name="keywords" content="Ray Moody, Educator, Web Developer, Virtual Assistant, Kentucky">
     <!-- Status Bar Theme -->
-    <meta name="theme-color" content="#000;">
-    <!--  WeChat Formatted MSG
-    <meta itemprop="name" content="share title">
-    <meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
-    <meta name="description" itemprop="description" content="share content">
-    Tutorial: http://open.mobile.qq.com/api/mqq/index#api:setShareInfo
-
-    <!-- Document will be displayed in "application mode" 
-    <meta name="x5-page-mode" content="app">
-    -->
+    <meta name="theme-color" content="#000000;">
     <!-- Absolute URL Reference '.htaccess URL Rewrite -->
     <base href="http://localhost:8012/mistermoody/">
     <!--  Use this <link> to *GO-LIVE* 
@@ -47,18 +38,18 @@
           <li><a href="about">About</a></li>
           <!-- Portfolio Folder -->
           <li><a href="briefcase">Briefcase</a>
-            <ul>
+            <!--<ul>
               <li><a href="china/vocab">中文</a></li>
               <li><a href="data">Data Analysis</a>
               <li><a href="webdev">Web Dev</a>
-                <!--<ul>
+                <ul>
                   <li><a href="">Entry 1</a></li>
                   <li><a href="">Entry 2</a></li>
-                </ul>-->
+                </ul>
               </li>
               <li><a href="briefcase">Language Arts</a></li>
-              <!--<li><a href="briefcase">Politics</a></li>-->
-            </ul>
+              <li><a href="briefcase">Politics</a></li>
+            </ul>-->
           </li>      
           <!-- Contact Form -->
           <li><a href="contact">Contact</a>
