@@ -153,7 +153,7 @@ include ("../inc/header.php");
     </section>
   </article>
 <!-- Temp Container Holder: Full Screen View -->
-  <article style="height: 32vh;"></article>
+  <article style="height: 35vh;"></article>
 <!-- .....CONTENT-ENDS// --> 
 
 <!-- ************************************************** -->

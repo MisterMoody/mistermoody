@@ -15,8 +15,6 @@ include ("../inc/header.php");
     </section>
   </article>
 
-  <!-- Proper Layout for Articles from Diff Categories -->
-  <!-- Add 'Content Filter' Container (see Treehouse Workspaces) -->
   <article>
     
     <section class="chapter__book">
@@ -44,7 +42,7 @@ include ("../inc/header.php");
             <i class="fa fa-clock-o" aria-hidden="true"></i> February 2020
           </div>
           <div class="chapter__Tags">
-            <div>中文</div>
+            <div><a href="briefcase/">中文</a></div>
           </div>
         </div>
       </aside>
