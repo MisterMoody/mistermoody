@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #222000;
   font-weight: bolder;
   font-variant: small-caps;
-  text-shadow: 0 2px #fff;    /* Etched Titles */
+  /* text-shadow: 0 2px #fff;    Etched Titles */
 }
 h2.title {background-color: #ddd;}          /* <Site> Titles */
 article h2.title {margin: 1.2em 0 0.44em; } /* <Site> Titles */
@@ -823,7 +823,7 @@ label.required:after {
 /* ================================================================ */
 /* ================== mistermoody/WEBDEV Styles =================== */
 /* ================================================================ */
-  /* webdev/ 'Article Grid' */
+  /* briefcase + webdev/ 'Article Grid' */
 .chapter__Book {
   background-color: transparent;
   display: grid;
@@ -848,7 +848,7 @@ div.chapter__Date_Tag {
   margin: 0.4em 0.2em 0.2em 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 25vw repeat(auto-fit, minmax(44px, 12.4rem));
+  grid-template-columns: 35vw repeat(auto-fit, minmax(44px, 12.4rem));
   justify-content: space-between;
 }
 .chapter__Tags { 

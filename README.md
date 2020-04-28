@@ -11,33 +11,33 @@ project
 │   contact.php
 │       
 │
-└───inc
+└───INC
 │   └─── footer.php
 │   └─── header.php 
 │   └─── homepage.php
 │   └─── journalHeader.php  
 │
-└───css
+└───CSS
 │   └─── grid.css
 │   └─── journalStyles.css             
 │
-└───img
+└───IMG/
 │   └─── (multiple images)
 │ 
 │ 
-└───about
+└───ABOUT/
 │   └─── index.php
 │   └─── cv.php (中文) 
 │   └─── resume.php
 │
 │
-└───portfolio
+└───BRIEFCASE/
 │   └─── index.php
 │   │
 │   └───languagearts
 │       └───  index.php
 │ 
-└───webdesign
+└───WEBDEV/
 │   └─── index.php
 │   │
 │   └─── setup-workstation.php
